@@ -1,0 +1,62 @@
+baseURL = "https://brain-zh-cn.tamnd.com/"
+title = "brain (中文)"
+
+enableGitInfo = true
+enableRobotsTXT = true
+enableEmoji = true
+
+[frontmatter]
+  date    = ["date", "publishDate"]
+  lastmod = ["lastmod", "date", "publishDate"]
+
+defaultContentLanguage = "zh-CN"
+defaultContentLanguageInSubdir = false
+
+[module]
+  [[module.imports]]
+    path = "github.com/tamnd/hugo-brainy"
+
+[languages]
+  [languages.zh_CN]
+    label = "brain (中文)"
+    locale = "zh-CN"
+    contentDir = "content"
+    weight = 1
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.goldmark.extensions.passthrough]
+    enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+      block  = [["\$\$", "\$\$"], ["\\[", "\\]"]]
+      inline = [["\$", "\$"],       ["\\(", "\\)"]]
+
+[params]
+  description = "tamnd 的个人知识库"
+  math = true
+
+  [params.navbar]
+    displayTitle = true
+    displayLogo = false
+    width = "full"
+
+  [params.theme]
+    default = "system"
+    displayToggle = true
+
+  [params.search]
+    enable = true
+    type = "flexsearch"
+    [params.search.flexsearch]
+      index = "summary"
+
+  [params.editURL]
+    enable = false
+
+  [params.footer]
+    enable = true
+    displayCopyright = false
+    displayPoweredBy = false
