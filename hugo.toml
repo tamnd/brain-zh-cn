@@ -31,8 +31,8 @@ defaultContentLanguageInSubdir = false
   [markup.goldmark.extensions.passthrough]
     enable = true
     [markup.goldmark.extensions.passthrough.delimiters]
-      block  = [["\$\$", "\$\$"], ["\\[", "\\]"]]
-      inline = [["\$", "\$"],       ["\\(", "\\)"]]
+      block  = [["$$", "$$"], ["\\[", "\\]"]]
+      inline = [["$", "$"],       ["\\(", "\\)"]]
 
 [params]
   description = "tamnd 的个人知识库"
