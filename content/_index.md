@@ -1,10 +1,8 @@
 ---
-title: "brain (中文)"
+title: "塔姆德的大脑"
 tags: ["mathematics", "programming", "knowledge"]
 type: docs
 cascade:
   type: docs
-date: 2026-05-29T14:33:31Z
+date: 2026-05-02T11:27:02+07:00
 ---
-
-[tamnd's brain](https://brain.tamnd.com) 的自动翻译版本。\n内容正在逐步更新中。
