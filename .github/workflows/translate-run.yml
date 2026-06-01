@@ -1,0 +1,161 @@
+name: Translate — Run
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Max files to translate (default 10)"
+        required: false
+        default: "10"
+      provider:
+        description: "Provider: google | bing | google_dt | yandex"
+        required: false
+        default: "google"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: translate-run
+  cancel-in-progress: false
+
+env:
+  LANG: zh_CN
+  BASE_URL: "https://brain-zh-cn.tamnd.com/"
+  LIMIT: "10"
+  PROVIDER: "google"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6.0.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Clone brain (source)
+        run: git clone --depth=1 https://github.com/tamnd/brain.git /tmp/brain
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.1.0
+
+      - name: Sync layouts from brain (auto-fix /en/ paths)
+        run: |
+          rsync -av --delete /tmp/brain/layouts/ layouts/
+          rsync -av --delete /tmp/brain/themes/  themes/
+          rsync -av --delete /tmp/brain/static/  static/
+          sed -i 's|href="/en/|href="/|g' layouts/home.html
+
+      - name: Check queue depth
+        id: queue
+        run: |
+          if [ ! -f .translate/queue.json ]; then
+            echo "pending=0" >> "$GITHUB_OUTPUT"
+            echo "No queue found -- run translate-scan first"
+            exit 0
+          fi
+          PENDING=$(python3 -c "
+          import json
+          q = json.load(open('.translate/queue.json'))
+          print(len(q.get('pending', [])))
+          ")
+          echo "pending=$PENDING" >> "$GITHUB_OUTPUT"
+          echo "Queue: $PENDING pending pages"
+
+      - name: Restore state
+        if: steps.queue.outputs.pending != '0'
+        run: |
+          mkdir -p /tmp/bs/$LANG
+          [ -f .translate/state.json ] && cp .translate/state.json /tmp/bs/$LANG/state.json || true
+          [ -f .translate/queue.json ] && cp .translate/queue.json /tmp/bs/$LANG/queue.json || true
+          ln -sf "$GITHUB_WORKSPACE" /tmp/bs/$LANG/repo
+
+      - name: Translate batch
+        if: steps.queue.outputs.pending != '0'
+        env:
+          BRAIN_SOURCE_REPO: /tmp/brain
+          BRAIN_STATE_BASE: /tmp/bs
+          BRAIN_TRANSLATE_PROVIDER: ${{ github.event.inputs.provider || env.PROVIDER }}
+        run: |
+          LIMIT="${{ github.event.inputs.limit || env.LIMIT }}"
+          cd /tmp/brain/scripts/translate
+          uv run brain-translate run $LANG --limit "$LIMIT"
+
+      - name: Checkout tago
+        if: steps.queue.outputs.pending != '0'
+        uses: actions/checkout@v6.0.2
+        with:
+          repository: tamnd/tago
+          path: .tago-src
+          fetch-depth: 1
+
+      - name: Setup Go
+        if: steps.queue.outputs.pending != '0'
+        uses: actions/setup-go@v6.4.0
+        with:
+          go-version-file: .tago-src/go.mod
+          cache: false
+
+      - name: Cache tago binary
+        if: steps.queue.outputs.pending != '0'
+        id: tago-cache
+        uses: actions/cache@v5.0.5
+        with:
+          path: /usr/local/bin/tago
+          key: tago-bin-${{ runner.os }}-${{ hashFiles('.tago-src/go.sum', '.tago-src/**/*.go') }}
+
+      - name: Build tago
+        if: steps.queue.outputs.pending != '0' && steps.tago-cache.outputs.cache-hit != 'true'
+        run: |
+          cd .tago-src
+          go build -o /usr/local/bin/tago ./cmd/tago/
+
+      - name: Build gate -- verify tago build
+        if: steps.queue.outputs.pending != '0'
+        run: |
+          mkdir -p public
+          tago build --base-url "$BASE_URL" 2>&1 | tail -30
+          rm -rf public .tago-src
+
+      - name: Commit translations
+        if: steps.queue.outputs.pending != '0'
+        run: |
+          mkdir -p .translate
+          cp /tmp/bs/$LANG/state.json .translate/state.json
+          cp /tmp/bs/$LANG/queue.json .translate/queue.json
+          git config user.name  "brain-translate[bot]"
+          git config user.email "bot@tamnd.com"
+          git add content/ layouts/ themes/ static/ .translate/
+          git diff --cached --quiet && echo "nothing new, skip" && exit 0
+          SOURCE_SHA=$(cd /tmp/brain && git rev-parse HEAD)
+          BATCH=$(python3 -c "import json; s=json.load(open('.translate/state.json')); print(f\"{s.get('batch',0):04d}\")")
+          COUNT=$(git diff --cached --name-only -- content/ | wc -l | tr -d ' ')
+          PROVIDER="${{ github.event.inputs.provider || env.PROVIDER }}"
+          git commit -m "translate: batch $BATCH ($COUNT files)
+
+Source: tamnd/brain@${SOURCE_SHA:0:12}
+Lang: $LANG
+Provider: $PROVIDER"
+          git push
+
+      - name: Audit -- check stray placeholders
+        if: steps.queue.outputs.pending != '0'
+        run: |
+          echo "=== Stray placeholder check ==="
+          STRAY=$(grep -rl 'PROTECT_' content/ 2>/dev/null | head -20 || true)
+          if [ -n "$STRAY" ]; then
+            echo "WARN: stray placeholders in:"
+            echo "$STRAY"
+          else
+            echo "OK: no stray placeholders"
+          fi
+          echo "=== Code block blank-line check ==="
+          python3 -c "
+          import pathlib, re
+          bad = [str(f) for f in pathlib.Path('content').rglob('*.md')
+                 if re.search(r'[^\n]\n\x60\x60\x60', f.read_text(errors='ignore'))]
+          print(f'WARN: {len(bad)} files missing blank line before code block' if bad else 'OK: code block spacing correct')
+          for b in bad[:5]: print(' ', b)
+          "
