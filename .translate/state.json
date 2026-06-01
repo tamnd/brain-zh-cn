@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-01T11:28:48.526968Z",
+  "last_run": "2026-06-01T12:11:25.581014Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -126,6 +126,86 @@
       "source_hash": "sha256:39bede9583e572e1b9e38dccf0d473a3bf620ae4952f3e68c2c6319df9812d78",
       "translated_at": "2026-06-01T11:28:48.526941Z",
       "dest_path": "content/deep/cpython/01/_index.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/deep/cpython/02/_index.md": {
+      "source_hash": "sha256:a145303e331dc8521aec961a6826e092713b95b4f643824f9efd4f21790b13d9",
+      "translated_at": "2026-06-01T12:11:07.063301Z",
+      "dest_path": "content/deep/cpython/02/_index.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/deep/cpython/03/_index.md": {
+      "source_hash": "sha256:9cc2bb48adb5911583db44cbd5e4e200d77a07d59b773a3b6646ca0cc2c02c9f",
+      "translated_at": "2026-06-01T12:11:09.064328Z",
+      "dest_path": "content/deep/cpython/03/_index.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/deep/cpython/04/_index.md": {
+      "source_hash": "sha256:e1ebe8b0738e7c6b9b4466d0e17050ecf9b457a17234da9c64713fdc8860c914",
+      "translated_at": "2026-06-01T12:11:10.612637Z",
+      "dest_path": "content/deep/cpython/04/_index.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/deep/cpython/05/_index.md": {
+      "source_hash": "sha256:0a25141b2b81c18e5b23c51a51b2190307dfbeb4d183ca21f9aaee549319ea2b",
+      "translated_at": "2026-06-01T12:11:13.215983Z",
+      "dest_path": "content/deep/cpython/05/_index.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/deep/cpython/06/_index.md": {
+      "source_hash": "sha256:5710ee78f746c1370eafd73fcc3f0cbb43d3539638ab0d429e52ed0b1fcded2a",
+      "translated_at": "2026-06-01T12:11:15.419858Z",
+      "dest_path": "content/deep/cpython/06/_index.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/deep/cpython/07/_index.md": {
+      "source_hash": "sha256:aa28a865ebf3fc001c024d152d147a9287f64dbaa28a5de584c72efcc3f3766e",
+      "translated_at": "2026-06-01T12:11:17.053208Z",
+      "dest_path": "content/deep/cpython/07/_index.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/deep/cpython/08/_index.md": {
+      "source_hash": "sha256:88800a1caae6206ed0e9af00072c78e7049ef18db8e5b1ecee79ffe5227a8e5d",
+      "translated_at": "2026-06-01T12:11:19.006031Z",
+      "dest_path": "content/deep/cpython/08/_index.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/deep/cpython/09/_index.md": {
+      "source_hash": "sha256:49dccfcad1c85ab302545ac0fe60b8d929b937c7d329cb0c965ff6053771702a",
+      "translated_at": "2026-06-01T12:11:21.821967Z",
+      "dest_path": "content/deep/cpython/09/_index.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/deep/cpython/10/_index.md": {
+      "source_hash": "sha256:36419d64efa91502726165943d780405c1812ef2e5857d93f3cf63d6f3cb1753",
+      "translated_at": "2026-06-01T12:11:24.317026Z",
+      "dest_path": "content/deep/cpython/10/_index.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/deep/cpython/_index.md": {
+      "source_hash": "sha256:9639e98b7e781d3095924396f83e72103ea7caccc573f798aa69e72563880f75",
+      "translated_at": "2026-06-01T12:11:25.580989Z",
+      "dest_path": "content/deep/cpython/_index.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
