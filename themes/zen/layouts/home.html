@@ -6,20 +6,6 @@
     {{if .Pages}}<p class="zen-home-header__count">{{len .Pages}} notes</p>{{end}}
   </header>
 
-  {{if .Page.Children}}
-  <div class="zen-sections">
-    {{range .Page.Children}}
-    {{if and (not .Draft) (eq .Kind "section")}}
-    <a href="{{.RelPermalink}}" class="zen-section-card">
-      <span class="zen-section-card__title">{{with .LinkTitle}}{{.}}{{else}}{{.Title}}{{end}}</span>
-      {{with .Description}}<p class="zen-section-card__desc">{{.}}</p>{{end}}
-    </a>
-    {{end}}
-    {{end}}
-  </div>
-  {{end}}
-
-  {{if .Pages}}
   <div class="zen-list">
     {{range .Pages}}
     {{if not .Draft}}
@@ -38,6 +24,5 @@
     {{end}}
     {{end}}
   </div>
-  {{end}}
 </div>
 {{end}}
