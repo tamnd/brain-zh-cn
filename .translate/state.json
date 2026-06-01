@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-01T18:54:15.430535Z",
+  "last_run": "2026-06-01T20:26:08.233084Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -686,6 +686,86 @@
       "source_hash": "sha256:6b9b813d964ea22077abe3b8c88d99cee411080366531b112ee62b5ab8ecb801",
       "translated_at": "2026-06-01T18:54:15.430507Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/公司.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/六.md": {
+      "source_hash": "sha256:0dc65ad02f51ec91b67a9c5a5bbf394134eee5011e1fbe99c199eb62417efd3a",
+      "translated_at": "2026-06-01T20:25:32.024901Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/六.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/关.md": {
+      "source_hash": "sha256:194caa9476833cbe6b9a796eb75e75ec67932677ac1a7ce777ba621b92ef028d",
+      "translated_at": "2026-06-01T20:25:35.408566Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/关.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/再.md": {
+      "source_hash": "sha256:16d51181b7cbc367f2ce3d21ac7ba7ca6474241914da17eecfad23a3389da0d7",
+      "translated_at": "2026-06-01T20:25:39.704995Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/再.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/再见.md": {
+      "source_hash": "sha256:3e374231aa7e9ae3c48fab981ece4256e9e042d3da0a2986f76478a064cb05a9",
+      "translated_at": "2026-06-01T20:25:44.801389Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/再见.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/写.md": {
+      "source_hash": "sha256:bad79673d1f68335b63b217d0c84f33aeeee363d8362b9034f2623c61f611174",
+      "translated_at": "2026-06-01T20:25:48.425598Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/写.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/冷.md": {
+      "source_hash": "sha256:3303d1ca89b83604a2891915de2aa18133a8d072d0de473fcbc7ebd78fe4e77b",
+      "translated_at": "2026-06-01T20:25:53.470187Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/冷.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/出.md": {
+      "source_hash": "sha256:2cb06c7e7d6dc14313fc1990b3996c6d8b2a64c6966a811e27d517a75233ee63",
+      "translated_at": "2026-06-01T20:25:56.983560Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/出.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/出租车.md": {
+      "source_hash": "sha256:c416a702a1cef1c6b1a9af09f04b0161e56084907ea9fdad629e3b99eebd9121",
+      "translated_at": "2026-06-01T20:25:59.824255Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/出租车.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/分.md": {
+      "source_hash": "sha256:f334a0e2dd0c7e0ce6c24e86120275370af7bad2605b075ec0672354d52ff698",
+      "translated_at": "2026-06-01T20:26:03.240352Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/分.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/到.md": {
+      "source_hash": "sha256:e684ac9afa68920611adcd307ba66e7505b3d37d3fafb77dc6cba76030e57437",
+      "translated_at": "2026-06-01T20:26:08.233056Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/到.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
