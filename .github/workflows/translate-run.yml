@@ -133,11 +133,8 @@ jobs:
           BATCH=$(python3 -c "import json; s=json.load(open('.translate/state.json')); print(f\"{s.get('batch',0):04d}\")")
           COUNT=$(git diff --cached --name-only -- content/ | wc -l | tr -d ' ')
           PROVIDER="${{ github.event.inputs.provider || env.PROVIDER }}"
-          git commit -m "translate: batch $BATCH ($COUNT files)
-
-Source: tamnd/brain@${SOURCE_SHA:0:12}
-Lang: $LANG
-Provider: $PROVIDER"
+          MSG=$(printf 'translate: batch %s (%s files)\n\nsrc: tamnd/brain@%s\nlang: %s\nprovider: %s' "$BATCH" "$COUNT" "${SOURCE_SHA:0:12}" "$LANG" "$PROVIDER")
+          git commit -m "$MSG"
           git push
 
       - name: Audit -- check stray placeholders
