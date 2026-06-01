@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-01T12:18:37.318647Z",
+  "last_run": "2026-06-01T12:24:32.435331Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -286,6 +286,86 @@
       "source_hash": "sha256:f2186f2fbeaf49aba024b7a4b6ac3e54685aeed9751e6a1f728d64602430c338",
       "translated_at": "2026-06-01T12:18:37.318621Z",
       "dest_path": "content/languages/chinese/hsk/1/lessons/08-weather-seasons.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/09-transportation.md": {
+      "source_hash": "sha256:577d62c7257fa3a8f982055c1a880d622c785987ffe8741bd5602e70625ec74b",
+      "translated_at": "2026-06-01T12:23:55.521518Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/09-transportation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/10-hobbies-free-time.md": {
+      "source_hash": "sha256:4ec91394b63af0cf4af97142fdf5cb8fce6835c98ae134a49562e80d4b95148f",
+      "translated_at": "2026-06-01T12:23:59.638899Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/10-hobbies-free-time.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/11-body-health.md": {
+      "source_hash": "sha256:0f5a840d23b24ba646d837e307ebd88354b41f48a7e67b782dc8218668639900",
+      "translated_at": "2026-06-01T12:24:03.762810Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/11-body-health.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/12-colors-appearance.md": {
+      "source_hash": "sha256:b7f5eeafde826c455f6b85f46274feb3fab409f4dda386e70b37594885f12f18",
+      "translated_at": "2026-06-01T12:24:08.126079Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/12-colors-appearance.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/13-school-study.md": {
+      "source_hash": "sha256:943de69b29ca1f7e7935e8b45cc00380ed309a9279c9947f6d3a11a6ac530b4d",
+      "translated_at": "2026-06-01T12:24:11.174421Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/13-school-study.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/14-daily-routine.md": {
+      "source_hash": "sha256:d306881b4953146927ef2f47a4632bff30b53614f6854118e0f7d1998ac1554b",
+      "translated_at": "2026-06-01T12:24:14.159426Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/14-daily-routine.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/15-review-practice.md": {
+      "source_hash": "sha256:f50f634e5b2bdaef4b31fc001ceb320106690b5adc657717a43521949f1058fb",
+      "translated_at": "2026-06-01T12:24:19.199340Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/15-review-practice.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary.md": {
+      "source_hash": "sha256:75bf4ce5ef21baacb43775233a045ae2e63e5a35c6c47c86a6722f4abfc72e46",
+      "translated_at": "2026-06-01T12:24:26.945107Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/一.md": {
+      "source_hash": "sha256:b3c70c4471de976d84cef239c888fa9f7c60146d089d6e08a4b11048f2bf4912",
+      "translated_at": "2026-06-01T12:24:29.992789Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/一.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/一点儿.md": {
+      "source_hash": "sha256:315a265169d877df1c2e4722c839f9699a0c57613b83874df4d877b2bfb28489",
+      "translated_at": "2026-06-01T12:24:32.435302Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/一点儿.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
