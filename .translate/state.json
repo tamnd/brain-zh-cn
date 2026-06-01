@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-01T20:26:08.233084Z",
+  "last_run": "2026-06-01T21:42:57.152129Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -766,6 +766,86 @@
       "source_hash": "sha256:e684ac9afa68920611adcd307ba66e7505b3d37d3fafb77dc6cba76030e57437",
       "translated_at": "2026-06-01T20:26:08.233056Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/到.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/医生.md": {
+      "source_hash": "sha256:a83a2c60c73c6b8c98b93021bc4e336e79c6998d009ac855905370ce493518f9",
+      "translated_at": "2026-06-01T21:42:21.415840Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/医生.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/医院.md": {
+      "source_hash": "sha256:c3d0e75929451ecdc8f3f3c92be08898b9beecbebb12afec07a8b879c066da48",
+      "translated_at": "2026-06-01T21:42:25.738610Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/医院.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/十.md": {
+      "source_hash": "sha256:4b161745506949fb35fe54805347d059f5ae83506a4fe2a6e9bb99b292ebaa31",
+      "translated_at": "2026-06-01T21:42:29.367429Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/十.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/千.md": {
+      "source_hash": "sha256:9d447e9682f68b85c9ca3c1e95a8b0f274c741fa1a472a36917a645c718a1d3d",
+      "translated_at": "2026-06-01T21:42:33.095126Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/千.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/卖.md": {
+      "source_hash": "sha256:2772f6b66a5c0742f1191ebcda7326413ba60bad403a380df97905fc89c4a16b",
+      "translated_at": "2026-06-01T21:42:37.446955Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/卖.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/去.md": {
+      "source_hash": "sha256:b966ce48c7e3cb3815931aa95542e4d4be872a2691659191df988f51949ac34a",
+      "translated_at": "2026-06-01T21:42:41.230841Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/去.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/口.md": {
+      "source_hash": "sha256:5c30623a9cfe329857400d47e4b5a336034e3a6e353f94ae52cadeeca8f55b5a",
+      "translated_at": "2026-06-01T21:42:45.365562Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/口.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/只.md": {
+      "source_hash": "sha256:b5ef1344a1749f019daa7569ac804a41776dba242757f87ba8f746dd7da9d80a",
+      "translated_at": "2026-06-01T21:42:49.922088Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/只.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/叫.md": {
+      "source_hash": "sha256:e470f9e7a4c98835e3d1b8854efe1cbc6b66af2e3e4571573945c439c12357ba",
+      "translated_at": "2026-06-01T21:42:52.974356Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/叫.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/可爱.md": {
+      "source_hash": "sha256:6959570d21b2faf633da87a740ee52ddf649371cec627436dce2749d821b3ecf",
+      "translated_at": "2026-06-01T21:42:57.152105Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/可爱.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
