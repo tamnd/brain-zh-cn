@@ -1951,3 +1951,45 @@ html[data-ui-theme="github"] .cal-posts {
   html[data-ui-theme="github"] { --content-max: 1100px; }
   html[data-ui-theme="github"] .zen-nav__inner { padding: 0 3rem; }
 }
+
+/* ── Home section cards ────────────────────────────────────────── */
+.zen-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.zen-section-card {
+  display: block;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.zen-section-card:hover {
+  border-color: var(--accent);
+  background: var(--surface-hover, rgba(0,0,0,.03));
+}
+
+.dark .zen-section-card:hover {
+  background: rgba(255,255,255,.04);
+}
+
+.zen-section-card__title {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+  color: var(--text);
+}
+
+.zen-section-card__desc {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
