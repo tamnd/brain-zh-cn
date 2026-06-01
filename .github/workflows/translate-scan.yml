@@ -66,8 +66,6 @@ jobs:
           git diff --cached --quiet && echo "nothing changed, skip" && exit 0
           SOURCE_SHA=$(cd /tmp/brain && git rev-parse HEAD)
           PENDING=$(python3 -c "import json; q=json.load(open('.translate/queue.json')); print(len(q.get('pending',[])))")
-          git commit -m "translate: scan -- ${PENDING} pages queued
-
-Source: tamnd/brain@${SOURCE_SHA:0:12}
-Lang: $LANG"
+          MSG=$(printf 'translate: scan -- %s pages queued\n\nsrc: tamnd/brain@%s\nlang: %s' "$PENDING" "${SOURCE_SHA:0:12}" "$LANG")
+          git commit -m "$MSG"
           git push
