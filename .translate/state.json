@@ -3,11 +3,52 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": null,
+  "last_run": "2026-06-01T10:16:04.455126Z",
   "batch": 0,
   "translator": {
     "provider": "google",
     "model": "gpt-4o"
   },
-  "files": {}
+  "files": {
+    "content/en/_index.md": {
+      "source_hash": "sha256:7445704b53b6c8244cb9e429766dadb04800a8cb1cbbe8cd4f96fad8cd21ba3e",
+      "translated_at": "2026-06-01T10:12:38.190602Z",
+      "dest_path": "content/_index.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/calendar.md": {
+      "source_hash": "sha256:b9b8c21f65171c21808bbd4b55099476b35d2a94d4ab0c25777683f7249e95dc",
+      "translated_at": "2026-06-01T10:12:40.812731Z",
+      "dest_path": "content/calendar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/deep/_index.md": {
+      "source_hash": "sha256:87490f6875d9b7d320ef63a1291cb7c234ee6e42d4f456dbc49ae012d1b7fd85",
+      "translated_at": "2026-06-01T10:12:46.410580Z",
+      "dest_path": "content/deep/_index.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/deep/cpython/01/01.md": {
+      "source_hash": "sha256:53e456351a4e9e0e1dbc3d4c706ae8f711ff787afbbf8b2a17d13c9cdf79ca2b",
+      "translated_at": "2026-06-01T10:14:17.376102Z",
+      "dest_path": "content/deep/cpython/01/01.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/deep/cpython/01/02.md": {
+      "source_hash": "sha256:28266f553565627fae9058d6bcef0b990008422e9317ee46a382ccbf2e56094a",
+      "translated_at": "2026-06-01T10:16:04.455104Z",
+      "dest_path": "content/deep/cpython/01/02.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    }
+  }
 }
