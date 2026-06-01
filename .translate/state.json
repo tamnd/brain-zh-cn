@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-01T23:30:34.621906Z",
+  "last_run": "2026-06-01T23:59:42.443697Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -1006,6 +1006,86 @@
       "source_hash": "sha256:8e74552c8d5670ecb26b58f351f2df2570056cdb1008206835e5cfead0334152",
       "translated_at": "2026-06-01T23:30:34.621882Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/回.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/回答.md": {
+      "source_hash": "sha256:3bf21765af4e75bf5b251309e719028a7c1e3bb362c8a669ddbf4e520c1a4cbe",
+      "translated_at": "2026-06-01T23:59:05.908745Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/回答.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/因为.md": {
+      "source_hash": "sha256:8167028cafb6ca9c891cd656427669bee271d5c8a6afd04d5f883f13941f7014",
+      "translated_at": "2026-06-01T23:59:09.203171Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/因为.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/在.md": {
+      "source_hash": "sha256:32d1659d118007c7771b960affb3795d4aca78b48ea888760a2ab6b53cfd6c86",
+      "translated_at": "2026-06-01T23:59:14.081643Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/在.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/地方.md": {
+      "source_hash": "sha256:56007edb91e66cae93079dc579d5d74974a5cbb06b7bc7230ff7ac2c780cd7fb",
+      "translated_at": "2026-06-01T23:59:18.624664Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/地方.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/地铁.md": {
+      "source_hash": "sha256:2da53b35c95cf6e45d94bd6244f7c645c3e324db88c48b8543a1b315cb7a08ef",
+      "translated_at": "2026-06-01T23:59:22.426924Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/地铁.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/坐.md": {
+      "source_hash": "sha256:b544d6a753a418d0714782375a69d6d10e77afc4ed6e4a8ed3cbfa8d8fad8c67",
+      "translated_at": "2026-06-01T23:59:26.123953Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/坐.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/块.md": {
+      "source_hash": "sha256:40af00207ed24bdc57e99e60bad6e96ed7b4b6807daf8c75dda35b0f74bbf5f4",
+      "translated_at": "2026-06-01T23:59:31.508476Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/块.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/多.md": {
+      "source_hash": "sha256:b38333bc315827b0f854ee32344d274683965b8667d151f82d5ef6538a24da0d",
+      "translated_at": "2026-06-01T23:59:35.418526Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/多.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/大.md": {
+      "source_hash": "sha256:4d664654dc7405f7460b4d90cbb85910db8f0d25defc90ed5972cdecfedd65b2",
+      "translated_at": "2026-06-01T23:59:39.826809Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/大.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/天气.md": {
+      "source_hash": "sha256:026decdcf98e6bded80d91980aee5522a8f46f27cf533d8c514e8931d8e084e0",
+      "translated_at": "2026-06-01T23:59:42.443673Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/天气.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
