@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-01T22:43:54.386217Z",
+  "last_run": "2026-06-01T23:30:34.621906Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -926,6 +926,86 @@
       "source_hash": "sha256:670aef3da4fac517b6b0e740c776e36532cca6e7f07e2abaeae9bbf7081c21bc",
       "translated_at": "2026-06-01T22:43:54.386170Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/咖啡.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/哥哥.md": {
+      "source_hash": "sha256:80bf2f7798c9f3957b9d1114ea25962c01265cf2ad515dcf0f2d3d5e6de91153",
+      "translated_at": "2026-06-01T23:29:52.031439Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/哥哥.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/哪.md": {
+      "source_hash": "sha256:5a13d9996faae1a56dac46c396d71326016c78c88ea7eac8c8af3751a1815de0",
+      "translated_at": "2026-06-01T23:29:57.518511Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/哪.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/哪儿.md": {
+      "source_hash": "sha256:d07913e439bbb9777c96ecdfb0c1cd38c6e4bbe4b9b05ab0dfb4e71a3af5b487",
+      "translated_at": "2026-06-01T23:30:00.563323Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/哪儿.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/哪里.md": {
+      "source_hash": "sha256:df6c0a19ed90308a74bfc08bc69f3229074a0dfb0df406f88a5863b6ab20c159",
+      "translated_at": "2026-06-01T23:30:04.061064Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/哪里.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/唱.md": {
+      "source_hash": "sha256:da62516e507a08842a5640ded43534ccd7e80bb5b1179a221d38094542b2106d",
+      "translated_at": "2026-06-01T23:30:08.781162Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/唱.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/商店.md": {
+      "source_hash": "sha256:3a6b562194e3615e7508fd92df16b61fdc7c16f088ca7e084c6670db1377c657",
+      "translated_at": "2026-06-01T23:30:13.370682Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/商店.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/喜欢.md": {
+      "source_hash": "sha256:a2c3d11d1efedf34b97e48b5c1f4a2323b9af997d672ebfbd7dc4a69fb855089",
+      "translated_at": "2026-06-01T23:30:19.177052Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/喜欢.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/喝.md": {
+      "source_hash": "sha256:975b27bc60833a4f5f55381ed34a33afd80de1eae35b330e825f1632ce825f2e",
+      "translated_at": "2026-06-01T23:30:24.626515Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/喝.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/四.md": {
+      "source_hash": "sha256:6815daaa44c3082c4b456b266dbdae5270e537b26aa8792434e6a1839bf0fcf1",
+      "translated_at": "2026-06-01T23:30:29.386240Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/四.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/回.md": {
+      "source_hash": "sha256:8e74552c8d5670ecb26b58f351f2df2570056cdb1008206835e5cfead0334152",
+      "translated_at": "2026-06-01T23:30:34.621882Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/回.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
