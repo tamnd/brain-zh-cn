@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-01T12:24:32.435331Z",
+  "last_run": "2026-06-01T14:33:30.205056Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -366,6 +366,86 @@
       "source_hash": "sha256:315a265169d877df1c2e4722c839f9699a0c57613b83874df4d877b2bfb28489",
       "translated_at": "2026-06-01T12:24:32.435302Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/一点儿.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/七.md": {
+      "source_hash": "sha256:f62842eb2799ff60825fe38937dd64c145cd73f583f4b6bbab1d8ffddefef0eb",
+      "translated_at": "2026-06-01T14:33:04.707913Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/七.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/万.md": {
+      "source_hash": "sha256:0276a9187a0578f2be01f79d0c4b56f583b96eb32b1a37c8e67066120ab5a480",
+      "translated_at": "2026-06-01T14:33:06.823019Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/万.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/三.md": {
+      "source_hash": "sha256:9f620cce1448cf11511ac0e64a607ed74cb38060a8205de21f648db92e123933",
+      "translated_at": "2026-06-01T14:33:08.929867Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/三.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/上午.md": {
+      "source_hash": "sha256:40cafbf8c954588cf192af0188215fae46d735604d9d6c37344d50587890beac",
+      "translated_at": "2026-06-01T14:33:12.027216Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/上午.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/下午.md": {
+      "source_hash": "sha256:beea2fb914372e324f3da987a6d4bd237a4100055c9a79c97ea04bf282b7e0fc",
+      "translated_at": "2026-06-01T14:33:14.077452Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/下午.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/不.md": {
+      "source_hash": "sha256:13a1fc2b8ec2bb9ff87caad5c2caee2fb51b323f9aeb4b5a1b53463b236cbbf0",
+      "translated_at": "2026-06-01T14:33:17.646792Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/不.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/不客气.md": {
+      "source_hash": "sha256:10b740f4e353c3a90460b0e6f89d5c60e2933568bb7971e0c9c96e7dcadbdba4",
+      "translated_at": "2026-06-01T14:33:20.031005Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/不客气.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/不是.md": {
+      "source_hash": "sha256:5e0d4ddc49f32a2e59144364c6d7ed2200547cbfa3cd3af21e3745f2a0d7fd65",
+      "translated_at": "2026-06-01T14:33:23.316022Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/不是.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/东西.md": {
+      "source_hash": "sha256:3da369b4641345fb1d10ceb758dcdb8f78cde4ca3f934206c36cc1c0714ea14b",
+      "translated_at": "2026-06-01T14:33:26.968419Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/东西.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/两.md": {
+      "source_hash": "sha256:45c1910958d9e473750f2649846cc18207cb44ca638b73f80e9ee2a72920413f",
+      "translated_at": "2026-06-01T14:33:30.205028Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/两.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
