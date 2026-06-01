@@ -1,0 +1,73 @@
+name: Translate — Scan
+
+on:
+  schedule:
+    - cron: "0 17 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: translate-scan
+  cancel-in-progress: false
+
+env:
+  LANG: zh_CN
+  BASE_URL: "https://brain-zh-cn.tamnd.com/"
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6.0.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Clone brain (source)
+        run: git clone --depth=1 https://github.com/tamnd/brain.git /tmp/brain
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.1.0
+
+      - name: Sync layouts from brain (auto-fix /en/ paths)
+        run: |
+          rsync -av --delete /tmp/brain/layouts/ layouts/
+          rsync -av --delete /tmp/brain/themes/  themes/
+          rsync -av --delete /tmp/brain/static/  static/
+          sed -i 's|href="/en/|href="/|g' layouts/home.html
+
+      - name: Restore state
+        run: |
+          mkdir -p /tmp/bs/$LANG
+          [ -f .translate/state.json ] && cp .translate/state.json /tmp/bs/$LANG/state.json || true
+          [ -f .translate/queue.json ] && cp .translate/queue.json /tmp/bs/$LANG/queue.json || true
+          ln -sf "$GITHUB_WORKSPACE" /tmp/bs/$LANG/repo
+
+      - name: Scan for new/changed pages
+        env:
+          BRAIN_SOURCE_REPO: /tmp/brain
+          BRAIN_STATE_BASE: /tmp/bs
+          BRAIN_TRANSLATE_PROVIDER: google
+        run: |
+          cd /tmp/brain/scripts/translate
+          uv run brain-translate setup $LANG
+          uv run brain-translate scan $LANG
+          uv run brain-translate status $LANG
+
+      - name: Commit layouts + queue
+        run: |
+          mkdir -p .translate
+          cp /tmp/bs/$LANG/state.json .translate/state.json
+          cp /tmp/bs/$LANG/queue.json .translate/queue.json
+          git config user.name  "brain-translate[bot]"
+          git config user.email "bot@tamnd.com"
+          git add layouts/ themes/ static/ .translate/
+          git diff --cached --quiet && echo "nothing changed, skip" && exit 0
+          SOURCE_SHA=$(cd /tmp/brain && git rev-parse HEAD)
+          PENDING=$(python3 -c "import json; q=json.load(open('.translate/queue.json')); print(len(q.get('pending',[])))")
+          git commit -m "translate: scan -- ${PENDING} pages queued
+
+Source: tamnd/brain@${SOURCE_SHA:0:12}
+Lang: $LANG"
+          git push
