@@ -72,22 +72,24 @@ jobs:
           tago build --base-url "${{ env.BASE_URL }}"
           cp public/.tago-cache.db .tago-cache.db 2>/dev/null || true
 
-
       - name: Export source markdown for Accept:text/markdown support
         run: |
-          python3 - << 'PYEOF'
-import pathlib, shutil
-src = pathlib.Path('content')
-pub = pathlib.Path('public')
-count = 0
-for f in sorted(src.rglob('*.md')):
-    rel = f.relative_to(src)
-    dest = pub / (rel.parent / 'index.md' if rel.stem == '_index' else rel.parent / rel.stem / 'index.md')
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(f, dest)
-    count += 1
-print(f'Exported {count} markdown files to public/')
-PYEOF
+          cd content
+          find . -name "*.md" | while IFS= read -r f; do
+            rel="${f#./}"
+            dir="$(dirname "$rel")"
+            base="$(basename "$rel" .md)"
+            if [ "$base" = "_index" ]; then
+              dest="../public/$dir/index.md"
+            else
+              dest="../public/$dir/$base/index.md"
+            fi
+            mkdir -p "$(dirname "$dest")"
+            cp "$rel" "$dest"
+          done
+          cd ..
+          echo "Exported $(find public -name '*.md' | wc -l) markdown files to public/"
+
       - name: Remove oversized files before deploy
         run: find public -size +24M -print -delete
 
