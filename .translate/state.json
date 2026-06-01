@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-01T12:11:25.581014Z",
+  "last_run": "2026-06-01T12:18:37.318647Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -206,6 +206,86 @@
       "source_hash": "sha256:9639e98b7e781d3095924396f83e72103ea7caccc573f798aa69e72563880f75",
       "translated_at": "2026-06-01T12:11:25.580989Z",
       "dest_path": "content/deep/cpython/_index.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/docs/cheatsheet.md": {
+      "source_hash": "sha256:8936b7ceea89754433dac801877f90d13eeb4707580f88405b865d9df935e542",
+      "translated_at": "2026-06-01T12:17:50.777190Z",
+      "dest_path": "content/docs/cheatsheet.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/grammar.md": {
+      "source_hash": "sha256:585ac64d81c84fb1a6a91b30a467105407bb4aa203180d1701715719246bf128",
+      "translated_at": "2026-06-01T12:17:57.414598Z",
+      "dest_path": "content/languages/chinese/hsk/1/grammar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/01-greetings-introductions.md": {
+      "source_hash": "sha256:4fc2b9f5a94213f9d197c83b4e10a96e2b0a444159d41980808344338ec338ae",
+      "translated_at": "2026-06-01T12:18:03.920378Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/01-greetings-introductions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/02-numbers.md": {
+      "source_hash": "sha256:def7c8bdc9e4e6580f74606e555a50cb45eacc6fbe92daaf814f2533bb933fd5",
+      "translated_at": "2026-06-01T12:18:07.928673Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/02-numbers.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/03-family-members.md": {
+      "source_hash": "sha256:d7d2c09cd3aba4bd0a8ec417f09be036c21cc1bf3d156d64e05cdad1035ecc59",
+      "translated_at": "2026-06-01T12:18:12.356838Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/03-family-members.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/04-date-day-time.md": {
+      "source_hash": "sha256:7440c19779f44a4697cbdb9947ecd3080143f23756775538c54dc468857ef78b",
+      "translated_at": "2026-06-01T12:18:18.628374Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/04-date-day-time.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/05-location-direction.md": {
+      "source_hash": "sha256:8cb629be3340575412658312371fa3317b6948e1e7249009a10b7a10511b57c5",
+      "translated_at": "2026-06-01T12:18:23.318337Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/05-location-direction.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/06-food-drink.md": {
+      "source_hash": "sha256:0a858b255e944fce6b0d5b1cc8f6279e666c1bf48238425a27124f1e88e822cd",
+      "translated_at": "2026-06-01T12:18:27.408912Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/06-food-drink.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/07-shopping-money.md": {
+      "source_hash": "sha256:7e7def5ca574636c9f723a06cf42de2d79d1743ad18a629d0a4174282e32c54c",
+      "translated_at": "2026-06-01T12:18:32.729860Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/07-shopping-money.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/lessons/08-weather-seasons.md": {
+      "source_hash": "sha256:f2186f2fbeaf49aba024b7a4b6ac3e54685aeed9751e6a1f728d64602430c338",
+      "translated_at": "2026-06-01T12:18:37.318621Z",
+      "dest_path": "content/languages/chinese/hsk/1/lessons/08-weather-seasons.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
