@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-02T11:02:56.176651Z",
+  "last_run": "2026-06-02T12:45:35.887074Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -1646,6 +1646,86 @@
       "source_hash": "sha256:6fbd8f0953f6480e943f7107421e5213489a2f531667256a8710bcb7eefe8dec",
       "translated_at": "2026-06-02T11:02:56.176628Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/来.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/杯.md": {
+      "source_hash": "sha256:d7a4df67577d3e93bd42ac7b742aa33815963db5444c3f4cf8b42441417f4b5c",
+      "translated_at": "2026-06-02T12:45:12.235517Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/杯.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/桌子.md": {
+      "source_hash": "sha256:c4f0e372a3b5dbd7177b62075d42418ec42ab95dd7366e887f5cdb80b1d4a267",
+      "translated_at": "2026-06-02T12:45:13.971269Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/桌子.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/椅子.md": {
+      "source_hash": "sha256:0c3e6c04807b7063adcb39afbf07f69c71d7a671a3caf2511465c82c7cd75ed6",
+      "translated_at": "2026-06-02T12:45:17.028501Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/椅子.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/水.md": {
+      "source_hash": "sha256:29bab27c2134e999ae2e01c132c511aff4d0a5e26eb0c666d711aa3b6725e666",
+      "translated_at": "2026-06-02T12:45:18.776860Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/水.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/汉语.md": {
+      "source_hash": "sha256:fae4c12606fc1ef7189d3ed10d81548ffecb08564799ae629b9ec40a9c3cc4c5",
+      "translated_at": "2026-06-02T12:45:23.323428Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/汉语.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/没.md": {
+      "source_hash": "sha256:07b5b5c3d9a919249fbf9384e41a6f838b93df8e57318d6902ac4d18f56fce4e",
+      "translated_at": "2026-06-02T12:45:25.520541Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/没.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/没关系.md": {
+      "source_hash": "sha256:d16694b9ec77903176cd0a9e4cb2b9655e1c6bf616354bfcbe1a9bbd4c6bacdb",
+      "translated_at": "2026-06-02T12:45:29.189237Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/没关系.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/漂亮.md": {
+      "source_hash": "sha256:66841aa1d2368c9fee9bb74edf971724a45ba2ef8bbc01b08ffc6104d3b1b086",
+      "translated_at": "2026-06-02T12:45:30.659946Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/漂亮.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/火车.md": {
+      "source_hash": "sha256:1741a6039dd917a1e8b122fd0dbdaeff8ac22e626f5cca71f73accc280478505",
+      "translated_at": "2026-06-02T12:45:32.665927Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/火车.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/点.md": {
+      "source_hash": "sha256:193139a93a7501c9a1bfd218ea7a76abf31d78afec4455fe5bd7dd8b7186ef3e",
+      "translated_at": "2026-06-02T12:45:35.887051Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/点.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
