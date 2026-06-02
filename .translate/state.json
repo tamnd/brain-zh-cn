@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-01T23:59:42.443697Z",
+  "last_run": "2026-06-02T01:22:33.421502Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -1086,6 +1086,86 @@
       "source_hash": "sha256:026decdcf98e6bded80d91980aee5522a8f46f27cf533d8c514e8931d8e084e0",
       "translated_at": "2026-06-01T23:59:42.443673Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/天气.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/太.md": {
+      "source_hash": "sha256:b596aef72345e83c361baa98668d6643e98a8d2d51419fbd6938a860d74892f7",
+      "translated_at": "2026-06-02T01:22:01.302660Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/太.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/女人.md": {
+      "source_hash": "sha256:57ebd4c5901f09cdbeaf239b2d1e94be25f809d960c10d78971f04b97d6b28e9",
+      "translated_at": "2026-06-02T01:22:04.719099Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/女人.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/女儿.md": {
+      "source_hash": "sha256:77ed6bc5174a7693a97b993cea6083b904aed00f7bab5bd0397926b77045578b",
+      "translated_at": "2026-06-02T01:22:08.907821Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/女儿.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/她.md": {
+      "source_hash": "sha256:d97502fb6beb8a4393cca41d9d76e06d081d15c24db85ba30ebf22076d67ab80",
+      "translated_at": "2026-06-02T01:22:12.405087Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/她.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/她们.md": {
+      "source_hash": "sha256:20a90c7e6fd797d9bf8b7e5c6cb62509445e57f706f70280a2c299fc34cce205",
+      "translated_at": "2026-06-02T01:22:16.015949Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/她们.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/好.md": {
+      "source_hash": "sha256:ff3096cf7f88fc37a89c2f6bba07a66e63ba819cbdf36b2e8f51e8f6f67e18ff",
+      "translated_at": "2026-06-02T01:22:18.958935Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/好.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/好吃.md": {
+      "source_hash": "sha256:eb15082b207bc6bbd071186d5b990e24ca983bc7c0ddbcf328cc039a91e4e098",
+      "translated_at": "2026-06-02T01:22:22.574877Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/好吃.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/好的.md": {
+      "source_hash": "sha256:bb25f8646a683cf5c4374a1d98b74f266a2cab54616206168356130eb87816d0",
+      "translated_at": "2026-06-02T01:22:25.232316Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/好的.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/好看.md": {
+      "source_hash": "sha256:9e6bb4de2a501502c39b2341d187e118621e9fe2757e9ae3b514716058b2c476",
+      "translated_at": "2026-06-02T01:22:29.493371Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/好看.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/如果.md": {
+      "source_hash": "sha256:a9bfea3cbf64732b2534d62dd965f8c68c3bd65b0a3c10413bf1b68c0deb1fa0",
+      "translated_at": "2026-06-02T01:22:33.421478Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/如果.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
