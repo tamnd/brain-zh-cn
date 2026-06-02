@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-02T03:45:53.905668Z",
+  "last_run": "2026-06-02T05:31:44.958870Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -1326,6 +1326,86 @@
       "source_hash": "sha256:fb349e0728807db36e80ffe13367460409a48ac5a52ccd858c1c83f937d70b88",
       "translated_at": "2026-06-02T03:45:53.905645Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/开.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/开始.md": {
+      "source_hash": "sha256:0b2b622d6903641b512488d18bb291fab895d6b7c16447e51d2b4e3e099f8b89",
+      "translated_at": "2026-06-02T05:31:14.081612Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/开始.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/弟弟.md": {
+      "source_hash": "sha256:82b02795e514b0fca7dd6ff431abdcb21bcc51658b2989caf301871fea2b4dab",
+      "translated_at": "2026-06-02T05:31:16.506570Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/弟弟.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/张.md": {
+      "source_hash": "sha256:12276f4e372d3a6ecb8b55de011f18e923ad565ef1eccc839a3e80bd05cb40ff",
+      "translated_at": "2026-06-02T05:31:20.094891Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/张.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/很.md": {
+      "source_hash": "sha256:dd84a4f34a1c12e5ed70bd40ec6ca0deee2dfe95abcfeb81c6ba66c8c07950da",
+      "translated_at": "2026-06-02T05:31:23.604967Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/很.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/忙.md": {
+      "source_hash": "sha256:fe6503681b5379c443556e6289e7c78f113bb5ddee3aba0f4cad5ddf0d5d4878",
+      "translated_at": "2026-06-02T05:31:26.993813Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/忙.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/快.md": {
+      "source_hash": "sha256:f7bf6ec604785535fa076e0450e6ad934aecf0a30c152418c12a8d909475c0d9",
+      "translated_at": "2026-06-02T05:31:31.611685Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/快.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/怎么.md": {
+      "source_hash": "sha256:7124151c25b064d1d3c508641980d2e0c9cfeab367abbd5d6c2bc3fdff1a6a95",
+      "translated_at": "2026-06-02T05:31:34.862448Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/怎么.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/怎么样.md": {
+      "source_hash": "sha256:a6607fbb7ddf9d0c2d6a915a1062a3d39e35d4878c84cc3c69b07982c694c7a8",
+      "translated_at": "2026-06-02T05:31:37.816898Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/怎么样.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/您.md": {
+      "source_hash": "sha256:45cc33daabc7d3ef8b81ad470d3519febc684cccddb2ca27d601b82343a4da16",
+      "translated_at": "2026-06-02T05:31:42.317683Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/您.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/您好.md": {
+      "source_hash": "sha256:4a97d728f96704fdc8758548816bcaac590b5da79af269b9fdacf4f6449f7b81",
+      "translated_at": "2026-06-02T05:31:44.958846Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/您好.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
