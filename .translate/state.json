@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-02T07:32:51.189879Z",
+  "last_run": "2026-06-02T09:22:43.260105Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -1486,6 +1486,86 @@
       "source_hash": "sha256:573ad6dc48ddeb9b9170594f5bfdb8ae8eada47ef950e31ad86b4c3a7a935d13",
       "translated_at": "2026-06-02T07:32:51.189859Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/打.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/打电话.md": {
+      "source_hash": "sha256:271394f275a61c13793d9bc34a6d4909fa923379fe933ebe3a6245504517c32b",
+      "translated_at": "2026-06-02T09:22:21.395196Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/打电话.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/报纸.md": {
+      "source_hash": "sha256:b6c4b6f3409f4f8024e8971834d1cd03a4f592380dfce6d9acb615286640a346",
+      "translated_at": "2026-06-02T09:22:23.123314Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/报纸.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/教室.md": {
+      "source_hash": "sha256:8252651c82f9886bea5d402954d8061f402837b9aec213c7a5f687de6a9b25df",
+      "translated_at": "2026-06-02T09:22:25.471884Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/教室.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/新.md": {
+      "source_hash": "sha256:92a2cc63234a4d5c28ab68f6cf9fc4974ff2534d54d3bfee983171787fd07d17",
+      "translated_at": "2026-06-02T09:22:27.396142Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/新.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/日.md": {
+      "source_hash": "sha256:01c0e25651094c802f9ad241c143a8b567407e1f77401d1970436b6cb514c2aa",
+      "translated_at": "2026-06-02T09:22:29.930772Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/日.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/早上.md": {
+      "source_hash": "sha256:8769256a2f10ae3ae0efa28d6e4e966a926b71d00ea362c2513a9ab39a56afb2",
+      "translated_at": "2026-06-02T09:22:32.315175Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/早上.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/时候.md": {
+      "source_hash": "sha256:c8721390e84a4b7cfc065a92f046a767b1ef41895d906dc43343bad5d3b7c528",
+      "translated_at": "2026-06-02T09:22:35.729514Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/时候.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/明天.md": {
+      "source_hash": "sha256:16044374280144154045141c52609d563c5deff04b020127b709a1dd248d7cbd",
+      "translated_at": "2026-06-02T09:22:38.250905Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/明天.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/明天见.md": {
+      "source_hash": "sha256:e57b4e6e61e0909bef91af7811818c1c3566fde4b1de689c94683e57d4b16c37",
+      "translated_at": "2026-06-02T09:22:40.907400Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/明天见.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/星期.md": {
+      "source_hash": "sha256:03eac19a0454a96fe2f2e71785b82753ad7d0655f75ab6b5fc5c8e0d4d1d0d70",
+      "translated_at": "2026-06-02T09:22:43.260078Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/星期.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
