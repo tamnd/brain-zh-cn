@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-02T22:40:23.950283Z",
+  "last_run": "2026-06-02T23:32:41.015493Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -2286,6 +2286,86 @@
       "source_hash": "sha256:1f031bb5e37f6baca65432d8df1ebff78b4b6cbd9cdd1a93f7dc7befd37234a5",
       "translated_at": "2026-06-02T22:40:23.950260Z",
       "dest_path": "content/languages/chinese/hsk/2/grammar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/01-comparisons.md": {
+      "source_hash": "sha256:9d07585c3ee2bc886578a13b47fb052c84dbd6ca44fc0bdf4c1a54346a36fc7e",
+      "translated_at": "2026-06-02T23:31:56.433175Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/01-comparisons.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/02-directions-navigation.md": {
+      "source_hash": "sha256:2c44c2cc13fb60ecdf76039c81fd6d7924f008eebda0ea843f7cc1aaadfe0dc3",
+      "translated_at": "2026-06-02T23:32:02.284534Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/02-directions-navigation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/03-expressing-opinions.md": {
+      "source_hash": "sha256:b4b1ad73bfbce9c5d38c636094b371ba4dd37304e0824347ca5ce7864d296af2",
+      "translated_at": "2026-06-02T23:32:08.031867Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/03-expressing-opinions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/04-past-events.md": {
+      "source_hash": "sha256:726d831762944d3e1238b6fb1a335c34678f5eb756e4a5e40b741384f2fd2430",
+      "translated_at": "2026-06-02T23:32:12.615576Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/04-past-events.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/05-making-plans.md": {
+      "source_hash": "sha256:1d1b51dfac0a778034f8ccaee922d4841ae6b5f10ad7414b6b41e5a91798d678",
+      "translated_at": "2026-06-02T23:32:16.555114Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/05-making-plans.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/06-at-the-restaurant.md": {
+      "source_hash": "sha256:f68248ed89e749eaa90ad6601bcfed8ca59482067aba1879a9d6258a7e28fe98",
+      "translated_at": "2026-06-02T23:32:20.934962Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/06-at-the-restaurant.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/07-shopping-bargaining.md": {
+      "source_hash": "sha256:cfbff81d0d5c3f39199a0f94d9b9e779db2d1add134831b21697b4e21e101318",
+      "translated_at": "2026-06-02T23:32:25.585192Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/07-shopping-bargaining.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/08-health-doctor.md": {
+      "source_hash": "sha256:6134406df8cf5e62bb393ecbef17aa637cd256552a87735b868c0b42efcfd387",
+      "translated_at": "2026-06-02T23:32:30.547461Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/08-health-doctor.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/09-phone-communication.md": {
+      "source_hash": "sha256:6774967109e34bb25a7da839fe5942bd91455d9e07db5d976764b5fb4fd9ac7b",
+      "translated_at": "2026-06-02T23:32:35.474701Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/09-phone-communication.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/10-weather-deep-dive.md": {
+      "source_hash": "sha256:9afd0a6a35d688253aa20a1be7acb57ccbf15ce6beaf4300ad93aea6fdfee6b4",
+      "translated_at": "2026-06-02T23:32:41.015471Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/10-weather-deep-dive.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
