@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-02T15:49:16.753004Z",
+  "last_run": "2026-06-02T17:30:36.507375Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -1886,6 +1886,86 @@
       "source_hash": "sha256:1450382488896c921226a20e49437833f755decaa6eefa3e264197f9bd7f679b",
       "translated_at": "2026-06-02T15:49:16.752977Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/短.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/矮.md": {
+      "source_hash": "sha256:7af51b52d888acd1f35cf85d28339027a3f70e2a9541cbdf193bfb89e0b7ca72",
+      "translated_at": "2026-06-02T17:30:12.109061Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/矮.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/窗户.md": {
+      "source_hash": "sha256:62baa90cb233edfac6a7daf01b998f88381ef854dbcea4110a70d2462fe7f357",
+      "translated_at": "2026-06-02T17:30:13.512646Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/窗户.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/站.md": {
+      "source_hash": "sha256:70b0a9408242b227d3da6377175ba88c82e0bc7d2c360423a85efd4ac3db7691",
+      "translated_at": "2026-06-02T17:30:15.787447Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/站.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/第一.md": {
+      "source_hash": "sha256:d08833ac2a400f0e1f44f2a12f761cc807664457eb4a4b4e59f169712b2b744b",
+      "translated_at": "2026-06-02T17:30:18.444659Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/第一.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/米饭.md": {
+      "source_hash": "sha256:4289791e6047ba06c28816bbdcc3809af908d7ac0beb2fd42ce4ec214809bb94",
+      "translated_at": "2026-06-02T17:30:21.880788Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/米饭.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/累.md": {
+      "source_hash": "sha256:5e5914c7b1c4ec8a7d5236b471f07ceb1df4c8907853451bef46311aad95f873",
+      "translated_at": "2026-06-02T17:30:24.244992Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/累.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/结束.md": {
+      "source_hash": "sha256:89c227c400fbea5ee34ed2767a1ad37a98c4bf2c45e7f73751a6aaea51db1797",
+      "translated_at": "2026-06-02T17:30:26.421720Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/结束.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/给.md": {
+      "source_hash": "sha256:98f77d5341f7980eaf3fc968298a2e609eab51fb9d9f7a76e9dbc859c1c53d3a",
+      "translated_at": "2026-06-02T17:30:29.902429Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/给.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/老.md": {
+      "source_hash": "sha256:dd5ba3432ad4749c119034782e07cb05f260599440903fec54ff6163957ad822",
+      "translated_at": "2026-06-02T17:30:33.646475Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/老.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/老师.md": {
+      "source_hash": "sha256:806fbb00ffad84abb366c433525df6c9292bd0bfcf720cf0bd8fe9ef29de0c27",
+      "translated_at": "2026-06-02T17:30:36.507348Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/老师.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
