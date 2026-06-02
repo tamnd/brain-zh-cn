@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-02T02:18:32.322397Z",
+  "last_run": "2026-06-02T03:45:53.905668Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -1246,6 +1246,86 @@
       "source_hash": "sha256:73ab24ecd5aa2cabfccbbe4d5e92947e5eab3ceed2122909944dacdd29f485d5",
       "translated_at": "2026-06-02T02:18:32.322373Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/对不起.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/小.md": {
+      "source_hash": "sha256:47035a4b346240dea87e1e27f65649a6b6ceff2d7f6522f09f1d2b17be6f7271",
+      "translated_at": "2026-06-02T03:45:21.615948Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/小.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/少.md": {
+      "source_hash": "sha256:94800ceede44bf35d5dec71bd9e4f891ac12f29b0ffb85ea098bf1433d61f527",
+      "translated_at": "2026-06-02T03:45:27.014082Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/少.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/就.md": {
+      "source_hash": "sha256:84e257f6658616ca0c6bb707f81a411e830df55cd7a8fd70ba6588564ff65146",
+      "translated_at": "2026-06-02T03:45:30.271031Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/就.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/工作.md": {
+      "source_hash": "sha256:5e554a7e66e9cd40e0cfca9248cb6f6505575975ae81e23a752d3bd5876bdf7d",
+      "translated_at": "2026-06-02T03:45:34.045937Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/工作.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/已经.md": {
+      "source_hash": "sha256:97bcba926694ef266a79776fd504d7f04f976a5e006eb94305654471dc6c65b4",
+      "translated_at": "2026-06-02T03:45:38.330410Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/已经.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/帅.md": {
+      "source_hash": "sha256:2107e8a0fe75bbb980c4e00712f8e66df50867f97b3de1cc0391767f70ad776c",
+      "translated_at": "2026-06-02T03:45:41.166790Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/帅.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/帮.md": {
+      "source_hash": "sha256:4ea1d0a9a752aef493ab29fe82602437af9972793883c945d89de7fdd568cade",
+      "translated_at": "2026-06-02T03:45:45.300423Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/帮.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/年.md": {
+      "source_hash": "sha256:58745957319c69e17e95ec51ec9dc5f572efb241d1d263ef0f6f8e04c0a59450",
+      "translated_at": "2026-06-02T03:45:48.202670Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/年.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/床.md": {
+      "source_hash": "sha256:79eb87f439025fd3775ca76c5e59ca5777030f53b7e0fcb87909843591af9d86",
+      "translated_at": "2026-06-02T03:45:50.879013Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/床.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/开.md": {
+      "source_hash": "sha256:fb349e0728807db36e80ffe13367460409a48ac5a52ccd858c1c83f937d70b88",
+      "translated_at": "2026-06-02T03:45:53.905645Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/开.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
