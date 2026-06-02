@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-02T14:25:13.595569Z",
+  "last_run": "2026-06-02T15:49:16.753004Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -1806,6 +1806,86 @@
       "source_hash": "sha256:9d986b29f7a2eb4ec555e45fa036b3d75aa012bd676e3c3de1114265a15e274f",
       "translated_at": "2026-06-02T14:25:13.595544Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/电视.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/电话.md": {
+      "source_hash": "sha256:af650ef7769e1a49fd32a17bd62dc7475131bf74847ba9363ee27cd56367b9ca",
+      "translated_at": "2026-06-02T15:48:43.577940Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/电话.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/男人.md": {
+      "source_hash": "sha256:24afb045858c3cc5e16b105a3e803344862275503158c505d5701ef0ec20b16c",
+      "translated_at": "2026-06-02T15:48:46.497711Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/男人.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/百.md": {
+      "source_hash": "sha256:4e3b6849be3ff6bca5448472ab8028118e919a9f3566b6992b3064e93cddcc26",
+      "translated_at": "2026-06-02T15:48:50.960286Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/百.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/的.md": {
+      "source_hash": "sha256:27ec22e269939160ccb0e8d0950427ac8e9b58ef0ef09a3d87c7c84ca746bfae",
+      "translated_at": "2026-06-02T15:48:54.444458Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/的.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/看.md": {
+      "source_hash": "sha256:79f0804eca454acdab56fab3ef66d877cbdc0fd4e23c251a5e09df0affd8c718",
+      "translated_at": "2026-06-02T15:48:58.858737Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/看.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/看见.md": {
+      "source_hash": "sha256:0a1a0f2ee9f0bb1965191b43d55359008bb824ded62eadb9600e5b547c954080",
+      "translated_at": "2026-06-02T15:49:02.796420Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/看见.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/真.md": {
+      "source_hash": "sha256:8ca1e4af7127c474426f81f4fdc9c4b5b89e07ea1d93e4d72589cf58223a6620",
+      "translated_at": "2026-06-02T15:49:05.544454Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/真.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/睡觉.md": {
+      "source_hash": "sha256:c17c4a9862e7ec029e1b853864cc07d813cea791a6ffad0dd41b00e822e272ad",
+      "translated_at": "2026-06-02T15:49:10.316189Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/睡觉.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/知道.md": {
+      "source_hash": "sha256:b0aed1e09e6e660f258fa7cc435ea865f87c825f19904ea206051e6470848253",
+      "translated_at": "2026-06-02T15:49:12.344589Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/知道.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/短.md": {
+      "source_hash": "sha256:1450382488896c921226a20e49437833f755decaa6eefa3e264197f9bd7f679b",
+      "translated_at": "2026-06-02T15:49:16.752977Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/短.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
