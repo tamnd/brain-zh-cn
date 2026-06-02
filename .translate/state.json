@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-02T21:31:27.284282Z",
+  "last_run": "2026-06-02T22:40:23.950283Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -2206,6 +2206,86 @@
       "source_hash": "sha256:1ae611dcb3c0d40870a50c417793f43784d668de4be92937866451f45f81127f",
       "translated_at": "2026-06-02T21:31:27.284257Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/问题.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/难.md": {
+      "source_hash": "sha256:eb9a8eac27722b29510a65a9330a1694eb0d74bf73d6dc6aece2ec10915eccdc",
+      "translated_at": "2026-06-02T22:39:47.367557Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/难.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/零.md": {
+      "source_hash": "sha256:cfa8a92cdf028c54e6c7d6ff9637178ce119819583ca1a15b98a9abc97ecde7b",
+      "translated_at": "2026-06-02T22:39:51.490227Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/零.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/非常.md": {
+      "source_hash": "sha256:c8ae45fef6f6ddb5089fd22e9ed5b6cab746f8224a2a0abdfbb7945780032a3c",
+      "translated_at": "2026-06-02T22:39:54.815493Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/非常.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/面条.md": {
+      "source_hash": "sha256:b0d09fd06237fd1687e7860ee5dd58373c5a294015fed75fff6349f8c2b2dd76",
+      "translated_at": "2026-06-02T22:39:58.709663Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/面条.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/飞机.md": {
+      "source_hash": "sha256:55054aebcbc7802e7af7ee1525d558d1cc94070070d7a4d66f8417f4e08a9305",
+      "translated_at": "2026-06-02T22:40:02.279890Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/飞机.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/饭馆.md": {
+      "source_hash": "sha256:731707d2e3e57c45aaf9e981dc208eaaee84d24df619a2aa3be82e3c8eea12f7",
+      "translated_at": "2026-06-02T22:40:07.196570Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/饭馆.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/高.md": {
+      "source_hash": "sha256:6f250fcd6fc0bf1563f4e2fac6dc647007835d92cfba8a3a53ebdd595b29c06d",
+      "translated_at": "2026-06-02T22:40:10.269523Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/高.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/高兴.md": {
+      "source_hash": "sha256:c5b722b2111dea4dc07020b2951c97c6cd2a130ad9d50e1fc14d1b9b584ef2ad",
+      "translated_at": "2026-06-02T22:40:14.108934Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/高兴.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/鸡蛋.md": {
+      "source_hash": "sha256:78ed6099868707ff8d71da4c5a3a2df0ee8f7d81391abe6fac031a2abc50cbf3",
+      "translated_at": "2026-06-02T22:40:17.517803Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/鸡蛋.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/grammar.md": {
+      "source_hash": "sha256:1f031bb5e37f6baca65432d8df1ebff78b4b6cbd9cdd1a93f7dc7befd37234a5",
+      "translated_at": "2026-06-02T22:40:23.950260Z",
+      "dest_path": "content/languages/chinese/hsk/2/grammar.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
