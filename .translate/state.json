@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-02T12:45:35.887074Z",
+  "last_run": "2026-06-02T14:25:13.595569Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -1726,6 +1726,86 @@
       "source_hash": "sha256:193139a93a7501c9a1bfd218ea7a76abf31d78afec4455fe5bd7dd8b7186ef3e",
       "translated_at": "2026-06-02T12:45:35.887051Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/点.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/热.md": {
+      "source_hash": "sha256:28727177f33380865818e7d9c9ded8bebc7466cf4e8d1d1342757a46fd467dae",
+      "translated_at": "2026-06-02T14:24:43.121236Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/热.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/爸爸.md": {
+      "source_hash": "sha256:4381f684d48f574d83a8a24b2172c8648fc9b66f21aa9b3451a3d8697c8500ed",
+      "translated_at": "2026-06-02T14:24:48.406748Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/爸爸.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/狗.md": {
+      "source_hash": "sha256:0968f4af8c3a9f8bb3b2cffdc3092aa8a59752a374792c97e6013b6a013c0c68",
+      "translated_at": "2026-06-02T14:24:51.535536Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/狗.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/猫.md": {
+      "source_hash": "sha256:b6d80a76235523b36472b2a1eda3cca4d56cd79f0313b49710609ee465db476c",
+      "translated_at": "2026-06-02T14:24:55.474753Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/猫.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/玩.md": {
+      "source_hash": "sha256:c0162df370467c4746e4859db6ad33c69829def44bca5d72faeb37116010bfce",
+      "translated_at": "2026-06-02T14:24:58.989675Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/玩.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/现在.md": {
+      "source_hash": "sha256:61b3a097d1148d7edeba0f1d88f216cb3974a7db73dba2188ac0464e2ead1307",
+      "translated_at": "2026-06-02T14:25:01.669124Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/现在.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/瓶.md": {
+      "source_hash": "sha256:dc88541a64d8756ed69c9f63042afb6d5c437c2739819ba007cbb1db38251882",
+      "translated_at": "2026-06-02T14:25:05.392675Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/瓶.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/用.md": {
+      "source_hash": "sha256:a3673e4764bd61a128f1919a811d4beb3e2e5966ee42510142674c19f76cea2d",
+      "translated_at": "2026-06-02T14:25:08.978718Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/用.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/电脑.md": {
+      "source_hash": "sha256:c2165f9da04432984f8377dfea9ede9c33b4dac9e536296c70779df9cbb12467",
+      "translated_at": "2026-06-02T14:25:10.494249Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/电脑.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/电视.md": {
+      "source_hash": "sha256:9d986b29f7a2eb4ec555e45fa036b3d75aa012bd676e3c3de1114265a15e274f",
+      "translated_at": "2026-06-02T14:25:13.595544Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/电视.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
