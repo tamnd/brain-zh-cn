@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-02T01:22:33.421502Z",
+  "last_run": "2026-06-02T02:18:32.322397Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -1166,6 +1166,86 @@
       "source_hash": "sha256:a9bfea3cbf64732b2534d62dd965f8c68c3bd65b0a3c10413bf1b68c0deb1fa0",
       "translated_at": "2026-06-02T01:22:33.421478Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/如果.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/妈妈.md": {
+      "source_hash": "sha256:534fbf88e91f3b7cacdd2c4802b905acccacba9412cb4dc3938185dfdccaae63",
+      "translated_at": "2026-06-02T02:18:00.967461Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/妈妈.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/妹妹.md": {
+      "source_hash": "sha256:2dba85d18d02e149169672ed249a3508892efeb1b88b861e9a26dba23d12a8ce",
+      "translated_at": "2026-06-02T02:18:04.515272Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/妹妹.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/姐姐.md": {
+      "source_hash": "sha256:3311e543fd9d7982c9d3fa77ccbbc6cbf8b96e418097e5fdabc4497e0443620c",
+      "translated_at": "2026-06-02T02:18:07.652115Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/姐姐.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/学习.md": {
+      "source_hash": "sha256:01ae5f8614bbe7e1131b12e63bfe27286d57757b47355ed49626bfb143bfba58",
+      "translated_at": "2026-06-02T02:18:11.571717Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/学习.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/学校.md": {
+      "source_hash": "sha256:44b4a66c9ea9f5ae4527b980111d22c977f7e2608b1eb200797bfce786042548",
+      "translated_at": "2026-06-02T02:18:14.640488Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/学校.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/学生.md": {
+      "source_hash": "sha256:6f2c6534da3fdb47e19aa9032d83a2666695348c5c3311ba88648eeeecfd27c1",
+      "translated_at": "2026-06-02T02:18:17.620564Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/学生.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/它.md": {
+      "source_hash": "sha256:bfbd00ad3f690442122937cc6f92e4414f5a723908c9cfc583255a2969601c96",
+      "translated_at": "2026-06-02T02:18:21.010986Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/它.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/容易.md": {
+      "source_hash": "sha256:d2fa006ef06b5d1db15510a99d955d08f015794ca880f4985c6937ffe7283a0d",
+      "translated_at": "2026-06-02T02:18:24.613812Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/容易.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/对.md": {
+      "source_hash": "sha256:5f5e1959b3af436c49aa1bcd191a82b30334e8dc667d08574bc48e6370058b41",
+      "translated_at": "2026-06-02T02:18:28.985442Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/对.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/对不起.md": {
+      "source_hash": "sha256:73ab24ecd5aa2cabfccbbe4d5e92947e5eab3ceed2122909944dacdd29f485d5",
+      "translated_at": "2026-06-02T02:18:32.322373Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/对不起.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
