@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-02T17:30:36.507375Z",
+  "last_run": "2026-06-02T18:50:39.452774Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -1966,6 +1966,86 @@
       "source_hash": "sha256:806fbb00ffad84abb366c433525df6c9292bd0bfcf720cf0bd8fe9ef29de0c27",
       "translated_at": "2026-06-02T17:30:36.507348Z",
       "dest_path": "content/languages/chinese/hsk/1/vocabulary/老师.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/聪明.md": {
+      "source_hash": "sha256:22f044f6a05abbeefa84b6d408dc597a471a062c5ada4b8993447f46254a2233",
+      "translated_at": "2026-06-02T18:50:06.633235Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/聪明.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/英语.md": {
+      "source_hash": "sha256:dc53dfc4adff5856a31d67b89c6ecab76c712dc88bf407847bdac69362835ceb",
+      "translated_at": "2026-06-02T18:50:10.051584Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/英语.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/苹果.md": {
+      "source_hash": "sha256:2cc963b349d71869bd634f519ad8723f9bcd7bd83c035aca820b46293621895b",
+      "translated_at": "2026-06-02T18:50:12.372579Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/苹果.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/茶.md": {
+      "source_hash": "sha256:8d4155dc55b51ef9536c38cf38f2a40fffdf56553014c364d9cb01d4bd8acbef",
+      "translated_at": "2026-06-02T18:50:14.812280Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/茶.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/衣服.md": {
+      "source_hash": "sha256:ae5c4754e08b3b61bea7a7c9884355714cce7ff9387551b05ba8665c928b6b35",
+      "translated_at": "2026-06-02T18:50:19.159277Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/衣服.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/西瓜.md": {
+      "source_hash": "sha256:47b171af649203fc21ae34b1e9c15a9f01e4c727c9f52c3c35548f1280856977",
+      "translated_at": "2026-06-02T18:50:22.092342Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/西瓜.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/认识.md": {
+      "source_hash": "sha256:79ad15c1a4c2f5637f9412fbc3b608566c69e7d82f42817e56826f236fa5fc39",
+      "translated_at": "2026-06-02T18:50:26.650416Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/认识.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/说.md": {
+      "source_hash": "sha256:2c2b4cd8add602bdc340bbdac87a7bb0dccae0ec6590f0997c07f00139fe32a0",
+      "translated_at": "2026-06-02T18:50:30.053846Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/说.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/请.md": {
+      "source_hash": "sha256:4673a5a0b22b7132139d191107a62ca698c11cd8305aa0f37bf7ff79ea2a7a9f",
+      "translated_at": "2026-06-02T18:50:34.932035Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/请.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/1/vocabulary/请问.md": {
+      "source_hash": "sha256:fb5d7fea7309b02b6560f1e9b27327ca555947e283408d3e9f19f5f90eab9424",
+      "translated_at": "2026-06-02T18:50:39.452749Z",
+      "dest_path": "content/languages/chinese/hsk/1/vocabulary/请问.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
