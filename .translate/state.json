@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-03T00:37:31.027257Z",
+  "last_run": "2026-06-03T01:52:13.690266Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -2446,6 +2446,86 @@
       "source_hash": "sha256:7b4b10a73b54fcd1a797c3d52da9a2558322eb4c150e5e198931c746689aca33",
       "translated_at": "2026-06-03T00:37:31.027230Z",
       "dest_path": "content/languages/chinese/hsk/2/vocabulary/东西.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/为了.md": {
+      "source_hash": "sha256:a505c23a2097c13a68203454b65e57c6fe69f3374461259f1ce15b555afa6bf7",
+      "translated_at": "2026-06-03T01:51:44.631887Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/为了.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/买到.md": {
+      "source_hash": "sha256:7723aa647501be90e681778cdd9a7a7997c2c5997d74867aa3cbc684fc777e3c",
+      "translated_at": "2026-06-03T01:51:48.111201Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/买到.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/事情.md": {
+      "source_hash": "sha256:731d84714233f551351e8aeda5059f7603aabb05ccdab5b3ab18dcb4436b4c9a",
+      "translated_at": "2026-06-03T01:51:51.042222Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/事情.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/从.md": {
+      "source_hash": "sha256:8682c916778ad9d8482960a617f78ce269fae670ee41bf34de5588fe80d721d9",
+      "translated_at": "2026-06-03T01:51:54.078030Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/从.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/做好.md": {
+      "source_hash": "sha256:be725c71915a71099e15355b8d275b00609e8ae844fb2940930f065cb2ed2078",
+      "translated_at": "2026-06-03T01:51:57.366949Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/做好.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/健康.md": {
+      "source_hash": "sha256:96e92cd72df21bf86189b1750991096a98bb201350a781266ebe59d2d13fbfd4",
+      "translated_at": "2026-06-03T01:52:00.343347Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/健康.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/公司.md": {
+      "source_hash": "sha256:5708a96311c3f412950da5675115f89d9fcbebbc71602b5981e859431a89051d",
+      "translated_at": "2026-06-03T01:52:02.696313Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/公司.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/公斤.md": {
+      "source_hash": "sha256:bd6ebfbfeb1d3e72199e87c209c6535b182266fc119da00f7cc79f65dcaf4ab3",
+      "translated_at": "2026-06-03T01:52:06.153324Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/公斤.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/其实.md": {
+      "source_hash": "sha256:14f6479ceec162e249393af89f137f354380e1b71401589e16b10ba346c0c0cd",
+      "translated_at": "2026-06-03T01:52:09.465282Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/其实.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/再.md": {
+      "source_hash": "sha256:dff20b9f2474d4435798a5e28aac1568fa7eb95812111fe390807f1dee7e17e5",
+      "translated_at": "2026-06-03T01:52:13.690241Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/再.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
