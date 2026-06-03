@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-03T09:06:52.758793Z",
+  "last_run": "2026-06-03T11:14:49.597332Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -2846,6 +2846,86 @@
       "source_hash": "sha256:ed3a261ecde3bcfc85d57dd6bcbb9cfd246cd676430e927d690d1b8a6dc48166",
       "translated_at": "2026-06-03T09:06:52.758771Z",
       "dest_path": "content/languages/chinese/hsk/2/vocabulary/帮助.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/帽子.md": {
+      "source_hash": "sha256:aaf53ecf9428f88957af08e71cd040a9e8659688441bb26595c73165ea196f0b",
+      "translated_at": "2026-06-03T11:14:30.976237Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/帽子.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/干净.md": {
+      "source_hash": "sha256:11d3de5c6dd55211cfd57ed2e04e3e0e0546f2cf6139757b7857f7fff935c338",
+      "translated_at": "2026-06-03T11:14:33.974955Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/干净.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/应该.md": {
+      "source_hash": "sha256:2937b73edcb24249986c9b6cb945b684b346cc15b132c4bb8d139c71253c946b",
+      "translated_at": "2026-06-03T11:14:36.095504Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/应该.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/当然.md": {
+      "source_hash": "sha256:4a25b1deda9ec9087031cfc19c3f1c66c5b0933a3974e81f43eb29a3903a5d71",
+      "translated_at": "2026-06-03T11:14:37.478747Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/当然.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/快乐.md": {
+      "source_hash": "sha256:dfe690a8afdf837e2e0ce0f882086b68dec025d38bd8b77f08f1860daea8ffdb",
+      "translated_at": "2026-06-03T11:14:39.291440Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/快乐.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/总是.md": {
+      "source_hash": "sha256:3c662f3ba9531d785f531e45f3c6ddd6ef6903d5cc522ceb965baf668081d32d",
+      "translated_at": "2026-06-03T11:14:41.549084Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/总是.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/懂.md": {
+      "source_hash": "sha256:0473ea38ad59d971623278de66e97637e68370f69c49a5e32950f52a9c964a5a",
+      "translated_at": "2026-06-03T11:14:43.961091Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/懂.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/或者.md": {
+      "source_hash": "sha256:6688efed441ba96e92891623ca8e322c66f3f9161263a241dbac6c8f17d6d36e",
+      "translated_at": "2026-06-03T11:14:46.002144Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/或者.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/所以.md": {
+      "source_hash": "sha256:bb281f33691dfb1621cdfd419cf5889b92c5bb7f0bc9e7c4f278443d33c974b7",
+      "translated_at": "2026-06-03T11:14:47.897930Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/所以.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/打电话.md": {
+      "source_hash": "sha256:3d30f6ce0d7426373ac83fda2e2ceae0bbd87aed563097ff282bee9e312b909f",
+      "translated_at": "2026-06-03T11:14:49.597307Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/打电话.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
