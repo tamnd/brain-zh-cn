@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-03T01:52:13.690266Z",
+  "last_run": "2026-06-03T03:04:34.837618Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -2526,6 +2526,86 @@
       "source_hash": "sha256:dff20b9f2474d4435798a5e28aac1568fa7eb95812111fe390807f1dee7e17e5",
       "translated_at": "2026-06-03T01:52:13.690241Z",
       "dest_path": "content/languages/chinese/hsk/2/vocabulary/再.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/写完.md": {
+      "source_hash": "sha256:a40458ccae301beb7644f5bfb73eca509efd92b75d824ed68c6c17066b868cca",
+      "translated_at": "2026-06-03T03:04:06.937447Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/写完.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/出.md": {
+      "source_hash": "sha256:c9fdea07528bc6daaafe1b067e1d9db39d84454378174d25d5537aa24929f13f",
+      "translated_at": "2026-06-03T03:04:09.948379Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/出.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/刚才.md": {
+      "source_hash": "sha256:554279df37a88982552d70987823e9ba17c14359fc3ce16eea3c04df5a9d1883",
+      "translated_at": "2026-06-03T03:04:13.359102Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/刚才.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/别.md": {
+      "source_hash": "sha256:e35aa5a73d54c9786cecb1b7e3d96b1905f1a6c39b02e131da832eadc9e67ced",
+      "translated_at": "2026-06-03T03:04:15.315983Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/别.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/努力.md": {
+      "source_hash": "sha256:764ca3e60a33aef5fb58b62f28dca70c9fd8fd95cdb65fed48bf380705545112",
+      "translated_at": "2026-06-03T03:04:18.030345Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/努力.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/又.md": {
+      "source_hash": "sha256:c05baed394a6259e12d0e136b523415cf98448b9aa79e0cb769676a7add77d75",
+      "translated_at": "2026-06-03T03:04:20.433007Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/又.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/双.md": {
+      "source_hash": "sha256:191b534ecc6e5679af776897467de2811a912dee25e970a88b506a17e312d03a",
+      "translated_at": "2026-06-03T03:04:23.292968Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/双.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/只.md": {
+      "source_hash": "sha256:eddfec3459a2b27812a238c47847258a396ed782409619beea14d3e50db106d8",
+      "translated_at": "2026-06-03T03:04:27.124230Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/只.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/可以.md": {
+      "source_hash": "sha256:106a1260802aa90a35352015fe6b583c3498733842a111c622d4fc1cdcb30deb",
+      "translated_at": "2026-06-03T03:04:30.806076Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/可以.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/可能.md": {
+      "source_hash": "sha256:bf5a6e414f8e01c095ee48047e5f857cb0fa0626687e2c2466456b6ec62b0c52",
+      "translated_at": "2026-06-03T03:04:34.837596Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/可能.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
