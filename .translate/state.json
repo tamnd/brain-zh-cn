@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-03T21:01:26.181458Z",
+  "last_run": "2026-06-03T22:18:55.268010Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -3326,6 +3326,86 @@
       "source_hash": "sha256:abe3316baf2b430015884159b8cd0550563138989a0011b51e26a085b9680ced",
       "translated_at": "2026-06-03T21:01:26.181436Z",
       "dest_path": "content/languages/chinese/hsk/2/vocabulary/还是.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/迟到.md": {
+      "source_hash": "sha256:18014222bbe53c506ffe919ec7794e9dfa4446a582a61e6a45bcafb4b19c13c5",
+      "translated_at": "2026-06-03T22:18:21.780655Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/迟到.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/重要.md": {
+      "source_hash": "sha256:0a32c8efe3480905e59942d21d4ccc48c672afc221199b2a838522980d9e6226",
+      "translated_at": "2026-06-03T22:18:24.744900Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/重要.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/钱.md": {
+      "source_hash": "sha256:4b251aa05494291fcccf3c4c6d5c25b1b95ec4363d12e92d16ae1c5ddc28aee8",
+      "translated_at": "2026-06-03T22:18:26.789398Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/钱.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/错.md": {
+      "source_hash": "sha256:e77e9cbc8d828ec8df60a5dcd392ea14f87ca5f4d065521500807c514bc401bd",
+      "translated_at": "2026-06-03T22:18:31.208700Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/错.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/问题.md": {
+      "source_hash": "sha256:1078614cc5e1ea6cacce8f074decaa93e9fe4e15e0bfc2b40b0ca7bfcfa6ad62",
+      "translated_at": "2026-06-03T22:18:34.400646Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/问题.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/除了.md": {
+      "source_hash": "sha256:421ec8c017f8e5d30ec264a1d2375203f5124accaef96f5b9ad7fb88afa3a144",
+      "translated_at": "2026-06-03T22:18:37.149966Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/除了.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/面条.md": {
+      "source_hash": "sha256:50dd1eba880b445329740115e81844930bf62be2668325e172fa678ad8e17ef5",
+      "translated_at": "2026-06-03T22:18:41.256665Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/面条.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/题.md": {
+      "source_hash": "sha256:1edceb4fc0496a9dcf0b717b6c488bb80cb2fc4b4a5035a70b12e764d8862d83",
+      "translated_at": "2026-06-03T22:18:45.904621Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/题.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/首.md": {
+      "source_hash": "sha256:e9cd9041ec059cc744f0af2df92359b0d420b2dafaf70ef089fedbcf4f0c7cf9",
+      "translated_at": "2026-06-03T22:18:50.217149Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/首.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/黑.md": {
+      "source_hash": "sha256:d65cd3ccea87b5a3d6bb943215e826536d1711819335f10696b1cd792e2bd0d6",
+      "translated_at": "2026-06-03T22:18:55.267989Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/黑.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
