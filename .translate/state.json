@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-03T22:18:55.268010Z",
+  "last_run": "2026-06-03T23:11:30.862042Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -3406,6 +3406,86 @@
       "source_hash": "sha256:d65cd3ccea87b5a3d6bb943215e826536d1711819335f10696b1cd792e2bd0d6",
       "translated_at": "2026-06-03T22:18:55.267989Z",
       "dest_path": "content/languages/chinese/hsk/2/vocabulary/黑.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/grammar.md": {
+      "source_hash": "sha256:57a1378e82ac1200558100601e51517eb224fc195a4a9436f106fb68c129b179",
+      "translated_at": "2026-06-03T23:11:00.772321Z",
+      "dest_path": "content/languages/chinese/hsk/3/grammar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/01-ba-construction.md": {
+      "source_hash": "sha256:7822c49661b1b11801c50727f41ebc03c21493eb50fe91e540024efc28cdecff",
+      "translated_at": "2026-06-03T23:11:04.641803Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/01-ba-construction.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/02-passive-bei.md": {
+      "source_hash": "sha256:caf89e74e4b256141a66996e526cd7f3c6fad2c154145ee1d47ec75d03432c12",
+      "translated_at": "2026-06-03T23:11:07.459895Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/02-passive-bei.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/03-result-complements.md": {
+      "source_hash": "sha256:c3701307a9d0a40e326de699199d68e7a70cab36933c1846fb7820f18cf0ca3f",
+      "translated_at": "2026-06-03T23:11:11.060303Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/03-result-complements.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/04-direction-complements.md": {
+      "source_hash": "sha256:96d2b2e5a5e3986255ad85ce5952c6c6d86b83c874a320d21ed78b9ff6fa28c5",
+      "translated_at": "2026-06-03T23:11:14.577897Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/04-direction-complements.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/05-potential-complements.md": {
+      "source_hash": "sha256:bf53fb939c5344511a9356f98d559a5404cf97482fa181c5fd4d86edb417d605",
+      "translated_at": "2026-06-03T23:11:17.635009Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/05-potential-complements.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/06-concessive-causal.md": {
+      "source_hash": "sha256:f5ea794bcc43ec45d421fee155a6b9d26cf0634135976bef309ffcc75c91ba82",
+      "translated_at": "2026-06-03T23:11:21.100473Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/06-concessive-causal.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/07-conditional-sentences.md": {
+      "source_hash": "sha256:ed0eb6ec6ba23a7f674300aadab8650680063d309a0d5bdbfe7cab8cc69898c4",
+      "translated_at": "2026-06-03T23:11:24.586665Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/07-conditional-sentences.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/08-simultaneous-actions.md": {
+      "source_hash": "sha256:111eaa8f5d85ea2f23e15d82c5a6dd9c268fedbf91bc25b674eb22de7fd50a0a",
+      "translated_at": "2026-06-03T23:11:28.510136Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/08-simultaneous-actions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/09-sequence-expressions.md": {
+      "source_hash": "sha256:c62aa740e388ceb1c251389f3c9e1217f76d3f297bd3f4f0c863a00dc296676c",
+      "translated_at": "2026-06-03T23:11:30.862015Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/09-sequence-expressions.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
