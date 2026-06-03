@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-03T14:36:29.698247Z",
+  "last_run": "2026-06-03T16:32:59.093035Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -3086,6 +3086,86 @@
       "source_hash": "sha256:ba1920a923fcdb68b2784e1b25f9f9667f9c7e6bad8734a026824c5c7601e1b3",
       "translated_at": "2026-06-03T14:36:29.698224Z",
       "dest_path": "content/languages/chinese/hsk/2/vocabulary/满意.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/热情.md": {
+      "source_hash": "sha256:a395a096956e5ca577021d42f8d692c75670216c4ec401567a0cbbe48c17fd49",
+      "translated_at": "2026-06-03T16:32:28.145353Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/热情.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/然后.md": {
+      "source_hash": "sha256:08132122c37f910cea84c223e25bc297db58c8582e646856bb9c5bae34e62f30",
+      "translated_at": "2026-06-03T16:32:31.404691Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/然后.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/爬山.md": {
+      "source_hash": "sha256:00c5d3b8ae425f3c63fe4b0e835a22b87709375b38ca8e6f671346f89b07c136",
+      "translated_at": "2026-06-03T16:32:36.340861Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/爬山.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/特别.md": {
+      "source_hash": "sha256:23b7ade270334e1d171aeb0bb05df1052042e0398af53f0dad69c6b236042728",
+      "translated_at": "2026-06-03T16:32:40.255679Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/特别.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/生气.md": {
+      "source_hash": "sha256:7a3b6af40157699b0dc1e24c029f41a0ae0fba72bceec658e7f1afc55d795a6c",
+      "translated_at": "2026-06-03T16:32:43.691625Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/生气.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/生病.md": {
+      "source_hash": "sha256:6560ab24b2777c863447fd2a05ee4edc687f85aa33fc7f0dfc782ba6917d4bc3",
+      "translated_at": "2026-06-03T16:32:47.263421Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/生病.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/用.md": {
+      "source_hash": "sha256:8cad46a2bab2f660e8955eb21dc474eb828ae80ced50865b04509f8d279e5c5a",
+      "translated_at": "2026-06-03T16:32:49.159375Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/用.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/男.md": {
+      "source_hash": "sha256:8c14631e5d1914f9beb3ecaff282e60eaba59a6cb58487505d77c37d5de06f03",
+      "translated_at": "2026-06-03T16:32:52.055993Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/男.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/画.md": {
+      "source_hash": "sha256:3d306ed94cb5c413089aadef79171a7e4ffec9947df83abb4b404f38e302c9d7",
+      "translated_at": "2026-06-03T16:32:55.852063Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/画.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/白.md": {
+      "source_hash": "sha256:dd395c182500dbe749ce88c96888c407ebe48e9547912ed33cd46cbd2301d2f7",
+      "translated_at": "2026-06-03T16:32:59.093012Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/白.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
