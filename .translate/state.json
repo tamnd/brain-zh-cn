@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-02T23:32:41.015493Z",
+  "last_run": "2026-06-03T00:37:31.027257Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -2366,6 +2366,86 @@
       "source_hash": "sha256:9afd0a6a35d688253aa20a1be7acb57ccbf15ce6beaf4300ad93aea6fdfee6b4",
       "translated_at": "2026-06-02T23:32:41.015471Z",
       "dest_path": "content/languages/chinese/hsk/2/lessons/10-weather-deep-dive.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/11-home-living.md": {
+      "source_hash": "sha256:6202634cf7b7efce64984c35cce41d56c7620ca689508474647ec638b247a959",
+      "translated_at": "2026-06-03T00:36:59.530904Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/11-home-living.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/12-work-colleagues.md": {
+      "source_hash": "sha256:83d21e3d080697f5732058fdb905e80c46f930179026b6f35d645be314e286ad",
+      "translated_at": "2026-06-03T00:37:04.079048Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/12-work-colleagues.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/13-talking-about-the-past.md": {
+      "source_hash": "sha256:43d02b5536bc4a6ae1b649cbccba1c8858614fc0d7b6466553af499adbe2f4ee",
+      "translated_at": "2026-06-03T00:37:07.588774Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/13-talking-about-the-past.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/14-feelings-emotions.md": {
+      "source_hash": "sha256:346e1e02fbd80423805cf87a94bcc561c7f039e13eb6c09122dc25c4402d78b3",
+      "translated_at": "2026-06-03T00:37:11.567730Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/14-feelings-emotions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/lessons/15-hsk2-review.md": {
+      "source_hash": "sha256:63b23ca1636cd0084eb53441ccf5ccb0286ac3014e71d2044f065a2436d2369f",
+      "translated_at": "2026-06-03T00:37:15.061874Z",
+      "dest_path": "content/languages/chinese/hsk/2/lessons/15-hsk2-review.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary.md": {
+      "source_hash": "sha256:a8630ac67290ed1d1176ecdffc81068bb7109cc07f4c70f7780c10b941286a60",
+      "translated_at": "2026-06-03T00:37:21.527647Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/一起.md": {
+      "source_hash": "sha256:9dadc4dae9ced2440bea9e7ac3a38a3e4692d8767cde315e651bb4b6e1ff3945",
+      "translated_at": "2026-06-03T00:37:24.207878Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/一起.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/上班.md": {
+      "source_hash": "sha256:fdc872a0f88152a472c8522cc3a6c78bb725bb91121d538dc8241db271876df4",
+      "translated_at": "2026-06-03T00:37:26.438966Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/上班.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/不客气.md": {
+      "source_hash": "sha256:7f1f5b03204f0d7095bb6488bd163411a4a83fa46eeed32cad35376c93c76b7f",
+      "translated_at": "2026-06-03T00:37:28.530841Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/不客气.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/东西.md": {
+      "source_hash": "sha256:7b4b10a73b54fcd1a797c3d52da9a2558322eb4c150e5e198931c746689aca33",
+      "translated_at": "2026-06-03T00:37:31.027230Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/东西.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
