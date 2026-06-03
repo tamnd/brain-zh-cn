@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-03T05:10:40.991056Z",
+  "last_run": "2026-06-03T07:09:27.610888Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -2686,6 +2686,86 @@
       "source_hash": "sha256:cf9daeb3e92e65ba95963fceb16eeef0d7dd4cc9e234356d107e47b6897f8e2e",
       "translated_at": "2026-06-03T05:10:40.991033Z",
       "dest_path": "content/languages/chinese/hsk/2/vocabulary/国家.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/地方.md": {
+      "source_hash": "sha256:e09f9ade2df50f13c3420fb3398b83c965ab7770cfa858f337e16b081c038bbc",
+      "translated_at": "2026-06-03T07:08:55.588332Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/地方.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/坏.md": {
+      "source_hash": "sha256:bfeb3d8ac5250d55365f56ebd10a340d74f8ab8f5b333dc8a673c0bec0baabbc",
+      "translated_at": "2026-06-03T07:08:59.386057Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/坏.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/城市.md": {
+      "source_hash": "sha256:59f571669b7d7e52ca36c0afffa3e4fe434953179041206718c567dec712d47b",
+      "translated_at": "2026-06-03T07:09:04.450421Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/城市.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/声音.md": {
+      "source_hash": "sha256:177a15494c3252dd2d7168e427d2944a68156caf4b944153f68b4326f882e4d9",
+      "translated_at": "2026-06-03T07:09:06.729671Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/声音.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/外.md": {
+      "source_hash": "sha256:bb7438cbb88d3d811ce63dc439022925f8a6c0fc7fb0821d31934857248e8180",
+      "translated_at": "2026-06-03T07:09:09.566286Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/外.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/多么.md": {
+      "source_hash": "sha256:50ae1dbe74b763e6285d01b74fc8ab81cfc1f39125962abf1dde9751e3e6f8df",
+      "translated_at": "2026-06-03T07:09:13.327053Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/多么.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/大家.md": {
+      "source_hash": "sha256:957d1c8c2decc68bcf7b8fcc43f708ce0dd68190366096f7d3fe8ac13464153f",
+      "translated_at": "2026-06-03T07:09:16.628917Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/大家.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/女.md": {
+      "source_hash": "sha256:05e7917ebb7b463f620a13f4b5c05b3d4df1c2e83d27933dc30400b980591d92",
+      "translated_at": "2026-06-03T07:09:20.276405Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/女.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/奶奶.md": {
+      "source_hash": "sha256:288a3af02f792354c145a98725fffae68c5b07f478443237df848f06890a707a",
+      "translated_at": "2026-06-03T07:09:23.743589Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/奶奶.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/季节.md": {
+      "source_hash": "sha256:ee3a0861f67980b17df4cee0be319c14dec5c4cb9bc49c24b45512cdff29758e",
+      "translated_at": "2026-06-03T07:09:27.610864Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/季节.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
