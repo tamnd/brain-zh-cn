@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-03T19:47:56.918050Z",
+  "last_run": "2026-06-03T21:01:26.181458Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -3246,6 +3246,86 @@
       "source_hash": "sha256:ea49e64aa09174a42ad89b67d14cc43b2f2dd3333fe8c4d808c88c0c04ef1b39",
       "translated_at": "2026-06-03T19:47:56.918026Z",
       "dest_path": "content/languages/chinese/hsk/2/vocabulary/花.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/觉得.md": {
+      "source_hash": "sha256:3b69f8b83b051de450c490b2527f31a3971b294db7d6242346bd64bf9c86aef4",
+      "translated_at": "2026-06-03T21:00:39.531906Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/觉得.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/认为.md": {
+      "source_hash": "sha256:783cfcb0e960f330b148ec1fea90e9b9c64a63c65acc8adebcd62e62181f11d3",
+      "translated_at": "2026-06-03T21:00:43.232065Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/认为.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/认真.md": {
+      "source_hash": "sha256:6b386b554eb3ccc7499d9eb020df6f97fa669b37d99443e0f7f2405795431d41",
+      "translated_at": "2026-06-03T21:00:45.265972Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/认真.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/让.md": {
+      "source_hash": "sha256:4c29d0883da94f90a150a58329be72d2b1c8ec910a164a249a39b4ab8ad788bd",
+      "translated_at": "2026-06-03T21:00:49.874477Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/让.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/记得.md": {
+      "source_hash": "sha256:dda137c2040a25cf18c9c8d61c804c6fdfea6d98c127e799ec692d8eb05930cb",
+      "translated_at": "2026-06-03T21:00:54.283801Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/记得.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/请.md": {
+      "source_hash": "sha256:c1e4f6dcba323137b6789a43786e1128996c1579a04148c7a334f6f0c5bdfdc1",
+      "translated_at": "2026-06-03T21:01:03.932110Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/请.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/贵.md": {
+      "source_hash": "sha256:dce86b0acf81aa46aa2b32059dad556af9088fa99e657bfdc73c7fe0e397b642",
+      "translated_at": "2026-06-03T21:01:07.553921Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/贵.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/跑步.md": {
+      "source_hash": "sha256:15b14cc56ccad4c1f2f7317ff408789fc13eb25310029dd00a86df1d113a9362",
+      "translated_at": "2026-06-03T21:01:11.360983Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/跑步.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/身体.md": {
+      "source_hash": "sha256:67c32aa75014374d086b224c1c9d32b687711e36f42d557cd037c61dcb999f81",
+      "translated_at": "2026-06-03T21:01:15.595167Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/身体.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/2/vocabulary/还是.md": {
+      "source_hash": "sha256:abe3316baf2b430015884159b8cd0550563138989a0011b51e26a085b9680ced",
+      "translated_at": "2026-06-03T21:01:26.181436Z",
+      "dest_path": "content/languages/chinese/hsk/2/vocabulary/还是.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
