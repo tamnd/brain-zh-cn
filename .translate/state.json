@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-04T12:32:59.158779Z",
+  "last_run": "2026-06-04T14:01:10.955568Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -4206,6 +4206,86 @@
       "source_hash": "sha256:63b6adebbab744df46de835e52fd580f4b1774d186f9ec2851c77ab1d305c544",
       "translated_at": "2026-06-04T12:32:59.158754Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/准备.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/准时.md": {
+      "source_hash": "sha256:8fb53d8e4bcb4c5c4bfa8c2b0e41f8c052a6570613f61843e3cad00c0b631750",
+      "translated_at": "2026-06-04T14:00:38.540086Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/准时.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/减少.md": {
+      "source_hash": "sha256:6ffa62a2f9aed23e6f597040dd96b89becccf96c56ef3901e9e45579b8537fec",
+      "translated_at": "2026-06-04T14:00:41.598753Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/减少.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/几乎.md": {
+      "source_hash": "sha256:aa9ba65e45a3c95b13ff0a3c0275f6b3a9a1d6e5e269ea0e76315c2595287df1",
+      "translated_at": "2026-06-04T14:00:45.494323Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/几乎.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/出发.md": {
+      "source_hash": "sha256:49f84d1175a2888bd7f4463c8f0d7b3c3dcd683cbaaa1436f976ec081f38c11f",
+      "translated_at": "2026-06-04T14:00:50.615103Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/出发.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/出现.md": {
+      "source_hash": "sha256:2450f754955b920e7701eaa076160ea763d5aa4246d1bced69f77b91d9155a43",
+      "translated_at": "2026-06-04T14:00:54.655591Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/出现.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/分.md": {
+      "source_hash": "sha256:8acfb072923f8d4cb92532d019c07bbbf5db434c6b7cf74c0303dfe5de084327",
+      "translated_at": "2026-06-04T14:00:57.965809Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/分.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/分别.md": {
+      "source_hash": "sha256:9ad180d84331b9133766e02dd70c2c9288ed89be7758a5e61c3cdda2064df081",
+      "translated_at": "2026-06-04T14:01:01.189336Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/分别.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/分钟.md": {
+      "source_hash": "sha256:894c0453e877c6454bca38a3e0d2d3036cece1d4e4b075a868d8c3ca04365556",
+      "translated_at": "2026-06-04T14:01:04.077606Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/分钟.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/刚.md": {
+      "source_hash": "sha256:56110c309b72272f26b036453537f0cc5e8d26a05063e52a8f29a5c62659df67",
+      "translated_at": "2026-06-04T14:01:06.814719Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/刚.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/判断.md": {
+      "source_hash": "sha256:17a4ab0a563ac75b1c44685bb278a8d79770c099e61f2ddfda3b564982354cfa",
+      "translated_at": "2026-06-04T14:01:10.955545Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/判断.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
