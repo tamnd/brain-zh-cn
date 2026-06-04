@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-03T23:11:30.862042Z",
+  "last_run": "2026-06-04T00:06:32.639441Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -3486,6 +3486,86 @@
       "source_hash": "sha256:c62aa740e388ceb1c251389f3c9e1217f76d3f297bd3f4f0c863a00dc296676c",
       "translated_at": "2026-06-03T23:11:30.862015Z",
       "dest_path": "content/languages/chinese/hsk/3/lessons/09-sequence-expressions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/10-duration-frequency.md": {
+      "source_hash": "sha256:b8e87e987cff3b634763ef18c5f60e7bcbbf1662c5018bd10d52a7c2b0857681",
+      "translated_at": "2026-06-04T00:05:33.323516Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/10-duration-frequency.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/11-festivals.md": {
+      "source_hash": "sha256:d1b833ed07032b949ed981c7734aa94c70ec2d17c6b5c4547be61d93c5b98607",
+      "translated_at": "2026-06-04T00:05:36.551625Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/11-festivals.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/12-travel-tourism.md": {
+      "source_hash": "sha256:878e81aab679cc6d59c801865005db08ebc129b5113468ba983d93185deb04e9",
+      "translated_at": "2026-06-04T00:05:39.414926Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/12-travel-tourism.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/13-health-wellness.md": {
+      "source_hash": "sha256:ae7dfd7769537f7437fbfd00db4fe395815154956e0523b089fd047a4527c372",
+      "translated_at": "2026-06-04T00:05:41.822939Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/13-health-wellness.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/14-study-career.md": {
+      "source_hash": "sha256:dcb0a0d829ed29edccb9b8117903ca83ff41c33d177221de058a4704648e7e5f",
+      "translated_at": "2026-06-04T00:05:44.702762Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/14-study-career.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/15-describing-people.md": {
+      "source_hash": "sha256:8911914d14edecccc39978920450f56c781dedfd7c09453534230dcc457b1f31",
+      "translated_at": "2026-06-04T00:05:48.757610Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/15-describing-people.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/16-media-technology.md": {
+      "source_hash": "sha256:130d4a33bda254af3552cb972b6da99e5c1c28da260a5cbc7aa4643b63e654dd",
+      "translated_at": "2026-06-04T00:05:54.770245Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/16-media-technology.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/17-environment-nature.md": {
+      "source_hash": "sha256:7d9974c1df40bb76f33ac08e077c745cbbbb657838eb39d1245f1b7183f4b2cf",
+      "translated_at": "2026-06-04T00:06:00.344992Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/17-environment-nature.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/lessons/18-review.md": {
+      "source_hash": "sha256:a52603ed63d8b7138e23e5801614d06f473c9de271d92d77b5c37f1061a86a1f",
+      "translated_at": "2026-06-04T00:06:05.311343Z",
+      "dest_path": "content/languages/chinese/hsk/3/lessons/18-review.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary.md": {
+      "source_hash": "sha256:7a541f8635a75b0234edf2ce72974898407ec79af0a80b3b21ad46aa62cae1f6",
+      "translated_at": "2026-06-04T00:06:32.639411Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
