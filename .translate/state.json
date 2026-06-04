@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-04T19:41:21.322056Z",
+  "last_run": "2026-06-04T20:41:06.163473Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -4686,6 +4686,86 @@
       "source_hash": "sha256:301dc103ef4df49e023b5a92d785f69f3672a2f740f67c377fa1440942a372da",
       "translated_at": "2026-06-04T19:41:21.322027Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/后悔.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/向.md": {
+      "source_hash": "sha256:c4f8481fde6e220c59687591205bd42724eaa1cbd23619b8143f3faa49d221a0",
+      "translated_at": "2026-06-04T20:40:27.614319Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/向.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/否则.md": {
+      "source_hash": "sha256:c59153f213d7c1ae10be8603eeda7fe68f7cf1c3995e38de3a3baf3a31a0943d",
+      "translated_at": "2026-06-04T20:40:33.683984Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/否则.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/听懂.md": {
+      "source_hash": "sha256:12b22662b145242d27630e97d4c92415c8b0722e34e013183ec46d1dfe8d3494",
+      "translated_at": "2026-06-04T20:40:37.085500Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/听懂.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/周末.md": {
+      "source_hash": "sha256:31de1290ec3e65ba60df24fcf049a3752d4bc9235bda317fb1c19719e2d423ff",
+      "translated_at": "2026-06-04T20:40:41.129384Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/周末.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/哭.md": {
+      "source_hash": "sha256:5f6340448d731a0536cdf5e6e5f07ec0a2b40ffaeecfa84362f16bd4a16d7f3b",
+      "translated_at": "2026-06-04T20:40:46.045876Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/哭.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/嘴.md": {
+      "source_hash": "sha256:e337a3357f143df270d9a7bf0ad5cabc2c327a7bb559fdcf1f46720b3b8e3fcd",
+      "translated_at": "2026-06-04T20:40:49.461910Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/嘴.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/回忆.md": {
+      "source_hash": "sha256:290adfde371363b52de32a9e1fe66df601288259ac83e0071b3b96b581164d27",
+      "translated_at": "2026-06-04T20:40:53.394041Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/回忆.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/回答.md": {
+      "source_hash": "sha256:d65a410f43f8913303ca737405d093c41631d70e82c1a00dcdb365952ae9bc33",
+      "translated_at": "2026-06-04T20:40:57.360616Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/回答.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/因此.md": {
+      "source_hash": "sha256:a333d878308d626a43405d915364073a1853865e3eb6185ca6bc3e19dd9fe8df",
+      "translated_at": "2026-06-04T20:41:02.619966Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/因此.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/困.md": {
+      "source_hash": "sha256:f53e8c38754a8fa960553096c6082aacdb505be68b6759f0a10f52cd9c5e805b",
+      "translated_at": "2026-06-04T20:41:06.163450Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/困.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
