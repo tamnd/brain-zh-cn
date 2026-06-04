@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-04T00:06:32.639441Z",
+  "last_run": "2026-06-04T01:36:56.222834Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -3566,6 +3566,86 @@
       "source_hash": "sha256:7a541f8635a75b0234edf2ce72974898407ec79af0a80b3b21ad46aa62cae1f6",
       "translated_at": "2026-06-04T00:06:32.639411Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/一定.md": {
+      "source_hash": "sha256:d5857971943af7a0eb03e2c48eccb40588f133b0a702e5f828e65ed0909f1d2b",
+      "translated_at": "2026-06-04T01:36:28.960815Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/一定.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/一直.md": {
+      "source_hash": "sha256:f0c05b98f493d357419dbe0bffea5e79219905d4668e968169960d602b31cad2",
+      "translated_at": "2026-06-04T01:36:31.139478Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/一直.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/不但.md": {
+      "source_hash": "sha256:fa4988a06f0d06538c1128d896942c043766a7ca01f57ed9cf51473f86fcb60c",
+      "translated_at": "2026-06-04T01:36:34.142068Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/不但.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/不但…而且….md": {
+      "source_hash": "sha256:99e8a2164d19cb7e81e51cebd41ae38d1325b88b182b0b186d4b2f1621ab4e09",
+      "translated_at": "2026-06-04T01:36:36.507475Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/不但…而且….md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/不好意思.md": {
+      "source_hash": "sha256:95feb9214231866c7545602822aa9fce2b7d5ddc46f0663ca66d35dd5c2adce5",
+      "translated_at": "2026-06-04T01:36:39.943733Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/不好意思.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/不得不.md": {
+      "source_hash": "sha256:1af41aefe9771192e2924f15fbfb29cd604baa9a8757987cc7133c0e77cc6ffb",
+      "translated_at": "2026-06-04T01:36:43.399177Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/不得不.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/不必.md": {
+      "source_hash": "sha256:587aa3f5f5362609f1e47e0ab1c6c479f5d00a7facac4e6e628d024182e70029",
+      "translated_at": "2026-06-04T01:36:45.539113Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/不必.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/不管.md": {
+      "source_hash": "sha256:87ac98b50cbe1ce331a432d3bf1c58f841755afde99c5721ea5a3da658af8102",
+      "translated_at": "2026-06-04T01:36:47.728035Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/不管.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/不过.md": {
+      "source_hash": "sha256:eaf9d71449087155d8a27689b7a820be9927b6bdf30c45a87e1853aba33c3336",
+      "translated_at": "2026-06-04T01:36:54.394510Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/不过.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/专业.md": {
+      "source_hash": "sha256:452386660c2b04ca3905e4ff084603bc2919d05a778f048ed82288eef2e4faf9",
+      "translated_at": "2026-06-04T01:36:56.222809Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/专业.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
