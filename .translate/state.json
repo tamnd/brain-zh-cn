@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-04T01:36:56.222834Z",
+  "last_run": "2026-06-04T03:03:45.407690Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -3646,6 +3646,86 @@
       "source_hash": "sha256:452386660c2b04ca3905e4ff084603bc2919d05a778f048ed82288eef2e4faf9",
       "translated_at": "2026-06-04T01:36:56.222809Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/专业.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/丢.md": {
+      "source_hash": "sha256:03c8cee1cccd1c73b6f47754771abb09f2100251c0a95a9124a611f26d2c0110",
+      "translated_at": "2026-06-04T03:03:25.577281Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/丢.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/严格.md": {
+      "source_hash": "sha256:dcaf17b49afc7b63a0b45a0f6cb7023bd18ed0f6ccc2a67cc494b181e6057f92",
+      "translated_at": "2026-06-04T03:03:27.836502Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/严格.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/中心.md": {
+      "source_hash": "sha256:f261c1409d9edb76f5e8598712a5d73d6a95cba0c68dfd3920371b20a9b9b8af",
+      "translated_at": "2026-06-04T03:03:29.649749Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/中心.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/中间.md": {
+      "source_hash": "sha256:3dd00ea173a563a24c99bdbcf9f05569cb83521a012f6663626baecd08af45a5",
+      "translated_at": "2026-06-04T03:03:32.499400Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/中间.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/丰富.md": {
+      "source_hash": "sha256:68cc63892fa9d6e58e4b87930df506521738a55e68923168a7ad5cedcb637f21",
+      "translated_at": "2026-06-04T03:03:34.652189Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/丰富.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/为了.md": {
+      "source_hash": "sha256:92a18761de853034a103d3a14f12ea1ae2caca32802d6040ade5fe2d17263c83",
+      "translated_at": "2026-06-04T03:03:36.395157Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/为了.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/主人.md": {
+      "source_hash": "sha256:788ad19c56f5a3870fd1e90403f50bda8d498939488fc45f76a6612fd02350b7",
+      "translated_at": "2026-06-04T03:03:38.615618Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/主人.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/主动.md": {
+      "source_hash": "sha256:6ec9659580d14ac4a9d34182d677a8bf6b78e68b5c39a04c0a51d6038cff71b6",
+      "translated_at": "2026-06-04T03:03:40.743048Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/主动.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/主要.md": {
+      "source_hash": "sha256:d3f357017614927bce84b625aae4dfbf6bd4cf35557f1d842683f5e7c2272fee",
+      "translated_at": "2026-06-04T03:03:42.714025Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/主要.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/举.md": {
+      "source_hash": "sha256:92a2ba61e9a1dbb4c0ae4c32d808943fee91b3347ceea4c2e5b50e7b52e89784",
+      "translated_at": "2026-06-04T03:03:45.407662Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/举.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
