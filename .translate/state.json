@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-04T08:46:17.829360Z",
+  "last_run": "2026-06-04T10:17:30.001812Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -3966,6 +3966,86 @@
       "source_hash": "sha256:de1d4301b33225144df58e197a8d49e7ac292302cadcba8676e3ad39a49d7349",
       "translated_at": "2026-06-04T08:46:17.829337Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/作用.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/保护.md": {
+      "source_hash": "sha256:029a9bb2edad282eb16fbf8cdfe7fb459f8f9a12df1257a1b3eef538c811ef41",
+      "translated_at": "2026-06-04T10:17:00.366816Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/保护.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/保证.md": {
+      "source_hash": "sha256:15afaab5b03495362d2eca4093a1a3df2356e74c577f94dd7ab0e6c7a334dde2",
+      "translated_at": "2026-06-04T10:17:03.065160Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/保证.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/信封.md": {
+      "source_hash": "sha256:7cebf42c35739d90b5316cd4db6dc1df98f15cdc9125280f8fdef74eb6195275",
+      "translated_at": "2026-06-04T10:17:06.551360Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/信封.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/信息.md": {
+      "source_hash": "sha256:42339e46c28af481cb6862a2f9402b73edab61d96c8af9e7ae258089a674d869",
+      "translated_at": "2026-06-04T10:17:09.376519Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/信息.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/信用卡.md": {
+      "source_hash": "sha256:e7d01ec37677b591f7d6c20e67bba611ea69e6d80729550f8f017ffbb6eca80f",
+      "translated_at": "2026-06-04T10:17:12.816398Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/信用卡.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/修.md": {
+      "source_hash": "sha256:58246784bb6e5e85887bb527e57c340cbf67140130f45495068f48b7b33fc7f1",
+      "translated_at": "2026-06-04T10:17:16.811068Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/修.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/倒.md": {
+      "source_hash": "sha256:52a38e46372e9fe871f63b6183e383e0f44d9f24aa0a2ac52dd282b73df3982c",
+      "translated_at": "2026-06-04T10:17:20.852841Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/倒.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/借.md": {
+      "source_hash": "sha256:726c77380edd1e85e9504a26764c8fa2b0aa02ce1781b0f840f155dfbaa79706",
+      "translated_at": "2026-06-04T10:17:23.533457Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/借.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/假日.md": {
+      "source_hash": "sha256:ad99a401ee5c24973a6e0f9f2e5cc17bb16dfab4a3ba9459cd57ed0c7f3c623b",
+      "translated_at": "2026-06-04T10:17:26.865589Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/假日.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/假期.md": {
+      "source_hash": "sha256:79e73941d9e682dbe26c1f75a7183a22171f6b2514fe90dc56a68b8596d145ee",
+      "translated_at": "2026-06-04T10:17:30.001789Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/假期.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
