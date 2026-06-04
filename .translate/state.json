@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-04T15:40:12.155711Z",
+  "last_run": "2026-06-04T17:00:28.412985Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -4366,6 +4366,86 @@
       "source_hash": "sha256:934bafd6586e90aac5fbc720a253dd4cd0dbb7447fa936ff8e89129acffff6a5",
       "translated_at": "2026-06-04T15:40:12.155685Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/包子.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/包括.md": {
+      "source_hash": "sha256:db841d287385e9d317118106ef604e09b11c11a56a2ffc3ef61084081f2f8936",
+      "translated_at": "2026-06-04T16:59:59.875054Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/包括.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/十分.md": {
+      "source_hash": "sha256:01db0f0e4f1057a8601c4d820bb72235981d388bb93ff0febe355b46390574fe",
+      "translated_at": "2026-06-04T17:00:03.185233Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/十分.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/单位.md": {
+      "source_hash": "sha256:effde65d02f30e0aab93a4824808fb5a9983d42d52258306a6f9dfb7520fe469",
+      "translated_at": "2026-06-04T17:00:05.706347Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/单位.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/印象.md": {
+      "source_hash": "sha256:df006dec9ff5355b0aee84ac38d1139f2149d7168e771aadd882adbd301d2c3f",
+      "translated_at": "2026-06-04T17:00:08.380554Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/印象.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/危险.md": {
+      "source_hash": "sha256:590f97720e7fd8a5146fcf2eb41a3a68dd9f337c72cfd51ada74b761494bd2c2",
+      "translated_at": "2026-06-04T17:00:11.659735Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/危险.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/即使.md": {
+      "source_hash": "sha256:229093ed58b929adcc81933590630d175c63c08015c8a665a4d79c320b084cb2",
+      "translated_at": "2026-06-04T17:00:14.365367Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/即使.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/厉害.md": {
+      "source_hash": "sha256:14cc92ccdab072b4ae04dd27bb98f13bee646381857ad814bd86afc4f09f8db6",
+      "translated_at": "2026-06-04T17:00:21.000161Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/厉害.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/原则.md": {
+      "source_hash": "sha256:f9fc75794f2a6de8d6b0bbb1c1e83bc011356f7deb232a6c9376a7907b536ad7",
+      "translated_at": "2026-06-04T17:00:23.521023Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/原则.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/原因.md": {
+      "source_hash": "sha256:3e3052097cbee18c53d6377c75399c52621c98c6961d675f652b15963c33642c",
+      "translated_at": "2026-06-04T17:00:25.580559Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/原因.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/原来.md": {
+      "source_hash": "sha256:c5b01f6d4f9c9fccf710ee4379f67d7a44998fce423e9a0cf7fc348d26480c1d",
+      "translated_at": "2026-06-04T17:00:28.412959Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/原来.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
