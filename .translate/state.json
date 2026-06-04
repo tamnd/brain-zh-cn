@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-04T20:41:06.163473Z",
+  "last_run": "2026-06-04T21:31:35.243069Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -4766,6 +4766,86 @@
       "source_hash": "sha256:f53e8c38754a8fa960553096c6082aacdb505be68b6759f0a10f52cd9c5e805b",
       "translated_at": "2026-06-04T20:41:06.163450Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/困.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/困难.md": {
+      "source_hash": "sha256:89569bd1a64c74e2b1409af8c4fdba6103f1cea58ae9499a032a77ebb567587a",
+      "translated_at": "2026-06-04T21:30:58.434967Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/困难.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/图书馆.md": {
+      "source_hash": "sha256:761bea0f916d6359be1ba933a30c9079116c9704fc6dbabb2bd25198bc62691f",
+      "translated_at": "2026-06-04T21:31:02.404001Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/图书馆.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/在乎.md": {
+      "source_hash": "sha256:062e683f16c262ff4324d8a8ed92a7f2af5af141a95ee53b459c2c6546b14cd1",
+      "translated_at": "2026-06-04T21:31:06.151285Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/在乎.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/地图.md": {
+      "source_hash": "sha256:3d3513f97f9382d300570004bf5a71427852026c36061118dc2630e7851fa5e3",
+      "translated_at": "2026-06-04T21:31:11.352707Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/地图.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/地方.md": {
+      "source_hash": "sha256:9437825965f37c169b761d3512cc9d9b623c5698ff05ae307be0960483478ffb",
+      "translated_at": "2026-06-04T21:31:14.806810Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/地方.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/城市.md": {
+      "source_hash": "sha256:b4c8e66dd6bfe7116423514432facd39f9abd1b9125597ee7921ae3d17e7c310",
+      "translated_at": "2026-06-04T21:31:18.598310Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/城市.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/增加.md": {
+      "source_hash": "sha256:f4ba3dc8f73c12a8df6b0d53643b913ea9acd659f464dec1fb72d1f95167685a",
+      "translated_at": "2026-06-04T21:31:22.485723Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/增加.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/增长.md": {
+      "source_hash": "sha256:a8c9625d2aaab7578dc09844220df7327bf9c144e6c60bacb5a55e01a8980cb1",
+      "translated_at": "2026-06-04T21:31:27.891477Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/增长.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/声音.md": {
+      "source_hash": "sha256:5389d4fb372f0fe79b1d96e66d89d8323a729488f1abf36ad9c00d52686c675a",
+      "translated_at": "2026-06-04T21:31:31.279850Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/声音.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/复习.md": {
+      "source_hash": "sha256:ea918dad60b73d0719709fb72d2e67a82da9a6274d19cd1437aca906a5d19986",
+      "translated_at": "2026-06-04T21:31:35.243046Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/复习.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
