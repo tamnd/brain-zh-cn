@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-04T14:01:10.955568Z",
+  "last_run": "2026-06-04T15:40:12.155711Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -4286,6 +4286,86 @@
       "source_hash": "sha256:17a4ab0a563ac75b1c44685bb278a8d79770c099e61f2ddfda3b564982354cfa",
       "translated_at": "2026-06-04T14:01:10.955545Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/判断.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/到处.md": {
+      "source_hash": "sha256:98c3db9f1957cdb9171536305a29335d9964ac8408b4b05bf64f0e563f914b7a",
+      "translated_at": "2026-06-04T15:39:48.154866Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/到处.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/办公室.md": {
+      "source_hash": "sha256:103825603ecff6a480fc9c4b15c35820a2b97e4df9ff3b1a0f319c82013f3e37",
+      "translated_at": "2026-06-04T15:39:50.150655Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/办公室.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/加油.md": {
+      "source_hash": "sha256:e387945f29d6818fe3cb648016a072e14b992f6c6b6b6fcca685666dc36d340a",
+      "translated_at": "2026-06-04T15:39:52.755994Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/加油.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/加班.md": {
+      "source_hash": "sha256:da4e380578a55e6dfda6922ed022831de762956d9219c658a7283a9f26f1b6c4",
+      "translated_at": "2026-06-04T15:39:55.059640Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/加班.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/动作.md": {
+      "source_hash": "sha256:9e3700610729237b669e40766f347d02c728f6625dbbd152adeaae385008b794",
+      "translated_at": "2026-06-04T15:39:59.596644Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/动作.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/动词+不／得+结果.md": {
+      "source_hash": "sha256:bad1e55013118cf8c8ab056f241332146ee48ce2ae46f8a35b00b20132582189",
+      "translated_at": "2026-06-04T15:40:03.537559Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/动词+不／得+结果.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/动词+得+adj.md": {
+      "source_hash": "sha256:d2bd16064d4a0c103cc3c6643933fbea5d1d347f72ad797572f74379a7541070",
+      "translated_at": "2026-06-04T15:40:05.498145Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/动词+得+adj.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/努力.md": {
+      "source_hash": "sha256:f9d42340f85f77fc0fb820b098da7ea21c6ed7afdc4e5bfca0e06efd1c42725a",
+      "translated_at": "2026-06-04T15:40:07.990703Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/努力.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/勤奋.md": {
+      "source_hash": "sha256:dee0ca383727b9a24cacc069949381548008e0dbce7ddbe7c6648548f693005a",
+      "translated_at": "2026-06-04T15:40:10.147184Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/勤奋.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/包子.md": {
+      "source_hash": "sha256:934bafd6586e90aac5fbc720a253dd4cd0dbb7447fa936ff8e89129acffff6a5",
+      "translated_at": "2026-06-04T15:40:12.155685Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/包子.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
