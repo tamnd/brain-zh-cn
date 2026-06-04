@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-04T18:55:43.922284Z",
+  "last_run": "2026-06-04T19:41:21.322056Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -4606,6 +4606,86 @@
       "source_hash": "sha256:e74e903a05c7996186eea1746fb7f7ed964689b223bdd8f0d22cd7f8a1835a5f",
       "translated_at": "2026-06-04T18:55:43.922256Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/可惜.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/可爱.md": {
+      "source_hash": "sha256:8dd6e5294bffd10d3f4897c05f38c201f2d16d555cc5d80b675cb043114b806b",
+      "translated_at": "2026-06-04T19:40:57.029139Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/可爱.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/可能.md": {
+      "source_hash": "sha256:a61f32f7bbd34d8e2308081716535ffe6c68434cf54406f6172b241d234085c7",
+      "translated_at": "2026-06-04T19:41:00.148785Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/可能.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/号码.md": {
+      "source_hash": "sha256:3cfd82d7f13db3978e6bdc724a9fac985f000453a19f8f367e762ec976a50e94",
+      "translated_at": "2026-06-04T19:41:02.528155Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/号码.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/各.md": {
+      "source_hash": "sha256:497f6818ecd4f8a08b4bbe2ea5a0f246e7d4e74b189f23b2455b68064a88d4a1",
+      "translated_at": "2026-06-04T19:41:05.174362Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/各.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/各种.md": {
+      "source_hash": "sha256:93b6a652b3d4a900c460c9f82c15fae298f6d6ae28da77e02101197f84d05688",
+      "translated_at": "2026-06-04T19:41:07.664389Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/各种.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/合适.md": {
+      "source_hash": "sha256:cdf170544486f13853204fc53398d00caf5f43d987038a790a241c9a0774222c",
+      "translated_at": "2026-06-04T19:41:10.346870Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/合适.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/同事.md": {
+      "source_hash": "sha256:eba0482df1b36ada43fa10abf5f98686006dd111776f3ea762fca3afb29e9855",
+      "translated_at": "2026-06-04T19:41:12.703763Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/同事.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/同意.md": {
+      "source_hash": "sha256:5c78652489620bb472e9db8de3db7b4148db7b25b067553ee6d9a66d0dbe19e8",
+      "translated_at": "2026-06-04T19:41:15.254158Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/同意.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/名字.md": {
+      "source_hash": "sha256:1fcca42da3bfd9d91443e1f18db1ae2cadf8e08e4a3756247ecdde5e9c4a7773",
+      "translated_at": "2026-06-04T19:41:18.601945Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/名字.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/后悔.md": {
+      "source_hash": "sha256:301dc103ef4df49e023b5a92d785f69f3672a2f740f67c377fa1440942a372da",
+      "translated_at": "2026-06-04T19:41:21.322027Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/后悔.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
