@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-04T10:17:30.001812Z",
+  "last_run": "2026-06-04T11:30:44.079665Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -4046,6 +4046,86 @@
       "source_hash": "sha256:79e73941d9e682dbe26c1f75a7183a22171f6b2514fe90dc56a68b8596d145ee",
       "translated_at": "2026-06-04T10:17:30.001789Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/假期.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/做完.md": {
+      "source_hash": "sha256:8b02d74afbed9d32dac1d0c29436aa172833eb567c050f3c3a8a8941da8dc58f",
+      "translated_at": "2026-06-04T11:30:13.189234Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/做完.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/偶尔.md": {
+      "source_hash": "sha256:c672bed02e729c2d7bc30817053f85ec437beebbca2b9bcec7ef97b698513f6e",
+      "translated_at": "2026-06-04T11:30:15.337060Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/偶尔.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/允许.md": {
+      "source_hash": "sha256:f4dd2aec81119e6b7b43c8288f013527caf1135f1301f88eb70a871a13504aef",
+      "translated_at": "2026-06-04T11:30:17.330584Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/允许.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/公园.md": {
+      "source_hash": "sha256:c7b726633512e073e60670b236fc56f73b0fb46b154ddada35afd350d8b103d2",
+      "translated_at": "2026-06-04T11:30:20.052057Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/公园.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/共同.md": {
+      "source_hash": "sha256:09de20e7509f8271121257ebe28b1b3d683cbde57e07cfd1526c9023dc936231",
+      "translated_at": "2026-06-04T11:30:22.506600Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/共同.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/关于.md": {
+      "source_hash": "sha256:79431fc994ce794df91d382cca57e1877948bed64957f32013431d3552b46d49",
+      "translated_at": "2026-06-04T11:30:24.002457Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/关于.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/关心.md": {
+      "source_hash": "sha256:783a799cbe71b9b92e0b0c2d0a7a79a0d39a6309ac0d5c9762a735d808396ff6",
+      "translated_at": "2026-06-04T11:30:26.161883Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/关心.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/关系.md": {
+      "source_hash": "sha256:c91c695c56e49ba99f333561f10e07a1dfa43a1de2c5d39c490f7fcd7331f17d",
+      "translated_at": "2026-06-04T11:30:34.587117Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/关系.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/关键.md": {
+      "source_hash": "sha256:891440e0fa8b25a191b58a4fd5df7ae210edcc05357a9e8495d8265c6140212e",
+      "translated_at": "2026-06-04T11:30:41.160867Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/关键.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/兴趣.md": {
+      "source_hash": "sha256:cfb1a722b479cbbac3a323a68369e1296e80fe14e4a35677cd2e738ff663499c",
+      "translated_at": "2026-06-04T11:30:44.079642Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/兴趣.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
