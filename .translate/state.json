@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-04T21:31:35.243069Z",
+  "last_run": "2026-06-04T22:29:05.863791Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -4846,6 +4846,86 @@
       "source_hash": "sha256:ea918dad60b73d0719709fb72d2e67a82da9a6274d19cd1437aca906a5d19986",
       "translated_at": "2026-06-04T21:31:35.243046Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/复习.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/复杂.md": {
+      "source_hash": "sha256:d9e8846b6b16a7d4274eecf4a52a84aa2cb499dec2bbd2c5c0a9fb9c3d0feedc",
+      "translated_at": "2026-06-04T22:28:39.985803Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/复杂.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/外国.md": {
+      "source_hash": "sha256:372c7f4c90cb86882f6b2254febd4acbcbbd9921fc0f7dbf1afb2d56d048c740",
+      "translated_at": "2026-06-04T22:28:44.484529Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/外国.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/大夫.md": {
+      "source_hash": "sha256:9dcecdfff5d5921af937bf7ab91d24d80cac05c240888694a69f922131c01c01",
+      "translated_at": "2026-06-04T22:28:47.567576Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/大夫.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/大方.md": {
+      "source_hash": "sha256:316195edeadbb9685047ae31782bab2f27f3d7d1b47fa3e415d78301857b21ef",
+      "translated_at": "2026-06-04T22:28:50.452523Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/大方.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/大概.md": {
+      "source_hash": "sha256:8b754a9b32823707ccf9c2e2f941588ce6461cf7a898525b61718f639ef71c94",
+      "translated_at": "2026-06-04T22:28:52.484701Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/大概.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/大约.md": {
+      "source_hash": "sha256:0119886796d8335b07cd819213b27af0428271cafc971e2409079cc58625721f",
+      "translated_at": "2026-06-04T22:28:54.407540Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/大约.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/失望.md": {
+      "source_hash": "sha256:141d64a663089544e624c70b869bc52f0560a062a91b99e61f7187312338a05a",
+      "translated_at": "2026-06-04T22:28:56.758751Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/失望.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/头疼.md": {
+      "source_hash": "sha256:4275ed5c8619ac4eabe7469410109cee9c6211496fa6e37caa3a1a0e3ea32119",
+      "translated_at": "2026-06-04T22:28:58.975019Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/头疼.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/奇怪.md": {
+      "source_hash": "sha256:4db2783f2884582a3f9f63d7e8e2705c9896012904b0ee667dccfb24c351bc98",
+      "translated_at": "2026-06-04T22:29:00.586480Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/奇怪.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/好不容易.md": {
+      "source_hash": "sha256:3f98a3ce23763f36ba8e09b371fe0f60f39948761dee3a87f2d819d023fec006",
+      "translated_at": "2026-06-04T22:29:05.863766Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/好不容易.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
