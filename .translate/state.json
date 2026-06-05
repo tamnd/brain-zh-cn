@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-05T01:42:07.295896Z",
+  "last_run": "2026-06-05T03:02:54.729969Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -5326,6 +5326,86 @@
       "source_hash": "sha256:98989db05a3354c5c1f501737fa4c7e5cfcfc548985ccaf834bad02ee0dbd7e9",
       "translated_at": "2026-06-05T01:42:07.295875Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/感情.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/感激.md": {
+      "source_hash": "sha256:89bb3d3a157278231f60483846123331fbad3cd255397a967c605c13e1764a71",
+      "translated_at": "2026-06-05T03:02:29.194080Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/感激.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/感觉.md": {
+      "source_hash": "sha256:1c7e1095df5d9d31e92a7edacb6ff541ff6f5af83c0c48e8f64bfa980b3f51b6",
+      "translated_at": "2026-06-05T03:02:32.255770Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/感觉.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/感谢.md": {
+      "source_hash": "sha256:6758f6b20b39ce0d5b4dc29725a2979cd985072eda1caab160f399cbf34c25ab",
+      "translated_at": "2026-06-05T03:02:38.628332Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/感谢.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/懒.md": {
+      "source_hash": "sha256:6c74f65fe6ce78265392a4cdfa942691d969b3195844060230e68e6ebe25a8b0",
+      "translated_at": "2026-06-05T03:02:41.298540Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/懒.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/成为.md": {
+      "source_hash": "sha256:c08c0aa9ef3f7108beef9aac7a921b92a86dd06aab04f33e44f6d596fdb9b3c1",
+      "translated_at": "2026-06-05T03:02:43.309170Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/成为.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/成功.md": {
+      "source_hash": "sha256:5bca43bbf5e941e504b40cc66c1cfe813d7c47bfa1b6b73f143fd52f0f38aafa",
+      "translated_at": "2026-06-05T03:02:45.713136Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/成功.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/成熟.md": {
+      "source_hash": "sha256:a0e39b9c740a80aa512f264e1388bafba38400d284e8c295a74f36a50d62e384",
+      "translated_at": "2026-06-05T03:02:47.665794Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/成熟.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/成绩.md": {
+      "source_hash": "sha256:5ed28ba596345faff9175f548bde5a729d2b38fa94f19fcad25655655769cb18",
+      "translated_at": "2026-06-05T03:02:49.575683Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/成绩.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/才.md": {
+      "source_hash": "sha256:2689ea11a725ede4a99c370c833212dca31ee26b39a166cf305d1d7956abad27",
+      "translated_at": "2026-06-05T03:02:51.971585Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/才.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/才能.md": {
+      "source_hash": "sha256:d52303709436d0ed5aeaaddc50fd69169a37a33791487d7041bb010ebfcbec33",
+      "translated_at": "2026-06-05T03:02:54.729943Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/才能.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
