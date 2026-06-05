@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-05T21:02:19.996282Z",
+  "last_run": "2026-06-05T21:59:22.903962Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -6526,6 +6526,86 @@
       "source_hash": "sha256:9c8435cce940e0b79685c32d0bff3a343ffd7fe51b8daa129be58e8e1c811f49",
       "translated_at": "2026-06-05T21:02:19.996262Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/积极.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/程度.md": {
+      "source_hash": "sha256:f6aace454ebb7407b34bccabd676f0d0ee0b7e38845a4ce6d7dae9d371b2718d",
+      "translated_at": "2026-06-05T21:58:53.172819Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/程度.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/空调.md": {
+      "source_hash": "sha256:1bece0c317be5b5925c31b1783b38be8ad38c5366bf8d0798caecf997b36f4b6",
+      "translated_at": "2026-06-05T21:58:55.746384Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/空调.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/突然.md": {
+      "source_hash": "sha256:fcef31e036689e2241d629af9f6affd2a0e321925a12e68d298e20c0b23420d2",
+      "translated_at": "2026-06-05T21:58:59.933657Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/突然.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/笨.md": {
+      "source_hash": "sha256:741df2d0a03f14690178ba3e2ab2765bdb0b37bb123f59b2c9734a21b0fe9277",
+      "translated_at": "2026-06-05T21:59:03.405449Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/笨.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/等.md": {
+      "source_hash": "sha256:cb42f742e37eadb666825eab84d10a32e42aae153c8821ce661be26dd2f99e03",
+      "translated_at": "2026-06-05T21:59:06.592122Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/等.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/筷子.md": {
+      "source_hash": "sha256:4231b8d522e0a40bfacd35cb6f1336637b6b6c868ba54cb1d3142d399050ef4e",
+      "translated_at": "2026-06-05T21:59:09.867902Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/筷子.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/简单.md": {
+      "source_hash": "sha256:7ef520ce0eb5310494c22c04eaf20d3a1454a585cc863f35d74b71adb93dd6d3",
+      "translated_at": "2026-06-05T21:59:13.210730Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/简单.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/管.md": {
+      "source_hash": "sha256:936406dcdd4f3c8f22b0f9ab17f0a65ecb4bde2ceb5d9f2e5ece4d8e2623f2c7",
+      "translated_at": "2026-06-05T21:59:16.234075Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/管.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/精彩.md": {
+      "source_hash": "sha256:3fbf4a7785ab720112a4756e055cdc255b1c29a7876956ed0350c92402bdb7e2",
+      "translated_at": "2026-06-05T21:59:19.648585Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/精彩.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/糖.md": {
+      "source_hash": "sha256:cc2b3503905eeb9d4a6909be39f40a71f8c5b34a2dcf62e7476f18446d4252ca",
+      "translated_at": "2026-06-05T21:59:22.903940Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/糖.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
