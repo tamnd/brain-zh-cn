@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-05T03:02:54.729969Z",
+  "last_run": "2026-06-05T04:59:03.563168Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -5406,6 +5406,86 @@
       "source_hash": "sha256:d52303709436d0ed5aeaaddc50fd69169a37a33791487d7041bb010ebfcbec33",
       "translated_at": "2026-06-05T03:02:54.729943Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/才能.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/打印.md": {
+      "source_hash": "sha256:006ebaf3a56c59a1c2c63b2173059c6b645bacc81de12276f484706176a59c3b",
+      "translated_at": "2026-06-05T04:58:42.388270Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/打印.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/打扫.md": {
+      "source_hash": "sha256:b5b2f44fb52c9f602c61ea9af17a2c5e452e665ea45616d8f57d093fe741eb4d",
+      "translated_at": "2026-06-05T04:58:45.276089Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/打扫.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/打折.md": {
+      "source_hash": "sha256:ec723b242f993e48fb63797334921f17052dff25edfcf45e0626cfc067098745",
+      "translated_at": "2026-06-05T04:58:46.928483Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/打折.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/打算.md": {
+      "source_hash": "sha256:ee21c0350c793e8707d7c7cc7ed72161e92b84dda2de99d457e5480cd9a58576",
+      "translated_at": "2026-06-05T04:58:49.335337Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/打算.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/批评.md": {
+      "source_hash": "sha256:f01492531b33aa1ca24cac899f6c7e42d88c1898ebbbff892039cfbbbe1f8d2e",
+      "translated_at": "2026-06-05T04:58:52.019728Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/批评.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/承认.md": {
+      "source_hash": "sha256:6321f3cc48f4d9e50f4942a5d0a8afd80347aa6f4a413eb2b6acd0064de3f633",
+      "translated_at": "2026-06-05T04:58:55.347857Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/承认.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/把.md": {
+      "source_hash": "sha256:7fe5eb6ac2e7379f098ac0d5c81478547b6c8d9c391aeb593ef4343c3ea96b4c",
+      "translated_at": "2026-06-05T04:58:57.838882Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/把.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/把…V完.md": {
+      "source_hash": "sha256:55ce0ebd742b86e2a470772dd96f105fe2766fa31bde57394a7ca7807fce0863",
+      "translated_at": "2026-06-05T04:58:59.394078Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/把…V完.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/护士.md": {
+      "source_hash": "sha256:23ecc80a8eb5d5808cb5da39b39d630dc92e633845d0c2bb9ae5f2751d3e2a56",
+      "translated_at": "2026-06-05T04:59:01.342977Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/护士.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/护照.md": {
+      "source_hash": "sha256:e3b7383941676912ea0fdcc6138e4434d9847f6f467dddbd145c7cfccd60a260",
+      "translated_at": "2026-06-05T04:59:03.563142Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/护照.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
