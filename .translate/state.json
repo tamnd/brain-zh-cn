@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-05T20:09:43.248375Z",
+  "last_run": "2026-06-05T21:02:19.996282Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -6446,6 +6446,86 @@
       "source_hash": "sha256:0277c862b6393aafaf854c1be7802ea2acfa50721d6afb8f68ce3f4150f1b4dd",
       "translated_at": "2026-06-05T20:09:43.248353Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/看清楚.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/眼睛.md": {
+      "source_hash": "sha256:bb1aae71b57edf5b536d6d2c5ba6f9ed27380f19d1f96b485352122ae4bd5e9d",
+      "translated_at": "2026-06-05T21:01:49.411813Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/眼睛.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/知识.md": {
+      "source_hash": "sha256:f648277c8cbd6fa88332d1fd8e738ba2729776deb59f5baae9f53343f7118938",
+      "translated_at": "2026-06-05T21:01:51.656607Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/知识.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/短信.md": {
+      "source_hash": "sha256:bb06e1141943145773d48e676bb048db521d16b6e7eae37ab52aadbbe9577d9b",
+      "translated_at": "2026-06-05T21:01:55.148922Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/短信.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/研究.md": {
+      "source_hash": "sha256:85b7a0e40a89f3f67420438102a086adc6f5776df521f51463716ea2bb808ac8",
+      "translated_at": "2026-06-05T21:01:59.506667Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/研究.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/确实.md": {
+      "source_hash": "sha256:837f896290490af8789ae3caea1c06e436efd03872fd18ad931d4b03d74e3f4f",
+      "translated_at": "2026-06-05T21:02:02.860477Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/确实.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/礼物.md": {
+      "source_hash": "sha256:1b8ab7974e1456f3687cb74096006e427eb7e7d7ffc878ea6666b8d9cc181d32",
+      "translated_at": "2026-06-05T21:02:06.924862Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/礼物.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/礼貌.md": {
+      "source_hash": "sha256:64c9f9797bcddc8ff117e61a4d5e54d50641b344cb8b0a0b2e43ea1e8c7df931",
+      "translated_at": "2026-06-05T21:02:10.069891Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/礼貌.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/科学.md": {
+      "source_hash": "sha256:c23eeeba9fe1b9d8807eaeb67445ffcd44d375e237603f5930e920e55ce42c2f",
+      "translated_at": "2026-06-05T21:02:13.604602Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/科学.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/租.md": {
+      "source_hash": "sha256:f2631abd2309ac54e1e940c052c462b7e1eb7c1c7af9400c80e11cc0c998952d",
+      "translated_at": "2026-06-05T21:02:16.636610Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/租.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/积极.md": {
+      "source_hash": "sha256:9c8435cce940e0b79685c32d0bff3a343ffd7fe51b8daa129be58e8e1c811f49",
+      "translated_at": "2026-06-05T21:02:19.996262Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/积极.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
