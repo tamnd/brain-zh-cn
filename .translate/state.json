@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-05T23:25:19.393741Z",
+  "last_run": "2026-06-05T23:51:23.185528Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -6766,6 +6766,86 @@
       "source_hash": "sha256:15f6c33bcbe10fbfc004f0093acca8fe894c19f3e8ec4a87e039cdd4d4044f1d",
       "translated_at": "2026-06-05T23:25:19.393714Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/肚子.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/胳膊.md": {
+      "source_hash": "sha256:fca61a90373e6768939713408b3f3e6f308d2e1aa61dd8e0e6e34ff53021c41b",
+      "translated_at": "2026-06-05T23:51:02.929254Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/胳膊.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/能力.md": {
+      "source_hash": "sha256:1f39248f975c53d64ccbc97b93298b52f432d0f8363b626de2e75213e2ee17c1",
+      "translated_at": "2026-06-05T23:51:05.668424Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/能力.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/脖子.md": {
+      "source_hash": "sha256:7b0dae5d550b0808e8fd698242383ce11cf281d2f4ce01e33b7f292377f679d8",
+      "translated_at": "2026-06-05T23:51:08.563122Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/脖子.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/脸.md": {
+      "source_hash": "sha256:f17c78acfde401b0722e5583cce84123471a5e6eb29922d7df75997ee416039c",
+      "translated_at": "2026-06-05T23:51:10.979852Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/脸.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/自信.md": {
+      "source_hash": "sha256:a06acdece2ff9e8813c6d496060f59ce7c5ef64d6b2787471e2ec44efdbff612",
+      "translated_at": "2026-06-05T23:51:13.069193Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/自信.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/自己.md": {
+      "source_hash": "sha256:7b54c6f40fadca93652ab00163f3694782c7fae408966c9d7ef3ebbc66eddc38",
+      "translated_at": "2026-06-05T23:51:14.913995Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/自己.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/自然.md": {
+      "source_hash": "sha256:791f9cad2cba8b4286a46188e1a71b4deeb76c9beee8641919cb0db1c317400f",
+      "translated_at": "2026-06-05T23:51:16.556424Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/自然.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/自行车.md": {
+      "source_hash": "sha256:3aaf9dbebe442b5faf5a150acbb79056b3c6e5533ff861b7d123ee35e52e6abd",
+      "translated_at": "2026-06-05T23:51:18.708965Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/自行车.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/至少.md": {
+      "source_hash": "sha256:a3b04987db440e80170b617f49c0768e1bcfaf17e6988f7b95d26537403de267",
+      "translated_at": "2026-06-05T23:51:21.099585Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/至少.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/节约.md": {
+      "source_hash": "sha256:55e3f3860655c7cd586090c7d267a625c4c17db39e48c40afc127684533fc29c",
+      "translated_at": "2026-06-05T23:51:23.185503Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/节约.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
