@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-05T12:25:33.089213Z",
+  "last_run": "2026-06-05T13:31:43.388427Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -5886,6 +5886,86 @@
       "source_hash": "sha256:b55cf95246eeb768c6c92d11d1caa91ea8bae56a04fb298bea2324abfad1a241",
       "translated_at": "2026-06-05T12:25:33.089185Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/机器.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/机场.md": {
+      "source_hash": "sha256:b1e3acdddb2008f81514f48a12c89b208228b4fa2c93b159dda045b5a4f4a632",
+      "translated_at": "2026-06-05T13:31:24.441412Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/机场.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/杂志.md": {
+      "source_hash": "sha256:d0805b37ee43cc68a9c319a3b26e49bfd0d3bcf951b52989a94fe97e0a1862b0",
+      "translated_at": "2026-06-05T13:31:26.750002Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/杂志.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/材料.md": {
+      "source_hash": "sha256:96b0bfa1effc83e5202bb6c0bf638906c9a3b776d037520756cd72f51b7ebf1a",
+      "translated_at": "2026-06-05T13:31:28.652278Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/材料.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/条件.md": {
+      "source_hash": "sha256:a748143d3cc3135a1dcb7e19cb110b9174ffdd82ca0f372e964fcab79f1a1d86",
+      "translated_at": "2026-06-05T13:31:31.130475Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/条件.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/来自.md": {
+      "source_hash": "sha256:451e51a76ff38dd9180efdd84047fe927f43666266b933a4103ae65a5603eab5",
+      "translated_at": "2026-06-05T13:31:33.728673Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/来自.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/果然.md": {
+      "source_hash": "sha256:417ac55a30a6e6eb52cb82f194799f1b193146ae92c96b7788fcda1a38f4dc62",
+      "translated_at": "2026-06-05T13:31:35.218611Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/果然.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/标准.md": {
+      "source_hash": "sha256:be8322eb3c2e6df28b2da6c733bc8b7dfe4f1e4a56ce338c58335109fb2e9258",
+      "translated_at": "2026-06-05T13:31:37.006046Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/标准.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/树.md": {
+      "source_hash": "sha256:22f0575ec429fca4c4ec665b3459f52e796b3b604a179ac1be8c114df52ee9ee",
+      "translated_at": "2026-06-05T13:31:39.159586Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/树.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/根据.md": {
+      "source_hash": "sha256:574841c91176ccaab41d2ae8bc1918c73cffc598a3ab005bfb1f32a780c75227",
+      "translated_at": "2026-06-05T13:31:41.563710Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/根据.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/格外.md": {
+      "source_hash": "sha256:7ee50dccc302e4add1e76638ffce95fce4c5a8ca5f15b20fec3108ee0bb09e89",
+      "translated_at": "2026-06-05T13:31:43.388396Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/格外.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
