@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-05T11:07:16.220784Z",
+  "last_run": "2026-06-05T12:25:33.089213Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -5806,6 +5806,86 @@
       "source_hash": "sha256:6b0444120d223ee665291db9830443782cfe9b30203f0edc73ff76e12fba9466",
       "translated_at": "2026-06-05T11:07:16.220762Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/是…的.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/普通.md": {
+      "source_hash": "sha256:00efcec2d7fcd617c12c16b630030a9cedc06521daacded2be4e35a1d2781ce4",
+      "translated_at": "2026-06-05T12:25:16.437570Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/普通.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/更加.md": {
+      "source_hash": "sha256:52079e865f06ac8ed259453c99ae58fd5d7c911e3c2bde359deabf1328f0c300",
+      "translated_at": "2026-06-05T12:25:18.483219Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/更加.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/曾经.md": {
+      "source_hash": "sha256:b951b717baa1354176abfebfcfb26e823a7c5bfa8a58330de79f6f8722714606",
+      "translated_at": "2026-06-05T12:25:20.379522Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/曾经.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/有名.md": {
+      "source_hash": "sha256:37a7d7d8fb101336893693ad85bf32120c861bb2ba2a44898952486b2f170c44",
+      "translated_at": "2026-06-05T12:25:22.380283Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/有名.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/有意思.md": {
+      "source_hash": "sha256:3bc0785175b4ecbe733a1edd60ecfa25b60446d2c1d8a2668b16e2a049ee7bcd",
+      "translated_at": "2026-06-05T12:25:24.416388Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/有意思.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/有趣.md": {
+      "source_hash": "sha256:12ccf5c8b16fcb0bb0c78286b4b6786cca415297af4be93a5e276e2d69910284",
+      "translated_at": "2026-06-05T12:25:25.925374Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/有趣.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/期待.md": {
+      "source_hash": "sha256:df069aa6284d7823bbe665f32f3af3ac4d9daef8819bce7f8d2c07429aeb54fe",
+      "translated_at": "2026-06-05T12:25:27.588467Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/期待.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/本来.md": {
+      "source_hash": "sha256:637ffa9660b2b51c838bd99242d5b900a0912b1f7b4bbf913b18df9e33ab5b07",
+      "translated_at": "2026-06-05T12:25:29.472996Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/本来.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/机会.md": {
+      "source_hash": "sha256:7accc54ee4940aece63c8cceed9d409c17f7a679c39309d558dd42ad98ba5d90",
+      "translated_at": "2026-06-05T12:25:31.028297Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/机会.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/机器.md": {
+      "source_hash": "sha256:b55cf95246eeb768c6c92d11d1caa91ea8bae56a04fb298bea2324abfad1a241",
+      "translated_at": "2026-06-05T12:25:33.089185Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/机器.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
