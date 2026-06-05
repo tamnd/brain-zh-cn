@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-05T13:31:43.388427Z",
+  "last_run": "2026-06-05T15:00:29.459752Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -5966,6 +5966,86 @@
       "source_hash": "sha256:7ee50dccc302e4add1e76638ffce95fce4c5a8ca5f15b20fec3108ee0bb09e89",
       "translated_at": "2026-06-05T13:31:43.388396Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/格外.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/检查.md": {
+      "source_hash": "sha256:149d77898eb587d9c9b1828c27193b003f1efcf2c7db7fcd7b0d7cb61dde576d",
+      "translated_at": "2026-06-05T15:00:00.375210Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/检查.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/楼.md": {
+      "source_hash": "sha256:192b71dd3a8a946afa991fb8dd3f4b6867fdea18761b2ba0277d565fa7f7f39a",
+      "translated_at": "2026-06-05T15:00:03.426574Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/楼.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/正确.md": {
+      "source_hash": "sha256:9f1dcf2e700121b7e70ddc859441fe9c0ef3a7abfdd449a01af4cb78ea6fac6b",
+      "translated_at": "2026-06-05T15:00:06.300545Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/正确.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/此外.md": {
+      "source_hash": "sha256:c076fd31dc76ace0cd200c918e28ef74484f082f3fc1c269eabbd79c11f92008",
+      "translated_at": "2026-06-05T15:00:09.133876Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/此外.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/每.md": {
+      "source_hash": "sha256:4af5818c13bba4cc1834d17f84ea764b8d26a4f3cbf0ba2eff0f2f18c1b96f4e",
+      "translated_at": "2026-06-05T15:00:13.402197Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/每.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/比赛.md": {
+      "source_hash": "sha256:c4457963bd816066a4be52537be0bb141fd2559aab1d21205ace59aa06873741",
+      "translated_at": "2026-06-05T15:00:17.505385Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/比赛.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/比较.md": {
+      "source_hash": "sha256:2062932bb241a3cd9044602731f104573b944fdba3e6d760f83135d7c7864180",
+      "translated_at": "2026-06-05T15:00:20.379862Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/比较.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/比较…一点.md": {
+      "source_hash": "sha256:0695f1275caf4464489465a0c564e877ece70f1a9215421a146c6bcc0aa39354",
+      "translated_at": "2026-06-05T15:00:22.611452Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/比较…一点.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/毕竟.md": {
+      "source_hash": "sha256:18263f4636f5f9330b2ddcd1f337a972be3241accb0357b51326d3c4808b70f2",
+      "translated_at": "2026-06-05T15:00:25.948227Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/毕竟.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/毛巾.md": {
+      "source_hash": "sha256:735619db47bb757d41777c66cb62038ec1da2a0b9b21fc14306d6b06fa513060",
+      "translated_at": "2026-06-05T15:00:29.459729Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/毛巾.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
