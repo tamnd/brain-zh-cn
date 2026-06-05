@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-05T22:34:14.913547Z",
+  "last_run": "2026-06-05T23:25:19.393741Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -6686,6 +6686,86 @@
       "source_hash": "sha256:f4f03bca48f25969815202b8fdaf2705a95f01c214321e718ae6aab6cc7f1b3b",
       "translated_at": "2026-06-05T22:34:14.913524Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/继续.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/缺点.md": {
+      "source_hash": "sha256:b8933d9052d7d72130c2010efb8bd481e4669b4e1ad307a67022ac7a2cfce0bf",
+      "translated_at": "2026-06-05T23:24:57.488657Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/缺点.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/网络.md": {
+      "source_hash": "sha256:ecdb0f60880a22ecc53ff1c575df3d4a391ede5f3654d0bd2398ff4e5f2e3be9",
+      "translated_at": "2026-06-05T23:24:59.754140Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/网络.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/翻.md": {
+      "source_hash": "sha256:576a021203fab023148aa81f144961a862aa26e1df6d005939efa8adee81c7f0",
+      "translated_at": "2026-06-05T23:25:02.269307Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/翻.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/考虑.md": {
+      "source_hash": "sha256:e36e6a19c94085dada6b059cccde5754ef666f8ace729d67c4ed4fc9200b502f",
+      "translated_at": "2026-06-05T23:25:03.949712Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/考虑.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/而且.md": {
+      "source_hash": "sha256:4caf2ca06ea5e9c9ba61759685c14446eecdc0b2aaf5bea28199c2dfa2dfe417",
+      "translated_at": "2026-06-05T23:25:06.639248Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/而且.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/耐心.md": {
+      "source_hash": "sha256:22fa936a58252336cea328eccfb6a8e6231147571ceceb42bb0294ffd0f9112b",
+      "translated_at": "2026-06-05T23:25:08.490860Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/耐心.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/耳朵.md": {
+      "source_hash": "sha256:7449911fc5ee5b5a726844b9bd018152412803bcee72d39652fe9fcb8d240355",
+      "translated_at": "2026-06-05T23:25:10.629026Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/耳朵.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/联系.md": {
+      "source_hash": "sha256:f252da42ac1b307d0dac8ec182c1722e1ac5ab4ba46f4880eee1164cbea0d8fc",
+      "translated_at": "2026-06-05T23:25:12.403879Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/联系.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/聪明.md": {
+      "source_hash": "sha256:139300babd2bd0bd12869860f89d36661b6f62c3cbf4728fa06384398e36cbd5",
+      "translated_at": "2026-06-05T23:25:14.047700Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/聪明.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/肚子.md": {
+      "source_hash": "sha256:15f6c33bcbe10fbfc004f0093acca8fe894c19f3e8ec4a87e039cdd4d4044f1d",
+      "translated_at": "2026-06-05T23:25:19.393714Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/肚子.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
