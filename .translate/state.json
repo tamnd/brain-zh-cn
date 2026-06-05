@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-05T21:59:22.903962Z",
+  "last_run": "2026-06-05T22:34:14.913547Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -6606,6 +6606,86 @@
       "source_hash": "sha256:cc2b3503905eeb9d4a6909be39f40a71f8c5b34a2dcf62e7476f18446d4252ca",
       "translated_at": "2026-06-05T21:59:22.903940Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/糖.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/紧张.md": {
+      "source_hash": "sha256:d37aecc3085d935ec5049f00e54d98a836e3eceda8c7f933970a58d91c60650c",
+      "translated_at": "2026-06-05T22:33:41.683323Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/紧张.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/累.md": {
+      "source_hash": "sha256:3b1f29cf8108d87b773a6c1a3d8e43894589fd26415444c697f9a90808e76e3d",
+      "translated_at": "2026-06-05T22:33:45.726519Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/累.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/经历.md": {
+      "source_hash": "sha256:16411c1d736e6ea71cbf8dd168730a9c8ddc96c0f3eddd465a4a71d71ecbf92a",
+      "translated_at": "2026-06-05T22:33:50.080995Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/经历.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/经常.md": {
+      "source_hash": "sha256:4bfc8e3302a0e484a29690d32a5c20f623b0955f6f78f7a5f525e4d18b27182b",
+      "translated_at": "2026-06-05T22:33:53.205055Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/经常.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/经济.md": {
+      "source_hash": "sha256:d15efa9a78d3416610d334263c9c5bd98d82d1aa25bd99bac97493dfd5088798",
+      "translated_at": "2026-06-05T22:33:55.694775Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/经济.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/经过.md": {
+      "source_hash": "sha256:a5ea439955102c7d589d282420078c01c6325fa3a4019c672e18d9b4c806ca91",
+      "translated_at": "2026-06-05T22:33:58.965002Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/经过.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/经验.md": {
+      "source_hash": "sha256:c41b2d5a5464d73dd57e77b61dba32f7b20aa51ae547b67e847d7ef1e58d573c",
+      "translated_at": "2026-06-05T22:34:02.280169Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/经验.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/结婚.md": {
+      "source_hash": "sha256:0a3987a86a661b7fa83fc000b29566ac912aed75a572143ac3764fbb489bc1f0",
+      "translated_at": "2026-06-05T22:34:05.899688Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/结婚.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/结果.md": {
+      "source_hash": "sha256:8a37aa45fc2b0eb0856ac92667f480a1f9791f434234dacbd7046ed28e37a96b",
+      "translated_at": "2026-06-05T22:34:09.445865Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/结果.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/继续.md": {
+      "source_hash": "sha256:f4f03bca48f25969815202b8fdaf2705a95f01c214321e718ae6aab6cc7f1b3b",
+      "translated_at": "2026-06-05T22:34:14.913524Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/继续.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
