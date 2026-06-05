@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-05T04:59:03.563168Z",
+  "last_run": "2026-06-05T06:35:50.777437Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -5486,6 +5486,86 @@
       "source_hash": "sha256:e3b7383941676912ea0fdcc6138e4434d9847f6f467dddbd145c7cfccd60a260",
       "translated_at": "2026-06-05T04:59:03.563142Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/护照.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/报名.md": {
+      "source_hash": "sha256:8a2fcab475906c443df0bd8b4deccaba538118bfb852de6a027bded8743bc874",
+      "translated_at": "2026-06-05T06:35:26.416756Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/报名.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/担心.md": {
+      "source_hash": "sha256:9e0c87506aaebee9a81d8a82870993daa637d535cf784f332c0f7eb5b0622a7c",
+      "translated_at": "2026-06-05T06:35:29.239077Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/担心.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/拒绝.md": {
+      "source_hash": "sha256:d7751f9508612a466b8ac6d7e709e097ec85508bdaa334bce35bfc4bdf6d8231",
+      "translated_at": "2026-06-05T06:35:33.705303Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/拒绝.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/拿出去.md": {
+      "source_hash": "sha256:1bc922a73cd3fac92f00bc0009c0893e4a1e90b751bc077e1e3857d51fd25d1a",
+      "translated_at": "2026-06-05T06:35:35.725199Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/拿出去.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/挂.md": {
+      "source_hash": "sha256:e657c548632a72d17a86b31088e5c4a28799e6cef8e1e928187b3495429d6a2c",
+      "translated_at": "2026-06-05T06:35:38.137165Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/挂.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/按时.md": {
+      "source_hash": "sha256:c133948331c8fcf3dc049c730e407331de8396d131ae6aceac9e100663dee3b6",
+      "translated_at": "2026-06-05T06:35:39.774175Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/按时.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/按照.md": {
+      "source_hash": "sha256:3556a84b808d5197b4cedec295e1e5cb1a4f7fb0b2e343a46db9cf29b5e3b8c3",
+      "translated_at": "2026-06-05T06:35:42.094025Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/按照.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/换.md": {
+      "source_hash": "sha256:0cc065bdc93798358483b6992424229f38b2185cda08545e5242a96c7ff6b4e2",
+      "translated_at": "2026-06-05T06:35:45.814767Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/换.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/换乘.md": {
+      "source_hash": "sha256:0fd822dd2fd68e9f3f88f059c302ad5f12cd50ab18e61b254ba286831724acd9",
+      "translated_at": "2026-06-05T06:35:48.081521Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/换乘.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/接.md": {
+      "source_hash": "sha256:947595c73342e39846e7964f81ba3979c256135f451a619bf39a229dd10826de",
+      "translated_at": "2026-06-05T06:35:50.777411Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/接.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
