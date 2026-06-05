@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-05T15:00:29.459752Z",
+  "last_run": "2026-06-05T16:06:18.324201Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -6046,6 +6046,86 @@
       "source_hash": "sha256:735619db47bb757d41777c66cb62038ec1da2a0b9b21fc14306d6b06fa513060",
       "translated_at": "2026-06-05T15:00:29.459729Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/毛巾.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/气候.md": {
+      "source_hash": "sha256:98b1528c366d313d2191b430b961d1aea7c4f29ebe0c190a5a309623d6f1c883",
+      "translated_at": "2026-06-05T16:05:52.126879Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/气候.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/气氛.md": {
+      "source_hash": "sha256:7ba018d658854e0c4be4f385a214195fec0b4cf5479530513dba6c743b868e57",
+      "translated_at": "2026-06-05T16:05:54.831840Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/气氛.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/水平.md": {
+      "source_hash": "sha256:9fd4fbb64e21e148c32bfb2890352149c39e632db7582c94a9a4882850b48cbf",
+      "translated_at": "2026-06-05T16:05:57.603364Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/水平.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/水果.md": {
+      "source_hash": "sha256:fdda849b89ec392ac70b30dabaca25593152f3d333f3cdf505eb22f3b3d683a6",
+      "translated_at": "2026-06-05T16:06:00.320805Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/水果.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/汤.md": {
+      "source_hash": "sha256:8cf7d7820c2b97de420883204081663fbb1cce3de491707da5ad054ba55a41f1",
+      "translated_at": "2026-06-05T16:06:02.679317Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/汤.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/油.md": {
+      "source_hash": "sha256:5e9d3655feb822f148a8d818bb880eb2dcb6dfb5be40bf2896d04eede3117949",
+      "translated_at": "2026-06-05T16:06:05.105809Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/油.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/注意.md": {
+      "source_hash": "sha256:67d57060f6d9f2d001448a54f054fdc1aa5d86ea6affb25f61480fd1794617e3",
+      "translated_at": "2026-06-05T16:06:08.209632Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/注意.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/活动.md": {
+      "source_hash": "sha256:c343a51489da32df2ff3518e6d3ff391813e10bf93bf6f99f184fcb1bb655f3f",
+      "translated_at": "2026-06-05T16:06:11.503346Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/活动.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/流利.md": {
+      "source_hash": "sha256:b9fa168f82f08b85216b82deaa0fb0b6865a8f3f6a5da00a1f6306aac532d1dd",
+      "translated_at": "2026-06-05T16:06:14.776074Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/流利.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/流行.md": {
+      "source_hash": "sha256:463f7066f2bd3da2d41f19faf375030c4416dcd46ee7bc120df4c607da367929",
+      "translated_at": "2026-06-05T16:06:18.324178Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/流行.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
