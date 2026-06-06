@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T21:49:22.200696Z",
+  "last_run": "2026-06-06T22:21:24.510856Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -9006,6 +9006,86 @@
       "source_hash": "sha256:0e7d3a13de5254d1518108ac27f4f7ae9201bbe251635b8312a1c95f09c64ff4",
       "translated_at": "2026-06-06T21:49:22.200673Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/对于.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/对手.md": {
+      "source_hash": "sha256:8df3c5089a3a9b47f0d5448f4c417b5df60c98526d4cb50547c3123b03a15a68",
+      "translated_at": "2026-06-06T22:21:04.720845Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/对手.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/尊重.md": {
+      "source_hash": "sha256:7f03c61217e55cb372b9166ea520109b13542a867632bf32a2377cfc1774e5a4",
+      "translated_at": "2026-06-06T22:21:06.609005Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/尊重.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/尤其.md": {
+      "source_hash": "sha256:e5415e5a587d554dd88487d4b13b1de00ffef568da29c74483404bb63bb9f3d7",
+      "translated_at": "2026-06-06T22:21:08.339213Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/尤其.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/尽管.md": {
+      "source_hash": "sha256:d50753159649d0721a0a2e6bd4a0dcf66961a82e879743e3751c63a129578740",
+      "translated_at": "2026-06-06T22:21:10.962468Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/尽管.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/屏幕.md": {
+      "source_hash": "sha256:48a0f4dbe9ff4d55b7ff8897328cbd5a500597fe41bfd4b705013285c1230ca5",
+      "translated_at": "2026-06-06T22:21:13.005028Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/屏幕.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/展示.md": {
+      "source_hash": "sha256:eed4f226c30a9e8234c4e15541328ec1e1c69117036e1be7fceee528fbf57a52",
+      "translated_at": "2026-06-06T22:21:16.583503Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/展示.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/工程师.md": {
+      "source_hash": "sha256:d862ab438f1d561736fbc36c826178e3d92dadc36989309126534608f4621177",
+      "translated_at": "2026-06-06T22:21:17.766977Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/工程师.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/市场.md": {
+      "source_hash": "sha256:5abc8286ff459ca2e6bef4739cce9b777cfa46c58acbfddad759dc5be59949d9",
+      "translated_at": "2026-06-06T22:21:20.011976Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/市场.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/帮助.md": {
+      "source_hash": "sha256:2151b35ccca6de63e94a2bec64b3129280f9a6708b8a77a0398b8ec0db99da38",
+      "translated_at": "2026-06-06T22:21:22.358795Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/帮助.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/平台.md": {
+      "source_hash": "sha256:b099addbdf6df95cc96990b0737926574795c675cadba3eb1c0791f905a15f61",
+      "translated_at": "2026-06-06T22:21:24.510829Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/平台.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
