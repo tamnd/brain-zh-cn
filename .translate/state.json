@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T14:31:05.604253Z",
+  "last_run": "2026-06-06T15:26:11.843786Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -8046,6 +8046,86 @@
       "source_hash": "sha256:a31947473ddd16823fb15c0e0a68de0d7e881ad80b7234e09fffc7227aa12450",
       "translated_at": "2026-06-06T14:31:05.604227Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/优势.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/会议.md": {
+      "source_hash": "sha256:e51bc18e72578944db774497743a46deb287536d56a2ded1d5d44f40360a3f82",
+      "translated_at": "2026-06-06T15:25:49.190380Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/会议.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/传统.md": {
+      "source_hash": "sha256:9f20ebfb191434972033ccefde7dc7b82cc616449f5856b59ddee825a6bcfdb8",
+      "translated_at": "2026-06-06T15:25:52.061656Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/传统.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/但是.md": {
+      "source_hash": "sha256:baacbe71ad4576609530adb3b5c99f64c462de81b573dec1fed73166a33bbd10",
+      "translated_at": "2026-06-06T15:25:55.082761Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/但是.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/位置.md": {
+      "source_hash": "sha256:275c9e245526ec8e18fb23352b8bf0a33af4ba1473b5d1b7b1d12c12a6322027",
+      "translated_at": "2026-06-06T15:25:57.667493Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/位置.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/体育.md": {
+      "source_hash": "sha256:45a64e14ba21560e6b40a69c3ce98293eadb85b012723ee7bfcd4abfb3600b0f",
+      "translated_at": "2026-06-06T15:25:59.293369Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/体育.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/作用.md": {
+      "source_hash": "sha256:a7cf41a5f71b118494e2fa5e99a41c25f7d9deb3e15d091641fe3d2e3d151c27",
+      "translated_at": "2026-06-06T15:26:02.538562Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/作用.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/例如.md": {
+      "source_hash": "sha256:dc538605f839be20285ff43138febe7034e6334dcc02f3a0c1525eef9b9801f8",
+      "translated_at": "2026-06-06T15:26:04.971885Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/例如.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/依赖.md": {
+      "source_hash": "sha256:7dc00ad033971493ff3c336ebd478cd4e8b4ecab411670def9886eab1aec39de",
+      "translated_at": "2026-06-06T15:26:07.008341Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/依赖.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/保护.md": {
+      "source_hash": "sha256:6b592150294acb97946b0a11cdf6f5360243912d2810c4341ce054dedbbce8ac",
+      "translated_at": "2026-06-06T15:26:09.290083Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/保护.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/保持.md": {
+      "source_hash": "sha256:d0668f7f54ec401153d127d7b68b938ea4a646a0474d850f63d46ca70d597ccd",
+      "translated_at": "2026-06-06T15:26:11.843759Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/保持.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
