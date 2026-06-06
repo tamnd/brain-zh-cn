@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T03:44:50.695252Z",
+  "last_run": "2026-06-06T05:15:52.778127Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -7166,6 +7166,86 @@
       "source_hash": "sha256:12e47e6651063cfb8954c862b1c3b0b54e645b3943b0debe6d9ed43560ab8fed",
       "translated_at": "2026-06-06T03:44:50.695229Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/赶.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/超过.md": {
+      "source_hash": "sha256:7bf1e3eab569eb81aadd364321bbe3ab41e47fb586ae8c22dfe0fec8073aa24e",
+      "translated_at": "2026-06-06T05:15:21.784722Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/超过.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/越来越.md": {
+      "source_hash": "sha256:e7698c12189e54758a2049d734ee1542d5039c34aeb2e322cdab053bb80157e1",
+      "translated_at": "2026-06-06T05:15:26.607395Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/越来越.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/越来越….md": {
+      "source_hash": "sha256:a11958ebc7052584e14dfef906b3d872fb1085fe45dd447f5823e3b5bde36e6e",
+      "translated_at": "2026-06-06T05:15:29.483255Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/越来越….md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/跑回去.md": {
+      "source_hash": "sha256:e50adbc1b5ddb5107a4f51a86c754804646cfce66f30bb93201d6b0fa16c2fea",
+      "translated_at": "2026-06-06T05:15:32.562760Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/跑回去.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/跳.md": {
+      "source_hash": "sha256:f3c6d7b7305593ea4e3d4e4da39c2240851ec64328e45b21501ef9f138e497da",
+      "translated_at": "2026-06-06T05:15:36.675385Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/跳.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/轻松.md": {
+      "source_hash": "sha256:4087615b1fdadde8d284c8bb092d33c389d8353b4d0b0e718e87c984d4ec20cc",
+      "translated_at": "2026-06-06T05:15:40.073852Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/轻松.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/输.md": {
+      "source_hash": "sha256:e79a10d37253485b9b83c4d626820f97ee2c513102d01a6428ca25cae3e16333",
+      "translated_at": "2026-06-06T05:15:42.745555Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/输.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/辛苦.md": {
+      "source_hash": "sha256:4243aaed55aefa8925721f9d822434d94f2f563e57ea77cdbb4f91a1e77e0bdb",
+      "translated_at": "2026-06-06T05:15:46.313095Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/辛苦.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/过敏.md": {
+      "source_hash": "sha256:39f8335f8bd80db36c4804e4b89b00fb4114a3f40ebdec72dd500648edb4a7a8",
+      "translated_at": "2026-06-06T05:15:49.455533Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/过敏.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/运动.md": {
+      "source_hash": "sha256:bab2c8c6ea23595f5d168e27d5e65facc7cf19a82b478467b8361da8212d0964",
+      "translated_at": "2026-06-06T05:15:52.778102Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/运动.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
