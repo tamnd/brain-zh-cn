@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T07:56:36.241562Z",
+  "last_run": "2026-06-06T08:52:59.023900Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -7406,6 +7406,86 @@
       "source_hash": "sha256:574d04182ae94ff68eeecff7d9a68114fbe9ccc9b1e4f834939af11ca584f67e",
       "translated_at": "2026-06-06T07:56:36.241539Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/错误.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/锻炼.md": {
+      "source_hash": "sha256:2ec3c2fb53b13683a2a26ae155ad73e303e815e15e21c11496a98e209b68d1c6",
+      "translated_at": "2026-06-06T08:52:31.773873Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/锻炼.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/镜子.md": {
+      "source_hash": "sha256:01522794f6c0d86e9f9c24074bf84fb6705db57dcbcc14e69b7490dc486dd232",
+      "translated_at": "2026-06-06T08:52:35.444466Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/镜子.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/问候.md": {
+      "source_hash": "sha256:62d357b5004882b14e299a7be97404bc50a98e949e7f79dd4d41d50995910956",
+      "translated_at": "2026-06-06T08:52:38.680803Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/问候.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/问题.md": {
+      "source_hash": "sha256:51100a29a6850439f1bafda6fa0ba6e3b8f56402236ed34253ad6bfece7b522f",
+      "translated_at": "2026-06-06T08:52:41.215732Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/问题.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/除了.md": {
+      "source_hash": "sha256:12f73a786da07851e1885c2dbd271e506957c56670424ff688f622165c96be4a",
+      "translated_at": "2026-06-06T08:52:43.938854Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/除了.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/除非.md": {
+      "source_hash": "sha256:29fc534e23a24463676ec021c19e6dd31ce5ee7a1cbab8fbcb971013ec007d57",
+      "translated_at": "2026-06-06T08:52:46.520220Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/除非.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/随着.md": {
+      "source_hash": "sha256:92667748d3147a402f34d39b0e9d5fda80f7af0b698883bd05639c252dec12af",
+      "translated_at": "2026-06-06T08:52:49.746495Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/随着.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/难过.md": {
+      "source_hash": "sha256:fc5ade4786c8be341b41ea6d9bbe00e54aba49eb372699fe8fda86e92279fc88",
+      "translated_at": "2026-06-06T08:52:52.864428Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/难过.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/集中.md": {
+      "source_hash": "sha256:a997987b11dc08245d997ea8a46109d066e733ff0908c9da8893aee1eb4bc12f",
+      "translated_at": "2026-06-06T08:52:56.217900Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/集中.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/雨伞.md": {
+      "source_hash": "sha256:8746a7c53a5bb95c8fdb9c1b962a276c61965e9d8532f5cd30719e344890c4a6",
+      "translated_at": "2026-06-06T08:52:59.023878Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/雨伞.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
