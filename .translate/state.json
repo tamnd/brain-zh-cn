@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T22:21:24.510856Z",
+  "last_run": "2026-06-06T22:49:04.927992Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -9086,6 +9086,86 @@
       "source_hash": "sha256:b099addbdf6df95cc96990b0737926574795c675cadba3eb1c0791f905a15f61",
       "translated_at": "2026-06-06T22:21:24.510829Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/平台.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/平衡.md": {
+      "source_hash": "sha256:46ee82fd1c1d4e063e4a0b90df02388b2ccca311be5cc6b7be1b028030d2099b",
+      "translated_at": "2026-06-06T22:48:30.882425Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/平衡.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/广泛.md": {
+      "source_hash": "sha256:700ad687d25f701eb8bb6642776856620cf29662d727783621b8f94cbd3bec23",
+      "translated_at": "2026-06-06T22:48:34.517434Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/广泛.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/应对.md": {
+      "source_hash": "sha256:c4c6516c01dd3385c4ff57b107c89f36532a2e515323deab9528ad4fcce3811a",
+      "translated_at": "2026-06-06T22:48:37.928041Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/应对.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/应用程序.md": {
+      "source_hash": "sha256:ccd2d5957747ddbb0c65a1c81c1982dcbfc4a02433f5b86c0e7f5a4dada9b93b",
+      "translated_at": "2026-06-06T22:48:41.419742Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/应用程序.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/建议.md": {
+      "source_hash": "sha256:14818040137cdbf025ce2d3dde43f1d1331aec2564cbd93426546d9030ff790e",
+      "translated_at": "2026-06-06T22:48:45.903677Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/建议.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/开展.md": {
+      "source_hash": "sha256:c676e133f8dfb57eb12c50bee2006f1a215c4df8ae4c64671e4fba8c5d025783",
+      "translated_at": "2026-06-06T22:48:48.431566Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/开展.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/引导.md": {
+      "source_hash": "sha256:f2d6d7ca3aa7ce524fbc81998e953660a76f15029a174f6ec9dc45e55b282934",
+      "translated_at": "2026-06-06T22:48:52.919081Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/引导.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/引起.md": {
+      "source_hash": "sha256:5cc411a913c72483f9094de79297f1b94cae0f6268f0f0e1a2446f9c8ed7a58d",
+      "translated_at": "2026-06-06T22:48:58.330227Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/引起.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/强调.md": {
+      "source_hash": "sha256:433076133ee8efcf09989756648d39cce61fdf5d1d96fb166c43a4c1f37fb739",
+      "translated_at": "2026-06-06T22:49:01.940186Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/强调.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/当时.md": {
+      "source_hash": "sha256:3026af1a867d999f519355c211498cbdd49574a45c806c29a40bf2b81191c55b",
+      "translated_at": "2026-06-06T22:49:04.927969Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/当时.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
