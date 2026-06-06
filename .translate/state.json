@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T10:37:04.470031Z",
+  "last_run": "2026-06-06T11:30:26.846328Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -7646,6 +7646,86 @@
       "source_hash": "sha256:8d786e1aeee02a72ff57d60b90dd6db3112b8ccee3343b2fa270ad1b5b97e5b5",
       "translated_at": "2026-06-06T10:37:04.470009Z",
       "dest_path": "content/languages/chinese/hsk/4/lessons/06-yue-yue.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/07-formal-negation.md": {
+      "source_hash": "sha256:a260c952ab4ba673bb88806609026fbd711779fa8da682f76b80fd741079d709",
+      "translated_at": "2026-06-06T11:29:50.871469Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/07-formal-negation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/08-regret.md": {
+      "source_hash": "sha256:26e28c54e676201ab6e9ad1a29cffb65b61053f770c674638c05521f38053009",
+      "translated_at": "2026-06-06T11:29:54.774296Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/08-regret.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/09-purpose-goal.md": {
+      "source_hash": "sha256:e72c521f81cad80edf970bb5b49f52e6f3a4874a4e1f02711ef7e552ef0b011a",
+      "translated_at": "2026-06-06T11:29:58.438153Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/09-purpose-goal.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/10-concession.md": {
+      "source_hash": "sha256:45e0b6444f1ddac463d67d26160e6d51268ace25cade2b3fafec906ec2efbe60",
+      "translated_at": "2026-06-06T11:30:03.361521Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/10-concession.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/11-society-values.md": {
+      "source_hash": "sha256:3c26eea36a0c019a48eb09d6f84d23cf1f5f2582bd01607ba445b41348c7f3a4",
+      "translated_at": "2026-06-06T11:30:08.048925Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/11-society-values.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/12-environment.md": {
+      "source_hash": "sha256:4dc6c583989d70c1bb71e67b17717297610a2f687e1ea4de3e69ce4bd7d44fa9",
+      "translated_at": "2026-06-06T11:30:12.187157Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/12-environment.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/13-economy-business.md": {
+      "source_hash": "sha256:bfdaab6699c4d195797ec55d337dbcd838c8f62d3867b284c0722f0482d36dd3",
+      "translated_at": "2026-06-06T11:30:15.733773Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/13-economy-business.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/14-education.md": {
+      "source_hash": "sha256:c8466a65cd2311b58b5eb2b393412fe7252783535ee90050d53d3b59aed3b709",
+      "translated_at": "2026-06-06T11:30:20.081738Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/14-education.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/15-media-news.md": {
+      "source_hash": "sha256:83a2ef68de2a72cb7966ae467f9d411ed04bc61e4ffdb376b172e3359119dbc7",
+      "translated_at": "2026-06-06T11:30:22.928369Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/15-media-news.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/16-health-medicine.md": {
+      "source_hash": "sha256:28ecdc2877b5993253e361a665705132860f5ce559168a9e8f9a0ba6101e1912",
+      "translated_at": "2026-06-06T11:30:26.846301Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/16-health-medicine.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
