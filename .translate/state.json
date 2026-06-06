@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T11:30:26.846328Z",
+  "last_run": "2026-06-06T12:02:06.525445Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -7726,6 +7726,86 @@
       "source_hash": "sha256:28ecdc2877b5993253e361a665705132860f5ce559168a9e8f9a0ba6101e1912",
       "translated_at": "2026-06-06T11:30:26.846301Z",
       "dest_path": "content/languages/chinese/hsk/4/lessons/16-health-medicine.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/17-city-life.md": {
+      "source_hash": "sha256:67bbeb62236998c9fb8bdcd9dc132ceb8b034de272cb23e0d1938344402edc96",
+      "translated_at": "2026-06-06T12:01:13.268287Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/17-city-life.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/18-technology.md": {
+      "source_hash": "sha256:01bae346c870b464aea1a0e6bb484db51456a4cc035e582180c50d5bdce0eba8",
+      "translated_at": "2026-06-06T12:01:17.471012Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/18-technology.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/19-travel.md": {
+      "source_hash": "sha256:e0d1181be851c6679d5eccf8a6e07cc9e6cdd5fb73e91cb3d3c092c6c4033638",
+      "translated_at": "2026-06-06T12:01:21.819131Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/19-travel.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/20-review.md": {
+      "source_hash": "sha256:5a9f9b4d28382baac11b6881cc40d964ee6f645e3208f11202411a67c99d51e1",
+      "translated_at": "2026-06-06T12:01:26.950730Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/20-review.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary.md": {
+      "source_hash": "sha256:76cc107a76cf549b730acc06a75ddac63d6b26c71cb4db53f029980fcda99e97",
+      "translated_at": "2026-06-06T12:01:54.915155Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/一方面…另一方面.md": {
+      "source_hash": "sha256:99c2995d5b3a8c3d51a3cca41f580bb47b4a3a26da39e380e9c638b5445ab617",
+      "translated_at": "2026-06-06T12:01:57.376338Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/一方面…另一方面.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/上传.md": {
+      "source_hash": "sha256:df3d521a5eeec47cd51c6710949ae13e2eddcf30f129c97341a32caf52a548de",
+      "translated_at": "2026-06-06T12:01:59.051579Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/上传.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/上升.md": {
+      "source_hash": "sha256:23afef0e5e776d5b0395070e6a3441f7d80350b0b7b74b7ce322c97fdb137c18",
+      "translated_at": "2026-06-06T12:02:02.003510Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/上升.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/下载.md": {
+      "source_hash": "sha256:bbcca7ee43d483effcd1bff6860be4545e2f787f3e2174bc5bc94b1c0cff4459",
+      "translated_at": "2026-06-06T12:02:03.939874Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/下载.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/下降.md": {
+      "source_hash": "sha256:c288502562c6378a3d880b221b09fca925267b28696a940789e43a50e63e7faa",
+      "translated_at": "2026-06-06T12:02:06.525420Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/下降.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
