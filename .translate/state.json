@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T16:23:13.159173Z",
+  "last_run": "2026-06-06T16:50:47.578759Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -8286,6 +8286,86 @@
       "source_hash": "sha256:13e006baad49fd02f39a0fabc0964d3bfe12ca5da81eeb4a7d180bc15e449f49",
       "translated_at": "2026-06-06T16:23:13.159149Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/创造力.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/判断.md": {
+      "source_hash": "sha256:11871cc6f89ae4798686926ee2646e2d0a579db5cdde863869a197b4e5658983",
+      "translated_at": "2026-06-06T16:50:25.636707Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/判断.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/利用.md": {
+      "source_hash": "sha256:36c0a3ac811e231799d43e0aa1314b610b00038ba4d607484996fa80459844c7",
+      "translated_at": "2026-06-06T16:50:28.118043Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/利用.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/制度.md": {
+      "source_hash": "sha256:71ffa38c44961b3d2918b0b78ce8739426b23e4d3a96e89c3f6ec9e00a996744",
+      "translated_at": "2026-06-06T16:50:32.137718Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/制度.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/功能.md": {
+      "source_hash": "sha256:b2db3a0364dd789ac8360c7fa962adcd2f292b0676440d6c784eee41c741832b",
+      "translated_at": "2026-06-06T16:50:34.606151Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/功能.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/劣势.md": {
+      "source_hash": "sha256:2f809f291d286d53e8e33e9fa49293a2d2cb0bb7f655b095e8b2b751b2357f74",
+      "translated_at": "2026-06-06T16:50:36.552301Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/劣势.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/动机.md": {
+      "source_hash": "sha256:5e0ee08adc0635023d732a496fc38467f0f200e9a3997a0afe6a2d1809c6ee35",
+      "translated_at": "2026-06-06T16:50:38.334809Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/动机.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/努力.md": {
+      "source_hash": "sha256:52e2d9ead7ae17a74d6333cb0084831642980a48d8ce0c69aa042aa020c11a83",
+      "translated_at": "2026-06-06T16:50:40.333287Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/努力.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/勤奋.md": {
+      "source_hash": "sha256:2078c96ea0c1ec4e7ce15dfcfdbbc715c43a04b280110bd9f010f5a40a56ce41",
+      "translated_at": "2026-06-06T16:50:42.334760Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/勤奋.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/区域.md": {
+      "source_hash": "sha256:bf66a3a931e07a3da58883f9bbeba691ec0716c1f7069fdb5fd85a2fd0294c5c",
+      "translated_at": "2026-06-06T16:50:44.795381Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/区域.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/医生.md": {
+      "source_hash": "sha256:feb80be7a5e89581b570c8e6287cf451afbb6f07e4f42c13f8390e95359cc3e8",
+      "translated_at": "2026-06-06T16:50:47.578733Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/医生.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
