@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T20:34:22.914483Z",
+  "last_run": "2026-06-06T21:21:29.939012Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -8846,6 +8846,86 @@
       "source_hash": "sha256:515c270e44fc7767b202ab9d734c221d17c2525a59ca5ffc091770e706abbaf3",
       "translated_at": "2026-06-06T20:34:22.914458Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/娱乐.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/媒体.md": {
+      "source_hash": "sha256:5c5474d5a75db14feb3f965bc486113e262fca163a806b0b3b32e6885b0dac51",
+      "translated_at": "2026-06-06T21:21:09.729481Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/媒体.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/学习.md": {
+      "source_hash": "sha256:5ce4d4eba4ced54e7068976ad84b208265884b2fd5690fbd2b9bab14d4dd13ae",
+      "translated_at": "2026-06-06T21:21:12.243563Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/学习.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/学会.md": {
+      "source_hash": "sha256:19d01d2a8783c424514bb99339aaf8c8cf6ef0f3dba8526cbe8d20e62307a588",
+      "translated_at": "2026-06-06T21:21:14.379038Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/学会.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/学生.md": {
+      "source_hash": "sha256:1b201c430b5d1be067dce24d6993bbbef9dd127fa571c93a7624e1ca57fd3352",
+      "translated_at": "2026-06-06T21:21:17.015632Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/学生.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/宁可.md": {
+      "source_hash": "sha256:2b80a56cc40f82c7c441a9a4c8655131b95700b6555077fc1f867c22024256d4",
+      "translated_at": "2026-06-06T21:21:19.483200Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/宁可.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/宁可…也不.md": {
+      "source_hash": "sha256:f850e7afbc4c2624cf7ba5f39dd7d008fed8424156f573c44a69aab130a73097",
+      "translated_at": "2026-06-06T21:21:21.222794Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/宁可…也不.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/安慰.md": {
+      "source_hash": "sha256:6393d991817e7b2907b911c373a37aab0a2c68c01c33f4a4c0999ce9655d5784",
+      "translated_at": "2026-06-06T21:21:23.325227Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/安慰.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/安排.md": {
+      "source_hash": "sha256:9a31351f10d9ea9af7642a32aa1e9870e368e4e16d21db6433a7eef74451df1c",
+      "translated_at": "2026-06-06T21:21:24.536883Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/安排.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/完善.md": {
+      "source_hash": "sha256:7854c39b50037ccc301048dd95b89781603aa9558fcccd94de4e6047a90192ed",
+      "translated_at": "2026-06-06T21:21:26.787101Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/完善.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/完整.md": {
+      "source_hash": "sha256:e2363ed1bae08755a116373d4a16bf44d8efbb1fa25b93b98367d94ba5045d93",
+      "translated_at": "2026-06-06T21:21:29.938985Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/完整.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
