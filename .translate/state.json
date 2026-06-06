@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T19:59:36.711626Z",
+  "last_run": "2026-06-06T20:34:22.914483Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -8766,6 +8766,86 @@
       "source_hash": "sha256:c928634d7cf5eadccd92f6bc03c66c66d4b2e104946ada9637911f75e8137194",
       "translated_at": "2026-06-06T19:59:36.711599Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/基础.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/声明.md": {
+      "source_hash": "sha256:01f423d88b051ad74bb5196ba2029b4e9ed56a769dae3587d8ad4ece35f56acd",
+      "translated_at": "2026-06-06T20:34:02.737228Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/声明.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/处于.md": {
+      "source_hash": "sha256:d3a904aff2674ebfa88939c8ce46063915bfcb9640f29814432ccb1e74e791da",
+      "translated_at": "2026-06-06T20:34:05.765010Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/处于.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/处方.md": {
+      "source_hash": "sha256:0ba25f5c22af1ae41a6c2f39df09d105af1c1068af081c37203805dd7dab500d",
+      "translated_at": "2026-06-06T20:34:07.739082Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/处方.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/处理.md": {
+      "source_hash": "sha256:4ff09a165815c012503c22ee323fba8fe5171d782ef60cbf6797667762f52b43",
+      "translated_at": "2026-06-06T20:34:10.184221Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/处理.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/复杂.md": {
+      "source_hash": "sha256:ad3c23033890470627d40b30b8cc29f2e1b8ba66f914f500f065529213b5370d",
+      "translated_at": "2026-06-06T20:34:12.466928Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/复杂.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/大约.md": {
+      "source_hash": "sha256:5e9883439c654badd3f1bafc4b77c34295040da6505c57773b48badbae178999",
+      "translated_at": "2026-06-06T20:34:14.718934Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/大约.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/失败.md": {
+      "source_hash": "sha256:9c4cc2546b2d171986495b6013b29d25d2c0e658a908f9d44abee6e2e2bd482c",
+      "translated_at": "2026-06-06T20:34:16.714048Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/失败.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/奥运会.md": {
+      "source_hash": "sha256:510355c0d8f3551880220f9bf9d9bd3b631ec566332ce375575279b4733ea022",
+      "translated_at": "2026-06-06T20:34:18.461356Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/奥运会.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/威胁.md": {
+      "source_hash": "sha256:6238a619c52e0af27e8d1d8025edc99a068a89f32f68d225ceb4e297cca6d6b6",
+      "translated_at": "2026-06-06T20:34:21.099910Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/威胁.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/娱乐.md": {
+      "source_hash": "sha256:515c270e44fc7767b202ab9d734c221d17c2525a59ca5ffc091770e706abbaf3",
+      "translated_at": "2026-06-06T20:34:22.914458Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/娱乐.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
