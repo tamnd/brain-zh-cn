@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T12:02:06.525445Z",
+  "last_run": "2026-06-06T12:53:50.638387Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -7806,6 +7806,86 @@
       "source_hash": "sha256:c288502562c6378a3d880b221b09fca925267b28696a940789e43a50e63e7faa",
       "translated_at": "2026-06-06T12:02:06.525420Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/下降.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/不合理.md": {
+      "source_hash": "sha256:a5efd88f5503e9149123f8c0799c02fd0b3ac68c5408d535e2d25063c32976e6",
+      "translated_at": "2026-06-06T12:53:28.118884Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/不合理.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/不得不.md": {
+      "source_hash": "sha256:c8540422838a6089db014ac31372f7184d6c62a7e0ed1b53ab6c57afdb48cc77",
+      "translated_at": "2026-06-06T12:53:30.973207Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/不得不.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/不过.md": {
+      "source_hash": "sha256:a66f58102f3b6b18bf29082bab33f7a9147928cd76b9627cd724ecbfd965a54d",
+      "translated_at": "2026-06-06T12:53:33.739615Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/不过.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/与其…不如.md": {
+      "source_hash": "sha256:b76fa5b0f5032900d2853c1139e20bf00536c2cf7b310ddc6c8543ce86346d8c",
+      "translated_at": "2026-06-06T12:53:35.972436Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/与其…不如.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/专业.md": {
+      "source_hash": "sha256:ba89949abb262bdff63ae88981c776a5f2265191b9fa2b27e8907289f14912e7",
+      "translated_at": "2026-06-06T12:53:37.677681Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/专业.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/专业人士.md": {
+      "source_hash": "sha256:1c596c8cfe8c36d5979e54b20c49677b7785e876ad6b30fdf430614732953073",
+      "translated_at": "2026-06-06T12:53:39.493548Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/专业人士.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/专家.md": {
+      "source_hash": "sha256:b45cc5f0475f3d72d606de45013cc75983722d4fa36d31a8829c525387b50108",
+      "translated_at": "2026-06-06T12:53:41.924699Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/专家.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/严格.md": {
+      "source_hash": "sha256:89ebf37c2c159a39934bea2ff322b6108c80ac352382235feca1b9097cc10a9f",
+      "translated_at": "2026-06-06T12:53:43.711623Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/严格.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/严重.md": {
+      "source_hash": "sha256:96c17d85144e8c5e231a54f5df3ae2b24ce580a68ba3500be975f6b2b87d9f50",
+      "translated_at": "2026-06-06T12:53:47.301236Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/严重.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/丰富.md": {
+      "source_hash": "sha256:47d7c3575273e0b2a49bb2ce6a831ae8c5020ecdbfa83677a0c6fe98c791193d",
+      "translated_at": "2026-06-06T12:53:50.638361Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/丰富.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
