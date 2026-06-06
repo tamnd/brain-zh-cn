@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T18:53:37.480215Z",
+  "last_run": "2026-06-06T19:29:59.104881Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -8606,6 +8606,86 @@
       "source_hash": "sha256:4814bc6f5e6a21df66b8816256a2be19345e9ed4bcb5774bd6494a89825e66ef",
       "translated_at": "2026-06-06T18:53:37.480188Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/同时.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/否定.md": {
+      "source_hash": "sha256:7dd8595f9b95816c26311700d9c9ab5f5064824f3a1416d1537b81e6e2a6199b",
+      "translated_at": "2026-06-06T19:29:30.259037Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/否定.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/否认.md": {
+      "source_hash": "sha256:5578c11c7fbee4aad840095643f710facd02a659df22a45f88a848344668f562",
+      "translated_at": "2026-06-06T19:29:32.844355Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/否认.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/吸引.md": {
+      "source_hash": "sha256:4e8dccc96b100a2e62632507ed7cb61d39173eb67cd8418f3af62f6939a61700",
+      "translated_at": "2026-06-06T19:29:35.452641Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/吸引.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/员工.md": {
+      "source_hash": "sha256:6d13a23b1e2a117cc93c02ec79f4a0e6f9555610f73b4ba92ed382237664e481",
+      "translated_at": "2026-06-06T19:29:38.841978Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/员工.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/周期.md": {
+      "source_hash": "sha256:537906493c09ef44e2dddd9179705a2fb8bfc0e98df1da30768464f2150ea5a9",
+      "translated_at": "2026-06-06T19:29:42.340820Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/周期.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/味道.md": {
+      "source_hash": "sha256:21206317f1d81c8ec057888b70904725e5c6750495865f7309679b93b057334a",
+      "translated_at": "2026-06-06T19:29:46.571390Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/味道.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/咸.md": {
+      "source_hash": "sha256:4cfe8c59763d717be7347870d4a5cd32dbc3a3edc150665d3a604a02319fe35d",
+      "translated_at": "2026-06-06T19:29:49.400427Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/咸.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/商量.md": {
+      "source_hash": "sha256:76e30c26c0473247cf465e292d3a455a2f2e2915db341e7c66abfde70162e323",
+      "translated_at": "2026-06-06T19:29:52.362184Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/商量.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/因此.md": {
+      "source_hash": "sha256:ef81eaa4d3936e15318c4e5b5f22b11e4cddfb6db46d9a2f74ca346e81d19f09",
+      "translated_at": "2026-06-06T19:29:56.559501Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/因此.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/团队.md": {
+      "source_hash": "sha256:fc43387b4837c2a7312828bd5bf498b1d974c12bdfae07f402ab32293510d59f",
+      "translated_at": "2026-06-06T19:29:59.104856Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/团队.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
