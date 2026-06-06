@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T23:21:11.410045Z",
+  "last_run": "2026-06-06T23:49:45.673379Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -9246,6 +9246,86 @@
       "source_hash": "sha256:73d6517fb5dafbd5e8b1dd0285f0abd7d32ef8f0b6d158c61e7cdbf548d2197c",
       "translated_at": "2026-06-06T23:21:11.410022Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/怀疑.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/态度.md": {
+      "source_hash": "sha256:67f8d771bbc67eb48e0cce2fd57dc496c3dfdc4d140db1ef2247b24ec6f8e55a",
+      "translated_at": "2026-06-06T23:49:08.996339Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/态度.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/思维.md": {
+      "source_hash": "sha256:78089b3c3897dffd7c43d431dd7bc0eb10aaa9c22e4b8a557913ddd0593c055b",
+      "translated_at": "2026-06-06T23:49:13.073558Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/思维.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/思考.md": {
+      "source_hash": "sha256:e708df37c40692f667ebd6cd26eaa14bc1a180eb0d8115a8acc65e70f437fb31",
+      "translated_at": "2026-06-06T23:49:17.992139Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/思考.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/总之.md": {
+      "source_hash": "sha256:4b2298d78a0aae62f6980bc4bd804f9b3e5293d9228c36e08b45ffeb1565edb2",
+      "translated_at": "2026-06-06T23:49:21.493450Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/总之.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/总体.md": {
+      "source_hash": "sha256:36e4ebc33be25c1e4688b3e051636d796e3dc027440b8468fb411bf4c43c6802",
+      "translated_at": "2026-06-06T23:49:25.414913Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/总体.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/总共.md": {
+      "source_hash": "sha256:1c3d1a2eb849042ec7ba99b894ebf62d7959c7405a9c06a5f8c86f824717dd18",
+      "translated_at": "2026-06-06T23:49:29.310650Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/总共.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/总的来说.md": {
+      "source_hash": "sha256:9063a469ac77cddc68af77929301c73c0ea9f7fcec0a365275f10b0d5aca5a4c",
+      "translated_at": "2026-06-06T23:49:32.561213Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/总的来说.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/总结.md": {
+      "source_hash": "sha256:c89a6c3cb7ff73fea6510328d59c2f6dae81fd06449814b1890f5582643a1753",
+      "translated_at": "2026-06-06T23:49:38.110617Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/总结.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/悲观.md": {
+      "source_hash": "sha256:51613bc0dc7d53c077c9fc8a5f107430fa5b008eef2bd9d617a71acab5550da0",
+      "translated_at": "2026-06-06T23:49:41.100255Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/悲观.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/情况.md": {
+      "source_hash": "sha256:ce9175073a8c9bfa633ddbbb2da2896e99fce58a48d9afc34fc97be397e7155c",
+      "translated_at": "2026-06-06T23:49:45.673354Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/情况.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
