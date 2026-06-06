@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T22:49:04.927992Z",
+  "last_run": "2026-06-06T23:21:11.410045Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -9166,6 +9166,86 @@
       "source_hash": "sha256:3026af1a867d999f519355c211498cbdd49574a45c806c29a40bf2b81191c55b",
       "translated_at": "2026-06-06T22:49:04.927969Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/当时.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/形式.md": {
+      "source_hash": "sha256:dc95c5b020fae0067aff3d334167c3f4b85e5e4795fe8ccf836bda77eec6a03e",
+      "translated_at": "2026-06-06T23:20:41.418952Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/形式.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/形成.md": {
+      "source_hash": "sha256:a7b586a345d9350838eb26aa7f8812787ff5915af2b436ed0de19010e230b462",
+      "translated_at": "2026-06-06T23:20:45.306317Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/形成.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/影响.md": {
+      "source_hash": "sha256:66161109c1e61b3d57e4a2bdbb57321bd3c7eff5fdf445c790ab8474403df321",
+      "translated_at": "2026-06-06T23:20:48.638839Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/影响.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/影响力.md": {
+      "source_hash": "sha256:a1757a92b88e7cb41102c88f18948829a1f484a25cb6323897e99e2e400d23bc",
+      "translated_at": "2026-06-06T23:20:51.638445Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/影响力.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/往往.md": {
+      "source_hash": "sha256:1ad2eab50aca41e523b4046baac0afb31204255ba82ea203a31af428797579c2",
+      "translated_at": "2026-06-06T23:20:54.521641Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/往往.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/律师.md": {
+      "source_hash": "sha256:31344bc612748763a965070f89bdec59677dceee72b272ef803a0226273d7d24",
+      "translated_at": "2026-06-06T23:20:57.346506Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/律师.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/心理健康.md": {
+      "source_hash": "sha256:235a3cc3a24a87f66a12c8f549e6cf6090a76a54a94fb9cb6080803b3206c0c7",
+      "translated_at": "2026-06-06T23:21:01.101770Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/心理健康.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/必要.md": {
+      "source_hash": "sha256:ac6eab63784f8bb52754ae4c3b89229d0171a26ad70beb5b6e9cd34146b7c0c2",
+      "translated_at": "2026-06-06T23:21:04.212139Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/必要.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/志愿者.md": {
+      "source_hash": "sha256:f532f44279f91c757f0602e33fad9eec7f2869d8768c57568ae00f3ed79c2f89",
+      "translated_at": "2026-06-06T23:21:07.653495Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/志愿者.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/怀疑.md": {
+      "source_hash": "sha256:73d6517fb5dafbd5e8b1dd0285f0abd7d32ef8f0b6d158c61e7cdbf548d2197c",
+      "translated_at": "2026-06-06T23:21:11.410022Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/怀疑.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
