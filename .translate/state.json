@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T08:52:59.023900Z",
+  "last_run": "2026-06-06T09:40:13.660342Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -7486,6 +7486,86 @@
       "source_hash": "sha256:8746a7c53a5bb95c8fdb9c1b962a276c61965e9d8532f5cd30719e344890c4a6",
       "translated_at": "2026-06-06T08:52:59.023878Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/雨伞.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/需要.md": {
+      "source_hash": "sha256:a991e459cfb3017b7b2ee01bd3a908b36ad6baeec12ebe1ce0094c60088bab3d",
+      "translated_at": "2026-06-06T09:39:46.273463Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/需要.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/面包.md": {
+      "source_hash": "sha256:aafd0b916688c99a49aeedec39108ba4998c2c9b7baecd1a7756fa3e8fdb9f8d",
+      "translated_at": "2026-06-06T09:39:48.662257Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/面包.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/项目.md": {
+      "source_hash": "sha256:5bbb44c6786335dc9a81dcb3f6072dc9895d895bce3f3abbc2d1c92f96fd77df",
+      "translated_at": "2026-06-06T09:39:51.857058Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/项目.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/顺利.md": {
+      "source_hash": "sha256:4267f95065aac061b932675576902a5d68ddb5c4b1b4233d8d1a0d8f71936da4",
+      "translated_at": "2026-06-06T09:39:54.272138Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/顺利.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/顺序.md": {
+      "source_hash": "sha256:4073fdee177b92b56b91d2c8de33c8cce5a6d18e140315e7cc16dca3462d7def",
+      "translated_at": "2026-06-06T09:39:59.177958Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/顺序.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/顾客.md": {
+      "source_hash": "sha256:dea195837cb2fe2211a03810b9e9d4a0bb9345e9a2620eab2e61a635af8c1ccf",
+      "translated_at": "2026-06-06T09:40:02.728853Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/顾客.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/题目.md": {
+      "source_hash": "sha256:5879d7f0e251f21c1888c0227f0c1d864887ff9ad4a8cf22a19ce1fc491eeb64",
+      "translated_at": "2026-06-06T09:40:05.172333Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/题目.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/飞机场.md": {
+      "source_hash": "sha256:9f6dc83a69e2d9ca834cfe77873dadc0ce97992fa0e0f77a7e52da8cbf85dbfb",
+      "translated_at": "2026-06-06T09:40:07.851247Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/飞机场.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/饺子.md": {
+      "source_hash": "sha256:be6e6fd93b0a228a1877e95fbad6c7daf9c4ff0643ed62bda27cf94a770a2900",
+      "translated_at": "2026-06-06T09:40:10.024497Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/饺子.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/骄傲.md": {
+      "source_hash": "sha256:3a63fe8ec9b357caf2418ec45276eb2194dab089c4f19d6852c6fb72787b7a78",
+      "translated_at": "2026-06-06T09:40:13.660318Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/骄傲.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
