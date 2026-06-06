@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T06:38:00.807914Z",
+  "last_run": "2026-06-06T07:56:36.241562Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -7326,6 +7326,86 @@
       "source_hash": "sha256:c54a2e901acc6ecd98a2010578630e1e26d08312f418ef2c186cbc291e38472a",
       "translated_at": "2026-06-06T06:38:00.807865Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/通知.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/通过.md": {
+      "source_hash": "sha256:b3ac8a775767d076346b50f0bbc9dc01ad9011de8435d4ea31aa9b5971324a4a",
+      "translated_at": "2026-06-06T07:56:07.221659Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/通过.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/道理.md": {
+      "source_hash": "sha256:426af5fbbdc2cf8e3ee3fc71f7070c0c8bb63d0df0e9624bc125400a69488ad7",
+      "translated_at": "2026-06-06T07:56:09.683953Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/道理.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/邮局.md": {
+      "source_hash": "sha256:13836c2e796487ffc90b601868f5d6f3280d55fa7a98ca83edcd7ea832f5ec19",
+      "translated_at": "2026-06-06T07:56:14.001455Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/邮局.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/邻居.md": {
+      "source_hash": "sha256:5fdc5691b42d09f155144fdbed27ec07d50f060a3dbab4c2dd719fbd5458a2d6",
+      "translated_at": "2026-06-06T07:56:18.039310Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/邻居.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/部分.md": {
+      "source_hash": "sha256:11e233e530890135c2a85da48948d8973fb58f42982774592b7da7153320d60c",
+      "translated_at": "2026-06-06T07:56:20.375413Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/部分.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/醋.md": {
+      "source_hash": "sha256:f07242746e0b8314169ebc80dbe1bf288e614308542a5ad2aa87d4eab495d66a",
+      "translated_at": "2026-06-06T07:56:22.485419Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/醋.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/重要.md": {
+      "source_hash": "sha256:c37b989f2ca9f3e266ec61ceaa2974d0d49fc274617c63eee6e5b4f49ee972c5",
+      "translated_at": "2026-06-06T07:56:26.892805Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/重要.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/钥匙.md": {
+      "source_hash": "sha256:1a57f7ab6b6827ad4a2308581cf5b129cc806a66c257276e846ac75d5ca8f60b",
+      "translated_at": "2026-06-06T07:56:29.696501Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/钥匙.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/银行.md": {
+      "source_hash": "sha256:f02d233588a3eafa8f83cd1985b43db9d5dc1c4207f03f2adbbc2b2ef8fa46f6",
+      "translated_at": "2026-06-06T07:56:32.849943Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/银行.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/错误.md": {
+      "source_hash": "sha256:574d04182ae94ff68eeecff7d9a68114fbe9ccc9b1e4f834939af11ca584f67e",
+      "translated_at": "2026-06-06T07:56:36.241539Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/错误.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
