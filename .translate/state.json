@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T09:40:13.660342Z",
+  "last_run": "2026-06-06T10:37:04.470031Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -7566,6 +7566,86 @@
       "source_hash": "sha256:3a63fe8ec9b357caf2418ec45276eb2194dab089c4f19d6852c6fb72787b7a78",
       "translated_at": "2026-06-06T09:40:13.660318Z",
       "dest_path": "content/languages/chinese/hsk/3/vocabulary/骄傲.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/高兴.md": {
+      "source_hash": "sha256:f9406c84c26f15b9381c925cc1a625ff718a2c226310d25336aaf38b559e1fad",
+      "translated_at": "2026-06-06T10:36:06.506591Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/高兴.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/鼓励.md": {
+      "source_hash": "sha256:903608c1eca4d7c55b557efbf142be0af06c4f2408cd36da40f7ac8c785c069d",
+      "translated_at": "2026-06-06T10:36:10.269310Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/鼓励.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/3/vocabulary/鼻子.md": {
+      "source_hash": "sha256:3c0d823f5fd73ffac7d58f3a732125aa38261ba78771458012664f53de0d2c44",
+      "translated_at": "2026-06-06T10:36:14.456945Z",
+      "dest_path": "content/languages/chinese/hsk/3/vocabulary/鼻子.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/grammar.md": {
+      "source_hash": "sha256:aab12e6e06491e0033e174fcbe3af640736d16f7e60d6b3f9e6857f9fc0862b0",
+      "translated_at": "2026-06-06T10:36:22.885761Z",
+      "dest_path": "content/languages/chinese/hsk/4/grammar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/01-even-x.md": {
+      "source_hash": "sha256:8fb7d4ba9253eee4581eec585a64fde338f07e0283b085ceeceeb91d17774dea",
+      "translated_at": "2026-06-06T10:36:31.773062Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/01-even-x.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/02-complex-comparisons.md": {
+      "source_hash": "sha256:e6da6c6261ce8f0d30c915b6ef76ad942d28e417ad2be973a1bdfff246faa6ff",
+      "translated_at": "2026-06-06T10:36:38.375084Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/02-complex-comparisons.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/03-budan-erqie.md": {
+      "source_hash": "sha256:1c02b17b6c8bb48ceebda2c62a975bc012e2e3e604eb569cc89e2639f3c59e94",
+      "translated_at": "2026-06-06T10:36:45.476901Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/03-budan-erqie.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/04-pivotal-constructions.md": {
+      "source_hash": "sha256:e9d78b8c368f6184f05809b389a4bc7109fa9de34d13a0be84154b9feb987568",
+      "translated_at": "2026-06-06T10:36:51.802909Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/04-pivotal-constructions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/05-topics.md": {
+      "source_hash": "sha256:4ab29db3bec0d4f16d7adbe75bf737bd34e499eaea1b154bee705a53caf46b20",
+      "translated_at": "2026-06-06T10:36:58.011582Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/05-topics.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/lessons/06-yue-yue.md": {
+      "source_hash": "sha256:8d786e1aeee02a72ff57d60b90dd6db3112b8ccee3343b2fa270ad1b5b97e5b5",
+      "translated_at": "2026-06-06T10:37:04.470009Z",
+      "dest_path": "content/languages/chinese/hsk/4/lessons/06-yue-yue.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
