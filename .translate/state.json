@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T18:24:20.942187Z",
+  "last_run": "2026-06-06T18:53:37.480215Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -8526,6 +8526,86 @@
       "source_hash": "sha256:33c35eec8895e138bb6c97fc0f523ef552cc8897e0213e8efcc519650e251f83",
       "translated_at": "2026-06-06T18:24:20.942165Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/号召.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/吃惊.md": {
+      "source_hash": "sha256:dbe82684b1fe9f579e8ccec1ea38164a1573702efbe0daeee8666b9cb6656503",
+      "translated_at": "2026-06-06T18:53:11.826836Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/吃惊.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/合伙人.md": {
+      "source_hash": "sha256:69a3bd6a8fa9730c9c54a96e76799cd61cdfd5a3c9b305f0431cd920057747ea",
+      "translated_at": "2026-06-06T18:53:15.271468Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/合伙人.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/合作.md": {
+      "source_hash": "sha256:1827df6f8ec39920180ac3ae58f5e367a754acb7b0e55b3734cf47f6fcd90f8b",
+      "translated_at": "2026-06-06T18:53:17.843070Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/合作.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/合同.md": {
+      "source_hash": "sha256:7552b230e7a9e9cc1157789912d6c1b7dea497465de06cf8b775e3553c8fb088",
+      "translated_at": "2026-06-06T18:53:20.715508Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/合同.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/合理.md": {
+      "source_hash": "sha256:ac0eea5d68c21a639ea833bbbc0a4b1c23db5ceb67714ae27a8f3495d84dfb4c",
+      "translated_at": "2026-06-06T18:53:23.455459Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/合理.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/合适.md": {
+      "source_hash": "sha256:b6b87bd348d3fc30fcaf6d583697756a11703421f2ca39c8acce97e6ea79005e",
+      "translated_at": "2026-06-06T18:53:25.818263Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/合适.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/同事.md": {
+      "source_hash": "sha256:a5cfc6b2d08cc674b5b0b6028590b90476bc38cc3de7bc5f4e23130a7ccd59aa",
+      "translated_at": "2026-06-06T18:53:28.468948Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/同事.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/同学.md": {
+      "source_hash": "sha256:c114b51a10e1340f016deae8cdf0044993053c9cc491e582205ac94755c34793",
+      "translated_at": "2026-06-06T18:53:31.660712Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/同学.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/同意.md": {
+      "source_hash": "sha256:e69a607c5606f4d8683438f8914cf36dae63a6c8af0087512cca928839cd9834",
+      "translated_at": "2026-06-06T18:53:34.408232Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/同意.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/同时.md": {
+      "source_hash": "sha256:4814bc6f5e6a21df66b8816256a2be19345e9ed4bcb5774bd6494a89825e66ef",
+      "translated_at": "2026-06-06T18:53:37.480188Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/同时.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
