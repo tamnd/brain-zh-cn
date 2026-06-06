@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-06T15:56:03.768359Z",
+  "last_run": "2026-06-06T16:23:13.159173Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -8206,6 +8206,86 @@
       "source_hash": "sha256:23b58ff3d208d0b730098758f8af8a647c6c55251e432b171f798fbaf46ed07a",
       "translated_at": "2026-06-06T15:56:03.768335Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/关系.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/具体.md": {
+      "source_hash": "sha256:65c4511a452004521abec3597d695518937ec98a7c0c80e1e55cb2067a84ee97",
+      "translated_at": "2026-06-06T16:22:39.434683Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/具体.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/决定.md": {
+      "source_hash": "sha256:4e025df1396d58a985613cfd2f6f9f182da9f21552c32398b991ae07a02256fc",
+      "translated_at": "2026-06-06T16:22:43.367168Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/决定.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/况且.md": {
+      "source_hash": "sha256:b011d450c4b9a5c774ff4d6c2255a62ac7042ffb5e8e4d73456fd0beb47b3f3a",
+      "translated_at": "2026-06-06T16:22:47.411740Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/况且.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/冷静.md": {
+      "source_hash": "sha256:0844b1e4db2d9ffca41f35a0544a08bc59d2fd850ad95e407db7095ac9a45813",
+      "translated_at": "2026-06-06T16:22:50.959260Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/冷静.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/出现.md": {
+      "source_hash": "sha256:b1539dd11c5ed2682bff01ca4fd75d0c1c9dec216052d4b1f3ad1bfbe3db3aca",
+      "translated_at": "2026-06-06T16:22:55.047578Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/出现.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/分别.md": {
+      "source_hash": "sha256:236099e1140bd638017c8eb9323eddc68125002a996738b5bef98e6c57cc5110",
+      "translated_at": "2026-06-06T16:22:58.987305Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/分别.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/分析.md": {
+      "source_hash": "sha256:4209aa96d2359d69c2d5178e2558c8c1c44a6414727ad525feebc0b1429e94b0",
+      "translated_at": "2026-06-06T16:23:02.538101Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/分析.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/分配.md": {
+      "source_hash": "sha256:78eb19175c88a8dd75828e6321f1a55407936d52574d91c4971906e9f0740e8a",
+      "translated_at": "2026-06-06T16:23:05.991043Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/分配.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/创新.md": {
+      "source_hash": "sha256:004d42dd1f90cd9966a6a99cd5c4b0765aeec019d73d62568af3f11bd61cf090",
+      "translated_at": "2026-06-06T16:23:10.331760Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/创新.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/创造力.md": {
+      "source_hash": "sha256:13e006baad49fd02f39a0fabc0964d3bfe12ca5da81eeb4a7d180bc15e449f49",
+      "translated_at": "2026-06-06T16:23:13.159149Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/创造力.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
