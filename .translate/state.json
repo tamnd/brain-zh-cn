@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T23:22:11.660959Z",
+  "last_run": "2026-06-07T23:49:41.239693Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -11486,6 +11486,86 @@
       "source_hash": "sha256:dcc97a63969556fb302719138723d7c2124cceb3e391a498ddd8f360cbaef1da",
       "translated_at": "2026-06-07T23:22:11.660937Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/邀请.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/部门.md": {
+      "source_hash": "sha256:17621f62102c193beb897ff36ffcbbb67e01332546b016c679ce091657b44c18",
+      "translated_at": "2026-06-07T23:49:17.878632Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/部门.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/重要.md": {
+      "source_hash": "sha256:313295b848fee142eedd71da58546b504c4fd7969832ab18e3cfdbcc03aef30a",
+      "translated_at": "2026-06-07T23:49:20.066919Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/重要.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/错误.md": {
+      "source_hash": "sha256:1a818d6022058b3b75e872f0338e467be91a0d3c30dae5ac2f7465223a7173df",
+      "translated_at": "2026-06-07T23:49:21.934027Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/错误.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/锻炼.md": {
+      "source_hash": "sha256:3e477d44f1458074c13648a7323d1da52242152fdea46507abca92c371adcc7c",
+      "translated_at": "2026-06-07T23:49:24.221476Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/锻炼.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/问题.md": {
+      "source_hash": "sha256:f8e94aa75ec98362dc9ba079d429f3daebe0628fe3dc62a926a561ae278927bd",
+      "translated_at": "2026-06-07T23:49:26.570883Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/问题.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/间接.md": {
+      "source_hash": "sha256:db4178022c3a2ea218edbec19c010a31bbda7f091b3ffb53e18bee221bdac2cb",
+      "translated_at": "2026-06-07T23:49:28.575217Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/间接.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/阶段.md": {
+      "source_hash": "sha256:154abafc12089ed0918f553fe0dad4257c26b460d4357a1af4e32c9173739de1",
+      "translated_at": "2026-06-07T23:49:31.793769Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/阶段.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/限制.md": {
+      "source_hash": "sha256:abe99e2a49859003b488c2d58023224a29e1577ce7a4960d76244f48a579ba6e",
+      "translated_at": "2026-06-07T23:49:36.241742Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/限制.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/需求.md": {
+      "source_hash": "sha256:eda331f00cb7ad475ff39bb5435c7257646d21550b3c14ab1e373675cc574e56",
+      "translated_at": "2026-06-07T23:49:39.009804Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/需求.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/非正式.md": {
+      "source_hash": "sha256:a8abee444bc29720af64b078db710d665c7c8ee2d71da31ab552100a67ca8925",
+      "translated_at": "2026-06-07T23:49:41.239666Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/非正式.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
