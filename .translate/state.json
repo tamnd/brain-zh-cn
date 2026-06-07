@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T08:10:31.802951Z",
+  "last_run": "2026-06-07T09:37:58.948180Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -9806,6 +9806,86 @@
       "source_hash": "sha256:f8007bd6486db194466b806c013782ec855a4f11bbe8dd42d2ae5a284e24d287",
       "translated_at": "2026-06-07T08:10:31.802922Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/文件.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/文明.md": {
+      "source_hash": "sha256:eb736f5be57ea6fb531a3ea12cc1d9ababdec8cdedbb389be1bb47e31f5c9aff",
+      "translated_at": "2026-06-07T09:37:23.069485Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/文明.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/新鲜.md": {
+      "source_hash": "sha256:3509ef4acca8c5be23b4e291d99a3ee3e38c42a0a73e87e3f65821229a533623",
+      "translated_at": "2026-06-07T09:37:27.164141Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/新鲜.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/方向.md": {
+      "source_hash": "sha256:bae9afe4530378ab44903930b740c6e94cd8b3779957f26b7a5689c1d63e67b8",
+      "translated_at": "2026-06-07T09:37:31.640784Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/方向.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/方式.md": {
+      "source_hash": "sha256:edce65cb1ee7d0b140c649838e74facf1d32d9d761e87714b1b19f0ce37920a4",
+      "translated_at": "2026-06-07T09:37:34.867370Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/方式.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/方案.md": {
+      "source_hash": "sha256:75fa8eae3a7de926b3c32d6b39d431a0e096fa3e5e7de48a4c916aefa15665af",
+      "translated_at": "2026-06-07T09:37:37.850217Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/方案.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/方法.md": {
+      "source_hash": "sha256:4d40a99f1149cfc84da3286709da67c1a9ebff0ae4eeb3a5d53e6911945aba31",
+      "translated_at": "2026-06-07T09:37:40.077074Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/方法.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/无论.md": {
+      "source_hash": "sha256:37326be62e25309202ffc429b1e2fd6e851e55f097d5d7e8b25d64006cebc555",
+      "translated_at": "2026-06-07T09:37:44.355142Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/无论.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/既然.md": {
+      "source_hash": "sha256:43c53b27918cc967ad9457c30c0335393e4c641e6671641c26841b7296730840",
+      "translated_at": "2026-06-07T09:37:50.319882Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/既然.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/既然…就.md": {
+      "source_hash": "sha256:954b4c3b26ff98572cfceca5f8f06d86eeb456befc4bef5d2501bfb81bcae7a5",
+      "translated_at": "2026-06-07T09:37:53.648162Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/既然…就.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/明显.md": {
+      "source_hash": "sha256:f262f68bd311c43a043ef2ee8e32e3a05dd5e5ef7a0da2696adcb19d3f7b3083",
+      "translated_at": "2026-06-07T09:37:58.948157Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/明显.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
