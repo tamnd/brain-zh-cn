@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T14:13:54.650305Z",
+  "last_run": "2026-06-07T15:04:37.642496Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -10286,6 +10286,86 @@
       "source_hash": "sha256:1dda333c263509b25242c34ca0c50a98787d570aebe4981d8e3129bbcc2d0a84",
       "translated_at": "2026-06-07T14:13:54.650277Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/演讲.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/灵活.md": {
+      "source_hash": "sha256:27298f005d38291abfb1942458e1c4fa16549efcb6ebb34a7cf4bbe35d80e3b9",
+      "translated_at": "2026-06-07T15:03:57.023974Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/灵活.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/热情.md": {
+      "source_hash": "sha256:3ddf934ede004c844e73e24bbc458f7290c724597ed1bef2b81a9bc0e5134404",
+      "translated_at": "2026-06-07T15:04:01.960333Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/热情.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/烹饪.md": {
+      "source_hash": "sha256:cfae03e6b0ffac6bf656a93c6e3b875057233d8670ba310cb12f741b969d7647",
+      "translated_at": "2026-06-07T15:04:05.978665Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/烹饪.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/然而.md": {
+      "source_hash": "sha256:1c5515e035037454b8656da89efe432cb16d96831dbfa3ab0cf95e441d3588e9",
+      "translated_at": "2026-06-07T15:04:10.061032Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/然而.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/特定.md": {
+      "source_hash": "sha256:240688972652b4a31af50063db20eccbee09e7a0c98ce29253b04dfc04cdccae",
+      "translated_at": "2026-06-07T15:04:13.086415Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/特定.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/特征.md": {
+      "source_hash": "sha256:4eebb322d344d7e93f9d01090aadff71c79205753c842a665e24329d61532be2",
+      "translated_at": "2026-06-07T15:04:18.545505Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/特征.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/特点.md": {
+      "source_hash": "sha256:78210a03f93d8c47388621539d51fd563bdae91eca7bdcd3792068b07e6afb6c",
+      "translated_at": "2026-06-07T15:04:24.284375Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/特点.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/独特.md": {
+      "source_hash": "sha256:514e42de883bd63c927737c503156836aa33fb753f0a5eb925691d7b5511a339",
+      "translated_at": "2026-06-07T15:04:29.909084Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/独特.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/环境.md": {
+      "source_hash": "sha256:9403c7e122a511e43ddcfe3ca5fbaf782049ce3889a2538c73168b1d74a6fd7e",
+      "translated_at": "2026-06-07T15:04:33.800451Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/环境.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/现代.md": {
+      "source_hash": "sha256:4b1fdc720c807c650c6ce86e8cdcbd81780c058806bcc8805f31d341164ef20b",
+      "translated_at": "2026-06-07T15:04:37.642474Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/现代.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
