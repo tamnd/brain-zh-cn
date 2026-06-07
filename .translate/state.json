@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T21:25:16.456193Z",
+  "last_run": "2026-06-07T21:51:45.814112Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -11166,6 +11166,86 @@
       "source_hash": "sha256:edd9588dd73504c1cf16abac3b781a486933ddaea4096361b6a378b0c21304f0",
       "translated_at": "2026-06-07T21:25:16.456170Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/计划.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/认为.md": {
+      "source_hash": "sha256:8c9efbc5387177e562721b3495c592a3923ae18ee1881c9d04368b315b4a63b6",
+      "translated_at": "2026-06-07T21:51:15.480948Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/认为.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/认可.md": {
+      "source_hash": "sha256:1214e2c795241e7822ef48651f7bb90b7ddbc8c1f50f1471573cd86b0c098b41",
+      "translated_at": "2026-06-07T21:51:19.382375Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/认可.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/认真.md": {
+      "source_hash": "sha256:b16d34d47916e767b70740b0726a8930aaf7dd132fa16a1524998e87755c8fa9",
+      "translated_at": "2026-06-07T21:51:23.127153Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/认真.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/认识.md": {
+      "source_hash": "sha256:a9db952e712d466e3c33eb9034c7039ed6678132ee68780e4d414c0f8cd34406",
+      "translated_at": "2026-06-07T21:51:27.422184Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/认识.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/讨论.md": {
+      "source_hash": "sha256:d3ae51c7ea9e0d7de436a468e4629bbd3bf132913dc7f87989fe3d9ed17e329a",
+      "translated_at": "2026-06-07T21:51:30.786524Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/讨论.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/记录.md": {
+      "source_hash": "sha256:f18b90ca1d7122c5201e75e0559e8a63a88317fa683c0640312af1f089671099",
+      "translated_at": "2026-06-07T21:51:33.361939Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/记录.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/记忆.md": {
+      "source_hash": "sha256:c5bf47900e4bce2ee7afca690904c5846561db5b4765d9998a26e1c13c74ff7b",
+      "translated_at": "2026-06-07T21:51:36.590375Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/记忆.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/记者.md": {
+      "source_hash": "sha256:36b16d2011c86abc9ce43a164b51fe2bb0612bbe2d4087d12882519a610a7991",
+      "translated_at": "2026-06-07T21:51:39.713271Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/记者.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/设施.md": {
+      "source_hash": "sha256:29c7a86c5f909d4401914ddf59776aa31dd23c4181b6f821db310f96340e7f94",
+      "translated_at": "2026-06-07T21:51:43.024073Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/设施.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/设计.md": {
+      "source_hash": "sha256:d51548858fe71439083729218df625f09e363412faa1da2a4a94a1b45e15b32c",
+      "translated_at": "2026-06-07T21:51:45.814088Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/设计.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
