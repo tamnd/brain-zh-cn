@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T10:44:00.954063Z",
+  "last_run": "2026-06-07T11:32:32.441798Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -9966,6 +9966,86 @@
       "source_hash": "sha256:608b0fc4f749f962731bf6ecc5301e20120bfc601ac562c3ebe4e5c773016e79",
       "translated_at": "2026-06-07T10:44:00.954037Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/服务.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/期间.md": {
+      "source_hash": "sha256:374248e66b701831b53f16108f969d7209564d26e83192b2fa8451865a69cdbd",
+      "translated_at": "2026-06-07T11:32:12.800640Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/期间.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/期限.md": {
+      "source_hash": "sha256:c8acd919d9beb220fad5723456a2099e5a215c01cda6d00c280586a16d867acc",
+      "translated_at": "2026-06-07T11:32:14.590955Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/期限.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/本质.md": {
+      "source_hash": "sha256:fb54f575d0873d602356057a36c9d75d834c9ddc647766bd6bb63a0507d2f325",
+      "translated_at": "2026-06-07T11:32:16.065980Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/本质.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/机会.md": {
+      "source_hash": "sha256:51ae9a0fcedf19ecd6d7882ce24a45ffcf320a713bee7a2825ee16794b8d28ac",
+      "translated_at": "2026-06-07T11:32:17.935453Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/机会.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/机制.md": {
+      "source_hash": "sha256:1b3050bb4aee76eb007493a78de89523ae72659cd91d7443a85a5319a702cc89",
+      "translated_at": "2026-06-07T11:32:20.486625Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/机制.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/机构.md": {
+      "source_hash": "sha256:bd3f45a9a33cee43643919cd3c7587b3df815ecd4a8cc340df28d27890da769f",
+      "translated_at": "2026-06-07T11:32:22.698068Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/机构.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/机遇.md": {
+      "source_hash": "sha256:8c2900879d4117a816b089827e7fbe94dfb2d8e133c6d159440b5d1016d2b256",
+      "translated_at": "2026-06-07T11:32:25.914936Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/机遇.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/权利.md": {
+      "source_hash": "sha256:28430a8d10312366383467489f201cee3bbc6d575efd91c65eecdb1fd5f1f86b",
+      "translated_at": "2026-06-07T11:32:28.399163Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/权利.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/条件.md": {
+      "source_hash": "sha256:e9840ac5212060b25934fe492e6aec528fe6dfac176aabdcd665ebec4596bf56",
+      "translated_at": "2026-06-07T11:32:30.339071Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/条件.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/标准.md": {
+      "source_hash": "sha256:ce148a2efd98f9de7e625c4667a50963a9f233c2fcf3363d10ae361d0d3e417a",
+      "translated_at": "2026-06-07T11:32:32.441775Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/标准.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
