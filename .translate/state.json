@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T22:21:51.935757Z",
+  "last_run": "2026-06-07T22:49:54.468038Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -11326,6 +11326,86 @@
       "source_hash": "sha256:b995f50de9ab1d420711097ead6138645917cf33eb64b9e83cf237b59d446691",
       "translated_at": "2026-06-07T22:21:51.935726Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/负责.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/质量.md": {
+      "source_hash": "sha256:47988923d88c592a7e9a4c84e6596353da8b77eea3f4402b3609f1fc611a8801",
+      "translated_at": "2026-06-07T22:49:14.685383Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/质量.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/费用.md": {
+      "source_hash": "sha256:35e32563f275774e4c096bf45910a3d6c19aa2e7fe698328578a1488e4aebdf2",
+      "translated_at": "2026-06-07T22:49:18.698889Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/费用.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/资料.md": {
+      "source_hash": "sha256:f3aeaab2ac198105d87afadc5d4e9dff1e0dd683ed6df4d0e9d16ff529738db0",
+      "translated_at": "2026-06-07T22:49:22.798741Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/资料.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/资金.md": {
+      "source_hash": "sha256:5d1f40c4ba8734ba1669c7a27b580a653d858feefafa1e95b402faa731252153",
+      "translated_at": "2026-06-07T22:49:26.235711Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/资金.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/趋势.md": {
+      "source_hash": "sha256:51a32da211aa3edd6ae7a08b65a344ec7b30ded856f4704069c62db4de43365e",
+      "translated_at": "2026-06-07T22:49:31.567118Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/趋势.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/转变.md": {
+      "source_hash": "sha256:212f6ee1ed3dd0edffb5646f576c406ae25b9b8832a0feb9b85c07c20e6d6953",
+      "translated_at": "2026-06-07T22:49:35.714884Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/转变.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/软件.md": {
+      "source_hash": "sha256:5bd42df690d9bc517a35b7411dbe79282244d05bc7c35333145d86481aa6e851",
+      "translated_at": "2026-06-07T22:49:40.821420Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/软件.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/辛辣.md": {
+      "source_hash": "sha256:4c1e0e66f5694a303fc553c7a6fdb6d08da5dc26ee1c9baef2b736befd12859c",
+      "translated_at": "2026-06-07T22:49:44.198273Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/辛辣.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/过敏.md": {
+      "source_hash": "sha256:811090db47cf51a49dcefc9ac107aef3835f5983d45ecff9d333048b099f72ea",
+      "translated_at": "2026-06-07T22:49:50.000598Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/过敏.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/过程.md": {
+      "source_hash": "sha256:1394c9ed2eed538340f2c034d5c5b68095411a94c79ff3027176868aaf608db6",
+      "translated_at": "2026-06-07T22:49:54.468010Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/过程.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
