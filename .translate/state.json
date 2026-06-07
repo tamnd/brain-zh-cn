@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T01:32:02.191729Z",
+  "last_run": "2026-06-07T03:03:06.533115Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -9486,6 +9486,86 @@
       "source_hash": "sha256:628519b7a4a4d9a7ee9935d2db691bc4208f10a85dfe539e12c7f77484fa5bf7",
       "translated_at": "2026-06-07T01:32:02.191699Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/报告.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/抽象.md": {
+      "source_hash": "sha256:e722773d837aa16d9edc1f30475bbe3f73e1fb72f71c3e4727e7ce1b30242dd5",
+      "translated_at": "2026-06-07T03:02:48.143652Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/抽象.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/担任.md": {
+      "source_hash": "sha256:7b7da272d7bb3fabe6d8c48c4636d3ccb1682f21852ec424d91dda0c60f0d351",
+      "translated_at": "2026-06-07T03:02:49.850013Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/担任.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/拒绝.md": {
+      "source_hash": "sha256:2d3022d1969878353a2bb4c78f793218f9ac753cb7e4c0ee429214aa7f6881e5",
+      "translated_at": "2026-06-07T03:02:51.242039Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/拒绝.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/拥有.md": {
+      "source_hash": "sha256:6ab5cbf56731cf1f5cc885b3e81e0e45616188613abbbd741e5a77dd0d5d2917",
+      "translated_at": "2026-06-07T03:02:53.443924Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/拥有.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/按时.md": {
+      "source_hash": "sha256:59f6fa835e927d1d41a3df58363513ce593afbf0d4484acb7e493bbb67daeabe",
+      "translated_at": "2026-06-07T03:02:55.921416Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/按时.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/按照.md": {
+      "source_hash": "sha256:bfc55447955d5342413d67926a266f0d8c94736690d8a7fc9d6905a542deb3b1",
+      "translated_at": "2026-06-07T03:02:58.149910Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/按照.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/挑战.md": {
+      "source_hash": "sha256:a6b301fa4f56005d298342f22cf552001504578d4fb9646be7bbe018f0e4dcda",
+      "translated_at": "2026-06-07T03:03:00.068400Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/挑战.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/授权.md": {
+      "source_hash": "sha256:aa56514bf92219845b8d43dfb8471ccb53ae4ab3bce50a928a8c0d4e076ef7ec",
+      "translated_at": "2026-06-07T03:03:02.616592Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/授权.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/掌握.md": {
+      "source_hash": "sha256:f2dcefdd9e84c8a7d7f8580e4f9c5642f0964eab796db2934d01286074752760",
+      "translated_at": "2026-06-07T03:03:04.394649Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/掌握.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/排队.md": {
+      "source_hash": "sha256:f38f102a6e73c613f55e520c48cac2002c7e66a966c176c9ff92002fadb3982b",
+      "translated_at": "2026-06-07T03:03:06.533090Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/排队.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
