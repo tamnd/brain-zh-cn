@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T18:54:49.522707Z",
+  "last_run": "2026-06-07T19:29:57.178755Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -10846,6 +10846,86 @@
       "source_hash": "sha256:5d9ff8ae763bdb236c194436360a97c468f338d16a2fa9b2c4f88fe907d06c68",
       "translated_at": "2026-06-07T18:54:49.522684Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/综上所述.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/缩小.md": {
+      "source_hash": "sha256:2ead54223bdc28c3b8f5a77ee32b28f3d57a8e43d648b01353a55db8162b7473",
+      "translated_at": "2026-06-07T19:29:34.592058Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/缩小.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/网上支付.md": {
+      "source_hash": "sha256:6a99bc7691d8ec2f160c1957a89449d7a34ab672bed38573851c23a7cab775db",
+      "translated_at": "2026-06-07T19:29:36.552003Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/网上支付.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/网站.md": {
+      "source_hash": "sha256:fdf959b07c8e1cc4e4c0c9367bf913a381f32da52fd819b26abc6e1fffc11ee3",
+      "translated_at": "2026-06-07T19:29:39.229283Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/网站.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/老师.md": {
+      "source_hash": "sha256:c8bdb30be62b0a3c911fb3c53cca243346f3519fd04e60dbe7b2531d6fc422e4",
+      "translated_at": "2026-06-07T19:29:42.847957Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/老师.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/老板.md": {
+      "source_hash": "sha256:f361eca3ccec3ea6c53c8b2e5b92993aaa7e8be6ec9f30266e2d37b870a27554",
+      "translated_at": "2026-06-07T19:29:44.593205Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/老板.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/考虑.md": {
+      "source_hash": "sha256:7da13789572278206086f1a1808daf0a47daa6fad27f6c97de9b63030e7450b7",
+      "translated_at": "2026-06-07T19:29:46.733062Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/考虑.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/耐心.md": {
+      "source_hash": "sha256:c09f20d58b4f5d9423b3bde5ec668b7cc0b2ee540a8104452685c5c374b34e66",
+      "translated_at": "2026-06-07T19:29:48.357712Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/耐心.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/联系.md": {
+      "source_hash": "sha256:4bae64ed40c46fb4ad66d0b6e6ef0352da1bf3f578baffe217e1448f3f93a475",
+      "translated_at": "2026-06-07T19:29:51.317241Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/联系.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/背景.md": {
+      "source_hash": "sha256:aa906c43abd2a272eb4f823aa68640a33bf653c795f765c05c4c1e8d26190260",
+      "translated_at": "2026-06-07T19:29:54.839600Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/背景.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/胜利.md": {
+      "source_hash": "sha256:165c9b6072e11e128be6b0bc63379acef77ac22512f803d9fc9aba30b913f07b",
+      "translated_at": "2026-06-07T19:29:57.178727Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/胜利.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
