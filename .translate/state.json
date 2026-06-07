@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T06:51:31.947482Z",
+  "last_run": "2026-06-07T08:10:31.802951Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -9726,6 +9726,86 @@
       "source_hash": "sha256:aaa3324bcd9b7c5f7c2c0435dadb8c22c846cefb4906f07debbb4a7559f87899",
       "translated_at": "2026-06-07T06:51:31.947455Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/改革.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/放弃.md": {
+      "source_hash": "sha256:30d2306101f86baa9f9790976dc97ac0231371ab288ea3703ce29a8c79afdde1",
+      "translated_at": "2026-06-07T08:10:11.610527Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/放弃.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/政府.md": {
+      "source_hash": "sha256:2d44e75b54e8360615d7be7e36f68cb089f8e20c590cfdb5059af4ed716fab9b",
+      "translated_at": "2026-06-07T08:10:13.798640Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/政府.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/政策.md": {
+      "source_hash": "sha256:46d2d80bcf6b0107520cc7b30193b4fb4d81e44f5e5ddf6d2cd24c4b9a9a7c6f",
+      "translated_at": "2026-06-07T08:10:16.353138Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/政策.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/效果.md": {
+      "source_hash": "sha256:b0a75d8c6b6b9f2cc320f82cd2b0b44ff44db797f8ae46f64f012cc85e1a5f05",
+      "translated_at": "2026-06-07T08:10:18.764237Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/效果.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/效率.md": {
+      "source_hash": "sha256:e24f0727d27edaf24c73ea29368ac344831f633468e830768dbfc9d29946943a",
+      "translated_at": "2026-06-07T08:10:20.741251Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/效率.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/教授.md": {
+      "source_hash": "sha256:fe44f883f0703cd42065acc05e81495cb3c32390e803e06ba55e1ce155593885",
+      "translated_at": "2026-06-07T08:10:23.621206Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/教授.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/教育.md": {
+      "source_hash": "sha256:ec4bf53e6b7047e3021b770d9287ea39465cb6fb91eabc95fe69c6f9d67067f2",
+      "translated_at": "2026-06-07T08:10:25.420988Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/教育.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/数据.md": {
+      "source_hash": "sha256:9b5dc3150d09fdf6468cc0eaad21277904f45484af0a36926e8a372849a2484a",
+      "translated_at": "2026-06-07T08:10:27.150963Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/数据.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/数据库.md": {
+      "source_hash": "sha256:22083732a3adfc21367823081a00e8a26665d946f1299a0949e07c5f5ba2537f",
+      "translated_at": "2026-06-07T08:10:29.486560Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/数据库.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/文件.md": {
+      "source_hash": "sha256:f8007bd6486db194466b806c013782ec855a4f11bbe8dd42d2ae5a284e24d287",
+      "translated_at": "2026-06-07T08:10:31.802922Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/文件.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
