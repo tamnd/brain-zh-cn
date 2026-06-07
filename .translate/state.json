@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T12:28:26.753818Z",
+  "last_run": "2026-06-07T13:04:21.932507Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -10126,6 +10126,86 @@
       "source_hash": "sha256:1c514aad65f0bdf65e5ccba8e3b170ac132bc24d3894d0701f3678811a80d034",
       "translated_at": "2026-06-07T12:28:26.753765Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/比较.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/毕业.md": {
+      "source_hash": "sha256:45ca7a004031b5c4a6de1aff3256be60ea1c4a3aef02944292ddec5a08548450",
+      "translated_at": "2026-06-07T13:03:49.712097Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/毕业.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/民主.md": {
+      "source_hash": "sha256:524f9756bcb6eb403aa9706fe3a4df6be835b8cb11a0ef503526cc0b38af54cd",
+      "translated_at": "2026-06-07T13:03:54.660845Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/民主.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/水果.md": {
+      "source_hash": "sha256:19a8b8ba7bf5c02cb40d5486b6cb276dc366e8b098b3ab146c8754a883d7fd83",
+      "translated_at": "2026-06-07T13:03:57.828373Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/水果.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/汇报.md": {
+      "source_hash": "sha256:5ba4c179d1bb0b06ab6b2a53233df46b1bd06800619f93b2331101fc176de8fd",
+      "translated_at": "2026-06-07T13:04:01.825434Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/汇报.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/没必要.md": {
+      "source_hash": "sha256:7026421bf10250a2f6b9c354394fa0fc4870410ff4d573e3217a3e57b1edec19",
+      "translated_at": "2026-06-07T13:04:04.975481Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/没必要.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/治疗师.md": {
+      "source_hash": "sha256:888cdd533a4a8f628acafbbb84447b0b339fcae516f410f9cefd71fd4fc7a80b",
+      "translated_at": "2026-06-07T13:04:08.431405Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/治疗师.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/法律.md": {
+      "source_hash": "sha256:d6d8e75648310a13c25531cd163fee62986ceff8d2e0373b4c17cd6fe75678bc",
+      "translated_at": "2026-06-07T13:04:10.901968Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/法律.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/注意.md": {
+      "source_hash": "sha256:2461a450841bb8aeb252455d67444677b7b3eabfc52b2f938da98a0035f1f323",
+      "translated_at": "2026-06-07T13:04:13.814988Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/注意.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/注重.md": {
+      "source_hash": "sha256:55de7399969a6dc1aef5c7af0c064247e529bb66eeb3451ab64cf3832bfa14a9",
+      "translated_at": "2026-06-07T13:04:18.416514Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/注重.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/活动.md": {
+      "source_hash": "sha256:84b9410e1ee19ed1f8fd1ea552dbe19987f35b9ca704bd21cad250d5bc59a08b",
+      "translated_at": "2026-06-07T13:04:21.932484Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/活动.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
