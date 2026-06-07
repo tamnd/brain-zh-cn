@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T15:04:37.642496Z",
+  "last_run": "2026-06-07T15:56:25.180665Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -10366,6 +10366,86 @@
       "source_hash": "sha256:4b1fdc720c807c650c6ce86e8cdcbd81780c058806bcc8805f31d341164ef20b",
       "translated_at": "2026-06-07T15:04:37.642474Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/现代.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/现场.md": {
+      "source_hash": "sha256:5b30f13e8ebb69686364db7bda87ddde405334fb41eb5dc095f8ed8ed8b0a3b3",
+      "translated_at": "2026-06-07T15:55:53.401074Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/现场.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/现象.md": {
+      "source_hash": "sha256:0c92511f93fb9a8a2613e41dc7cc00b40e5a7607e63816eb52b731688b3fad46",
+      "translated_at": "2026-06-07T15:55:56.670814Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/现象.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/理性.md": {
+      "source_hash": "sha256:f0183728fa807ca5e759ba7e736432610342a67bbdfe7d4abdc06aa27eb21fa4",
+      "translated_at": "2026-06-07T15:56:01.570421Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/理性.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/理解.md": {
+      "source_hash": "sha256:89bb8cd3df67bd4a3eaf9e6733831767b9100299eac7a9efc95c993135b85c26",
+      "translated_at": "2026-06-07T15:56:05.144693Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/理解.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/理论.md": {
+      "source_hash": "sha256:6408685ccd52ac930b5234a5b8550ab0bc886909e3ec2c7a91f78e6eebc83810",
+      "translated_at": "2026-06-07T15:56:08.103086Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/理论.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/甜.md": {
+      "source_hash": "sha256:5187cc285974b455dcfb8fa5fa1fc28287b927e0af7ff25dfe4296b871cb125c",
+      "translated_at": "2026-06-07T15:56:12.032929Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/甜.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/由于.md": {
+      "source_hash": "sha256:d50fe4d46b231852934de129ac13027c4ab3bf017156cd405c123db9723c393b",
+      "translated_at": "2026-06-07T15:56:15.753454Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/由于.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/申请.md": {
+      "source_hash": "sha256:d45046d8b78590eff8dc656842739d45627abe6824b6096c424506652dc0fc87",
+      "translated_at": "2026-06-07T15:56:19.536671Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/申请.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/病人.md": {
+      "source_hash": "sha256:86c268470e5ee3ffb8cbd7db36f0aee1744848e5d940aeeb1a30d0064ed99f36",
+      "translated_at": "2026-06-07T15:56:22.312274Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/病人.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/癌症.md": {
+      "source_hash": "sha256:a9dbcea695dada6f77943356279b03bbd2efe62234c9fa849d7738447933de16",
+      "translated_at": "2026-06-07T15:56:25.180637Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/癌症.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
