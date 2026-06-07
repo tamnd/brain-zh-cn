@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T21:51:45.814112Z",
+  "last_run": "2026-06-07T22:21:51.935757Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -11246,6 +11246,86 @@
       "source_hash": "sha256:d51548858fe71439083729218df625f09e363412faa1da2a4a94a1b45e15b32c",
       "translated_at": "2026-06-07T21:51:45.814088Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/设计.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/设计师.md": {
+      "source_hash": "sha256:0de143b9cc411f2e356442b3cd95fe4b2976af1658bc5b7cff6835d4bd8ecd65",
+      "translated_at": "2026-06-07T22:21:15.621835Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/设计师.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/证书.md": {
+      "source_hash": "sha256:ff874511166bc94519ee42ea7404169fc31895de886af3369bf51ef369984d06",
+      "translated_at": "2026-06-07T22:21:20.442353Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/证书.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/证明.md": {
+      "source_hash": "sha256:720af2fd2e3f364e9c758e7cece2981cb9e73b90f23e71096e9bace7e4e8cbff",
+      "translated_at": "2026-06-07T22:21:25.427212Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/证明.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/评估.md": {
+      "source_hash": "sha256:50b39dbf8eb16dd95feef32b1c81bfe2e0fd642a5ff7f7830280a399e17fb248",
+      "translated_at": "2026-06-07T22:21:29.577065Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/评估.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/评论.md": {
+      "source_hash": "sha256:b97293fc8f34fb9f7d9b1a436eaf8b3f3bcaeac98fbeca1ce5a4b558b26dfd6a",
+      "translated_at": "2026-06-07T22:21:33.544114Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/评论.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/诚实.md": {
+      "source_hash": "sha256:6f07e00e190502bbce930796952209e846cbd00410f53b80a728a01c4ad7201e",
+      "translated_at": "2026-06-07T22:21:36.327011Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/诚实.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/说明.md": {
+      "source_hash": "sha256:43bbd85e25b93777c9878390e3270c3041f0bbdb7f4a9df2178716c43b3f6d48",
+      "translated_at": "2026-06-07T22:21:40.101670Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/说明.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/调查.md": {
+      "source_hash": "sha256:c878a3c2e1b3fde253cf93fa2a03108a70ef66242f689501dc79670e1437bd8d",
+      "translated_at": "2026-06-07T22:21:45.156100Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/调查.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/谦虚.md": {
+      "source_hash": "sha256:1c188055eb53274e810a8d17f0a1a66f4e248e9374fd262e5d0b527f222a6623",
+      "translated_at": "2026-06-07T22:21:48.507969Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/谦虚.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/负责.md": {
+      "source_hash": "sha256:b995f50de9ab1d420711097ead6138645917cf33eb64b9e83cf237b59d446691",
+      "translated_at": "2026-06-07T22:21:51.935726Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/负责.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
