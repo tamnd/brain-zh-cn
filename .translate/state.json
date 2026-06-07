@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T17:34:24.383161Z",
+  "last_run": "2026-06-07T18:24:03.996045Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -10686,6 +10686,86 @@
       "source_hash": "sha256:1d8d4717c95ad4ebc685a5e545db4b74151720e92b2fe1110a381586a5236ddd",
       "translated_at": "2026-06-07T17:34:24.383133Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/策略.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/简单.md": {
+      "source_hash": "sha256:2f5011561eb438bf69fd42d33311c3919f5bd7e69f56e62f5b48af4ae1e9ae7d",
+      "translated_at": "2026-06-07T18:23:25.238720Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/简单.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/简洁.md": {
+      "source_hash": "sha256:fc2f1b38d3d1a4cae4f7b32c5a9a8a3fc325711e579f39f9fb23a8dc63c051a5",
+      "translated_at": "2026-06-07T18:23:28.662177Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/简洁.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/管理.md": {
+      "source_hash": "sha256:bc7f1e6f374b8217666c90a2fee62dfcefb0d2c0d44d3959adf1b9727c61ad94",
+      "translated_at": "2026-06-07T18:23:32.572665Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/管理.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/管理者.md": {
+      "source_hash": "sha256:d535e22b3c80b38a1103d1240345c911feff7ed3e814c987923d47e8956f8467",
+      "translated_at": "2026-06-07T18:23:37.473318Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/管理者.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/粗略.md": {
+      "source_hash": "sha256:a789138be574fd5472c7acdc84e65fce36eee2cb4fcaa4373693354c75544ac1",
+      "translated_at": "2026-06-07T18:23:42.080218Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/粗略.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/粗鲁.md": {
+      "source_hash": "sha256:2e38f8441764568a5de669360b7d867a4f44f14c25a33c204f13f5f6fba38bb7",
+      "translated_at": "2026-06-07T18:23:46.071809Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/粗鲁.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/精确.md": {
+      "source_hash": "sha256:f1fb3d5ef6e0f8ebe210cac4258c95b3ebe9ac7ade3f4345a496c55c2a5ea942",
+      "translated_at": "2026-06-07T18:23:49.660120Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/精确.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/系统.md": {
+      "source_hash": "sha256:39ad9c6220a1aee85e89404803353c0f9e605e55018c7b85883a0cdae4acca34",
+      "translated_at": "2026-06-07T18:23:53.324911Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/系统.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/紧张.md": {
+      "source_hash": "sha256:28a721782d6086a7e2816c250d02de0ef1f85d51afc86f77fa5c963f1bf42236",
+      "translated_at": "2026-06-07T18:23:58.537768Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/紧张.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/组织.md": {
+      "source_hash": "sha256:0dd631e627545bfa58b7d8b2c9caed1eab038125e6be35d07c46395d929c4eac",
+      "translated_at": "2026-06-07T18:24:03.996020Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/组织.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
