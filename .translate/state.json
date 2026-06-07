@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T16:29:43.291340Z",
+  "last_run": "2026-06-07T16:58:16.102988Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -10526,6 +10526,86 @@
       "source_hash": "sha256:c7949852fde1c2dd948952fe7f06e14047fe88986dbdb844211512f2f0d8d83f",
       "translated_at": "2026-06-07T16:29:43.291314Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/研究员.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/硬件.md": {
+      "source_hash": "sha256:a4f4357a50b4f73e94544ebf310a9ec88ba19613672ebd75ce8da1621abd1081",
+      "translated_at": "2026-06-07T16:57:51.002526Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/硬件.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/确认.md": {
+      "source_hash": "sha256:2b80ac1f94fb72153389d4fc54bdd60e47e7fa55b08ecb59b1fc8194da7dc376",
+      "translated_at": "2026-06-07T16:57:53.580738Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/确认.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/礼貌.md": {
+      "source_hash": "sha256:1c8c46b1f2a08724dca2649abd3503a489431984a4ccaf28aeb580345fce8bad",
+      "translated_at": "2026-06-07T16:57:55.712147Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/礼貌.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/社交媒体.md": {
+      "source_hash": "sha256:3ceae75560096dfb9ccbedd3d6e9767ee788527f51c3677b8047d7eddb52e0f7",
+      "translated_at": "2026-06-07T16:57:58.093883Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/社交媒体.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/社会.md": {
+      "source_hash": "sha256:68b8f55dfb371f8ecefd1defdf18773fe764025896e9e3f6f45b7f9085282242",
+      "translated_at": "2026-06-07T16:58:01.551945Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/社会.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/科学.md": {
+      "source_hash": "sha256:25301ac391894df0110c8620f0f6bf61e237e336e7ec446ec450e55df8f163a5",
+      "translated_at": "2026-06-07T16:58:04.288748Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/科学.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/科技.md": {
+      "source_hash": "sha256:a97441fca50b06f1655f92de6ab70d63b82682a94421c6bd46db477ffbfdd5a8",
+      "translated_at": "2026-06-07T16:58:07.754802Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/科技.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/积极.md": {
+      "source_hash": "sha256:b40643119dab4f9ea94f1729cc361bba801c95bcf3bcf7eae97ec0593ec84715",
+      "translated_at": "2026-06-07T16:58:10.092764Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/积极.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/积累.md": {
+      "source_hash": "sha256:299d5a5df8f269019195331bef3decc9f40019af8329545939677545fd0d2d97",
+      "translated_at": "2026-06-07T16:58:12.899342Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/积累.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/移动.md": {
+      "source_hash": "sha256:55c84f78c55db317bb2e5126007db7ae934d58a2ef1e0f22ca6f0a876d33e046",
+      "translated_at": "2026-06-07T16:58:16.102964Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/移动.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
