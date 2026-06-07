@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T13:04:21.932507Z",
+  "last_run": "2026-06-07T14:13:54.650305Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -10206,6 +10206,86 @@
       "source_hash": "sha256:84b9410e1ee19ed1f8fd1ea552dbe19987f35b9ca704bd21cad250d5bc59a08b",
       "translated_at": "2026-06-07T13:04:21.932484Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/活动.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/活跃.md": {
+      "source_hash": "sha256:a8999d610be63c707dda72551b2785c92dc3af7a823e9bd3c33ce4a98964087d",
+      "translated_at": "2026-06-07T14:13:21.109125Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/活跃.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/流媒体.md": {
+      "source_hash": "sha256:a6bdb40413f934badf7cbb4d20e69ef236a16a1164e4d3cf7b443ab4f164b61b",
+      "translated_at": "2026-06-07T14:13:23.854374Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/流媒体.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/流行病.md": {
+      "source_hash": "sha256:05caec89c9698e225d6fcac14b92eae2ba608d8973468e51c7b68f663b108e28",
+      "translated_at": "2026-06-07T14:13:27.943979Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/流行病.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/消失.md": {
+      "source_hash": "sha256:600f3dbd8637cbbac76772082d0c8e53f98fb518f46f85f1682d63afdfa106c7",
+      "translated_at": "2026-06-07T14:13:31.248386Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/消失.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/消极.md": {
+      "source_hash": "sha256:69b6857052c83b59e378ff5718a3d9e6389ca13ab8ca3ec163e8660dbf526a94",
+      "translated_at": "2026-06-07T14:13:33.903184Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/消极.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/消费者.md": {
+      "source_hash": "sha256:545a94773f561c2466d401a1f68c50d2f327bfd4cee42c6a30bf3eda65dcb487",
+      "translated_at": "2026-06-07T14:13:36.962266Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/消费者.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/深入.md": {
+      "source_hash": "sha256:eb0a605bf1f71c5574cf8c4ccdab53feb618027889e9dfc406de656db7730454",
+      "translated_at": "2026-06-07T14:13:41.855037Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/深入.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/深刻.md": {
+      "source_hash": "sha256:53c8c2161c963f8a34dc289ce202057d1238870c03ad23152830e7568d4f7620",
+      "translated_at": "2026-06-07T14:13:45.026837Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/深刻.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/满足.md": {
+      "source_hash": "sha256:2173ebeb8e9bfa166c557d8f5af8ffc42e5202f15c560d14138e00f0f9d03648",
+      "translated_at": "2026-06-07T14:13:49.086813Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/满足.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/演讲.md": {
+      "source_hash": "sha256:1dda333c263509b25242c34ca0c50a98787d570aebe4981d8e3129bbcc2d0a84",
+      "translated_at": "2026-06-07T14:13:54.650277Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/演讲.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
