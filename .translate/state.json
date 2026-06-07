@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T18:24:03.996045Z",
+  "last_run": "2026-06-07T18:54:49.522707Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -10766,6 +10766,86 @@
       "source_hash": "sha256:0dd631e627545bfa58b7d8b2c9caed1eab038125e6be35d07c46395d929c4eac",
       "translated_at": "2026-06-07T18:24:03.996020Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/组织.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/经历.md": {
+      "source_hash": "sha256:8754789a133ee6d4a8a484b69bf02c7ff9f515dc1922b6c405e0888d6e3e455e",
+      "translated_at": "2026-06-07T18:54:15.964209Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/经历.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/经济.md": {
+      "source_hash": "sha256:c63dcef1ab662ee754ba9c48278f9b3d4e71917a4927674fd592434a6ea6f0a1",
+      "translated_at": "2026-06-07T18:54:18.359444Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/经济.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/经验.md": {
+      "source_hash": "sha256:fa81e989a05170d5489cdb3a743c5b3cf27629679e9b114de65b7a0ef1de36bb",
+      "translated_at": "2026-06-07T18:54:22.505727Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/经验.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/结果.md": {
+      "source_hash": "sha256:5b760622b2c246c18bf16fde934adb448bbc35f5d4443b0aa88a80e4fd78d9a6",
+      "translated_at": "2026-06-07T18:54:26.089117Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/结果.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/结论.md": {
+      "source_hash": "sha256:44c97bf1b4eff92776523d016b97c52074421193e57688cc37bf9630e013659c",
+      "translated_at": "2026-06-07T18:54:29.726390Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/结论.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/绝对.md": {
+      "source_hash": "sha256:3c17eaede5101e2d83e60a5a66628d1cdea99fdb4bc1ccc5f4464feb09ca720e",
+      "translated_at": "2026-06-07T18:54:33.131162Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/绝对.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/统计.md": {
+      "source_hash": "sha256:de495574709e205a78163403de77d7f49d9231512132fcb64675c7c7f6503a9c",
+      "translated_at": "2026-06-07T18:54:36.590318Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/统计.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/维护.md": {
+      "source_hash": "sha256:1afbea65802cd93d49f3f71a7c6a4607bd2c15ec89cdeba12171de20cfaf4c3f",
+      "translated_at": "2026-06-07T18:54:41.002559Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/维护.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/维生素.md": {
+      "source_hash": "sha256:0e3cb45e289c22513c9cfc2962bfc3f9dd5a1a1ac8a9f333a2fbfa0bacb6e6d1",
+      "translated_at": "2026-06-07T18:54:44.213589Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/维生素.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/综上所述.md": {
+      "source_hash": "sha256:5d9ff8ae763bdb236c194436360a97c468f338d16a2fa9b2c4f88fe907d06c68",
+      "translated_at": "2026-06-07T18:54:49.522684Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/综上所述.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
