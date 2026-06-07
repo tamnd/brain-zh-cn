@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T19:29:57.178755Z",
+  "last_run": "2026-06-07T20:00:02.002945Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -10926,6 +10926,86 @@
       "source_hash": "sha256:165c9b6072e11e128be6b0bc63379acef77ac22512f803d9fc9aba30b913f07b",
       "translated_at": "2026-06-07T19:29:57.178727Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/胜利.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/能力.md": {
+      "source_hash": "sha256:b318257d023e5f57896ec5eac556d2dd1c9b4e5c806069e60d4b3c50eb8af1de",
+      "translated_at": "2026-06-07T19:59:27.037678Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/能力.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/自信.md": {
+      "source_hash": "sha256:599e924ed0ff2cc19c002c3ab38171593ad3da98d9f6f47d9ab3ec9e6a52e3ab",
+      "translated_at": "2026-06-07T19:59:30.903507Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/自信.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/节省.md": {
+      "source_hash": "sha256:19db50b2ee8c101a3011479646349f9f1b988b569b85e4d1f9c02d0dffdc9e49",
+      "translated_at": "2026-06-07T19:59:34.637737Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/节省.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/苦.md": {
+      "source_hash": "sha256:61d339233ac86fdeb4f79a7b7edf39a7fb2f3ff84c3726e0a21391ac34bfebe6",
+      "translated_at": "2026-06-07T19:59:38.554848Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/苦.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/范围.md": {
+      "source_hash": "sha256:208a58fd4fa574fbbf495d31b09372117d5d71a69cd1206ee75ca750a67c4cb2",
+      "translated_at": "2026-06-07T19:59:42.912092Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/范围.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/菜单.md": {
+      "source_hash": "sha256:d5e28f1680d2279c62181577c6470fc143deead067210e0dd8aa1d69c01d7a13",
+      "translated_at": "2026-06-07T19:59:45.663105Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/菜单.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/营养.md": {
+      "source_hash": "sha256:a6e97f93d23fd3755fab20bfb94da8ffc8ac3b6176520aa2dc3048cfdebd0013",
+      "translated_at": "2026-06-07T19:59:48.956018Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/营养.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/蔬菜.md": {
+      "source_hash": "sha256:c75c87099571f4ffdcfabfcdc840d7705e9e628c095730bf94e55221f2545038",
+      "translated_at": "2026-06-07T19:59:52.806211Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/蔬菜.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/虚伪.md": {
+      "source_hash": "sha256:ee29c153546b21cdd05a23234c4b8004d2ba9bb34502eae1667ae044e4b067b8",
+      "translated_at": "2026-06-07T19:59:57.416513Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/虚伪.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/虽然.md": {
+      "source_hash": "sha256:7ef7c52b007e4813c4704449b30ee064c562ae686076c911dfe5c2667f6178cd",
+      "translated_at": "2026-06-07T20:00:02.002922Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/虽然.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
