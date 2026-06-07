@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T22:49:54.468038Z",
+  "last_run": "2026-06-07T23:22:11.660959Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -11406,6 +11406,86 @@
       "source_hash": "sha256:1394c9ed2eed538340f2c034d5c5b68095411a94c79ff3027176868aaf608db6",
       "translated_at": "2026-06-07T22:49:54.468010Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/过程.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/进步.md": {
+      "source_hash": "sha256:4203db01ef36049a3baa46ec2be7648bad4881e2cf052607fb567804f56eb6ef",
+      "translated_at": "2026-06-07T23:21:40.672256Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/进步.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/进程.md": {
+      "source_hash": "sha256:0d0b87c3a13f7995bb19a6ebac435f4e5baf2b569b91c958321c64b19eb09165",
+      "translated_at": "2026-06-07T23:21:43.937086Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/进程.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/选举.md": {
+      "source_hash": "sha256:98e77e31df8afe2e3399bcf15a1c05366e5bf041f7365c5f98e65dcf2dd89a87",
+      "translated_at": "2026-06-07T23:21:47.626343Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/选举.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/选择.md": {
+      "source_hash": "sha256:f5e36372d05eae1545e1ed6794062bae1453f519c8812ec95fa37e517001db6a",
+      "translated_at": "2026-06-07T23:21:50.808343Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/选择.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/逐渐.md": {
+      "source_hash": "sha256:27971395e752cc513cfbef31a69b1896e8154d667f5164771a929ccbe5e97aa2",
+      "translated_at": "2026-06-07T23:21:54.009919Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/逐渐.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/通报.md": {
+      "source_hash": "sha256:a300e121883bbe8ddb32b45f20380dea90992c767e424674e7b8cf5eccd0eadd",
+      "translated_at": "2026-06-07T23:21:58.433628Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/通报.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/通知.md": {
+      "source_hash": "sha256:af2136a5d0bca997cb9048feff983cbe67cbd3e7870f7ae1239aedb86de0d635",
+      "translated_at": "2026-06-07T23:22:01.661863Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/通知.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/通过.md": {
+      "source_hash": "sha256:0ffbf1be0c4aefa98004b3e46a5bd9b15bbab3845adb12cdc8dae640c43cae0f",
+      "translated_at": "2026-06-07T23:22:04.917989Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/通过.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/速度.md": {
+      "source_hash": "sha256:a1b794f72bde8a63b8e069141f1e706f3fc493cc7200aee6b86784443790e539",
+      "translated_at": "2026-06-07T23:22:08.039653Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/速度.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/邀请.md": {
+      "source_hash": "sha256:dcc97a63969556fb302719138723d7c2124cceb3e391a498ddd8f360cbaef1da",
+      "translated_at": "2026-06-07T23:22:11.660937Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/邀请.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
