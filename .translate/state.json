@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T05:02:26.154934Z",
+  "last_run": "2026-06-07T06:51:31.947482Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -9646,6 +9646,86 @@
       "source_hash": "sha256:7b37acc90f215c6225dbe2a8858ab22250ab1875cdcee97c08f3cb033a5131ad",
       "translated_at": "2026-06-07T05:02:26.154909Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/提供.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/提出.md": {
+      "source_hash": "sha256:b791a2dd7ecf09a3d6eb0fdbb01d25c87f544d66c2d37c34b3f8e141daa0d63e",
+      "translated_at": "2026-06-07T06:51:13.848948Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/提出.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/提到.md": {
+      "source_hash": "sha256:702509cc1368d05a3a08864a1278ecf6f484967cb6e48b06e9fe58d8495ac97d",
+      "translated_at": "2026-06-07T06:51:16.096533Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/提到.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/提升.md": {
+      "source_hash": "sha256:1c02068d932134065bd6a2a44774215acd6a8c0f7632c3741243226895cba7ae",
+      "translated_at": "2026-06-07T06:51:17.667077Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/提升.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/搜索引擎.md": {
+      "source_hash": "sha256:84d887f828a7c4c22fb4faccdf5ecf6b1154d284630091b66c3de6739ce9087e",
+      "translated_at": "2026-06-07T06:51:19.247780Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/搜索引擎.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/支出.md": {
+      "source_hash": "sha256:eb097ef57141063f874c195079c6b4dfa67e724a2c2e99727b2d34af2705e231",
+      "translated_at": "2026-06-07T06:51:21.881308Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/支出.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/支持.md": {
+      "source_hash": "sha256:17839c7aa5247fdb07caed9df53c29cce1c8dd69769ca6c76f1ebd501f865f20",
+      "translated_at": "2026-06-07T06:51:24.273981Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/支持.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/收入.md": {
+      "source_hash": "sha256:9f956d96601f53cde8d16e6c1257712fd76b6bcf4c3ee60c06dce437cb9daded",
+      "translated_at": "2026-06-07T06:51:25.970380Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/收入.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/收集.md": {
+      "source_hash": "sha256:86329bd9635ed0dc96e52a3ab17c6fd2c82329d1a5677ca999fe237f43209ac1",
+      "translated_at": "2026-06-07T06:51:27.704096Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/收集.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/改变.md": {
+      "source_hash": "sha256:ec559f16186cac4a97a10d871b2b80ad31e1203ef6eabb2b725c87199c9cef41",
+      "translated_at": "2026-06-07T06:51:29.462466Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/改变.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/改革.md": {
+      "source_hash": "sha256:aaa3324bcd9b7c5f7c2c0435dadb8c22c846cefb4906f07debbb4a7559f87899",
+      "translated_at": "2026-06-07T06:51:31.947455Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/改革.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
