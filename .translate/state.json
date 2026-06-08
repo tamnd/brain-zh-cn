@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T15:46:19.356234Z",
+  "last_run": "2026-06-08T17:03:25.040430Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -12366,6 +12366,86 @@
       "source_hash": "sha256:5edea93f2d0e1f9ce6fc2d728add7cd3b4009b967a4f5798a4a31be89819b6a5",
       "translated_at": "2026-06-08T15:46:19.356207Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/免疫.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/全面.md": {
+      "source_hash": "sha256:c9d4520ba2d28d86a86678ed5c63c510cf2e2307bd6f63adbeea6ff10381a053",
+      "translated_at": "2026-06-08T17:02:57.599395Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/全面.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/公共卫生.md": {
+      "source_hash": "sha256:4e9357180bab03bfd8e3b80bdfb09f65c99dabf253016ac64f229d01345539ca",
+      "translated_at": "2026-06-08T17:03:00.213150Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/公共卫生.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/公关.md": {
+      "source_hash": "sha256:432576920412a427f9df565f8a99e200491b8e9512c376d37d59206370417e58",
+      "translated_at": "2026-06-08T17:03:01.975641Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/公关.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/公平.md": {
+      "source_hash": "sha256:2c26c161fcbd72e768b4094cf4ee30e22f6d31344975d55f71c3b5bbcebd8ba5",
+      "translated_at": "2026-06-08T17:03:04.790570Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/公平.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/公平的.md": {
+      "source_hash": "sha256:d332086e951ddef77639846d8205a7edbd511b0d7bcff5a058298fb5dcacd96c",
+      "translated_at": "2026-06-08T17:03:09.002608Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/公平的.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/公正.md": {
+      "source_hash": "sha256:89e6b5d8208f33abe1369457590cd3bd7947fd09bf266c2935c74a02ce190520",
+      "translated_at": "2026-06-08T17:03:11.906945Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/公正.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/公民.md": {
+      "source_hash": "sha256:36c34a0a27362cf6eceb8c017d460643daf3b993506cbd2021d2ee123ffe17a4",
+      "translated_at": "2026-06-08T17:03:15.185511Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/公民.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/关键.md": {
+      "source_hash": "sha256:833ba034945b5a27b108b8fc8d487831715431170984bc2afa952db5ded2a27b",
+      "translated_at": "2026-06-08T17:03:17.326528Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/关键.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/具体.md": {
+      "source_hash": "sha256:981f084983fb2c7b6a98d7445968a59dc6d7353eba66e3c2d66c8e6551838b84",
+      "translated_at": "2026-06-08T17:03:21.489172Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/具体.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/内在.md": {
+      "source_hash": "sha256:15fee8e35a32774115d0e2bc41e95cf1d0a93f28abe8d3995bd18ba0544047c5",
+      "translated_at": "2026-06-08T17:03:25.040402Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/内在.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
