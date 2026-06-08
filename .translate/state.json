@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T14:24:48.151588Z",
+  "last_run": "2026-06-08T15:46:19.356234Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -12286,6 +12286,86 @@
       "source_hash": "sha256:43e528a6b760caa4bfbd580e78679a9c13f1f496615518d13fe9613bc9214033",
       "translated_at": "2026-06-08T14:24:48.151566Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/修辞.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/倡导.md": {
+      "source_hash": "sha256:a4b3fb8c000a9765a93a83353ba7fe33f677a152f3936cd340f596dd6683016e",
+      "translated_at": "2026-06-08T15:45:53.054650Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/倡导.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/倡议.md": {
+      "source_hash": "sha256:3cbf6914e288018881d8606a0f6545ca056aef1134d0ed5e67338e6a7f061b43",
+      "translated_at": "2026-06-08T15:45:57.003848Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/倡议.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/债券.md": {
+      "source_hash": "sha256:8d3a335205feb2478204d03d969cec1ef58cb25664b647a7946047f730074f4a",
+      "translated_at": "2026-06-08T15:45:59.343530Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/债券.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/假设.md": {
+      "source_hash": "sha256:578f7c0d4d48f530b2c273bbacaa7133708d792be334f8071e554a2249f66fd0",
+      "translated_at": "2026-06-08T15:46:02.676843Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/假设.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/偏见.md": {
+      "source_hash": "sha256:b944002200ff779b0e1fb23c0a94288ee5c0e0477b45bb9650dbe840f9a6fec2",
+      "translated_at": "2026-06-08T15:46:05.812784Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/偏见.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/健康.md": {
+      "source_hash": "sha256:d05e3cc639609117d255d571a8d4a73d0e1bfa61448656745bd9ac6ab13e743d",
+      "translated_at": "2026-06-08T15:46:08.590203Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/健康.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/充足.md": {
+      "source_hash": "sha256:0b8efad4edaab63afd8bd78946bcadb17ac8fff3518fbc7164d5b3f9a79abbc5",
+      "translated_at": "2026-06-08T15:46:10.755487Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/充足.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/先进.md": {
+      "source_hash": "sha256:5eb64f66b3528de0cd4208da5d68b7a698f4cbb25d55698c21cb545dbd25f593",
+      "translated_at": "2026-06-08T15:46:13.780679Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/先进.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/克制.md": {
+      "source_hash": "sha256:e99f1578c9398328a73cf72a59ec05b25603d98664683054a46f6ea131e67705",
+      "translated_at": "2026-06-08T15:46:16.346766Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/克制.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/免疫.md": {
+      "source_hash": "sha256:5edea93f2d0e1f9ce6fc2d728add7cd3b4009b967a4f5798a4a31be89819b6a5",
+      "translated_at": "2026-06-08T15:46:19.356207Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/免疫.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
