@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T21:14:02.824126Z",
+  "last_run": "2026-06-08T22:04:52.338318Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -12766,6 +12766,86 @@
       "source_hash": "sha256:11438a77532fdf27d9c17b1ff1e9ed647c8a14d463dfa3045a2b07e11068e9f1",
       "translated_at": "2026-06-08T21:14:02.824099Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/压力.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/压抑.md": {
+      "source_hash": "sha256:64e2a963aa4cf1a9aa174389f5f18fc5f320d7621b131dd402a97682dde9d4f0",
+      "translated_at": "2026-06-08T22:04:12.373402Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/压抑.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/原理.md": {
+      "source_hash": "sha256:2a9e521b4e41e78bae66865ceee555ccd10d89da404c8c420ad4358a9f1f6c89",
+      "translated_at": "2026-06-08T22:04:16.612024Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/原理.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/反之.md": {
+      "source_hash": "sha256:620f7e913617bef32668d426eaf2dd08d9e76aee029f8bd1959c50336a8c2ce2",
+      "translated_at": "2026-06-08T22:04:21.203456Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/反之.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/反映.md": {
+      "source_hash": "sha256:133edd75b44a3181beb7b72ebe7b10fa8e48307acb8862d83dde97ce7e792e8e",
+      "translated_at": "2026-06-08T22:04:26.228086Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/反映.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/反馈.md": {
+      "source_hash": "sha256:e894b38df2475382b69b0d6de5045a433a828ba4e3a2bf3e976d4eccde344941",
+      "translated_at": "2026-06-08T22:04:30.426060Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/反馈.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/发展.md": {
+      "source_hash": "sha256:153e57eceff95da1bd389e5b5d57c2a755b81d0be3b046c592750e9ac5fdc3fc",
+      "translated_at": "2026-06-08T22:04:36.219585Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/发展.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/发布.md": {
+      "source_hash": "sha256:fdcb221d5a942906e73eef4e6a3de24529d00f763a8e462f7d69c643f4dec19b",
+      "translated_at": "2026-06-08T22:04:40.629883Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/发布.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/发表.md": {
+      "source_hash": "sha256:93186d1e5209fe9f614f664af18215aaeb6e658b019921df4be21fb2754f8d31",
+      "translated_at": "2026-06-08T22:04:44.988650Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/发表.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/受众.md": {
+      "source_hash": "sha256:f846dde1d5f7a262a3ac5f31abe8f5a9797d66e6154da0b3d09ab725d45a63d6",
+      "translated_at": "2026-06-08T22:04:48.405540Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/受众.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/变化.md": {
+      "source_hash": "sha256:e53402fad0a2df33ca6c24f45ec0299c8a677f05f44e7114361e8232d897fed5",
+      "translated_at": "2026-06-08T22:04:52.338271Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/变化.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
