@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T03:04:32.850694Z",
+  "last_run": "2026-06-08T05:05:48.324996Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -11806,6 +11806,86 @@
       "source_hash": "sha256:320624523a94beb1256ee971cd5a5a6b7efadb785cb975e3fa48e25d3b382a9f",
       "translated_at": "2026-06-08T03:04:32.850669Z",
       "dest_path": "content/languages/chinese/hsk/5/lessons/12-idioms-context-1.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/13-idioms-context-2.md": {
+      "source_hash": "sha256:0e20a31f38dbd1d636d67a4a39d6b5606d66faa21d41711ed53a53440fe6cb05",
+      "translated_at": "2026-06-08T05:05:03.748594Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/13-idioms-context-2.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/14-chinese-business-etiquette.md": {
+      "source_hash": "sha256:db336c338dda9e58ee2479c1b21be68dffbd0731d50fca600451607022cc7586",
+      "translated_at": "2026-06-08T05:05:08.497641Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/14-chinese-business-etiquette.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/15-rhetoric-persuasion.md": {
+      "source_hash": "sha256:7f13e04bb6a43e19a29050be399e79b22df6dda255347826761d9665f91c4d48",
+      "translated_at": "2026-06-08T05:05:12.385968Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/15-rhetoric-persuasion.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/16-media-analysis.md": {
+      "source_hash": "sha256:6685655012f162fe4f7881882bfd2bcf76110d623e48eccc2d528f90974cd525",
+      "translated_at": "2026-06-08T05:05:16.298683Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/16-media-analysis.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/17-environmental-policy.md": {
+      "source_hash": "sha256:967181ff6424641cb9af4a2c05b378c681b4c55b98ed6ca90d7dc125f53fdf51",
+      "translated_at": "2026-06-08T05:05:20.591524Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/17-environmental-policy.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/18-healthcare-policy.md": {
+      "source_hash": "sha256:42cf627edfb1723c61ca760eb3ee4a5fda2d2cbb156a2ec9c002fd02d4e6cd63",
+      "translated_at": "2026-06-08T05:05:26.998132Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/18-healthcare-policy.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/19-technology-ethics.md": {
+      "source_hash": "sha256:d4d118725a979b937b36e9f28cef62e45cb552e40bf786cc984937507737ab74",
+      "translated_at": "2026-06-08T05:05:32.996890Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/19-technology-ethics.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/20-global-affairs.md": {
+      "source_hash": "sha256:6532bde767003b32faa847f9108d0dc6c2603341c2d4c1b3da3c926008870e7e",
+      "translated_at": "2026-06-08T05:05:37.807952Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/20-global-affairs.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/21-advanced-reading-skills.md": {
+      "source_hash": "sha256:48cfae8746df535c134336d77d7fefbc7151cd37a91a5c9e5fec0ecab9c34c7c",
+      "translated_at": "2026-06-08T05:05:43.934015Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/21-advanced-reading-skills.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/22-writing-academic-essays.md": {
+      "source_hash": "sha256:93fb7dd891e2c3b162d5b02665d07663700768d5d24be73fcaedbe48d0e7aa17",
+      "translated_at": "2026-06-08T05:05:48.324971Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/22-writing-academic-essays.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
