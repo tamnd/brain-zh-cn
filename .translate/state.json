@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T22:04:52.338318Z",
+  "last_run": "2026-06-08T22:58:54.722827Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -12846,6 +12846,86 @@
       "source_hash": "sha256:e53402fad0a2df33ca6c24f45ec0299c8a677f05f44e7114361e8232d897fed5",
       "translated_at": "2026-06-08T22:04:52.338271Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/变化.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/变革.md": {
+      "source_hash": "sha256:6bb96551e6826f9da4902910e2a862bce86096a257558d06660ece727a3a6462",
+      "translated_at": "2026-06-08T22:58:32.277907Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/变革.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/叙事.md": {
+      "source_hash": "sha256:952212c14ad10023f42e68cacebd77492e575a3650cd9d362ae08b80228e1ff8",
+      "translated_at": "2026-06-08T22:58:34.378763Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/叙事.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/另一方面.md": {
+      "source_hash": "sha256:bc393f4be4263c5c5a48511a692a9700e7381da73f8a5c7cf351296450c2ca9b",
+      "translated_at": "2026-06-08T22:58:36.726973Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/另一方面.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/可再生.md": {
+      "source_hash": "sha256:87625fbb664fe95b8658cca5fc75fb1c2420138a1ca4e22ca00135b3e82aaa0c",
+      "translated_at": "2026-06-08T22:58:38.851125Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/可再生.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/可持续发展.md": {
+      "source_hash": "sha256:4163567eead45c68e38b68708bfe5c5f7e98d4146e9cb385d90585a138d539a8",
+      "translated_at": "2026-06-08T22:58:41.141208Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/可持续发展.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/台风.md": {
+      "source_hash": "sha256:234446e10c0c9aa1888769846804a42b3bfa80803cc382fa3e6554795b92b6e2",
+      "translated_at": "2026-06-08T22:58:43.885585Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/台风.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/号召.md": {
+      "source_hash": "sha256:f086723d8fd7388f97c00b73800631c19d852af7df09a3e7a9a0857cc42088a3",
+      "translated_at": "2026-06-08T22:58:46.506281Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/号召.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/司法.md": {
+      "source_hash": "sha256:4e6945f06874a2b8dd82c3be991b3612a1d49e5c77a347750756282d5161b001",
+      "translated_at": "2026-06-08T22:58:49.259915Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/司法.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/合作.md": {
+      "source_hash": "sha256:8f15c2b7ab31883d2206ccabaa7f4eeb31f3c796cc3a2ecb61ed26b38c10186f",
+      "translated_at": "2026-06-08T22:58:51.471034Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/合作.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/合同.md": {
+      "source_hash": "sha256:299339ed27dd0f8655aa9621b834a38cbe4e8dda929956727ba9b09f33264609",
+      "translated_at": "2026-06-08T22:58:54.722800Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/合同.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
