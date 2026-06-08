@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T18:17:54.059631Z",
+  "last_run": "2026-06-08T19:17:10.334500Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -12526,6 +12526,86 @@
       "source_hash": "sha256:3b6dc6504c4ecf760680b3e02b24f376844a3974ceb38cc2e409a9534756ebe1",
       "translated_at": "2026-06-08T18:17:54.059606Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/分配.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/创伤.md": {
+      "source_hash": "sha256:faf4da4c2787adfd08b924240e325107e087419948584d4791251bee8d40407c",
+      "translated_at": "2026-06-08T19:16:38.961715Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/创伤.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/创新.md": {
+      "source_hash": "sha256:6917b10258f58148ac446ba5ea3fab08f5fbe655faf042fc9daf51133ad1927b",
+      "translated_at": "2026-06-08T19:16:42.552840Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/创新.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/创造.md": {
+      "source_hash": "sha256:82e5098e66628df534d22e4261d6231882f1779230110c522ba8d80b2c3f0ee3",
+      "translated_at": "2026-06-08T19:16:47.729917Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/创造.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/创造力.md": {
+      "source_hash": "sha256:d39c8f90f6487c6624316d0a0e2eca033b3da9dabe8f7d30a64fbcba96ce15cf",
+      "translated_at": "2026-06-08T19:16:51.642776Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/创造力.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/利息.md": {
+      "source_hash": "sha256:975a98bda1ab21b0765495710b6f6479dc2e6a6457a1c9d58f28b0c80015b6a2",
+      "translated_at": "2026-06-08T19:16:54.269644Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/利息.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/利润.md": {
+      "source_hash": "sha256:1ab5c1f83f73b1a33c514d002e1e323d8bb69fe66c5e3478415e7544d7081882",
+      "translated_at": "2026-06-08T19:16:57.599804Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/利润.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/利率.md": {
+      "source_hash": "sha256:62c75cb4ba08f0c289dd72473b0778cd2f8278620524dda2f9f287b885eff4a9",
+      "translated_at": "2026-06-08T19:17:01.013413Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/利率.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/利益.md": {
+      "source_hash": "sha256:eba9f7744772b48285b3c1d800e4b9a401a9c3f4bec40e3202db512c894dc27a",
+      "translated_at": "2026-06-08T19:17:03.921724Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/利益.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/制度.md": {
+      "source_hash": "sha256:4bf84002a10ddf77ba035654d67e57194efe49eef90467c403cfd54343877b97",
+      "translated_at": "2026-06-08T19:17:07.116328Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/制度.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/制约.md": {
+      "source_hash": "sha256:ac5f41707ede726f54e4cf5f2adb08034d9b957c04074975cdcb2e0cc7f71e17",
+      "translated_at": "2026-06-08T19:17:10.334476Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/制约.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
