@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T19:17:10.334500Z",
+  "last_run": "2026-06-08T20:15:41.664913Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -12606,6 +12606,86 @@
       "source_hash": "sha256:ac5f41707ede726f54e4cf5f2adb08034d9b957c04074975cdcb2e0cc7f71e17",
       "translated_at": "2026-06-08T19:17:10.334476Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/制约.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/制裁.md": {
+      "source_hash": "sha256:ae6dbc8920a0ac4891ee892dbf726f10328b147f952f056159815d3e2dbc64c8",
+      "translated_at": "2026-06-08T20:15:11.904119Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/制裁.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/制造.md": {
+      "source_hash": "sha256:bfb09f65821430dc7154803c1cec8c1c7070954fa7d5feba22d63068886c370e",
+      "translated_at": "2026-06-08T20:15:16.161440Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/制造.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/刻板印象.md": {
+      "source_hash": "sha256:29a686353e55c3d7222d335804390be65efdabadd52d7a01340fae2e59e0e7d7",
+      "translated_at": "2026-06-08T20:15:18.708565Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/刻板印象.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/刻画.md": {
+      "source_hash": "sha256:0e1fb3f502b6a9713458705f094ddc367c1d97d3cdfb2303c33d302b78f9315d",
+      "translated_at": "2026-06-08T20:15:22.375016Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/刻画.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/功能.md": {
+      "source_hash": "sha256:c99f86ca462d50fc035c528fefa71a0847b01112e2c1b24c318d548b92d0aa33",
+      "translated_at": "2026-06-08T20:15:25.777158Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/功能.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/加强.md": {
+      "source_hash": "sha256:08fadcc6a5b288354dc29230a982c4eb0f429f935c2ae798d98d95bc9a4befed",
+      "translated_at": "2026-06-08T20:15:28.412227Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/加强.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/包容的.md": {
+      "source_hash": "sha256:0152f8c94ab55758099e2d8a5d8a116562e818db2e2d9515166c5a08f2f99f6e",
+      "translated_at": "2026-06-08T20:15:32.569919Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/包容的.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/匮乏.md": {
+      "source_hash": "sha256:f8517b846245407cd16b098ccffac1a821cd67138912504f5dbe7a219cc1d4de",
+      "translated_at": "2026-06-08T20:15:37.116159Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/匮乏.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/区块链.md": {
+      "source_hash": "sha256:8b42d177a6aa762d8f2abdc94521acd95afc90e9ce85c4f28d52e40db0174562",
+      "translated_at": "2026-06-08T20:15:39.343304Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/区块链.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/医疗.md": {
+      "source_hash": "sha256:4aaeeec0f743fb72df0d97ab3064f398335e9b9293f25b678e7256744a90ec84",
+      "translated_at": "2026-06-08T20:15:41.664885Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/医疗.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
