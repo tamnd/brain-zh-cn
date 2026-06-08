@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T22:58:54.722827Z",
+  "last_run": "2026-06-08T23:32:58.344587Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -12926,6 +12926,86 @@
       "source_hash": "sha256:299339ed27dd0f8655aa9621b834a38cbe4e8dda929956727ba9b09f33264609",
       "translated_at": "2026-06-08T22:58:54.722800Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/合同.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/合并.md": {
+      "source_hash": "sha256:b5edffb3c0037de85033476e2193c0a66a7f5d25843702ea1736418d94fe6177",
+      "translated_at": "2026-06-08T23:32:39.061007Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/合并.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/合法.md": {
+      "source_hash": "sha256:8278575b7e12962baa6fa6044aa05de0ca880c8d40f3745cd98d953b7b58df68",
+      "translated_at": "2026-06-08T23:32:41.507446Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/合法.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/合理.md": {
+      "source_hash": "sha256:a3f27a6da04c8e4bcb49ce43bfd5c6227fc7fa32e1bf3081bd1fb8d0808a7e8a",
+      "translated_at": "2026-06-08T23:32:43.657219Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/合理.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/否定.md": {
+      "source_hash": "sha256:28098a064d656863e169b92bd7aa48e25040c224a6b42c60664efc995a989927",
+      "translated_at": "2026-06-08T23:32:45.258193Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/否定.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/启发.md": {
+      "source_hash": "sha256:13fff82a8e29c86d65dae81ff330bd6b22f39d1472a49e4a32e6a630e5d195ee",
+      "translated_at": "2026-06-08T23:32:47.394424Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/启发.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/呈现.md": {
+      "source_hash": "sha256:84976427cb50fd3a060839be0e0643a8a92c3645fd38a89763b63a823f26e902",
+      "translated_at": "2026-06-08T23:32:49.110060Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/呈现.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/呼吁.md": {
+      "source_hash": "sha256:a84e3242802ce5dbf131904d21fd8a1c17f5b16ce17b4669eab5428da3791f57",
+      "translated_at": "2026-06-08T23:32:51.743720Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/呼吁.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/命题.md": {
+      "source_hash": "sha256:d203f7cedd311aa6f20b6e274d9218739f1e83f4473b85ddbda51701cf15b280",
+      "translated_at": "2026-06-08T23:32:54.603159Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/命题.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/和平.md": {
+      "source_hash": "sha256:06de58835d4d9a49d99d2efff82c0c01a7f6a1faf24e16eb325d6f64a321f5c1",
+      "translated_at": "2026-06-08T23:32:56.450570Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/和平.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/品牌.md": {
+      "source_hash": "sha256:70ae2696f3a564ce5ac4ff42beaf4cd992a8267ef90c0691cd59489289e1bf66",
+      "translated_at": "2026-06-08T23:32:58.344560Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/品牌.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
