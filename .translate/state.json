@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T07:07:41.253129Z",
+  "last_run": "2026-06-08T09:06:39.979215Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -11966,6 +11966,86 @@
       "source_hash": "sha256:c25f6a564cc55fbfc127c1d17bffefbe8068f9311cbb908c2a287407f99d5ce7",
       "translated_at": "2026-06-08T07:07:41.253106Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/与此同时.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/专业.md": {
+      "source_hash": "sha256:31362b7d6fb8b6423589b721c4a46d6a16832002e407fe83864078259db17e1f",
+      "translated_at": "2026-06-08T09:05:54.009574Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/专业.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/严峻.md": {
+      "source_hash": "sha256:140a3b1c42d181a4ccc3a713e9de1a635ddac1a2beffa98780e56ccea3d3fda7",
+      "translated_at": "2026-06-08T09:05:58.396502Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/严峻.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/严谨.md": {
+      "source_hash": "sha256:e07ba17cc34b5163f830c9e762290f9db807e4c779797f17ae932ef785e896a0",
+      "translated_at": "2026-06-08T09:06:06.739071Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/严谨.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/主权.md": {
+      "source_hash": "sha256:c497ad9a5daf78c7090a06fba3d157a377f22410048103d5776764eff001eccd",
+      "translated_at": "2026-06-08T09:06:10.824402Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/主权.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/主观.md": {
+      "source_hash": "sha256:ff4997ee61172e19ab07ffe03288ad68c476a326e6d7cd4bb9df0538fe850c30",
+      "translated_at": "2026-06-08T09:06:13.703537Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/主观.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/乃至.md": {
+      "source_hash": "sha256:8d0438458ce2ca9e2d19003aa97ab8c353edf7dec1479fb06c7af5abea2b6abf",
+      "translated_at": "2026-06-08T09:06:19.985541Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/乃至.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/义务.md": {
+      "source_hash": "sha256:5d21f83ffe705e5425be2e8e46de06f8d22113214cc635d57959eb4c908a98ec",
+      "translated_at": "2026-06-08T09:06:23.112371Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/义务.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/亏损.md": {
+      "source_hash": "sha256:320171321d6caf5572205e4c46861c138ae7c539c12cf67cb76cb125e006da0b",
+      "translated_at": "2026-06-08T09:06:30.803638Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/亏损.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/云计算.md": {
+      "source_hash": "sha256:8622009ccf93f379d38c07c829d714ea99b26fb6587cccd89e95364022c3516c",
+      "translated_at": "2026-06-08T09:06:35.428559Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/云计算.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/互联网.md": {
+      "source_hash": "sha256:a8ad80748e48c44c1f5241991b608e006c7312bb8fdc3508dd28f194c9a3ce76",
+      "translated_at": "2026-06-08T09:06:39.979192Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/互联网.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
