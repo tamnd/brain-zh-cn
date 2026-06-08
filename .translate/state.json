@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T17:03:25.040430Z",
+  "last_run": "2026-06-08T18:17:54.059631Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -12446,6 +12446,86 @@
       "source_hash": "sha256:15fee8e35a32774115d0e2bc41e95cf1d0a93f28abe8d3995bd18ba0544047c5",
       "translated_at": "2026-06-08T17:03:25.040402Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/内在.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/内容.md": {
+      "source_hash": "sha256:02b5aba5af6ef162e8f2a5b0f408273e33aab60a7fa71568d256718abc57f419",
+      "translated_at": "2026-06-08T18:17:27.533384Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/内容.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/再者.md": {
+      "source_hash": "sha256:b0ef9fc30279ad0c04b8f2ef88ac5d0d2c06b6c4d0fd36eb33511420861d29f7",
+      "translated_at": "2026-06-08T18:17:30.031133Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/再者.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/冲突.md": {
+      "source_hash": "sha256:1874a871a216e16b20e2f7b553643c3aa649ffd95d6259212c758c457004ff1b",
+      "translated_at": "2026-06-08T18:17:32.053065Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/冲突.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/决策.md": {
+      "source_hash": "sha256:6696c3f56458f132530b7f3b7ea947d940e8c9c2a0e337d8bd66f38fd5c7aff8",
+      "translated_at": "2026-06-08T18:17:34.087869Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/决策.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/况且.md": {
+      "source_hash": "sha256:5710d876d195c91b116d400fe38361e6dcbf72197330817ae8d4c2cf3d2d4796",
+      "translated_at": "2026-06-08T18:17:37.140127Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/况且.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/出口.md": {
+      "source_hash": "sha256:2f63d6b73fc01e802e3a2bf27b0258de6dfcc603a67eac1e9213c1eda3f2b08e",
+      "translated_at": "2026-06-08T18:17:40.141585Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/出口.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/出版.md": {
+      "source_hash": "sha256:887b91d6d5b4bf763c10c816127f68604ec06dccd60eaa37ff1d44d97d718a05",
+      "translated_at": "2026-06-08T18:17:42.826069Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/出版.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/分析.md": {
+      "source_hash": "sha256:0fc0df277f8537f80258b88d3ec2319448fa6765b514635f5a1ed34e92f7b945",
+      "translated_at": "2026-06-08T18:17:46.795898Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/分析.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/分裂.md": {
+      "source_hash": "sha256:6c4391662918505fd8a4024d3e717fc152e88a241116fc5c63077dec260f2191",
+      "translated_at": "2026-06-08T18:17:49.467471Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/分裂.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/分配.md": {
+      "source_hash": "sha256:3b6dc6504c4ecf760680b3e02b24f376844a3974ceb38cc2e409a9534756ebe1",
+      "translated_at": "2026-06-08T18:17:54.059606Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/分配.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
