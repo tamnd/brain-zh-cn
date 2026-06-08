@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T00:30:44.983656Z",
+  "last_run": "2026-06-08T01:33:08.848442Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -11646,6 +11646,86 @@
       "source_hash": "sha256:6c9af80f466cce8a86845f4b6d51af4935b2d41a190e9683914ad3d5e5ab9110",
       "translated_at": "2026-06-08T00:30:44.983630Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/领域.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/领导.md": {
+      "source_hash": "sha256:c9569b3e6d1fcc71efa8ab3d88797df2418c42e21c54bec574fb2372ffce5b08",
+      "translated_at": "2026-06-08T01:32:40.065683Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/领导.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/风险.md": {
+      "source_hash": "sha256:43aed29452cb0b7a46163b9125383411ff129317473e5b2e2c57e34b8ccb1154",
+      "translated_at": "2026-06-08T01:32:41.554777Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/风险.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/食材.md": {
+      "source_hash": "sha256:a6161e14f276abb5c28406f47eea490acc70a0f7b514769836cde81edaead95b",
+      "translated_at": "2026-06-08T01:32:44.737503Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/食材.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/食谱.md": {
+      "source_hash": "sha256:e7fc8197346421b170779fa241805829c15d8c9124e27df31c4bb1b28a0ab004",
+      "translated_at": "2026-06-08T01:32:47.139507Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/食谱.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/餐厅.md": {
+      "source_hash": "sha256:242c585ff6576b20c3a585ac355dcdd145da2e9661374fbab9c761679d4c8e8d",
+      "translated_at": "2026-06-08T01:32:50.548114Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/餐厅.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/饮食.md": {
+      "source_hash": "sha256:b39ee7e0b4be6fc6b4a128dee2768aa00898a7b5923e2f2be6e0477eaf1fd2e1",
+      "translated_at": "2026-06-08T01:32:52.442707Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/饮食.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/鼓励.md": {
+      "source_hash": "sha256:92aa2e188d860601268426bb04b99c86b96f664fd03161efcd4dd6f86516777f",
+      "translated_at": "2026-06-08T01:32:55.200126Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/鼓励.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/grammar.md": {
+      "source_hash": "sha256:ae88c539a7d101a71e1cbe820eedd7b853a7ba0d581f252e0dc104033c27986b",
+      "translated_at": "2026-06-08T01:33:01.761115Z",
+      "dest_path": "content/languages/chinese/hsk/5/grammar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/01-formal-written-chinese.md": {
+      "source_hash": "sha256:95f02f1a4121b1474fb4dea6e91e70c7f62f8ede42060808431eabd32b609e15",
+      "translated_at": "2026-06-08T01:33:05.099515Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/01-formal-written-chinese.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/02-academic-vocabulary.md": {
+      "source_hash": "sha256:07491c60f917235f736a1d2487beab7b69e7533779ddace528b71d8c73e5e797",
+      "translated_at": "2026-06-08T01:33:08.848413Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/02-academic-vocabulary.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
