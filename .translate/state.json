@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T12:51:46.119625Z",
+  "last_run": "2026-06-08T14:24:48.151588Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -12206,6 +12206,86 @@
       "source_hash": "sha256:aab7d20f24ae8be128cce2b9f2c05142b214b1ff87e742f20634b1c5d113c7d0",
       "translated_at": "2026-06-08T12:51:46.119602Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/体验.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/何况.md": {
+      "source_hash": "sha256:c155323799f797b4b2f7a5a14b632a844321725b5908441a2c94fa0b1c1f4782",
+      "translated_at": "2026-06-08T14:24:07.399757Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/何况.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/供应链.md": {
+      "source_hash": "sha256:c19e78bc2c5bce40ff58e1f2d9befe114d0e9df4998bc6100b009fc695e9b835",
+      "translated_at": "2026-06-08T14:24:12.133589Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/供应链.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/依据.md": {
+      "source_hash": "sha256:46955fbb04bf2a67199952107cdd98b8917c2b364ff2aa6af85a10321c82124a",
+      "translated_at": "2026-06-08T14:24:15.797962Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/依据.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/促使.md": {
+      "source_hash": "sha256:0aec0d5514f101e0f234a1b960994aa52f40d7cea498e1d2cfb5c2deee704bad",
+      "translated_at": "2026-06-08T14:24:19.536926Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/促使.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/促进.md": {
+      "source_hash": "sha256:8fa1af13f62efffba9d6ef362f2b47f2a0c055985f3f42e7c3a00b70bb3030a5",
+      "translated_at": "2026-06-08T14:24:23.195916Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/促进.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/保守的.md": {
+      "source_hash": "sha256:57b8a2b3e66b959f97a24b4caac8886f0fbf99bb05ecd95c7098266cb010ad1a",
+      "translated_at": "2026-06-08T14:24:27.372516Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/保守的.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/保护区.md": {
+      "source_hash": "sha256:a8d6559c0d163a3aac1a050d1284ea16ffbd1a4a91f7ad0fe11171c35cdd9d41",
+      "translated_at": "2026-06-08T14:24:31.570980Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/保护区.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/信念.md": {
+      "source_hash": "sha256:4c485d21a5f25523e5d7422d58a0298bda02065299a43f915381888b8a95a732",
+      "translated_at": "2026-06-08T14:24:36.515026Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/信念.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/信息茧房.md": {
+      "source_hash": "sha256:f5952c5bf78a2a0a27a65c6021da2fd657d549e4909b473d0b6b4e6eddda06f3",
+      "translated_at": "2026-06-08T14:24:40.502832Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/信息茧房.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/修辞.md": {
+      "source_hash": "sha256:43e528a6b760caa4bfbd580e78679a9c13f1f496615518d13fe9613bc9214033",
+      "translated_at": "2026-06-08T14:24:48.151566Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/修辞.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
