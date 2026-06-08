@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T01:33:08.848442Z",
+  "last_run": "2026-06-08T03:04:32.850694Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -11726,6 +11726,86 @@
       "source_hash": "sha256:07491c60f917235f736a1d2487beab7b69e7533779ddace528b71d8c73e5e797",
       "translated_at": "2026-06-08T01:33:08.848413Z",
       "dest_path": "content/languages/chinese/hsk/5/lessons/02-academic-vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/03-social-issues.md": {
+      "source_hash": "sha256:0993eea65ba61de69db36925db57df421d261ac93bd251eff4e68d82991697fb",
+      "translated_at": "2026-06-08T03:03:37.331357Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/03-social-issues.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/04-economy-finance.md": {
+      "source_hash": "sha256:9614fd985a1aae01faa5ee1d3407bedaceb5df1b572c5bea67c9ff1ba318f295",
+      "translated_at": "2026-06-08T03:03:41.923503Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/04-economy-finance.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/05-science-technology.md": {
+      "source_hash": "sha256:d4c33bc6365de653654304693fbcb4fd97ae663566c77d2bf38f50862675b619",
+      "translated_at": "2026-06-08T03:03:47.072245Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/05-science-technology.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/06-literature-arts.md": {
+      "source_hash": "sha256:5a19087bded44b3f93bb9ffb8a0090549e3921f626de0e0e6638c8258345f6c6",
+      "translated_at": "2026-06-08T03:03:52.888152Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/06-literature-arts.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/07-law-politics.md": {
+      "source_hash": "sha256:91f1849446acba4d0a9558654cdece832c667a3db6380761ab7ef003728d2219",
+      "translated_at": "2026-06-08T03:04:00.385874Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/07-law-politics.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/08-philosophy-ethics.md": {
+      "source_hash": "sha256:6323f03dc6a637c959adb5323d552dc841b45f2f85759f76403fd447851be434",
+      "translated_at": "2026-06-08T03:04:06.284244Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/08-philosophy-ethics.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/09-historical-events.md": {
+      "source_hash": "sha256:a3881e15a462b26b3cc50383536f3fd51af37041243f3aea1066e94e37a6d807",
+      "translated_at": "2026-06-08T03:04:12.098696Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/09-historical-events.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/10-debate-argumentation.md": {
+      "source_hash": "sha256:5220315fb6e8e6aa8d9a87dd6164e98f6b33fddb695f90578955696f8c8271c8",
+      "translated_at": "2026-06-08T03:04:18.171452Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/10-debate-argumentation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/11-advanced-grammar-review.md": {
+      "source_hash": "sha256:b102279bb8dbdb7a3d8c3327cadcba654518b2d151b40f1f10f472e932fcdc87",
+      "translated_at": "2026-06-08T03:04:26.246729Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/11-advanced-grammar-review.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/12-idioms-context-1.md": {
+      "source_hash": "sha256:320624523a94beb1256ee971cd5a5a6b7efadb785cb975e3fa48e25d3b382a9f",
+      "translated_at": "2026-06-08T03:04:32.850669Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/12-idioms-context-1.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
