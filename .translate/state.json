@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T11:14:11.453900Z",
+  "last_run": "2026-06-08T12:51:46.119625Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -12126,6 +12126,86 @@
       "source_hash": "sha256:560ca2ef0c37b51b41e3cc1e172a4b496e16cc513b7ce9b9450a86261b4415e3",
       "translated_at": "2026-06-08T11:14:11.453876Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/优化.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/传媒.md": {
+      "source_hash": "sha256:101187dd4b794191b08045bd8ea818811c84468c43785f3efcc2e154996020c6",
+      "translated_at": "2026-06-08T12:51:14.828644Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/传媒.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/传播.md": {
+      "source_hash": "sha256:15d048c6328aac7a4adcbabbaf5aae15bfe029343259356fd23347d91971e9d5",
+      "translated_at": "2026-06-08T12:51:18.921226Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/传播.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/传染病.md": {
+      "source_hash": "sha256:6b5aa463d8fcb14828beffbb0704e21a8491dfe3bccc7018fe6ecb00bd587d97",
+      "translated_at": "2026-06-08T12:51:21.717931Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/传染病.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/传达.md": {
+      "source_hash": "sha256:00e54879def8946aa0eec7319f33ea2253100017b2c2a011d6f1d878af9f4318",
+      "translated_at": "2026-06-08T12:51:25.381849Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/传达.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/伦理.md": {
+      "source_hash": "sha256:6581fc612a92dab2d9618e4fec2db2ce4a2b6afc39c44b2cef3cb28fea679b88",
+      "translated_at": "2026-06-08T12:51:29.546920Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/伦理.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/低碳.md": {
+      "source_hash": "sha256:ba9b875e5e313dbd104500f95e8d39c9c2b489b6ee3ae93f4a1b0778722880c3",
+      "translated_at": "2026-06-08T12:51:33.877958Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/低碳.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/体制.md": {
+      "source_hash": "sha256:005941fc37900529feaa8705ce20d1eb44b87863c5fb3080d8756f0ef4921c70",
+      "translated_at": "2026-06-08T12:51:36.686088Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/体制.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/体现.md": {
+      "source_hash": "sha256:f16fca952d05e2b516ec62a7784984dd55d1e03069779fd685d4842e99cc4b66",
+      "translated_at": "2026-06-08T12:51:39.911346Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/体现.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/体系.md": {
+      "source_hash": "sha256:50e450f51282adce6b65c6b4b4889991c44434b235cb88543a8af6fbbd27ac5c",
+      "translated_at": "2026-06-08T12:51:42.902577Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/体系.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/体验.md": {
+      "source_hash": "sha256:aab7d20f24ae8be128cce2b9f2c05142b214b1ff87e742f20634b1c5d113c7d0",
+      "translated_at": "2026-06-08T12:51:46.119602Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/体验.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
