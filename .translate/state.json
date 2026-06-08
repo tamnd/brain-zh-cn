@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T05:05:48.324996Z",
+  "last_run": "2026-06-08T07:07:41.253129Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -11886,6 +11886,86 @@
       "source_hash": "sha256:93fb7dd891e2c3b162d5b02665d07663700768d5d24be73fcaedbe48d0e7aa17",
       "translated_at": "2026-06-08T05:05:48.324971Z",
       "dest_path": "content/languages/chinese/hsk/5/lessons/22-writing-academic-essays.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/23-listening-to-lectures.md": {
+      "source_hash": "sha256:efde6962758e56a809ae62d779c8ab03d4fa15ee0863bc063f60b0adce88be00",
+      "translated_at": "2026-06-08T07:06:17.358971Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/23-listening-to-lectures.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/24-formal-presentation.md": {
+      "source_hash": "sha256:8215c822e1cd61c1c29d7a99d83e0b4b396ab0ed10140278bc595edd949c2f92",
+      "translated_at": "2026-06-08T07:06:25.925886Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/24-formal-presentation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/lessons/25-hsk5-review.md": {
+      "source_hash": "sha256:39033b700ace91ea2e9ed8697aefdbfe384418ca4a55bb9b96618b38760dc834",
+      "translated_at": "2026-06-08T07:06:36.261298Z",
+      "dest_path": "content/languages/chinese/hsk/5/lessons/25-hsk5-review.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary.md": {
+      "source_hash": "sha256:bb0f44ec45dd83e64fd27bc776430d5398ba9a59ed15ce5d0c511340c07508e9",
+      "translated_at": "2026-06-08T07:07:13.903366Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/一方面.md": {
+      "source_hash": "sha256:36e2ba23af198ef5b58896b957cd24ac13d10abb785ae1cf0d94f04b02697cc9",
+      "translated_at": "2026-06-08T07:07:17.501388Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/一方面.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/上升.md": {
+      "source_hash": "sha256:283d41383bb23364ecdb0cb20e07383ee831d83ee4bf68cdbb9bb1c87710f478",
+      "translated_at": "2026-06-08T07:07:22.892338Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/上升.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/上市.md": {
+      "source_hash": "sha256:745f9ae5a0f19af7391adea1431aa490ca46d0364bc87b406152cc45abdc7d71",
+      "translated_at": "2026-06-08T07:07:29.561117Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/上市.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/下降.md": {
+      "source_hash": "sha256:718c659a551f674afa8a5286463ced1d3a29aac9d48c11c61d78d5e0e8d5bc0d",
+      "translated_at": "2026-06-08T07:07:33.248928Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/下降.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/不仅如此.md": {
+      "source_hash": "sha256:7bb10a2bbd84a7d142968cf0fa076d583590ba16403428da41fe0dd42baa6a9b",
+      "translated_at": "2026-06-08T07:07:37.814984Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/不仅如此.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/与此同时.md": {
+      "source_hash": "sha256:c25f6a564cc55fbfc127c1d17bffefbe8068f9311cbb908c2a287407f99d5ce7",
+      "translated_at": "2026-06-08T07:07:41.253106Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/与此同时.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
