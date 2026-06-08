@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-07T23:49:41.239693Z",
+  "last_run": "2026-06-08T00:30:44.983656Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -11566,6 +11566,86 @@
       "source_hash": "sha256:a8abee444bc29720af64b078db710d665c7c8ee2d71da31ab552100a67ca8925",
       "translated_at": "2026-06-07T23:49:41.239666Z",
       "dest_path": "content/languages/chinese/hsk/4/vocabulary/非正式.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/面对.md": {
+      "source_hash": "sha256:eb06db68591c740357dbd8e113a35abc33b48706014740e27cd50e3c6318543b",
+      "translated_at": "2026-06-08T00:30:07.994784Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/面对.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/面试.md": {
+      "source_hash": "sha256:f67f82de597ebf808261e1854fb2f89b6c01f896770356299ed48a792b5428af",
+      "translated_at": "2026-06-08T00:30:12.134546Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/面试.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/项目.md": {
+      "source_hash": "sha256:ca1b72bfce1b4d12a81fed1ee09a5c3786dbd3149f77e5729ebcf75879c99047",
+      "translated_at": "2026-06-08T00:30:15.606231Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/项目.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/顺利.md": {
+      "source_hash": "sha256:dede0bb7001a0b52166ee7ade89de0e9f13c7b739adeee2ac5c17639e6a99edb",
+      "translated_at": "2026-06-08T00:30:19.376044Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/顺利.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/顾客.md": {
+      "source_hash": "sha256:80d66b3c426c006f10dd2280602d2eeb5b282dcac00faa1f600caf32f71510e0",
+      "translated_at": "2026-06-08T00:30:22.691808Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/顾客.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/预测.md": {
+      "source_hash": "sha256:4282338b42800d5dfdaae5bf9a71158318d5c720b861eaf0f10b849abfca1e00",
+      "translated_at": "2026-06-08T00:30:27.813048Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/预测.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/预算.md": {
+      "source_hash": "sha256:0e676a653cc7e357bda767f1902a5913d13c0d9ef0fb08236d4697dc463b6d22",
+      "translated_at": "2026-06-08T00:30:32.747547Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/预算.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/预计.md": {
+      "source_hash": "sha256:7e2c80fb9472597bbdfc694d54df72c821a66f6ac6e38c69d20f09363bf53d08",
+      "translated_at": "2026-06-08T00:30:36.300309Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/预计.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/预防.md": {
+      "source_hash": "sha256:e6c8088f2c35b9710c3b82ab03947c9acaa0fcf1d674371322e5f7c2241ce8e2",
+      "translated_at": "2026-06-08T00:30:40.568292Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/预防.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/4/vocabulary/领域.md": {
+      "source_hash": "sha256:6c9af80f466cce8a86845f4b6d51af4935b2d41a190e9683914ad3d5e5ab9110",
+      "translated_at": "2026-06-08T00:30:44.983630Z",
+      "dest_path": "content/languages/chinese/hsk/4/vocabulary/领域.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
