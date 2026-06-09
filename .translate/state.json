@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-09T15:33:22.417275Z",
+  "last_run": "2026-06-09T16:52:22.313158Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -14046,6 +14046,86 @@
       "source_hash": "sha256:eab84b721dab4438b3c16390220d64ebc75f009445c9084570a6fbda64cb3093",
       "translated_at": "2026-06-09T15:33:22.417248Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/敬佩.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/数字化.md": {
+      "source_hash": "sha256:ae6cd69e6c8afbef136125ba396d89cc9d251881fb704158952fc17bb71526b8",
+      "translated_at": "2026-06-09T16:51:50.303262Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/数字化.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/数字经济.md": {
+      "source_hash": "sha256:c8e4738448335a8afe4711b13ffc5b64edb1bb1cbefd6ce242c5f3eaf601ccfa",
+      "translated_at": "2026-06-09T16:51:53.435474Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/数字经济.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/数据.md": {
+      "source_hash": "sha256:bdc78b5bba0e7f97010b2e020be51c8cea2ca000f072866a44680ee185e39cd7",
+      "translated_at": "2026-06-09T16:51:57.053236Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/数据.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/数据库.md": {
+      "source_hash": "sha256:14a00ae095982955024f640d6b9ca90e7101be0564ea3bfbe817e9f9b477806e",
+      "translated_at": "2026-06-09T16:52:00.274079Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/数据库.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/整合.md": {
+      "source_hash": "sha256:0d9cc346ee1692b457d9b8641d79e509bf7b1163531433ca72af8925cc29fd67",
+      "translated_at": "2026-06-09T16:52:03.729777Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/整合.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/文体.md": {
+      "source_hash": "sha256:8dbf48357771576de69dd7ae6b0abff5f0a2db5dfee0e7f8753fd7a302773bc9",
+      "translated_at": "2026-06-09T16:52:08.389693Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/文体.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/文化.md": {
+      "source_hash": "sha256:4e2a4396df58d47060e3885d72b42a250b7e80696bf7e3d5331415587f4a52e9",
+      "translated_at": "2026-06-09T16:52:13.330464Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/文化.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/文学流派.md": {
+      "source_hash": "sha256:07219d129c6cf36dd0be60c5ae86320336a8a979c51e936b9d2a8e92cb9815da",
+      "translated_at": "2026-06-09T16:52:16.800508Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/文学流派.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/新能源.md": {
+      "source_hash": "sha256:f7b8d1ab3afe2d550f32518a7ff4198e23eedd27d9cba9a126b09fb222f12561",
+      "translated_at": "2026-06-09T16:52:18.904846Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/新能源.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/新闻.md": {
+      "source_hash": "sha256:c3577a67f7ebc8919016073cbe85f16a487c97daea962bdf9e94295c46f550b7",
+      "translated_at": "2026-06-09T16:52:22.313135Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/新闻.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
