@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-09T06:46:43.281675Z",
+  "last_run": "2026-06-09T08:12:07.557725Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -13486,6 +13486,86 @@
       "source_hash": "sha256:1e9373f3a2281b7bddfb0affd3ae72316a3f2acebfc3fc940c51c4d49851cd58",
       "translated_at": "2026-06-09T06:46:43.281648Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/引领.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/弘扬.md": {
+      "source_hash": "sha256:9f0488299847fa2fe490b96a229084cb74ae895dae18693b0f8a2992d522c2fc",
+      "translated_at": "2026-06-09T08:11:46.308162Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/弘扬.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/弱化.md": {
+      "source_hash": "sha256:fa89871286712b57813dc0834de7b4b9a387654d1218f7cbea629bed32c7642d",
+      "translated_at": "2026-06-09T08:11:48.405191Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/弱化.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/强化.md": {
+      "source_hash": "sha256:68aef8d067335a2d69dc91446de205a658768723767a6aad1fdd7ab069747894",
+      "translated_at": "2026-06-09T08:11:51.061047Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/强化.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/归纳.md": {
+      "source_hash": "sha256:0e16d906f66dad78d9e2842b613c7a1e9b5182d0b2d821e4624a5719ff0394d1",
+      "translated_at": "2026-06-09T08:11:53.082194Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/归纳.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/归结.md": {
+      "source_hash": "sha256:ab67e6c3079f1671ce4b671f60b68a326bdaa6138611d76a365810272e59d36c",
+      "translated_at": "2026-06-09T08:11:55.542020Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/归结.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/形成.md": {
+      "source_hash": "sha256:460e304ec3d59df278bdf9f0d8f58c0a7c0887fa38777cd975c746d432b17ce7",
+      "translated_at": "2026-06-09T08:11:58.847532Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/形成.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/形象.md": {
+      "source_hash": "sha256:8dcd332f2ff668b3cd8a420c0294d89780073aecb5f3764aaa74bb15aa8e4756",
+      "translated_at": "2026-06-09T08:12:02.012940Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/形象.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/影响.md": {
+      "source_hash": "sha256:7da531a652f8f2c0b1121635e2a7582a01fb8fd6d7444380d5fb99f8e4d2cdad",
+      "translated_at": "2026-06-09T08:12:03.814140Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/影响.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/影响力.md": {
+      "source_hash": "sha256:b3917f27c084238d1770a1c103f3dfb021c49a95d952e9d6997e50bf7dd4d52a",
+      "translated_at": "2026-06-09T08:12:05.777132Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/影响力.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/彻底.md": {
+      "source_hash": "sha256:6df490d6e3389da01cd5a497d4562f4553a46caae6f89e92f4b9cfd15fd87248",
+      "translated_at": "2026-06-09T08:12:07.557693Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/彻底.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
