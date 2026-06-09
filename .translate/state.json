@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-08T23:32:58.344587Z",
+  "last_run": "2026-06-09T00:25:18.848001Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -13006,6 +13006,86 @@
       "source_hash": "sha256:70ae2696f3a564ce5ac4ff42beaf4cd992a8267ef90c0691cd59489289e1bf66",
       "translated_at": "2026-06-08T23:32:58.344560Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/品牌.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/哪怕.md": {
+      "source_hash": "sha256:3bf2c8f1927c99a271cb91a00a3a9f45851dc7c2efd76819812d9908d292e13e",
+      "translated_at": "2026-06-09T00:24:45.726479Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/哪怕.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/因此.md": {
+      "source_hash": "sha256:4edee814d5badd4b91cae7b550bd2c06bd119b9b07c0c5a0e5d38edaaad61153",
+      "translated_at": "2026-06-09T00:24:49.417196Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/因此.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/因而.md": {
+      "source_hash": "sha256:7ee1c58701e25a4569cd2402bca5373ca7ae35dc13cac466c47c835b1bc96458",
+      "translated_at": "2026-06-09T00:24:53.208996Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/因而.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/困境.md": {
+      "source_hash": "sha256:d1f3da276be63c5e6b1e56fa357d885d28c479fbd32f449f0a77ee633162e1d5",
+      "translated_at": "2026-06-09T00:24:57.367756Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/困境.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/困惑.md": {
+      "source_hash": "sha256:3246cd39f8b4f3dac234976db3c0209cf437340c4fb486d8fd333c937840fcb7",
+      "translated_at": "2026-06-09T00:25:00.719520Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/困惑.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/地震.md": {
+      "source_hash": "sha256:bd54065f4af62741e70053f1cc289584be0967e0a98cb78c95c92ad96e12d77c",
+      "translated_at": "2026-06-09T00:25:03.695616Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/地震.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/垄断.md": {
+      "source_hash": "sha256:2ec66bd0bcdb736093e90e9b9b70c3d024d801ae71bc936d99342163f607ce67",
+      "translated_at": "2026-06-09T00:25:07.380814Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/垄断.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/培养.md": {
+      "source_hash": "sha256:b3415f4588c3e8a4c966432edee95c5d48778104bbe6b5388601e163e576ea8c",
+      "translated_at": "2026-06-09T00:25:11.568505Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/培养.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/培育.md": {
+      "source_hash": "sha256:c22baf30864f8cc6ab83cd05c01e21f8ebac948d2ad8da64c5e858ddce6324eb",
+      "translated_at": "2026-06-09T00:25:14.624414Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/培育.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/培训.md": {
+      "source_hash": "sha256:63d0f61acf8ebe60f2d16545ffc2ea81e0f4ed2ec8f17ae8ae5b14ffa7d38216",
+      "translated_at": "2026-06-09T00:25:18.847972Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/培训.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
