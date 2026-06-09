@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-09T08:12:07.557725Z",
+  "last_run": "2026-06-09T09:45:54.685950Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -13566,6 +13566,86 @@
       "source_hash": "sha256:6df490d6e3389da01cd5a497d4562f4553a46caae6f89e92f4b9cfd15fd87248",
       "translated_at": "2026-06-09T08:12:07.557693Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/彻底.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/微妙.md": {
+      "source_hash": "sha256:e67ebbfffd0979e70cb1a5422456357ae256a6c9a45a32cf804d676d3e058206",
+      "translated_at": "2026-06-09T09:45:11.428571Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/微妙.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/心理健康.md": {
+      "source_hash": "sha256:14e23669368ff5dc3de0fa40aed13def68c7b96d990c0800db7bd366f01e00c1",
+      "translated_at": "2026-06-09T09:45:14.235673Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/心理健康.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/心理咨询.md": {
+      "source_hash": "sha256:1b73003c08443d73fc8056622bd8ffd7a8cd98482157f70f4c50039a2ef75488",
+      "translated_at": "2026-06-09T09:45:22.261390Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/心理咨询.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/思维.md": {
+      "source_hash": "sha256:585bd116f17b4c57ff3f23228e894b52d8b163783003d6e9db8bbc3f8035a95c",
+      "translated_at": "2026-06-09T09:45:28.466182Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/思维.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/急救.md": {
+      "source_hash": "sha256:56d3110799b6f6b867b56d989ebf26746936efc1e72042613834037fcff2a74d",
+      "translated_at": "2026-06-09T09:45:32.407701Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/急救.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/急迫.md": {
+      "source_hash": "sha256:d537d63abc5fd6748ff43508286837c8d85df66913f8daeccebdd8cb7fd55392",
+      "translated_at": "2026-06-09T09:45:36.353808Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/急迫.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/性能.md": {
+      "source_hash": "sha256:647fdc3d47e3ad66c2174005d7b260f9ce903fb594ddf45353bb27f9f0a5ebf8",
+      "translated_at": "2026-06-09T09:45:40.934232Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/性能.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/总结.md": {
+      "source_hash": "sha256:4f9324c51974c31c6664de5dd63adac9d4647689bda4fc047578414084412ef5",
+      "translated_at": "2026-06-09T09:45:47.163653Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/总结.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/总而言之.md": {
+      "source_hash": "sha256:e6c92cf5ff39c18f226ae686803265a3e2dcccb9a18762273d0dcaff222fac90",
+      "translated_at": "2026-06-09T09:45:51.670357Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/总而言之.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/恰当.md": {
+      "source_hash": "sha256:7d46e29c9f2c2bd02a0a2054fb267822506461a0974d6de5966609a5b3b75107",
+      "translated_at": "2026-06-09T09:45:54.685927Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/恰当.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
