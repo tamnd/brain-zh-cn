@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-09T21:32:51.750738Z",
+  "last_run": "2026-06-09T22:29:43.194226Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -14446,6 +14446,86 @@
       "source_hash": "sha256:b1081350617544d3dbf4f59a89643edb0140b3c72b933bdebd56c707652d02d9",
       "translated_at": "2026-06-09T21:32:51.750712Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/汇率.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/污染.md": {
+      "source_hash": "sha256:3698b4b2115257bfc5e1a4815b3026b2958c9ebe319be9012a9e798f1c663885",
+      "translated_at": "2026-06-09T22:29:20.928820Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/污染.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/沟通.md": {
+      "source_hash": "sha256:adac1de030315793205fe276845662805358ad00be5271adf7c30936763a6fdf",
+      "translated_at": "2026-06-09T22:29:23.291021Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/沟通.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/治理.md": {
+      "source_hash": "sha256:2f5e8a3ed1eef59b4df6c456bc95f9edd660aa41c413ffda15230c74c8e917b8",
+      "translated_at": "2026-06-09T22:29:25.414379Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/治理.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/治疗.md": {
+      "source_hash": "sha256:acf679fb4d4ceb661beedfc0127edee10fc1c8380ed105fa296bcaac065db7f5",
+      "translated_at": "2026-06-09T22:29:28.481691Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/治疗.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/法律.md": {
+      "source_hash": "sha256:376230631312a83da8ae3a32937f9d9d53976816867e7fe59bc107418183c9b4",
+      "translated_at": "2026-06-09T22:29:31.375961Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/法律.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/法规.md": {
+      "source_hash": "sha256:a826c49f62fd3b0c5188c16b8e486b8ff3902538b702dc6fb97969d22dd4754c",
+      "translated_at": "2026-06-09T22:29:33.511867Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/法规.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/洪水.md": {
+      "source_hash": "sha256:610d68371d40906053aa97096cf1df744567da8712f73c477ed874bd03932c78",
+      "translated_at": "2026-06-09T22:29:36.022954Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/洪水.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/测试.md": {
+      "source_hash": "sha256:3ea61e7c1f054ced9fef879b6fca39d79db292ef0852d865488e7c84763df81f",
+      "translated_at": "2026-06-09T22:29:38.848653Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/测试.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/海平面.md": {
+      "source_hash": "sha256:2db279a7c82499cc389c3ba25409f6e6aabf787eb6996be2be2ec53a033c3970",
+      "translated_at": "2026-06-09T22:29:40.523505Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/海平面.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/消极.md": {
+      "source_hash": "sha256:d97c2ca99afcfcc87fa39d89219016242f954482fec865affa8304c8dc03856a",
+      "translated_at": "2026-06-09T22:29:43.194192Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/消极.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
