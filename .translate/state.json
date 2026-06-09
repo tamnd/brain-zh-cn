@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-09T09:45:54.685950Z",
+  "last_run": "2026-06-09T11:01:29.992276Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -13646,6 +13646,86 @@
       "source_hash": "sha256:7d46e29c9f2c2bd02a0a2054fb267822506461a0974d6de5966609a5b3b75107",
       "translated_at": "2026-06-09T09:45:54.685927Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/恰当.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/想象力.md": {
+      "source_hash": "sha256:1d6e2dae4da6eabb276f6f12c72c2cce755eea22609257ffe3bd5c87f9b92a56",
+      "translated_at": "2026-06-09T11:01:04.504024Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/想象力.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/感受.md": {
+      "source_hash": "sha256:78cd0861a7109101ad3a0ed04a30b2dd466d365b5f105be11291e4ea039fe2cb",
+      "translated_at": "2026-06-09T11:01:08.233987Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/感受.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/感性.md": {
+      "source_hash": "sha256:0ce4f5b5f1b3fc6527c4552ccf0be1379d90f38687ec7c00d2866685d3170a67",
+      "translated_at": "2026-06-09T11:01:11.865774Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/感性.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/感悟.md": {
+      "source_hash": "sha256:32014420fd8b0d22bad004f16fef5d30392e0e7d673c3faaa1f710ccde926ab0",
+      "translated_at": "2026-06-09T11:01:15.193340Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/感悟.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/感激.md": {
+      "source_hash": "sha256:e6a6a9c4207f8b4c312120c0643dbc96a4fb87f3af758c71964c9b5067a14492",
+      "translated_at": "2026-06-09T11:01:17.353902Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/感激.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/慢性病.md": {
+      "source_hash": "sha256:6308aa62a011892528b3400e73c9279676e756ffd2ad622170e5245648595bc3",
+      "translated_at": "2026-06-09T11:01:19.785424Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/慢性病.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/成本.md": {
+      "source_hash": "sha256:c26b8fa0bf34f6b1b5d09ba485f617fdcc2beca070d27e3b3f83ee8c6bbe7e61",
+      "translated_at": "2026-06-09T11:01:22.118070Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/成本.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/成熟.md": {
+      "source_hash": "sha256:b934d0548101206848821d82b19ea2e7df3fea1b03eebfc8429a1fba325bb0c9",
+      "translated_at": "2026-06-09T11:01:24.345263Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/成熟.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/成绩.md": {
+      "source_hash": "sha256:6b4a7a935be53947ef89512e8e26420a9b2dfbbac4d044d9369b316192b8d1bb",
+      "translated_at": "2026-06-09T11:01:27.302777Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/成绩.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/手术.md": {
+      "source_hash": "sha256:a3428ab1ba6cc6d4028ff5e0d7f2e851bb8fe41d032962d98a408be684682a47",
+      "translated_at": "2026-06-09T11:01:29.992253Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/手术.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
