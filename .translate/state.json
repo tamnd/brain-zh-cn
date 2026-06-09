@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-09T22:29:43.194226Z",
+  "last_run": "2026-06-09T23:04:04.827741Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -14526,6 +14526,86 @@
       "source_hash": "sha256:d97c2ca99afcfcc87fa39d89219016242f954482fec865affa8304c8dc03856a",
       "translated_at": "2026-06-09T22:29:43.194192Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/消极.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/消费.md": {
+      "source_hash": "sha256:c49982bb325f4cdc15faa5d9a3c1896d7f82eb2548ff5d46249f52d5365e1a3a",
+      "translated_at": "2026-06-09T23:03:31.852149Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/消费.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/涌现.md": {
+      "source_hash": "sha256:c73ff1e247f0138fa249cbd322dc6c247cbed32be70fed35c3eca5dbffe67e5b",
+      "translated_at": "2026-06-09T23:03:34.604688Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/涌现.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/深入.md": {
+      "source_hash": "sha256:2d2212f7c6edb6c9a11b37776191d18c18f883cb5cdf359ecbbda6ff79febe5e",
+      "translated_at": "2026-06-09T23:03:37.942864Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/深入.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/深刻.md": {
+      "source_hash": "sha256:8a3ed430b688e9890af8c78e005120b8682f75789760c266b37b105c7e7250e7",
+      "translated_at": "2026-06-09T23:03:41.968868Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/深刻.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/深化.md": {
+      "source_hash": "sha256:053ae3e237fd936e58c8ca66fc118b75430e4067e6186f9d8c1f9ef2098c4dda",
+      "translated_at": "2026-06-09T23:03:45.907179Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/深化.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/温室效应.md": {
+      "source_hash": "sha256:5e083f2e0c0c875b9cc353a080c6c59cc76511a7584e0d30f80547aaf485950b",
+      "translated_at": "2026-06-09T23:03:49.230417Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/温室效应.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/渴望.md": {
+      "source_hash": "sha256:8b0ce8404f8b6878541d7b37c634d41d434a9ecd27d08c62d0e43460a6bcb0a0",
+      "translated_at": "2026-06-09T23:03:53.035339Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/渴望.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/演化.md": {
+      "source_hash": "sha256:01aeab6640a34d3032ef69db32f02daca0c7074fa18b42922f5f530204a541ca",
+      "translated_at": "2026-06-09T23:03:57.648056Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/演化.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/演变.md": {
+      "source_hash": "sha256:debb4d3bcb3de3743a3dc7abd018d5be4a61512fd590f7fd45a16b491e22e1fc",
+      "translated_at": "2026-06-09T23:04:01.301329Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/演变.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/潜在.md": {
+      "source_hash": "sha256:e70b1653b49521086ba5a139a8ba99ae816005fe882477c722486de77d0a2cd3",
+      "translated_at": "2026-06-09T23:04:04.827716Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/潜在.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
