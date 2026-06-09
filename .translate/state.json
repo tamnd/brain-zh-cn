@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-09T19:40:33.852947Z",
+  "last_run": "2026-06-09T20:38:22.286450Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -14286,6 +14286,86 @@
       "source_hash": "sha256:ecbd2f480b5c1b80608e100ee584fc32b7cc8c1a455bdd7c6ef261e4e2458460",
       "translated_at": "2026-06-09T19:40:33.852924Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/构建.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/标准.md": {
+      "source_hash": "sha256:691de66cfa69bf0f2296a72c92690a3955cd3ab9ee90bd4e82f21cd176d8f1f1",
+      "translated_at": "2026-06-09T20:37:48.027597Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/标准.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/核实.md": {
+      "source_hash": "sha256:975c3e340f85a1001f6e72b2d284a3e6ea913be83cff118c7a7d9616c4073fb6",
+      "translated_at": "2026-06-09T20:37:51.888027Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/核实.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/核心.md": {
+      "source_hash": "sha256:05a973cb2c8fec6cb1efe50b7641e2a0f1c78eb172ecf0872d383550d5ac08c5",
+      "translated_at": "2026-06-09T20:37:55.686071Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/核心.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/根本.md": {
+      "source_hash": "sha256:85abc6e7f10263aca26cd7557e60cf7ef94bcb159a415a79c6f28d200b22a62d",
+      "translated_at": "2026-06-09T20:37:59.894163Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/根本.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/框架.md": {
+      "source_hash": "sha256:19d2fe6c7f3bd071f565ac384d2be0782e66f43eb370f099265c51bb8a08fada",
+      "translated_at": "2026-06-09T20:38:03.853157Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/框架.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/案例.md": {
+      "source_hash": "sha256:7766edb8175b18244d3a2b2cf50fa0e3ab1b32e9dc2557910d35d5ecb84e4ca6",
+      "translated_at": "2026-06-09T20:38:06.038644Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/案例.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/森林覆盖率.md": {
+      "source_hash": "sha256:d4b4bc62b32c1fc250f0be09f7e0ef4716a1e152fdde3082417b0048bdbe0d16",
+      "translated_at": "2026-06-09T20:38:09.916057Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/森林覆盖率.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/概念.md": {
+      "source_hash": "sha256:b074a112ef1c6ce85182eaefaecf45f3292c1900a16bbcf37c1b56fad4672ae0",
+      "translated_at": "2026-06-09T20:38:13.911025Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/概念.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/概括.md": {
+      "source_hash": "sha256:ed3b3dcb276fa03d7a475cfb3897e8134c20c76622909697eaa56be16dda5e00",
+      "translated_at": "2026-06-09T20:38:17.575406Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/概括.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/模型.md": {
+      "source_hash": "sha256:52ae616180736358ebdf3444c65d57fa354d97f19773aacc2c9c0c523d8e0abd",
+      "translated_at": "2026-06-09T20:38:22.286427Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/模型.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
