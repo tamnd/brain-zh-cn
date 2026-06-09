@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-09T05:20:21.421030Z",
+  "last_run": "2026-06-09T06:46:43.281675Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -13406,6 +13406,86 @@
       "source_hash": "sha256:3dc179496af5c3f8aa8d9a3c132e5acc543e3c282a563e2c5a0fbc7c8f6e2629",
       "translated_at": "2026-06-09T05:20:21.421003Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/广泛.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/应对.md": {
+      "source_hash": "sha256:42dad1a74ed11cbefc06e9cb0402fdbd3ac102383f08431fa0f397aa81040770",
+      "translated_at": "2026-06-09T06:46:02.901173Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/应对.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/应用程序.md": {
+      "source_hash": "sha256:e0ac2d06f6d443097aaf15eeb55b05440e11b3d194f35b1e04b57116963a0952",
+      "translated_at": "2026-06-09T06:46:05.709982Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/应用程序.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/康复.md": {
+      "source_hash": "sha256:11e466951a66e15f0114cbd5320e6ff6884fc2b545cbb67e34efcd10864db0b7",
+      "translated_at": "2026-06-09T06:46:09.721308Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/康复.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/廉洁.md": {
+      "source_hash": "sha256:09d03b131e79e05bb14cffc39944c4abe0209c4be1aa07a8179dc9d0e7f6e277",
+      "translated_at": "2026-06-09T06:46:13.236044Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/廉洁.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/建立.md": {
+      "source_hash": "sha256:3294c86f9c65a10b9952000ce10d48d831cb9c0f5f571dbf8035a289f6301773",
+      "translated_at": "2026-06-09T06:46:19.088562Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/建立.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/建议.md": {
+      "source_hash": "sha256:9c9f5e6027db8a80bd44e3f3c488df631b46cf9e64e911bab0402d9737b1824d",
+      "translated_at": "2026-06-09T06:46:24.016495Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/建议.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/开创.md": {
+      "source_hash": "sha256:1137879b03264a5e624a375ce55125f432d114301e2202103592b39a990ddafa",
+      "translated_at": "2026-06-09T06:46:28.731102Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/开创.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/开发.md": {
+      "source_hash": "sha256:c85b252772f4e4152b14262af4ef2823d9e416cbbf40eee1cf3de0a6d9457e08",
+      "translated_at": "2026-06-09T06:46:34.177811Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/开发.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/引导.md": {
+      "source_hash": "sha256:c3fea472a61828d628bde823e08769d9635fd40514b8db1c42dadbc589e2fdef",
+      "translated_at": "2026-06-09T06:46:37.819528Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/引导.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/引领.md": {
+      "source_hash": "sha256:1e9373f3a2281b7bddfb0affd3ae72316a3f2acebfc3fc940c51c4d49851cd58",
+      "translated_at": "2026-06-09T06:46:43.281648Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/引领.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
