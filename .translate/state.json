@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-09T14:23:24.191269Z",
+  "last_run": "2026-06-09T15:33:22.417275Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -13966,6 +13966,86 @@
       "source_hash": "sha256:1f5e6270776324625c5e56341f61b1a348d72502fb6a204b3971d35b66c2a29e",
       "translated_at": "2026-06-09T14:23:24.191247Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/支持.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/收益.md": {
+      "source_hash": "sha256:b98312b0726b9192d59da6349dfdb131dff1eb04f2ce9da2392e3e499aff7224",
+      "translated_at": "2026-06-09T15:32:40.877074Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/收益.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/收购.md": {
+      "source_hash": "sha256:b9f0ef1409ecfcf74f2f55a549824e226e13467ae583d2c6047c1fc0793b3269",
+      "translated_at": "2026-06-09T15:32:45.115608Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/收购.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/改变.md": {
+      "source_hash": "sha256:7308f12cc672c60d9626a2c5570bf590f4fd9a3433d656ca8f0990e04a42cee8",
+      "translated_at": "2026-06-09T15:32:50.710094Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/改变.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/改革.md": {
+      "source_hash": "sha256:e4c90ec9389dbada8a1dbe3db773e7ec735badfaa36f044ce237c251007b84be",
+      "translated_at": "2026-06-09T15:32:56.327305Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/改革.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/政治.md": {
+      "source_hash": "sha256:7ca7563e20598e5748369be12b0640b33130b07a49e2fd1f236a44a46f2f1282",
+      "translated_at": "2026-06-09T15:33:00.689264Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/政治.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/政策.md": {
+      "source_hash": "sha256:ad40978a7c5ca112ab378d9b52f7fd794b955e39fe1ebc506783e23580d16b59",
+      "translated_at": "2026-06-09T15:33:04.009187Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/政策.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/敏感.md": {
+      "source_hash": "sha256:620255960784b79831221045e85e0b27d0069ac66d20dbf32d3fdcd923a11320",
+      "translated_at": "2026-06-09T15:33:08.917018Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/敏感.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/教材.md": {
+      "source_hash": "sha256:52b9e195ea3b277ffc95ad665e60ac7f7b5980ccad140c3a989e13614d913596",
+      "translated_at": "2026-06-09T15:33:12.553912Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/教材.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/散文.md": {
+      "source_hash": "sha256:1b86a20b50a7b8e14ae030ec40c697e0e985b175e081bdb58c23b4fc695f8c41",
+      "translated_at": "2026-06-09T15:33:17.693266Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/散文.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/敬佩.md": {
+      "source_hash": "sha256:eab84b721dab4438b3c16390220d64ebc75f009445c9084570a6fbda64cb3093",
+      "translated_at": "2026-06-09T15:33:22.417248Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/敬佩.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
