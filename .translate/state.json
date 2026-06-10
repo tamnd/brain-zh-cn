@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T06:36:00.158356Z",
+  "last_run": "2026-06-10T08:21:34.496545Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -15086,6 +15086,86 @@
       "source_hash": "sha256:c7fcbf2bab26dca52abc6508308b61ad7fc1619c2d1167e82740528ae7358c5d",
       "translated_at": "2026-06-10T06:36:00.158325Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/稳定.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/突出.md": {
+      "source_hash": "sha256:9422c2c098103323bdce9535a3b1046237156748e556b31ac84109041b7d1cf8",
+      "translated_at": "2026-06-10T08:20:57.490632Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/突出.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/突破.md": {
+      "source_hash": "sha256:24107bbedcfac7512f3a2b6b43d61fa6c7f53c484ad43981a07180e01548ef07",
+      "translated_at": "2026-06-10T08:21:01.482840Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/突破.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/立场.md": {
+      "source_hash": "sha256:c9b7f1171649fe4b9a180bf8a9939550e36da0f3b1fce278806c1da40eaef50f",
+      "translated_at": "2026-06-10T08:21:05.282943Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/立场.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/竞争.md": {
+      "source_hash": "sha256:7284a91663ee7636475c2b3897fd9c6e7f30d31c66b8f29fe635e325c71388e7",
+      "translated_at": "2026-06-10T08:21:09.604686Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/竞争.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/简化.md": {
+      "source_hash": "sha256:72cce2bfdbafbe55f0394c7588b977649fd9763a46b970ef143272e7c9f63d9f",
+      "translated_at": "2026-06-10T08:21:15.429523Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/简化.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/算法.md": {
+      "source_hash": "sha256:f87f91f22fdb50e70c9b672c3f55b169c9fcb1190a0776241d033c62fb7f5c09",
+      "translated_at": "2026-06-10T08:21:18.235314Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/算法.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/算法推荐.md": {
+      "source_hash": "sha256:c4a76141c0300b3374a47350903fc01d795dc1c2a7b379109cad67753f6ac427",
+      "translated_at": "2026-06-10T08:21:21.787929Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/算法推荐.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/管理.md": {
+      "source_hash": "sha256:a6020eab7ae14842cca8b765f24167b138702a0d8f7c169b214dcb9459309cd6",
+      "translated_at": "2026-06-10T08:21:24.696904Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/管理.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/粉丝.md": {
+      "source_hash": "sha256:e9b732b9bdc670476ec3344a5ca8c9ec46125d2998629b8f75b3fb011cc5fa90",
+      "translated_at": "2026-06-10T08:21:28.614281Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/粉丝.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/精湛.md": {
+      "source_hash": "sha256:2d0935843281e80150a9899ac25eead38df67ee5d5f48849aa091d2b98d10390",
+      "translated_at": "2026-06-10T08:21:34.496523Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/精湛.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
