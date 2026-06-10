@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T09:46:31.000800Z",
+  "last_run": "2026-06-10T11:13:27.011385Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -15246,6 +15246,86 @@
       "source_hash": "sha256:bea66b9520b5f70f88549a85e6debf767e54b032a6578a7f016fde5003fec9b4",
       "translated_at": "2026-06-10T09:46:31.000776Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/经验.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/结构.md": {
+      "source_hash": "sha256:36cb6eb4fb53c3f71dc2c541a75a2c3f027075486bb0e3097873b89ee7f7f73a",
+      "translated_at": "2026-06-10T11:12:46.353076Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/结构.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/结论.md": {
+      "source_hash": "sha256:e2f61ba1d97b7eac81360745c2b43aeccaebc23959c72c040060473b8100010f",
+      "translated_at": "2026-06-10T11:12:50.316868Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/结论.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/统一.md": {
+      "source_hash": "sha256:4229a3ff0aebae8eefd5df32f15d62ef7a6504a5476e9e9cf0ac4265de011428",
+      "translated_at": "2026-06-10T11:12:53.906405Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/统一.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/统筹.md": {
+      "source_hash": "sha256:ed7e423a874205584e5c0aad40c61db280897db31537f97507a7666567f9ff93",
+      "translated_at": "2026-06-10T11:12:57.622883Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/统筹.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/综上所述.md": {
+      "source_hash": "sha256:5cb7ef047d6958ec7607f49380b5d5acca68614315383c1039153bad9908e55c",
+      "translated_at": "2026-06-10T11:13:00.746602Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/综上所述.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/绿色.md": {
+      "source_hash": "sha256:9cc2d5e3e0f02f64fbf18f23cb0608038469c8350dbc80d33405a7d479c8b412",
+      "translated_at": "2026-06-10T11:13:04.722270Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/绿色.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/编程.md": {
+      "source_hash": "sha256:c799c218d068c9b338ee8c0b0b90fb56a0ec70ac13b59ae176ff5ff5790cca66",
+      "translated_at": "2026-06-10T11:13:14.261407Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/编程.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/缩小.md": {
+      "source_hash": "sha256:4b2b1e1c6a4f85761ae7bc6f5ea797773399a8d11f16d4290db24641497d0141",
+      "translated_at": "2026-06-10T11:13:18.176936Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/缩小.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/网络.md": {
+      "source_hash": "sha256:78225208598c62801710e4cdf388df308478f01f9b64045a2196bfe9a21744d4",
+      "translated_at": "2026-06-10T11:13:21.833041Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/网络.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/网络安全.md": {
+      "source_hash": "sha256:35fb0af4519d58a1ea68cbb56bcd2ac2ac482d5175abd3429238abf65f87bc46",
+      "translated_at": "2026-06-10T11:13:27.011320Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/网络安全.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
