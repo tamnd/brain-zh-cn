@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T21:19:46.166646Z",
+  "last_run": "2026-06-10T22:14:06.468009Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -15966,6 +15966,86 @@
       "source_hash": "sha256:1a454f8d8d6b1a964f95dde765e4fdcc0eb99104a312b352e84d7de2859edaec",
       "translated_at": "2026-06-10T21:19:46.166622Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/辩论.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/边缘化的.md": {
+      "source_hash": "sha256:037f5f9b16fb80c3f606fbd05b3fea9e86b81b85c8039b4d34430a9356b5bc7e",
+      "translated_at": "2026-06-10T22:13:30.237176Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/边缘化的.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/过渡.md": {
+      "source_hash": "sha256:2953c7319077b3f2ffaa645a9e7c04ff043aebb6663236e6954ae38a32ac0065",
+      "translated_at": "2026-06-10T22:13:35.573899Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/过渡.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/运营.md": {
+      "source_hash": "sha256:292c6bdad46b4160134df2a30cb8e466b66bef6eb5fe689863e3623bde7be667",
+      "translated_at": "2026-06-10T22:13:40.254008Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/运营.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/进化.md": {
+      "source_hash": "sha256:f6a94396df50f1f717f54ffe9e4696785b5a04658718e524f1c94ecfb5f2a880",
+      "translated_at": "2026-06-10T22:13:43.894022Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/进化.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/进口.md": {
+      "source_hash": "sha256:f5fd078c2778eec8c21f1b1cf693bd0e4b4cbedf8a8179649e044f400dc2ff8b",
+      "translated_at": "2026-06-10T22:13:47.384110Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/进口.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/进步.md": {
+      "source_hash": "sha256:8501339c154a0539d9a16e4f0294cde9c82411ad04deb884e93bb634b0dffde2",
+      "translated_at": "2026-06-10T22:13:50.575164Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/进步.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/进步的.md": {
+      "source_hash": "sha256:c1451140ed8ae22e591242fbd0e35987bb35ee7b0863aa7d4437cfda87731dcb",
+      "translated_at": "2026-06-10T22:13:53.524840Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/进步的.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/进而.md": {
+      "source_hash": "sha256:5abda49dec869ae60a3a99af488f771b344cdb643a77f62dd3caeb483202803d",
+      "translated_at": "2026-06-10T22:13:58.559722Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/进而.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/迫切.md": {
+      "source_hash": "sha256:13e6cdfd6d49b31a29502f3634d127dd803ffb428164a34c4dbe13ee6959861e",
+      "translated_at": "2026-06-10T22:14:02.361976Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/迫切.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/迷惑.md": {
+      "source_hash": "sha256:f172fe68d3ed25b8556993dfb5d763d748ee196bd291ced78048334882feedee",
+      "translated_at": "2026-06-10T22:14:06.467988Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/迷惑.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
