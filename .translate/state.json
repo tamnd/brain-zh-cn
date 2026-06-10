@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T22:14:06.468009Z",
+  "last_run": "2026-06-10T23:03:02.663544Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -16046,6 +16046,86 @@
       "source_hash": "sha256:f172fe68d3ed25b8556993dfb5d763d748ee196bd291ced78048334882feedee",
       "translated_at": "2026-06-10T22:14:06.467988Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/迷惑.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/退化.md": {
+      "source_hash": "sha256:58d63619745334a00ea92007d32e918941a867ff4d9be6fd94b98a5cc4721d03",
+      "translated_at": "2026-06-10T23:02:24.551670Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/退化.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/适应.md": {
+      "source_hash": "sha256:03b1173beeeac07686e24cd83ddf1793862303fc9b1e47cc38a979e4c0e01248",
+      "translated_at": "2026-06-10T23:02:28.638721Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/适应.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/透明度.md": {
+      "source_hash": "sha256:b3099db831c864fa4c63047436d601c84ba87bb9d4be07f96d0e7f23aa1d1ed2",
+      "translated_at": "2026-06-10T23:02:32.926328Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/透明度.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/透明的.md": {
+      "source_hash": "sha256:7abd26c60a940e0f47be5aaef53b21e56a877020e4d1f24a5a730d93b7f79cf9",
+      "translated_at": "2026-06-10T23:02:36.569884Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/透明的.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/通货膨胀.md": {
+      "source_hash": "sha256:f49fd27d403b1be0cbfa21e0573e34c1467633b75ab36aa90c540b51d331c4a6",
+      "translated_at": "2026-06-10T23:02:39.855604Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/通货膨胀.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/逻辑.md": {
+      "source_hash": "sha256:ab075827f79a31e07cce252681bfde9e90b6411dc828647b5acd2394e721f596",
+      "translated_at": "2026-06-10T23:02:44.132718Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/逻辑.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/遏制.md": {
+      "source_hash": "sha256:0c9839d647672114adc013ee99d2653bf60117ae305d3dfda20efd7764d46d15",
+      "translated_at": "2026-06-10T23:02:49.222833Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/遏制.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/道德.md": {
+      "source_hash": "sha256:ab7e47c530d401165bbbd876ff8f77881ab44f7486a5eab1ee4b7dc16d3912d0",
+      "translated_at": "2026-06-10T23:02:52.714617Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/道德.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/遗憾.md": {
+      "source_hash": "sha256:96d2cfc0bead8baec1fa078e94b79bf033054cdecd881d3682c2be36e6e9c06f",
+      "translated_at": "2026-06-10T23:02:58.392335Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/遗憾.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/部署.md": {
+      "source_hash": "sha256:eb384b71770325ab474477a87576d8810472fe22b55f912c4483d9e0d295c72c",
+      "translated_at": "2026-06-10T23:03:02.663515Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/部署.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
