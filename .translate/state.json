@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T23:03:02.663544Z",
+  "last_run": "2026-06-10T23:58:54.002429Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -16126,6 +16126,86 @@
       "source_hash": "sha256:eb384b71770325ab474477a87576d8810472fe22b55f912c4483d9e0d295c72c",
       "translated_at": "2026-06-10T23:03:02.663515Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/部署.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/采访.md": {
+      "source_hash": "sha256:a7669d04854316f2318a10722f6bea71173b5fde8dcb7e245a2256bdd3ca0660",
+      "translated_at": "2026-06-10T23:58:33.662100Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/采访.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/释然.md": {
+      "source_hash": "sha256:52fe2c11f184019b29175a0aa708c731a340d9647c2416e15ddff664162096da",
+      "translated_at": "2026-06-10T23:58:35.426297Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/释然.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/重要.md": {
+      "source_hash": "sha256:546ce0cdd0460ac04cbb736b5356b165bbf4f0299d49cee2a3f52ac508906239",
+      "translated_at": "2026-06-10T23:58:38.317942Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/重要.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/铸造.md": {
+      "source_hash": "sha256:09f85b813a607e981335934a50f0c4fbbbd4f8230537b930e99958111efff002",
+      "translated_at": "2026-06-10T23:58:41.172017Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/铸造.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/锻炼.md": {
+      "source_hash": "sha256:25f25156565dd4fabccfd0f776264bbfec5c209ca226352c648b60dc75a944b6",
+      "translated_at": "2026-06-10T23:58:43.838660Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/锻炼.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/长远.md": {
+      "source_hash": "sha256:58d7b9a35a7e2bf7500790c38319020179d6279ff573d68ca68bd5ee1958eb4b",
+      "translated_at": "2026-06-10T23:58:45.834984Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/长远.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/问责.md": {
+      "source_hash": "sha256:273466c4c43ce262f6522644595dc57d628b22ea3be0ce1a9bcce07fc766c6c9",
+      "translated_at": "2026-06-10T23:58:47.975049Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/问责.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/问责制.md": {
+      "source_hash": "sha256:132317ce6cba3900ea244603d90fd11083278b00d3574e485ea295edd005fd4a",
+      "translated_at": "2026-06-10T23:58:49.962258Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/问责制.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/阐述.md": {
+      "source_hash": "sha256:1de59e32cda9a2807abf794184d8a1361ece5a5f75674e35c7119e6aeaa149e3",
+      "translated_at": "2026-06-10T23:58:52.335349Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/阐述.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/除此之外.md": {
+      "source_hash": "sha256:16ea762349a63f4356fe981314fb8fe83dc0c9b8a8decedd30b3a4ca07cfe685",
+      "translated_at": "2026-06-10T23:58:54.002406Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/除此之外.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
