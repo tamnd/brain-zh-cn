@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T14:07:08.403613Z",
+  "last_run": "2026-06-10T15:45:58.794665Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -15486,6 +15486,86 @@
       "source_hash": "sha256:62a08fb83cf75b82f8319d3b2362f41fa88faa2ae75b166b04d65f8f8aacbd3e",
       "translated_at": "2026-06-10T14:07:08.403588Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/营销.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/落后.md": {
+      "source_hash": "sha256:9a170b311bce0ba280026a3db83f3f4cf1d7024ab2f75d09f82433cfbe5d84ac",
+      "translated_at": "2026-06-10T15:45:30.996084Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/落后.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/落实.md": {
+      "source_hash": "sha256:38f0fdd13801c92f1a4900451a5a3b143c029d1c21fa2b77c2bb2ddcf61821bf",
+      "translated_at": "2026-06-10T15:45:33.918086Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/落实.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/虚拟现实.md": {
+      "source_hash": "sha256:52e2642297abaf4d1ab65b842a9507ea4e1af320560d0b350d89c87cf0a5476c",
+      "translated_at": "2026-06-10T15:45:36.796343Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/虚拟现实.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/融合.md": {
+      "source_hash": "sha256:0e8376339b02b08af926008c19b7f4f5f8e940e4a3f7a12e819cebd891bf6c6c",
+      "translated_at": "2026-06-10T15:45:39.628275Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/融合.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/融资.md": {
+      "source_hash": "sha256:43de141efe2a064edcb3b151981d8f5b982c1563754b582f60a69d71ceb1c35e",
+      "translated_at": "2026-06-10T15:45:43.776423Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/融资.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/表明.md": {
+      "source_hash": "sha256:cacab4e5bd19a07d911eaacc84c522f15aec96418303f5e05bb17522e45dbf6a",
+      "translated_at": "2026-06-10T15:45:46.785810Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/表明.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/表现.md": {
+      "source_hash": "sha256:73e4b03c1092359ecd75a7e680b113fdc752a25ce663231b252c02b1cc21b426",
+      "translated_at": "2026-06-10T15:45:49.992524Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/表现.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/表面.md": {
+      "source_hash": "sha256:331ef86650862529468c05e1d2fdea8bc9d2b05e9ff1d0725a81cb44e6763836",
+      "translated_at": "2026-06-10T15:45:53.279275Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/表面.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/衰退.md": {
+      "source_hash": "sha256:75253c0003a017d9c153cc5580a3d121e7a347ec4bb064436edfd167570e9551",
+      "translated_at": "2026-06-10T15:45:55.715073Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/衰退.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/观点.md": {
+      "source_hash": "sha256:b70f637d3ead4329eff6f85b24161143902a64166dbea21db2cee42b3cd2280f",
+      "translated_at": "2026-06-10T15:45:58.794638Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/观点.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
