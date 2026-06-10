@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T19:22:07.610494Z",
+  "last_run": "2026-06-10T20:17:25.425664Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -15806,6 +15806,86 @@
       "source_hash": "sha256:1a5a248a921e5a246af78a376df686b1c589ee34ab1501ed7d4082ad55024bdb",
       "translated_at": "2026-06-10T19:22:07.610471Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/调整.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/调配.md": {
+      "source_hash": "sha256:4d954ccd35c7f42c1fa51e50ad51c20b968fdcf0b5cf076254e0894a1494d00c",
+      "translated_at": "2026-06-10T20:16:48.620619Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/调配.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/谈判.md": {
+      "source_hash": "sha256:c124b15d43756e8f28cb37926b6b656cceaa900e37376daebe3c6fd150265870",
+      "translated_at": "2026-06-10T20:16:52.611188Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/谈判.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/谋划.md": {
+      "source_hash": "sha256:062bdac43cd63dbb958c300a8adcf0009c6ef7c9446cb479db0424415991fc0d",
+      "translated_at": "2026-06-10T20:16:56.406026Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/谋划.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/象征.md": {
+      "source_hash": "sha256:526064702a5714860c9e6bdffce250c7ef3928f6d2e123833592de1703fcef29",
+      "translated_at": "2026-06-10T20:17:00.488114Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/象征.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/负债.md": {
+      "source_hash": "sha256:8dd1ce481f2e60e906698b8d7f1dfef34cc81fb55086915f74591c8769613c3a",
+      "translated_at": "2026-06-10T20:17:06.059576Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/负债.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/负责任的.md": {
+      "source_hash": "sha256:06c5a0cb35da3bc03f378edf506c50190b91bf35de37a44b0de5b18edbd1c927",
+      "translated_at": "2026-06-10T20:17:10.552615Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/负责任的.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/质疑.md": {
+      "source_hash": "sha256:ad54faf9816749a1c68a93243b108e5cf709bac6a06d787d939f4af26f28b00d",
+      "translated_at": "2026-06-10T20:17:14.104876Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/质疑.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/贷款.md": {
+      "source_hash": "sha256:9bd88569f1c0c20d89a4126af1f275106e67ba62db9d6cd79799363bb8b68e67",
+      "translated_at": "2026-06-10T20:17:17.895954Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/贷款.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/贸易.md": {
+      "source_hash": "sha256:993c8c5b4605966d1d4f9a5d0d52793a85feb27ed97310cbf9a188c770f2eeb1",
+      "translated_at": "2026-06-10T20:17:21.796515Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/贸易.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/资产.md": {
+      "source_hash": "sha256:92c414c088df3c14815aceeb5b117b9806781b24f610e4ba1bf295bec16670ae",
+      "translated_at": "2026-06-10T20:17:25.425638Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/资产.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
