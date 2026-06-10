@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T05:00:13.373873Z",
+  "last_run": "2026-06-10T06:36:00.158356Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -15006,6 +15006,86 @@
       "source_hash": "sha256:1ae064a1bc0805428ac82d4b35f075151a9585d1305babc69fc2229d5d4249fe",
       "translated_at": "2026-06-10T05:00:13.373844Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/碳中和.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/碳排放.md": {
+      "source_hash": "sha256:a8061ef8134ce4940c1fb86a7ef542f3ec3d2c93ba9d8b7fd1e2e1008a5d03e4",
+      "translated_at": "2026-06-10T06:35:38.402859Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/碳排放.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/示范.md": {
+      "source_hash": "sha256:15b8304dc9e10d4374cae07ca9c30d66a63477a648c696d364d6f83aa21f4c22",
+      "translated_at": "2026-06-10T06:35:41.311010Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/示范.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/社会.md": {
+      "source_hash": "sha256:5e17d2a361c2012ea87575ad77ff0e0e55abaf4cc7acde0cd12d8dddc45159f2",
+      "translated_at": "2026-06-10T06:35:43.280692Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/社会.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/社会影响.md": {
+      "source_hash": "sha256:f9788d091d827f10f468dbbdedefa662892e413bd400399a4c58cfe6883b7c62",
+      "translated_at": "2026-06-10T06:35:45.472903Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/社会影响.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/福利.md": {
+      "source_hash": "sha256:e6cdfb19e195f83734a62cac992c75807e58916f8589fa4a6ead840b4408705a",
+      "translated_at": "2026-06-10T06:35:47.281152Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/福利.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/秩序.md": {
+      "source_hash": "sha256:e3f6aecd868663fdffd973e60735a4a1fb6364d69da86ecf24f5af1c377785d5",
+      "translated_at": "2026-06-10T06:35:50.233404Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/秩序.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/积极.md": {
+      "source_hash": "sha256:32b5ce4f7cf25e75d6ad3d3a0036076ccd4e4b627506ca921931dd85e90de518",
+      "translated_at": "2026-06-10T06:35:52.538193Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/积极.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/程序.md": {
+      "source_hash": "sha256:efcf06c2c765f6c8122be4b2de16823db31070c4b58f7a496e69fd5ef2702639",
+      "translated_at": "2026-06-10T06:35:54.568356Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/程序.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/稳健.md": {
+      "source_hash": "sha256:6721c91b947d6e11516d46ff93a02ce7d19a27719c6ec5f69219d120efdb3483",
+      "translated_at": "2026-06-10T06:35:56.654393Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/稳健.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/稳定.md": {
+      "source_hash": "sha256:c7fcbf2bab26dca52abc6508308b61ad7fc1619c2d1167e82740528ae7358c5d",
+      "translated_at": "2026-06-10T06:36:00.158325Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/稳定.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
