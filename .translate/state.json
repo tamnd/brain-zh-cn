@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T20:17:25.425664Z",
+  "last_run": "2026-06-10T21:19:46.166646Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -15886,6 +15886,86 @@
       "source_hash": "sha256:92c414c088df3c14815aceeb5b117b9806781b24f610e4ba1bf295bec16670ae",
       "translated_at": "2026-06-10T20:17:25.425638Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/资产.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/资源.md": {
+      "source_hash": "sha256:acd4c694822750a03eb39816080ab72e2a9ca7ca8c3001f04c3a50b98129d3f5",
+      "translated_at": "2026-06-10T21:19:11.174325Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/资源.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/资质.md": {
+      "source_hash": "sha256:a685de3ba7c4c1fa56a93792aef23ee719ef75b1eca4bcb5a27340f5efb8f15a",
+      "translated_at": "2026-06-10T21:19:14.906084Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/资质.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/赞同.md": {
+      "source_hash": "sha256:830cb8565f4cd91a8159423c5ca5eab8a8ecb75c6f6b7e2a596615caf5ba9ac5",
+      "translated_at": "2026-06-10T21:19:19.792740Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/赞同.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/趋势.md": {
+      "source_hash": "sha256:73933e7ec369f00241bd59674963f4a51e1a33e88a42ff8767719f63f1ec10e5",
+      "translated_at": "2026-06-10T21:19:23.141136Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/趋势.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/跨越.md": {
+      "source_hash": "sha256:04c10c9089d24589081c6e2cb960adb263c2e97b1153fce478980c0a44cca03c",
+      "translated_at": "2026-06-10T21:19:27.559991Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/跨越.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/身份认同.md": {
+      "source_hash": "sha256:384aed948bc63265d20ddaa48119758bf62167a1b7191f4146af9e0a066cf1b8",
+      "translated_at": "2026-06-10T21:19:31.433683Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/身份认同.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/转化.md": {
+      "source_hash": "sha256:527fd1237f8239afb81c65df1a1d5958b9459b6341af72ebd9e8c5acd4134493",
+      "translated_at": "2026-06-10T21:19:34.868217Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/转化.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/转变.md": {
+      "source_hash": "sha256:bdfb2794b152c1c9e51f50a8a4d39b032155b25c071df6f5f1caf644b34acbf1",
+      "translated_at": "2026-06-10T21:19:38.254458Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/转变.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/软件.md": {
+      "source_hash": "sha256:ba4cd6314581f216bb9c05b7a48701e4e6220d9b0ecbddd4758a9c69e0788f3f",
+      "translated_at": "2026-06-10T21:19:42.566440Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/软件.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/辩论.md": {
+      "source_hash": "sha256:1a454f8d8d6b1a964f95dde765e4fdcc0eb99104a312b352e84d7de2859edaec",
+      "translated_at": "2026-06-10T21:19:46.166622Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/辩论.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
