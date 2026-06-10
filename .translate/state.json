@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T17:00:32.617688Z",
+  "last_run": "2026-06-10T18:07:02.217899Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -15646,6 +15646,86 @@
       "source_hash": "sha256:9fe0cea16ed3e1f67296a21877baa196160a3a81bb78b8db34094f41b27af28a",
       "translated_at": "2026-06-10T17:00:32.617664Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/论坛.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/论据.md": {
+      "source_hash": "sha256:a28405dfada1e9a64d1e0b25e6de09746bc210837d3eb79c794df8f4a30754b4",
+      "translated_at": "2026-06-10T18:06:40.907177Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/论据.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/论点.md": {
+      "source_hash": "sha256:e3878e9b17158169dea677a3d674fa62a9f1117fff42fc884ba8bb6ba1f453a7",
+      "translated_at": "2026-06-10T18:06:42.635037Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/论点.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/论证.md": {
+      "source_hash": "sha256:707efcc1653ad664c28c0244528a63fdc046da14d015f8bbc432c18280d0414d",
+      "translated_at": "2026-06-10T18:06:44.596099Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/论证.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/设计.md": {
+      "source_hash": "sha256:090ad932400aefab21036254374d76bdc4af89cf142a16610387bcd0368ee062",
+      "translated_at": "2026-06-10T18:06:46.927257Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/设计.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/证实.md": {
+      "source_hash": "sha256:1589e1bb235be6f06b4d95bf235fc87c790584263e52c948943c1ed419d15e83",
+      "translated_at": "2026-06-10T18:06:49.927939Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/证实.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/证据.md": {
+      "source_hash": "sha256:1304e79450941171cd634359251d92e01c485440935fe283b211fae654c15889",
+      "translated_at": "2026-06-10T18:06:52.911176Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/证据.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/证明.md": {
+      "source_hash": "sha256:f8f59c1fac4d89f3008fe4992a1c4de70087e040f0a1db2b9b158be7d5a3e7c8",
+      "translated_at": "2026-06-10T18:06:55.520789Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/证明.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/评价.md": {
+      "source_hash": "sha256:f6609a306b7f00b5e5560256d46c5b1d45a2d5912747c172abb80bab2f342934",
+      "translated_at": "2026-06-10T18:06:57.164646Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/评价.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/评估.md": {
+      "source_hash": "sha256:2e8a4349b11d5ba7ae337b964057b15f7ec13d90a02fadad4d1a9f95eefc03d9",
+      "translated_at": "2026-06-10T18:06:59.907124Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/评估.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/评论.md": {
+      "source_hash": "sha256:2eedbfd346183b39efea3354a6bd613a3d8c2a3affdf05f61a0c05eb8b9a9f6b",
+      "translated_at": "2026-06-10T18:07:02.217876Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/评论.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
