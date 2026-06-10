@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-09T23:56:32.412823Z",
+  "last_run": "2026-06-10T00:37:38.223259Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -14686,6 +14686,86 @@
       "source_hash": "sha256:e721bafc3e9291840295c8dd212ad56b057a4ec961418e41363d30bb88d854af",
       "translated_at": "2026-06-09T23:56:32.412799Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/版权.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/物种.md": {
+      "source_hash": "sha256:0f183059b2695ae23089c1a5ad92560f7e9c2e087bfeb4682be59a8e0403ded2",
+      "translated_at": "2026-06-10T00:37:02.209882Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/物种.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/物联网.md": {
+      "source_hash": "sha256:06eaa3d47d7d4c2bffbe483ff6eaa4468a54d062c62b149db470b87c6f6ce87e",
+      "translated_at": "2026-06-10T00:37:05.890193Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/物联网.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/特别.md": {
+      "source_hash": "sha256:bb58f2d9aea8503593fb38e44decf3c8d5f801b09841478b2bbbb83f43854849",
+      "translated_at": "2026-06-10T00:37:10.153494Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/特别.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/特征.md": {
+      "source_hash": "sha256:bec186ebf891d1200139bcb81a9b600704c168b4a5337b141ff143cf8f836295",
+      "translated_at": "2026-06-10T00:37:13.294349Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/特征.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/特殊.md": {
+      "source_hash": "sha256:a4426beecec70c7541fa8b5eaab5fb3f969dfbd72e968bdb63243864210b4cc3",
+      "translated_at": "2026-06-10T00:37:17.645091Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/特殊.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/独特.md": {
+      "source_hash": "sha256:2b71f0d6f9dcb67e76400bb2ac3a919a52f41c34f15e647bd3b4a3a9a715b010",
+      "translated_at": "2026-06-10T00:37:21.307008Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/独特.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/环境保护.md": {
+      "source_hash": "sha256:f18a3efab43e0a6d759642563e0ba3db7ff82ab86b2436268e49d4d7bb7edb74",
+      "translated_at": "2026-06-10T00:37:26.390456Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/环境保护.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/现象.md": {
+      "source_hash": "sha256:39b581fc3a59e958c31d726b1a684b834251063b9df5995206d488cd45c62ae9",
+      "translated_at": "2026-06-10T00:37:29.439784Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/现象.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/珍惜.md": {
+      "source_hash": "sha256:07c6dc98ebea1551117d9904752d686c6a6923d72036c7ad6b23105cfa779111",
+      "translated_at": "2026-06-10T00:37:33.440552Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/珍惜.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/理性.md": {
+      "source_hash": "sha256:699f31d6eef39b2a1928cea75e39f24cb1fe06a43bf6989b1eec3fdb17711316",
+      "translated_at": "2026-06-10T00:37:38.223234Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/理性.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
