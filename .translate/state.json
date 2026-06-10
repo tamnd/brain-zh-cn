@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T12:37:26.036578Z",
+  "last_run": "2026-06-10T14:07:08.403613Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -15406,6 +15406,86 @@
       "source_hash": "sha256:cf6b6dd8af7fec1e8aef5ee302614bd1d97bdac2386f35aa59db7b1292d56028",
       "translated_at": "2026-06-10T12:37:26.036551Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/自学.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/自尊.md": {
+      "source_hash": "sha256:03789c1aec27317fb8934250e75e9604c8a3e1bdefca163e3047439287084033",
+      "translated_at": "2026-06-10T14:06:29.350491Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/自尊.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/自然灾害.md": {
+      "source_hash": "sha256:0940f87d2a507409ea550111ba338db17053a0c902d3c5a8c0c621c4e885ab7f",
+      "translated_at": "2026-06-10T14:06:32.940530Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/自然灾害.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/自由.md": {
+      "source_hash": "sha256:ac5472d52b424659b177e47c660ceecdd06136c828be78c4fde1e0305d38c7cc",
+      "translated_at": "2026-06-10T14:06:36.669465Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/自由.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/臭氧层.md": {
+      "source_hash": "sha256:b6ae2b9b678f1bdceb157b5cc36e89566bd5a19dd9480af6d2eca4c9378c58e3",
+      "translated_at": "2026-06-10T14:06:43.165439Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/臭氧层.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/舆论.md": {
+      "source_hash": "sha256:59fa05999173dadd5b2ea05c70fb1c8118058f6db91ba10babb8742acc612da2",
+      "translated_at": "2026-06-10T14:06:47.024050Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/舆论.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/苦恼.md": {
+      "source_hash": "sha256:bcbeb11418fa91d4cc820c53aad0e22ae127c423077334389bdf36d1c5168aee",
+      "translated_at": "2026-06-10T14:06:53.304096Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/苦恼.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/范例.md": {
+      "source_hash": "sha256:ad6c8168b50c9ecacec10e467372e2370a035c22220680a9b2f64323b0462e0c",
+      "translated_at": "2026-06-10T14:06:56.986725Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/范例.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/药物.md": {
+      "source_hash": "sha256:ecf0596791e618f815a4085167906c9e68c7ff237f58d0166d105b8b5d7f9c88",
+      "translated_at": "2026-06-10T14:07:01.029353Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/药物.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/营养.md": {
+      "source_hash": "sha256:8be3c08341369f83b88f638dd9d550654e7de0b786b778f304e4bc7dc1254c54",
+      "translated_at": "2026-06-10T14:07:04.795380Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/营养.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/营销.md": {
+      "source_hash": "sha256:62a08fb83cf75b82f8319d3b2362f41fa88faa2ae75b166b04d65f8f8aacbd3e",
+      "translated_at": "2026-06-10T14:07:08.403588Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/营销.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
