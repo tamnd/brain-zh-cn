@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T15:45:58.794665Z",
+  "last_run": "2026-06-10T17:00:32.617688Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -15566,6 +15566,86 @@
       "source_hash": "sha256:b70f637d3ead4329eff6f85b24161143902a64166dbea21db2cee42b3cd2280f",
       "translated_at": "2026-06-10T15:45:58.794638Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/观点.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/规划.md": {
+      "source_hash": "sha256:9436ba428c0869a912a74d062876880be88c42c3b175d1c3ed1b70e195418246",
+      "translated_at": "2026-06-10T17:00:12.241247Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/规划.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/规律.md": {
+      "source_hash": "sha256:fe3952ffd9452652f6d2060e105fe2953f9f0c936e2a0dbc1b562363a81e046b",
+      "translated_at": "2026-06-10T17:00:14.503962Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/规律.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/视角.md": {
+      "source_hash": "sha256:55f4c819151dc393ddf7df8be787303870161253cc2e6fd7b7ae85654bbd2e8f",
+      "translated_at": "2026-06-10T17:00:16.263378Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/视角.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/解读.md": {
+      "source_hash": "sha256:b3b8bb03664f3c384058047ec54b17b8ee0e10a7f53e16a30854151e92d52af7",
+      "translated_at": "2026-06-10T17:00:18.556293Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/解读.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/触动.md": {
+      "source_hash": "sha256:8d9713006f41585be1395b64e2a216a0b3f138d22ed1d63d077b966402044f53",
+      "translated_at": "2026-06-10T17:00:20.243479Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/触动.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/警示.md": {
+      "source_hash": "sha256:21f3ada5d73478a6b123407bb05d92ada30f9d6f746b9f21962c6b95d45a9c3d",
+      "translated_at": "2026-06-10T17:00:23.593860Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/警示.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/认知.md": {
+      "source_hash": "sha256:dfcc2f07083aac048a76bead2881bee1a33be7fa153b6428ed84c95b35c0366d",
+      "translated_at": "2026-06-10T17:00:25.628566Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/认知.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/议题.md": {
+      "source_hash": "sha256:0eeabf24f99127d6f12f5bcdd1e343be7f5fcb92cc7f55c04e8bb422b419fc9c",
+      "translated_at": "2026-06-10T17:00:27.868712Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/议题.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/记忆力.md": {
+      "source_hash": "sha256:fb21380264b4ee421848de564a365b40effcd30d1c9de36045d3853e716af90a",
+      "translated_at": "2026-06-10T17:00:30.297418Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/记忆力.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/论坛.md": {
+      "source_hash": "sha256:9fe0cea16ed3e1f67296a21877baa196160a3a81bb78b8db34094f41b27af28a",
+      "translated_at": "2026-06-10T17:00:32.617664Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/论坛.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
