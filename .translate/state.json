@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T01:41:14.423946Z",
+  "last_run": "2026-06-10T03:03:09.650580Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -14846,6 +14846,86 @@
       "source_hash": "sha256:59c694df55da5243e7699ff1e0669bea5f7eacc0c5f0784cdece7160e78efc45",
       "translated_at": "2026-06-10T01:41:14.423897Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/界面.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/疫苗.md": {
+      "source_hash": "sha256:bcf6a0b04155536a02d1b20eba51d5049f7243d3b6e6752039eb63c368f8a087",
+      "translated_at": "2026-06-10T03:02:31.610102Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/疫苗.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/疾病.md": {
+      "source_hash": "sha256:e5fbf728817537f6fe381ad9e813a7dc05916435dbed9ccf194a7d4dbf79ad9d",
+      "translated_at": "2026-06-10T03:02:35.816229Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/疾病.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/病毒.md": {
+      "source_hash": "sha256:4b6189523be17c54df72fc65ef3f2cb10a1f961928ebcb43205821beab06d039",
+      "translated_at": "2026-06-10T03:02:40.923848Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/病毒.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/症状.md": {
+      "source_hash": "sha256:42b4dd41d59115f0714ff348c713d18746d2734c73fe71636367fb2700b281fa",
+      "translated_at": "2026-06-10T03:02:44.992876Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/症状.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/监控.md": {
+      "source_hash": "sha256:471ffb95e00ca828733bb1a2547c224ea3b7f7edb40c66f1fccfef1758291a8b",
+      "translated_at": "2026-06-10T03:02:48.401465Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/监控.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/监督机制.md": {
+      "source_hash": "sha256:c20ed58c788ecfb5ea16b2b3e5fa92ba831803a3838bbb428f14fff0a15d7467",
+      "translated_at": "2026-06-10T03:02:54.607373Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/监督机制.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/监管.md": {
+      "source_hash": "sha256:71066c79a7bb2cf24aa963a43bfcc11286940d5143d64fc1eec3cef20644ba4f",
+      "translated_at": "2026-06-10T03:02:58.230038Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/监管.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/直播.md": {
+      "source_hash": "sha256:01055152699824876fa870fa4f7979689531cdd943653e4fdcf56690ffa6bc99",
+      "translated_at": "2026-06-10T03:03:02.217662Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/直播.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/相反.md": {
+      "source_hash": "sha256:025c822b9eec805a5d9c0daf0b2f6b578fbefd6424e3c2042cbd43091f915ab3",
+      "translated_at": "2026-06-10T03:03:06.191233Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/相反.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/相对.md": {
+      "source_hash": "sha256:bee1ba446a86e32064cd5aee0bad8f6a08f49385ce74a38b56fdfec9a8acdee7",
+      "translated_at": "2026-06-10T03:03:09.650556Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/相对.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
