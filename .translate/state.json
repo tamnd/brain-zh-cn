@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T11:13:27.011385Z",
+  "last_run": "2026-06-10T12:37:26.036578Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -15326,6 +15326,86 @@
       "source_hash": "sha256:35fb0af4519d58a1ea68cbb56bcd2ac2ac482d5175abd3429238abf65f87bc46",
       "translated_at": "2026-06-10T11:13:27.011320Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/网络安全.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/羡慕.md": {
+      "source_hash": "sha256:9cc8790519c4eafcfcef5e0861a55350caf5855519d90509730ed84b1281c599",
+      "translated_at": "2026-06-10T12:37:06.983338Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/羡慕.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/考核.md": {
+      "source_hash": "sha256:f1f41a69d70e716fd596750bcf349d564eef13ebe6053329807a45a29f8bf962",
+      "translated_at": "2026-06-10T12:37:09.496716Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/考核.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/股东.md": {
+      "source_hash": "sha256:e59bc4dbddeff7a8ec747b188358c802845059b58d1d00184143b29be87faf80",
+      "translated_at": "2026-06-10T12:37:11.366956Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/股东.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/股票.md": {
+      "source_hash": "sha256:90a51be82ca184fcb12230b9ebd6c36f239f1c3cad7cbfbd10f1b4e2ecb94cc2",
+      "translated_at": "2026-06-10T12:37:13.692410Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/股票.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/背景.md": {
+      "source_hash": "sha256:b8ed796e75e728f23344ad79e6f06fecddf993f41fe47ffe44a0c835a122cdaf",
+      "translated_at": "2026-06-10T12:37:15.339295Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/背景.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/能力.md": {
+      "source_hash": "sha256:22e2d76456e29962ffcc031dbcca34bb6d3ed859b48078dd78a047052b1aeafc",
+      "translated_at": "2026-06-10T12:37:17.301722Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/能力.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/能源.md": {
+      "source_hash": "sha256:72ed17785c7410397c464e3be00e61b1bf7db7743a9d6d3cade27958a4d5764c",
+      "translated_at": "2026-06-10T12:37:19.750309Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/能源.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/腐败.md": {
+      "source_hash": "sha256:00f70d7397a24737b22eb6a9fae400c66378c5ccda2c96844bcc81d9fd792951",
+      "translated_at": "2026-06-10T12:37:21.826915Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/腐败.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/自动化.md": {
+      "source_hash": "sha256:a0f75bdf325d57b5e02392c5692f342abc7034064d47584d786925803eaab82f",
+      "translated_at": "2026-06-10T12:37:24.223698Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/自动化.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/自学.md": {
+      "source_hash": "sha256:cf6b6dd8af7fec1e8aef5ee302614bd1d97bdac2386f35aa59db7b1292d56028",
+      "translated_at": "2026-06-10T12:37:26.036551Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/自学.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
