@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-11T03:45:48.928276Z",
+  "last_run": "2026-06-11T05:32:59.349101Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -16446,6 +16446,86 @@
       "source_hash": "sha256:aed190c31c99d7c2d50885b0e87db9c31ae05f9f14af760d25a6ac85a05702be",
       "translated_at": "2026-06-11T03:45:48.928252Z",
       "dest_path": "content/languages/chinese/hsk/6/lessons/17-chinese-media-landscape.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/18-historical-narrative.md": {
+      "source_hash": "sha256:b307c6dec02ac2c770b1512835c4dfcce033f9563b4a494e025b24b46da9e6cf",
+      "translated_at": "2026-06-11T05:31:39.303763Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/18-historical-narrative.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/19-technology-and-society.md": {
+      "source_hash": "sha256:d7b01c8d6f6fa3cd70ec38135031879b949a90370813d79aec012f8a9da05b58",
+      "translated_at": "2026-06-11T05:31:46.953648Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/19-technology-and-society.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/20-comparative-culture.md": {
+      "source_hash": "sha256:c41be0b07c2175a96df39eada5e69421e417e8b6b5a6e9d04b137268196f6426",
+      "translated_at": "2026-06-11T05:31:55.258793Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/20-comparative-culture.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/21-advanced-grammar-formal.md": {
+      "source_hash": "sha256:d1c5ddb3c18bc3bab9aa7a87c2522cd7ec343cc130c5a97787f8e0a9d379dbc9",
+      "translated_at": "2026-06-11T05:32:01.983088Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/21-advanced-grammar-formal.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/22-professional-communication.md": {
+      "source_hash": "sha256:e693e18b65d366fddedd3f2d3c0f49f3c0caf7ecabab05a1c4f2706710b9d615",
+      "translated_at": "2026-06-11T05:32:10.579213Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/22-professional-communication.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/23-critical-analysis.md": {
+      "source_hash": "sha256:150eb385a9df79ba3ee008e698985d2c54cce53d590cd86c7a240fe154141188",
+      "translated_at": "2026-06-11T05:32:18.361393Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/23-critical-analysis.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/24-oral-proficiency-hskk.md": {
+      "source_hash": "sha256:1981f634c2001e6338dac3e0dcdf5d11395f495864c70884189d7049a9c23839",
+      "translated_at": "2026-06-11T05:32:27.896752Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/24-oral-proficiency-hskk.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/25-hsk6-final-review.md": {
+      "source_hash": "sha256:f4a68745393af25e63d595a40c2c520a492fd4ab3253a135418742843c3e06a8",
+      "translated_at": "2026-06-11T05:32:36.238159Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/25-hsk6-final-review.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary.md": {
+      "source_hash": "sha256:d55cab56d69859c20d07a5be2b0939d32c5093dd09e437d6a3918cf222dd8474",
+      "translated_at": "2026-06-11T05:32:56.832659Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/不妨.md": {
+      "source_hash": "sha256:e42c60961fcca37606c4d0525f2fec041a320cbcd5c86e0f92b398c0cbb1e674",
+      "translated_at": "2026-06-11T05:32:59.349078Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/不妨.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
