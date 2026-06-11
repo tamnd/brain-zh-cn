@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-11T01:15:24.906160Z",
+  "last_run": "2026-06-11T02:19:12.671249Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -16286,6 +16286,86 @@
       "source_hash": "sha256:61302cd9d27e12e43e73989176429854f0c32e1e12c2c556035b8fcffafc7b3f",
       "translated_at": "2026-06-11T01:15:24.906133Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/驳斥.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/验证.md": {
+      "source_hash": "sha256:6857ccd4b564ed2edb5f323a25a934a6d29190c2728fdc892e1ab3bfb774fb56",
+      "translated_at": "2026-06-11T02:18:25.773554Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/验证.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/鼓舞.md": {
+      "source_hash": "sha256:c82deffe250c0304d01cf184139a8dd2fe3f1a9c4c6323269dadbfd087667572",
+      "translated_at": "2026-06-11T02:18:28.527304Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/鼓舞.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/grammar.md": {
+      "source_hash": "sha256:0ba3c4f7130e92ca71a74325193f13882092f5921fdb8c245e683f9302ff3dcd",
+      "translated_at": "2026-06-11T02:18:33.535126Z",
+      "dest_path": "content/languages/chinese/hsk/6/grammar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/01-classical-chinese-influences.md": {
+      "source_hash": "sha256:dce613f3c3ed1cbcacb747a2e360eef1c87b143cdd6c004d350547e850ff6e22",
+      "translated_at": "2026-06-11T02:18:39.666560Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/01-classical-chinese-influences.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/02-complex-clause-structures.md": {
+      "source_hash": "sha256:8a01ecd923f75b5317ad86073cbfa0395e6ad42374cd15e90dea15e4e67979d3",
+      "translated_at": "2026-06-11T02:18:45.131551Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/02-complex-clause-structures.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/03-advanced-idioms-chengyu-iii.md": {
+      "source_hash": "sha256:392d5ee2155be69e69b74b93bcc0b7196c36e74a3332469085a7e5540af3948f",
+      "translated_at": "2026-06-11T02:18:51.534869Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/03-advanced-idioms-chengyu-iii.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/04-political-social-discourse.md": {
+      "source_hash": "sha256:a618b9500073af069ef5c8cf2b92b3264b6c19096ba6d6f3e27a703a4e25cfde",
+      "translated_at": "2026-06-11T02:18:56.372257Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/04-political-social-discourse.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/05-scientific-writing.md": {
+      "source_hash": "sha256:0349d612ec3e1e23035ac7a046957293add89e68f18c611c1f910758aa24bc16",
+      "translated_at": "2026-06-11T02:19:01.658377Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/05-scientific-writing.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/06-literary-analysis.md": {
+      "source_hash": "sha256:1aa5654f8590ff47b292feccf7d590bca4d9539e5de7277471f6ad87f677472e",
+      "translated_at": "2026-06-11T02:19:07.027568Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/06-literary-analysis.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/07-news-journalism-style.md": {
+      "source_hash": "sha256:569adb53097c831ed388d00540e683ba5e55fd1e6d60a0f4769c4063216ec37b",
+      "translated_at": "2026-06-11T02:19:12.671221Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/07-news-journalism-style.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
