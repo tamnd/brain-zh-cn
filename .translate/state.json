@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-10T23:58:54.002429Z",
+  "last_run": "2026-06-11T01:15:24.906160Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -16206,6 +16206,86 @@
       "source_hash": "sha256:16ea762349a63f4356fe981314fb8fe83dc0c9b8a8decedd30b3a4ca07cfe685",
       "translated_at": "2026-06-10T23:58:54.002406Z",
       "dest_path": "content/languages/chinese/hsk/5/vocabulary/除此之外.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/陶醉.md": {
+      "source_hash": "sha256:849f1b6b66c64ecc41a223712538a908dda87d4828709988f0781e591114645f",
+      "translated_at": "2026-06-11T01:15:04.509858Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/陶醉.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/隐含.md": {
+      "source_hash": "sha256:67630e5e1184be0d2347067a25128f2791db9fb41aacc1a29e9ed9fe45d3df48",
+      "translated_at": "2026-06-11T01:15:07.225004Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/隐含.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/隐私.md": {
+      "source_hash": "sha256:77686227e04fa219ce7f07e78ac413b40999a2f430eb2be9aab0c805b5edd51e",
+      "translated_at": "2026-06-11T01:15:08.915315Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/隐私.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/需求.md": {
+      "source_hash": "sha256:19b4507fd7db6d32287bfab1ac0479a490923ab3871524d83a2b3606b66e62f6",
+      "translated_at": "2026-06-11T01:15:10.786899Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/需求.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/韧性.md": {
+      "source_hash": "sha256:2877ad8cf4e3ae7e4eea96feffebab8cd2c71521a85eb92245e5d1826399f43a",
+      "translated_at": "2026-06-11T01:15:12.453432Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/韧性.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/顾虑.md": {
+      "source_hash": "sha256:4e4a065f6da3a2fd71fb10cf5c0195fc42de878f4ad24bde4d34d983096c37da",
+      "translated_at": "2026-06-11T01:15:14.592076Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/顾虑.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/预防.md": {
+      "source_hash": "sha256:4e6d6399cd257089a053f2b1fd3dddb5d17de99826529a72210df5c68b91131e",
+      "translated_at": "2026-06-11T01:15:17.210128Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/预防.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/领导.md": {
+      "source_hash": "sha256:0be9664e4ac714eb4213f3ab458031743d7875739a27854cd525c1132bbc95d7",
+      "translated_at": "2026-06-11T01:15:20.813147Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/领导.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/频道.md": {
+      "source_hash": "sha256:3b137f22be4a92d213421fffaf1e17bac06a000129cb1bca64ca75728790297c",
+      "translated_at": "2026-06-11T01:15:22.563575Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/频道.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/5/vocabulary/驳斥.md": {
+      "source_hash": "sha256:61302cd9d27e12e43e73989176429854f0c32e1e12c2c556035b8fcffafc7b3f",
+      "translated_at": "2026-06-11T01:15:24.906133Z",
+      "dest_path": "content/languages/chinese/hsk/5/vocabulary/驳斥.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
