@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-11T22:34:22.913043Z",
+  "last_run": "2026-06-11T23:30:55.740139Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -17486,6 +17486,86 @@
       "source_hash": "sha256:98eaf26500bcf5f87993b8c981a53527e17ad5ffe2ea1b2c86981a90d29a872c",
       "translated_at": "2026-06-11T22:34:22.913020Z",
       "dest_path": "content/languages/esperanto/cefr/a1/lessons/07-time-days-months.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/08-the-home.md": {
+      "source_hash": "sha256:ec7c39f7fc5577e6cf513afd68a2ed899c38546a5fcf00f8f3fe4a5332c1a8a4",
+      "translated_at": "2026-06-11T23:29:59.681642Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/08-the-home.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/09-shopping-money.md": {
+      "source_hash": "sha256:8672e86e484d93e5ba329c0bb40f1b043b97b34309bfb430da76a3b5e756bf9a",
+      "translated_at": "2026-06-11T23:30:03.033551Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/09-shopping-money.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/10-getting-around.md": {
+      "source_hash": "sha256:2be4c65bad77518dd7e292612505244511caadf0900e1de17f6834c0f1c7fdbb",
+      "translated_at": "2026-06-11T23:30:09.059325Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/10-getting-around.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/11-weather-seasons.md": {
+      "source_hash": "sha256:509db2f4e419c4cfc318cd669fb5219a909db971b0fb8a82cb9d3c93903bfd62",
+      "translated_at": "2026-06-11T23:30:15.927311Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/11-weather-seasons.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/12-hobbies-free-time.md": {
+      "source_hash": "sha256:a6d096e2c6d086daaace8dbbd4172da18ac4e6b4e32fdea0ec5b2324a42cf0f5",
+      "translated_at": "2026-06-11T23:30:20.810254Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/12-hobbies-free-time.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/13-body-health.md": {
+      "source_hash": "sha256:4e1fc8879391be6dfdc8807792e94a84a9fb3439d805e2d4dc280148494bfc8d",
+      "translated_at": "2026-06-11T23:30:26.171695Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/13-body-health.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/14-daily-routines.md": {
+      "source_hash": "sha256:4bda99888dd6e360146a6170a8d83068f5c35a52907afb21f654581f4395164a",
+      "translated_at": "2026-06-11T23:30:33.343673Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/14-daily-routines.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/15-a1-review.md": {
+      "source_hash": "sha256:657b6958bbb847f7c71eff09f1fc3f30b24731db369dcb475219770759f153d3",
+      "translated_at": "2026-06-11T23:30:42.662564Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/15-a1-review.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/01-past-future-tenses.md": {
+      "source_hash": "sha256:9e8349dc8107adc74e1f1d7aace0d6c30a0eeab8ed39e0f062dfe830f973b3b4",
+      "translated_at": "2026-06-11T23:30:49.015747Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/01-past-future-tenses.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/02-correlatives-ki-ti-i.md": {
+      "source_hash": "sha256:84ab950e4961942e5ad1c6f4e9c3393f3c012d086ad2914d5f70beabdb07ad83",
+      "translated_at": "2026-06-11T23:30:55.740114Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/02-correlatives-ki-ti-i.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
