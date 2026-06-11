@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-11T17:11:37.028016Z",
+  "last_run": "2026-06-11T18:32:38.799370Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -17086,6 +17086,86 @@
       "source_hash": "sha256:360ba00f764bf521cdd344cb8ae7daac326616bc9b91ff3c0ef156d21210c366",
       "translated_at": "2026-06-11T17:11:37.027992Z",
       "dest_path": "content/languages/chinese/hsk/7/grammar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/lessons/01-classical-grammar.md": {
+      "source_hash": "sha256:6b5246ad96828a483472470ac13ee5ead0d74a39ef8c450f23c66855a8ff98cb",
+      "translated_at": "2026-06-11T18:31:32.162387Z",
+      "dest_path": "content/languages/chinese/hsk/7/lessons/01-classical-grammar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/lessons/02-academic-research-language.md": {
+      "source_hash": "sha256:b1b7635795355f4f4a8a5df58492fe464e70edc722e0e868d6353d591e919735",
+      "translated_at": "2026-06-11T18:31:38.330528Z",
+      "dest_path": "content/languages/chinese/hsk/7/lessons/02-academic-research-language.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/lessons/03-literary-mandarin.md": {
+      "source_hash": "sha256:19709a32b20975844f59999febe9b6c5fd9b7ba1c8c3edd91b67a15a7b7a9a0d",
+      "translated_at": "2026-06-11T18:31:45.080718Z",
+      "dest_path": "content/languages/chinese/hsk/7/lessons/03-literary-mandarin.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/lessons/04-advanced-idiom-mastery.md": {
+      "source_hash": "sha256:d3c9e3db11fba6278010d18ef70067f680c9a651a0de3de9eae2b8d09de19538",
+      "translated_at": "2026-06-11T18:31:52.063407Z",
+      "dest_path": "content/languages/chinese/hsk/7/lessons/04-advanced-idiom-mastery.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/lessons/05-specialized-law.md": {
+      "source_hash": "sha256:ab1f2d64e6063d20261c2e8added9bad416885e06d396be47080aec40c40188d",
+      "translated_at": "2026-06-11T18:32:00.408629Z",
+      "dest_path": "content/languages/chinese/hsk/7/lessons/05-specialized-law.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/lessons/06-specialized-medicine.md": {
+      "source_hash": "sha256:27599e153ee171ade7a1b193b5f7d4edb7d28eda907bc859bcc8dbbe32763e2d",
+      "translated_at": "2026-06-11T18:32:06.566143Z",
+      "dest_path": "content/languages/chinese/hsk/7/lessons/06-specialized-medicine.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/lessons/07-specialized-finance.md": {
+      "source_hash": "sha256:c2fc20c21130824f41c2969e3a1bf3af350a411d3028aafeed93638fb6ebe945",
+      "translated_at": "2026-06-11T18:32:13.704558Z",
+      "dest_path": "content/languages/chinese/hsk/7/lessons/07-specialized-finance.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/lessons/08-political-discourse.md": {
+      "source_hash": "sha256:d9b82075bf4287fb66b5200b361f3e077c6ae811fd38f9e04de7fb4c4fbfdd0b",
+      "translated_at": "2026-06-11T18:32:22.895731Z",
+      "dest_path": "content/languages/chinese/hsk/7/lessons/08-political-discourse.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/lessons/09-advanced-translation.md": {
+      "source_hash": "sha256:f45dfe6f75b7e58b460c0eb088c65a1a51b975f019e900b582391b2ab9cfff33",
+      "translated_at": "2026-06-11T18:32:32.153207Z",
+      "dest_path": "content/languages/chinese/hsk/7/lessons/09-advanced-translation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/lessons/10-oral-defense-skills.md": {
+      "source_hash": "sha256:35031465b5eaa624c61626056633e9b7a34230ba0ce97633ba9b542b50570463",
+      "translated_at": "2026-06-11T18:32:38.799346Z",
+      "dest_path": "content/languages/chinese/hsk/7/lessons/10-oral-defense-skills.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
