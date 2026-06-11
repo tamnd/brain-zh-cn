@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-11T20:46:30.083328Z",
+  "last_run": "2026-06-11T21:40:50.617596Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -17326,6 +17326,86 @@
       "source_hash": "sha256:74bb2d5a563158524c694775c13a3bf2a333d1fb2cd23112014eebb3a25acd5b",
       "translated_at": "2026-06-11T20:46:30.083298Z",
       "dest_path": "content/languages/chinese/hsk/8/vocabulary/流体动力学.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/vocabulary/热力学.md": {
+      "source_hash": "sha256:9ddf90f828c2113c985c476624313f3170491a4734257279b9a2a7dd68047879",
+      "translated_at": "2026-06-11T21:39:36.474963Z",
+      "dest_path": "content/languages/chinese/hsk/8/vocabulary/热力学.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/vocabulary/结构工程.md": {
+      "source_hash": "sha256:03032713f0256861c3b8e8a16c502dee79604a11f951a41c5bfe3216e680c6eb",
+      "translated_at": "2026-06-11T21:39:40.580468Z",
+      "dest_path": "content/languages/chinese/hsk/8/vocabulary/结构工程.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/vocabulary/航空航天.md": {
+      "source_hash": "sha256:d67fcdc0315b3b63b01cc8111c4f3d5f414ac470ae34c82573df39632c088632",
+      "translated_at": "2026-06-11T21:39:44.908332Z",
+      "dest_path": "content/languages/chinese/hsk/8/vocabulary/航空航天.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/vocabulary/集成电路.md": {
+      "source_hash": "sha256:a9d0b3eee4879ef26115c607749490bc7e6316c97ce60a179b082027fb2aa01d",
+      "translated_at": "2026-06-11T21:39:48.538289Z",
+      "dest_path": "content/languages/chinese/hsk/8/vocabulary/集成电路.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/9/grammar.md": {
+      "source_hash": "sha256:00c2bcd915b224faee8c0aa0fd0b2d5250787241725e9fecbe0faedc72d94e3f",
+      "translated_at": "2026-06-11T21:39:53.972498Z",
+      "dest_path": "content/languages/chinese/hsk/9/grammar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/9/lessons/01-native-level-production.md": {
+      "source_hash": "sha256:4c4a7ea13340db3bd45a0737a9c1e8def5a1ad33bf8511a05d291ec857a612c5",
+      "translated_at": "2026-06-11T21:40:02.439194Z",
+      "dest_path": "content/languages/chinese/hsk/9/lessons/01-native-level-production.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/9/lessons/02-oral-defense-mastery.md": {
+      "source_hash": "sha256:664e53105fad9a3a41579eae74536da74dfbcddb2addff76abb8d0c667387c3f",
+      "translated_at": "2026-06-11T21:40:10.238878Z",
+      "dest_path": "content/languages/chinese/hsk/9/lessons/02-oral-defense-mastery.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/9/lessons/03-literary-classical-mastery.md": {
+      "source_hash": "sha256:94c0c60b9cc2fb9afc416aff5523efa31543d3d6859edac3c922b7914aed3b5f",
+      "translated_at": "2026-06-11T21:40:26.377340Z",
+      "dest_path": "content/languages/chinese/hsk/9/lessons/03-literary-classical-mastery.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/9/vocabulary.md": {
+      "source_hash": "sha256:0d9086313fe7ffb9b32eff7f007b900a4e842e0ac056b13b4cd857023eee0f62",
+      "translated_at": "2026-06-11T21:40:47.049555Z",
+      "dest_path": "content/languages/chinese/hsk/9/vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/comparison.md": {
+      "source_hash": "sha256:9184cec75ef38de34bdcaa0e35e5d7254cff87a5d7ec7edc4b325dcdd6c26fb4",
+      "translated_at": "2026-06-11T21:40:50.617575Z",
+      "dest_path": "content/languages/chinese/hsk/comparison.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
