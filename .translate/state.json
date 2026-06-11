@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-11T11:03:39.054344Z",
+  "last_run": "2026-06-11T12:45:49.494427Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -16766,6 +16766,86 @@
       "source_hash": "sha256:cd5a70ea30536a4ddad96da2856a7b219a037c300abf54f1aaed1a3edb76ee54",
       "translated_at": "2026-06-11T11:03:39.054317Z",
       "dest_path": "content/languages/chinese/hsk/6/vocabulary/文脉.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/智慧.md": {
+      "source_hash": "sha256:d7249c7ce19f8fa1cccbf5e986fe0c4808eef7fea347ac0d3ef6d4f4b4846941",
+      "translated_at": "2026-06-11T12:45:30.602644Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/智慧.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/权威.md": {
+      "source_hash": "sha256:107034db3add9528c57174938522eba679c554a8abff266fe773fb34d6b61b9d",
+      "translated_at": "2026-06-11T12:45:32.640867Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/权威.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/权衡.md": {
+      "source_hash": "sha256:d2a94c313af907f38d0cdb4321f2a5e5132995b87c4a7df756d21d0dd08dd6a4",
+      "translated_at": "2026-06-11T12:45:35.118449Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/权衡.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/构建.md": {
+      "source_hash": "sha256:91de96cc3a20e0c047b1b955effc76ba52f405aeeb198a93fde15ac24d1901a9",
+      "translated_at": "2026-06-11T12:45:37.115898Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/构建.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/架构.md": {
+      "source_hash": "sha256:6a1191fd6d4df74b9177b97d5b2c876fec99887d5092f10c2b618d73fa5c8f9c",
+      "translated_at": "2026-06-11T12:45:39.351355Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/架构.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/根基.md": {
+      "source_hash": "sha256:1c468b1d18e3689e4bbc3abb2a871eef9874497d966f309282f64347f0e91914",
+      "translated_at": "2026-06-11T12:45:41.116868Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/根基.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/格局.md": {
+      "source_hash": "sha256:e4107426ac37ec74dc0912ba2fbe85c4a096a093ac4b993ecc280ed1ac8917b1",
+      "translated_at": "2026-06-11T12:45:43.683855Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/格局.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/框架.md": {
+      "source_hash": "sha256:8bb99ce70b4a5b1661c9de5f33293e609efbf0ec00887af61f3e63fecad25c43",
+      "translated_at": "2026-06-11T12:45:45.701496Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/框架.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/梳理.md": {
+      "source_hash": "sha256:558bfdb4d7422ad5cf8192ee807e027ae1d1ee7b6a74eecc17bf7d83c147a8fa",
+      "translated_at": "2026-06-11T12:45:47.559071Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/梳理.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/概括.md": {
+      "source_hash": "sha256:83ac88ad630a285a4bec3fa1a9fc8bbc886ad8bb1b52ed571835c58f068b8f72",
+      "translated_at": "2026-06-11T12:45:49.494405Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/概括.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
