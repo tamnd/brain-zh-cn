@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-11T18:32:38.799370Z",
+  "last_run": "2026-06-11T19:50:59.600437Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -17166,6 +17166,86 @@
       "source_hash": "sha256:35031465b5eaa624c61626056633e9b7a34230ba0ce97633ba9b542b50570463",
       "translated_at": "2026-06-11T18:32:38.799346Z",
       "dest_path": "content/languages/chinese/hsk/7/lessons/10-oral-defense-skills.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/vocabulary.md": {
+      "source_hash": "sha256:1c896748d72a6e2a81f28aa1fe738e5240b2bbea28dd569db29c01a912115ba0",
+      "translated_at": "2026-06-11T19:50:41.041082Z",
+      "dest_path": "content/languages/chinese/hsk/7/vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/vocabulary/切除.md": {
+      "source_hash": "sha256:b7bdf5aa0b846b6382b14c6db5f1be24296b965ba958670fd71c1cb868ebc567",
+      "translated_at": "2026-06-11T19:50:43.084913Z",
+      "dest_path": "content/languages/chinese/hsk/7/vocabulary/切除.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/vocabulary/施治.md": {
+      "source_hash": "sha256:7d46b950888b7a42ef45f5d4f55468c7fed69e915723c2fb83ca141dec1040df",
+      "translated_at": "2026-06-11T19:50:44.275136Z",
+      "dest_path": "content/languages/chinese/hsk/7/vocabulary/施治.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/vocabulary/用药.md": {
+      "source_hash": "sha256:0657557899215611227208fecbc47197e40ab1a28219e28988563753b7c66e51",
+      "translated_at": "2026-06-11T19:50:45.853634Z",
+      "dest_path": "content/languages/chinese/hsk/7/vocabulary/用药.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/vocabulary/缝合.md": {
+      "source_hash": "sha256:a3df83f7f8d7ed0e34cf49ea07d003e3a2ab689b2421dbfc0ece2d838c5bf780",
+      "translated_at": "2026-06-11T19:50:48.036059Z",
+      "dest_path": "content/languages/chinese/hsk/7/vocabulary/缝合.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/vocabulary/诊断.md": {
+      "source_hash": "sha256:0fb4239c56b501155dd8d4ddddfbfe88fc56f1226b77492df4cf3e80aae7b245",
+      "translated_at": "2026-06-11T19:50:50.055136Z",
+      "dest_path": "content/languages/chinese/hsk/7/vocabulary/诊断.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/vocabulary/通气.md": {
+      "source_hash": "sha256:ecb908438f70e36d2e45699c2b0b1c29cd65f055812c095a266f534933525f94",
+      "translated_at": "2026-06-11T19:50:52.316677Z",
+      "dest_path": "content/languages/chinese/hsk/7/vocabulary/通气.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/vocabulary/麻醉.md": {
+      "source_hash": "sha256:27d81586d2d6862168c19aa7116acee978647a0d63a9519d09fd12baf75656a3",
+      "translated_at": "2026-06-11T19:50:53.785233Z",
+      "dest_path": "content/languages/chinese/hsk/7/vocabulary/麻醉.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/grammar.md": {
+      "source_hash": "sha256:49f9e4ef9ce3997e54ee48bca10522f59e145286be360afcd2afd249d17231c8",
+      "translated_at": "2026-06-11T19:50:56.737453Z",
+      "dest_path": "content/languages/chinese/hsk/8/grammar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/lessons/01-expert-academic-writing.md": {
+      "source_hash": "sha256:16559498872e029c103064c5d2c17cfeb2b7e9e81e4090297866af05c879f00e",
+      "translated_at": "2026-06-11T19:50:59.600408Z",
+      "dest_path": "content/languages/chinese/hsk/8/lessons/01-expert-academic-writing.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
