@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-11T21:40:50.617596Z",
+  "last_run": "2026-06-11T22:34:22.913043Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -17406,6 +17406,86 @@
       "source_hash": "sha256:9184cec75ef38de34bdcaa0e35e5d7254cff87a5d7ec7edc4b325dcdd6c26fb4",
       "translated_at": "2026-06-11T21:40:50.617575Z",
       "dest_path": "content/languages/chinese/hsk/comparison.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/methodology/common-mistakes.md": {
+      "source_hash": "sha256:4ef6f8b29b2d26745fbe564839356a657a2d859f17c6c7ba7d81fbe977fb3cbf",
+      "translated_at": "2026-06-11T22:33:30.171355Z",
+      "dest_path": "content/languages/chinese/methodology/common-mistakes.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/methodology/roadmap.md": {
+      "source_hash": "sha256:5b2fa3812a6dfd26d923374733d9213786766a311ac27e070a3ac484aa8c9e5c",
+      "translated_at": "2026-06-11T22:33:35.559698Z",
+      "dest_path": "content/languages/chinese/methodology/roadmap.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/methodology/srs.md": {
+      "source_hash": "sha256:27e63beb6101b291a645b858eb5abb190dfd469d19acf91740b820c7367e8965",
+      "translated_at": "2026-06-11T22:33:45.517068Z",
+      "dest_path": "content/languages/chinese/methodology/srs.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/01-alphabet-pronunciation.md": {
+      "source_hash": "sha256:f795a4b095bbf19339bf8947abcc1d6034b0a26974be01d54a503203b61bacb2",
+      "translated_at": "2026-06-11T22:33:51.467778Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/01-alphabet-pronunciation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/02-greetings-introductions.md": {
+      "source_hash": "sha256:51a19d45b25c69c2e6489f344ff20e0562b3f37d6a52c54d5ded179761ae781b",
+      "translated_at": "2026-06-11T22:33:57.089220Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/02-greetings-introductions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/03-numbers-counting.md": {
+      "source_hash": "sha256:96d81c26bdb8a390d4431a7485d841abdf74788ae901aae8acaf806c81672264",
+      "translated_at": "2026-06-11T22:34:03.261177Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/03-numbers-counting.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/04-family-relationships.md": {
+      "source_hash": "sha256:9557bf9c88446c62f85b7f5ff6ee55af64f51a8cd41357772f0639b55bdba6a9",
+      "translated_at": "2026-06-11T22:34:08.414990Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/04-family-relationships.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/05-colors-adjectives.md": {
+      "source_hash": "sha256:18e18424c8c3d8977ce61cae473b9e51287ced8d2269dee396709526e7e792eb",
+      "translated_at": "2026-06-11T22:34:13.942063Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/05-colors-adjectives.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/06-food-drink.md": {
+      "source_hash": "sha256:3296d058cbf5e76b756dc98e9fde88534d7d350103833d293668db4218a66ef9",
+      "translated_at": "2026-06-11T22:34:18.821970Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/06-food-drink.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a1/lessons/07-time-days-months.md": {
+      "source_hash": "sha256:98eaf26500bcf5f87993b8c981a53527e17ad5ffe2ea1b2c86981a90d29a872c",
+      "translated_at": "2026-06-11T22:34:22.913020Z",
+      "dest_path": "content/languages/esperanto/cefr/a1/lessons/07-time-days-months.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
