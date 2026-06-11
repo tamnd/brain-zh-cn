@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-11T02:19:12.671249Z",
+  "last_run": "2026-06-11T03:45:48.928276Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -16366,6 +16366,86 @@
       "source_hash": "sha256:569adb53097c831ed388d00540e683ba5e55fd1e6d60a0f4769c4063216ec37b",
       "translated_at": "2026-06-11T02:19:12.671221Z",
       "dest_path": "content/languages/chinese/hsk/6/lessons/07-news-journalism-style.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/08-legal-language.md": {
+      "source_hash": "sha256:9aed7538c798a201448acade08b0075f0dc3a8b358c493fd39cf3edec4e34765",
+      "translated_at": "2026-06-11T03:45:13.270213Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/08-legal-language.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/09-economic-analysis.md": {
+      "source_hash": "sha256:585fae0aa1ed6f257289ca4cc83bbebdd6eaa51196db867593232be5bbfbb3ba",
+      "translated_at": "2026-06-11T03:45:16.934057Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/09-economic-analysis.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/10-philosophy-ethics-deep.md": {
+      "source_hash": "sha256:1e051da19783b21da8ece7a875b99479f71f72c87fae5dbe273f5ba0947adc4c",
+      "translated_at": "2026-06-11T03:45:21.295864Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/10-philosophy-ethics-deep.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/11-cross-cultural-communication.md": {
+      "source_hash": "sha256:15f4a0ea0accb943d6113ddf91c844918f76febf928684b33be020561d3cd78e",
+      "translated_at": "2026-06-11T03:45:25.358707Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/11-cross-cultural-communication.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/12-advanced-listening-analysis.md": {
+      "source_hash": "sha256:522f3862271d536d6bd0789fb2190515d96082434b75e34fb0b2dbd8161998ed",
+      "translated_at": "2026-06-11T03:45:29.414024Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/12-advanced-listening-analysis.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/13-translation-skills-cn-to-en.md": {
+      "source_hash": "sha256:8156b145bce38336b311888303784b9cc9a77966b75b8c66846598354de8d5c6",
+      "translated_at": "2026-06-11T03:45:33.421691Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/13-translation-skills-cn-to-en.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/14-translation-skills-en-to-cn.md": {
+      "source_hash": "sha256:90f4983b36b75d816bfe98c2f2a5240dce83ce63508bb12aa2d3f2ad0e1ac0c9",
+      "translated_at": "2026-06-11T03:45:36.648921Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/14-translation-skills-en-to-cn.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/15-advanced-speaking-debate.md": {
+      "source_hash": "sha256:dc78b2bc5b21202612d8d581b36d96086203ff2d4b58e340f785bdd5cdd46c92",
+      "translated_at": "2026-06-11T03:45:40.799336Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/15-advanced-speaking-debate.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/16-formal-written-essays.md": {
+      "source_hash": "sha256:a2e0b9fe67e933b7ea2d1b20dcb6d648b72458e746cefba9151c58294ef7a7ea",
+      "translated_at": "2026-06-11T03:45:44.481026Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/16-formal-written-essays.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/lessons/17-chinese-media-landscape.md": {
+      "source_hash": "sha256:aed190c31c99d7c2d50885b0e87db9c31ae05f9f14af760d25a6ac85a05702be",
+      "translated_at": "2026-06-11T03:45:48.928252Z",
+      "dest_path": "content/languages/chinese/hsk/6/lessons/17-chinese-media-landscape.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
