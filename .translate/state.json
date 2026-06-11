@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-11T15:46:42.415376Z",
+  "last_run": "2026-06-11T17:11:37.028016Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -17006,6 +17006,86 @@
       "source_hash": "sha256:7199c4e3f0f1993c1a74fbf417a2caead3d58c9206177d4d64776f3a8745ece5",
       "translated_at": "2026-06-11T15:46:42.415347Z",
       "dest_path": "content/languages/chinese/hsk/6/vocabulary/辨析.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/辩证.md": {
+      "source_hash": "sha256:ef714ca575e814437b9e10a80c7f0a7302150dd48ab715cd87820abfc6db9833",
+      "translated_at": "2026-06-11T17:11:04.214764Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/辩证.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/进程.md": {
+      "source_hash": "sha256:bb47e0df1b88173e622aa18e4f6620a1bebb9a1beced7f607c888289464da0ae",
+      "translated_at": "2026-06-11T17:11:07.486178Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/进程.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/逻辑.md": {
+      "source_hash": "sha256:1d4cfb5e7cf5dcd8336892c2741ac085c382cc0f741fccb08205e8e82445f8c0",
+      "translated_at": "2026-06-11T17:11:11.346409Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/逻辑.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/遏制.md": {
+      "source_hash": "sha256:ab44f3a0da261213d41e1b395c8ab0a7aba2e2886bad2b39ada60b92ad0a5838",
+      "translated_at": "2026-06-11T17:11:14.470633Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/遏制.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/阐明.md": {
+      "source_hash": "sha256:9773f30c5d5f00684c9f7a18a6983cfcc51a0d0443a373872272e302d3719007",
+      "translated_at": "2026-06-11T17:11:17.277911Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/阐明.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/阐述.md": {
+      "source_hash": "sha256:4280330ab082e238d9c3ff6296643b12f53c3fd32684d8fd60c76698bcbf82ce",
+      "translated_at": "2026-06-11T17:11:19.943004Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/阐述.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/阐释.md": {
+      "source_hash": "sha256:c6591277dfede492310293de302062c8a7a03d3300dcb7f1cda503ad5dae32a7",
+      "translated_at": "2026-06-11T17:11:23.374228Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/阐释.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/颁布.md": {
+      "source_hash": "sha256:f3a8f15ab2a92356416ea583c19848b2bc016b9a8eb3fdb96a7ed4dde8f6a47a",
+      "translated_at": "2026-06-11T17:11:26.741876Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/颁布.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/6/vocabulary/验证.md": {
+      "source_hash": "sha256:c1d693734318a930e4a06c2da42812779c9ebc52aa429eca605702bdd915bff3",
+      "translated_at": "2026-06-11T17:11:33.967438Z",
+      "dest_path": "content/languages/chinese/hsk/6/vocabulary/验证.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/7/grammar.md": {
+      "source_hash": "sha256:360ba00f764bf521cdd344cb8ae7daac326616bc9b91ff3c0ef156d21210c366",
+      "translated_at": "2026-06-11T17:11:37.027992Z",
+      "dest_path": "content/languages/chinese/hsk/7/grammar.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
