@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-11T19:50:59.600437Z",
+  "last_run": "2026-06-11T20:46:30.083328Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -17246,6 +17246,86 @@
       "source_hash": "sha256:16559498872e029c103064c5d2c17cfeb2b7e9e81e4090297866af05c879f00e",
       "translated_at": "2026-06-11T19:50:59.600408Z",
       "dest_path": "content/languages/chinese/hsk/8/lessons/01-expert-academic-writing.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/lessons/02-expert-oral-presentation.md": {
+      "source_hash": "sha256:d229e7e57845327a86ae3a4eab1977546ebfba3a748c80978075e6a87915c3f3",
+      "translated_at": "2026-06-11T20:45:56.828998Z",
+      "dest_path": "content/languages/chinese/hsk/8/lessons/02-expert-oral-presentation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/lessons/03-archaic-vocabulary-modern-use.md": {
+      "source_hash": "sha256:21d0665db77b017f57aef6687667d7bf1577934e109dba4fe393fcc5b212699a",
+      "translated_at": "2026-06-11T20:46:00.535686Z",
+      "dest_path": "content/languages/chinese/hsk/8/lessons/03-archaic-vocabulary-modern-use.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/lessons/04-specialized-domain-mastery.md": {
+      "source_hash": "sha256:dd01a418eca1c650c434fd71ca0e9a0ab2d48be0a4888aa1b1f935cc1121b8c9",
+      "translated_at": "2026-06-11T20:46:04.292541Z",
+      "dest_path": "content/languages/chinese/hsk/8/lessons/04-specialized-domain-mastery.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/lessons/05-cross-register-fluency.md": {
+      "source_hash": "sha256:ab3684e7f33ef00c61aff30f399ffe9fb311867c0a5a6ad94091b8476c752561",
+      "translated_at": "2026-06-11T20:46:08.606779Z",
+      "dest_path": "content/languages/chinese/hsk/8/lessons/05-cross-register-fluency.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/vocabulary.md": {
+      "source_hash": "sha256:1acce828f53708d3b2a48bae886755206b011f8970b3da24d8e02bc4647824ad",
+      "translated_at": "2026-06-11T20:46:18.389396Z",
+      "dest_path": "content/languages/chinese/hsk/8/vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/vocabulary/光纤.md": {
+      "source_hash": "sha256:46de600de8ba6451e03902319213aadbe52935e03bacbf67ec00eded3b5a8957",
+      "translated_at": "2026-06-11T20:46:20.438162Z",
+      "dest_path": "content/languages/chinese/hsk/8/vocabulary/光纤.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/vocabulary/半导体制造.md": {
+      "source_hash": "sha256:16b43d8f97c871a879904978dfa881e4328c09a39597a66ace297face69a9235",
+      "translated_at": "2026-06-11T20:46:22.992617Z",
+      "dest_path": "content/languages/chinese/hsk/8/vocabulary/半导体制造.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/vocabulary/微处理器.md": {
+      "source_hash": "sha256:a176f58b261b40256f51203f21cdd8c7b4f622976091e821e59c7cda7247c205",
+      "translated_at": "2026-06-11T20:46:25.631365Z",
+      "dest_path": "content/languages/chinese/hsk/8/vocabulary/微处理器.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/vocabulary/材料科学.md": {
+      "source_hash": "sha256:aadb04777543a9302deb69cdc278cc313be9a9c617b9394831bfc38ac1aefb2f",
+      "translated_at": "2026-06-11T20:46:28.182525Z",
+      "dest_path": "content/languages/chinese/hsk/8/vocabulary/材料科学.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/chinese/hsk/8/vocabulary/流体动力学.md": {
+      "source_hash": "sha256:74bb2d5a563158524c694775c13a3bf2a333d1fb2cd23112014eebb3a25acd5b",
+      "translated_at": "2026-06-11T20:46:30.083298Z",
+      "dest_path": "content/languages/chinese/hsk/8/vocabulary/流体动力学.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
