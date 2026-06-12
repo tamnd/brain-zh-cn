@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T05:07:41.958951Z",
+  "last_run": "2026-06-12T07:01:52.710228Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -17886,6 +17886,86 @@
       "source_hash": "sha256:a7da98924c130742d58fd317da07b69037a5ba1409a3fcca08d4e903c4c83382",
       "translated_at": "2026-06-12T05:07:41.958930Z",
       "dest_path": "content/languages/esperanto/cefr/c1/lessons/03-professional-communication.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c1/lessons/04-advanced-participle-nuance.md": {
+      "source_hash": "sha256:52383aa89d83b5b797297eb95e0a4a8506e3f1f187a8709272cf35ba981c988e",
+      "translated_at": "2026-06-12T07:00:59.258412Z",
+      "dest_path": "content/languages/esperanto/cefr/c1/lessons/04-advanced-participle-nuance.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c1/lessons/05-esperanto-linguistics.md": {
+      "source_hash": "sha256:d957507fc8036a3ff8a32eaac2573cd0f7f5f88b13b40d3ae8de23c60b694ecb",
+      "translated_at": "2026-06-12T07:01:04.915681Z",
+      "dest_path": "content/languages/esperanto/cefr/c1/lessons/05-esperanto-linguistics.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c1/lessons/06-translation-studies.md": {
+      "source_hash": "sha256:de85e444f0c77576d26497abd9cc30fb41f7626eec13675484c8440e81e9d797",
+      "translated_at": "2026-06-12T07:01:12.485075Z",
+      "dest_path": "content/languages/esperanto/cefr/c1/lessons/06-translation-studies.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c1/lessons/07-public-speaking-oratory.md": {
+      "source_hash": "sha256:b4a430a2202cd24f596ffef9afb929e3a15d7236d303252adb6126d982cca95b",
+      "translated_at": "2026-06-12T07:01:18.324014Z",
+      "dest_path": "content/languages/esperanto/cefr/c1/lessons/07-public-speaking-oratory.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c1/lessons/08-culture-and-literature-of-esperantujo.md": {
+      "source_hash": "sha256:d815d02ad9c1a0d9edb264cc91b8e305aa1e4e4043821da4f4c2f232ada39015",
+      "translated_at": "2026-06-12T07:01:23.469035Z",
+      "dest_path": "content/languages/esperanto/cefr/c1/lessons/08-culture-and-literature-of-esperantujo.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c1/lessons/09-kongreso-language-and-institutions.md": {
+      "source_hash": "sha256:08f40eb10b8d7710c9e5661abc514feea8f55fc57194d945fc966fc36a3b0cad",
+      "translated_at": "2026-06-12T07:01:29.422563Z",
+      "dest_path": "content/languages/esperanto/cefr/c1/lessons/09-kongreso-language-and-institutions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c1/lessons/10-c1-review-and-path-to-c2.md": {
+      "source_hash": "sha256:d420fba7b06aeed4b15026d19a44c958040a035c5ff28cd471db7fcaf095bfbb",
+      "translated_at": "2026-06-12T07:01:36.180255Z",
+      "dest_path": "content/languages/esperanto/cefr/c1/lessons/10-c1-review-and-path-to-c2.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c2/lessons/01-creative-writing-in-esperanto.md": {
+      "source_hash": "sha256:7e456f2621d276a43490f8634305413af09416dfd4c72dc6d72d4011cde97ff5",
+      "translated_at": "2026-06-12T07:01:42.247952Z",
+      "dest_path": "content/languages/esperanto/cefr/c2/lessons/01-creative-writing-in-esperanto.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c2/lessons/02-esperanto-humor-and-wordplay.md": {
+      "source_hash": "sha256:0204f8ce4c4cb7d92c8081bb506af07e1d1f130be9cd7ef3a041978e168d800a",
+      "translated_at": "2026-06-12T07:01:46.852921Z",
+      "dest_path": "content/languages/esperanto/cefr/c2/lessons/02-esperanto-humor-and-wordplay.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c2/lessons/03-simultaneous-interpretation-practice.md": {
+      "source_hash": "sha256:7c2d6f8aa7d65a4671d424d94967843e68e5fc1f79ce55d68df91fc3f792eeb5",
+      "translated_at": "2026-06-12T07:01:52.710205Z",
+      "dest_path": "content/languages/esperanto/cefr/c2/lessons/03-simultaneous-interpretation-practice.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
