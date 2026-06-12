@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T01:33:24.446613Z",
+  "last_run": "2026-06-12T03:03:46.246474Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -17726,6 +17726,86 @@
       "source_hash": "sha256:57ebd9a19bf82cc3dc5bc6d553d16608968a4e3ac05b0f171be307c6c12c629c",
       "translated_at": "2026-06-12T01:33:24.446590Z",
       "dest_path": "content/languages/esperanto/cefr/b1/lessons/07-dependent-clauses.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b1/lessons/08-conjunctions-connectors.md": {
+      "source_hash": "sha256:a1f7a54df317f95103e58108e0540fd6f0e95ba95610c5d6087aa178aee3fb97",
+      "translated_at": "2026-06-12T03:02:48.235679Z",
+      "dest_path": "content/languages/esperanto/cefr/b1/lessons/08-conjunctions-connectors.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b1/lessons/09-numbers-advanced.md": {
+      "source_hash": "sha256:cf283e17771676502778501a94787bc39e2996b412e5e68de95b19c7b9fb6065",
+      "translated_at": "2026-06-12T03:02:53.864934Z",
+      "dest_path": "content/languages/esperanto/cefr/b1/lessons/09-numbers-advanced.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b1/lessons/10-formal-writing-register.md": {
+      "source_hash": "sha256:c66407bd20393d14d267293ee3f3bfc6c0a86e0b95a0efd6d00c88a042cac94f",
+      "translated_at": "2026-06-12T03:02:59.505899Z",
+      "dest_path": "content/languages/esperanto/cefr/b1/lessons/10-formal-writing-register.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b1/lessons/11-reading-strategies.md": {
+      "source_hash": "sha256:36c0e193dd219e2dc2fdb335643ec0eb011822f960b082c608f684adac557ae0",
+      "translated_at": "2026-06-12T03:03:03.744677Z",
+      "dest_path": "content/languages/esperanto/cefr/b1/lessons/11-reading-strategies.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b1/lessons/12-b1-review.md": {
+      "source_hash": "sha256:ec9d09fb61b14fbdfe09c9ebe958f8db8709ad93a55def564525ac347770556b",
+      "translated_at": "2026-06-12T03:03:11.331276Z",
+      "dest_path": "content/languages/esperanto/cefr/b1/lessons/12-b1-review.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b2/lessons/01-advanced-correlative-combinations.md": {
+      "source_hash": "sha256:c805407541e19fa0782e32bba2bd3c75dbcf6370fcaaaac7dd32f95d7766e88f",
+      "translated_at": "2026-06-12T03:03:19.120500Z",
+      "dest_path": "content/languages/esperanto/cefr/b2/lessons/01-advanced-correlative-combinations.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b2/lessons/02-aspect-and-participle-nuance.md": {
+      "source_hash": "sha256:d91815d0d406e0c8756969e4c72e55aa3818b2cebe015ed06c540b3f32b42f96",
+      "translated_at": "2026-06-12T03:03:27.688046Z",
+      "dest_path": "content/languages/esperanto/cefr/b2/lessons/02-aspect-and-participle-nuance.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b2/lessons/03-transitivity-and-causatives.md": {
+      "source_hash": "sha256:87ed3a6f2504028c8d8941e12253e83ff0d8ab924499eb83d8b6e3c4636e497a",
+      "translated_at": "2026-06-12T03:03:34.336849Z",
+      "dest_path": "content/languages/esperanto/cefr/b2/lessons/03-transitivity-and-causatives.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b2/lessons/04-reported-speech-indirect-discourse.md": {
+      "source_hash": "sha256:7e402a11f5837046189902e244d86ee00d08b2bbc87068257e11ea837d8745fd",
+      "translated_at": "2026-06-12T03:03:39.727940Z",
+      "dest_path": "content/languages/esperanto/cefr/b2/lessons/04-reported-speech-indirect-discourse.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b2/lessons/05-concession-contrast-adversative.md": {
+      "source_hash": "sha256:220dde9bddbd5eb8dc3be9682dab26434a20db2908b01d2ec8b566b68811941e",
+      "translated_at": "2026-06-12T03:03:46.246450Z",
+      "dest_path": "content/languages/esperanto/cefr/b2/lessons/05-concession-contrast-adversative.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
