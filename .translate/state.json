@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T18:36:48.211393Z",
+  "last_run": "2026-06-12T19:37:16.021424Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -18686,6 +18686,86 @@
       "source_hash": "sha256:4b38db1332552daa532cb65c5e1592878c0f4fb1b73c98c082e47fef67bc9543",
       "translated_at": "2026-06-12T18:36:48.211369Z",
       "dest_path": "content/languages/japanese/jlpt/n1/grammar/nai-de-wa-sumanai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/nai-made-mo.md": {
+      "source_hash": "sha256:0bc18a871655ab959d7f09492f9fb30c8942f180eda2e5ceb5baa40fce347040",
+      "translated_at": "2026-06-12T19:36:51.334972Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/nai-made-mo.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/naide-mo-nai.md": {
+      "source_hash": "sha256:a909e82f039063036e4b7548e5ac3a7088860712bb7017610f2f4c2d64301918",
+      "translated_at": "2026-06-12T19:36:54.618838Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/naide-mo-nai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/nara-dewa.md": {
+      "source_hash": "sha256:1baf8798b647fc94e105c1ca92e3e84160244b9aaa3a4b42d7275412dccf386f",
+      "translated_at": "2026-06-12T19:36:59.878129Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/nara-dewa.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/nara-iza-shirazu.md": {
+      "source_hash": "sha256:fc3bf5df45a9e986870ed788e51f20e68c231fdc9751149cdaa1724170d765b5",
+      "translated_at": "2026-06-12T19:37:02.295740Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/nara-iza-shirazu.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/naradewa.md": {
+      "source_hash": "sha256:e069d51fac01d9d6b0779ef78e47d3bc8e2b6fdd65180aa21eed96e346075aea",
+      "translated_at": "2026-06-12T19:37:04.268936Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/naradewa.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/ni-ataisuru.md": {
+      "source_hash": "sha256:3bd81141434492ad680a7807666d78665437a57a368378bb0b3cf39e07e88903",
+      "translated_at": "2026-06-12T19:37:07.514014Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/ni-ataisuru.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/ni-hanshite.md": {
+      "source_hash": "sha256:bf14ea4146f182bb8d505bbecf455644744cb1219ba9b8469967fa8ffca5b3f7",
+      "translated_at": "2026-06-12T19:37:10.046159Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/ni-hanshite.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/ni-hoka-naranai.md": {
+      "source_hash": "sha256:cc3e13e8cdbbc4afebdcdd239b50fa45929b50aa1f7b8cee8439647d8dfc32ff",
+      "translated_at": "2026-06-12T19:37:12.077481Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/ni-hoka-naranai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/ni-itatte.md": {
+      "source_hash": "sha256:4cf31f0f277362f2229dcdcb1afe0c15f41d4df8b621016213e07517af06c221",
+      "translated_at": "2026-06-12T19:37:14.177750Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/ni-itatte.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/ni-mo-kakawarazu.md": {
+      "source_hash": "sha256:3159a7fc9e2d70b1acfed416027d84a5f09290ab38f015638ef11d58e1e1c743",
+      "translated_at": "2026-06-12T19:37:16.021394Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/ni-mo-kakawarazu.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
