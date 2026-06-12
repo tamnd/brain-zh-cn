@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T00:06:45.624336Z",
+  "last_run": "2026-06-12T01:33:24.446613Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -17646,6 +17646,86 @@
       "source_hash": "sha256:102b1849fd485236c0ddaa8c6b480e7cd77d75b7a966e0f602c21d3eb39e1c14",
       "translated_at": "2026-06-12T00:06:45.624316Z",
       "dest_path": "content/languages/esperanto/cefr/a2/lessons/12-at-the-restaurant.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/13-work-daily-life.md": {
+      "source_hash": "sha256:cc04fadac46b52c4061ad40940971bf27663647252b1bbc6f5e347893f7654c4",
+      "translated_at": "2026-06-12T01:32:31.029431Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/13-work-daily-life.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/14-feelings-emotions.md": {
+      "source_hash": "sha256:bb58de2c08cf514a8fdd6b71f1b89073c38aed43104c100162de4aabc4f7ea74",
+      "translated_at": "2026-06-12T01:32:37.415182Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/14-feelings-emotions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/15-a2-review.md": {
+      "source_hash": "sha256:c05359e113fa117a57d813c44950567bd4e1a1850e6e0a6c2d297f464ca8c8e6",
+      "translated_at": "2026-06-12T01:32:45.497852Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/15-a2-review.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b1/lessons/01-accusative-in-depth.md": {
+      "source_hash": "sha256:e207347c5a16f4ec3f4e9a30517873054020e97339c9f5aee1dec427135cd42d",
+      "translated_at": "2026-06-12T01:32:50.660441Z",
+      "dest_path": "content/languages/esperanto/cefr/b1/lessons/01-accusative-in-depth.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b1/lessons/02-participles.md": {
+      "source_hash": "sha256:e9c2323d7d16440d902d2e53b16c61c7d5b5066fdcf73ffeeb353897ea39804d",
+      "translated_at": "2026-06-12T01:32:55.207356Z",
+      "dest_path": "content/languages/esperanto/cefr/b1/lessons/02-participles.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b1/lessons/03-compound-words.md": {
+      "source_hash": "sha256:39624f7af876ab23ea8baddb580221be489f69ab29d1a25dce16a5bb4728a004",
+      "translated_at": "2026-06-12T01:33:01.418347Z",
+      "dest_path": "content/languages/esperanto/cefr/b1/lessons/03-compound-words.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b1/lessons/04-word-building-mastery.md": {
+      "source_hash": "sha256:afa6eb182afb32d8cd1d973ac899b03f6bbb0abbff9a58d79ba95f289c20f545",
+      "translated_at": "2026-06-12T01:33:07.931686Z",
+      "dest_path": "content/languages/esperanto/cefr/b1/lessons/04-word-building-mastery.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b1/lessons/05-passive-voice.md": {
+      "source_hash": "sha256:c8e6de7201624435829cc23d61516a0b0a9e1f8ad05bb1796c705f9d903e590a",
+      "translated_at": "2026-06-12T01:33:13.597012Z",
+      "dest_path": "content/languages/esperanto/cefr/b1/lessons/05-passive-voice.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b1/lessons/06-conditional-mood.md": {
+      "source_hash": "sha256:02eece6c7bf13f01583cf879f2fac45d0cfd19a535c71a1ef4be035b11609c25",
+      "translated_at": "2026-06-12T01:33:20.053271Z",
+      "dest_path": "content/languages/esperanto/cefr/b1/lessons/06-conditional-mood.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b1/lessons/07-dependent-clauses.md": {
+      "source_hash": "sha256:57ebd9a19bf82cc3dc5bc6d553d16608968a4e3ac05b0f171be307c6c12c629c",
+      "translated_at": "2026-06-12T01:33:24.446590Z",
+      "dest_path": "content/languages/esperanto/cefr/b1/lessons/07-dependent-clauses.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
