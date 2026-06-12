@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T17:47:57.175393Z",
+  "last_run": "2026-06-12T18:36:48.211393Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -18606,6 +18606,86 @@
       "source_hash": "sha256:3f776c45271ecfc59bfaa52be49cd0043b9c40be63f5acde5ea906e6cd469653",
       "translated_at": "2026-06-12T17:47:57.175372Z",
       "dest_path": "content/languages/japanese/jlpt/n1/grammar/katawara.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/kirai-ga-aru.md": {
+      "source_hash": "sha256:a3ca4d6d474437cd14df7235e61de11c8f74a3958e9cf4b1645e16dcd49eabfb",
+      "translated_at": "2026-06-12T18:36:12.804848Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/kirai-ga-aru.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/kiwamari-nai.md": {
+      "source_hash": "sha256:48eaa276897bbdc12d38794adcd91d23276fe4080160908d4fb2958e87f99dbc",
+      "translated_at": "2026-06-12T18:36:15.451833Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/kiwamari-nai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/koto-naku.md": {
+      "source_hash": "sha256:a906ed1b7002f15f542e16c84a60d95bcf250592a86f32ac575ae9de62cf0d65",
+      "translated_at": "2026-06-12T18:36:18.619120Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/koto-naku.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/majiki.md": {
+      "source_hash": "sha256:b694299da99174add2350d491711f014a683c1dc5caff30c9471089c195c489a",
+      "translated_at": "2026-06-12T18:36:23.034278Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/majiki.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/mo-saru-koto-nagara.md": {
+      "source_hash": "sha256:7acda95e218d17b2080340259aff85e153671d3903d2096188769040b8d3a255",
+      "translated_at": "2026-06-12T18:36:28.276183Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/mo-saru-koto-nagara.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/mono-ga-aru.md": {
+      "source_hash": "sha256:54a76957442bd1e24221c5fc95c58f3b19c41b2358331a91dd9b1a67617a1960",
+      "translated_at": "2026-06-12T18:36:33.080657Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/mono-ga-aru.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/mono-to-suru.md": {
+      "source_hash": "sha256:cfd4100e4a792f07798f2a3d11b7d1cdf4ab016f8afaaadd9f1f5107a5ad0591",
+      "translated_at": "2026-06-12T18:36:37.027042Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/mono-to-suru.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/mono-wo.md": {
+      "source_hash": "sha256:bd95467938addfaf60d5d96ed23cb0ca23b339a90934adaa87dc3e1f0507f868",
+      "translated_at": "2026-06-12T18:36:41.253906Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/mono-wo.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/nagara-mo.md": {
+      "source_hash": "sha256:7f364ad404d809bf2d3e4484939d7ec374445317494acf80178733ee916fe76a",
+      "translated_at": "2026-06-12T18:36:44.129431Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/nagara-mo.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/nai-de-wa-sumanai.md": {
+      "source_hash": "sha256:4b38db1332552daa532cb65c5e1592878c0f4fb1b73c98c082e47fef67bc9543",
+      "translated_at": "2026-06-12T18:36:48.211369Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/nai-de-wa-sumanai.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
