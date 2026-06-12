@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T21:32:04.374118Z",
+  "last_run": "2026-06-12T22:30:27.705094Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -18926,6 +18926,86 @@
       "source_hash": "sha256:93942333447db475e23d3d772a8b31c986c98f50a408aee5e19731fa6320bf62",
       "translated_at": "2026-06-12T21:32:04.374091Z",
       "dest_path": "content/languages/japanese/jlpt/n1/grammar/zu-ni-wa-okanai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/zu-ni-wa-sumanai.md": {
+      "source_hash": "sha256:d0f69ed95ea47efdc4f4d92cb6a7b9154aa8c764e86889d43282c2dadb18395b",
+      "translated_at": "2026-06-12T22:29:43.229662Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/zu-ni-wa-sumanai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/kanji.md": {
+      "source_hash": "sha256:f3c7487068556eba03f9885537aaacdb65d899f81918ac02c8448ba6f06258a8",
+      "translated_at": "2026-06-12T22:29:49.268847Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/kanji.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/lessons.md": {
+      "source_hash": "sha256:7e50450eb4ee6dea8bd85bd85e47a8c71c4803c4218a826f1677a2ccd29e6aaf",
+      "translated_at": "2026-06-12T22:29:57.524478Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/lessons.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/lessons/01-classical-japanese-foundations.md": {
+      "source_hash": "sha256:6a9ed9f8e7a6d0184c2cd365633395ec41a6982a8a1cec217b0a53b1f104fb43",
+      "translated_at": "2026-06-12T22:29:57.569150Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/lessons/01-classical-japanese-foundations.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/lessons/02-formal-discourse-patterns.md": {
+      "source_hash": "sha256:2906545d4855452387ffa8a3e29a629a7fd5373b48f9eca8ade3185d39f697a3",
+      "translated_at": "2026-06-12T22:29:57.613496Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/lessons/02-formal-discourse-patterns.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/lessons/03-literary-grammar-i-classical-patterns-in-modern-contexts.md": {
+      "source_hash": "sha256:70b7addc601eff4ab0b0303287ffd82033f6d4ff6609d09862613516283f2f99",
+      "translated_at": "2026-06-12T22:29:57.658907Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/lessons/03-literary-grammar-i-classical-patterns-in-modern-contexts.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/lessons/04-literary-grammar-ii-nuanced-connectors.md": {
+      "source_hash": "sha256:a535fa3f2f2eafe52cc1ac6aeb885dee6d95bfe2c4ecf63c583815085001703a",
+      "translated_at": "2026-06-12T22:29:57.703528Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/lessons/04-literary-grammar-ii-nuanced-connectors.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/lessons/05-four-character-idioms-yojijukugo.md": {
+      "source_hash": "sha256:2ba749272e084a952116c6953d245e96723faa1eff430b4053a390f6d5317e1f",
+      "translated_at": "2026-06-12T22:30:10.038240Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/lessons/05-four-character-idioms-yojijukugo.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/lessons/06-proverbs-and-set-phrases.md": {
+      "source_hash": "sha256:c742a5d37b1473ff1e25df23dd034b5b4e9c1a0489a0a1777c652b051a7046d2",
+      "translated_at": "2026-06-12T22:30:21.455773Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/lessons/06-proverbs-and-set-phrases.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/lessons/07-academic-and-legal-japanese.md": {
+      "source_hash": "sha256:17e0e79fb98daaa07af0322dff4f5817b6a4f023953731b224157bcde6d4be9b",
+      "translated_at": "2026-06-12T22:30:27.705067Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/lessons/07-academic-and-legal-japanese.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
