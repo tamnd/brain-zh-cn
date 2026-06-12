@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T20:42:50.687422Z",
+  "last_run": "2026-06-12T21:32:04.374118Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -18846,6 +18846,86 @@
       "source_hash": "sha256:d1d2c0e42c77bec2d9378d984499e1537e212f0c296d99d836f5d30d3fba153c",
       "translated_at": "2026-06-12T20:42:50.687399Z",
       "dest_path": "content/languages/japanese/jlpt/n1/grammar/to-atte.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/to-bakari-ni.md": {
+      "source_hash": "sha256:fe2759b2a92bd0c87f7c380d4d9edf6e3c17c2722f9b925386a2fae6db1f5612",
+      "translated_at": "2026-06-12T21:31:38.580887Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/to-bakari-ni.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/to-iedomo.md": {
+      "source_hash": "sha256:cde6326e73e2d4031e7de687088ad8a1b0109dee3f4e70d8c773efd54570c7bb",
+      "translated_at": "2026-06-12T21:31:41.793986Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/to-iedomo.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/to-mo-arou.md": {
+      "source_hash": "sha256:9f247f8032634bc4cad4f39813f49b40ed2b86df05d040802536c10d0f518f40",
+      "translated_at": "2026-06-12T21:31:44.632365Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/to-mo-arou.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/to-mo-naku.md": {
+      "source_hash": "sha256:f0b755455b0adb7b5bb67e772ac47bc2a432c4e7e3d581c9a4c68b311d6def8a",
+      "translated_at": "2026-06-12T21:31:47.879010Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/to-mo-naku.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/to-mo-naruto.md": {
+      "source_hash": "sha256:163bdaded23c64bd801362bb64cc9e1cb58dea66f7483a19ff02163df94603c9",
+      "translated_at": "2026-06-12T21:31:50.641542Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/to-mo-naruto.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/to-wa-ie.md": {
+      "source_hash": "sha256:5f06a260b659bd8608c1298ddd13f2dd15905f5783bf2dce9a4dd89f9c407b33",
+      "translated_at": "2026-06-12T21:31:52.766234Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/to-wa-ie.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/wo-mono-to-mo-sezu.md": {
+      "source_hash": "sha256:41f016ecf5ca0ad423b304d4d30ebb85519cd978add4fc2f6496236fcf72386a",
+      "translated_at": "2026-06-12T21:31:55.147334Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/wo-mono-to-mo-sezu.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/wo-motte.md": {
+      "source_hash": "sha256:17c52a0bd964145b147693c51ac7752a1053f2652d93ff3b108cbefbc854e74a",
+      "translated_at": "2026-06-12T21:31:57.903896Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/wo-motte.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/wo-yoso-ni.md": {
+      "source_hash": "sha256:c397ea52b05c6238a29c519cc33c38738a197ffe15410238759bee076e7c35a1",
+      "translated_at": "2026-06-12T21:32:00.966278Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/wo-yoso-ni.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/zu-ni-wa-okanai.md": {
+      "source_hash": "sha256:93942333447db475e23d3d772a8b31c986c98f50a408aee5e19731fa6320bf62",
+      "translated_at": "2026-06-12T21:32:04.374091Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/zu-ni-wa-okanai.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
