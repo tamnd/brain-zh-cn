@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T08:50:15.052238Z",
+  "last_run": "2026-06-12T10:30:04.622229Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -18046,6 +18046,86 @@
       "source_hash": "sha256:72167dcf36bab5d3b7e1acad58ed8c869cf1a86aefce6464b4e0792b6652bedc",
       "translated_at": "2026-06-12T08:50:15.052212Z",
       "dest_path": "content/languages/esperanto/methodology/time-estimates.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/vocabulary/thematic/body.md": {
+      "source_hash": "sha256:f33f799c81adc8fcfc8624febfbc3ac0ce82a12526d69b49953e331622132f25",
+      "translated_at": "2026-06-12T10:29:19.190630Z",
+      "dest_path": "content/languages/esperanto/vocabulary/thematic/body.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/vocabulary/thematic/culture.md": {
+      "source_hash": "sha256:b1fbf5ef6e5b54a1a67c932809f54a9ba99fe968faf228fd79e53138dd87ba7f",
+      "translated_at": "2026-06-12T10:29:25.523146Z",
+      "dest_path": "content/languages/esperanto/vocabulary/thematic/culture.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/vocabulary/thematic/education.md": {
+      "source_hash": "sha256:ee4557bb856fca3e7d321a94d2c9ec937136267ae03af573410321d782de7bb2",
+      "translated_at": "2026-06-12T10:29:30.541339Z",
+      "dest_path": "content/languages/esperanto/vocabulary/thematic/education.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/vocabulary/thematic/emotions.md": {
+      "source_hash": "sha256:58ee5782496b7602aafec8b4372a081bae729ad070d44c42ed1e4acae77c735a",
+      "translated_at": "2026-06-12T10:29:37.381090Z",
+      "dest_path": "content/languages/esperanto/vocabulary/thematic/emotions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/vocabulary/thematic/family.md": {
+      "source_hash": "sha256:9f9dc6820675f8639bcd04c64a2ad20d48580af608f075b955d6787106b38563",
+      "translated_at": "2026-06-12T10:29:41.908050Z",
+      "dest_path": "content/languages/esperanto/vocabulary/thematic/family.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/vocabulary/thematic/food.md": {
+      "source_hash": "sha256:a4fdcbc25f720c91a44726cab3c8d2378233ce9c07c0e420a7523df4282c1edc",
+      "translated_at": "2026-06-12T10:29:45.687175Z",
+      "dest_path": "content/languages/esperanto/vocabulary/thematic/food.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/vocabulary/thematic/nature.md": {
+      "source_hash": "sha256:cc9382260a5281bee5a8464676ef179a2f0891db314131451b30b34db9abce62",
+      "translated_at": "2026-06-12T10:29:50.951709Z",
+      "dest_path": "content/languages/esperanto/vocabulary/thematic/nature.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/vocabulary/thematic/numbers.md": {
+      "source_hash": "sha256:27e2a4834c58500eb4c41b3543d3fb95e93d28efdca41951387753ed5fe6775a",
+      "translated_at": "2026-06-12T10:29:55.409843Z",
+      "dest_path": "content/languages/esperanto/vocabulary/thematic/numbers.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/vocabulary/thematic/technology.md": {
+      "source_hash": "sha256:21cd11b916823c899696c6fbcbc08d57aca232c1b15e358fdb58290f022181e2",
+      "translated_at": "2026-06-12T10:29:59.839574Z",
+      "dest_path": "content/languages/esperanto/vocabulary/thematic/technology.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/vocabulary/thematic/time.md": {
+      "source_hash": "sha256:8af30f2daac1dc024b580e8a28a079d3585534f0c698f26df7e2fd24eb12b12e",
+      "translated_at": "2026-06-12T10:30:04.622206Z",
+      "dest_path": "content/languages/esperanto/vocabulary/thematic/time.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
