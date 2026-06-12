@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T15:39:06.415131Z",
+  "last_run": "2026-06-12T16:57:26.144035Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -18446,6 +18446,86 @@
       "source_hash": "sha256:2f828253e8088dfcc74dcd31f7c93dc5ba3bab586f67a1f942c9029216f3ba0d",
       "translated_at": "2026-06-12T15:39:06.415105Z",
       "dest_path": "content/languages/japanese/grammar/n5/ませんか.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n5/まで.md": {
+      "source_hash": "sha256:e3d6603600c78776c0c8c8d6f464e84115b00359542f87c672b737f5f6f99d9a",
+      "translated_at": "2026-06-12T16:56:41.838397Z",
+      "dest_path": "content/languages/japanese/grammar/n5/まで.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n5/も.md": {
+      "source_hash": "sha256:4f7d5d5eba13ad7714e67ff9714219c345581fd3c71bb54559e4c12b6e10157f",
+      "translated_at": "2026-06-12T16:56:47.979793Z",
+      "dest_path": "content/languages/japanese/grammar/n5/も.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n5/を.md": {
+      "source_hash": "sha256:f5e93ce6244ed971ac9cf61f42c2cbecaf301e421127dc114266c2e12eba1fe3",
+      "translated_at": "2026-06-12T16:56:50.085006Z",
+      "dest_path": "content/languages/japanese/grammar/n5/を.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/particles.md": {
+      "source_hash": "sha256:1b0e78ac43910c9e4020c29a02d9bd2568ccac3fc8eb090c23f5646d876f77a7",
+      "translated_at": "2026-06-12T16:56:55.818200Z",
+      "dest_path": "content/languages/japanese/grammar/particles.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/sentence-patterns.md": {
+      "source_hash": "sha256:778f5d258aeb4690651a76dad93b1973edd848dd0badbf5538af58c98627b826",
+      "translated_at": "2026-06-12T16:57:00.934592Z",
+      "dest_path": "content/languages/japanese/grammar/sentence-patterns.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/verb-conjugation.md": {
+      "source_hash": "sha256:17d5695b51c4438afaeb1a24960f403446701f73f1bb4954ac20aa6c7509e537",
+      "translated_at": "2026-06-12T16:57:05.646361Z",
+      "dest_path": "content/languages/japanese/grammar/verb-conjugation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/exam-prep.md": {
+      "source_hash": "sha256:732fc7d5948c97ca767e47241d5d08987d5312942fa3cb3683f7426a77d8f84e",
+      "translated_at": "2026-06-12T16:57:11.627503Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/exam-prep.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar.md": {
+      "source_hash": "sha256:c4023735980f0d12d4151c33d271f08eebda95ad10597e1291a96d85df208400",
+      "translated_at": "2026-06-12T16:57:20.487517Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/atte-no.md": {
+      "source_hash": "sha256:68d0f7cf2ea2f1b6ffb138669b6390565e97ab3f8563bdf3e27409bc42a26522",
+      "translated_at": "2026-06-12T16:57:22.748401Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/atte-no.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/beku.md": {
+      "source_hash": "sha256:4a2bd2349953d2c22093263ca5001b2f6f5536c6f7eb3ba074a27a331f9898be",
+      "translated_at": "2026-06-12T16:57:26.144012Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/beku.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
