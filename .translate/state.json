@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T11:50:12.846565Z",
+  "last_run": "2026-06-12T13:03:22.764390Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -18206,6 +18206,86 @@
       "source_hash": "sha256:251e372ef226ce2019e4d40e4e614397da76af24a5b1cfabbfce94b5440abd14",
       "translated_at": "2026-06-12T11:50:12.846538Z",
       "dest_path": "content/languages/japanese/grammar/n4/ておく.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/てくれる.md": {
+      "source_hash": "sha256:e05b770fb08c3ab2f083209528e698c754c6cdd5fe2e69d6e519b377aa221f29",
+      "translated_at": "2026-06-12T13:01:59.714953Z",
+      "dest_path": "content/languages/japanese/grammar/n4/てくれる.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/てしまう.md": {
+      "source_hash": "sha256:76b6f55315a72a025277801ce8d3c854678472cf4e843331eaa1096005f5cfa1",
+      "translated_at": "2026-06-12T13:02:05.673464Z",
+      "dest_path": "content/languages/japanese/grammar/n4/てしまう.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/てみる.md": {
+      "source_hash": "sha256:205cd54499f1d1f8b025c0629555dd42a9280543c518e7b026aefaf72d3dc9f5",
+      "translated_at": "2026-06-12T13:02:09.225599Z",
+      "dest_path": "content/languages/japanese/grammar/n4/てみる.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/てもらう.md": {
+      "source_hash": "sha256:14a08e242901564f17cdc22afee8514e1c69e9d5623dc3e17b1fc8e310aa0b90",
+      "translated_at": "2026-06-12T13:02:14.919023Z",
+      "dest_path": "content/languages/japanese/grammar/n4/てもらう.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/と.md": {
+      "source_hash": "sha256:7277fab11522bd935c8eebcb55db9c754f1b4494166da285ce3bedebba4bda78",
+      "translated_at": "2026-06-12T13:02:38.444802Z",
+      "dest_path": "content/languages/japanese/grammar/n4/と.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/と思う.md": {
+      "source_hash": "sha256:8b1e7b525b4effbad92464ff53c9d85b107c6430fe4df5e1de819d915d772563",
+      "translated_at": "2026-06-12T13:02:42.423135Z",
+      "dest_path": "content/languages/japanese/grammar/n4/と思う.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/と言う.md": {
+      "source_hash": "sha256:34d6e9c40484c6ac01ec9429567f7028e1c2e1198d49c84e77feaceac2679c1d",
+      "translated_at": "2026-06-12T13:02:50.953868Z",
+      "dest_path": "content/languages/japanese/grammar/n4/と言う.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/なら.md": {
+      "source_hash": "sha256:558f596bc5bf7b89b8d5af67afffcedc7dc6afc642629d98d9432be349e51336",
+      "translated_at": "2026-06-12T13:02:57.594031Z",
+      "dest_path": "content/languages/japanese/grammar/n4/なら.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/はずだ.md": {
+      "source_hash": "sha256:a1c43d6f73bc6fecca5f24c1a9438d3269efc400baa0fa35f2f99b3ed036181e",
+      "translated_at": "2026-06-12T13:03:01.092275Z",
+      "dest_path": "content/languages/japanese/grammar/n4/はずだ.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/ば.md": {
+      "source_hash": "sha256:9a31e7e3561b1ce2054b432ac9f62cce0224f0d9ee660205cbc99666150f8d81",
+      "translated_at": "2026-06-12T13:03:22.764365Z",
+      "dest_path": "content/languages/japanese/grammar/n4/ば.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
