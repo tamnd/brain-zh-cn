@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-11T23:30:55.740139Z",
+  "last_run": "2026-06-12T00:06:45.624336Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -17566,6 +17566,86 @@
       "source_hash": "sha256:84ab950e4961942e5ad1c6f4e9c3393f3c012d086ad2914d5f70beabdb07ad83",
       "translated_at": "2026-06-11T23:30:55.740114Z",
       "dest_path": "content/languages/esperanto/cefr/a2/lessons/02-correlatives-ki-ti-i.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/03-correlatives-cxi-neni.md": {
+      "source_hash": "sha256:a9eeaf57e94f49f6f47f65c2833beab582bd0d9c2b282db4cd971f90d9a3b0b9",
+      "translated_at": "2026-06-12T00:05:44.404708Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/03-correlatives-cxi-neni.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/04-prefixes-mal-ek-re-dis-mis.md": {
+      "source_hash": "sha256:d519533694bd0d1387ebc7c08f5b5c187e4195c51a26028591da964e9fda57f0",
+      "translated_at": "2026-06-12T00:05:50.557248Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/04-prefixes-mal-ek-re-dis-mis.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/05-suffixes-ej-ist-in-ul.md": {
+      "source_hash": "sha256:d18b2c180850bae8d68d222796ddd87c9d5fb41ef23f51757cf85740a0beac4d",
+      "translated_at": "2026-06-12T00:05:57.170212Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/05-suffixes-ej-ist-in-ul.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/06-suffixes-aj-ar-an-eg-et.md": {
+      "source_hash": "sha256:fbe43883997091e71a1db862cc6f3b0502b0874e078a7eb4d96bc97af56f3758",
+      "translated_at": "2026-06-12T00:06:05.186328Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/06-suffixes-aj-ar-an-eg-et.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/07-questions-opinions.md": {
+      "source_hash": "sha256:e1944915a8d93d7862444054ac0b383374b6621c6d6501078a9c4941d829c479",
+      "translated_at": "2026-06-12T00:06:11.208739Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/07-questions-opinions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/08-comparisons.md": {
+      "source_hash": "sha256:5722b3d6eaa91c9d41a16e1d612f29b5c285b040b86e46d0977dcc3cbb6fa763",
+      "translated_at": "2026-06-12T00:06:17.599797Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/08-comparisons.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/09-prepositions.md": {
+      "source_hash": "sha256:c0c598c5854d488dfbe1e2d8e2165b695daa1d561b458331fd0cfffad4d0698d",
+      "translated_at": "2026-06-12T00:06:23.825749Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/09-prepositions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/10-talking-about-past.md": {
+      "source_hash": "sha256:1a03a7e59448f3c10ca00fd8c48c02ce22e53fd99024c6b2ecb8b431959d71c6",
+      "translated_at": "2026-06-12T00:06:30.367379Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/10-talking-about-past.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/11-travel-transportation.md": {
+      "source_hash": "sha256:9ed46f889f9553a5cff653cb8e75f247c3f64c3edf043c2f6621c3f2737aae7a",
+      "translated_at": "2026-06-12T00:06:38.802450Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/11-travel-transportation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/a2/lessons/12-at-the-restaurant.md": {
+      "source_hash": "sha256:102b1849fd485236c0ddaa8c6b480e7cd77d75b7a966e0f602c21d3eb39e1c14",
+      "translated_at": "2026-06-12T00:06:45.624316Z",
+      "dest_path": "content/languages/esperanto/cefr/a2/lessons/12-at-the-restaurant.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
