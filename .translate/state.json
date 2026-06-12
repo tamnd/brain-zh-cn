@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T10:30:04.622229Z",
+  "last_run": "2026-06-12T11:50:12.846565Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -18126,6 +18126,86 @@
       "source_hash": "sha256:8af30f2daac1dc024b580e8a28a079d3585534f0c698f26df7e2fd24eb12b12e",
       "translated_at": "2026-06-12T10:30:04.622206Z",
       "dest_path": "content/languages/esperanto/vocabulary/thematic/time.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/vocabulary/thematic/travel.md": {
+      "source_hash": "sha256:d70ce9cd89a06dd2cbecefad8c32eddade7234b5cccbc215813c7d8579420767",
+      "translated_at": "2026-06-12T11:49:33.904753Z",
+      "dest_path": "content/languages/esperanto/vocabulary/thematic/travel.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/vocabulary/thematic/work.md": {
+      "source_hash": "sha256:848d01d27cc1d7da3d81973c5e098162cbd214e6781ab37f1af0d62c431d6514",
+      "translated_at": "2026-06-12T11:49:37.905961Z",
+      "dest_path": "content/languages/esperanto/vocabulary/thematic/work.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/keigo.md": {
+      "source_hash": "sha256:e395ff89801e804e5ea4625ecaf78c35e533dd361126f9b0f708f4669184c044",
+      "translated_at": "2026-06-12T11:49:41.298247Z",
+      "dest_path": "content/languages/japanese/grammar/keigo.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/かもしれない.md": {
+      "source_hash": "sha256:7abeedd4cff4c43b0fc5425007c7e760d680152a5d57e230d783e62502b2139b",
+      "translated_at": "2026-06-12T11:49:43.607998Z",
+      "dest_path": "content/languages/japanese/grammar/n4/かもしれない.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/せる-させる.md": {
+      "source_hash": "sha256:644414a6f19b2bb527d06f526afee9b6ddf1f3f0e70acf16d58a893cfb7e706e",
+      "translated_at": "2026-06-12T11:49:46.476367Z",
+      "dest_path": "content/languages/japanese/grammar/n4/せる-させる.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/そうだ-appearance.md": {
+      "source_hash": "sha256:9ff8db094bbfa1dc40d21d9eab3abbf52252b86a1a4600570c2fe5bf0aa5c5b1",
+      "translated_at": "2026-06-12T11:49:49.908709Z",
+      "dest_path": "content/languages/japanese/grammar/n4/そうだ-appearance.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/ために.md": {
+      "source_hash": "sha256:7a7a39fddd5da935fb04fce06f69dcbd3836986252689e1aeeefc41ff9065c52",
+      "translated_at": "2026-06-12T11:49:53.023922Z",
+      "dest_path": "content/languages/japanese/grammar/n4/ために.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/たら.md": {
+      "source_hash": "sha256:d2d80b61bd3539a2323b70bdd484e5af2c360017ca29fdcf9ee39da1a6bee002",
+      "translated_at": "2026-06-12T11:50:06.582164Z",
+      "dest_path": "content/languages/japanese/grammar/n4/たら.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/てあげる.md": {
+      "source_hash": "sha256:9ad20155604c7a400b648b8da753da170933d38a802e2c408a1c0afee189f824",
+      "translated_at": "2026-06-12T11:50:09.474977Z",
+      "dest_path": "content/languages/japanese/grammar/n4/てあげる.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/ておく.md": {
+      "source_hash": "sha256:251e372ef226ce2019e4d40e4e614397da76af24a5b1cfabbfce94b5440abd14",
+      "translated_at": "2026-06-12T11:50:12.846538Z",
+      "dest_path": "content/languages/japanese/grammar/n4/ておく.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
