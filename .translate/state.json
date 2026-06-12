@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T13:03:22.764390Z",
+  "last_run": "2026-06-12T14:24:20.540358Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -18286,6 +18286,86 @@
       "source_hash": "sha256:9a31e7e3561b1ce2054b432ac9f62cce0224f0d9ee660205cbc99666150f8d81",
       "translated_at": "2026-06-12T13:03:22.764365Z",
       "dest_path": "content/languages/japanese/grammar/n4/ば.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/ように.md": {
+      "source_hash": "sha256:0dab91df518dec8bbe413dad158ceaa089a510953fefb40731f2480893296c14",
+      "translated_at": "2026-06-12T14:23:09.110666Z",
+      "dest_path": "content/languages/japanese/grammar/n4/ように.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/らしい.md": {
+      "source_hash": "sha256:e6f02c98c8aab616fb90ef334d94fa8188eb400bf44e8072bf3e22c3806cff5c",
+      "translated_at": "2026-06-12T14:23:18.139625Z",
+      "dest_path": "content/languages/japanese/grammar/n4/らしい.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n4/られる-passive.md": {
+      "source_hash": "sha256:d2c4a6de03d9dc1ea4970f2a3b52a7b2e1a57a559355730f22bb1fadad38f715",
+      "translated_at": "2026-06-12T14:23:41.779298Z",
+      "dest_path": "content/languages/japanese/grammar/n4/られる-passive.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n5/あります-います.md": {
+      "source_hash": "sha256:abf93df4e427e9eb3613b24a37c2d2d47de2aa489d0cebcb1dc9872bfd27d545",
+      "translated_at": "2026-06-12T14:23:48.460778Z",
+      "dest_path": "content/languages/japanese/grammar/n5/あります-います.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n5/から.md": {
+      "source_hash": "sha256:ff70a3abb4e11b767311d415bf450cb51a47dfd7fc3b432492be7193f434788b",
+      "translated_at": "2026-06-12T14:23:55.012292Z",
+      "dest_path": "content/languages/japanese/grammar/n5/から.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n5/が.md": {
+      "source_hash": "sha256:d99d9cae778f47524dc30c13655aa92a675fe2b15e07aceb9e972e3cb8539e05",
+      "translated_at": "2026-06-12T14:24:01.164446Z",
+      "dest_path": "content/languages/japanese/grammar/n5/が.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n5/これ-それ-あれ.md": {
+      "source_hash": "sha256:176ac0e7ffad72f9d28d3000e6e0e41a25f158169cd7bbced5288a3d11ff3e96",
+      "translated_at": "2026-06-12T14:24:04.909679Z",
+      "dest_path": "content/languages/japanese/grammar/n5/これ-それ-あれ.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n5/たい.md": {
+      "source_hash": "sha256:e834344f8c599d50e61d099a3efce99e5aec3223e953a0b17948b466468a49cf",
+      "translated_at": "2026-06-12T14:24:09.498816Z",
+      "dest_path": "content/languages/japanese/grammar/n5/たい.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n5/ている.md": {
+      "source_hash": "sha256:ebedb089b2a3db11cc6091b5640807a4994744f1d16964572bc473c2b847ca3e",
+      "translated_at": "2026-06-12T14:24:13.777310Z",
+      "dest_path": "content/languages/japanese/grammar/n5/ている.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/grammar/n5/てください.md": {
+      "source_hash": "sha256:fbbda88850d9cfe60849dd21bf215a23147e6fef3f1398957b969545e1f8fb6b",
+      "translated_at": "2026-06-12T14:24:20.540332Z",
+      "dest_path": "content/languages/japanese/grammar/n5/てください.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
