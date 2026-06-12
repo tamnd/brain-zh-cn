@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T03:03:46.246474Z",
+  "last_run": "2026-06-12T05:07:41.958951Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -17806,6 +17806,86 @@
       "source_hash": "sha256:220dde9bddbd5eb8dc3be9682dab26434a20db2908b01d2ec8b566b68811941e",
       "translated_at": "2026-06-12T03:03:46.246450Z",
       "dest_path": "content/languages/esperanto/cefr/b2/lessons/05-concession-contrast-adversative.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b2/lessons/06-advanced-word-building.md": {
+      "source_hash": "sha256:15877ebe6c09fbe27452ae59c6ae08019c91bd257f141cb00009be0066d583ec",
+      "translated_at": "2026-06-12T05:06:15.411269Z",
+      "dest_path": "content/languages/esperanto/cefr/b2/lessons/06-advanced-word-building.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b2/lessons/07-stylistic-registers.md": {
+      "source_hash": "sha256:f8cb4646edd7e87a4a6e7ae475797520b24e8638ebb640ee06dfad08f44e06d4",
+      "translated_at": "2026-06-12T05:06:24.724128Z",
+      "dest_path": "content/languages/esperanto/cefr/b2/lessons/07-stylistic-registers.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b2/lessons/08-idioms-and-set-phrases.md": {
+      "source_hash": "sha256:08f3fd535f61995d68d99ca40b1d1331cd2c9133d74bf68c75415d174075f1c0",
+      "translated_at": "2026-06-12T05:06:34.483197Z",
+      "dest_path": "content/languages/esperanto/cefr/b2/lessons/08-idioms-and-set-phrases.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b2/lessons/09-reading-monato-news-vocabulary.md": {
+      "source_hash": "sha256:9086877f24154d38d91eedfd55229cd105df81feb1f319ec38263418fef545cc",
+      "translated_at": "2026-06-12T05:06:42.010063Z",
+      "dest_path": "content/languages/esperanto/cefr/b2/lessons/09-reading-monato-news-vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b2/lessons/10-debate-argumentation-language.md": {
+      "source_hash": "sha256:2a45bf01daec90144e0da582f2586a0de537c77ea85a3aeb7b7d53b21467dcd7",
+      "translated_at": "2026-06-12T05:06:54.646260Z",
+      "dest_path": "content/languages/esperanto/cefr/b2/lessons/10-debate-argumentation-language.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b2/lessons/11-letter-email-writing-b2.md": {
+      "source_hash": "sha256:c0932741711385ecb4427b320f8ed8f3d71f731f573f23bf33191ef1388b96fb",
+      "translated_at": "2026-06-12T05:07:03.060399Z",
+      "dest_path": "content/languages/esperanto/cefr/b2/lessons/11-letter-email-writing-b2.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/b2/lessons/12-b2-review-and-path-to-c1.md": {
+      "source_hash": "sha256:4f28581bfd169e010d05dcb609db9a6b15b6f110480e29a53dcfc21f402f67e9",
+      "translated_at": "2026-06-12T05:07:14.119750Z",
+      "dest_path": "content/languages/esperanto/cefr/b2/lessons/12-b2-review-and-path-to-c1.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c1/lessons/01-classical-and-literary-esperanto.md": {
+      "source_hash": "sha256:0d6261ac8cb25c142cec8d913b926dcdf75d3aef7601f2a977c15fb18b09cafb",
+      "translated_at": "2026-06-12T05:07:24.346793Z",
+      "dest_path": "content/languages/esperanto/cefr/c1/lessons/01-classical-and-literary-esperanto.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c1/lessons/02-vortaro-and-etymology.md": {
+      "source_hash": "sha256:c305eef703cb1225693ec512a9602995688ed5b79e14ba4b90a0e24d3b62b7e7",
+      "translated_at": "2026-06-12T05:07:32.275119Z",
+      "dest_path": "content/languages/esperanto/cefr/c1/lessons/02-vortaro-and-etymology.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c1/lessons/03-professional-communication.md": {
+      "source_hash": "sha256:a7da98924c130742d58fd317da07b69037a5ba1409a3fcca08d4e903c4c83382",
+      "translated_at": "2026-06-12T05:07:41.958930Z",
+      "dest_path": "content/languages/esperanto/cefr/c1/lessons/03-professional-communication.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
