@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T22:30:27.705094Z",
+  "last_run": "2026-06-12T23:04:15.380100Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -19006,6 +19006,86 @@
       "source_hash": "sha256:17e0e79fb98daaa07af0322dff4f5817b6a4f023953731b224157bcde6d4be9b",
       "translated_at": "2026-06-12T22:30:27.705067Z",
       "dest_path": "content/languages/japanese/jlpt/n1/lessons/07-academic-and-legal-japanese.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/lessons/08-subtle-nuance-distinctions.md": {
+      "source_hash": "sha256:700911558fb5b085b1b0ccf119e0bf4ea81b92780a5dd8d5cfecedef37d90b07",
+      "translated_at": "2026-06-12T23:02:32.425764Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/lessons/08-subtle-nuance-distinctions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/lessons/09-n1-listening-strategy.md": {
+      "source_hash": "sha256:a7a5b9a16e92caabafe56415b3f62eb9a0aeb83cc9d5a254bc95995e769b5bbe",
+      "translated_at": "2026-06-12T23:02:48.250837Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/lessons/09-n1-listening-strategy.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/lessons/10-n1-capstone-mock-test-analysis-and-improvement.md": {
+      "source_hash": "sha256:7620425bc5d080eff21e352e0b7080eb05df0386bc6e253d4ac65452a0b1e307",
+      "translated_at": "2026-06-12T23:03:00.669523Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/lessons/10-n1-capstone-mock-test-analysis-and-improvement.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/vocabulary.md": {
+      "source_hash": "sha256:3766e9ae0ca81fc760e5489a37c6239e4cf0b4020c4e925ce1b4fc4bf894c361",
+      "translated_at": "2026-06-12T23:03:20.644842Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/yojijukugo.md": {
+      "source_hash": "sha256:91e05ec7136c1235c153695db33d7a55f4f39ea4a6dbf9f00816b2f3e351785c",
+      "translated_at": "2026-06-12T23:03:29.990216Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/yojijukugo.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/exam-prep.md": {
+      "source_hash": "sha256:999cf7764ba0add5072ecbc882e239508370140c870044cef62847727e080916",
+      "translated_at": "2026-06-12T23:03:43.698006Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/exam-prep.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar.md": {
+      "source_hash": "sha256:062f90a0292dd9aa8869e5788e69d80762bef02b7333ca583ec3346b63beb9cb",
+      "translated_at": "2026-06-12T23:04:01.374885Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/bakari-ka.md": {
+      "source_hash": "sha256:3cce6cf5dbb643113d6e5221af9b5476933390f33be8f0366937349a1faab5a4",
+      "translated_at": "2026-06-12T23:04:06.318207Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/bakari-ka.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/beku-bekida.md": {
+      "source_hash": "sha256:d9b3d90a883d6538ffa5a8d9791119209738b7e850672fd1f8e673ae1f69a856",
+      "translated_at": "2026-06-12T23:04:10.835946Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/beku-bekida.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/dake-atte.md": {
+      "source_hash": "sha256:ab6d6a9a259348f479b1c34c5c4e97ec3bf83eecde2b25513bb1d942967a148f",
+      "translated_at": "2026-06-12T23:04:15.380073Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/dake-atte.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
