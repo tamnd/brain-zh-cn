@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T07:01:52.710228Z",
+  "last_run": "2026-06-12T08:50:15.052238Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -17966,6 +17966,86 @@
       "source_hash": "sha256:7c2d6f8aa7d65a4671d424d94967843e68e5fc1f79ce55d68df91fc3f792eeb5",
       "translated_at": "2026-06-12T07:01:52.710205Z",
       "dest_path": "content/languages/esperanto/cefr/c2/lessons/03-simultaneous-interpretation-practice.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c2/lessons/04-academic-research-in-esperanto.md": {
+      "source_hash": "sha256:7637fabf1f9168e53b8d21f10de5c9f60dae32be2e31b61a510b6817e5eed726",
+      "translated_at": "2026-06-12T08:49:31.853493Z",
+      "dest_path": "content/languages/esperanto/cefr/c2/lessons/04-academic-research-in-esperanto.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c2/lessons/05-the-esperanto-literary-canon.md": {
+      "source_hash": "sha256:b6332ce51e48634182aff82aeaf817e1ca79f4a6327aebfbdc6294eb8013e946",
+      "translated_at": "2026-06-12T08:49:37.625397Z",
+      "dest_path": "content/languages/esperanto/cefr/c2/lessons/05-the-esperanto-literary-canon.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c2/lessons/06-ker-c2-exam-preparation.md": {
+      "source_hash": "sha256:11e682e9a4ae16d4b2d86f77225f96f8c10be513329c30f6741440600afbc1fa",
+      "translated_at": "2026-06-12T08:49:44.638242Z",
+      "dest_path": "content/languages/esperanto/cefr/c2/lessons/06-ker-c2-exam-preparation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c2/lessons/07-contributing-to-the-esperanto-community.md": {
+      "source_hash": "sha256:73bcaad7074c36773682b04432e3d5c8603d8f3985c095dde3c48af005711c13",
+      "translated_at": "2026-06-12T08:49:51.074257Z",
+      "dest_path": "content/languages/esperanto/cefr/c2/lessons/07-contributing-to-the-esperanto-community.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/cefr/c2/lessons/08-c2-mastery-review.md": {
+      "source_hash": "sha256:f57eca8fc463e42ff354b06ef16faeb5f9a70aa07cf0eef00573e6f2a0d3b74b",
+      "translated_at": "2026-06-12T08:49:57.345287Z",
+      "dest_path": "content/languages/esperanto/cefr/c2/lessons/08-c2-mastery-review.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/methodology/common-mistakes.md": {
+      "source_hash": "sha256:f075efcf62181ae3e7daa9998e648043da8d369e263b3bcd323ea2c3933395b7",
+      "translated_at": "2026-06-12T08:50:04.049483Z",
+      "dest_path": "content/languages/esperanto/methodology/common-mistakes.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/methodology/immersion.md": {
+      "source_hash": "sha256:c1a823c14a16fdb00cd11248f1feaca041ec6675d3abed2a7479a894a7d29563",
+      "translated_at": "2026-06-12T08:50:06.862442Z",
+      "dest_path": "content/languages/esperanto/methodology/immersion.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/methodology/roadmap.md": {
+      "source_hash": "sha256:d5874cb791270e9121fdaa170fc60076966bcab54093f2e45c08f37f726f4006",
+      "translated_at": "2026-06-12T08:50:08.857556Z",
+      "dest_path": "content/languages/esperanto/methodology/roadmap.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/methodology/srs.md": {
+      "source_hash": "sha256:08e5d91fba9c63abcee78d272249efd2d509458db9811442b0287c1967b19aef",
+      "translated_at": "2026-06-12T08:50:11.352434Z",
+      "dest_path": "content/languages/esperanto/methodology/srs.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/esperanto/methodology/time-estimates.md": {
+      "source_hash": "sha256:72167dcf36bab5d3b7e1acad58ed8c869cf1a86aefce6464b4e0792b6652bedc",
+      "translated_at": "2026-06-12T08:50:15.052212Z",
+      "dest_path": "content/languages/esperanto/methodology/time-estimates.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
