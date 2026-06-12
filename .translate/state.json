@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T16:57:26.144035Z",
+  "last_run": "2026-06-12T17:47:57.175393Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -18526,6 +18526,86 @@
       "source_hash": "sha256:4a2bd2349953d2c22093263ca5001b2f6f5536c6f7eb3ba074a27a331f9898be",
       "translated_at": "2026-06-12T16:57:26.144012Z",
       "dest_path": "content/languages/japanese/jlpt/n1/grammar/beku.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/beshi-bekarazu.md": {
+      "source_hash": "sha256:0d659b733d6847033329b116a2e951ee0b769c2a68ce5bfe7357d0fc99259c0e",
+      "translated_at": "2026-06-12T17:47:21.474056Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/beshi-bekarazu.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/da-ni.md": {
+      "source_hash": "sha256:89b522fb3295751b711297dcd11888422ea34732278b38cf4d8b59bcdb8f386a",
+      "translated_at": "2026-06-12T17:47:24.838778Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/da-ni.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/dani.md": {
+      "source_hash": "sha256:bb15874bf42d658097ce9b63db8aa1884f48aec8bf06fe10256f9e3f032cc0e8",
+      "translated_at": "2026-06-12T17:47:28.458002Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/dani.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/de-are-de-are.md": {
+      "source_hash": "sha256:c74301a06c233bccc86351f0bcc13b5afa89edb5eab903675e78a1b088341973",
+      "translated_at": "2026-06-12T17:47:32.691688Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/de-are-de-are.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/ga-saigo.md": {
+      "source_hash": "sha256:7fd588e3297f83f6cc014e90710931b71578aba4c95fc92f2c6e4e0419507ff0",
+      "translated_at": "2026-06-12T17:47:38.006480Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/ga-saigo.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/gotoshi.md": {
+      "source_hash": "sha256:d0f4656fea554867ee8f3613faa97b7e3b0a71680314137f9678400e6a86df34",
+      "translated_at": "2026-06-12T17:47:41.224680Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/gotoshi.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/ikan-de-wa.md": {
+      "source_hash": "sha256:a7840de540acfd0ad31bdf5c7f41ff03034ee8edfbd15b846c6293cc7a6ada88",
+      "translated_at": "2026-06-12T17:47:45.522765Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/ikan-de-wa.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/ikan-ni-yorazu.md": {
+      "source_hash": "sha256:f322ddec9819ff98a667f639ae8c7931bb324bb2fa2553a30c9056c90f82d194",
+      "translated_at": "2026-06-12T17:47:50.011382Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/ikan-ni-yorazu.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/kagiri-da.md": {
+      "source_hash": "sha256:261df90a03bb304668ed72096f6e5fb09a20edaae4ac1f3d9482bf700796460f",
+      "translated_at": "2026-06-12T17:47:53.405793Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/kagiri-da.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/katawara.md": {
+      "source_hash": "sha256:3f776c45271ecfc59bfaa52be49cd0043b9c40be63f5acde5ea906e6cd469653",
+      "translated_at": "2026-06-12T17:47:57.175372Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/katawara.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
