@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-12T19:37:16.021424Z",
+  "last_run": "2026-06-12T20:42:50.687422Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -18766,6 +18766,86 @@
       "source_hash": "sha256:3159a7fc9e2d70b1acfed416027d84a5f09290ab38f015638ef11d58e1e1c743",
       "translated_at": "2026-06-12T19:37:16.021394Z",
       "dest_path": "content/languages/japanese/jlpt/n1/grammar/ni-mo-kakawarazu.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/ni-shite.md": {
+      "source_hash": "sha256:190fde992e4dd4ab8ed6567443211efee184815de7f742ca057c81c0c06aa298",
+      "translated_at": "2026-06-12T20:42:18.419940Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/ni-shite.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/ni-sokushite.md": {
+      "source_hash": "sha256:37ca08af8012cf016a2869301262ac2e9414a723f1c4f293b59393aaef64ebd3",
+      "translated_at": "2026-06-12T20:42:21.068409Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/ni-sokushite.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/ni-taru.md": {
+      "source_hash": "sha256:28494a22bd5644165d20e4b311b3249cc7126745db8f80c8fe0cf83b77e644b5",
+      "translated_at": "2026-06-12T20:42:24.662934Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/ni-taru.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/nomika.md": {
+      "source_hash": "sha256:daa189687585bdad5f539640b0e0db107f7e77ca9093953bc68afc4efde25526",
+      "translated_at": "2026-06-12T20:42:28.061487Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/nomika.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/sura.md": {
+      "source_hash": "sha256:895d9095bf3c9e311aeebb8e2fb4fd60d4ffb4114a608c15e711a9271e98fa0d",
+      "translated_at": "2026-06-12T20:42:31.022000Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/sura.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/taru.md": {
+      "source_hash": "sha256:3747fe3b93b29ba81857e2b0139a0f8d695457db6c2ec2b1658bfd950dfb0a14",
+      "translated_at": "2026-06-12T20:42:35.671288Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/taru.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/te-koso.md": {
+      "source_hash": "sha256:c930f15d2c39a96148d26c0a6815e5851a7a51557a89b5d5afa75a1760d490ae",
+      "translated_at": "2026-06-12T20:42:40.260857Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/te-koso.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/te-naranai.md": {
+      "source_hash": "sha256:8c761ddf3cc4ebd1a06914bcf4a15dc72b970607d71affc10247cda600b392b8",
+      "translated_at": "2026-06-12T20:42:43.620163Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/te-naranai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/to-areba.md": {
+      "source_hash": "sha256:b930daf9fe7c8f10c22d181d10f0e6a2ea15105d2c82c6e6991eea1626e18853",
+      "translated_at": "2026-06-12T20:42:47.177114Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/to-areba.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n1/grammar/to-atte.md": {
+      "source_hash": "sha256:d1d2c0e42c77bec2d9378d984499e1537e212f0c296d99d836f5d30d3fba153c",
+      "translated_at": "2026-06-12T20:42:50.687399Z",
+      "dest_path": "content/languages/japanese/jlpt/n1/grammar/to-atte.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
