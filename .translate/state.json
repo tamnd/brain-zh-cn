@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-13T16:27:53.563392Z",
+  "last_run": "2026-06-13T17:01:09.552667Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -20286,6 +20286,86 @@
       "source_hash": "sha256:80eeaa25feabf5a2e86ffbc96620164cbbfb7b1378d6c2dbf7e82e06cef75d95",
       "translated_at": "2026-06-13T16:27:53.563362Z",
       "dest_path": "content/languages/japanese/jlpt/n4/kanji/顔.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/kanji/風.md": {
+      "source_hash": "sha256:7d2732c59ee610ff0544218b9d270634dab5f4b67a5dd1d1aaaf17966981dfe3",
+      "translated_at": "2026-06-13T17:00:20.669450Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/kanji/風.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/kanji/館.md": {
+      "source_hash": "sha256:a9e9e9fa16ffaed2aa04683c7a2d39b2fb3b5811e77c52e936d6b032643525c4",
+      "translated_at": "2026-06-13T17:00:23.096643Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/kanji/館.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/kanji/首.md": {
+      "source_hash": "sha256:35cf907ef10ee2727c9072015b35e038c396149fdb7a38c2c6b9ee8688405c9f",
+      "translated_at": "2026-06-13T17:00:25.859005Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/kanji/首.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/lessons.md": {
+      "source_hash": "sha256:739b679786332783b8142314e1799fb8eb1ab3e1235590bab8a4b35d9b8a4831",
+      "translated_at": "2026-06-13T17:00:35.010317Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/lessons.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/lessons/01-plain-form-mastery.md": {
+      "source_hash": "sha256:c2d8080f03567c9b49a98bf45d1fc9e1bf294176e7ccc99c16b076cd085ebc12",
+      "translated_at": "2026-06-13T17:00:39.558076Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/lessons/01-plain-form-mastery.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/lessons/02-te-form-compound-actions.md": {
+      "source_hash": "sha256:af5fa714e85189667e82d9381fe01c08f7e4dd24446c269800c956fe2911090e",
+      "translated_at": "2026-06-13T17:00:46.119838Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/lessons/02-te-form-compound-actions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/lessons/03-giving-and-receiving.md": {
+      "source_hash": "sha256:1156927759508fe0cae19bf20c4b54de54dfa83f97a3468a5fe91d613b86d68d",
+      "translated_at": "2026-06-13T17:00:51.306705Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/lessons/03-giving-and-receiving.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/lessons/04-expressing-probability-and-inference.md": {
+      "source_hash": "sha256:9833d236a68d86b6c263ad9c61285f4780c911c95cecb2866f99891fb521992a",
+      "translated_at": "2026-06-13T17:00:58.044788Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/lessons/04-expressing-probability-and-inference.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/lessons/05-reported-speech.md": {
+      "source_hash": "sha256:a8d126d24d50f5f3a20c8393625adaeb48398ec36b7f1b77134afcc12aef6741",
+      "translated_at": "2026-06-13T17:01:03.401489Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/lessons/05-reported-speech.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/lessons/06-the-four-conditionals.md": {
+      "source_hash": "sha256:46970825399ab57722be30cbcec2ac62853b42cc86752e99db80d7571a23e7bc",
+      "translated_at": "2026-06-13T17:01:09.552639Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/lessons/06-the-four-conditionals.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
