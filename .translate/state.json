@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-13T20:05:40.083952Z",
+  "last_run": "2026-06-13T20:53:32.447982Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -20766,6 +20766,86 @@
       "source_hash": "sha256:46b8d3a2bb45cf327173d2de69dc9edd1913a287dc241b37870341cb910abdc6",
       "translated_at": "2026-06-13T20:05:40.083930Z",
       "dest_path": "content/languages/japanese/jlpt/n5/kanji/安.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/kanji/小.md": {
+      "source_hash": "sha256:4a4f0e994b2fb06e744e3be839171883cff3e1b87fc1527c41a58cb9781fe43b",
+      "translated_at": "2026-06-13T20:53:03.334995Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/kanji/小.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/kanji/山.md": {
+      "source_hash": "sha256:6dfac03f6ac51331279509675e7b62ca70e802f7f66dfa4931d9c27fef6d081c",
+      "translated_at": "2026-06-13T20:53:06.770067Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/kanji/山.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/kanji/川.md": {
+      "source_hash": "sha256:c8c3be0805a7a71d5e0d9430e501237b6866bd24c2a145668b015997ea4b2bc4",
+      "translated_at": "2026-06-13T20:53:11.360233Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/kanji/川.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/kanji/左.md": {
+      "source_hash": "sha256:e06c14e82e463475a249f69fff4ee6192da1ea2ca9f83489986d1093c757af46",
+      "translated_at": "2026-06-13T20:53:14.618620Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/kanji/左.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/kanji/年.md": {
+      "source_hash": "sha256:e664c27c869a8d9574cd76ad264b24c7055c54181babab6807367d57a877cf06",
+      "translated_at": "2026-06-13T20:53:17.002168Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/kanji/年.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/kanji/後.md": {
+      "source_hash": "sha256:88ce6dd2414b1f1ef6a8c31012e0d7228f3509afca80ca2493c2b851de2b43ae",
+      "translated_at": "2026-06-13T20:53:19.955828Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/kanji/後.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/kanji/新.md": {
+      "source_hash": "sha256:c45fd35e7a4b64e6355e2563289636dc7107fcecc2d0ff2c2267d27580e67e6f",
+      "translated_at": "2026-06-13T20:53:23.192381Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/kanji/新.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/kanji/日.md": {
+      "source_hash": "sha256:0c38fe6fdc7ab820a4924648e7168fb3a0537791d451017a7f9ae761f2abc2f7",
+      "translated_at": "2026-06-13T20:53:27.055770Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/kanji/日.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/kanji/明.md": {
+      "source_hash": "sha256:8abbb4b2a834116d0372246298cc25dbf369a0e3983d84ce0fc7297dc6c84873",
+      "translated_at": "2026-06-13T20:53:30.126819Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/kanji/明.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/kanji/昨.md": {
+      "source_hash": "sha256:b35d8dca35e20ffbe15d2e0753c93892c7aa6dafcf7b206c8d93f4c62b5187bb",
+      "translated_at": "2026-06-13T20:53:32.447958Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/kanji/昨.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
