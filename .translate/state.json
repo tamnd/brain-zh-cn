@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-13T09:36:42.834264Z",
+  "last_run": "2026-06-13T10:46:52.876434Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -19726,6 +19726,86 @@
       "source_hash": "sha256:5bcb5687aaeec76f7e964bcf2ea2abb19d560a8912a92a9628612cd33a8b3f03",
       "translated_at": "2026-06-13T09:36:42.834241Z",
       "dest_path": "content/languages/japanese/jlpt/n3/grammar/uchi-ni.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/uru-enai.md": {
+      "source_hash": "sha256:66a496765ac565d4ceb79d6852f3ef964eb4d90f229b9cf1ba90cbc83913e2bd",
+      "translated_at": "2026-06-13T10:45:55.794429Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/uru-enai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/wake-de-wa-nai.md": {
+      "source_hash": "sha256:c0855bdba68f2329681a78f8a44661efc816eb001c80e78832dd9cd862da2701",
+      "translated_at": "2026-06-13T10:45:59.262366Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/wake-de-wa-nai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/wake-ga-nai.md": {
+      "source_hash": "sha256:0788fc6f6bdb3bbcae2408ab2fd1478855eaa436bc09a699082a480431550dcc",
+      "translated_at": "2026-06-13T10:46:03.255669Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/wake-ga-nai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/wake-ni-wa-ikanai.md": {
+      "source_hash": "sha256:55d8b13ec50a5d66859bcd90e64f0b286c9ade8a085e51d5b8789e412f02ed72",
+      "translated_at": "2026-06-13T10:46:07.016884Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/wake-ni-wa-ikanai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/yasui-nikui.md": {
+      "source_hash": "sha256:39093da4543119f61b66384a3f361f357c3a3aa75cae04e57fe49d81a78281c8",
+      "translated_at": "2026-06-13T10:46:12.892246Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/yasui-nikui.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/you-ni-naru.md": {
+      "source_hash": "sha256:25e233fcae9125c5683b94b4aaa1e37043920eda25a1d5d566430141943dc5e7",
+      "translated_at": "2026-06-13T10:46:15.278299Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/you-ni-naru.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/you-ni-suru.md": {
+      "source_hash": "sha256:56715534fb67dc4b6fd6598505712e5b03110b5c3e60ee8a8238bcd0a0001bce",
+      "translated_at": "2026-06-13T10:46:19.634586Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/you-ni-suru.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/kanji.md": {
+      "source_hash": "sha256:cb169d0f1aa735ca2bbb3bc14f257ccf3ba33e7f5ff00e688604cc689b40edb7",
+      "translated_at": "2026-06-13T10:46:29.833411Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/kanji.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/lessons.md": {
+      "source_hash": "sha256:bdf5b160a07a3afe2a2ced31aad5612423ad47be04f7cb12f672271a743b8d42",
+      "translated_at": "2026-06-13T10:46:43.495143Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/lessons.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/lessons/01-formal-vs-informal-register.md": {
+      "source_hash": "sha256:03612d11874754384a01c461e2e954025b17c40c74f4a782471e6bb4bb105361",
+      "translated_at": "2026-06-13T10:46:52.876411Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/lessons/01-formal-vs-informal-register.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
