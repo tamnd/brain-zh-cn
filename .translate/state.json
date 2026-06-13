@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-13T08:07:09.808074Z",
+  "last_run": "2026-06-13T09:36:42.834264Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -19646,6 +19646,86 @@
       "source_hash": "sha256:4432b0ac1c7586f735bb9cff3e55734fd5982a30f21fffa071f8270ada306f78",
       "translated_at": "2026-06-13T08:07:09.808053Z",
       "dest_path": "content/languages/japanese/jlpt/n3/grammar/ni-tsurete.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/ni-yotte.md": {
+      "source_hash": "sha256:fa20c050aadb375342feff7a84909b71b198a295131ed32a72f115c1a3f90181",
+      "translated_at": "2026-06-13T09:36:10.511594Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/ni-yotte.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/sae-ba.md": {
+      "source_hash": "sha256:1de6a3d3cf5fadccd9b4ff575222122769c802e0ee4274d7e5ace6c000fb016b",
+      "translated_at": "2026-06-13T09:36:13.509580Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/sae-ba.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/shidai.md": {
+      "source_hash": "sha256:9d1c07d93be6de09a6930d5dc58678a573281940102379ac43c2147ed7c990df",
+      "translated_at": "2026-06-13T09:36:18.046617Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/shidai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/tabi-ni.md": {
+      "source_hash": "sha256:decf55a27191cc7d03931ce9829a7be7a02108c61c544bc5ccc491c5aca80583",
+      "translated_at": "2026-06-13T09:36:21.713754Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/tabi-ni.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/tame-ni.md": {
+      "source_hash": "sha256:7690828c24b037124347c5ccdeaf91dbf6cb3bd8b50090591a492c91fe786131",
+      "translated_at": "2026-06-13T09:36:26.874732Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/tame-ni.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/te-irai.md": {
+      "source_hash": "sha256:2f6598bdc34bcb902636a01fd1eb0bd98aade539885d1062b5b02e3c8e1312c2",
+      "translated_at": "2026-06-13T09:36:28.766394Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/te-irai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/to-tan-ni.md": {
+      "source_hash": "sha256:8bb7c870ac581fb9bdd1fcc0c3a1c5e7a43ec40512a8a39a160b85311ee4e316",
+      "translated_at": "2026-06-13T09:36:32.165594Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/to-tan-ni.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/to-tomo-ni.md": {
+      "source_hash": "sha256:75ab4bfa2235927402d3ccb2d0e4d5b017de26c77b040c96a04709b3223f3c5f",
+      "translated_at": "2026-06-13T09:36:35.976841Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/to-tomo-ni.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/toshite.md": {
+      "source_hash": "sha256:7e8361726a70436e3bf81a1a9c041c3ddb9aae7dfba3012cfd2c0d05210a5b4b",
+      "translated_at": "2026-06-13T09:36:39.382590Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/toshite.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/uchi-ni.md": {
+      "source_hash": "sha256:5bcb5687aaeec76f7e964bcf2ea2abb19d560a8912a92a9628612cd33a8b3f03",
+      "translated_at": "2026-06-13T09:36:42.834241Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/uchi-ni.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
