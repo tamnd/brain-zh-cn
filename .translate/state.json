@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-13T23:24:03.134658Z",
+  "last_run": "2026-06-13T23:51:46.436665Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -21246,6 +21246,86 @@
       "source_hash": "sha256:d7c0ffd9e97f339ab67b88cc414020ab207dfbdac8309948d83849db1f22520e",
       "translated_at": "2026-06-13T23:24:03.134635Z",
       "dest_path": "content/languages/japanese/jlpt/n5/lessons/03-numbers-time-and-dates.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/lessons/04-this-and-that-demonstratives.md": {
+      "source_hash": "sha256:b5334c1e047c15125b4a533ca3f1f9b0e19d70c7dca68d5d8a2a5bdee0f8334e",
+      "translated_at": "2026-06-13T23:50:24.020333Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/lessons/04-this-and-that-demonstratives.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/lessons/05-existence-and-location.md": {
+      "source_hash": "sha256:e3e12c1fa507f57c697551907039ab67bab215d39a9bbf6f22a58589650fb4d2",
+      "translated_at": "2026-06-13T23:50:31.805023Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/lessons/05-existence-and-location.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/lessons/06-daily-activities-and-verbs.md": {
+      "source_hash": "sha256:aa53f4f7c95d8602237df59df994085464b69c05318778903c4c261cce7164e1",
+      "translated_at": "2026-06-13T23:50:41.520746Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/lessons/06-daily-activities-and-verbs.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/lessons/07-shopping-and-money.md": {
+      "source_hash": "sha256:f9cdbf6f02ba9488ee8af5b28711293aefea50a61391a65047dfe55321042bb8",
+      "translated_at": "2026-06-13T23:50:46.922694Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/lessons/07-shopping-and-money.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/lessons/08-describing-with-adjectives.md": {
+      "source_hash": "sha256:e7812f54c8507482babd7177a8d07736f8e317b80e3c8cf73dd4db8170ff0a9a",
+      "translated_at": "2026-06-13T23:50:52.523820Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/lessons/08-describing-with-adjectives.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/lessons/09-past-tense-and-timeline.md": {
+      "source_hash": "sha256:aacf94c2c0cd9293f57e5c64f1eab8e417f952353159e7bb1c2bd4908c36c853",
+      "translated_at": "2026-06-13T23:51:02.268753Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/lessons/09-past-tense-and-timeline.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/lessons/10-wanting-and-planning.md": {
+      "source_hash": "sha256:ffb9bf2599778d958af51d3dfe4b4242be7ace164f1a5281df65db1bd9827eb4",
+      "translated_at": "2026-06-13T23:51:08.547299Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/lessons/10-wanting-and-planning.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/vocabulary.md": {
+      "source_hash": "sha256:2e552f15aac6f3e50413554bb096137059373cd42156a88f64bc3eddb6a80c7c",
+      "translated_at": "2026-06-13T23:51:36.735740Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/一.md": {
+      "source_hash": "sha256:076f013805f5263c811078d057bd695ca174d6b6f7581907ab8955c2fea5dea1",
+      "translated_at": "2026-06-13T23:51:41.804582Z",
+      "dest_path": "content/languages/japanese/kanji/一.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/七.md": {
+      "source_hash": "sha256:1ac6de2dd95182e5cd8aed91b39d6a023e204f036d678f98972720de344965bb",
+      "translated_at": "2026-06-13T23:51:46.436639Z",
+      "dest_path": "content/languages/japanese/kanji/七.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
