@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-13T02:18:51.882322Z",
+  "last_run": "2026-06-13T03:45:18.270193Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -19326,6 +19326,86 @@
       "source_hash": "sha256:9ebe7a3901146df4a3f6e85d0c05932478f1b3b73f784e80a7e049fc05c51d8f",
       "translated_at": "2026-06-13T02:18:51.882298Z",
       "dest_path": "content/languages/japanese/jlpt/n2/grammar/te-tamaranai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/to-ittemo.md": {
+      "source_hash": "sha256:f89bb2b2379d27feac0509dd43f095fd430e349306fbb1c16e0e30ba618fb090",
+      "translated_at": "2026-06-13T03:44:48.996117Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/to-ittemo.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/to-iu-yori.md": {
+      "source_hash": "sha256:b0b51bd55629f4385000e7e41309435dc8c945a0047a4ca826921788f76aec71",
+      "translated_at": "2026-06-13T03:44:52.808706Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/to-iu-yori.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/to-wa-kagiranai.md": {
+      "source_hash": "sha256:b2297dc472317035b71532b313cea24e4427e6cd8bd1b543f23325ec1049cd3e",
+      "translated_at": "2026-06-13T03:44:55.595346Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/to-wa-kagiranai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/u-eru.md": {
+      "source_hash": "sha256:0eaa78e84d70a8576857d68c59cac9afe9a9c291014e7b4527e2549a594b7306",
+      "translated_at": "2026-06-13T03:44:59.132001Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/u-eru.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/wa-motoyori.md": {
+      "source_hash": "sha256:f71d6d055e505305f239fcf619171a14c6fef4e4095cdbdf147791010a53134a",
+      "translated_at": "2026-06-13T03:45:02.674243Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/wa-motoyori.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/wake-dewa-nai.md": {
+      "source_hash": "sha256:359628bead7c6f3ace779be0574920825ce9ba09f6eaaed3139bd79f53da9827",
+      "translated_at": "2026-06-13T03:45:04.405259Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/wake-dewa-nai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/wake-ni-wa-ikanai.md": {
+      "source_hash": "sha256:e7904970ecf150dc2efe352c847ff44fc4da6ea4cec12fd889f6317809d61921",
+      "translated_at": "2026-06-13T03:45:06.913489Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/wake-ni-wa-ikanai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/wo-hajime.md": {
+      "source_hash": "sha256:983b33c0311a0fa56ea2c1612d7a06044cba5969a1740abd7d2b02b27228657b",
+      "translated_at": "2026-06-13T03:45:10.839192Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/wo-hajime.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/wo-tsujite.md": {
+      "source_hash": "sha256:f90d43b48841ef158e99ca7807aa6814097802c42084d2b26ceb0e1d3ea3e7ec",
+      "translated_at": "2026-06-13T03:45:15.217974Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/wo-tsujite.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/zaru-o-enai.md": {
+      "source_hash": "sha256:bc2c8e5cfbff7030546252c367099ef7bbfcce6b2c4fc8f522f111ad33e6017a",
+      "translated_at": "2026-06-13T03:45:18.270169Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/zaru-o-enai.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
