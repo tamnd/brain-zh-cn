@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-13T17:01:09.552667Z",
+  "last_run": "2026-06-13T17:39:19.330923Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -20366,6 +20366,86 @@
       "source_hash": "sha256:46970825399ab57722be30cbcec2ac62853b42cc86752e99db80d7571a23e7bc",
       "translated_at": "2026-06-13T17:01:09.552639Z",
       "dest_path": "content/languages/japanese/jlpt/n4/lessons/06-the-four-conditionals.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/lessons/07-passive-and-causative.md": {
+      "source_hash": "sha256:bc36879a2c47aa2db7d390f629f485b8124f2620d649d3a226d905641fea4a9a",
+      "translated_at": "2026-06-13T17:37:34.932928Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/lessons/07-passive-and-causative.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/lessons/08-purpose-and-reason-nuance-distinctions.md": {
+      "source_hash": "sha256:38226d4b314b79a6d317fbc3e4582fe598944ab5986a18f03f480bd9de189d4c",
+      "translated_at": "2026-06-13T17:37:44.271264Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/lessons/08-purpose-and-reason-nuance-distinctions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/lessons/09-noun-modification-advanced.md": {
+      "source_hash": "sha256:95858026319eded09b5332447d631a105a31a67569de7f68d8e45a30ebef802b",
+      "translated_at": "2026-06-13T17:37:54.790475Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/lessons/09-noun-modification-advanced.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/lessons/10-n4-capstone-integrated-review.md": {
+      "source_hash": "sha256:c8650935781f6fac3a4e02308232d436a84f3e5089213d1c766c5b4a2bbba00e",
+      "translated_at": "2026-06-13T17:38:04.671736Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/lessons/10-n4-capstone-integrated-review.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/vocabulary.md": {
+      "source_hash": "sha256:6bfe98afb05acdbce479253d024e227b8de7052f6a7760d3aab380c74faec6d2",
+      "translated_at": "2026-06-13T17:38:26.576170Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/exam-prep.md": {
+      "source_hash": "sha256:7fb265613bbc35c49b64cbddd20f0641a82fc378e3dbc6c4e1d4d166435f01ad",
+      "translated_at": "2026-06-13T17:38:39.561523Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/exam-prep.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/grammar.md": {
+      "source_hash": "sha256:a83186655dcccc978fcdc6dfaa43fc93744d5196415abbb1ccdcd42cabc42997",
+      "translated_at": "2026-06-13T17:39:00.930315Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/grammar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/kanji.md": {
+      "source_hash": "sha256:8ca3eb625f9153d66086509eab52a3733855570817a1f927a37d4b5672b727a2",
+      "translated_at": "2026-06-13T17:39:11.852879Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/kanji.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/kanji/一.md": {
+      "source_hash": "sha256:ab08288acd0fa9a40d4e5e234323c4fc3002ead8413bb50796147d1fb46498e7",
+      "translated_at": "2026-06-13T17:39:15.419265Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/kanji/一.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n5/kanji/七.md": {
+      "source_hash": "sha256:f34ac9a950daea493eeaec8e82a571a81de580fb0dcbb5d5052ae958c6f124b2",
+      "translated_at": "2026-06-13T17:39:19.330899Z",
+      "dest_path": "content/languages/japanese/jlpt/n5/kanji/七.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
