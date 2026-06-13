@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-13T05:30:22.656518Z",
+  "last_run": "2026-06-13T06:53:00.282033Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -19486,6 +19486,86 @@
       "source_hash": "sha256:35b0ec6112ba6fc6e81e305a4bc77fe6180d885a344504425573193a86372372",
       "translated_at": "2026-06-13T05:30:22.656497Z",
       "dest_path": "content/languages/japanese/jlpt/n2/lessons/06-possibility-obligation-formal.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/lessons/07-time-and-occasion-patterns.md": {
+      "source_hash": "sha256:70eadaf8ba75ed4bb3ad53935ccda9ea14f02135ab6a5f9b866f1efa76c166e3",
+      "translated_at": "2026-06-13T06:51:22.855516Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/lessons/07-time-and-occasion-patterns.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/lessons/08-stance-and-perspective.md": {
+      "source_hash": "sha256:1ef830713b4f08050070ea508507093de5d2391533b8266c1eb746aa698e56ae",
+      "translated_at": "2026-06-13T06:51:34.908140Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/lessons/08-stance-and-perspective.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/lessons/09-newspaper-reading-mastery.md": {
+      "source_hash": "sha256:ffd8a6272ee2b778b97833871be9f24c283b2186fee6bee3782ff4fd70d83ff7",
+      "translated_at": "2026-06-13T06:51:49.520936Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/lessons/09-newspaper-reading-mastery.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/lessons/10-n2-capstone-business-writing-and-mock-test.md": {
+      "source_hash": "sha256:661637a2539be34e9761d5a6ac78b7273ec13a2f6a86bf0e6e1a8dd6cd2d7797",
+      "translated_at": "2026-06-13T06:52:03.239007Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/lessons/10-n2-capstone-business-writing-and-mock-test.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/vocabulary.md": {
+      "source_hash": "sha256:e5e6bc8852f0f93c5c3fa84435cadfca9ef1102e20ba6a00d883caa212c56f76",
+      "translated_at": "2026-06-13T06:52:19.991367Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/vocabulary.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/exam-prep.md": {
+      "source_hash": "sha256:6de10996c69f4adf056886be3cd0e9648cecd0be690b9921345703606cb6b6dd",
+      "translated_at": "2026-06-13T06:52:30.893996Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/exam-prep.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar.md": {
+      "source_hash": "sha256:9a7804356d3a172390238d15b9b9c6c1d368677b031c594f74331c0898160cb7",
+      "translated_at": "2026-06-13T06:52:44.798304Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/bakari-de-naku.md": {
+      "source_hash": "sha256:7c7b4f8c8492d939cac65206d658b2b348f94f8219956a552da084a4e79f64cc",
+      "translated_at": "2026-06-13T06:52:52.681506Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/bakari-de-naku.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/dake-de-naku-mo.md": {
+      "source_hash": "sha256:c5dec1d866998efd5381386d54800ec82e00a3990c9e988174ace3313a9a4644",
+      "translated_at": "2026-06-13T06:52:56.600843Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/dake-de-naku-mo.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/grammar/dokoro-ka.md": {
+      "source_hash": "sha256:530ce883e94a8767d2ef2767f394b5d169496ad65c57c2f18875e6628dc030e7",
+      "translated_at": "2026-06-13T06:53:00.282009Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/grammar/dokoro-ka.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
