@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-13T03:45:18.270193Z",
+  "last_run": "2026-06-13T05:30:22.656518Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -19406,6 +19406,86 @@
       "source_hash": "sha256:bc2c8e5cfbff7030546252c367099ef7bbfcce6b2c4fc8f522f111ad33e6017a",
       "translated_at": "2026-06-13T03:45:18.270169Z",
       "dest_path": "content/languages/japanese/jlpt/n2/grammar/zaru-o-enai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/zaru-wo-enai.md": {
+      "source_hash": "sha256:e2c3179c99cd9ef97c0e04d26afb2b6cabccb1734bc1251d3d245af2bf183b68",
+      "translated_at": "2026-06-13T05:28:36.920745Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/zaru-wo-enai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/grammar/zu-ni-wa-irarenai.md": {
+      "source_hash": "sha256:39c9fa812a43a5b6d06c268799b6860cf72dd4333f5f69cdd98f29fc2c3bf288",
+      "translated_at": "2026-06-13T05:28:41.454928Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/grammar/zu-ni-wa-irarenai.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/kanji.md": {
+      "source_hash": "sha256:04d9f4ae671ab9cafa63e6bedaa3dd0054533b7e5fd0cd5d46f01290e6f0f3f2",
+      "translated_at": "2026-06-13T05:28:56.948366Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/kanji.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/lessons.md": {
+      "source_hash": "sha256:eb5fab50d7656102205eb9471908c842c741ab44de08bd5c552ec3e12eaf6ca6",
+      "translated_at": "2026-06-13T05:29:11.247643Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/lessons.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/lessons/01-written-japanese-vs-spoken.md": {
+      "source_hash": "sha256:0f0c2315c0aab0fba20f57e93726061d73fa446ccb7b03c735a3cec2341fa7ae",
+      "translated_at": "2026-06-13T05:29:42.760562Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/lessons/01-written-japanese-vs-spoken.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/lessons/02-formal-conjunction-mastery-i.md": {
+      "source_hash": "sha256:8f43a358d8e1c573682d1a9c44a50bfb9dec5fd304f64714255b598c5a18d48e",
+      "translated_at": "2026-06-13T05:29:50.413653Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/lessons/02-formal-conjunction-mastery-i.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/lessons/03-formal-conjunction-mastery-ii.md": {
+      "source_hash": "sha256:3900061d5a19fe4b4ffb0168ef2b08a418f15c6383e092e6d16b2709ae954f0f",
+      "translated_at": "2026-06-13T05:30:15.562132Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/lessons/03-formal-conjunction-mastery-ii.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/lessons/04-nuanced-negation.md": {
+      "source_hash": "sha256:baff659e6353cab6f6da32a3a0641ef53da9338fd73ad9c56be0e21746a000da",
+      "translated_at": "2026-06-13T05:30:22.564823Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/lessons/04-nuanced-negation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/lessons/05-emphasis-and-scope.md": {
+      "source_hash": "sha256:fc710ea33cc179bdb88e8f735f659618694c63c41cbb224d19423bc873ea8b83",
+      "translated_at": "2026-06-13T05:30:22.610221Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/lessons/05-emphasis-and-scope.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n2/lessons/06-possibility-obligation-formal.md": {
+      "source_hash": "sha256:35b0ec6112ba6fc6e81e305a4bc77fe6180d885a344504425573193a86372372",
+      "translated_at": "2026-06-13T05:30:22.656497Z",
+      "dest_path": "content/languages/japanese/jlpt/n2/lessons/06-possibility-obligation-formal.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
