@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-13T10:46:52.876434Z",
+  "last_run": "2026-06-13T11:36:57.584627Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -19806,6 +19806,86 @@
       "source_hash": "sha256:03612d11874754384a01c461e2e954025b17c40c74f4a782471e6bb4bb105361",
       "translated_at": "2026-06-13T10:46:52.876411Z",
       "dest_path": "content/languages/japanese/jlpt/n3/lessons/01-formal-vs-informal-register.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/lessons/02-causal-expressions-deep-dive.md": {
+      "source_hash": "sha256:15f9563b58ad4d13702dec0572edb49b14a629817160fad2ad555eb97b4a4da4",
+      "translated_at": "2026-06-13T11:35:18.873282Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/lessons/02-causal-expressions-deep-dive.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/lessons/03-complex-conjunctions-i-location-and-stance.md": {
+      "source_hash": "sha256:4a9c76c3d78a260f18d0892ca8537b7bc2502d55cc3b395524df337ea2925644",
+      "translated_at": "2026-06-13T11:35:29.286071Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/lessons/03-complex-conjunctions-i-location-and-stance.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/lessons/04-complex-conjunctions-ii-change-and-proportion.md": {
+      "source_hash": "sha256:12ab078d91ff4133cf10f07577cfb23ab5891c9951f738b2a8a99b500cafeeb9",
+      "translated_at": "2026-06-13T11:35:39.054496Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/lessons/04-complex-conjunctions-ii-change-and-proportion.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/lessons/05-advanced-conditionals-and-timing.md": {
+      "source_hash": "sha256:5fe5d0dac21a00f2e9967077cfc7002e0f1a7e8871ead76bbc508b14cfad7554",
+      "translated_at": "2026-06-13T11:35:49.311483Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/lessons/05-advanced-conditionals-and-timing.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/lessons/06-expressing-change-tendency-difficulty.md": {
+      "source_hash": "sha256:8b7cfa24d4ca8152067107e5a0d291a97a1d14d695436b9fe12edae04e68145d",
+      "translated_at": "2026-06-13T11:35:58.437966Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/lessons/06-expressing-change-tendency-difficulty.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/lessons/07-limits-scope-and-contrast.md": {
+      "source_hash": "sha256:9b801a36d3dd2a12495f3b65ecad2da0d1b6a3cbed14a3bc9f442e320561696b",
+      "translated_at": "2026-06-13T11:36:07.261277Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/lessons/07-limits-scope-and-contrast.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/lessons/08-workplace-and-formal-japanese.md": {
+      "source_hash": "sha256:bb52ca116f99bb7a60fe6c1c7ecaf3b17d865df857988898b002c8d9e34531cc",
+      "translated_at": "2026-06-13T11:36:15.894501Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/lessons/08-workplace-and-formal-japanese.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/lessons/09-reading-newspaper-japanese.md": {
+      "source_hash": "sha256:f5874f43fe5aaa916e466924a4aa532de7bce2507421f288388ee57e87ef7833",
+      "translated_at": "2026-06-13T11:36:28.347781Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/lessons/09-reading-newspaper-japanese.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/lessons/10-n3-capstone.md": {
+      "source_hash": "sha256:ae75bfaae0910e7d3e63dbf7aa3ac9c7aef9c3d0a6de40c8c52b11534210f1c1",
+      "translated_at": "2026-06-13T11:36:39.727209Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/lessons/10-n3-capstone.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n3/vocabulary.md": {
+      "source_hash": "sha256:7726131fe301b88bef486a9dc6849509d63336e96daab1f9280971412aa9054a",
+      "translated_at": "2026-06-13T11:36:57.584603Z",
+      "dest_path": "content/languages/japanese/jlpt/n3/vocabulary.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
