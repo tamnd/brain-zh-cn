@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-13T14:42:53.914042Z",
+  "last_run": "2026-06-13T15:32:04.420780Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -20126,6 +20126,86 @@
       "source_hash": "sha256:b847e81d8467300044acfa0b6bdd2b6d150cc25885723b1135421be7dbb78a96",
       "translated_at": "2026-06-13T14:42:53.914009Z",
       "dest_path": "content/languages/japanese/jlpt/n4/kanji/書.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/kanji/橋.md": {
+      "source_hash": "sha256:11455cbfed4b5a5c68f3bf5b6ba83a02b0ce5a597da4dcaac988aeeae322728f",
+      "translated_at": "2026-06-13T15:31:39.038859Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/kanji/橋.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/kanji/番.md": {
+      "source_hash": "sha256:cfd31498cf1d79930f0aace6758dda9d7e3897c1cdcbba624a5c2643b9b9b420",
+      "translated_at": "2026-06-13T15:31:42.335899Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/kanji/番.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/kanji/病.md": {
+      "source_hash": "sha256:600aa71c9057dc3a3e4c99f97e14854288cb1d7aa5528ef959e0c40ba20bbcdb",
+      "translated_at": "2026-06-13T15:31:46.523943Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/kanji/病.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/kanji/社.md": {
+      "source_hash": "sha256:df4444a4daa9852ec0a1ff24d83d65d9a8d051e09ae70bae4ec53a6b961762eb",
+      "translated_at": "2026-06-13T15:31:49.277810Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/kanji/社.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/kanji/秋.md": {
+      "source_hash": "sha256:5824bd64c79b327bb176d010405d89ffd2913e116ed03a5ced5493b37a72784d",
+      "translated_at": "2026-06-13T15:31:52.296533Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/kanji/秋.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/kanji/練.md": {
+      "source_hash": "sha256:a64fa07c883d1183dd87ce9bcb5f57611f2d89e4748051b3032e7f391629ffb1",
+      "translated_at": "2026-06-13T15:31:54.986872Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/kanji/練.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/kanji/習.md": {
+      "source_hash": "sha256:017f159a20a24595b9b644762d20183fab71ae19169a5b8db20b5038fca26122",
+      "translated_at": "2026-06-13T15:31:57.472964Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/kanji/習.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/kanji/者.md": {
+      "source_hash": "sha256:9f13940a955affe0018ff5b124a5f7b4425e1d84a198c4571e1b72dbda7e92e0",
+      "translated_at": "2026-06-13T15:31:59.368207Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/kanji/者.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/kanji/肩.md": {
+      "source_hash": "sha256:e51cfa24d100151045842f9534c2ccd9af18513c51491cf1eeb3ac6ca49f9bc5",
+      "translated_at": "2026-06-13T15:32:02.123973Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/kanji/肩.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/jlpt/n4/kanji/薬.md": {
+      "source_hash": "sha256:1b242d2d56724a27a810405e8b2d41c3e383b064ef0a315372b20b332d77d885",
+      "translated_at": "2026-06-13T15:32:04.420756Z",
+      "dest_path": "content/languages/japanese/jlpt/n4/kanji/薬.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
