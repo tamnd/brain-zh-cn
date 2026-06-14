@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T12:11:42.445912Z",
+  "last_run": "2026-06-14T13:06:47.089695Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -22046,6 +22046,86 @@
       "source_hash": "sha256:69a656d1fe824382465e62d9097dc98b3886e436e44b78bac55cbd2fa5dcde27",
       "translated_at": "2026-06-14T12:11:42.445891Z",
       "dest_path": "content/languages/japanese/kanji/青.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/食.md": {
+      "source_hash": "sha256:ea71b772ab2023eae393f872a87ecceaa671c4fe7f9c70784b14f75bd8273895",
+      "translated_at": "2026-06-14T13:05:49.395016Z",
+      "dest_path": "content/languages/japanese/kanji/食.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/飲.md": {
+      "source_hash": "sha256:2b8a4a7951e504df91814e6b007547d3834887ad2dd82b9e6aee81b68833c91e",
+      "translated_at": "2026-06-14T13:05:55.415873Z",
+      "dest_path": "content/languages/japanese/kanji/飲.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/駅.md": {
+      "source_hash": "sha256:52373ff5a0f17aaea319323d02cfdda4bc00808c119be169b5e0ee7d88b58090",
+      "translated_at": "2026-06-14T13:06:00.191117Z",
+      "dest_path": "content/languages/japanese/kanji/駅.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/高.md": {
+      "source_hash": "sha256:1c5828aa2663b57f9c99ce6edd7d40548c6d7df536b77cb0f426e94e73d41136",
+      "translated_at": "2026-06-14T13:06:05.057118Z",
+      "dest_path": "content/languages/japanese/kanji/高.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/魚.md": {
+      "source_hash": "sha256:994506c2a73d042f041921f6dd24b82dedd6c4a3a33d1fc0671507ae0734617b",
+      "translated_at": "2026-06-14T13:06:09.014918Z",
+      "dest_path": "content/languages/japanese/kanji/魚.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/methodology/roadmap.md": {
+      "source_hash": "sha256:0c976235dbcee25f9ec218c32ceccb98f96f820c9381ac609cc68809dff1afda",
+      "translated_at": "2026-06-14T13:06:14.986668Z",
+      "dest_path": "content/languages/japanese/methodology/roadmap.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/skills/kanji/grade-levels.md": {
+      "source_hash": "sha256:44aeb78f47dd7998e4c9ec906f94de5544a622c20c9aacd82995f7238b8bb966",
+      "translated_at": "2026-06-14T13:06:28.206456Z",
+      "dest_path": "content/languages/japanese/skills/kanji/grade-levels.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/skills/kanji/radicals.md": {
+      "source_hash": "sha256:7ebe7d4f37d1d5eb0ffc4ee20cf91e4a079cdb115f32e68c98b9819a2232694c",
+      "translated_at": "2026-06-14T13:06:34.927987Z",
+      "dest_path": "content/languages/japanese/skills/kanji/radicals.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/skills/kanji/readings.md": {
+      "source_hash": "sha256:6e0ff2daf786afb822d77176de18f63cf55bb51381366b6f57aca67f92718b43",
+      "translated_at": "2026-06-14T13:06:40.975067Z",
+      "dest_path": "content/languages/japanese/skills/kanji/readings.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/body.md": {
+      "source_hash": "sha256:7fe9c21ee37c0ccc0a143b84258e75955f9f86ea070a88c6cb4d24720a028c75",
+      "translated_at": "2026-06-14T13:06:47.089673Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/body.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
