@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T15:13:10.122319Z",
+  "last_run": "2026-06-14T16:01:49.238453Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -22286,6 +22286,86 @@
       "source_hash": "sha256:5f80ba2a54ad4bc5719f24df6d738aa92a020879db46af5fca2982ad49f6126f",
       "translated_at": "2026-06-14T15:13:10.122292Z",
       "dest_path": "content/languages/japanese/vocabulary/ずっと.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/それから.md": {
+      "source_hash": "sha256:c5da8c73279758bdb84bac5e5e97af9a79146075d743d25597e33bfae5d86e06",
+      "translated_at": "2026-06-14T16:01:23.752952Z",
+      "dest_path": "content/languages/japanese/vocabulary/それから.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/だから.md": {
+      "source_hash": "sha256:1bf0d0f09f6a2c690bfa9c848bc33313209dfa432e6f42b15eadfade99f1258e",
+      "translated_at": "2026-06-14T16:01:26.207235Z",
+      "dest_path": "content/languages/japanese/vocabulary/だから.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/だんだん.md": {
+      "source_hash": "sha256:b1bb1d34035cbc07cfd02701c4c3b749954878f1de837b0c75bd738d6b25a9d4",
+      "translated_at": "2026-06-14T16:01:29.172178Z",
+      "dest_path": "content/languages/japanese/vocabulary/だんだん.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/なかなか.md": {
+      "source_hash": "sha256:915aba663b0054dcc55c08cb2faa5d953e14c93e96010243c304936dfa154178",
+      "translated_at": "2026-06-14T16:01:31.388513Z",
+      "dest_path": "content/languages/japanese/vocabulary/なかなか.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/はっきり.md": {
+      "source_hash": "sha256:7df57a29bd7e432defde4b4a5fb8e6a30688267dfa063f2540837fede45f5e41",
+      "translated_at": "2026-06-14T16:01:34.261963Z",
+      "dest_path": "content/languages/japanese/vocabulary/はっきり.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/やっと.md": {
+      "source_hash": "sha256:86b0eaea0f8697b09cb1332d717e5bf6ec46d644140c0e376850eb993f20e015",
+      "translated_at": "2026-06-14T16:01:37.464998Z",
+      "dest_path": "content/languages/japanese/vocabulary/やっと.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/伝える.md": {
+      "source_hash": "sha256:c7718db12a22412c59e9880ac2f49343eaf0ce7e41fc3dd0491fe97561a8af7c",
+      "translated_at": "2026-06-14T16:01:40.696393Z",
+      "dest_path": "content/languages/japanese/vocabulary/伝える.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/全然.md": {
+      "source_hash": "sha256:e1e43a3c376bae4e4472300f8b8088aea131ed6f68e5e3020e4536014e38de68",
+      "translated_at": "2026-06-14T16:01:43.592140Z",
+      "dest_path": "content/languages/japanese/vocabulary/全然.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/変える.md": {
+      "source_hash": "sha256:c9cee190ceff91df822985aed0f83c314836f368826323c3318752bff25b4da9",
+      "translated_at": "2026-06-14T16:01:46.427492Z",
+      "dest_path": "content/languages/japanese/vocabulary/変える.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/安全な.md": {
+      "source_hash": "sha256:db3da9abfc5e1cc2d53cea267b9fd9a63f58eaf480ed6d10bfb62d2a448367b0",
+      "translated_at": "2026-06-14T16:01:49.238427Z",
+      "dest_path": "content/languages/japanese/vocabulary/安全な.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
