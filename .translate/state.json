@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T22:53:14.698812Z",
+  "last_run": "2026-06-14T23:26:45.130669Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -23246,6 +23246,86 @@
       "source_hash": "sha256:363a64e064322722724e42320f94ca36e0898ed5903e2938b40ce5d816cc2c0b",
       "translated_at": "2026-06-14T22:53:14.698786Z",
       "dest_path": "content/languages/sindarin/levels/beginner.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/levels/intermediate.md": {
+      "source_hash": "sha256:83026d2f5199e377219727622d09fca665bf371d992f9637296faa14637d830c",
+      "translated_at": "2026-06-14T23:26:00.144914Z",
+      "dest_path": "content/languages/sindarin/levels/intermediate.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/resources/books.md": {
+      "source_hash": "sha256:c7ca5ef9e82a8f314c9ca3b7ee29eba844a751c3c6260725713e8395ac2db460",
+      "translated_at": "2026-06-14T23:26:05.938601Z",
+      "dest_path": "content/languages/sindarin/resources/books.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/resources/communities.md": {
+      "source_hash": "sha256:f7b2b27f7de70e91e7b70dd0a697eb9a961ec3a2035fd52056842e35dee493e4",
+      "translated_at": "2026-06-14T23:26:11.935564Z",
+      "dest_path": "content/languages/sindarin/resources/communities.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/resources/courses.md": {
+      "source_hash": "sha256:d6821aa7c0d987d3b62e2e40289451000b544e48045354ada8ffbbfcbf9f37bf",
+      "translated_at": "2026-06-14T23:26:16.663399Z",
+      "dest_path": "content/languages/sindarin/resources/courses.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/resources/dictionaries.md": {
+      "source_hash": "sha256:1632df28fde21b0ed7d839a748fa2746c112bece842ff927c81295fc5d5225aa",
+      "translated_at": "2026-06-14T23:26:21.184072Z",
+      "dest_path": "content/languages/sindarin/resources/dictionaries.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/resources/websites.md": {
+      "source_hash": "sha256:c2b34750639282506d0d685f821e167205eed11f5c469a680823200cdf5ca641",
+      "translated_at": "2026-06-14T23:26:24.942904Z",
+      "dest_path": "content/languages/sindarin/resources/websites.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/vocabulary/attested.md": {
+      "source_hash": "sha256:4e176947a058e129ad5323b3182c2d52a4bc27160ece6541467a4865a0f74ac9",
+      "translated_at": "2026-06-14T23:26:31.069361Z",
+      "dest_path": "content/languages/sindarin/vocabulary/attested.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/vocabulary/thematic/actions.md": {
+      "source_hash": "sha256:f544a30af08d9999df7dd668fc2cc84f10f7da740ff02ad92d1b6f9f2d9c3d8a",
+      "translated_at": "2026-06-14T23:26:35.052687Z",
+      "dest_path": "content/languages/sindarin/vocabulary/thematic/actions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/vocabulary/thematic/colors.md": {
+      "source_hash": "sha256:85a62d9474456fe5118859092ec62ea940e31d42f627ecb4f52c48cc8336e8a9",
+      "translated_at": "2026-06-14T23:26:39.864597Z",
+      "dest_path": "content/languages/sindarin/vocabulary/thematic/colors.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/vocabulary/thematic/food.md": {
+      "source_hash": "sha256:73c74f7d794ffedf32344e58cc0324780606a51ecbd1b7634553cae122d529cc",
+      "translated_at": "2026-06-14T23:26:45.130646Z",
+      "dest_path": "content/languages/sindarin/vocabulary/thematic/food.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
