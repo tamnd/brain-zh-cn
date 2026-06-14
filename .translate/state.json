@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T21:27:58.378133Z",
+  "last_run": "2026-06-14T21:56:50.131703Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -23006,6 +23006,86 @@
       "source_hash": "sha256:95da0ae0772fb4b7b820b88f796fc4b746cca17f95257840c219c13bf55fe895",
       "translated_at": "2026-06-14T21:27:58.378111Z",
       "dest_path": "content/languages/sindarin/lessons/23-dual-forms.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/24-complex-sentences.md": {
+      "source_hash": "sha256:19b42c539e89eb857318e76b36e52f964113f025eae5bbd6344ad58fc6ac7f8b",
+      "translated_at": "2026-06-14T21:55:56.209602Z",
+      "dest_path": "content/languages/sindarin/lessons/24-complex-sentences.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/25-negation.md": {
+      "source_hash": "sha256:948a0a2eceed3aefd4e01bf3d79e0045a12329afcb1e59056736162cd176e3fd",
+      "translated_at": "2026-06-14T21:56:01.666391Z",
+      "dest_path": "content/languages/sindarin/lessons/25-negation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/26-verb-to-be.md": {
+      "source_hash": "sha256:05696e0a54908e9f5a9e4a5e82ac18fa1c12c1364425df490895011f5cdbf425",
+      "translated_at": "2026-06-14T21:56:06.948135Z",
+      "dest_path": "content/languages/sindarin/lessons/26-verb-to-be.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/27-relative-uncertainty.md": {
+      "source_hash": "sha256:43946336d25cd72755ba50efa05eb0d7f2029eeee2c81ec176ba1dfffb0adcf2",
+      "translated_at": "2026-06-14T21:56:13.141667Z",
+      "dest_path": "content/languages/sindarin/lessons/27-relative-uncertainty.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/28-timekeeping.md": {
+      "source_hash": "sha256:49fabb738d785db750ebef56deed13f0d0b493114502d46bf9e19c17e240e458",
+      "translated_at": "2026-06-14T21:56:19.076770Z",
+      "dest_path": "content/languages/sindarin/lessons/28-timekeeping.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/29-numbers.md": {
+      "source_hash": "sha256:01be5d045f76052c853fe84e5861189e1c181ccd16a78c4b03c8c11b826273f3",
+      "translated_at": "2026-06-14T21:56:26.511331Z",
+      "dest_path": "content/languages/sindarin/lessons/29-numbers.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/30-mixed-mutation.md": {
+      "source_hash": "sha256:2d8d639def7e67d93de8d615de00797702772e290991a96210b8f97b74645801",
+      "translated_at": "2026-06-14T21:56:33.263120Z",
+      "dest_path": "content/languages/sindarin/lessons/30-mixed-mutation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/31-class-plurals.md": {
+      "source_hash": "sha256:bc1a3661fbddad33cd9c1ca916e1e18d27bdf698046d3fbfc1ae85aec865613b",
+      "translated_at": "2026-06-14T21:56:38.353126Z",
+      "dest_path": "content/languages/sindarin/lessons/31-class-plurals.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/32-possessive-diminutive-suffixes.md": {
+      "source_hash": "sha256:652c52f6b78459e051748ae36c2c2c4670ae5d31c27b3f497c148709a40edf46",
+      "translated_at": "2026-06-14T21:56:43.726936Z",
+      "dest_path": "content/languages/sindarin/lessons/32-possessive-diminutive-suffixes.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/33-comparatives-superlatives.md": {
+      "source_hash": "sha256:c197f7e1f67233a40c28a84c27fc42cdc7cad0d9357b2088c03a1284af101a6c",
+      "translated_at": "2026-06-14T21:56:50.131678Z",
+      "dest_path": "content/languages/sindarin/lessons/33-comparatives-superlatives.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
