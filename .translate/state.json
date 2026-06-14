@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T18:55:33.147342Z",
+  "last_run": "2026-06-14T19:31:44.070905Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -22686,6 +22686,86 @@
       "source_hash": "sha256:e556672b24bf635587d0cea9398f4bf538a9905da3ee8299cb1f624160a0ca61",
       "translated_at": "2026-06-14T18:55:33.147316Z",
       "dest_path": "content/languages/latin/levels/novice/lesson-12.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-13.md": {
+      "source_hash": "sha256:320ab4ee7d9b19e8066a78e4fdeb489ce44f3c2105721377f7af4ac8e8af6312",
+      "translated_at": "2026-06-14T19:30:18.235065Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-13.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-14.md": {
+      "source_hash": "sha256:eb86bb37136c932d08e74c92bb7513e51044f293b1531486b084be5f47c7d1f8",
+      "translated_at": "2026-06-14T19:30:22.744267Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-14.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-15.md": {
+      "source_hash": "sha256:5a28f7a5dadbcf580ca86eaef3d7e47be3a43f9f906b1f2db586939fd5705800",
+      "translated_at": "2026-06-14T19:30:27.777425Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-15.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-16.md": {
+      "source_hash": "sha256:52b501d221a7db190577ecfe15547a1f9fcbcd284fe3af32fa4040da2192be3d",
+      "translated_at": "2026-06-14T19:30:32.754402Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-16.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-17.md": {
+      "source_hash": "sha256:0eac50bf0664deb87d8c2bbe539b31c86c61b89427ac205486994a333d863564",
+      "translated_at": "2026-06-14T19:30:40.955810Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-17.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-18.md": {
+      "source_hash": "sha256:14af42b237f7fe860a1a50816b812e85b16682827493b120867a7fba8e8dd339",
+      "translated_at": "2026-06-14T19:30:47.126543Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-18.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-19.md": {
+      "source_hash": "sha256:a85980de540046006ba2cae905ec50fa6983245595179ffbf1c61ab73b858630",
+      "translated_at": "2026-06-14T19:30:54.196952Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-19.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-20.md": {
+      "source_hash": "sha256:b732ec8e814fb867372b55faf9dfb315afe9e82af89f3d1e3e45ae939f5d32bc",
+      "translated_at": "2026-06-14T19:31:00.668034Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-20.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/vocabulary/dcc/band1.md": {
+      "source_hash": "sha256:2ea678ea5620e0708a81ef85ce543b3cead15a9ecd5ca0ba6c15f21363cc8d16",
+      "translated_at": "2026-06-14T19:31:17.405520Z",
+      "dest_path": "content/languages/latin/vocabulary/dcc/band1.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/vocabulary/dcc/band2.md": {
+      "source_hash": "sha256:64161e77ac1bfa76541dbea51b1d685681d0ce0dbe53f0a6b708be16fb6b974d",
+      "translated_at": "2026-06-14T19:31:44.070878Z",
+      "dest_path": "content/languages/latin/vocabulary/dcc/band2.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
