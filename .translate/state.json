@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T23:26:45.130669Z",
+  "last_run": "2026-06-14T23:53:22.226891Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -23326,6 +23326,86 @@
       "source_hash": "sha256:73c74f7d794ffedf32344e58cc0324780606a51ecbd1b7634553cae122d529cc",
       "translated_at": "2026-06-14T23:26:45.130646Z",
       "dest_path": "content/languages/sindarin/vocabulary/thematic/food.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/vocabulary/thematic/greetings.md": {
+      "source_hash": "sha256:0a320b6ec09fcae90c5e7a480dbce11b79450bddf82199aadc6dfac99333366e",
+      "translated_at": "2026-06-14T23:52:23.189548Z",
+      "dest_path": "content/languages/sindarin/vocabulary/thematic/greetings.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/vocabulary/thematic/nature.md": {
+      "source_hash": "sha256:48a7c9b735c5c2b3f084eac061235002b5c11d405aa03dc20951b58279bec00b",
+      "translated_at": "2026-06-14T23:52:27.191603Z",
+      "dest_path": "content/languages/sindarin/vocabulary/thematic/nature.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/vocabulary/thematic/numbers.md": {
+      "source_hash": "sha256:ac4a2c506ae878a06fc7bcd43a8a1a35e8313a5d3dcf5f15574cc2e92497eebb",
+      "translated_at": "2026-06-14T23:52:34.936628Z",
+      "dest_path": "content/languages/sindarin/vocabulary/thematic/numbers.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/vocabulary/thematic/people.md": {
+      "source_hash": "sha256:29c734cc4c6f1b12f4784c666136184985b122f7693c4c04b830efbe04bdaf11",
+      "translated_at": "2026-06-14T23:52:42.105349Z",
+      "dest_path": "content/languages/sindarin/vocabulary/thematic/people.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/vocabulary/thematic/places.md": {
+      "source_hash": "sha256:050ddace11e1fa47a2631403bc2df08fdbaea5ee1f7c1dfab8fa312703feab3d",
+      "translated_at": "2026-06-14T23:52:47.142027Z",
+      "dest_path": "content/languages/sindarin/vocabulary/thematic/places.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/vocabulary/thematic/time.md": {
+      "source_hash": "sha256:9a2d0f6a37250adbc0d8b6924c28b28a9cccfa81c746ccbafb9fb5a3f29fc2be",
+      "translated_at": "2026-06-14T23:52:52.207919Z",
+      "dest_path": "content/languages/sindarin/vocabulary/thematic/time.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/writing/cirth.md": {
+      "source_hash": "sha256:d807ad105752eb8bfb83275765d50c243eff689806c7e38e8244c08b4445ce1b",
+      "translated_at": "2026-06-14T23:52:57.787561Z",
+      "dest_path": "content/languages/sindarin/writing/cirth.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/writing/tengwar.md": {
+      "source_hash": "sha256:4eb5d4af391e23144d5ea960cbff3558019d5ad06fb333ffb7e506fd137cd2cd",
+      "translated_at": "2026-06-14T23:53:03.878010Z",
+      "dest_path": "content/languages/sindarin/writing/tengwar.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/maths/00/00.md": {
+      "source_hash": "sha256:d29dea80f505a55264e27f6ec975a2f5eab3b923372d7145bc0c47704b2334cc",
+      "translated_at": "2026-06-14T23:53:07.384620Z",
+      "dest_path": "content/maths/00/00.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/maths/00/01.1.md": {
+      "source_hash": "sha256:eac0b627d0fa3f81795bfb0c6b95d6ffbebcdb30c20cf5d8c1c2cf8ffe4fa35f",
+      "translated_at": "2026-06-14T23:53:22.226869Z",
+      "dest_path": "content/maths/00/01.1.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
