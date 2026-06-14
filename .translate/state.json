@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T14:14:55.355642Z",
+  "last_run": "2026-06-14T15:13:10.122319Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -22206,6 +22206,86 @@
       "source_hash": "sha256:a394a6804066695b1efaa92bdb0faf3343651e8e8e1258b5ad7436d9251d22d0",
       "translated_at": "2026-06-14T14:14:55.355619Z",
       "dest_path": "content/languages/japanese/vocabulary/thematic/school.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/shopping.md": {
+      "source_hash": "sha256:c9303f43b33ceb3c423635bf26156790e5d9c2b18e25a950f5dcb5194698bdaf",
+      "translated_at": "2026-06-14T15:12:41.512250Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/shopping.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/technology.md": {
+      "source_hash": "sha256:4dac97a715decc79035f83ad4fcd787ca5f8dd7881226ad7a79eb35984bbb36d",
+      "translated_at": "2026-06-14T15:12:45.560394Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/technology.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/time.md": {
+      "source_hash": "sha256:f1c242d85095e5bf708364d4d2d20f477d0e182dd6d7df4763a3e26cb7f9ab9a",
+      "translated_at": "2026-06-14T15:12:48.961799Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/time.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/transportation.md": {
+      "source_hash": "sha256:e28e0a1000a3118d2311f40d268d2e955d8d159e4a76e1f969c493f5dc870d64",
+      "translated_at": "2026-06-14T15:12:51.872745Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/transportation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/travel.md": {
+      "source_hash": "sha256:a7f6f7449a3d48730f629fd8446fdb665a2e43364362e4900148baea8c49c3cf",
+      "translated_at": "2026-06-14T15:12:57.433349Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/travel.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/weather.md": {
+      "source_hash": "sha256:90d93ea1e6e8e4c0d0856b08a156088d69b5ea815fbb2dd42807cbf7e2d1d530",
+      "translated_at": "2026-06-14T15:12:57.482660Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/weather.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/work.md": {
+      "source_hash": "sha256:634a037563be2703529f72ed853ba379ff452b0f7015d00ad5ab7a58feaaf27b",
+      "translated_at": "2026-06-14T15:13:01.929334Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/work.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/あまり.md": {
+      "source_hash": "sha256:2af0ac35bae7f1ef40b23bc91e9a07b07b8e26e80aedf8cae12b993591fdd9f9",
+      "translated_at": "2026-06-14T15:13:05.564423Z",
+      "dest_path": "content/languages/japanese/vocabulary/あまり.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/しかし.md": {
+      "source_hash": "sha256:5a124c734cc08fcb15401cea55519fa5497668887ed03242875b37371dfe5c5d",
+      "translated_at": "2026-06-14T15:13:08.013490Z",
+      "dest_path": "content/languages/japanese/vocabulary/しかし.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/ずっと.md": {
+      "source_hash": "sha256:5f80ba2a54ad4bc5719f24df6d738aa92a020879db46af5fca2982ad49f6126f",
+      "translated_at": "2026-06-14T15:13:10.122292Z",
+      "dest_path": "content/languages/japanese/vocabulary/ずっと.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
