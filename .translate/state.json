@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T05:07:47.563480Z",
+  "last_run": "2026-06-14T07:02:59.551509Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -21646,6 +21646,86 @@
       "source_hash": "sha256:a7f71dacab13f7e5e31e79f800c3cb2b93176c1c146b939730e66e123b6b70bf",
       "translated_at": "2026-06-14T05:07:47.563455Z",
       "dest_path": "content/languages/japanese/kanji/山.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/川.md": {
+      "source_hash": "sha256:ae46388b26bd6d6f16f4a90cb05006c2fbe90b9908df2a2f3cedbaac76b2f5a8",
+      "translated_at": "2026-06-14T07:02:34.793489Z",
+      "dest_path": "content/languages/japanese/kanji/川.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/左.md": {
+      "source_hash": "sha256:c9b14dd579aaf36c47d48ac4c43a385b712b8923cbe28034169b195673f6c23c",
+      "translated_at": "2026-06-14T07:02:36.865714Z",
+      "dest_path": "content/languages/japanese/kanji/左.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/市.md": {
+      "source_hash": "sha256:7f06d80d634a3f434aa0e620ba6eca691945387d3e03bce6b4013902948efab4",
+      "translated_at": "2026-06-14T07:02:39.266253Z",
+      "dest_path": "content/languages/japanese/kanji/市.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/年.md": {
+      "source_hash": "sha256:8ae4b60fa91e7f930798015f3538997d7c72aa7f219c81e7b5d972d02b5606b4",
+      "translated_at": "2026-06-14T07:02:41.719011Z",
+      "dest_path": "content/languages/japanese/kanji/年.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/店.md": {
+      "source_hash": "sha256:a691f18461630372b3acffb7c55a03b6d5f32340105e9f6c6caf2274ad57f1ec",
+      "translated_at": "2026-06-14T07:02:44.956903Z",
+      "dest_path": "content/languages/japanese/kanji/店.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/後.md": {
+      "source_hash": "sha256:8ea6b7230e22a1e90f09fbfdb1a01e1b6c26effea1af1078726da0c4fcd51aee",
+      "translated_at": "2026-06-14T07:02:47.628546Z",
+      "dest_path": "content/languages/japanese/kanji/後.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/手.md": {
+      "source_hash": "sha256:c7c3839183fe38b16281e75bf42d29dd323f2a9d3d591dab58662cf73a3efa3f",
+      "translated_at": "2026-06-14T07:02:50.467926Z",
+      "dest_path": "content/languages/japanese/kanji/手.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/新.md": {
+      "source_hash": "sha256:2049970a69f860c0cef6c4697d7e4acd6bafa21c0a9e9d16eb14a07f3a609e4b",
+      "translated_at": "2026-06-14T07:02:53.493539Z",
+      "dest_path": "content/languages/japanese/kanji/新.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/日.md": {
+      "source_hash": "sha256:a95a457d7b8a56f50eb33bc129ad00919e94dfdf434cb34c1156281f12e2ac08",
+      "translated_at": "2026-06-14T07:02:56.557793Z",
+      "dest_path": "content/languages/japanese/kanji/日.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/kanji/時.md": {
+      "source_hash": "sha256:ffc2547e799110163d6f6a73e38460a79c5cc41053b417789da29ad79ca55a90",
+      "translated_at": "2026-06-14T07:02:59.551484Z",
+      "dest_path": "content/languages/japanese/kanji/時.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
