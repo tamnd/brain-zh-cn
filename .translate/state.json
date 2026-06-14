@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T18:26:11.088518Z",
+  "last_run": "2026-06-14T18:55:33.147342Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -22606,6 +22606,86 @@
       "source_hash": "sha256:774f14a2a8f96186c95e902f13200140f8f7299014cadc524900a891cfb5a076",
       "translated_at": "2026-06-14T18:26:11.088490Z",
       "dest_path": "content/languages/latin/levels/novice/lesson-02.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-03.md": {
+      "source_hash": "sha256:683243bba59bf768a5925e8f4643f042b70435e1d493ed12419ccfcb8aeb3891",
+      "translated_at": "2026-06-14T18:54:58.194962Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-03.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-04.md": {
+      "source_hash": "sha256:65bdcc59b44927debf92753c0f6bc40300b289968406095ea68af94d2697a07b",
+      "translated_at": "2026-06-14T18:55:01.775376Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-04.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-05.md": {
+      "source_hash": "sha256:63b260192c0d850ce3ed9986c5c0c8e9e4f08ecd428107e129fc110a46360d94",
+      "translated_at": "2026-06-14T18:55:05.876307Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-05.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-06.md": {
+      "source_hash": "sha256:53ff352fc8f61609bc778c7c3443b4cb28de42743d020118267d8d2132e7de55",
+      "translated_at": "2026-06-14T18:55:09.272205Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-06.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-07.md": {
+      "source_hash": "sha256:bda46232b19fde281847f2f4a18eda7d443680ce86b323755f4b5bf14a34f693",
+      "translated_at": "2026-06-14T18:55:12.731125Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-07.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-08.md": {
+      "source_hash": "sha256:e4d89129e28f815e3e66f6d61368860118e50d5a372ebee2c942eab35c8d5c70",
+      "translated_at": "2026-06-14T18:55:17.208111Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-08.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-09.md": {
+      "source_hash": "sha256:ccb1d7ea7cee50281d91a0c8fc5afa7d635dd0e43cfba078414f85872e43b4e6",
+      "translated_at": "2026-06-14T18:55:21.289464Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-09.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-10.md": {
+      "source_hash": "sha256:59bdf2824730df932b073f9db2c68c0e4997a9ddd2384881eaf99497b75e3f8d",
+      "translated_at": "2026-06-14T18:55:27.432302Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-10.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-11.md": {
+      "source_hash": "sha256:5627061beb829f9c4fd224d49b4e5a399918bd52a2f35b0b67a070216fb69b8e",
+      "translated_at": "2026-06-14T18:55:30.644211Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-11.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/latin/levels/novice/lesson-12.md": {
+      "source_hash": "sha256:e556672b24bf635587d0cea9398f4bf538a9905da3ee8299cb1f624160a0ca61",
+      "translated_at": "2026-06-14T18:55:33.147316Z",
+      "dest_path": "content/languages/latin/levels/novice/lesson-12.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
