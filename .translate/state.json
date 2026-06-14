@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T20:53:35.601646Z",
+  "last_run": "2026-06-14T21:27:58.378133Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -22926,6 +22926,86 @@
       "source_hash": "sha256:4629eaa06a49addec821e89e70078c80349b3786c7d9ed52fd7f7695c3d5642c",
       "translated_at": "2026-06-14T20:53:35.601619Z",
       "dest_path": "content/languages/sindarin/lessons/13-prepositions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/14-prefixes.md": {
+      "source_hash": "sha256:53ca224aa74c81c70d59a9b5b0bb27fa7d05340903ff8b4b0747af93da72d755",
+      "translated_at": "2026-06-14T21:26:33.056236Z",
+      "dest_path": "content/languages/sindarin/lessons/14-prefixes.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/15-nasal-mutation.md": {
+      "source_hash": "sha256:89e1a89a39026fe14e1b6e5bdf01daf8e1563409d9f4d9ce1a65b81ca088eb20",
+      "translated_at": "2026-06-14T21:26:46.512022Z",
+      "dest_path": "content/languages/sindarin/lessons/15-nasal-mutation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/16-possessive-pronouns.md": {
+      "source_hash": "sha256:8a29dd4fc0c84272ef825567d67163baafce56609669581caf4d679a702a3387",
+      "translated_at": "2026-06-14T21:26:56.354678Z",
+      "dest_path": "content/languages/sindarin/lessons/16-possessive-pronouns.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/17-verbs-present.md": {
+      "source_hash": "sha256:88e7aa8f418145f921804bdb57b76b0fa2afe46388519a0fb3431f46318eccb8",
+      "translated_at": "2026-06-14T21:27:04.434612Z",
+      "dest_path": "content/languages/sindarin/lessons/17-verbs-present.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/18-verbs-past.md": {
+      "source_hash": "sha256:ac9a2a12ba6e61328f19cbba5c78bcffd804ba5a8317c3a56333ede877627b3c",
+      "translated_at": "2026-06-14T21:27:13.854328Z",
+      "dest_path": "content/languages/sindarin/lessons/18-verbs-past.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/19-verbs-intransitive.md": {
+      "source_hash": "sha256:12d099b0b2d0d531d2ca1e81dcd716c20cb0816bbb90dbab6012ce656c7f018f",
+      "translated_at": "2026-06-14T21:27:22.092353Z",
+      "dest_path": "content/languages/sindarin/lessons/19-verbs-intransitive.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/20-verbs-future.md": {
+      "source_hash": "sha256:c2650e4ecb9ddca55e76ca8e5cf38c4bdaa72bcf3c23d38e856d691f43507674",
+      "translated_at": "2026-06-14T21:27:28.878815Z",
+      "dest_path": "content/languages/sindarin/lessons/20-verbs-future.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/21-conditional.md": {
+      "source_hash": "sha256:0bcf31ec43af9bd55db3fc7a9983edca50d6d8ce8ded000bdeb82baf0e71344d",
+      "translated_at": "2026-06-14T21:27:38.073205Z",
+      "dest_path": "content/languages/sindarin/lessons/21-conditional.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/22-irregular-verbs.md": {
+      "source_hash": "sha256:4e2ca85400b8d47cc5f30741953c177a30e81617658ec5f59ee4229c283a13a9",
+      "translated_at": "2026-06-14T21:27:49.010328Z",
+      "dest_path": "content/languages/sindarin/lessons/22-irregular-verbs.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/23-dual-forms.md": {
+      "source_hash": "sha256:95da0ae0772fb4b7b820b88f796fc4b746cca17f95257840c219c13bf55fe895",
+      "translated_at": "2026-06-14T21:27:58.378111Z",
+      "dest_path": "content/languages/sindarin/lessons/23-dual-forms.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
