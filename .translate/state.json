@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T20:07:14.145999Z",
+  "last_run": "2026-06-14T20:53:35.601646Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -22846,6 +22846,86 @@
       "source_hash": "sha256:4fae3e6117f6590a04b139437bbbe6c2af215c654a764d5d9d90722cae93976d",
       "translated_at": "2026-06-14T20:07:14.145976Z",
       "dest_path": "content/languages/sindarin/lessons/03-place-names.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/04-questions.md": {
+      "source_hash": "sha256:68418acb6a5ecd53e143b1231a7aac5a644f44e80eca6d94df50db9a85345a8d",
+      "translated_at": "2026-06-14T20:52:49.484867Z",
+      "dest_path": "content/languages/sindarin/lessons/04-questions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/05-eating-drinking.md": {
+      "source_hash": "sha256:16a8a683748b797a83439da9144f16afa85d7769e0d3370922bc16e79f4402ea",
+      "translated_at": "2026-06-14T20:52:53.935854Z",
+      "dest_path": "content/languages/sindarin/lessons/05-eating-drinking.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/06-plurals-1.md": {
+      "source_hash": "sha256:6f4185141a40f0179b3ae914b6ee907b7670e1bc39ac10ad6b2a3c9ebe906178",
+      "translated_at": "2026-06-14T20:52:59.113766Z",
+      "dest_path": "content/languages/sindarin/lessons/06-plurals-1.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/07-plurals-2.md": {
+      "source_hash": "sha256:76dcbbeef5537d8c2716442b0816cc491bb491df1a0315a96096b15d7a25f4ff",
+      "translated_at": "2026-06-14T20:53:05.697759Z",
+      "dest_path": "content/languages/sindarin/lessons/07-plurals-2.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/08-pronouns-nominative.md": {
+      "source_hash": "sha256:739c05eac57504fedbb1976aac671c7f1c56bf61845722e6bc9cea98ea776882",
+      "translated_at": "2026-06-14T20:53:09.798935Z",
+      "dest_path": "content/languages/sindarin/lessons/08-pronouns-nominative.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/09-pronouns-object.md": {
+      "source_hash": "sha256:0333f2db6bb3733ca615cbbb211fefd578471b5b81ef1757e7eb48fb24362063",
+      "translated_at": "2026-06-14T20:53:14.740583Z",
+      "dest_path": "content/languages/sindarin/lessons/09-pronouns-object.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/10-colours-soft-mutation-intro.md": {
+      "source_hash": "sha256:fd41da760d70528127e0fdb340c8ea8aab74e36b4258161ba61d59f5ad91b40a",
+      "translated_at": "2026-06-14T20:53:20.807492Z",
+      "dest_path": "content/languages/sindarin/lessons/10-colours-soft-mutation-intro.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/11-soft-mutation.md": {
+      "source_hash": "sha256:78e3e8621bc35a2389260527e69b16a66d3542dd121b2b858ea1ad22393da526",
+      "translated_at": "2026-06-14T20:53:25.957536Z",
+      "dest_path": "content/languages/sindarin/lessons/11-soft-mutation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/12-adjectives-adverbs.md": {
+      "source_hash": "sha256:521fb96a20c149d492d6fa7fbf7d550d9c98ec5b3914e7cba149199d05482614",
+      "translated_at": "2026-06-14T20:53:30.438716Z",
+      "dest_path": "content/languages/sindarin/lessons/12-adjectives-adverbs.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/13-prepositions.md": {
+      "source_hash": "sha256:4629eaa06a49addec821e89e70078c80349b3786c7d9ed52fd7f7695c3d5642c",
+      "translated_at": "2026-06-14T20:53:35.601619Z",
+      "dest_path": "content/languages/sindarin/lessons/13-prepositions.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
