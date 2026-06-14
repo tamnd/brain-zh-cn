@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T19:31:44.070905Z",
+  "last_run": "2026-06-14T20:07:14.145999Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -22766,6 +22766,86 @@
       "source_hash": "sha256:64161e77ac1bfa76541dbea51b1d685681d0ce0dbe53f0a6b708be16fb6b974d",
       "translated_at": "2026-06-14T19:31:44.070878Z",
       "dest_path": "content/languages/latin/vocabulary/dcc/band2.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/grammar/adjectives.md": {
+      "source_hash": "sha256:00fb170d62c85a3422615adfad0ac2ac96decbac0e4faf0da2b6e45aee09035f",
+      "translated_at": "2026-06-14T20:06:21.430133Z",
+      "dest_path": "content/languages/sindarin/grammar/adjectives.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/grammar/mutations.md": {
+      "source_hash": "sha256:19ad771e8c43cb66140f45dd176468302c64a015ca73049d08d2f2ae34542f4b",
+      "translated_at": "2026-06-14T20:06:26.712503Z",
+      "dest_path": "content/languages/sindarin/grammar/mutations.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/grammar/nouns.md": {
+      "source_hash": "sha256:b18326ec4db85cc8812c68eb4aa96f320ba02a795981ae3e7f1f35034d2f352d",
+      "translated_at": "2026-06-14T20:06:30.495016Z",
+      "dest_path": "content/languages/sindarin/grammar/nouns.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/grammar/prepositions.md": {
+      "source_hash": "sha256:a39ad3d8e936e73f3a3b7c9f9172a2f92702b4cb2bf146c441b05496b02cdec3",
+      "translated_at": "2026-06-14T20:06:34.339535Z",
+      "dest_path": "content/languages/sindarin/grammar/prepositions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/grammar/pronouns.md": {
+      "source_hash": "sha256:a068f8f438a7cdf7fc513ddaceae8362254691d25498e759159503883b1e27a2",
+      "translated_at": "2026-06-14T20:06:38.896886Z",
+      "dest_path": "content/languages/sindarin/grammar/pronouns.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/grammar/sentences.md": {
+      "source_hash": "sha256:32c5e4ef80f6e4a2655a14b78954053e30f95b6e61ec865c10085deb440243ca",
+      "translated_at": "2026-06-14T20:06:43.830374Z",
+      "dest_path": "content/languages/sindarin/grammar/sentences.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/grammar/verbs.md": {
+      "source_hash": "sha256:cfd78b9d88470ca53e379c798e055c6acd64551704b8b861ec3151712cb13f4c",
+      "translated_at": "2026-06-14T20:06:47.556232Z",
+      "dest_path": "content/languages/sindarin/grammar/verbs.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/01-pronunciation.md": {
+      "source_hash": "sha256:30142e1dd33ce88e0216aa7df647095ccd747c7c8630130ed26ac12054a57b19",
+      "translated_at": "2026-06-14T20:06:55.296071Z",
+      "dest_path": "content/languages/sindarin/lessons/01-pronunciation.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/02-greetings.md": {
+      "source_hash": "sha256:9dc58f246b41da53028dc26f315ad562ff46656663d7342260feb02853578d2a",
+      "translated_at": "2026-06-14T20:07:00.310249Z",
+      "dest_path": "content/languages/sindarin/lessons/02-greetings.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/03-place-names.md": {
+      "source_hash": "sha256:4fae3e6117f6590a04b139437bbbe6c2af215c654a764d5d9d90722cae93976d",
+      "translated_at": "2026-06-14T20:07:14.145976Z",
+      "dest_path": "content/languages/sindarin/lessons/03-place-names.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
