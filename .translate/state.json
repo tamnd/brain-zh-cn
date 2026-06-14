@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T22:26:02.758156Z",
+  "last_run": "2026-06-14T22:53:14.698812Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -23166,6 +23166,86 @@
       "source_hash": "sha256:a2aef333a23420f27967b2d73acdfeaa7a70eea4329fd82bda55043a0b71b271",
       "translated_at": "2026-06-14T22:26:02.758130Z",
       "dest_path": "content/languages/sindarin/lessons/s02-verb-paradigm-reference.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/s03-poetry-composition.md": {
+      "source_hash": "sha256:4d9b6a50c90ad395f35ef103d79160b754279a840b656d3945cfab140670901f",
+      "translated_at": "2026-06-14T22:52:17.113300Z",
+      "dest_path": "content/languages/sindarin/lessons/s03-poetry-composition.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/s04-reading-practice.md": {
+      "source_hash": "sha256:d44a5562e16f5ccd21903f73a8350c4db94b69da4fb30f341969268d12455d3f",
+      "translated_at": "2026-06-14T22:52:25.271763Z",
+      "dest_path": "content/languages/sindarin/lessons/s04-reading-practice.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/s05-neo-sindarin-composition.md": {
+      "source_hash": "sha256:3b9af338d0627a8f48e35479de1c41f1f07820111e84f3d92cedabc7a121fb91",
+      "translated_at": "2026-06-14T22:52:36.164490Z",
+      "dest_path": "content/languages/sindarin/lessons/s05-neo-sindarin-composition.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/s06-vocabulary-body-health.md": {
+      "source_hash": "sha256:65385b773740a4f30bbaf0349b833d8b31ed9c841ac3936bcdffc66cbfad02f2",
+      "translated_at": "2026-06-14T22:52:41.703623Z",
+      "dest_path": "content/languages/sindarin/lessons/s06-vocabulary-body-health.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/s07-vocabulary-military.md": {
+      "source_hash": "sha256:8119d3a8e5ed49074f0a829461415f47d09294d22f0e06436d98161e8fd233a9",
+      "translated_at": "2026-06-14T22:52:48.430311Z",
+      "dest_path": "content/languages/sindarin/lessons/s07-vocabulary-military.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/s08-vocabulary-emotions.md": {
+      "source_hash": "sha256:731b11ce5e31e85e5c2fac65cb2e540d678bfa60f186ae8fcc1d7537dfcab137",
+      "translated_at": "2026-06-14T22:52:52.977513Z",
+      "dest_path": "content/languages/sindarin/lessons/s08-vocabulary-emotions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/s09-vocabulary-nature-expanded.md": {
+      "source_hash": "sha256:c92498d4abccb3727054300c35d241d873e8b00ec24c7e39b0515b821783af4e",
+      "translated_at": "2026-06-14T22:53:00.940614Z",
+      "dest_path": "content/languages/sindarin/lessons/s09-vocabulary-nature-expanded.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/s10-comparative-elvish.md": {
+      "source_hash": "sha256:6acfbc9619295f4966561be2f7ea833a4ff86d93c6b75e2a46c1422a3cdef61a",
+      "translated_at": "2026-06-14T22:53:06.646968Z",
+      "dest_path": "content/languages/sindarin/lessons/s10-comparative-elvish.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/levels/advanced.md": {
+      "source_hash": "sha256:2c87250c24f44643ed1cf68a45347fff6d0d1aebf2b2b1c0c9c10768aafb9719",
+      "translated_at": "2026-06-14T22:53:10.955103Z",
+      "dest_path": "content/languages/sindarin/levels/advanced.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/levels/beginner.md": {
+      "source_hash": "sha256:363a64e064322722724e42320f94ca36e0898ed5903e2938b40ce5d816cc2c0b",
+      "translated_at": "2026-06-14T22:53:14.698786Z",
+      "dest_path": "content/languages/sindarin/levels/beginner.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
