@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T16:58:33.280662Z",
+  "last_run": "2026-06-14T17:34:39.889121Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -22446,6 +22446,86 @@
       "source_hash": "sha256:73efe566037ddd7d1b04ce041069f4f414254c1aaaeddfdf711ef06e4e357c30",
       "translated_at": "2026-06-14T16:58:33.280631Z",
       "dest_path": "content/languages/japanese/vocabulary/経験.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/続ける.md": {
+      "source_hash": "sha256:d074e98a12aecff67187d16901cef79ad7b836a61703a54255d2a79300788ad2",
+      "translated_at": "2026-06-14T17:33:57.230992Z",
+      "dest_path": "content/languages/japanese/vocabulary/続ける.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/考える.md": {
+      "source_hash": "sha256:2b7b53ff6fd56d7e3eea672209a5ee59760650e208694bb81a710026bcf5b0e5",
+      "translated_at": "2026-06-14T17:34:01.700477Z",
+      "dest_path": "content/languages/japanese/vocabulary/考える.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/自然.md": {
+      "source_hash": "sha256:69096f7706d4397b9f86f4a9376d322e5e00c8b5702f59bdc4c0acae62d1d546",
+      "translated_at": "2026-06-14T17:34:04.261865Z",
+      "dest_path": "content/languages/japanese/vocabulary/自然.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/複雑な.md": {
+      "source_hash": "sha256:f76f972b682dbed275d6461630e4179ff50ed9d743fe1ecc2685eb462b8a8d66",
+      "translated_at": "2026-06-14T17:34:08.453155Z",
+      "dest_path": "content/languages/japanese/vocabulary/複雑な.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/調べる.md": {
+      "source_hash": "sha256:ee6f721ba1168c07ec350c6481eca079525d905a55e28edf030b23b10239aecb",
+      "translated_at": "2026-06-14T17:34:12.351930Z",
+      "dest_path": "content/languages/japanese/vocabulary/調べる.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/送る.md": {
+      "source_hash": "sha256:9294d5c1bd9287fd83ae2781710bc1deda388b64a46489d9d26371161a34eca7",
+      "translated_at": "2026-06-14T17:34:17.508861Z",
+      "dest_path": "content/languages/japanese/vocabulary/送る.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/集める.md": {
+      "source_hash": "sha256:00d144a12cb408b2e56855fdf21e2a93faae8aab5667731a27a9334b1be78ddc",
+      "translated_at": "2026-06-14T17:34:23.719539Z",
+      "dest_path": "content/languages/japanese/vocabulary/集める.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/writing-systems/hiragana.md": {
+      "source_hash": "sha256:cce16ddc8553de2184c4bd910f063dab592b81e6b920380ff912e6de5a2c4445",
+      "translated_at": "2026-06-14T17:34:28.616289Z",
+      "dest_path": "content/languages/japanese/writing-systems/hiragana.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/writing-systems/kanji.md": {
+      "source_hash": "sha256:276b4176ff9150a475b3b67be48d726506bfd2cecd8bb65d0a89687d0b0361f1",
+      "translated_at": "2026-06-14T17:34:33.886892Z",
+      "dest_path": "content/languages/japanese/writing-systems/kanji.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/writing-systems/katakana.md": {
+      "source_hash": "sha256:913bdacc30ed192423ea1c97dcca1e85795e6114aab17fadd7dc2ec82d32705c",
+      "translated_at": "2026-06-14T17:34:39.889099Z",
+      "dest_path": "content/languages/japanese/writing-systems/katakana.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
