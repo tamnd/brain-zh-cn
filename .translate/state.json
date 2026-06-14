@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T16:01:49.238453Z",
+  "last_run": "2026-06-14T16:58:33.280662Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -22366,6 +22366,86 @@
       "source_hash": "sha256:db3da9abfc5e1cc2d53cea267b9fd9a63f58eaf480ed6d10bfb62d2a448367b0",
       "translated_at": "2026-06-14T16:01:49.238427Z",
       "dest_path": "content/languages/japanese/vocabulary/安全な.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/必要な.md": {
+      "source_hash": "sha256:ff1069ca9ac9b93338e26f8d4cd7e662e3de9b793a40d1998bef2f72d2f8615a",
+      "translated_at": "2026-06-14T16:58:05.207842Z",
+      "dest_path": "content/languages/japanese/vocabulary/必要な.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/技術.md": {
+      "source_hash": "sha256:8dbd85b0e402cf8e6c5470aea27e8ff51c6099e149b8f31ab3419f5555ff6a1a",
+      "translated_at": "2026-06-14T16:58:07.691025Z",
+      "dest_path": "content/languages/japanese/vocabulary/技術.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/文化.md": {
+      "source_hash": "sha256:acc466845d7698d92dc34475466e38550bb0784acc1eabce97db5d0035b1da6b",
+      "translated_at": "2026-06-14T16:58:10.702060Z",
+      "dest_path": "content/languages/japanese/vocabulary/文化.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/比べる.md": {
+      "source_hash": "sha256:028d78e7be0a1010126cea3877daa78d563204c69654d1c6861b619d4bfe1f99",
+      "translated_at": "2026-06-14T16:58:13.903479Z",
+      "dest_path": "content/languages/japanese/vocabulary/比べる.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/決める.md": {
+      "source_hash": "sha256:6f183c1d20c7e18738da2b2fd3e39187ce26496ebe538d56d0bd4b6a930cc874",
+      "translated_at": "2026-06-14T16:58:16.614048Z",
+      "dest_path": "content/languages/japanese/vocabulary/決める.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/特別な.md": {
+      "source_hash": "sha256:5b19ebcfcd92b51ef972aa0a8c3ce9c2347b4b85339fd2e6aede24d000c47dbf",
+      "translated_at": "2026-06-14T16:58:20.159853Z",
+      "dest_path": "content/languages/japanese/vocabulary/特別な.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/生活.md": {
+      "source_hash": "sha256:088790c7c46e1088a431efd6ba96bfc139f80d0563ef02070310fa6f148cef95",
+      "translated_at": "2026-06-14T16:58:24.268086Z",
+      "dest_path": "content/languages/japanese/vocabulary/生活.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/社会.md": {
+      "source_hash": "sha256:3b571944a3af6b108cb20e3d5635b47817d206d4230f048d9f282950c9573dcb",
+      "translated_at": "2026-06-14T16:58:26.553140Z",
+      "dest_path": "content/languages/japanese/vocabulary/社会.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/終わる.md": {
+      "source_hash": "sha256:580f3ada570e84c73b383937d97e2d5252f3bdd4de8b35224c5b85aa8a26f81f",
+      "translated_at": "2026-06-14T16:58:30.750796Z",
+      "dest_path": "content/languages/japanese/vocabulary/終わる.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/経験.md": {
+      "source_hash": "sha256:73efe566037ddd7d1b04ce041069f4f414254c1aaaeddfdf711ef06e4e357c30",
+      "translated_at": "2026-06-14T16:58:33.280631Z",
+      "dest_path": "content/languages/japanese/vocabulary/経験.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
