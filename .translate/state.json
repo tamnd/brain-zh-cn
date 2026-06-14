@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T21:56:50.131703Z",
+  "last_run": "2026-06-14T22:26:02.758156Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -23086,6 +23086,86 @@
       "source_hash": "sha256:c197f7e1f67233a40c28a84c27fc42cdc7cad0d9357b2088c03a1284af101a6c",
       "translated_at": "2026-06-14T21:56:50.131678Z",
       "dest_path": "content/languages/sindarin/lessons/33-comparatives-superlatives.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/34-abstract-suffix.md": {
+      "source_hash": "sha256:2c3660ece5737f4e5a4848203d82c6dc310d0f3a6f854be9241d7595acdefdc1",
+      "translated_at": "2026-06-14T22:24:57.932293Z",
+      "dest_path": "content/languages/sindarin/lessons/34-abstract-suffix.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/35-further-suffixes.md": {
+      "source_hash": "sha256:ba2048182bf6fd5f95a85f0fde2964e6ea36e057783286d62abab23be5a0c39e",
+      "translated_at": "2026-06-14T22:25:04.520411Z",
+      "dest_path": "content/languages/sindarin/lessons/35-further-suffixes.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/36-name-making-1.md": {
+      "source_hash": "sha256:663f14604cf81e7a099bf93ad76892e2017c5c56899190e679e0ef08e5863f72",
+      "translated_at": "2026-06-14T22:25:11.802352Z",
+      "dest_path": "content/languages/sindarin/lessons/36-name-making-1.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/37-name-making-2.md": {
+      "source_hash": "sha256:3dd9222fb174822190d222d704b396408754e40a2b3afdd3ddb05a9ab679d214",
+      "translated_at": "2026-06-14T22:25:17.482962Z",
+      "dest_path": "content/languages/sindarin/lessons/37-name-making-2.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/38-gondorian-mirkwood-sindarin.md": {
+      "source_hash": "sha256:73c214a34353070d0158db237469c9f39101e516f3c75bcc02bf2d6342ab7005",
+      "translated_at": "2026-06-14T22:25:22.790550Z",
+      "dest_path": "content/languages/sindarin/lessons/38-gondorian-mirkwood-sindarin.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/39-doriathrin.md": {
+      "source_hash": "sha256:6d854f2f186ad3b6b0ae0b6254cbd882ceaa2f28a2bdc361c8281014c4ca8a5d",
+      "translated_at": "2026-06-14T22:25:28.470804Z",
+      "dest_path": "content/languages/sindarin/lessons/39-doriathrin.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/40-liquid-stop-mutations.md": {
+      "source_hash": "sha256:209963b74bef2a5d8b36530d6823220c21935f008744158ff46268a8be4ccfd6",
+      "translated_at": "2026-06-14T22:25:35.614247Z",
+      "dest_path": "content/languages/sindarin/lessons/40-liquid-stop-mutations.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/41-elision.md": {
+      "source_hash": "sha256:fced5c5fb873436ce025adbfd8799a31964989093685ff7ca4ba38cb923aae37",
+      "translated_at": "2026-06-14T22:25:44.809757Z",
+      "dest_path": "content/languages/sindarin/lessons/41-elision.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/s01-historical-phonology.md": {
+      "source_hash": "sha256:b1e653607001e093ba856f5afe1caf5eb142c09dd6ef427777898a37031a5ed5",
+      "translated_at": "2026-06-14T22:25:53.596832Z",
+      "dest_path": "content/languages/sindarin/lessons/s01-historical-phonology.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/sindarin/lessons/s02-verb-paradigm-reference.md": {
+      "source_hash": "sha256:a2aef333a23420f27967b2d73acdfeaa7a70eea4329fd82bda55043a0b71b271",
+      "translated_at": "2026-06-14T22:26:02.758130Z",
+      "dest_path": "content/languages/sindarin/lessons/s02-verb-paradigm-reference.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
