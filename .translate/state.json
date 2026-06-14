@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-14T13:06:47.089695Z",
+  "last_run": "2026-06-14T14:14:55.355642Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -22126,6 +22126,86 @@
       "source_hash": "sha256:7fe9c21ee37c0ccc0a143b84258e75955f9f86ea070a88c6cb4d24720a028c75",
       "translated_at": "2026-06-14T13:06:47.089673Z",
       "dest_path": "content/languages/japanese/vocabulary/thematic/body.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/culture.md": {
+      "source_hash": "sha256:b2de301df95b786acf2acb10db5b9b969ea1f5beda764b3ce4ce220082d0252d",
+      "translated_at": "2026-06-14T14:14:05.465711Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/culture.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/education.md": {
+      "source_hash": "sha256:2e16a7323c9a4b87dd8d6958fcc4de625763ae186772acd15fa741d92081ad31",
+      "translated_at": "2026-06-14T14:14:10.254317Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/education.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/emotions.md": {
+      "source_hash": "sha256:bce79e04f2e76a5be5d2a64188ce2fc0d9bcf4894adf981707f8fa95bdfe1764",
+      "translated_at": "2026-06-14T14:14:15.162900Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/emotions.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/family.md": {
+      "source_hash": "sha256:47c7f0214277ac2a185f94bd244072c35f07d77cb7b879207a3c0b3cfbea8685",
+      "translated_at": "2026-06-14T14:14:20.870521Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/family.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/food.md": {
+      "source_hash": "sha256:0edfbea37598688f224a3c3308d9a505fe40d836d9f14b07dcf91d67afcc2fa0",
+      "translated_at": "2026-06-14T14:14:26.403986Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/food.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/health.md": {
+      "source_hash": "sha256:04e676bd6a80ea0bbf789cfb3089b893fba2ae9cde96f652e8a94a37b17207d4",
+      "translated_at": "2026-06-14T14:14:34.306651Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/health.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/home.md": {
+      "source_hash": "sha256:e41476398eb3f7fdc7035266f89df321786c881927f5eca7d0f445f0f2956f37",
+      "translated_at": "2026-06-14T14:14:39.824943Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/home.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/nature.md": {
+      "source_hash": "sha256:723515aa7e00b45adb254eff195b88380e2ed41081fbc916853d870362630004",
+      "translated_at": "2026-06-14T14:14:45.771085Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/nature.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/numbers.md": {
+      "source_hash": "sha256:58a1e74f6c9ec5bf5f9fd4babd042bb52384f202110143091cdce08ca305cfb1",
+      "translated_at": "2026-06-14T14:14:52.322219Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/numbers.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/languages/japanese/vocabulary/thematic/school.md": {
+      "source_hash": "sha256:a394a6804066695b1efaa92bdb0faf3343651e8e8e1258b5ad7436d9251d22d0",
+      "translated_at": "2026-06-14T14:14:55.355619Z",
+      "dest_path": "content/languages/japanese/vocabulary/thematic/school.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
