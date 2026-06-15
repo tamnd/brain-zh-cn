@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-06-15T22:54:01.793533Z",
+  "last_run": "2026-06-15T23:34:43.617899Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -24526,6 +24526,86 @@
       "source_hash": "sha256:b4db9c32b37f2156a45f54e25ccf5d735f0cdb0117afc224fbdf5709a9f5aa03",
       "translated_at": "2026-06-15T22:54:01.793508Z",
       "dest_path": "content/maths/03/13.4.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/maths/03/13.5.md": {
+      "source_hash": "sha256:49b3b4c57c476e4d40b827e35e7b90e3e039919b300012a5c81c5f0507ae8db0",
+      "translated_at": "2026-06-15T23:32:41.347639Z",
+      "dest_path": "content/maths/03/13.5.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/maths/03/13.md": {
+      "source_hash": "sha256:b26f353887668c2f6afc532dd12912de52504c0bd4bed3c042cd376757decb32",
+      "translated_at": "2026-06-15T23:32:43.424047Z",
+      "dest_path": "content/maths/03/13.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/maths/03/14.1.md": {
+      "source_hash": "sha256:b5472aca6a6b557dc9561a6c6bab0903356fa534d7f8aaf74202e8972688a8ba",
+      "translated_at": "2026-06-15T23:33:04.264851Z",
+      "dest_path": "content/maths/03/14.1.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/maths/03/14.2.md": {
+      "source_hash": "sha256:7a5e2aa802514a45c5cc805c32bcb4636d715838c170e0b4cdd97f9ae3fac8c0",
+      "translated_at": "2026-06-15T23:33:38.813355Z",
+      "dest_path": "content/maths/03/14.2.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/maths/03/14.3.md": {
+      "source_hash": "sha256:6f18abcfbbe8c3d2b386b01fd850979c40bb673e34dbab8e0712226790f06d5d",
+      "translated_at": "2026-06-15T23:34:12.338912Z",
+      "dest_path": "content/maths/03/14.3.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/maths/03/14.4.md": {
+      "source_hash": "sha256:0d623aa8f8396b1f6a25e5189723619b8d5fc115a659dffd1209085032aab4f7",
+      "translated_at": "2026-06-15T23:34:22.231130Z",
+      "dest_path": "content/maths/03/14.4.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/maths/03/14.5.md": {
+      "source_hash": "sha256:7b2bc61b2a08f0c343ce0c558ee048580d304ea8c2b4bcc3671fef57d0c53c33",
+      "translated_at": "2026-06-15T23:34:35.281845Z",
+      "dest_path": "content/maths/03/14.5.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/maths/03/14.md": {
+      "source_hash": "sha256:7a02d9fbcef845efea41032a541edbbb57574dfacea606032f24af1b34b26dec",
+      "translated_at": "2026-06-15T23:34:38.210169Z",
+      "dest_path": "content/maths/03/14.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/maths/03/15.md": {
+      "source_hash": "sha256:48de0d453158c29633caf8a5b5eeb1f0ca79dec272308c05f274208821688152",
+      "translated_at": "2026-06-15T23:34:41.295430Z",
+      "dest_path": "content/maths/03/15.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/maths/03/16.md": {
+      "source_hash": "sha256:c72d94d0cdaa467616df78351abae1cb30a284ec56f4e79edca1c68ab3000094",
+      "translated_at": "2026-06-15T23:34:43.617875Z",
+      "dest_path": "content/maths/03/16.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
