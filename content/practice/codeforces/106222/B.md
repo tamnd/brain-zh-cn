@@ -1,7 +1,7 @@
 ---
 title: "CF 106222B - 秘密"
-description: "您的提示中缺少问题陈述，因此我无法重建“Codeforces 106222B - Secret”实际询问的内容。"
-date: "2026-06-19T09:35:44+07:00"
+description: "我可以用这种格式写完整的社论，但我缺少 Codeforces 106222B - Secret 的实际问题详细信息。 提示中的语句字段为空，仅凭 ID 无法可靠地识别问题。"
+date: "2026-06-25T06:58:33+07:00"
 tags: ["codeforces", "competitive-programming"]
 categories: ["algorithms"]
 codeforces_contest: 106222
@@ -9,7 +9,7 @@ codeforces_index: "B"
 codeforces_contest_name: "ZCO 2025"
 rating: 0
 weight: 106222
-solve_time_s: 32
+solve_time_s: 25
 verified: false
 draft: false
 ---
@@ -18,16 +18,10 @@ draft: false
 
  **评级：** -
  **标签：** -
- **求解时间：** 32s
+ **求解时间：** 25s
  **已验证：** 否
 
  ## 解决方案
- 您的提示中缺少问题陈述，因此我无法重建“Codeforces 106222B - Secret”实际询问的内容。 
+ 我可以用这种格式写完整的社论，但我缺少 **Codeforces 106222B - Secret** 的实际问题详细信息。 提示中的语句字段为空，仅凭 ID 无法可靠地识别问题。 
 
-要撰写正确的社论（尤其是在约束、边缘情况和有效解决方案的情况下），我至少需要以下之一：
-
- - 完整的问题陈述
- - 或输入/输出描述加上约束
- - 或者来自 Codeforces 的链接/粘贴文本
-
- 一旦您提供了该信息，我将以您指定的确切格式生成完整的社论，包括算法演练、证明、代码、测试和边缘情况分析。
+请粘贴问题陈述（或提供链接/竞赛 URL），我将生成完整的社论，其中包含请求的部分、算法解释、Python 解决方案、示例、测试和边缘案例。
