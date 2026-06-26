@@ -86,9 +86,9 @@ for _ in range(t):
 print('\n'.join(out))
 ```实现的核心是`decode_digit`函数，它使用按位 AND 隔离三个权限位。 常数4、2、1分别对应读、写、执行位置的二进制权重。 
 
-主循环只是将该转换独立地应用于每个字符并连接结果。 Using a list for accumulation avoids repeated string concatenation overhead, which is unnecessary but still a good habit in Python competitive programming.
+主循环只是将该转换独立地应用于每个字符并连接结果。 使用列表进行累加可以避免重复的字符串连接开销，虽然没有必要，但在 Python 竞技编程中仍然是一个好习惯。 
 
- ## 工作示例
+## 工作示例
 
  考虑由两个测试用例组成的输入：```
 2
@@ -96,10 +96,10 @@ print('\n'.join(out))
 123
 ```对于第一种情况，我们单独解码每个数字。 
 
-| Digit | 二进制| 阅读 | 写| 执行| 结果 |
+| 数字| 二进制| 阅读 | 写| 执行| 结果 |
  | ---| ---| ---| ---| ---| ---|
- | 7 | 111 | 111 r | w | x| RWx |
- | 6 | 110 | 110 r | 瓦 | - | rw- |
+ | 7 | 111 | 111 r | 瓦 | x| RWx |
+ | 6 | 110 | 110 r | 瓦 | - | RW- |
  | 0 | 000 | 000 - | - | - | ---|
 
  连接给出`rwxrw----`。 

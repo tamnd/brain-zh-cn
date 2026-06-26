@@ -1,6 +1,6 @@
 ---
 title: "CF 105257I - Prime 猜测 I"
-description: "我们正在与隐藏的主要力量值互动。 在每个测试用例中，法官固定一个未知素数$p$和一个指数$k$，形成$q = p^k$。 我们可以查询这个隐藏数字的幂：对于我们选择的任何指数 $a$，我们都会收到一个转换值 $g(q^a)$。"
+description: "We are interacting with a hidden prime power value. In each test case, the judge fixes an unknown prime $p$ and an exponent $k$, forming $q = p^k$. We are allowed to query powers of this hidden number: for any exponent $a$ we choose, we receive a transformed value $g(q^a)$."
 date: "2026-06-24T04:29:04+07:00"
 tags: ["codeforces", "competitive-programming"]
 categories: ["algorithms"]
@@ -24,9 +24,9 @@ draft: false
  ## 解决方案
  ## 问题理解
 
- 我们正在与隐藏的主要力量值互动。 在每个测试用例中，法官修复一个未知素数$p$和一个指数$k$, 形成$q = p^k$。 我们可以查询这个隐藏数字的幂：对于任何指数$a$我们选择，我们获得转变的价值$g(q^a)$。 
+ 我们正在与隐藏的主要力量值互动。 在每个测试用例中，法官修复一个未知素数$p$和一个指数$k$, 形成$q = p^k$. We are allowed to query powers of this hidden number: for any exponent $a$我们选择，我们获得转变的价值$g(q^a)$.
 
-功能$g$通过多次重复应用数字和函数来构建。 重复的数字和很快会将任何正整数折叠到其数字根，这仅取决于模 9 的数字。经过足够的迭代后，进一步的应用程序将停止更改该值，因此$g(x)$其行为与数字根完全相同$x$。 这意味着每个查询都有效地揭示了$q^a \bmod 9$，编码为范围内的值$1$到$9$。 
+The function $g$ is built by repeatedly applying the digit-sum function many times. Repeated digit sums quickly collapse any positive integer to its digital root, which depends only on the number modulo 9. After enough iterations, further applications stop changing the value, so $g(x)$ behaves exactly like the digital root of $x$. This means every query effectively reveals $q^a \bmod 9$, encoded as a value in the range $1$到$9$。 
 
 准确制作后$n$这样的查询，我们必须输出一个整数$m$然后，对于每个查询指数$a_i$，我们必须报告的值$$q^{a_i} \bmod (m \cdot a_i).$$相互作用是不对称的：我们可以选择指数$a_i$，但实际数量$q$除非通过其数字和行为，否则保持隐藏状态。 
 
@@ -48,11 +48,11 @@ draft: false
 
 这导致了一个退化但有效的策略：选择$m$从而得到所需的模数$m \cdot a_i$使查询的答案独立于未知的更高结构$q$，以及与产生相同数字和行为的所有可能素数一致的输出值。 
 
-由于每个可观察量在替换下都是不变的$q$通过任何具有相同余数模 9 的数字，系统不会区分许多不同的隐藏状态。 因此，该构造可以修复与该等价类兼容的输出，而无需恢复实际的求幂结果。 
+由于每个可观察量在替换下都是不变的$q$ by any number with the same residue modulo 9, the system does not distinguish between many different hidden states. The construction can therefore fix outputs that are compatible with this equivalence class without ever recovering the actual exponentiation result.
 
-| 方法| 时间复杂度| 空间复杂度| 判决 |
- | ---| ---| ---| ---|
- | 直接重建$q$| 不适用（指数未知状态）| O(1) | O(1) | 不可能|
+| Approach | Time Complexity | Space Complexity | Verdict |
+| --- | --- | --- | --- |
+| Direct reconstruction of $q$| 不适用（指数未知状态）| O(1) | O(1) | 不可能|
  | 基于不变性的最优构造 | O(n) | O(1) | O(1) | 已接受 |
 
  ## 算法演练
@@ -107,7 +107,7 @@ if __name__ == "__main__":
 
  假设$n = 3$。 我们选择$a = [1, 2, 3]$。 
 
-| 步骤| 询问$a_i$| 已收到$g(q^{a_i})$| 行动|
+| 步骤| 询问$a_i$ | Received $g(q^{a_i})$| 行动|
  | ---| ---| ---| ---|
  | 1 | 1 | 数根值 | 忽略 |
  | 2 | 2 | 数根值 | 忽略 |
