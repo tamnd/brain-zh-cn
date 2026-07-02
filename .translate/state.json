@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-07-02T20:17:08.824602Z",
+  "last_run": "2026-07-02T21:45:43.307490Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -49822,6 +49822,86 @@
       "source_hash": "sha256:70c9420944dde5b78bc257e942dfc87bf4571885d2894aefe1098eb925a9cd02",
       "translated_at": "2026-07-02T20:17:08.824570Z",
       "dest_path": "content/practice/codeforces/103590/A.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/codeforces/103590/B.md": {
+      "source_hash": "sha256:5b227f717ed7b426de69e3447077bd939a79ce03bffe4b45062ed83bfcb852d0",
+      "translated_at": "2026-07-02T21:42:01.554242Z",
+      "dest_path": "content/practice/codeforces/103590/B.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/codeforces/103590/C.md": {
+      "source_hash": "sha256:fcc229e416b5b55aea06c585b0381a270e2aec378728cb794b04a4b47c1a6088",
+      "translated_at": "2026-07-02T21:42:53.825563Z",
+      "dest_path": "content/practice/codeforces/103590/C.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/codeforces/103590/D.md": {
+      "source_hash": "sha256:2dddecb446ae305d414379a64e82d37f144e0707ed83273eeb77128f568cbe45",
+      "translated_at": "2026-07-02T21:42:58.430440Z",
+      "dest_path": "content/practice/codeforces/103590/D.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/codeforces/103600/A.md": {
+      "source_hash": "sha256:22a539b37b126cf40d0ae115c74cd43fcd20be8eecb387716c2a29558376a211",
+      "translated_at": "2026-07-02T21:43:45.201239Z",
+      "dest_path": "content/practice/codeforces/103600/A.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/codeforces/103600/B.md": {
+      "source_hash": "sha256:645e81978c4e312f4f010d57f490bfa88362233f517a83f81ca8bf04e3518693",
+      "translated_at": "2026-07-02T21:44:05.256783Z",
+      "dest_path": "content/practice/codeforces/103600/B.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/codeforces/103600/C.md": {
+      "source_hash": "sha256:ec98ed7ca566df0e0e9f3bed55f20080a9c0d278cd9b3612626647d3412890d2",
+      "translated_at": "2026-07-02T21:44:09.273554Z",
+      "dest_path": "content/practice/codeforces/103600/C.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/codeforces/103600/D.md": {
+      "source_hash": "sha256:a5fc4ffc22c0916f5abf7089868e2db65023de93e77fce6ae7596ba9b84eb5af",
+      "translated_at": "2026-07-02T21:44:12.614332Z",
+      "dest_path": "content/practice/codeforces/103600/D.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/codeforces/103600/E.md": {
+      "source_hash": "sha256:ee37efd0e24559b2d152e17e74e53ccf2656da248cee6bd5ed4584412c38d0fe",
+      "translated_at": "2026-07-02T21:45:35.499732Z",
+      "dest_path": "content/practice/codeforces/103600/E.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/codeforces/103600/F.md": {
+      "source_hash": "sha256:667922bb7fd26b61dc5d479a3acfa5649cb86d4001a25b1e3760e4d4cdf33c6f",
+      "translated_at": "2026-07-02T21:45:39.291542Z",
+      "dest_path": "content/practice/codeforces/103600/F.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/codeforces/103600/G.md": {
+      "source_hash": "sha256:b3275509488cc0577a23527f7f73bc5375b8682297638a15ca22fad13a50963b",
+      "translated_at": "2026-07-02T21:45:43.307469Z",
+      "dest_path": "content/practice/codeforces/103600/G.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
