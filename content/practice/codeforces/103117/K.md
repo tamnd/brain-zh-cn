@@ -1,0 +1,29 @@
+---
+title: "CF 103117K - K-skip 排列"
+description: "问题陈述部分是空的，因此没有足够的信息来重建“K-skip Permutation”实际要求的内容或输入/输出约束是什么。"
+date: "2026-07-03T20:20:08+07:00"
+tags: ["codeforces", "competitive-programming"]
+categories: ["algorithms"]
+codeforces_contest: 103117
+codeforces_index: "K"
+codeforces_contest_name: "The 2021 Sichuan Provincial Collegiate Programming Contest"
+rating: 0
+weight: 103117
+solve_time_s: 33
+verified: false
+draft: false
+---
+
+[CF 103117K - K-skip 排列](https://codeforces.com/problemset/problem/103117/K)
+
+ **评级：** -
+ **标签：** -
+ **求解时间：** 33s
+ **已验证：** 否
+
+ ## 解决方案
+ 问题陈述部分是空的，因此没有足够的信息来重建“K-skip Permutation”实际要求的内容或输入/输出约束是什么。 
+
+要编写正确的 Codeforces 风格的社论，我至少需要完整的语句详细信息：K-skip 排列的定义是什么、输入中给出的内容、需要构造或计算的内容以及任何约束。 
+
+请粘贴完整的问题陈述（或链接/屏幕截图文本），我将按照您指定的格式生成完整的社论。
