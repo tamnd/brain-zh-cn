@@ -1,0 +1,53 @@
+---
+title: "CF 104068M - \u5b9d\u53ef\u68a6\u4e0e\u6bd2\u7624 托克塞尔"
+description: "设 $F = mathrm{MUX}(f,g,h)$ 表示通过当 $f=1$ 时选择 $g$ 和当 $f=0$ 时选择 $h$ 定义的布尔函数，因此 $$F = (f wedge g) vee (neg f wedge h)。"
+date: "2026-07-02T03:07:57+07:00"
+tags: ["codeforces", "competitive-programming"]
+categories: ["algorithms"]
+codeforces_contest: 104068
+codeforces_index: "M"
+codeforces_contest_name: "The 17-th Beihang University Collegiate Programming Contest (BCPC 2022) - Preliminary"
+rating: 0
+weight: 104068
+solve_time_s: 123
+verified: false
+draft: false
+---
+
+[CF 104068M - \u5b9d\u53ef\u68a6\u4e0e\u6bd2\u7624 Toxel](https://codeforces.com/problemset/problem/104068/M)
+
+ **评级：** -
+ **标签：** -
+ **求解时间：** 2m 3s
+ **已验证：** 否
+
+ ## 解决方案
+ ## 解决方案
+
+ 让$F = \mathrm{MUX}(f,g,h)$表示通过选择定义的布尔函数$g$什么时候$f=1$并选择$h$什么时候$f=0$， 以便$$F = (f \wedge g)\ \vee\ (\neg f \wedge h).$$任务是构建ZDD$F$使用标准 ZDD 运算并遵守第 7.1.4 节的固定变量排序和归约规则。 
+
+通过对相关图表的顶部变量进行结构递归来进行构造。 让$V(f)$表示根变量的索引$f$，类似地对于$g$和$h$。 让$v$是这些指数中的最小值，所以$v = \min(V(f), V(g), V(h))$，其中汇被视为没有变量，因此不限制最小值。 
+
+每个图都在变量处分解$x_v$分为低辅因子和高辅因子。 如果$x_v$没有出现在图的根部，则该图在两个辅因子下都保持不变。 如果它确实出现，则使用其低位和高位后继者。 
+
+因此每个参数都被重写为以下形式$$f = (f_0, f_1), \quad g = (g_0, g_1), \quad h = (h_0, h_1),$$其中该对表示 ZDD 辅因子$x_v$，当根变量超过时解释为相等$v$。 
+
+功能$F$然后由香农展开确定$x_v$。 替代$f = (x_v?f_1:f_0)$进入定义表达式产生$$F = (x_v \wedge f_1 \wedge g)\ \vee\ (\neg x_v \wedge f_0 \wedge h).$$分离案件$x_v=0$和$x_v=1$给出的辅因子$F$:$$F_0 = f_0 \wedge h_0,
+\qquad
+F_1 = f_1 \wedge g_1.$$这种简化使用了$x_v=0$分支，条件$f$减少到$f_0$，因此选择减少为$h$，并且在$x_v=1$分支，选择减少为$g$。 
+
+然而，当$x_v$不发生在以下一项或多项中$f,g,h$，辅因子用标准扩展规则解释：没有变量的图$v$被原封不动地复制到两个分支中。 
+
+因此 ZDD 节点的递归定义为$F$确定如下。 如果$f$是一个水槽，那么$$\mathrm{MUX}(\bot,g,h) = h,
+\qquad
+\mathrm{MUX}(\top,g,h) = g.$$这些身份直接来自$(\bot \wedge g)\vee(\top \wedge h)=h$和$(\top \wedge g)\vee(\bot \wedge h)=g$。 
+
+如果$f$是一个非汇聚节点，标记为$x_v$， 写$f=(f_0,f_1)$。 然后结果是一个标记为的节点$x_v$其低指针和高指针是递归计算的：$$\mathrm{MUX}(f,g,h)_0 = \mathrm{MUX}(f_0, g_0, h_0),
+\qquad
+\mathrm{MUX}(f,g,h)_1 = \mathrm{MUX}(f_1, g_1, h_1).$$如果$g$或者$h$根变量大于$v$，它们的辅因子满足$g_0=g_1=g$和$h_0=h_1=h$，因此递归在排序约束下自动保持正确性。 
+
+缩减是以标准 ZDD 方式强制执行的。 如果计算出的低子节点和高子节点一致，则该节点将被消除并由该子节点替换。 如果有一个相同的三元组$(v,F_0,F_1)$已经构建完毕，现有节点被重用，确保规范性。 
+
+正确性源自香农分解在最小变量处的事实$x_v$将域划分为不相交的情况$x_v=0$和$x_v=1$，并且在每种情况下，MUX 的定义表达式精确地简化为$h$或者$g$具有一致的辅助因子。 递归保留了变量排序，因为每个递归调用都是在严格较大的变量索引上进行的，并且它保留了 ZDD 约简，因为不保留具有相同低后继和高后继的节点。 
+
+这样就完成了构建$\mathrm{MUX}(f,g,h)$作为 ZDD 操作。 ∎
