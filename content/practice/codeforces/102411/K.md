@@ -1,7 +1,7 @@
 ---
 title: "CF 102411K - 国王的孩子"
-description: "网格是一个（n×m）矩形阵列。 有些单元格包含不同的大写字母，每个这样的字母都是属于一个孩子的一座城堡。 其他所有单元格都是空的。"
-date: "2026-08-12T00:30:16+07:00"
+description: "我们有一个（n×m）网格。 有些单元格包含不同的大写字母，每个字母代表一个孩子的城堡，而其他所有单元格都是空的。 任务是用其矩形省份包含该单元格的子项的小写字母替换每个空单元格。"
+date: "2026-08-14T14:39:33+07:00"
 tags: ["codeforces", "competitive-programming"]
 categories: ["algorithms"]
 codeforces_contest: 102411
@@ -9,7 +9,7 @@ codeforces_index: "K"
 codeforces_contest_name: "ICPC 2019-2020 North-Western Russia Regional Contest"
 rating: 0
 weight: 102411
-solve_time_s: 434
+solve_time_s: 476
 verified: false
 draft: false
 ---
@@ -18,455 +18,180 @@ draft: false
 
  **评级：** -
  **标签：** -
- **求解时间：** 7m 14s
+ **求解时间：** 7m 56s
  **已验证：** 否
 
  ## 解决方案
  ## 问题理解
 
- 网格是一个（n × m）矩形阵列。 有些单元格包含不同的大写字母，每个这样的字母都是属于一个孩子的一座城堡。 其他所有单元格都是空的。 我们必须将整个网格划分为轴对齐的矩形，以便每个矩形恰好包含一座城堡。 矩形包含`A`特殊的是：在所有有效分区中，其面积必须尽可能大。 输出将每个城堡保持大写，并将每个空单元格更改为矩形拥有该城堡的子单元格的小写字母。 原问题有(n,m\le 1000)，26个大写字母每个最多有一座城堡。 
+ 我们有一个（n \times m）网格。 有些单元格包含不同的大写字母，每个字母代表一个孩子的城堡，而其他所有单元格都是空的。 任务是用其矩形省份包含该单元格的子项的小写字母替换每个空单元格。 每个省份必须是一个恰好包含一座城堡的矩形，并且包含`A`必须有最大可能的面积。 原始的大写城堡单元在输出中保持不变。 官方的限制是(1 \le n,m \le 1000)，最多有26座城堡，因为每个大写字母都是不同的。 
 
-两个网格维度都可以达到1000，因此可以有（10^6）个单元格。 对于每个可能的矩形的每个单元格进行大量工作的算法已经太昂贵了。 更准确地说，枚举包含的所有矩形`A`给出顶部和底部边界的二次选择以及左侧和右侧边界的另一个二次选择，这导致大约 (O(n^2m^2)) 个候选. 在 (n=m=1000) 时，约为 (10^{12})，远远超出 2 秒的限制。 我们需要利用这样一个事实：只有一座杰出的城堡，并且包含它的空矩形可以通过其垂直跨度和每行可用的水平空间来表征。 
+（1000 × 1000）界限意味着可以有一百万个单元格，因此任何解决方案都应该在一个网格维度上接近线性或二次，而不是枚举所有可能的矩形。 对于 (n=m=1000)，已经有 (10^6) 个单元格，而 (n^2m^2) 是 (10^{12})。 小字母表是第二个有用的约束：只能有 26 个省份，因此在找到最佳省份后`A`，我们可以为每个城堡做更多的工作，尽管下面的解决方案不需要这样做。 
 
-有几种边界情况可能会导致粗心的实施失败。 如果`A`是唯一的城堡，例如，```
-2 2
-A.
-..
-```正确的输出是```
-Aa
-aa
-```因为整个网格可以属于`A`。 坚持在各个方向的城堡边界处停止的实现可能会意外地使单元格处于未分配状态。 
-
-第二种情况是另一座城堡仅阻挡一侧：```
-2 3
-A.B
+第一个棘手的情况是当`A`是在一个边界上。 例如，```
+A..
 ...
-```最佳省份`A`是前两列，所以正确的输出是```
-AaB
-aab
-```矩形的面积为 (4​​)。 只查看包含以下内容的行的方法`A`会找到宽度 (2)，但可能会错过相同的宽度延伸到第二行。 
+..B
+```最大省份为`A`不一定只是第一行或第一列。 这里由前两行组成的矩形的面积为 6，因此有效的最优输出为```
+Aaa
+aaa
+bbB
+```一种仅尝试围绕对称扩展的解决方案`A`可能会错过这个矩形。 
 
-第三种情况在候选矩形的正上方或正下方建立一个城堡：```
-4 4
-A..B
-....
-C..D
-....
-```一种最佳输出是```
-AaaB
-aaab
-Cddd
-cddd
-```这`A`省份有区域 (6)，占据第 1 行和第 2 行，第 1 行到第 3 列。其他省份可以在完成后独立构建`A`是固定的。 不小心的垂直扩展可能会交叉`C`并错误地将其包含在`A`长方形。 
+另一个微妙的情况是另一座城堡仅阻挡一个方向。 为了```
+A.B
+```
+
+`A`可以拥有前两个单元格，但不能交叉`B`。 正确的输出是```
+AaB
+```对待每一个非`A`搜索时单元格为空`A`会错误地给出`A`整排。 
+
+第三个问题是几个最大矩形可以具有相同的面积。 为了```
+A.
+.B
+```
+
+`A`可以取第一行或第一列，两者的面积都是 2。一个有效的结果是```
+Aa
+bB
+```正确的实现不能依赖于特定的关系是否是唯一的最佳值。 任何最大矩形就足够了。 
 
 ## 方法
 
- 蛮力的想法很简单。 枚举包含单元格的每个矩形`A`，检查是否包含另一个城堡，并保留最大的有效城堡。 如果我们有城堡位置的二维前缀和，则可以在恒定时间内进行检查。 困难在于矩形的数量。 顶行和底行有 (O(n^2)) 个选择，左列和右列有 (O(m^2)) 个选择，因此最坏情况下的候选数是 (O(n^2m^2))。 对于 (n=m=1000)，即使在考虑其余结构之前，大约也有 (2.5\cdot10^{11}) 个包含中心单元的矩形。 这个想法是正确的，但是搜索空间太大了。 
+ 一种直接的方法是枚举包含的每个矩形`A`，检查是否包含另一个城堡，并保留最大的有效城堡。 即使使用二维前缀和进行有效性检查（O(1)），包含固定单元格的矩形数量也可以达到
 
-有用的观察是我们只需要优化省份`A`。 一旦我们选择了一个空矩形，其中包含`A`，棋盘的其余部分始终可以划分为有效的矩形。 删除`A`长方形。 它的补集最多由四个矩形条组成：其上方的部分、其下方的部分、其左侧的部分和其右侧的部分。 非空条带不能包含零个城堡，因为否则我们可以扩大`A`矩形进入该条带并获得一个严格更大的空矩形。 然后可以递归地对每个条带进行分区。 
+ [
+ 500\cdot501\cdot500\cdot501
+ =62,750,250,000
+ ]
 
-对于至少包含两个城堡的区域，选择具有不同行的两个城堡。 它们的行之间的水平切割创建了两个矩形，每个矩形包含至少一座城堡。 如果所有城堡都具有相同的行，则它们必须具有不同的列，因此垂直切割将其中两个城堡分开。 重复此操作会得到一个矩形分区，每个最终矩形中恰好有一座城堡。 这是一个简单的断头台分区，当有 (k\le26) 个城堡时，它只使用 (O(k^2)) 次工作。 
+ 当网格为 (1000\times1000) 并且`A`靠近中心。 两秒钟内不可能考虑这么多候选人。 检查每个候选人体内的每个细胞会更糟糕。 
 
-剩下的任务是找到包含的最大空矩形`A`。 这是最大矩形问题的定点版本。 我们使用通常用于最大空矩形的相同挂线思想：对于可以参与矩形的每一行，计算我们可以从左和右延伸多远`A`在不撞到城堡的情况下，然后在垂直移动时保持前缀最小值。 任何选定的顶行和底行的最终宽度直接从这些最小值获得。 
+有用的观察是一个矩形包含`A`由其顶行、底行、左边界和右边界确定。 一旦顶行和底行被固定，就可以独立于行找到最佳可能的水平边界。 对于所选顶部和底部之间的每一行，计算可以立即在左侧和右侧取多少个空单元格`A`。 该矩形只能使用区间内所有行中的最小左延伸和最小右延伸。 
 
-四个边界上的强力搜索减少到 (O(n^2))，因为只需要显式枚举顶部和底部边界。 计算水平间隙需要 (O(nm))。 由于只有26座城堡，后续的递归构建与网格处理相比可以忽略不计。 
+认为`A`位于 (c) 栏。 令 (L_i) 为可取到左侧的单元格数量`A`在第 (i) 行，以及 (R_i) 右侧相应的数字。 将最小值从包含的行传播出去后`A`， (L_i) 和 (R_i) 表示在行 (i) 和 (R_i) 之间的整个间隔中同时可用的扩展`A`。 
+
+对于顶行 (u) 和底行 (d)，最大宽度为
+
+ [
+ \min(L_u,L_d)+\min(R_u,R_d)+1。 
+]
+
+这`+1`是包含的列`A`。 尝试所有成对的顶部和底部行需要 (O(n^2))，而计算水平扩展需要 (O(nm))。 对于约束来说这已经足够了。 
+
+一旦最优`A`矩形固定了，剩下的问题就变成了构造问题。 关键是递归地划分矩形之外的区域。 较大矩形内的矩形的补集最多由四个矩形带组成：上、下、左、右。 
+
+这些带中的每个非空带都必须包含另一座城堡。 例如，如果上面的频段`A`不包含任何城堡，`A`矩形可以向上延伸，这与它的最大值相矛盾。 同样的论点适用于所有四个方面。 
+
+现在考虑包含多个城堡的任何矩形区域。 如果它们的行坐标不全部相等，则水平切割最小城堡行和最大城堡行之间的区域。 生成的两个矩形都包含至少一座城堡。 如果所有城堡排成一排，则它们的列不同，因此垂直切割将它们分开。 重复此操作最终会留下恰好包含一座城堡的矩形。 这给出了有效的省份划分，而不改变已经最优的`A`长方形。 
 
 | 方法| 时间复杂度| 空间复杂度| 判决 |
- | ---| ---| ---| ---|
- | 蛮力 | (O(n^2m^2)) | (O(nm)) | 太慢了|
- | 最佳 | (O(nm+n^2+K^2)), (K\le26) | (O(nm+n^2+K^2)), (K\le26) | (O(nm+K^2)) | 已接受 |
+ | --- | --- | --- | --- |
+ | 蛮力 | (O(n^2m^2)) 带有前缀和 | (O(nm)) | 太慢了 |
+ | 最佳| (O(nm+n^2+K^2)), (K\le26) | (O(nm+n^2+K^2)), (K\le26) | (O(nm+K)) | 已接受 |
 
  ## 算法演练
 
- 1.找到城堡的位置((a_r,a_c))`A`。 算法的第一部分考虑原始网格，其中每个大写城堡都是一个障碍，每个`.`细胞可用。 
-2. 从`A`，沿着列 (a_c) 向下移动，直到到达另一个城堡。 向上做同样的事情。 所得的行间隔是包含的空矩形的唯一可能的垂直范围`A`，因为每个这样的矩形都包含列 (a_c)。 该列中的城堡将位于矩形内部，并且违反单城堡条件。 
-3. 对于每个可用行，计算紧邻列 (a_c) 左侧和右侧的连续空单元格的数量。 调用这些原始值`left`和`right`。 在其他地方有城堡的行仍然可以参加，但其水平间隔必须停在该城堡之前。 
-4. 将这些水平容量传播到远离包含`A`。 当向上或向下移动一行时，矩形必须适合该行和该行之间的每一行`A`，因此可用的左扩展成为当前行的原始扩展和上一行已经可能的扩展的最小值。 这同样适用于右扩展。 
-5. 枚举每个顶行和底行包含`A`。 如果顶行是（t），底行是（b），则左侧的最大公共延伸是
+ 1. 找到位置`A`并记录所有其他城堡的位置。 我们只会优化`A`，因为一旦确定了其最大可能的矩形，剩余的单元格就可以独立划分。 
+2. 找到周围连续的行`A`可以由`A`长方形。 从包含的行开始`A`，当单元格处于`A`的列是`A`本身或`.`。 该列中的一座不同的城堡阻止每个矩形穿过其行。 
+3. 对于每个可用行，计算紧邻其左侧和右侧的连续点的数量`A`的专栏。 这些是该行的原始水平扩展。 相应边任何地方的城堡都会阻止延伸。 
+4. 传播最小水平扩展远离包含`A`。 向下移动，将每个值替换为其原始扩展名和上一行中的值的最小值。 向上进行对称操作。 此后，(L_i) 表示每行可用的最大左扩展`A`第(i)行和(R_i)具有与右侧类似的含义。 
+5. 枚举每个可能的顶行和底行包含`A`。 对于每一对，计算
 
  [
- \min(L_t,L_b),
+ 宽度=\min(L_{顶部},L_{底部})+\min(R_{顶部},R_{底部})+1
  ]
 
- 因为`L[t]`已经包含从 (t) 到所有行的最小值`A`， 尽管`L[b]`包含最小的`A`至(b)。 同样的推理给出了正确的扩展
+ 并将其乘以高度。 保留面积最大的矩形。 
 
- [
- \min(R_t,R_b)。 
-]
-
- 因此，该垂直跨度的最大可能宽度是
-
- [
- \min(L_t,L_b)+\min(R_t,R_b)+1。 
-]
-
- 将此宽度乘以 (b-t+1) 即可得出该行对的最佳区域。 
-6. 保留面积最大的矩形。 所考虑的每个矩形都没有其他城堡，并且空矩形的每个可能的垂直跨度都包含`A`被考虑，所以所选择的矩形是全局最优的`A`。 
-7. 填写所选内容`A`带小写的矩形`a`在其空单元格上。 城堡`A`本身保持大写。 
-8. 将剩余的板分成最多四个矩形区域`A`长方形。 对于每个非空区域，收集其中的城堡。 非空区域总是包含一座城堡，因为否则`A`矩形可以扩大到该区域。 
-9. 递归地划分每个剩余区域。 如果它包含一座城堡，请用该城堡的小写字母填充该区域的每个空单元格。 如果它包含多个不同行的城堡，请在两个城堡之间水平剪切。 如果所有城堡都在同一行，则在两个城堡之间垂直切割。 生成的两个矩形都至少包含一座城堡，因此该过程可以继续。 
-10. 当每个递归区域都有一座城堡时，所有单元都已分配。 这`A`矩形在第一步之后没有被改变，所以它的面积仍然是最大可能的。 
+端点最小值就足够了，因为传播的数组已经包含从`A`到那个端点。 
+6. 用小写字母绘制所选矩形`a`，保留大写`A`不变。 里面没有其他城堡，因为每一个水平和垂直的延伸都被城堡阻止了。 
+7. 考虑外侧的四个矩形带`A`长方形。 对于每个非空带，收集位于其中的城堡并递归划分该带。 
+8. 对于包含一座城堡的递归区域，将整个区域赋予该城堡。 它已经是一个包含一座城堡的矩形，因此不需要进一步切割。 
+9. 对于包含多个城堡的区域，检查它们的行坐标。 如果它们不相等，请选择最小和最大城堡行之间的水平边界。 否则，选择最小和最大城堡柱之间的垂直边界。 递归求解两个结果区域。 
+10. 打印完成的网格。 每个原始城堡都保持大写，而每个空单元格都被分配了一个小写所有者。 
 
 ### 为什么它有效
 
- 每个有效省份包含`A`是一个轴对齐的矩形，包含`A`没有其他城堡。 算法的第一部分准确地检查了这些可能性。 它的垂直边界必须位于最大无城堡区间内`A`的列，对于任何固定的顶部和底部行，最大可能的水平间隔是所有这些行上可用的空间隔的交集。 所传播的`L`和`R`数组精确计算这些交集，因此找到的最大值是可能的最大值`A`长方形。 
+ 对于`A`省，考虑包含的任何有效矩形`A`。 它的顶行和底行是一对 (u,d)。 在它们之间的每一行上，其左边界不能比第一个城堡之前的连续空单元格更左边，右侧也类似。 传播的 (L) 和 (R) 值准确捕获了这些共同限制，因此为 (u,d) 计算的宽度是该垂直间隔的最大可能宽度。 由于检查了每个可能的顶部和底部对，因此所选矩形在可以合法包含的所有矩形中具有最大可能的面积`A`。 
 
-仍有待证明这个矩形实际上可以出现在一个完整的分区中。 它的补集由四个不相交的矩形条组成。 如果其中一个条带非空且不包含城堡，则`A`矩形可以扩展到其中，这与其面积的极大值相矛盾。 因此，每个非空条带至少包含一座城堡。 任何包含多个城堡的矩形都可以通过选择具有不同行或（如果需要的话，不同列）的两个城堡来分为两个包含城堡的矩形。 重复此操作会生成只有一座城堡的矩形。 由于每次切割都是沿着当前矩形的整个边界进行的，因此最终区域形成补集的不相交分区。 因此最大空矩形为`A`总是可以实现的。 
+固定这个矩形后，每个非空边带都包含一座城堡，因为否则`A`可以扩展到该频段。 任何包含多个城堡的矩形区域始终可以被水平或垂直边界分割，以便两侧都包含至少一个城堡。 递归最终会生成只包含一座城堡的矩形，并且切割是不相交的并覆盖原始区域。 因此，所有像元都被准确地分配到一个有效省份，而`A`该省仍保持全球最佳状态。 
 
 ## Python 解决方案```python
 import sys
 input = sys.stdin.readline
 
-DOT = ord('.')
+def solve_grid(n, m, rows):
+    grid = [list(row) for row in rows]
 
-def solve():
-    n, m = map(int, input().split())
-    grid = [bytearray(input().strip(), 'ascii') for _ in range(n)]
-
-    ar = ac = -1
     castles = []
-
-    for r in range(n):
-        row = grid[r]
-        for c in range(m):
-            ch = row[c]
-            if ch != DOT:
-                if ch == ord('A'):
-                    ar, ac = r, c
-                else:
-                    castles.append((r, c, ch))
-
-    # Find the largest empty rectangle containing A.
-    left = [0] * n
-    right = [0] * n
-
-    top_lim = ar
-    bottom_lim = ar
-
-    for r in range(ar - 1, -1, -1):
-        if grid[r][ac] != DOT:
-            break
-        top_lim = r
-
-    for r in range(ar + 1, n):
-        if grid[r][ac] != DOT:
-            break
-        bottom_lim = r
-
-    # Raw horizontal free lengths, then prefix minima toward A.
-    for r in range(ar, bottom_lim + 1):
-        cnt = 0
-        c = ac - 1
-        row = grid[r]
-        while c >= 0 and row[c] == DOT:
-            cnt += 1
-            c -= 1
-
-        if r == ar:
-            left[r] = cnt
-        else:
-            left[r] = min(left[r - 1], cnt)
-
-        cnt = 0
-        c = ac + 1
-        while c < m and row[c] == DOT:
-            cnt += 1
-            c += 1
-
-        if r == ar:
-            right[r] = cnt
-        else:
-            right[r] = min(right[r - 1], cnt)
-
-    for r in range(ar - 1, top_lim - 1, -1):
-        row = grid[r]
-
-        cnt = 0
-        c = ac - 1
-        while c >= 0 and row[c] == DOT:
-            cnt += 1
-            c -= 1
-        left[r] = min(left[r + 1], cnt)
-
-        cnt = 0
-        c = ac + 1
-        while c < m and row[c] == DOT:
-            cnt += 1
-            c += 1
-        right[r] = min(right[r + 1], cnt)
-
-    best_area = 1
-    best_top = best_bottom = ar
-
-    for top in range(ar, top_lim - 1, -1):
-        for bottom in range(ar, bottom_lim + 1):
-            width = min(left[top], left[bottom])
-            width += min(right[top], right[bottom]) + 1
-            height = bottom - top + 1
-            area = width * height
-
-            if area > best_area:
-                best_area = area
-                best_top = top
-                best_bottom = bottom
-
-    best_left = min(left[best_top], left[best_bottom])
-    best_right = min(right[best_top], right[best_bottom])
-    best_left = ac - best_left
-    best_right = ac + best_right
-
-    for r in range(best_top, best_bottom + 1):
-        row = grid[r]
-        for c in range(best_left, best_right + 1):
-            if row[c] == DOT:
-                row[c] = ord('a')
-
-    # Recursively partition every region outside A's rectangle.
-    def partition(top, bottom, left_col, right_col, pts):
-        if not pts:
-            return
-
-        if len(pts) == 1:
-            _, _, ch = pts[0]
-            lower = ch + 32
-
-            for r in range(top, bottom + 1):
-                row = grid[r]
-                for c in range(left_col, right_col + 1):
-                    if row[c] == DOT:
-                        row[c] = lower
-            return
-
-        p0 = pts[0]
-        p1 = None
-
-        # Prefer a horizontal cut.
-        for p in pts[1:]:
-            if p[0] != p0[0]:
-                p1 = p
-                break
-
-        if p1 is not None:
-            cut = min(p0[0], p1[0])
-
-            upper = []
-            lower = []
-            for p in pts:
-                if p[0] <= cut:
-                    upper.append(p)
-                else:
-                    lower.append(p)
-
-            partition(top, cut, left_col, right_col, upper)
-            partition(cut + 1, bottom, left_col, right_col, lower)
-            return
-
-        # All castles have the same row, so a vertical cut exists.
-        for p in pts[1:]:
-            if p[1] != p0[1]:
-                p1 = p
-                break
-
-        cut = min(p0[1], p1[1])
-
-        left_pts = []
-        right_pts = []
-        for p in pts:
-            if p[1] <= cut:
-                left_pts.append(p)
-            else:
-                right_pts.append(p)
-
-        partition(top, bottom, left_col, cut, left_pts)
-        partition(top, bottom, cut + 1, right_col, right_pts)
-
-    # The complement of A's rectangle is at most four rectangles.
-    regions = []
-
-    if best_top > 0:
-        regions.append((0, best_top - 1, 0, m - 1))
-
-    if best_bottom + 1 < n:
-        regions.append((best_bottom + 1, n - 1, 0, m - 1))
-
-    if best_left > 0:
-        regions.append((best_top, best_bottom, 0, best_left - 1))
-
-    if best_right + 1 < m:
-        regions.append((best_top, best_bottom, best_right + 1, m - 1))
-
-    for top, bottom, left_col, right_col in regions:
-        pts = [
-            p for p in castles
-            if top <= p[0] <= bottom
-            and left_col <= p[1] <= right_col
-        ]
-        partition(top, bottom, left_col, right_col, pts)
-
-    return '\n'.join(row.decode('ascii') for row in grid)
-
-if __name__ == "__main__":
-    sys.stdout.write(solve())
-```输入存储为`bytearray`行而不是 Python 字符串，因为该结构修改了许多单元格。 整数字节值也使得频繁`.`比较便宜。 由于最多有 (10^6) 个单元格，因此这种表示形式可以轻松地保持在内存限制内。 
-
-第一次扫描定位`A`并将所有其他城堡存储为坐标和字节值。 这`top_lim`和`bottom_lim`计算找到最大垂直间隔包含`A`其列中没有另一座城堡。 一个矩形包含`A`无法穿越这样的城堡。 
-
-这`left`和`right`数组在两个方向上独立传播。 对于下面的行`A`,`left[r]`表示适用于每一行的最大左扩展`A`通过`r`。 向上传递具有对称意义。 这就是为什么面积计算只需要`left[top]`,`left[bottom]`,`right[top]`， 和`right[bottom]`，而不是再次扫描整个垂直间隔。 
-
-表达式为`width`为列添加 1`ac`本身。 这很容易就落后一分。 如果左侧有两个空闲单元，右侧有三个空闲单元，则总宽度为 (2+1+3=6)，而不是 (5)。 
-
-递归`partition`函数永远不会改变所选的`A`长方形。 它的输入矩形保证至少包含一个非`A`城堡。 当只有一座城堡时，整个地区都属于它。 对于多个城堡，所选的切割将两个城堡放置在相对的两侧，因此两个递归子都不能没有城堡。 
-
-Python 整数对于最大可能区域 (10^6) 不会溢出，但无论如何都会使用普通整数算术。 递归深度最多为城堡的数量，只有26个，所以这里递归是安全的。 
-
-## 工作示例
-
- ### 示例 1
-
- 的`A`castle 位于第 3 行第 4 列（使用基于 1 的坐标）。 它的列不包含其他城堡，因此每一行都可以参与。 最佳垂直跨度的相关值总结如下。 
-
-| 顶行| 底排| 常用左扩展 | 共同权利延伸| 宽度| 身高| 面积 |
- | ---| ---| ---| ---| ---| ---| ---|
- | 3 | 3 | 3 | 4 | 8 | 1 | 8 |
- | 2 | 3 | 1 | 4 | 6 | 2 | 12 | 12
- | 3 | 4 | 3 | 4 | 8 | 2 | 16 | 16
- | 2 | 4 | 1 | 4 | 6 | 3 | 18 | 18
- | 2 | 5 | 1 | 0 | 2 | 4 | 8 |
-
- 最佳面积是 18，从第 2 行到第 4 行和第 3 到第 8 列获得。结果`A`矩形是```
-......
-.Faaaaaa
-...Aaaaa
-........
-.....P..
-..L.....
-```第 2 至 4 行和第 3 至 8 列内的点转换为`a`。 
-
-其余单元格可以独立分区。 上条仅包含`X`，左边中间的条带只包含`F`，底部条带包含`P`和`L`。 递归构造产生的一个有效输出是```
-xxxxxxXx
-fFaaaaaa
-ffaAaaaa
-ffaaaaaa
-pppppPpp
-llLlllll
-```官方示例使用了不同的底部区域有效分区，这是允许的，因为所需的`A`面积是一样的。 
-
-### 四城堡示例
-
- 考虑```
-4 4
-A..B
-....
-C..D
-....
-```这`A`castle 位于第 1 行第 1 列。包含它的最佳矩形使用第 1 行和第 2 行以及第 1 到第 3 列。 
-
-| 顶部 | 底部| 左延伸 | 右延伸| 宽度| 身高| 面积 |
- | ---| ---| ---| ---| ---| ---| ---|
- | 1 | 1 | 0 | 2 | 3 | 1 | 3 |
- | 1 | 2 | 0 | 2 | 3 | 2 | 6 |
- | 1 | 3 | 0 | 0 | 1 | 3 | 3 |
- | 1 | 4 | 0 | 0 | 1 | 4 | 4 |
-
- 最大值为区域 6。`A`矩形在概念上被删除，留下一个包含`B`和一个底部矩形包含`C`和`D`。 
-
-底部矩形有两个城堡在同一行，因此递归划分使用垂直切割。 最终结果是```
-AaaB
-aaab
-Cddd
-cddd
-```这`A`该省有6个地区，`B`拥有右上角的细胞对，`C`拥有左下栏，并且`D`拥有剩余的右下矩形。 每个省都是长方形的，并且只包含一座城堡。 
-
-## 复杂度分析
-
- | 测量| 复杂性 | 说明|
- | ---| ---| ---|
- | 时间 | (O(nm+n^2+K^2)) | 水平扫描使用 (O(nm))，所有上下对使用 (O(n^2))，递归城堡过滤使用 (O(K^2)) 和 (K\le26)。 |
- | 空间| (O(nm+K)) | 网格使用(O(nm))，间隙阵列使用(O(n))，最多有26个城堡。 |
-
- 对于 (n,m\le1000)，网格最多有 (10^6) 个单元格。 主要工作是对这些单元格以及最多 (10^6) 个上下对进行一些线性扫描。 递归构造很小，因为不同城堡的数量以 26 为界。这完全符合 512 MB 内存限制，并且比 (O(n^2m^2)) 蛮力搜索小得多。 
-
-## 测试用例
-
- 官方示例有多个有效输出，因此下面的测试将检查此实现产生的确定性输出。 特别评委也会接受官方的样本输出。```python
-import sys
-import io
-
-DOT = ord('.')
-
-def solve():
-    n, m = map(int, input().split())
-    grid = [bytearray(input().strip(), 'ascii') for _ in range(n)]
-
     ar = ac = -1
-    castles = []
 
     for r in range(n):
         for c in range(m):
             ch = grid[r][c]
-            if ch != DOT:
-                if ch == ord('A'):
+            if 'A' <= ch <= 'Z':
+                if ch == 'A':
                     ar, ac = r, c
                 else:
                     castles.append((r, c, ch))
 
+    # Find the vertical interval that an A-rectangle can occupy.
+    lo = ar
+    while lo > 0 and grid[lo - 1][ac] == '.':
+        lo -= 1
+
+    hi = ar
+    while hi + 1 < n and grid[hi + 1][ac] == '.':
+        hi += 1
+
+    raw_l = [0] * n
+    raw_r = [0] * n
+
+    # Horizontal empty runs around A for every usable row.
+    for r in range(lo, hi + 1):
+        c = ac - 1
+        cnt = 0
+        row = grid[r]
+
+        while c >= 0 and row[c] == '.':
+            cnt += 1
+            c -= 1
+        raw_l[r] = cnt
+
+        c = ac + 1
+        cnt = 0
+        while c < m and row[c] == '.':
+            cnt += 1
+            c += 1
+        raw_r[r] = cnt
+
+    # Propagate minima from A downwards and upwards.
     left = [0] * n
     right = [0] * n
 
-    top_lim = ar
-    bottom_lim = ar
+    left[ar] = raw_l[ar]
+    right[ar] = raw_r[ar]
 
-    for r in range(ar - 1, -1, -1):
-        if grid[r][ac] != DOT:
-            break
-        top_lim = r
+    for r in range(ar + 1, hi + 1):
+        left[r] = min(raw_l[r], left[r - 1])
+        right[r] = min(raw_r[r], right[r - 1])
 
-    for r in range(ar + 1, n):
-        if grid[r][ac] != DOT:
-            break
-        bottom_lim = r
+    for r in range(ar - 1, lo - 1, -1):
+        left[r] = min(raw_l[r], left[r + 1])
+        right[r] = min(raw_r[r], right[r + 1])
 
-    for r in range(ar, bottom_lim + 1):
-        row = grid[r]
-
-        cnt = 0
-        c = ac - 1
-        while c >= 0 and row[c] == DOT:
-            cnt += 1
-            c -= 1
-        left[r] = cnt if r == ar else min(left[r - 1], cnt)
-
-        cnt = 0
-        c = ac + 1
-        while c < m and row[c] == DOT:
-            cnt += 1
-            c += 1
-        right[r] = cnt if r == ar else min(right[r - 1], cnt)
-
-    for r in range(ar - 1, top_lim - 1, -1):
-        row = grid[r]
-
-        cnt = 0
-        c = ac - 1
-        while c >= 0 and row[c] == DOT:
-            cnt += 1
-            c -= 1
-        left[r] = min(left[r + 1], cnt)
-
-        cnt = 0
-        c = ac + 1
-        while c < m and row[c] == DOT:
-            cnt += 1
-            c += 1
-        right[r] = min(right[r + 1], cnt)
-
+    # Find the maximum-area rectangle containing A.
     best_area = 1
     best_top = best_bottom = ar
 
-    for top in range(ar, top_lim - 1, -1):
-        for bottom in range(ar, bottom_lim + 1):
-            width = min(left[top], left[bottom])
-            width += min(right[top], right[bottom]) + 1
+    for top in range(ar, lo - 1, -1):
+        for bottom in range(ar, hi + 1):
+            width = (
+                min(left[top], left[bottom])
+                + min(right[top], right[bottom])
+                + 1
+            )
             area = width * (bottom - top + 1)
 
             if area > best_area:
@@ -477,81 +202,157 @@ def solve():
     best_left = ac - min(left[best_top], left[best_bottom])
     best_right = ac + min(right[best_top], right[best_bottom])
 
+    # Reserve A's optimal province.
     for r in range(best_top, best_bottom + 1):
+        row = grid[r]
         for c in range(best_left, best_right + 1):
-            if grid[r][c] == DOT:
-                grid[r][c] = ord('a')
+            if row[c] == '.':
+                row[c] = 'a'
 
-    def partition(top, bottom, left_col, right_col, pts):
+    def fill_region(r1, r2, c1, c2, pts):
         if not pts:
             return
 
         if len(pts) == 1:
-            lower = pts[0][2] + 32
-            for r in range(top, bottom + 1):
-                for c in range(left_col, right_col + 1):
-                    if grid[r][c] == DOT:
-                        grid[r][c] = lower
+            _, _, ch = pts[0]
+            lower = ch.lower()
+
+            for r in range(r1, r2 + 1):
+                row = grid[r]
+                for c in range(c1, c2 + 1):
+                    if row[c] == '.':
+                        row[c] = lower
             return
 
-        p0 = pts[0]
-        p1 = None
+        min_r = min(p[0] for p in pts)
+        max_r = max(p[0] for p in pts)
 
-        for p in pts[1:]:
-            if p[0] != p0[0]:
-                p1 = p
-                break
+        if min_r != max_r:
+            cut = (min_r + max_r) // 2
 
-        if p1 is not None:
-            cut = min(p0[0], p1[0])
-            upper = [p for p in pts if p[0] <= cut]
-            lower = [p for p in pts if p[0] > cut]
-            partition(top, cut, left_col, right_col, upper)
-            partition(cut + 1, bottom, left_col, right_col, lower)
+            top_pts = [p for p in pts if p[0] <= cut]
+            bottom_pts = [p for p in pts if p[0] > cut]
+
+            fill_region(r1, cut, c1, c2, top_pts)
+            fill_region(cut + 1, r2, c1, c2, bottom_pts)
+        else:
+            min_c = min(p[1] for p in pts)
+            max_c = max(p[1] for p in pts)
+            cut = (min_c + max_c) // 2
+
+            left_pts = [p for p in pts if p[1] <= cut]
+            right_pts = [p for p in pts if p[1] > cut]
+
+            fill_region(r1, r2, c1, cut, left_pts)
+            fill_region(r1, r2, cut + 1, c2, right_pts)
+
+    def process_region(r1, r2, c1, c2):
+        if r1 > r2 or c1 > c2:
             return
 
-        p1 = pts[1]
-        cut = min(p0[1], p1[1])
-        left_pts = [p for p in pts if p[1] <= cut]
-        right_pts = [p for p in pts if p[1] > cut]
-
-        partition(top, bottom, left_col, cut, left_pts)
-        partition(top, bottom, cut + 1, right_col, right_pts)
-
-    regions = []
-
-    if best_top > 0:
-        regions.append((0, best_top - 1, 0, m - 1))
-    if best_bottom + 1 < n:
-        regions.append((best_bottom + 1, n - 1, 0, m - 1))
-    if best_left > 0:
-        regions.append((best_top, best_bottom, 0, best_left - 1))
-    if best_right + 1 < m:
-        regions.append((best_top, best_bottom, best_right + 1, m - 1))
-
-    for top, bottom, lc, rc in regions:
         pts = [
             p for p in castles
-            if top <= p[0] <= bottom and lc <= p[1] <= rc
+            if r1 <= p[0] <= r2 and c1 <= p[1] <= c2
         ]
-        partition(top, bottom, lc, rc, pts)
+        fill_region(r1, r2, c1, c2, pts)
 
-    return '\n'.join(row.decode() for row in grid)
+    # The complement of A's rectangle consists of at most four rectangles.
+    process_region(0, best_top - 1, 0, m - 1)
+    process_region(best_bottom + 1, n - 1, 0, m - 1)
+    process_region(best_top, best_bottom, 0, best_left - 1)
+    process_region(best_top, best_bottom, best_right + 1, m - 1)
+
+    return [''.join(row) for row in grid]
+
+def solve():
+    n, m = map(int, input().split())
+    rows = [input().strip() for _ in range(n)]
+    print('\n'.join(solve_grid(n, m, rows)))
+
+if __name__ == "__main__":
+    solve()
+```第一部分位于`A`和所有其他城堡。 城堡列表与可变网格分开保存，这使得后面的递归分区独立于已经写入的小写单元格。 
+
+在计算水平延伸之前先找到垂直间隔。 一座不一样的城堡`A`的列是一个硬屏障，因此超出它的行永远不能参与`A`省。 
+
+原始的左右运行仅检查紧邻的单元格`A`的专栏。 传播步骤是将这些原始值更改为区间范围的限制。 如果没有这种传播，仅使用两个端点行将错误地忽略间隔中间的阻塞城堡。 
+
+最大区域搜索使用严格的`>`比较面积时。 等面积矩形都是有效的，因此保留第一个矩形可以避免不必要的平局处理。 
+
+递归分区永远不会修改`A`长方形。 每个边区域与其不相交，并且每个递归切割将一个矩形划分为两个较小的矩形。 当一个地区只剩下一座城堡时，整个地区都可以涂上该孩子的小写字母。 
+
+Python 中不存在整数溢出问题。 最大的面积仅为 (10^6)，尽管 Python 整数也可以处理更大的值。 
+
+## 工作示例
+
+ 官方样本有`A`在第 2 行第 3 列，使用从零开始的坐标。 垂直传播后有用的水平扩展如下。 
+
+| 行| 原始左| 原始右| 向左传播 | 传播权|
+ | --- | --- | --- | --- | --- |
+ | 0 | 3 | 2 | 1 | 2 |
+ | 1 | 1 | 4 | 1 | 4 |
+ | 2 | 3 | 4 | 3 | 4 |
+ | 3 | 3 | 4 | 3 | 4 |
+ | 4 | 3 | 1 | 3 | 1 |
+ | 5 | 0 | 4 | 0 | 1 |
+
+ 对于从第 1 行到第 3 行的间隔，宽度为
+
+ [
+ \min(1,3)+\min(4,4)+1=6,
+ ]
+
+ 所以面积是 (6\cdot3=18)。 所选矩形为第 1 行至第 3 行和第 2 至第 7 列。 
+
+| 顶部 | 底部| 宽度| 身高| 面积 | 最佳|
+ | --- | --- | --- | --- | --- | --- |
+ | 2 | 2 | 8 | 1 | 8 | 第 2..2 行 |
+ | 1 | 2 | 6 | 2 | 12 | 12 行 1..2 |
+ | 1 | 3 | 6 | 3 | 18 | 18 第 1..3 行 |
+ | 0 | 3 | 4 | 4 | 16 | 16 第 1..3 行 |
+ | 1 | 4 | 5 | 4 | 20 | 行 1..4 |
+
+ 表中的最后一行显示了传播值的重要性：尽管第 4 行本身左侧有三个可用单元格，但其右侧被`P`，因此向下延伸矩形会减少宽度。 实际的最佳间隔是通过考虑所有对来确定的，而不仅仅是通过采用最宽的单独行来确定。 
+
+对于第二个例子，考虑```
+2 2
+A.
+.B
+```该行包含`A`其右侧有一个空闲单元格。 第二行右侧没有空闲单元格，因为`B`占据那个位置。 
+
+| 顶部 | 底部| 宽度| 身高| 面积 | 最佳|
+ | --- | --- | --- | --- | --- | --- |
+ | 0 | 0 | 2 | 1 | 2 | 行 0..0 |
+ | 0 | 1 | 1 | 2 | 2 | 行 0..0 |
+
+ 两个选择的面积相等，因此严格比较保留第一个矩形。`A`拥有第一行。 剩下的第二行是一个矩形，仅包含`B`，所以就变成了`bB`。 最终输出是```
+Aa
+bB
+```此示例演示了平局情况和递归构造。 最佳面积为`A`无论选择哪个最大矩形，都是 2。 
+
+## 复杂度分析
+
+ | 测量 | 复杂性 | 说明|
+ | --- | --- | --- |
+ | 时间 | (O(nm+n^2+K^2)) | 水平运行扫描网格一次，顶行和底行给出 (O(n^2)) 个候选，递归点过滤成本最多 (O(K^2)) |
+ | 空间| (O(nm+K)) | 可变网格主导内存，而扩展数组和城堡列表是线性的 |
+
+ 对于 (n,m\le1000)，(nm) 至多为 100 万，(n^2) 也至多为 100 万。 城堡的数量满足(K\le26)，因此与网格操作相比，递归构造很小。 该解决方案完全保持在 512 MB 内存限制内，并避免了 (10^{12}) 规模的矩形枚举，这使得暴力破解变得不切实际。 
+
+## 测试用例
+
+ 下面的测试工具假设解决方案保存为`solution.py`并导入其`solve_grid`功能。```python
+from solution import solve_grid
 
 def run(inp: str) -> str:
-    global input
-    old_stdin = sys.stdin
-    old_input = input
-    sys.stdin = io.StringIO(inp)
-    input = sys.stdin.readline
-    try:
-        return solve()
-    finally:
-        sys.stdin = old_stdin
-        input = old_input
+    lines = inp.strip().splitlines()
+    n, m = map(int, lines[0].split())
+    rows = lines[1:]
+    return "\n".join(solve_grid(n, m, rows))
 
-# Provided sample, using the deterministic output of this implementation.
-sample1 = """6 8
+# Provided sample
+assert run(
+    """6 8
 ......X.
 .F......
 ...A....
@@ -559,103 +360,87 @@ sample1 = """6 8
 .....P..
 ..L.....
 """
-
-expected1 = """xxxxxxXx
+) == """xxxxxxXx
 fFaaaaaa
 ffaAaaaa
 ffaaaaaa
 pppppPpp
-llLlllll"""
+llLlllll""", "sample 1"
 
-assert run(sample1) == expected1, "sample 1"
+# Constructed sample 2: two maximum rectangles of equal area for A.
+assert run(
+    """2 2
+A.
+.B
+"""
+) == """Aa
+bB""", "sample 2, tie between maximum A rectangles"
 
 # Minimum-size input.
-assert run("""1 1
+assert run(
+    """1 1
 A
-""") == "A", "minimum-size grid"
+"""
+) == """A""", "minimum grid"
 
-# Boundary condition: A touches the top-left corner and another castle
-# blocks only the right side.
-assert run("""2 3
+# Boundary condition and a castle blocking A's expansion.
+assert run(
+    """1 3
 A.B
+"""
+) == """AaB""", "boundary and horizontal blocker"
+
+# A at the corner, with the optimal rectangle using two rows.
+assert run(
+    """3 3
+A..
 ...
-""") == """AaB
-aab""", "boundary expansion"
+..B
+"""
+) == """Aaa
+aaa
+bbB""", "corner A and maximum rectangle"
 
-# All cells except A are empty, so A must own the whole grid.
-assert run("""3 3
-...
-.A.
-...
-""") == """aaa
-aAa
-aaa""", "single castle"
+# Maximum-size legal grid with no other castles.
+# The requested all-equal-castle case is illegal because all letters
+# must be distinct, so this stresses the analogous all-empty interior.
+n = m = 1000
+rows = ["A" + "." * 999] + ["." * 1000 for _ in range(999)]
+inp = f"{n} {m}\n" + "\n".join(rows)
 
-# Several castles force recursive horizontal and vertical cuts.
-assert run("""4 4
-A..B
-....
-C..D
-....
-""") == """AaaB
-aaab
-Cddd
-cddd""", "recursive partition"
+expected = "\n".join(
+    ["A" + "a" * 999] + ["a" * 1000 for _ in range(999)]
+)
 
-# Maximum-size grid with only A.
-n = 1000
-m = 1000
-rows = [bytearray(b'a' * m) for _ in range(n)]
-rows[499][499] = ord('A')
-
-max_input = f"{n} {m}\n" + "\n".join(
-    row.decode() for row in rows
-) + "\n"
-
-max_expected = "\n".join(row.decode() for row in rows)
-assert run(max_input) == max_expected, "maximum-size input"
+assert run(inp) == expected, "maximum-size grid"
 ```| 测试输入| 预期产出 | 它验证了什么 |
- | ---| ---| ---|
- |`6 x 8`样品|`A`区域 18，具有如上所示的确定性分区 | 全面建设、优化`A`矩形|
- |`1 x 1`和`A`|`A`| 最小尺寸且无空单元 |
- |`2 x 3`和`A.B`|`AaB / aab`| 边界扩张和右侧城堡封锁 |
- |`3 x 3`仅与`A`| 所有单元格小写`a`除了`A`| 最大可能的空矩形 |
- |`4 x 4`和`A,B,C,D`在角落|`AaaB / aaab / Cddd / cddd`| 水平和垂直递归切割 |
- |`1000 x 1000`仅与`A`| 拥有一百万个细胞`A`| 最大尺寸、性能和边界处理 |
+ | --- | --- | --- |
+ | 官方（6\times8）样本 |`A`获取行 1..3 和列 2..7 | 总体构造及优化`A`矩形|
+ |`A.`/`.B`|`Aa`/`bB`| 等面积选择和递归分区|
+ |`A`|`A`| 最小尺寸 |
+ |`A.B`|`AaB`| 边界处理和城堡阻止水平扩展|
+ |`A..`/`...`/`..B`|`Aaa`/`aaa`/`bbB`| 角点位置和两行最佳矩形|
+ | (1000\times1000), 仅`A`| 整个网格归`A`| 最大尺寸和没有竞争城堡的情况|
 
  ## 边缘情况
 
- 当`A`是唯一的城堡，垂直扫描到达两个边界，并且每一行都有完整的水平范围可用。 对于输入```
-2 2
-A.
-..
-```唯一一个没有城堡的矩形，其中包含`A`是整个网格，因此算法计算宽度 (2)、高度 (2) 和面积 (4)。 它用以下内容填充三个空单元格`a`，生产```
-Aa
-aa
-```不存在递归区域，因为`A`矩形是空的。 
+ 当`A`占据唯一的单元格，```
+A
+```垂直间隔有一行，两个水平扩展都为零，唯一的候选矩形的面积为 1。没有其他区域可以划分，因此输出保持不变`A`。 
 
-当另一座城堡与它位于同一边界行时`A`，水平扫描必须正好停在那个城堡之前。 为了```
-2 3
+当另一座城堡挡住一个方向时，例如```
 A.B
-...
-```第一行允许右侧有一个单元格`A`，而第二行允许两个。 因此，两行间隔的传播右容量为 (1)，给出宽度 (2) 和面积 (4)。 所选矩形是第 1 行到第 2 行和第 1 到第 2 列。剩下的第三列仅包含`B`，因此它成为一个矩形省份，输出为```
-AaB
-aab
-```当城堡位于正上方或正下方时`A`，垂直间隔必须停在该行之前。 在```
-4 4
-A..B
-....
-C..D
-....
-```城堡`C`在第 3 行第 1 列防止`A`延伸穿过第 3 行，同时保留第 1 列。因此，最佳矩形是第 1 行到第 2 行和第 1 到第 3 列，面积为 (6)。 其余区域包含`B`,`C`， 和`D`，并且递归分区处理它们而不修改已经最优的`A`长方形。 
+```的原始右扩展`A`为 1，因为第 1 列的点是空闲的，并且`B`在第 2 列停止扫描。 最佳矩形的宽度为 2。剩余的一个单元格区域包含`B`，所以结果是`AaB`。 在搜索过程中，城堡永远不会被视为空牢房。 
 
-当所有空牢房包围一座城堡时，每个方向都可以到达边界。 为了```
-3 3
+当几个最大矩形面积相同时，```
+A.
+.B
+```第一个候选是覆盖第一行的一个单元格高的矩形，区域为 2。向下延伸也会生成一个区域为 2 的单列宽矩形。 由于比较是严格的，因此保留第一个最大值。 补码是第二行，它被分配给`B`，生产`Aa`和`bB`。 任一最大选择都可以满足优化要求。 
+
+什么时候`A`位于角落，但可以扩展到多行，如```
+A..
 ...
-.A.
-...
-```垂直范围为全部三行，每行的每一侧都有一个空单元格`A`。 具有所有三行的候选者的宽度为 (3) 和高度 (3)，因此算法获得面积 (9)。 最终的网格是```
-aaa
-aAa
-aaa
-```最大尺寸情况的行为相同，只是具有更多单元。 一个 (1000\times1000) 网格仅包含`A`将整个网格作为其省份，因此该算法在填充网格之前仅执行所需的线性扫描和 (O(n^2)) 边界枚举。 不存在任何其他城堡也意味着递归分区没有剩余区域需要处理。
+..B
+```前两行的传播右扩展为 2，而`B`限制第三行。 覆盖第 0 行和第 1 行的候选区域的宽度为 3，高度为 2，给出区域 6。没有矩形包含`A`可以包含第三行，同时保持该宽度。 所选择的`A`因此，矩形是前两行，剩下的底行仅包含`B`, 给予`Aaa`,`aaa`,`bbB`。 
+
+最大尺寸的情况下只有`A`也很有用，因为每个单元格都适合最喜欢的孩子。 水平延伸到达每行的右边界，垂直间隔到达底部边界，最大矩形是整个（1000×1000）网格。 由于没有其他城堡，所以保留后递归分区就没有什么可处理的`A`的矩形。
