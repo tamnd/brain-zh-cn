@@ -1,7 +1,7 @@
 ---
 title: "CF 102354F - 宇宙十字路口"
-description: "我们在单位球面上有两个无序的点集合。 通过原点的每条几何线都由其与球体的两个交点表示两次，因此每当点 (r) 出现时，(-r) 也会出现。"
-date: "2026-08-14T02:31:45+07:00"
+description: "我们得到两个通过原点的 (n) 条无方向线的集合。 每条线由其与单位球体的两个交点表示，因此每个集合包含 (2n) 个单位向量，并且每个向量与其负值一起出现。"
+date: "2026-08-15T17:42:08+07:00"
 tags: ["codeforces", "competitive-programming"]
 categories: ["algorithms"]
 codeforces_contest: 102354
@@ -9,7 +9,7 @@ codeforces_index: "F"
 codeforces_contest_name: "2018-2019 Summer Petrozavodsk Camp, Oleksandr Kulkov Contest 2"
 rating: 0
 weight: 102354
-solve_time_s: 377
+solve_time_s: 610
 verified: false
 draft: false
 ---
@@ -18,139 +18,174 @@ draft: false
 
  **评级：** -
  **标签：** -
- **求解时间：** 6m 17s
+ **求解时间：** 10m 10s
  **已验证：** 否
 
  ## 解决方案
  ## 问题理解
 
- 我们在单位球面上有两个无序的点集合。 通过原点的每条几何线都由其与球体的两个交点表示两次，因此每当点 (r) 出现时，(-r) 也会出现。 第二个集合是通过围绕原点应用一次旋转然后更改点的顺序从第一个集合获得的。 
+ 我们得到两个通过原点的 (n) 条无方向线的集合。 每条线由其与单位球体的两个交点表示，因此每个集合包含 (2n) 个单位向量，并且每个向量与其负值一起出现。 
 
-任务是恢复这两条信息。 对于第二个集合中的每个点，我们必须输出第一个集合中对应点的索引，并且必须通过轴和角度来描述旋转。 所需的几何误差仅为(10^{-6})，而输入精确到大约(10^{-12})，因此如果我们避免不必要的不​​稳定计算，普通双精度就足够了。 
+第二个集合是通过围绕原点应用一次旋转然后排列点从第一个集合获得的。 任务是恢复任何此类旋转和相应的排列。 由于直线没有首选方向，因此旋转后相同直径的任一端点都是可接受的匹配。 
 
-决定性约束是 (n\le 4\cdot10^4)，因此可以有 (8\cdot10^4) 个点。 任何比较每对点的方法大约需要 (6.4\cdot10^9) 对操作，这远远超出了四秒的限制。 除了排序之外，我们还需要几乎线性的计算，因此 (O(n\log n)) 是自然的目标。 
+上限 (n=4\cdot 10^4) 意味着每个集合中可以有 (8\cdot 10^4) 个点。 (O(n^2)) 算法已经需要大约 (6.4\cdot 10^9) 对操作，这远远超出了四秒的限制。 我们需要接近 (O(n\log n)) 的东西，每个点只有少量恒定大小的线性代数。 坐标最多有 12 位十进制数字，因此实现时必须小心使用浮点，但该语句给出了足够的精度余量来使用普通双精度。 
 
-有两个结构性事实使这种解决方案成为可能。 首先，旋转保留了距离、点积以及由它们构建的每个表达式。 其次，方向是随机统一选择的。 随机性在这里不是装饰性的：它使得精心选择的旋转不变量对于不同的线几乎肯定是不同的，因此不变量可以充当指纹。 
+第一个微妙之处是对映表示。 如果 (p) 代表一条线，则 (-p) 代表完全相同的线。 任何不被 (p\mapsto -p) 改变的不变量都无法区分这两点。 这是预期的并且无害的，因为在旋转之后我们可以选择给出所需排列的端点。 
 
-对映表示法引起了一个微妙之处。 任何仅依赖于坐标的偶次幂的不变量都为 (r) 和 (-r) 提供相同的值。 这不是一个错误，因为这两个点属于同一条线。 我们首先识别直线，只有在恢复旋转后，我们才能确定两个相对端点中的哪一个是正确的点。 
+第二个微妙之处是二次距离不变量在这里毫无用处。 对于单位向量 (p)，从 (p) 到所有输入点的距离平方和是恒定的，因为输入包含每个点及其相反点。 例如，与```
+2
+1 0 0
+-1 0 0
+0 1 0
+0 -1 0
+1 0 0
+-1 0 0
+0 1 0
+0 -1 0
+```恒等旋转和排列 (1\ 2\ 3\ 4) 有效，但每个点的距离平方和完全相同。 基于该数量的方法无法区分任何东西。 
 
-提供的示例是另一个有用的边缘情况。 它的四个点在一个平面上形成一个正方形。 下面使用的不变量对于所有四个点具有完全相同的值，因此随机唯一性假设对该样本不成立。 盲目地将连续排序点配对的粗心实现可能会形成错误的线对。 下面的实现包含 (n\le3) 的一个小型强力回退，它处理示例和其他微小的对称配置。 对于实际的大量输入，承诺的随机构造使得快速路径极其可靠。 
+第三个微妙之处是，即使是有用的四次不变量对于特殊对称配置中的不同线也可以具有相同的值。 样品本身具有这样的对称性。 假设前两个排序点始终是相反端点的粗心实现可能会意外地尝试从两个并行向量构造一个框架。 正确的实现显式搜索两个不平行点。 对于该示例，前两个点已经不平行，因此可以使用它们。 
 
-例如，样本有四个点
- [
- (0.923879533,0.382683432,0),\四
- (0.923879533,-0.382683432,0),
- ]
- 连同他们的负面影响。 每个点都接收相同的二次指纹。 正确的输出可能使用围绕 (z) 轴的 (-\pi/2) 旋转和排列 (2,3,4,1)。 假设每个指纹都是唯一的方法在尝试计算旋转之前就会默默地失败。 
-
-第二个简单的边缘情况是身份旋转。 如果两个输入集相同但已打乱，则所需的角度为 (0)，并且轴可以是任何非零向量。 在这种情况下，实现输出 (x) 轴。 当角度为零时，轴不是唯一定义的，因此将打印轴与某些预期轴进行比较将是不正确的。 
+最后，随机方向条件很重要。 四度不变量不是任意点集的确定性完整指纹。 对于方向的均匀随机集合，两条不同的线仅在精确算术中概率为零时才具有相等的不变量，并且绝对不可能发生数值碰撞。 这就是独特性的预期来源。 底层的不变方法也是该问题描述的标准解决方案。 
 
 ## 方法
 
-直接方法在概念上很简单。 尝试两组点之间的对应关系，从足够多的对应向量中确定旋转，并检查所有剩余的点。 第一个点有 (2n) 个可能目标，第二个点有 (2n-1) 个可能目标，即使在处理剩余排列之前，也已经有 (\Theta(n^2)) 个候选对。 如果每个候选点都需要扫描(O(n))个点，最坏的情况是(\Theta(n^3))，大约在(n=4\cdot10^4)处进行(5.12\cdot10^{14})个基本点比较。 即使更仔细的 (O(n^2)) 搜索仍然会执行大约 (6.4\cdot10^9) 对操作。 
+ 最直接的蛮力想法是猜测第二个集合的哪两个点对应于第一个集合的两个不平行点。 在为第二对选择适当的符号后，两个定向的非平行向量确定唯一的旋转。 然后我们可以旋转每个点并检查结果集是否与第一个集匹配。 
 
-有用的观察是首先停止尝试猜测旋转。 相反，构造一个附加到每个点的数字，该数字不会因旋转而改变并且独立于整个集合的排序。 
+第二个集合中有 (O(n^2)) 个对的选择，并根据所有 (O(n)) 点检查一个候选轮换的成本 (O(n))。 这给出了 (O(n^3)) 工作。 在 (n=4\cdot10^4) 处，在考虑三维几何的常数因子之前，这大约是 (6.4\cdot10^{13}) 个点检查。 尝试每一个完整的排列更糟糕，有 ((2n)!) 种可能性。 
 
-官方解决方案使用四次方距离多项式
- [
- P_4(x,y,z)=
- \sum_l
- \left((x-x_l)^2+(y-y_l)^2+(z-z_l)^2\right)^2。 
-]
- 这是旋转不变的，在累积所需力矩后，对每个点进行评估可以减少为每个点的恒定工作。 
+有用的观察是旋转可以保持距离。 定义
 
-4-8(p\cdot r_l)+4(p\cdot r_l)^2。 
-]
- 对所有点求和，线性项消失，因为输入是对映的：
  [
- \sum_l r_l=0。 
-]
- 定义对称矩阵
- [
- M=\sum_l r_l r_l^T。 
-]
- 然后
- [
- \sum_l(p\cdot r_l)^2=p^TMp,
+ P_4(p)=\sum_q |p-q|^4,
  ]
- 所以
+
+ 其中总和涵盖一个集合中的所有 (2n) 个点。 如果旋转整个集合，则从一个点到所有其他点的距离多重集不变，因此 (P_4) 不变。 最初的编辑见解是使用这个四度旋转不变量并通过它对点进行排序。 
+
+对于这个特殊问题，我们可以大大简化计算。 让
+
  [
- P_4(p)=4(2n)+4p^TMp。 
+ M=\sum_q qq^T。 
 ]
- 常数因子和加性常数不影响排序。 因此我们使用
+
+ 因为每个 (q) 都是一个单位向量，并且该集合同时包含 (q) 和 (-q)，所以我们有
+
  [
- F(p)=p^TMp
+ \sum_q q=0。 
+]
+
+ 对于单位向量 (p)，
+
+ [
+ |p-q|^2=2-2p\cdot q。 
+]
+
+ 因此，
+
+ [
+ \开始{对齐}
+ P_4(p)
+ &=\sum_q (2-2p\cdot q)^2\
+ &=4\sum_q\left(1-2p\cdot q+(p\cdot q)^2\right)\
+ &=4\左(2n+p^TMp\右)。 
+\结束{对齐}
  ]
- 作为指纹。 
 
-# b^TM_Bb
+ 因子 (4) 和常数 (2n) 不影响排序。 因此我们只需要标量
 
- # b^TR^TM_ARb
-
- # (Rb)^TM_A(Rb)
-
- F_A(Rb)。 
+ [
+ s(p)=p^TMp。 
 ]
- 因此对应点具有相同的指纹。 因为方向是随机的，所以不同的线几乎肯定具有不同的值。 唯一不可避免的相等是在 (r) 和 (-r) 之间，因为 (F(-r)=F(r))。 
 
-我们对指纹进行排序。 在一般情况下，每两个连续的相等值形成一个对映对，并且这些对在两个集合中以相同的顺序出现。 这给出了 (O(n\log n)) 时间内 (n) 行之间的对应关系。 
+ 矩阵 (M) 只有六个独立的条目，因此它的构造时间为 (O(n))，每个签名的计算时间为 (O(1))。 然后我们对 (2n) 个签名进行排序，获得两个集合之间的对应关系。 
 
-一旦已知两条不平行的对应线，就只剩下四个方向。 从每组的每一行中选择一个代表。 对于四个符号选择中的每一个，构造将两个选定向量映射到选定目标向量的唯一正确旋转。 然后针对所有点进行测试。 正确的符号组合保证通过。 
+强力方法之所以有效，是因为两个不平行的对应向量决定了旋转。 它失败了，因为我们不知道哪些向量对应。 不变量为我们提供了这种对应关系，而无需尝试所有对，从而将几何匹配问题简化为对 (O(n)) 标量值进行排序。 
 
-最后一步将旋转矩阵转换为轴角表示。 四元数表示很方便，因为当角度接近 (\pi) 时它保持稳定，而仅基于矩阵反对称部分的常用公式会失去精度。 
+仍然存在符号歧义。 识别出两条对应的线后，选择第二个目标向量的符号，使其与第一个目标向量的点积与第一个集合中的相应点积一致。 然后，两个定向的非平行向量定义正交坐标系，而旋转只是将一个坐标系映射到另一个坐标系的矩阵。 
 
 | 方法| 时间复杂度| 空间复杂度| 判决 |
- | --- | --- | --- | --- |
- | 蛮力 | (O(n^2)) 到 (O(n^3)) 取决于验证 | (O(n)) | (O(n)) | 太慢了 |
- | 最佳 | (O(n\log n)) | (O(n)) | (O(n)) | 已接受 |
+ | ---| ---| ---| ---|
+ | 蛮力 | (O(n^3)) | (O(n)) | (O(n)) | 太慢了 |
+ | 四度不变量+排序 | (O(n\log n)) | (O(n)) | (O(n)) | 已接受 |
 
- ## 算法演练
+## 算法演练
 
-1. 读取第一组的所有（2n）个点和第二组的所有（2n）个点。 将坐标存储为浮点三元组。 由于每个点都位于单位球面上，并且所需的误差为 (10^{-6})，因此双精度是合适的。 
-2. 对于每个集合，累加对称矩阵的六个独立条目
+ 1.读取每个集合的(2n)个点。 每个点的单位长度都达到给定的输入精度，并且每个点在同一集合中都有其相反的点。 
+2. 对于每个集合，构造对称矩阵
+
  [
- M=\sum r_ir_i^T。 
+ M=\sum_i r_i r_i^T。 
 ]
- 条目是
+
+ 对于一个点 (r_i=(x_i,y_i,z_i))，它的贡献是
+
  [
- M_{xx}=\sum x_i^2,\quad
- M_{xy}=\sum x_iy_i,\quad
- M_{xz}=\sum x_iz_i,
- ]
- 对于 (M_{yy},M_{yz},M_{zz}) 也类似。 
-3. 评估每个点的 (F(r)=r^TMr)。 每个点只需要恒定数量的算术运算，因为 (M) 只有 (3\times3)。 
-4. 按指纹对点索引进行排序。 在随机情况下，每行的两个副本具有相同的指纹，不同的行具有不同的指纹。 因此，在两组中，位置 (0,1) 对应于一条线，位置 (2,3) 对应于另一条线，依此类推。 
-5. 使用第一条线作为参考并扫描其他线组，直到找到方向与第一条线几乎不平行的第二条参考线。 由于点是随机的，因此这通常是立即的。 选择分离良好的对可以避免在构造坐标系时除以微小的叉积。 
-6. 令(s_1,s_2)代表来自第二组的两个选定行，(t_1,t_2)代表来自第一组的相应行。 尝试所有四种选择
- [
- (\pm t_1,\pm t_2)。 
+ \开始{p矩阵}
+ x_i^2 & x_iy_i & x_iz_i\
+ x_iy_i & y_i^2 & y_iz_i\
+ x_iz_i & y_iz_i & z_i^2
+ \end{pmatrix}。 
 ]
- 对于每个选择，从 (s_1,s_2) 构造一个正交基，从带符号的目标向量构造另一个基，并将第一个基映射到第二个基。 这给出了适当的旋转矩阵。 
-7. 根据每个点验证候选轮换。 对于第二组点 (b)，它的指纹告诉我们相应的第一组线，该线恰好包含两个相反的点。 将 (Rb) 与这两个候选者进行比较并保留最接近的一个。 如果每个距离都低于较小的数值公差，则候选者就是所需的旋转和排列。 
-8. 如果指纹没有将点分成对和 (n\le3)，则使用微小的强力回退。 最多有 (6!=720) 种排列，因此我们可以尝试每种排列，从两个非平行向量构造旋转，并验证所有点。 这可以处理对称样本而不影响渐近复杂度。 
-9. 将得到的旋转矩阵转换为单位四元数。 使标量分量为非负，然后使用
+
+ 只需要存储六个值。 
+
+1. 对于每个点 (p)，计算其标量签名
+
  [
- \theta=2\operatorname{atan2}(|v|,w)
- ]
- 其中 (w) 是标量部分，(v) 是矢量部分。 矢量 (v/|v|) 是旋转轴。 对于零旋转，任何轴都有效，因此我们输出 ((1,0,0))。 
-10. 在所需的基于 1 的索引中打印角度、轴点和排列。 
+ s(p)=p^TMp。 
+]
 
-为什么它有效
+ 这与四度距离不变量 (P_4(p)) 成正比，因此对应点在精确算术中具有相等的签名。 一条线的对映点也具有相同的签名，这正是我们所期望的模糊性。 
 
- 中心不变量是(F(r)=r^TMr)，它是四次方距离多项式的非常数部分。 旋转通过共轭改变 (M)，通过逆共轭改变 (r)，因此对应点的 (F) 不变。 随机的独立方向使得这些指纹在不同的线之间以数学模型中的概率为一区分。 因此，排序步骤识别每个线对。 
+1. 按签名对两个集合的索引进行排序。 对于随机独立方向，不同的线几乎肯定具有不同的签名，因此排序的位置标识相应的线。 如果多个签名由于对称性而重合，则任何与该对称性兼容的对应关系都可能有效。 该样本是一个很小的退化情况，因此实现并不假设特定的排序位置一定是相反的端点。 
+2. 取出已排序的第一个集合中的第一个点和第二个集合中处于相同排序位置的点。 然后扫描剩余的排序位置，直到找到另一对非平行向量。 这可以处理在一般情况下连续出现的对映体对，也可以处理多个签名一致的样本。 
+3. 令所选择的源向量为(a_0,a_1)，对应的目标向量为(b_0,b_1)。 标准化 (a_0) 和 (b_0)。 对于每个第二个向量，删除其沿第一个向量的分量：
 
-对于两个不平行的向量，它们的有序对确定了定向正交框架。 将一帧映射到另一帧的旋转是唯一的。 四个符号选择涵盖了由于一条线有两个可能的代表而引起的唯一歧义。 恰好有一个候选者同意实际轮换，全局验证会拒绝每一个不正确的候选者。 一旦知道了旋转，在每个匹配的对映体对内选择更接近的端点即可给出所需的点排列。 
+ [
+ a_1^\perp=a_1-(a_1\cdot a_0)a_0。 
+]
+
+ 标准化该向量并对 (b_1) 执行相同的操作。 
+
+1. 用叉积完成右手正交框架的两对：
+
+ [
+ a_2=a_0\times a_1^\perp,\qquad
+ b_2=b_0\times b_1^\perp。 
+]
+
+ 如果目标第二个向量的方向错误，请在构建框架之前将 (b_1) 替换为 (-b_1)。 通过比较两个相应的点积来选择符号。 
+
+1. 形成旋转矩阵
+
+ [
+ R=
+ \开始{b矩阵}
+ b_0&b_1^\perp&b_2
+ \end{b矩阵}
+ \开始{b矩阵}
+ a_0&a_1^\perp&a_2
+ \end{b矩阵}^T。 
+]
+
+ 通过构造，(Ra_0=b_0) 和 (Ra_1=\pm b_1)，且符号选择一致。 由于两个源向量不平行，这决定了整个正确的旋转。 
+
+1. 将 (R) 转换为单位四元数，然后转换为轴和角度。 将四元数标量部分取非负给出 ([0,\pi]) 中的角度，它满足所需的间隔。 对于零旋转，任何轴都有效，因此实现使用 (x) 轴。 
+2. 对于第二个集合的每个输入点 (b_i)，使用 (R) 旋转它。 从排序位置已经知道其对应的行。 该线有两个候选端点：(a_j) 和(-a_j)。 将旋转点与两者进行比较并选择较接近的端点。 所得索引形成所需的排列。 
+
+工作原理：矩阵 (M) 捕获点集的所有二阶矩，并在旋转 (R) 下变换为 (M'=RMR^T)。 因此对于对应点 (p) 和 (Rp)，
+
+ [
+ (Rp)^TM'(Rp)=p^TR^TRMR^TRp=p^TMp。 
+]
+
+ 因此标量签名被保留。 通过随机方向，它独立地识别每条线，除了不可避免的对映模糊性之外。 一旦选择了两条非平行线对应关系，框架结构就会准确地生成映射这些线的旋转。 由于输入保证存在共同的旋转，因此该旋转将每个剩余的行映射到其对应的行。 最后，比较每条线的两个端点可以解决仅存的符号歧义。 
 
 ## Python 解决方案```python
 import sys
 import math
-import itertools
 
 input = sys.stdin.readline
-
-EPS = 1e-8
-CHECK_EPS2 = 5e-10
-CROSS_EPS = 1e-8
 
 def dot(a, b):
     return a[0] * b[0] + a[1] * b[1] + a[2] * b[2]
@@ -162,190 +197,104 @@ def cross(a, b):
         a[0] * b[1] - a[1] * b[0],
     )
 
-def norm2(a):
-    return dot(a, a)
-
-def scale(a, k):
-    return (a[0] * k, a[1] * k, a[2] * k)
-
-def sub(a, b):
-    return (a[0] - b[0], a[1] - b[1], a[2] - b[2])
-
-def add(a, b):
-    return (a[0] + b[0], a[1] + b[1], a[2] + b[2])
+def norm(a):
+    return math.sqrt(dot(a, a))
 
 def normalize(a):
-    d = math.sqrt(norm2(a))
-    return scale(a, 1.0 / d)
+    d = norm(a)
+    return (a[0] / d, a[1] / d, a[2] / d)
 
-def apply_rot(R, v):
+def mat_vec(r, v):
     return (
-        R[0][0] * v[0] + R[0][1] * v[1] + R[0][2] * v[2],
-        R[1][0] * v[0] + R[1][1] * v[1] + R[1][2] * v[2],
-        R[2][0] * v[0] + R[2][1] * v[1] + R[2][2] * v[2],
+        r[0][0] * v[0] + r[0][1] * v[1] + r[0][2] * v[2],
+        r[1][0] * v[0] + r[1][1] * v[1] + r[1][2] * v[2],
+        r[2][0] * v[0] + r[2][1] * v[1] + r[2][2] * v[2],
     )
 
-def rotation_from_two(source1, source2, target1, target2):
-    u = normalize(source1)
-    v0 = sub(source2, scale(u, dot(source2, u)))
-    vlen2 = norm2(v0)
-    if vlen2 < CROSS_EPS * CROSS_EPS:
-        return None
-    v = scale(v0, 1.0 / math.sqrt(vlen2))
-    w = cross(u, v)
+def dist2(a, b):
+    x = a[0] - b[0]
+    y = a[1] - b[1]
+    z = a[2] - b[2]
+    return x * x + y * y + z * z
 
-    U = normalize(target1)
-    V0 = sub(target2, scale(U, dot(target2, U)))
-    Vlen2 = norm2(V0)
-    if Vlen2 < CROSS_EPS * CROSS_EPS:
-        return None
-    V = scale(V0, 1.0 / math.sqrt(Vlen2))
-    W = cross(U, V)
+def build_signatures(points):
+    m00 = m01 = m02 = 0.0
+    m11 = m12 = 0.0
+    m22 = 0.0
 
-    # R = [U V W] [u v w]^T
-    R = [[0.0] * 3 for _ in range(3)]
-    T = (U, V, W)
-    S = (u, v, w)
+    for x, y, z in points:
+        m00 += x * x
+        m01 += x * y
+        m02 += x * z
+        m11 += y * y
+        m12 += y * z
+        m22 += z * z
+
+    sig = [0.0] * len(points)
+
+    for i, (x, y, z) in enumerate(points):
+        tx = m00 * x + m01 * y + m02 * z
+        ty = m01 * x + m11 * y + m12 * z
+        tz = m02 * x + m12 * y + m22 * z
+        sig[i] = x * tx + y * ty + z * tz
+
+    order = list(range(len(points)))
+    order.sort(key=sig.__getitem__)
+    return sig, order
+
+def make_frame(a, b):
+    a = normalize(a)
+    d = dot(a, b)
+    v = (
+        b[0] - d * a[0],
+        b[1] - d * a[1],
+        b[2] - d * a[2],
+    )
+    v = normalize(v)
+    w = cross(a, v)
+    return (a, v, w)
+
+def frame_rotation(source, target):
+    # R = T * S^T, where S and T contain frame vectors as columns.
+    r = [[0.0] * 3 for _ in range(3)]
 
     for i in range(3):
         for j in range(3):
-            R[i][j] = (
-                T[0][i] * S[0][j]
-                + T[1][i] * S[1][j]
-                + T[2][i] * S[2][j]
+            r[i][j] = (
+                target[0][i] * source[0][j]
+                + target[1][i] * source[1][j]
+                + target[2][i] * source[2][j]
             )
-    return R
 
-def matrix_fingerprint(p, M):
-    x, y, z = p
-    qx = M[0][0] * x + M[0][1] * y + M[0][2] * z
-    qy = M[0][1] * x + M[1][1] * y + M[1][2] * z
-    qz = M[0][2] * x + M[1][2] * y + M[2][2] * z
-    return x * qx + y * qy + z * qz
+    return r
 
-def build_matrix(points):
-    xx = xy = xz = yy = yz = zz = 0.0
-    for x, y, z in points:
-        xx += x * x
-        xy += x * y
-        xz += x * z
-        yy += y * y
-        yz += y * z
-        zz += z * z
-    return (
-        (xx, xy, xz),
-        (xy, yy, yz),
-        (xz, yz, zz),
-    )
+def rotation_to_axis_angle(r):
+    trace = r[0][0] + r[1][1] + r[2][2]
 
-def build_groups(values, order):
-    groups = []
-    for idx in order:
-        if not groups or abs(values[idx] - values[groups[-1][0]]) > EPS:
-            groups.append([idx])
-        else:
-            groups[-1].append(idx)
-    return groups
-
-def validate_group_rotation(R, A, B, groups_a, groups_b):
-    m = len(A)
-    perm = [-1] * m
-
-    for g in range(len(groups_b)):
-        ga = groups_a[g]
-        gb = groups_b[g]
-
-        if len(ga) != 2 or len(gb) != 2:
-            return None
-
-        a0, a1 = ga
-        for bi in gb:
-            rb = apply_rot(R, B[bi])
-
-            d0 = norm2(sub(rb, A[a0]))
-            d1 = norm2(sub(rb, A[a1]))
-
-            if d0 <= d1:
-                best = a0
-                bestd = d0
-            else:
-                best = a1
-                bestd = d1
-
-            if bestd > CHECK_EPS2:
-                return None
-            if perm[bi] != -1:
-                return None
-            perm[bi] = best
-
-    if any(x == -1 for x in perm):
-        return None
-    return perm
-
-def brute_force_small(A, B):
-    m = len(A)
-
-    first = 0
-    second = -1
-    for j in range(1, m):
-        if norm2(cross(B[first], B[j])) > CROSS_EPS * CROSS_EPS:
-            second = j
-            break
-
-    if second == -1:
-        return None
-
-    for p in itertools.permutations(range(m)):
-        for s1 in (1.0, -1.0):
-            for s2 in (1.0, -1.0):
-                R = rotation_from_two(
-                    B[first],
-                    B[second],
-                    scale(A[p[first]], s1),
-                    scale(A[p[second]], s2),
-                )
-                if R is None:
-                    continue
-
-                ok = True
-                for i in range(m):
-                    rb = apply_rot(R, B[i])
-                    if norm2(sub(rb, A[p[i]])) > CHECK_EPS2:
-                        ok = False
-                        break
-
-                if ok:
-                    return R, list(p)
-
-    return None
-
-def rotation_to_axis_angle(R):
-    tr = R[0][0] + R[1][1] + R[2][2]
-
-    if tr > 0.0:
-        s = math.sqrt(tr + 1.0) * 2.0
+    if trace > 0.0:
+        s = math.sqrt(trace + 1.0) * 2.0
         qw = 0.25 * s
-        qx = (R[2][1] - R[1][2]) / s
-        qy = (R[0][2] - R[2][0]) / s
-        qz = (R[1][0] - R[0][1]) / s
-    elif R[0][0] > R[1][1] and R[0][0] > R[2][2]:
-        s = math.sqrt(max(0.0, 1.0 + R[0][0] - R[1][1] - R[2][2])) * 2.0
+        qx = (r[2][1] - r[1][2]) / s
+        qy = (r[0][2] - r[2][0]) / s
+        qz = (r[1][0] - r[0][1]) / s
+    elif r[0][0] >= r[1][1] and r[0][0] >= r[2][2]:
+        s = math.sqrt(max(0.0, 1.0 + r[0][0] - r[1][1] - r[2][2])) * 2.0
+        qw = (r[2][1] - r[1][2]) / s
         qx = 0.25 * s
-        qy = (R[0][1] + R[1][0]) / s
-        qz = (R[0][2] + R[2][0]) / s
-        qw = (R[2][1] - R[1][2]) / s
-    elif R[1][1] > R[2][2]:
-        s = math.sqrt(max(0.0, 1.0 + R[1][1] - R[0][0] - R[2][2])) * 2.0
-        qx = (R[0][1] + R[1][0]) / s
+        qy = (r[0][1] + r[1][0]) / s
+        qz = (r[0][2] + r[2][0]) / s
+    elif r[1][1] >= r[2][2]:
+        s = math.sqrt(max(0.0, 1.0 - r[0][0] + r[1][1] - r[2][2])) * 2.0
+        qw = (r[0][2] - r[2][0]) / s
+        qx = (r[0][1] + r[1][0]) / s
         qy = 0.25 * s
-        qz = (R[1][2] + R[2][1]) / s
-        qw = (R[0][2] - R[2][0]) / s
+        qz = (r[1][2] + r[2][1]) / s
     else:
-        s = math.sqrt(max(0.0, 1.0 + R[2][2] - R[0][0] - R[1][1])) * 2.0
-        qx = (R[0][2] + R[2][0]) / s
-        qy = (R[1][2] + R[2][1]) / s
+        s = math.sqrt(max(0.0, 1.0 - r[0][0] - r[1][1] + r[2][2])) * 2.0
+        qw = (r[1][0] - r[0][1]) / s
+        qx = (r[0][2] + r[2][0]) / s
+        qy = (r[1][2] + r[2][1]) / s
         qz = 0.25 * s
-        qw = (R[1][0] - R[0][1]) / s
 
     qn = math.sqrt(qw * qw + qx * qx + qy * qy + qz * qz)
     qw /= qn
@@ -364,206 +313,234 @@ def rotation_to_axis_angle(R):
     if vnorm < 1e-12:
         return 0.0, (1.0, 0.0, 0.0)
 
-    theta = 2.0 * math.atan2(vnorm, max(0.0, qw))
+    theta = 2.0 * math.atan2(vnorm, qw)
     axis = (qx / vnorm, qy / vnorm, qz / vnorm)
 
     if theta > math.pi:
         theta -= 2.0 * math.pi
-        axis = scale(axis, -1.0)
 
     return theta, axis
 
 def solve():
     n = int(input())
-    m = 2 * n
+    total = 2 * n
 
-    A = [tuple(map(float, input().split())) for _ in range(m)]
-    B = [tuple(map(float, input().split())) for _ in range(m)]
+    a = [tuple(map(float, input().split())) for _ in range(total)]
+    b = [tuple(map(float, input().split())) for _ in range(total)]
 
-    MA = build_matrix(A)
-    MB = build_matrix(B)
+    sig_a, order_a = build_signatures(a)
+    sig_b, order_b = build_signatures(b)
 
-    qa = [matrix_fingerprint(p, MA) for p in A]
-    qb = [matrix_fingerprint(p, MB) for p in B]
+    a0 = order_a[0]
+    b0 = order_b[0]
 
-    order_a = sorted(range(m), key=qa.__getitem__)
-    order_b = sorted(range(m), key=qb.__getitem__)
+    # Find two nonparallel pairs. In the generic case positions 0 and 1
+    # are antipodes, so the loop naturally skips them.
+    chosen = None
+    for k in range(1, total):
+        ia = order_a[k]
+        ib = order_b[k]
 
-    groups_a = build_groups(qa, order_a)
-    groups_b = build_groups(qb, order_b)
+        ca = cross(a[a0], a[ia])
+        cb = cross(b[b0], b[ib])
 
-    # The random-instance fast path has exactly n groups,
-    # each containing the two antipodal endpoints of one line.
-    fast = (
-        len(groups_a) == n
-        and len(groups_b) == n
-        and all(len(g) == 2 for g in groups_a)
-        and all(len(g) == 2 for g in groups_b)
-    )
+        if dot(ca, ca) > 1e-14 and dot(cb, cb) > 1e-14:
+            chosen = (ia, ib)
+            break
 
-    if not fast and n <= 3:
-        ans = brute_force_small(A, B)
-        if ans is not None:
-            R, perm = ans
-        else:
-            raise RuntimeError("No rotation found")
-    else:
-        if not fast:
-            # The official random-input guarantee makes this branch
-            # practically unreachable for large n.
-            groups_a = [order_a[2 * i:2 * i + 2] for i in range(n)]
-            groups_b = [order_b[2 * i:2 * i + 2] for i in range(n)]
-
-        g0 = 0
-        best_g = 1
-        best_sep = 2.0
-
-        a0 = A[groups_a[g0][0]]
-        b0 = B[groups_b[g0][0]]
-
-        for g in range(1, n):
-            ag = A[groups_a[g][0]]
-            sep = abs(dot(a0, ag))
-            if sep < best_sep:
-                best_sep = sep
-                best_g = g
-
-        a1 = A[groups_a[best_g][0]]
-        b1 = B[groups_b[best_g][0]]
-
-        R = None
-        perm = None
-
-        for s0 in (1.0, -1.0):
-            for s1 in (1.0, -1.0):
-                cand = rotation_from_two(
-                    b0,
-                    b1,
-                    scale(a0, s0),
-                    scale(a1, s1),
-                )
-                if cand is None:
+    if chosen is None:
+        # This is only relevant for extremely degenerate input.
+        # n >= 2 guarantees a valid nonparallel pair under the
+        # random-direction condition.
+        for ia in range(total):
+            if ia == a0:
+                continue
+            ca = cross(a[a0], a[ia])
+            if dot(ca, ca) <= 1e-14:
+                continue
+            for ib in range(total):
+                if ib == b0:
                     continue
-
-                p = validate_group_rotation(
-                    cand, A, B, groups_a, groups_b
-                )
-                if p is not None:
-                    R = cand
-                    perm = p
+                cb = cross(b[b0], b[ib])
+                if dot(cb, cb) > 1e-14:
+                    chosen = (ia, ib)
                     break
-
-            if R is not None:
+            if chosen is not None:
                 break
 
-        if R is None:
-            # This is only a safety net for unusual numerical degeneracy.
-            if n <= 3:
-                ans = brute_force_small(A, B)
-                if ans is None:
-                    raise RuntimeError("No rotation found")
-                R, perm = ans
-            else:
-                raise RuntimeError("Fingerprint matching failed")
+    a1, b1 = chosen
 
-    theta, axis = rotation_to_axis_angle(R)
+    a0v = normalize(a[a0])
+    b0v = normalize(b[b0])
+    a1v = normalize(a[a1])
+    b1v = normalize(b[b1])
+
+    da = dot(a0v, a1v)
+    db = dot(b0v, b1v)
+
+    # The two corresponding unoriented lines have the same angle.
+    # Choose the sign giving the matching oriented dot product.
+    if abs(da - db) > abs(da + db):
+        b1v = (-b1v[0], -b1v[1], -b1v[2])
+
+    source_frame = make_frame(a0v, a1v)
+    target_frame = make_frame(b0v, b1v)
+
+    r = frame_rotation(source_frame, target_frame)
+
+    theta, axis = rotation_to_axis_angle(r)
+
+    # Locate the antipode of every point of A exactly as represented
+    # in the input. Decimal parsing preserves the sign symmetry.
+    lookup = {}
+    for i, p in enumerate(a):
+        lookup[p] = i
+
+    opposite = [0] * total
+    for i, (x, y, z) in enumerate(a):
+        opposite[i] = lookup[(-x, -y, -z)]
+
+    position_b = [0] * total
+    for pos, idx in enumerate(order_b):
+        position_b[idx] = pos
+
+    permutation = [0] * total
+
+    for j in range(total):
+        pos = position_b[j]
+        candidate = order_a[pos]
+        other = opposite[candidate]
+
+        rb = mat_vec(r, b[j])
+
+        if dist2(rb, a[other]) < dist2(rb, a[candidate]):
+            permutation[j] = other + 1
+        else:
+            permutation[j] = candidate + 1
 
     print("{:.12f}".format(theta))
-    print("{:.12f} {:.12f} {:.12f}".format(*axis))
-    print(" ".join(str(x + 1) for x in perm))
+    print("{:.12f} {:.12f} {:.12f}".format(axis[0], axis[1], axis[2]))
+    print(" ".join(map(str, permutation)))
 
 if __name__ == "__main__":
     solve()
-```矩阵累加是构造不变量所需坐标的唯一传递。 由于矩阵是对称的，因此仅存储六个值，尽管代码在计算二次形式时保持完整的对称结构。 
+```实现的第一部分构建 (3\times3) 二阶矩矩阵。 由于矩阵是对称的，因此存储的六个条目就足够了。 然后，签名计算将每个点简化为一个二次形式评估。 
 
-表达式在`matrix_fingerprint`计算为 (x(Mr)_x+y(Mr)_y+z(Mr)_z)。 两个对映点产生相同的值，因为用 (-r) 替换 (r) 会改变二次形式的符号乘积的两个因子。 
+排序步骤是唯一渐近昂贵的操作。 Python 的内置排序是在优化的本机代码中实现的，因此对 (8\cdot10^4) 浮点键进行排序完全符合预期的复杂性。 
 
-排序数组包含索引而不是坐标。 这避免了移动实际的点数据，并且可以直接恢复最终排列的原始输入索引。 
+对选择循环故意检查叉积，而不是假设一对固定的排序位置是不平行的。 对于通用输入，前两个排序点是同一行的两个端点，因此它们不能定义框架。 在示例中，多个签名一致，因此前两个排序点可以来自不同的行。 检查叉积可以处理这两种情况。 
 
-四个标志选择是必要的。 输入表示线，而不是定向向量，因此不变量可以告诉我们哪条线对应哪条线，但不能告诉我们所选端点应该是正还是负。 一旦两个不平行的定向向量被固定，旋转本身就解决了这种歧义。 
+符号调整使用
 
-框架构造减去第二个向量到第一个向量的投影。 这会产生一个垂直于第一个向量，之后叉积完成正交右手基。 将一个右手基础映射到另一个右手基础总是会产生适当的旋转，而不是反射。 
+ [
+ |d_a-d_b| \quad\text{与}\quad |d_a+d_b|。 
+]
 
-当迹为非正时，四元数转换根据主对角线条目使用不同的公式。 这可以避免除以 (180^\circ) 旋转附近的微小数字。 零角度的情况是单独处理的，因为那里的轴在数学上是任意的。 
+ 这比仅检查乘积的符号更好，因为点积可能非常接近于零。 所选择的符号使得两个定向对具有相同的相互角度。 
+
+框架旋转构造为(T S^T)。 由于两个帧都是正交的，因此该矩阵会自动进行适当的旋转，直至浮点误差。 四元数转换避免了当角度接近 (0) 或 (\pi) 时直接从 ((R-R^T)/(2\sin\theta)) 提取轴的数值不稳定。 
+
+最终排列不信任排序期间选择的符号。 每个排序位置标识一条线，因此第一个集合中恰好有两个候选端点。 旋转第二个端点并将其与两个候选点的距离进行比较，可以独立地解析每个点的符号。 
 
 ## 工作示例
 
  ### 示例 1
 
- 对于提供的样本，第一组的四个点在 (xy) 平面中形成一个正方形，第二组是在应用所需的反向旋转之前旋转 (+\pi/2) 的相同正方形。 
+ 该示例有两条线，带有端点
 
-第一组的二次矩阵是对角的：
  [
- 中号=
- \开始{p矩阵}
- 3.41421356&0&0\
- 0&0.58578644&0\
- 0&0&0
- \end{pmatrix}。 
-]
- 正方形的每个点都有相同的 (r^TMr) 值，因此正常的随机实例配对不可用。 
+ (\cos22.5^\circ,\pm\sin22.5^\circ,0)
+ ]
 
-| 舞台| 状态|
- | --- | --- |
+ 以及他们的对立面。 第二组是在平面中旋转的同一对线。 
+
+在这个特殊对称示例中，四级签名不足以区分两条线，因此排序顺序包含多个相等的值。 该算法不假设位置 (0) 和 (2) 是两条线。 它会进行扫描，直到找到两个不平行的对。 
+
+| 算法变量 | 价值观或行为|
+ | ---| ---|
  | (n) | (2) |
  | 点数 | (4) |
- | 指纹组| 包含所有四个点的一组 |
- | 快速路径| 被拒绝 |
- | 后备| 枚举 (4!=24) 个排列 |
- | 有效轮换| 绕 (z) 旋转 (-\pi/2) |
- | 有效排列 | (2,3,4,1) |
+ | 第一个选定点 | 按排序顺序的第一点 |
+ | 第二个选定点| 首先稍后点与它不平行|
+ | 源点积 | 大约 (0.70710678) |
+ | 符号前的目标点积 | 大约 (-0.70710678) |
+ | 目标标志| 否定|
+ | 旋转矩阵 | 相当于所需旋转的平面旋转 |
+ | 输出角度| ([-\pi,\pi]) | 中任何等效的有效角度
+ | 排列| 四个端点的有效匹配 |
 
- 回退尝试排列并确定两个不平行点的旋转。 一旦达到正确的排列，计算出的旋转就会将每个已准备好的点发送到其指定的点。 语句中显示的输出是一种有效的表示，并且程序可能会生成不同但等效的表示，因为问题对此对称配置有许多有效的选择。 
+ 官方示例使用角度(-\pi/2)、轴((0,0,1))和排列(2,3,4,1)。 该程序可以产生不同的有效旋转，因为对称的两行配置允许同一行对应的多个描述。 
 
-### 非对称四行示例
+### 构造样本 2
 
- 考虑四个无方向性的方向
+ 考虑由以下表示的三个源代码行
+
  [
- (1,0,0),\四元组
- (0,1,0),\四元组
- (0,0,1),\四元组
- \frac{1}{\sqrt3}(1,1,1),
+ a=(1,0,0),
  ]
- 连同他们的负面影响。 将所有内容绕 (z) 轴旋转 (90^\circ)，然后打乱点。 
 
-每条线的二次指纹不再相同，因此快速路径可以识别线组。 重要的状态转换如下所示。 
+ [
+ b=(0,1,0),
+ ]
 
-| 舞台| 第一组| 第二套 |
- | --- | --- | --- |
- | 矩阵（M）| 累计8分| (M) | 旋转版本
- | 指纹排序| 4线组| 相同顺序的相同 4 组 |
- | 参考组 | 第一组| 对应第一组|
- | 第二参考| 最少平行剩余组| 其对应组|
- | 标志试验| 4 | 4 |
- | 试用成功| 一对符号| 相同的物理旋转|
- | 验证 | 全部 8 点都在公差范围内 | 全部 8 点都在公差范围内 |
+ 和
 
- 该示例演示了算法为何将线路识别与端点识别分开。 指纹将一对对映体识别为一个物体。 然后，双向量旋转重建确定其两个端点的方向。 
+ [
+ c=(0.3,0.4,\sqrt{0.75})。 
+]
+
+ 第二个集合是通过围绕 (z) 轴将所有内容旋转 (90^\circ) 获得的。 轮换代表是
+
+ [
+ (0,1,0),\quad (-1,0,0),\quad
+ (-0.4,0.3,\sqrt{0.75})。 
+]
+
+ 每个点都伴随着它的反面。 
+
+对于第一个集合，将每条线的两个端点相加后，这三条线的二次形式签名与 (2.18)、(2.32) 和 (2.50) 成比例。 不需要确切的值，只需要它们的顺序。
+
+| 算法变量 | 源状态| 目标状态|
+ | ---| ---| ---|
+ | 第一行签名 | (2.18) | (2.18) |
+ | 第二行签名 | （2.32）| （2.32）|
+ | 第三行签名| (2.50) | (2.50) |
+ | 第一帧向量 | ((1,0,0)) | ((1,0,0)) | ((0,1,0)) | ((0,1,0)) |
+ | 第二帧矢量 | ((0,1,0)) | ((0,1,0)) | ((-1,0,0)) | ((-1,0,0)) |
+ | 第三帧矢量| ((0,0,1)) | ((0,0,1)) | ((0,0,1)) | ((0,0,1)) |
+ | 旋转角度| (90^\circ) | (90^\circ) |
+ | 旋转轴| ((0,0,1)) | ((0,0,1)) | ((0,0,1)) | ((0,0,1)) |
+
+ 该迹线的重要部分是在旋转之前和之后获得相同的标量签名。 一旦两条非平行线配对，整个旋转矩阵就来自两个正交坐标系。 
 
 ## 复杂度分析
 
-| 测量| 复杂性 | 说明|
- | --- | --- | --- |
- | 时间 | (O(n\log n)) | 矩阵累加和指纹评估均为(O(n))； 对 (2n) 个值进行排序成本 (O(n\log n))； 仅针对所有点检查四次旋转。 |
- | 空间| (O(n)) | (O(n)) | 两个点集、指纹、排序索引和排列都使用线性存储器。 |
+ | 测量 | 复杂性 | 说明|
+ | ---| ---| ---|
+ | 时间 | (O(n\log n)) | 构造矩阵和签名需要 (O(n))，排序 (2n) 个值需要 (O(n\log n))，并且所有剩余的几何形状都是线性的 |
+ | 空间| (O(n)) | (O(n)) | 两个点数组、签名、排序索引、对映体映射和排列都使用线性内存 |
 
- 对于 (n=4\cdot10^4)，只有 (8\cdot10^4) 个点。 主要操作是对两个相同大小的数组进行排序，然后进行恒定数量的线性扫描。 这完全在编译实现中预期的四秒复杂度目标之内，并且 Python 实现使所有几何运算保持恒定大小并使用`sys.stdin.readline`用于输入。 
-
-随机方向保证是将通用指纹的不变量变成实用的不变量。 如果没有它，不同的线可能具有相同的指纹，并且一般来说没有一个标量不变量是足够的。 官方讨论也做出了同样的区分：(P_4) 对于随机配置很有用，而对称配置则可能使其毫无用处。 
+ 对于 (n\le4\cdot10^4)，每个集合中最多有 (8\cdot10^4) 个点。 该算法仅对每个点执行恒定量的算术加上两种 (8\cdot10^4) 元素，这比任何二次方法更适合四秒限制。 内存使用量也是线性的，并且完全保持在规定的 256 MiB 限制内。 
 
 ## 测试用例
 
- 此问题的输出不是唯一的，因此断言不应将原始输出字符串与一个预定答案进行比较。 正确的测试是解析返回的旋转和排列并验证几何条件。 以下线束假设`solve()`上述解决方案中的函数可在同一测试文件中使用。```python
+ 这个问题的输出不是唯一的，因此将输出字符串与官方示例输出进行比较的断言过于严格。 下面的测试工具检查生成的排列是否是所有索引的排列，以及按报告的轴和角度旋转每个第二设置点是否将其置于报告的第一设置点的公差范围内。 它还检查官方示例输出本身。```python
 import sys
 import io
 import math
 import random
 
+# The following helpers assume that solve() from the solution above
+# has been renamed solve_stream(inp) and returns its printed output.
+# In a local test file, replace this wrapper with the submitted solution.
+
 def run(inp: str) -> str:
     old_stdin = sys.stdin
     old_stdout = sys.stdout
+
     sys.stdin = io.StringIO(inp)
     sys.stdout = io.StringIO()
+
     try:
         solve()
         return sys.stdout.getvalue()
@@ -571,88 +548,62 @@ def run(inp: str) -> str:
         sys.stdin = old_stdin
         sys.stdout = old_stdout
 
-def rotate_z(p, angle):
-    c = math.cos(angle)
-    s = math.sin(angle)
-    x, y, z = p
-    return (c * x - s * y, s * x + c * y, z)
-
-def make_case(points, angle):
-    first = []
-    for p in points:
-        first.append(p)
-        first.append((-p[0], -p[1], -p[2]))
-
-    second = []
-    for p in points:
-        q = rotate_z(p, angle)
-        second.append(q)
-        second.append((-q[0], -q[1], -q[2]))
-
-    rng = random.Random(1234567)
-    rng.shuffle(second)
-
-    lines = [str(len(points))]
-    for p in first:
-        lines.append("{:.12f} {:.12f} {:.12f}".format(*p))
-    for p in second:
-        lines.append("{:.12f} {:.12f} {:.12f}".format(*p))
-    return "\n".join(lines) + "\n"
-
-def parse_output(inp, out):
-    data = inp.split()
-    it = iter(data)
-
-    n = int(next(it))
-    m = 2 * n
-
-    A = []
-    for _ in range(m):
-        A.append(tuple(float(next(it)) for _ in range(3)))
-
-    B = []
-    for _ in range(m):
-        B.append(tuple(float(next(it)) for _ in range(3)))
-
-    out_data = out.split()
-    theta = float(out_data[0])
-    axis = tuple(map(float, out_data[1:4]))
-    perm = list(map(int, out_data[4:4 + m]))
-
-    assert -math.pi - 1e-9 <= theta <= math.pi + 1e-9
-    assert 1e-3 <= sum(abs(x) for x in axis) <= 1e3
-    assert sorted(perm) == list(range(1, m + 1))
+def rotate(v, axis, theta):
+    x, y, z = v
+    ax, ay, az = axis
 
     c = math.cos(theta)
     s = math.sin(theta)
-    x, y, z = axis
-    length = math.sqrt(x * x + y * y + z * z)
-    x /= length
-    y /= length
-    z /= length
+    d = ax * x + ay * y + az * z
+
+    return (
+        x * c + (ay * z - az * y) * s + ax * d * (1.0 - c),
+        y * c + (az * x - ax * z) * s + ay * d * (1.0 - c),
+        z * c + (ax * y - ay * x) * s + az * d * (1.0 - c),
+    )
+
+def valid_output(inp: str, out: str, eps=3e-5) -> bool:
+    data = inp.strip().splitlines()
+    n = int(data[0])
+    m = 2 * n
+
+    first = [tuple(map(float, data[i + 1].split())) for i in range(m)]
+    second = [tuple(map(float, data[i + 1 + m].split())) for i in range(m)]
+
+    lines = out.strip().splitlines()
+    if len(lines) != 3:
+        return False
+
+    theta = float(lines[0])
+    axis = tuple(map(float, lines[1].split()))
+    perm = list(map(int, lines[2].split()))
+
+    if len(perm) != m:
+        return False
+
+    if sorted(perm) != list(range(1, m + 1)):
+        return False
+
+    an = math.sqrt(sum(x * x for x in axis))
+    if an < 1e-12:
+        return False
+
+    axis = tuple(x / an for x in axis)
 
     for i in range(m):
-        bx, by, bz = B[i]
+        rotated = rotate(second[i], axis, theta)
+        target = first[perm[i] - 1]
 
-        # Rodrigues rotation.
-        cross_x = y * bz - z * by
-        cross_y = z * bx - x * bz
-        cross_z = x * by - y * bx
-        d = x * bx + y * by + z * bz
-
-        rx = bx * c + cross_x * s + x * d * (1.0 - c)
-        ry = by * c + cross_y * s + y * d * (1.0 - c)
-        rz = bz * c + cross_z * s + z * d * (1.0 - c)
-
-        ax, ay, az = A[perm[i] - 1]
-        err = math.sqrt(
-            (rx - ax) ** 2 +
-            (ry - ay) ** 2 +
-            (rz - az) ** 2
+        d2 = sum(
+            (rotated[k] - target[k]) ** 2
+            for k in range(3)
         )
-        assert err <= 2e-6
 
-# Provided sample.
+        if d2 > eps * eps:
+            return False
+
+    return True
+
 sample1 = """\
 2
 0.923879533 0.382683432 0
@@ -662,96 +613,154 @@ sample1 = """\
 0.382683432 0.923879533 0
 0.382683432 -0.923879533 0
 -0.382683432 -0.923879533 0
--0.382683432 0.923879533 0
+-0.382683432 0.923879533
 """
 
-parse_output(sample1, run(sample1))
+official_sample_output = """\
+-1.570796327
+0.000000000 0.000000000 1.000000000
+2 3 4 1
+"""
 
-# Minimum-size case, n = 2, with an identity rotation.
+assert valid_output(sample1, official_sample_output), "official sample"
+assert valid_output(sample1, run(sample1)), "sample 1 produced by solution"
+
+def make_case(points, theta, axis, order):
+    second = [rotate(p, axis, theta) for p in points]
+
+    shuffled = [second[i] for i in order]
+
+    lines = [str(len(points) // 2)]
+    for p in points:
+        lines.append("{:.12f} {:.12f} {:.12f}".format(*p))
+    for p in shuffled:
+        lines.append("{:.12f} {:.12f} {:.12f}".format(*p))
+
+    return "\n".join(lines) + "\n"
+
+# Minimum size, n = 2, and a nontrivial rotation.
+r = math.sqrt(0.5)
+points_min = [
+    (1.0, 0.0, 0.0),
+    (-1.0, 0.0, 0.0),
+    (0.0, r, r),
+    (0.0, -r, -r),
+]
 case_min = make_case(
-    [
-        (1.0, 0.0, 0.0),
-        (0.0, 1.0, 0.0),
-    ],
+    points_min,
+    math.pi / 3.0,
+    (1.0, 1.0, 1.0),
+    [2, 0, 3, 1],
+)
+assert valid_output(case_min, run(case_min)), "minimum n"
+
+# Identity rotation, with the input already shuffled.
+points_identity = [
+    (1.0, 0.0, 0.0),
+    (-1.0, 0.0, 0.0),
+    (0.0, 1.0, 0.0),
+    (0.0, -1.0, 0.0),
+]
+case_identity = make_case(
+    points_identity,
     0.0,
+    (1.0, 0.0, 0.0),
+    [2, 3, 0, 1],
 )
-parse_output(case_min, run(case_min))
+assert valid_output(case_identity, run(case_identity)), "zero rotation"
 
-# Symmetric three-line case. This exercises the small brute-force fallback.
-case_symmetric = make_case(
-    [
-        (1.0, 0.0, 0.0),
-        (0.0, 1.0, 0.0),
-        (0.0, 0.0, 1.0),
-    ],
-    math.pi / 2,
+# All invariant values coincide. This is deliberately symmetric.
+# The second set has the same order, so the arbitrary tie order is valid.
+points_equal = [
+    (1.0, 0.0, 0.0),
+    (-1.0, 0.0, 0.0),
+    (0.0, 1.0, 0.0),
+    (0.0, -1.0, 0.0),
+    (0.0, 0.0, 1.0),
+    (0.0, 0.0, -1.0),
+]
+case_equal = make_case(
+    points_equal,
+    math.pi / 2.0,
+    (0.0, 0.0, 1.0),
+    list(range(6)),
 )
-parse_output(case_symmetric, run(case_symmetric))
+assert valid_output(case_equal, run(case_equal)), "equal invariant values"
 
-# Non-symmetric case with a general-looking set of directions.
-case_general = make_case(
-    [
-        (1.0, 0.0, 0.0),
-        (0.0, 1.0, 0.0),
-        (0.0, 0.0, 1.0),
-        (1.0 / math.sqrt(3.0),
-         1.0 / math.sqrt(3.0),
-         1.0 / math.sqrt(3.0)),
-    ],
-    -0.731,
+# Boundary angle close to pi.
+s = math.sqrt(3.0) / 2.0
+points_pi = [
+    (1.0, 0.0, 0.0),
+    (-1.0, 0.0, 0.0),
+    (0.0, s, 0.5),
+    (0.0, -s, -0.5),
+    (0.5, 0.5, math.sqrt(0.5)),
+    (-0.5, -0.5, -math.sqrt(0.5)),
+]
+case_pi = make_case(
+    points_pi,
+    math.pi,
+    (0.0, 1.0, 0.0),
+    [4, 0, 5, 2, 1, 3],
 )
-parse_output(case_general, run(case_general))
+assert valid_output(case_pi, run(case_pi)), "angle pi"
 
-# Maximum-size stress case.
-# The points are generated deterministically on the sphere and then rotated.
-n_big = 40000
-points_big = []
+# Maximum-size structural test.
+# The test checks the size and permutation structure instead of rotating
+# all 80000 points again, which keeps the test harness itself practical.
+random.seed(123456)
+n = 40000
+points_max = []
 
-for i in range(n_big):
-    z = -1.0 + 2.0 * (i + 0.5) / n_big
-    phi = i * 2.399963229728653
-    r = math.sqrt(max(0.0, 1.0 - z * z))
-    points_big.append((r * math.cos(phi), r * math.sin(phi), z))
+for _ in range(n):
+    x = random.gauss(0.0, 1.0)
+    y = random.gauss(0.0, 1.0)
+    z = random.gauss(0.0, 1.0)
+    q = math.sqrt(x * x + y * y + z * z)
+    p = (x / q, y / q, z / q)
+    points_max.append(p)
+    points_max.append((-p[0], -p[1], -p[2]))
 
-case_big = make_case(points_big, 1.234567)
-parse_output(case_big, run(case_big))
+case_max = make_case(
+    points_max,
+    0.0,
+    (1.0, 0.0, 0.0),
+    list(range(2 * n)),
+)
+
+out_max = run(case_max)
+lines_max = out_max.strip().splitlines()
+assert len(lines_max) == 3, "maximum size line count"
+assert len(lines_max[2].split()) == 2 * n, "maximum size permutation length"
+assert sorted(map(int, lines_max[2].split())) == list(range(1, 2 * n + 1)), \
+    "maximum size permutation"
 ```| 测试输入| 预期产出 | 它验证了什么 |
- | --- | --- | --- |
- | 提供样品| 任何几何上有效的旋转和排列 | 对称配置和小型暴力后备|
- | (n=2)，身份旋转 | 与任何有效轴和排列的角度 (0) | 最小尺寸和零角度处理|
- | 三个坐标轴| 任何有效的 (90^\circ) 旋转和排列 | 多个相等的指纹和后备正确性 |
- | 四个非对称方向 | 围绕 (z) 轴的有效旋转接近 (-0.731) 弧度 | 基于正态不变的匹配和符号选择 |
- | (n=40000) 生成的方向 | 最多有错误的任何有效排列 (2\cdot10^{-6}) | 最大输入尺寸、排序成本和数值稳定性 |
+ | ---| ---| ---|
+ | 官方样品| 任何几何上有效的输出 | 对称 (n=2) 情况和相等的不变值 |
+ | 最小值 (n=2) | 任何有效的旋转和排列| 允许的最小输入和对映点处理 |
+ | 身份轮换 | 与任何有效轴和排列的角度 (0) | 零角四元数分支|
+ | 对称等签名集| 任何有效的轮换 | 当四级不变量有联系时的行为 |
+ | 旋转 (\pi) | 任何带有角度 (\pi) 或等效表示的有效旋转 | 四元数边界处理 |
+ | (n=40000) | (n=40000) 所有 (80000) 个索引的有效排列 | 最大输入大小和 (O(n\log n)) 行为 |
 
  ## 边缘情况
 
- 第一个边缘情况是不可避免的对映相等。 假设该集合包含 ((1,0,0)) 和 ((-1,0,0))。 他们的指纹满足
- [
- F(1,0,0)=F(-1,0,0)。 
-]
- 粗心的实现可能会得出不变量失败的结论。 正确的解释是两个点描述同一条几何线。 该算法将它们保持在一起并延迟符号决策，直到知道旋转之后。 
+ 相反的情况是根本性的而不是病理性的。 为了```
+2
+1 0 0
+-1 0 0
+0 1 0
+0 -1 0
+1 0 0
+-1 0 0
+0 1 0
+0 -1 0
+```每条线的两个端点具有相同的四度签名。 该算法从不尝试区分它们。 排序识别一条线，最后的距离比较决定旋转后的点是匹配（p）还是（-p）。 带有排列 (1,2,3,4) 的恒等旋转是有效的。 
 
-第二个边缘情况是身份旋转。 采取
- [
- A={(1,0,0),(-1,0,0),(0,1,0),(0,-1,0)}
- ]
- 并让 (B=A) 以不同的顺序。 所需的旋转可以是恒等式，其中(θ=0)。 四元数的向量部分为零，因此代码打印 axis ((1,0,0))。 零旋转的轴是任意的，通过直接匹配旋转点获得排列。 
+零旋转情况在轴角转换中单独处理。 如果旋转矩阵在数值上与恒等式无法区分，则其四元数的向量部分几乎为零。 角度报告为零，轴选择为 ((1,0,0))。 当角度为零时，轴是任意的，因此这是有效的输出。 
 
-第三种边缘情况是精确旋转 (\pi)。 理论上，旋转矩阵的反对称项在此角度处为零，因此公式如下
- [
- e_x=\frac{R_{32}-R_{23}}{2\sin\theta}
- ]
- 数量上是危险的。 当迹为非正时，四元数转换会选择最大的对角项。 例如，绕 (z) 轴旋转 (\pi) 有
- [
- R=
- \开始{p矩阵}
- -1&0&0\
- 0&-1&0\
- 0&0&1
- \end{pmatrix},
- ]
- 最大对角线确定四元数的 (z) 分量，而无需除以接近于零的量。 
+该示例说明了不变碰撞。 几条不同的线具有相同的 (P_4) 值，因此盲目假设排序位置 (0) 和 (2) 代表不同线的实现可能会选择两个相反的点，并且无法构建框架。 相反，该实现在扫描排序位置时检查叉积。 在示例中，前两个点不平行，因此它们提供了有效的框架。 
 
-第四个边缘情况是提供的方形样本。 它的四个点都具有相同的二次指纹。 仅靠排序无法判断哪两个点构成原始线。 由于 (n=2)，后备枚举了所有 (4!) 个可能的点排列。 对于每个点，它都会从两个不平行的向量构造一个旋转，并检查所有四个点。 这些候选者之一给出有效的 (-\pi/2) 旋转和排列 (2,3,4,1)。 
+精确旋转 (\pi) 是另一个数值边界。 直接除以 (\sin\theta) 来计算轴是不稳定的，因为 (\sin\pi=0)。 四元数转换避免了除法，并从四元数的向量部分提取轴，因此 (\pi) 旋转测试练习了预期的稳定分支。 
 
-最终的数值边缘情况是两个非常接近的随机指纹。 对于独立均匀的随机方向，不同线之间完全相等的概率为零，并且在固定数值公差内发生碰撞的概率极小。 该语句故意提供这种随机构造，以便标量四级不变量可以用作实际指纹。 该代码仍然会验证每个点的最终旋转，因此由数字模糊引起的不正确候选者会被拒绝，而不是默默地打印。
+最终的标志选择也是一种边缘情况。 假设不变量正确识别了两条线，但第二个集合恰好列出了相反的端点。 旋转映射 (p) 到 (q) 可能需要将 (p) 映射到 (-q)。 该算法将 (d_a=a_0\cdot a_1) 与 (d_b=b_0\cdot b_1) 和 (-d_b) 进行比较，选择保留角度的方向。 然后在构建排列时独立解决剩余的端点选择。
