@@ -1,7 +1,7 @@
 ---
 title: "CF 102388E - 马厩"
-description: "我们有一个无向图，其中包含最多 50 个城市和最多 2500 条道路。 一条道路可以连接两个不同的城市，也可以将一个城市连接到自身，因此允许存在环路。 从一个城市出发，我们必须精确地沿着 (k) 条路到达同一个城市。"
-date: "2026-08-14T13:55:45+07:00"
+description: "我们有一个最多包含 50 个城市的无向图。 道路可以让马在其两个端点之间一步移动，并且道路也可以是自循环的。 对于固定城市 v，我们需要确定是否存在从 v 开始、恰好使用 k 条道路并在 v 结束的步行。"
+date: "2026-08-16T08:50:32+07:00"
 tags: ["codeforces", "competitive-programming"]
 categories: ["algorithms"]
 codeforces_contest: 102388
@@ -9,7 +9,7 @@ codeforces_index: "E"
 codeforces_contest_name: "SUFE ICPC Team Formation Test"
 rating: 0
 weight: 102388
-solve_time_s: 313
+solve_time_s: 360
 verified: false
 draft: false
 ---
@@ -18,445 +18,232 @@ draft: false
 
  **评级：** -
  **标签：** -
- **求解时间：** 5m 13s
+ **求解时间：** 6m
  **已验证：** 否
 
  ## 解决方案
  ## 问题理解
 
- 我们有一个无向图，其中包含最多 50 个城市和最多 2500 条道路。 一条道路可以连接两个不同的城市，也可以将一个城市连接到自身，因此允许存在环路。 从一个城市出发，我们必须精确地沿着 (k) 条路到达同一个城市。 如果这样一条长度为 (k) 的封闭步行道存在，则城市是有效的。 
+ 我们有一个最多包含 50 个城市的无向图。 道路可以让马在其两个端点之间一步移动，并且道路也可以是自循环的。 对于固定城市 v，我们需要确定是否存在从 v 开始、恰好使用 k 条道路并在 v 结束的步行。答案是存在这种封闭步行的城市数量。 
 
-任务是独立统计所有有效的起始城市。 不同的城市可能使用完全不同的步行，并且允许重复城市和道路的步行。 
+输入最多包含 20 个独立图表。 该图的顶点数很小，n≤50，但k可以大到10 9。这种组合是关键的难点。 任何每天执行一次操作或每一步执行一次图遍历的算法都无法承受十亿步。 另一方面，n=50 足够小，我们可以负担得起涉及 k 每位大约 n 2 工作的算法。 由于 10 9 只有大约 30 个二进制数字，因此对数幂是一个自然的目标。 
 
-(n) 的小值是主要线索。 如果只有 50 个顶点，则 (O(n^3)) 甚至 (O(n^3 \log k)) 方法在编译语言中都是合理的，而巨大的值 (k \le 10^9) 排除了每天直接处理的任何内容。 我们需要避免做与 (k) 成比例的功。 最多 2500 条道路的事实也意味着图遍历和小型动态程序很便宜。 
-
-有几种边缘情况可能会欺骗仅基于奇偶校验的解决方案。 
-
-首先，(k=0) 意味着马没有移动，因此每个城市都已经恢复原状。 例如，```
-1
-1 0 0
+有几种边缘情况很容易破坏实现。 当 k=0 时，每个城市都有资格，因为空走已经在同一个城市开始和结束。 例如，```
+13 0 0
 ```有输出```
-1
-```需要至少遍历一次道路的解决方案将错误地返回零。 
+3
+```至少需要一条道路的解决方案将错误地返回零。 
 
-其次，孤立的顶点不能进行任何正长度的行走。 例如，```
-1
-2 0 2
-```有输出```
-0
-```两个城市都没有道路，因此即使 2 是偶数，通常的“每个正偶数长度都有效”的论点也不适用。 
+当 k=1 时，自环尤其重要。 为了```
+12 1 10 0
+```答案是`1`，因为城市 0 可以自循环一次并返回到自身，而城市 1 则被孤立。 将图视为简单图而不保留对角线条目的解决方案将错过城市 0。 
 
-第三，循环创建长度为一的闭合行走。 例如，```
-1
-1 1 1
-0 0
-```有输出```
-1
-```将图视为简单图并忽略循环的二分检查会错误地将此组件分类为二分。 
+平行道路不需要特殊处理。 如果两条道路连接同一对城市，则它们不会为步行的存在提供额外的可能性。 我们只关心是否至少存在一个转变。 例如，```
+12 3 20 10 10 1
+```有输出`2`。 两个城市都可以去对方城市并立即返回。 
 
-第四，对于小奇数 (k) 来说，处于非二分组件中本身是不够的。 考虑```
-1
-3 3 1
-0 1
-1 2
-2 0
-```该三角形是非二分三角形，但不存在单步闭合游走，因为没有循环。 正确的输出是```
-0
-```这就是算法在使用最终奇偶校验属性之前恰好处理小 (k) 的原因。 
+最后，平价可能具有欺骗性。 在二分图中，每个闭合游走的长度均为偶数，但奇数循环的存在改变了情况。 例如，```
+13 3 30 11 22 0
+```有输出`3`，因为每个城市都位于三角形上。 尝试仅使用图二分性来解决问题也会错过特殊情况，例如附加到奇数循环的顶点，其中可能存在足够长的奇数闭合游走，但可能不存在短奇数闭合游走。 矩阵公式避免了必须手动表征所有这些情况。 
 
 ## 方法
 
- 直接的方法是通过动态规划来模拟行走。 对于每个起始城市，确保在恰好 (t) 个步骤后可到达城市集。 最初只有 (s) 是可达的。 对于每一步，请遵循当前可到达的每个城市的每条事故道路。 在 (k) 步骤之后，检查 (s) 本身是否可达。 
+ 最直接的方法是在每一步之后模拟可能的位置。 固定起始城市 s，保持城市集合在恰好 t 个步骤后可达，并通过图表重复扩展该集合。 k轮后，检查s是否可达。 这是正确的，因为第 t 轮之后的集合恰好表示从 s 开始的长度为 t 的步行的端点。 
 
-这是正确的，因为 (t) 步骤之后的状态恰好包含所有长度 (t) 的行走的可能端点。 问题在于(k)的值。 在最坏的情况下，动态程序在对每个起始城市运行时都会执行 (O(k n m)) 邻接处理。 对于 (k=10^9)、(n=50) 和 (m=2500)，这大约是 (1.25 \cdot 10^{14}) 图转换。 大的 (k) 使得这不可能。 
+问题是k。 最坏的情况下，一轮可能会检查每条道路，因此处理一个起始城市需要 O(km)。 对所有 n 个起始城市重复此操作，得到 O(knm)。 在最大约束下，这大约是
 
-关键的观察结果是，无向图对于封闭游走具有非常简单的长期模式。 每个非孤立顶点处的每个正偶数长度都是可能的，因为我们可以遍历任何入射边并立即将其遍历回来。 重复两步步行可以得到每个正偶数长度。 
+ 10 9 ⋅50⋅2500=1.25×10 14
 
-奇数长度的行为不同。 当连通分量不包含奇环时，它就是二分连通分量。 在二分组件中，每个闭合游走的长度都是偶数，因此 (k) 的奇数值不起作用。 在非二分组件中，每个顶点最终都有两个奇偶校验的闭合游走。 更具体地说，每个顶点最多有一个长度为 (2n-1) 的奇数闭合游走。 一旦存在一个奇数封闭游走，我们就可以添加任意数量的两步回溯，因此每个足够大的奇数长度也存在。 
+ 路考，远远超出了时间限制。 
 
-这给了我们一个干净的分裂。 如果 (k) 至多为 (2n)，我们只需使用小型位集动态程序即可精确计算答案。 如果 (k) 大于 (2n)，我们就不再需要精确的行走结构。 对于偶数 (k)，每个非孤立顶点都有效。 对于奇数 (k)，恰好属于非二分组件的顶点起作用。 
+该图足够小，可以用矩阵求幂代替逐步模拟。 定义一个布尔邻接矩阵 A，其中当道路允许从 i 移动到 j 时，A[i][j] 恰好为真。 在布尔矩阵乘法下，条目 (A t )[i][j] 告诉我们是否存在从 i 到 j 的恰好 t 步的游走。 因此，当对角线条目 (A k )[i][i] 为真时，城市 i 恰好有效。 
 
-位集表示使得精确部分特别便宜。 一组可达城市由一个 Python 整数表示，其中当城市 (j) 可达时设置位 (j)。 为了前进一步，对于每个可达城市 (v)，我们将其邻接位集或到新的可达集中。 从 (n\le50) 开始，所有这些都适合几个机器大小的 Python 整数。 
+二进制求幂将矩阵乘法的次数从 k 减少到 O(logk)。 传统的矩阵乘法将花费 O(n 3 )，这对于 n=50 来说已经是合理的，但 Python 可以通过将每个矩阵行表示为单个整数位集来做得更好。 然后，一行包含以位形式表示的一组可达顶点，并且将两个布尔矩阵相乘就变成了按位或运算的序列。 
+
+对于左矩阵的第i行，每设置一个位j就意味着i可以到达j。 右侧矩阵的相应行 B[j] 包含从 j 可到达的所有顶点。 因此，结果行只是 B[j] 对行 i 中所有设置位 j 进行或运算。 这将实际乘法减少为 O(n 2 ) 行运算，每个运算都使用 Python 高度优化的任意精度整数。 
+
+蛮力方法之所以有效，是因为它明确地遵循一次一步的行走，但由于 k 太大而失败。 观察结果表明，只有 k 的二进制表示才重要，让我们可以一次跳过指数级的多个步骤。 
 
 | 方法| 时间复杂度| 空间复杂度| 判决 |
- | --- | --- | --- | --- |
- | 所有 (k) 步骤的暴力 DP | (O(k·n·m)) | (O(n^2)) | 太慢了 |
- | 精确位集 DP 高达 (2n)，然后进行奇偶校验/分量分析 | (O(n^2 \min(k,n) + n+m)) | (O(n+m)) | 已接受 |
+ | ---| ---| ---| ---|
+ | 蛮力 | O(knm) | O(n) | 太慢了 |
+ | 使用位集进行布尔矩阵求幂 | O(n 2 logk) 位集操作 | O(n) 位集 | 已接受 |
 
  ## 算法演练
 
- 1. 为图构建邻接列表和邻接位集。 邻接表用于确定连通分量和二分性。 位集允许精确的动态程序使用快速整数或运算来更新所有可能的端点。 
-2. 如果(k=0)，则返回(n)。 无论图表如何，空行的起点和终点都在同一个城市。 
-3. 如果 (k\le2n)，精确计算答案。 对于每个城市 (i)，初始可达集就是 ({i})，用整数 (1\ll i) 表示。 一步之后，将可达集替换为所有当前可达城市的邻接集的并集。 准确地重复此操作 (k) 次。
-
-在第 (t) 次迭代之后，当存在从原始城市 (i) 到城市 (j) 的长度为 (t) 的步行时，位置 (j) 处的位被准确设置。 因此，(k) 次迭代后的对角线位准确地告诉我们哪些城市具有长度为 (k) 的闭合步行。 
-4. 如果 (k>2n)，则对每个连接的组件运行 BFS 或 DFS，同时为每个顶点分配二进制颜色。 在二部图中，沿着每条普通边，其端点必须具有相反的颜色。 如果一条边连接两个具有相同颜色的顶点，则该分量包含奇数环并且是非二分的。 循环会立即产生这样的冲突，因为它的两个端点是相同的顶点。 
-5. 对于大偶数 (k)，计算每个度数为正的顶点。 从这样的顶点，选择一个入射边并来回遍历它。 重复这个两步步行会产生任何正偶数长度。 
-6. 对于大奇数 (k)，计算其组件被发现为非二分的每个顶点。 非二分组件包含奇数循环。 从任意顶点步行到该循环，遍历该循环一次，然后沿相同路径返回。 这给出了一个奇怪的封闭行走。 该结构的长度最多为(2n-1)，并且因为(k>2n)，所以(k)与该奇数长度之间的差是正偶数。 我们可以通过重复的两步回溯来填补这个差异。 
+ 1. 为每个城市建立邻接关系作为位集。 当 i 和 j 之间存在道路时，设置第 i 行中的位 j。 由于该图是无向的，因此输入边 (x,y) 同时设置 x→y 和 y→x。 对于自循环，这自然会设置对角位。 
+2. 将单位矩阵表示为位集。 它的第 i 行仅包含第 i 位，因为单位矩阵表示位于同一城市的长度为零的步行。 
+3.维护两个布尔矩阵，`result`和`base`。 最初，`result`是单位矩阵并且`base`是邻接矩阵。 不变的是`result`表示已经从 k 的处理位中选择的原始邻接矩阵的幂的乘积，而`base`代表当前功率A 2 p。 
+4. 从最低有效位开始检查 k 的二进制表示形式。 如果当前位为 1，则乘以`result`经过`base`。 这将相应的功率 A 2 p 纳入到答案中。 
+5. 正方形`base`获得下一个2的幂。 这里使用布尔矩阵乘法是因为我们关心是否至少存在一条游走，而不是存在多少条游走。 
+6. 将 k 右移一位并继续，直到处理完每一位。 最多需要 30 位，因为 k≤10 9。 
+7. 求幂后，检查对角线`result`。 如果第 i 位设置在第 i 行，则从城市 i 回到城市 i 需要步行恰好 k 步。 数一数所有这样的城市。 
 
 ### 为什么它有效
 
- 对于精确部分，不变量是经过 (t) 次迭代后，`reach[i]`精确包含从 (i) 通过精确 (t) 条边的行走可到达的顶点。 更新采用当前每个可到达的顶点并遵循另一条边，因此它既不会错过可能的行走，也不会引入不可能的端点。 因此，当 (i) 处存在长度 (k) 闭合游走时，(k) 次迭代后的位 (i) 被准确设置。 
-
-对于较大的 (k)，首先考虑偶数长度。 任何非孤立顶点都具有双边闭合游走，通过在两个方向上遍历入射边获得。 重复它给出每个正偶数长度。 孤立的顶点根本没有正向行走。 
-
-对于奇数长度，二分组件不能包含奇数闭合路径，因为每条边都会改变二分边，因此在奇数条边之后，路径必须位于相反的一侧。 非二分组件包含奇数循环。 对于顶点 (v)，取一条从 (v) 到该循环的长度为 (d) 的最短路径，并令奇数循环的长度为 (l)。 可以选择路径和循环仅在端点处相交，因此 (d+l\le n)。 由此产生的闭合行走的长度为 (2d+l)，最多为 (d+n\le2n-1)。 添加任意数量的两条边回溯都会得到每个更大的奇数长度。 由于算法仅在 (k>2n) 时使用此参数，因此所需的大奇数长度始终可达。 
+ 中心不变量是在处理 k 的二进制表示的某些前缀之后，`result`等于与已处理的一位对应的幂的布尔乘积。 由于布尔矩阵乘法构成了路径的存在性，因此当某个长度为 t 的路径将 i 与 j 连接时，A t [i][j] 恰好为真。 二进制求幂最终构造出 A k，因此它的对角线恰好包含允许长度为 k 的闭合步行的城市。 位集实现仅更改布尔乘法的计算方式，而不更改其表示的数学结果。 
 
 ## Python 解决方案```python
-import sys
-input = sys.stdin.readline
+Pythonimport sysinput = sys.stdin.readline
 
-def solve_case(n, m, k, edges):
-    graph = [[] for _ in range(n)]
-    adj_bits = [0] * n
-    degree = [0] * n
+def multiply(A, B, n):    """    Boolean matrix multiplication.
+    Each row is a bitset. For every set bit j in A[i],    row B[j] contributes all vertices reachable after the    second part of the walk.    """    C = [0] * n
+    for i in range(n):        mask = A[i]        row = 0
+        while mask:            bit = mask & -mask            j = bit.bit_length() - 1            row |= B[j]            mask ^= bit
+        C[i] = row
+    return C
 
-    for u, v in edges:
-        graph[u].append(v)
-        graph[v].append(u)
+def solve():    T = int(input())    answers = []
+    for _ in range(T):        n, m, k = map(int, input().split())
+        adj = [0] * n
+        for _ in range(m):            x, y = map(int, input().split())            adj[x] |= 1 << y            adj[y] |= 1 << x
+        # A^0 = I.        result = [1 << i for i in range(n)]
+        # A^(2^p), starting with A^1.        base = adj
+        while k:            if k & 1:                result = multiply(result, base, n)
+            k >>= 1
+            if k:                base = multiply(base, base, n)
+        answer = 0        for i in range(n):            if result[i] & (1 << i):                answer += 1
+        answers.append(str(answer))
+    sys.stdout.write("\n".join(answers))
 
-        adj_bits[u] |= 1 << v
-        adj_bits[v] |= 1 << u
+if __name__ == "__main__":    solve()
+```每个城市的邻接构造使用一个整数。 少量`j`代表城市`j`，所以设置`1 << j`记录了到该城市的过渡的存在。 设置两个方向可以处理无向道路，并且对平行边执行两次相同的操作没有效果，这正是我们想要的。`result = [1 << i for i in range(n)]`创建单位矩阵。 即使当 k=0 时，这也是必要的，因为 A 0 =I，并且恒等式的对角线包含每个城市。 这`while k`因此，循环无需任何特殊分支即可处理 k=0。 
 
-        degree[u] += 1
-        degree[v] += 1
+乘法例程最值得关注。 假设位 j 设置为`A[i]`。 这意味着从 i 到 j 有一个第一步。 每一位都设置在`B[j]`表示从 j 到某个目的地的第二段。 对所有此类进行“或”运算`B[j]`因此准确给出了通过串联步行可到达的目的地。 
 
-    if k == 0:
-        return n
+表达式`mask & -mask`提取最低设置位。`bit.bit_length() - 1`将该位转换为其顶点索引。 删除它与`mask ^= bit`保证每个可达的中间顶点都被处理一次。 
 
-    # Small k: compute the exact set of endpoints after k steps.
-    if k <= 2 * n:
-        reach = [1 << i for i in range(n)]
+不存在整数溢出问题。 Python 整数自动增长，最大的位集只有 50 个有意义的位。 k 的值也直接作为 Python 整数处理，因此 10 9 界限不需要特殊的算术。 
 
-        for _ in range(k):
-            new_reach = [0] * n
-
-            for start in range(n):
-                bits = reach[start]
-                result = 0
-
-                while bits:
-                    low = bits & -bits
-                    v = low.bit_length() - 1
-                    result |= adj_bits[v]
-                    bits -= low
-
-                new_reach[start] = result
-
-            reach = new_reach
-
-        answer = 0
-        for i in range(n):
-            if (reach[i] >> i) & 1:
-                answer += 1
-
-        return answer
-
-    # Large k: only the parity structure of each component matters.
-    color = [-1] * n
-    component = [-1] * n
-    component_bad = []
-
-    for start in range(n):
-        if color[start] != -1:
-            continue
-
-        cid = len(component_bad)
-        component_bad.append(False)
-
-        color[start] = 0
-        component[start] = cid
-        stack = [start]
-
-        while stack:
-            u = stack.pop()
-
-            for v in graph[u]:
-                if color[v] == -1:
-                    color[v] = color[u] ^ 1
-                    component[v] = cid
-                    stack.append(v)
-                elif color[v] == color[u]:
-                    component_bad[cid] = True
-
-    if k % 2 == 0:
-        return sum(degree[i] > 0 for i in range(n))
-
-    return sum(component_bad[component[i]] for i in range(n))
-
-def solve():
-    t = int(input())
-
-    for _ in range(t):
-        n, m, k = map(int, input().split())
-        edges = [tuple(map(int, input().split())) for _ in range(m)]
-
-        print(solve_case(n, m, k, edges))
-
-if __name__ == "__main__":
-    solve()
-```第一部分`solve_case`构造两个图形表示。`graph`存储后续组件和二分遍历的边。`adj_bits[u]`将 (u) 的每个邻居存储在一个整数中，因此再采取一个图步骤就变成了一系列整数 OR 运算。 
-
-确切的动态程序开始于`1 << i`对于城市 (i)，因为在采取任何边之前，唯一可到达的城市是 (i) 本身。 对于每个可到达的顶点`v`,`adj_bits[v]`包含附加步骤后所有可能的目的地。 对所有这些掩码进行“或”运算即可准确给出下一个可到达的集合。 
-
-循环仅限于`k <= 2 * n`。 这个界限是有意为之的。 我们不需要知道超出 (2n) 的精确行走长度，因为组件结构完全决定了那里的答案。 
-
-二分遍历分配颜色`0`和`1`。 循环出现在`graph[u]`作为一条边`u`对自己来说，所以`color[v] == color[u]`立即将该组件标记为非二分组件。 平行边不会产生问题，因为重复相同的邻接检查不会改变结果。 
-
-即使对于较大的 (k)，`degree[i] > 0`是完整的条件。 对于奇数大 (k)，组件标识符将每个顶点映射到其二分状态，因此`component_bad[component[i]]`直接判断城市 (i) 是否属于非二分组件。 
-
-Python 中不存在整数溢出问题。 最大的位集只有 50 个相关位，并且 (k) 被存储为普通的 Python 整数。 
+求幂循环中的运算顺序也是经过深思熟虑的。 如果k的当前位为1，则当前功率必须乘以`result`。 之后，对当前功率进行平方以准备下一个二进制数字。 这`if k`后卫避免了一次不必要的最终平局。 
 
 ## 工作示例
 
- ### 示例 1，第一个测试用例
+ 第一个示例测试用例是```
+3 2 30 10 2
+```该图是一条长度为 2 的路径，城市 0 位于中间。 我们想要一条长度为 3 的闭合步行。 
 
- 该图是一条长度为 2 的路径，城市 0 位于中间。 
+邻接行由位集表示。 位位置0、1和2对应于三个城市。 
 
-对于 (k=3)，我们处于精确 DP 范围内，因为 (3\le2n=6)。 
+| 舞台| k |`result`行 |`base`代表 |
+ | ---| ---| ---| ---|
+ | 初始| 3 |`001`,`010`,`100`| 一个 1 |
+ | 位 0 = 1 | 3 | 一个 | 一个 1 |
+ | 班次| 1 | 一个 | 一个 2 |
+ | 位 1 = 1 | 1 | A 3 | 一个 2 |
+ | 完成 | 0 | A 3 | 一个 2 |
 
-| 步骤| 城市 0 可到达 | 可到达城市 1 | 城市 2 可到达 |
- | --- | --- | --- | --- |
- | 0 | {0} | {1} | {2} |
- | 1 | {1,2} | {0} | {0} |
- | 2 | {0} | {1,2} | {1,2} |
- | 3 | {1,2} | {0} | {0} |
+ 没有奇数循环，也没有自循环，因此该图是二分图，并且每个闭合游走的长度均为偶数。 A 3 的对角线完全错误，给出答案`0`。 
 
- 三步后没有一行包含其起始城市，因此答案为 0。 
+第二个示例测试用例是```
+3 2 40 10 2
+```这是同一张图，但现在 k=4。 
 
-该图是二分图，这也解释了为什么奇数闭合游走根本不存在。 仍然使用精确的 DP，因为该算法必须处理 (k) 的所有小值，包括仅最终奇偶校验不足的情况。 
+| 舞台| k |`result`|`base`|
+ | ---| ---| ---| ---|
+ | 初始| 4 | 我| 一个 |
+ | 班次| 2 | 我| 一个 2 |
+ | 班次| 1 | 我| A 4 |
+ | 位 2 = 1 | 1 | A 4 | A 4 |
+ | 完成 | 0 | A 4 | A 4 |
 
-### 示例 1，第三个测试用例
+ 每个城市都有一条长度为 4 的封闭步行道。 例如，从城市 1 开始，我们可以使用
 
- 该图包含一个三角形 (0,1,2)，以及路径 (3-4-0)。 这里 (n=5) 和 (k=5)，所以再次使用 (k\le2n) 和精确的 DP。 
+ 1→0→1→0→1。 
 
-| 步骤| 城市 0 | 城市 1 | 城市2 | 城市3 | 城市 4 |
- | --- | --- | --- | --- | --- | --- |
- | 0 | {0} | {1} | {2} | {3} | {4} |
- | 1 | {1,2,4} | {0,2} | {0,1} | {4} | {0,3} |
- | 2 | {0,2,3,4} | {0,1,4} | {0,1,2,4} | {0,3} | {1,2,4} |
- | 3 | {0,1,2,3,4} | {0,1,2,3} | {0,1,2,3,4} | {4} | {0,1,2,3} |
- | 4 | {0,1,2,3,4} | {0,1,2,3,4} | {0,1,2,3,4} | {0,3} | {0,1,2,4} |
- | 5 | {0,1,2,3,4} | {0,1,2,3,4} | {0,1,2,3,4} | {4} | {0,1,2,3,4} |
+城市 2 也可以进行相同的建设，而城市 0 可以与任一相邻城市交替。 因此 A 4 的每个对角线条目都是真的，答案是`3`。 
 
- 城市 0、1、2 和 4 在五步后就控制住了自己。 城市 3 没有，所以答案是 4。 
-
-该示例还说明了为什么仅靠连接是不够的。 城市 3 与非二分三角形相连，但它没有长度为 5 的奇数闭合路径。 精确的计算正确地处理了短距离限制。 
+这两条轨迹还说明了为什么仅关注可达性而不跟踪确切的步行长度是不够的。 该图在两种情况下都是连通的，但长度 3 不产生封闭步行，而长度 4 则在每个城市产生一个封闭步行。 
 
 ## 复杂度分析
 
  | 测量 | 复杂性 | 说明|
- | --- | --- | --- |
- | 时间 | (O(n^2\min(k,2n)+n+m)) | 每个精确DP步骤最多处理(n)个可达集，每个可达集最多包含(n)个顶点。 Large(k)只需要遍历一次图。 |
- | 空间| (O(n+m)) | 邻接列表、位集、颜色、组件 ID 和 DP 数组都最多使用 (O(n+m)) 空间。 |
+ | ---| ---| ---|
+ | 时间 | O(n 2 logk) 位集操作 | 有 O(logk) 个矩阵乘积，每个乘积最多处理 n 2 个集合位 |
+ | 空间| O(n) Python 整数 | 存储两个n行布尔矩阵，每行仅包含n个相关位|
 
- 对于 (n\le50)，精确阶段最多执行 (2n=100) 次迭代。 即使在密集图中，每次迭代也仅处理 50 个小位集，因此工作量很小。 Large-(k)阶段只是线性图的遍历。 该解决方案完全符合 3 秒和 256 MB 的限制。 
+ 对于n≤50且k≤10 9，最多有30个求幂级别。 每个布尔矩阵乘法最多处理50 2 =2500个行关系，并且每个关系都通过本机整数位运算来处理。 这完全在 3 秒的时间限制内，并且远低于 256 MB 内存限制。 
 
-## 测试用例
+此实现与普通 O(n 3 logk) 矩阵乘法之间的区别在 Python 中很有用。 位集表示将整个布尔行压缩为一个整数，因此昂贵的内部操作是通过优化的整数算术来执行的，而不是通过所有可能的目标进行 Python 级循环。 
 
- 以下测试工具通过以下方式重现了该算法`solve_case`并将样本与几种边界情况一起检查。```python
-import io
+## 测试用例```python
+Pythonimport sysimport io
 
-def solve_case(n, m, k, edges):
-    graph = [[] for _ in range(n)]
-    adj_bits = [0] * n
-    degree = [0] * n
+def solve_data(inp: str) -> str:    old_stdin = sys.stdin    old_stdout = sys.stdout
+    sys.stdin = io.StringIO(inp)    out = io.StringIO()    sys.stdout = out
+    try:        T = int(sys.stdin.readline())        answers = []
+        def multiply(A, B, n):            C = [0] * n
+            for i in range(n):                mask = A[i]                row = 0
+                while mask:                    bit = mask & -mask                    j = bit.bit_length() - 1                    row |= B[j]                    mask ^= bit
+                C[i] = row
+            return C
+        for _ in range(T):            n, m, k = map(int, sys.stdin.readline().split())            adj = [0] * n
+            for _ in range(m):                x, y = map(int, sys.stdin.readline().split())                adj[x] |= 1 << y                adj[y] |= 1 << x
+            result = [1 << i for i in range(n)]            base = adj
+            while k:                if k & 1:                    result = multiply(result, base, n)
+                k >>= 1
+                if k:                    base = multiply(base, base, n)
+            answer = sum(                1 for i in range(n)                if result[i] & (1 << i)            )            answers.append(str(answer))
+        sys.stdout.write("\n".join(answers))        return out.getvalue()
+    finally:        sys.stdin = old_stdin        sys.stdout = old_stdout
 
-    for u, v in edges:
-        graph[u].append(v)
-        graph[v].append(u)
-        adj_bits[u] |= 1 << v
-        adj_bits[v] |= 1 << u
-        degree[u] += 1
-        degree[v] += 1
+# Provided sampleassert solve_data("""\33 2 30 10 23 2 40 10 25 5 50 11 22 03 44 0""") == "0\n3\n4", "provided sample"
 
-    if k == 0:
-        return n
+# Minimum-size graph, k = 0.# The empty walk is valid at the only city.assert solve_data("""\11 0 0""") == "1", "k = 0"
 
-    if k <= 2 * n:
-        reach = [1 << i for i in range(n)]
+# One vertex with a self-loop.# The loop can be traversed any positive number of times.assert solve_data("""\11 1 10 0""") == "1", "self-loop and k = 1"
 
-        for _ in range(k):
-            new_reach = [0] * n
+# Two isolated vertices, k > 0.# There is no road at all, so no positive-length walk exists.assert solve_data("""\12 0 7""") == "0", "isolated vertices"
 
-            for start in range(n):
-                bits = reach[start]
-                result = 0
+# Parallel edges and an even walk.# Multiplicity does not matter because we only ask whether a walk exists.assert solve_data("""\12 3 20 10 10 1""") == "2", "parallel edges"
 
-                while bits:
-                    low = bits & -bits
-                    v = low.bit_length() - 1
-                    result |= adj_bits[v]
-                    bits -= low
+# A triangle, k = 3.# Every vertex can traverse the triangle once and return.assert solve_data("""\13 3 30 11 22 0""") == "3", "odd cycle"
 
-                new_reach[start] = result
-
-            reach = new_reach
-
-        return sum((reach[i] >> i) & 1 for i in range(n))
-
-    color = [-1] * n
-    component = [-1] * n
-    component_bad = []
-
-    for start in range(n):
-        if color[start] != -1:
-            continue
-
-        cid = len(component_bad)
-        component_bad.append(False)
-
-        color[start] = 0
-        component[start] = cid
-        stack = [start]
-
-        while stack:
-            u = stack.pop()
-
-            for v in graph[u]:
-                if color[v] == -1:
-                    color[v] = color[u] ^ 1
-                    component[v] = cid
-                    stack.append(v)
-                elif color[v] == color[u]:
-                    component_bad[cid] = True
-
-    if k % 2 == 0:
-        return sum(degree[i] > 0 for i in range(n))
-
-    return sum(component_bad[component[i]] for i in range(n))
-
-def run(inp):
-    data = list(map(int, inp.split()))
-    p = 0
-
-    t = data[p]
-    p += 1
-    out = []
-
-    for _ in range(t):
-        n, m, k = data[p], data[p + 1], data[p + 2]
-        p += 3
-
-        edges = []
-        for _ in range(m):
-            u, v = data[p], data[p + 1]
-            p += 2
-            edges.append((u, v))
-
-        out.append(str(solve_case(n, m, k, edges)))
-
-    return "\n".join(out) + "\n"
-
-# Provided sample.
-sample = """\
-3
-3 2 3
-0 1
-0 2
-3 2 4
-0 1
-0 2
-5 5 5
-0 1
-1 2
-2 0
-3 4
-4 0
-"""
-assert run(sample) == "0\n3\n4\n", "sample"
-
-# Minimum-size graph, no edges, k = 0.
-assert run("""\
-1
-1 0 0
-""") == "1\n", "k = 0"
-
-# One vertex with several loops, all endpoints equal.
-# Every positive k is possible.
-assert run("""\
-1
-1 5 1000000000
-0 0
-0 0
-0 0
-0 0
-0 0
-""") == "1\n", "all-equal loop edges"
-
-# Boundary between the exact and large-k phases.
-# A single edge is bipartite, so even lengths work and odd lengths do not.
-assert run("""\
-4
-2 1 4
-0 1
-2 1 5
-0 1
-3 2 6
-0 1
-1 2
-3 2 7
-0 1
-1 2
-""") == "2\n0\n3\n0\n", "parity boundary"
-
-# Large odd k in a non-bipartite component.
-# Triangle plus a leaf. Every vertex belongs to the same non-bipartite component.
-assert run("""\
-1
-4 4 1000000001
-0 1
-1 2
-2 0
-2 3
-""") == "4\n", "large odd non-bipartite"
-
-# Maximum-size graph: complete graph on 50 vertices.
-# There are 50^2 = 2500 roads when loops are included.
-# Every vertex has a loop, so every positive k works.
-n = 50
-edges = [(i, j) for i in range(n) for j in range(n)]
-max_input = "1\n50 2500 1000000000\n"
-max_input += "\n".join(f"{u} {v}" for u, v in edges) + "\n"
-
-assert run(max_input) == "50\n", "maximum-size dense graph"
+# Maximum-size vertex count and a huge k.# Complete graph has a closed walk of every positive length at every vertex.edges = []n = 50for i in range(n):    for j in range(i + 1, n):        edges.append(f"{i} {j}")
+max_case = "1\n50 1225 1000000000\n" + "\n".join(edges) + "\n"assert solve_data(max_case) == "50", "maximum n and huge k"
 ```| 测试输入| 预期产出 | 它验证了什么 |
- | --- | --- | --- |
- |`1 / 1 0 0`|`1`| 空游和最小图尺寸 |
- |`1 / 1 5 1000000000 / 0 0 ...`|`1`| 循环和任意大的奇数长度 |
- | 单边和路径情况 (k=4,5,6,7) |`2,0,3,0`| 偶数与奇数封闭游走以及小/大边界 |
- | 带有叶子和巨大奇数 (k) 的三角形 |`4`| 大奇数 (k) 的非二分分量处理 |
- | 50 个顶点和 2500 条道路的完整图 |`50`| 最大值 (n)、最大值 (m) 和密集邻接 |
+ | ---| ---| ---|
+ |`1 0 0`|`1`| 最小图和 k=0 边界 |
+ | 一顶点一循环，k=1 |`1`| 自循环精准一步返回|
+ | 两个孤立的顶点，k=7 |`0`| 没有正长度步行|
+ | 两个顶点之间的三个平行边，k=2 |`2`| 平行边不影响存在|
+ | 三角形，k=3 |`3`| 奇怪的封闭步道|
+ | 50 个顶点的完整图，k=10 9 |`50`| 最大 n、大 k 和二进制求幂 |
 
  ## 边缘情况
 
- 对于 (k=0)，考虑```
-1
-1 0 0
-```该算法立即返回`n`，即 1。不需要邻接信息，因为零长度步行不需要道路。 这避免了要求起始城市具有正度的常见错误。 
+ ### 零步
 
-对于具有正偶数 (k) 的孤立顶点，考虑```
-1
-2 0 2
-```不使用大 (k) 快捷方式，因为 (2\le2n)，因此确切的 DP 开头为`{0}`和`{1}`。 一步之后，两组都变空，因为没有关联边，并且它们仍然是空的。 对角线位都不存在，给出 0。如果相同的情况有一个更大的偶数 (k)，则大 (k) 分支将显式检查`degree[i] > 0`，阻止一座孤立的城市被接受。 
+ 考虑```
+13 0 0
+```算法初始化`result`到单位矩阵并且永远不会进入求幂循环，因为`k`为零。 单位矩阵具有每个对角线条目集，因此所有三个城市都被计算在内。 这符合长度零行走的定义。 
 
-对于循环，请考虑```
-1
-1 1 1
-0 0
-```精确的 DP 从设置位 0 开始。 一步之后，它对顶点 0 的邻接掩码进行或运算，由于循环，该顶点包含位 0。 对角位保持设置，因此答案为 1。在 large-(k) 分支中，相同的循环使二分遍历遇到端点具有相同颜色的边，从而标记组件非二分。 
+### 一步自循环
 
-对于奇数 (k) 较小的非二分图，请考虑三角形```
-1
-3 3 1
-0 1
-1 2
-2 0
-```该图包含奇数环，但没有环。 当 (k=1) 时，任何顶点都不能在一条边上返回自身。 由于 (1\le2n)，使用精确的 DP 并正确返回 0。这就是大 (k) 奇偶校验分类不能简单地应用于每个奇数 (k) 的原因。 
+ 考虑```
+12 1 10 0
+```城市 0 的邻接行包含位 0，而城市 1 有空行。 由于 k=1，`result`成为邻接矩阵本身。 它的对角线仅在城市 0 处包含真实值，所以答案是`1`。 
 
-最后，考虑一个具有非常大的奇数 (k) 的二分图：```
-1
-3 2 1000000001
-0 1
-1 2
-```这里 (k>2n)，因此算法运行二分检查而不是迭代十亿次。 该组件是二分组件，因此`component_bad`是假的。 由于 (k) 是奇数，因此不会计算任何城市，并且答案为 0。结果是根据二分图中的每个闭合步行的长度为偶数这一事实得出的。
+这种情况捕获了意外忽略自循环或仅在端点不同时插入边的实现。 
+
+### 孤立的顶点
+
+ 考虑```
+12 0 7
+```邻接矩阵全为零。 零布尔矩阵的每个正幂都保持为零，因此不设置对角线条目。 答案是`0`。 单位矩阵不会导致误报，因为它仅用于指数零，并且此处指数为正。 
+
+### 平行道路
+
+ 考虑```
+12 3 20 10 10 1
+```三个输入路都设置相同的两个邻接位。 构造后，该矩阵正是单条无向边的邻接矩阵。 将其平方得到两个顶点处的对角线 true，对应于路径 0→1→0 和 1→0→1。 答案是`2`。 
+
+将输入视为带有计数的多重图是没有必要的，因为问题要求存在而不是可能的游走数量。 
+
+### 奇数循环
+
+ 考虑```
+13 3 30 11 22 0
+```第一个幂允许有一条边，并且对布尔邻接矩阵求三次方可检测从每个顶点回到自身的三角形行走。 A 3 的对角线完全正确，所以答案是`3`。 
+
+这也是为什么仅基于偶数或奇数 k 的解决方案是不够的。 图结构决定了可能的精确长度，布尔矩阵幂直接表示该结构。

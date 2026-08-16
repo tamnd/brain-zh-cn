@@ -1,7 +1,7 @@
 ---
 title: "CF 102375L - \u0411\u043b\u0438\u0436\u0430\u0439\u0448\u0438\u0435\u0442\u043e\u0447\u043a\u0438"
-description: "我们只关心第一个标记点​​的 Voronoi 单元，仅限于矩形内的整数网格点。 当网格点 (x, y) 到 p1 的欧几里德距离不大于它到每个其他标记点的距离时，它就是好的。"
-date: "2026-08-14T13:23:43+07:00"
+description: "我们在矩形内有一个整数网格，其角为 (0, 0) 和 (X, Y)。 在所有标记点中，p1 是特殊的。 我们需要计算与 p1 的欧几里德距离不大于其与每个其他标记点的距离的每个网格点。"
+date: "2026-08-15T07:33:50+07:00"
 tags: ["codeforces", "competitive-programming"]
 categories: ["algorithms"]
 codeforces_contest: 102375
@@ -9,7 +9,7 @@ codeforces_index: "L"
 codeforces_contest_name: "\u041a\u0432\u0430\u043b\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0439 \u0440\u0430\u0443\u043d\u0434 \u0427\u0435\u043c\u043f\u0438\u043e\u043d\u0430\u0442\u0430 \u0421\u0435\u0432\u0435\u0440\u043e-\u0417\u0430\u043f\u0430\u0434\u0430 \u0420\u043e\u0441\u0441\u0438\u0438 \u0438 \u041c\u043e\u0441\u043a\u0432\u044b ICPC 2019"
 rating: 0
 weight: 102375
-solve_time_s: 234
+solve_time_s: 1254
 verified: false
 draft: false
 ---
@@ -18,281 +18,326 @@ draft: false
 
  **评级：** -
  **标签：** -
- **求解时间：** 3m 54s
+ **求解时间：** 20m 54s
  **已验证：** 否
 
  ## 解决方案
  ## 问题理解
 
- 我们只关心第一个标记点的 Voronoi 单元，仅限于矩形内的整数网格点。 一个网格点`(x, y)`恰好当其欧几里德距离到`p1`不大于它到每个其他标记点的距离。 
+ 我们在有角的矩形内有一个整数网格`(0, 0)`和`(X, Y)`。 在所有标记点中，`p1`很特别。 我们需要计算每个网格点的欧氏距离`p1`不大于它到每个其他标记点的距离。 
 
-该矩形包含`(X + 1)(Y + 1)`整数点。 对于每个候选点，直接解决方案将其与所有候选点的距离进行比较`K`标记点，所以直接的方法需要大致`(X + 1)(Y + 1)K`距离比较。 三个参数全部达到`2 * 10^5`，这大约是`8 * 10^15`比较，远远超出了实际。 我们需要利用这样一个事实：比较欧几里德距离的平方使得二次项为`x`和`y`取消。 
+直接解释建议根据每个标记点检查每个网格点。 那太贵了。 比较平方距离后就会出现有用的结构。 对于固定的竞争对手`pi`，该组点至少接近于`p1`至于`pi`是由两点的垂直平分线界定的一个半平面。 所需的集合是所有这些半平面与矩形的交集。 
 
-有几种边界情况可能会悄无声息地破坏实现。 只有一个标记点​​，每个网格点都是好的。 例如，```
+最初的竞赛声明给出了`X, Y, K <= 2 * 10^5`，具有 2 秒时间限制和 512 MiB 内存限制。 这立即排除了对所有网格点和标记点对的迭代。 矩形本身可以包含大约`(2 * 10^5 + 1)^2 = 4 * 10^10`整数点，所以即使`O(XY)`算法是不可能的。 我们需要粗略地处理标记点`O(K log K)`时间，然后只扫描一个坐标范围。 
+
+有几种边界情况可能会悄无声息地破坏实现。 
+
+如果`K = 1`，根本没有竞争对手，所以每个格点都不错。 例如，```
 1 1 1
 0 0
-```有答案`4`，因为矩形的所有四个整数点都属于第一个点的区域。 假设至少有一个竞争对手的实现可能会意外地构建一个空的最小或最大信封。 
+```有输出`4`，因为矩形的四个整数点是`(0,0)`,`(0,1)`,`(1,0)`， 和`(1,1)`。 一个常见的错误是计算`X * Y`细胞而不是`(X + 1) * (Y + 1)`网格点。 
 
-另一个问题是整数坐标之间传递的平分线。 考虑```
-2 1 2
-2 0
+竞争对手可以有相同的`x`坐标为`p1`。 那么它们的垂直平分线是水平的，所以它们不会强加一个`x`完全受束缚。 例如，```
+2 4 3
+1 2
 1 0
-```无论何时，第一点都更接近`x >= 1.5`，所以唯一好的整数点有`x = 2`。 两者皆有可能`y`价值观很好，给出答案`2`。 有理边界的粗心整数转换可能会错误地包括`x = 1`。 
+1 4
+```第一个参赛者需要`y >= 1`，第二个要求`y <= 3`，以及每一个`x`从`0`通过`2`是允许的。 答案是`3 * 3 = 9`。 将每一位参赛者视为`x`-line 要么除以零，要么默默地失去这个限制。 
 
-当所需的边界是上限而不是下限时，就会出现对称问题。 对于相同的输入，下边界为`x >= 1.5`，并且整数算术必须产生`ceil(1.5) = 2`。 Python 整数除法在这里很有用，但前提是保持分母为正并显式处理上限。 
-标记点也可以位于矩形边界上。 例如，```
-2 1 2
-0 0
-2 0
-```包含最近标记点沿底部边缘发生变化的点，而相同的比较也适用于该行`y = 1`。 必须包含矩形边界，而不是将其视为严格的不平等。 
+平分线可以经过两个整数坐标之间的中间。 例如，```
+2 2 2
+1 1
+0 1
+```反对的条件`(0,1)`是`x >= 1/2`，所以整数点必须有`x >= 1`。 有两种可能`x`值和三种可能`y`值，给出输出`6`。 使用截断整数除法而不是数学下限或上限可能会产生错误的边界。 
+
+领带也必须被接受。 条件是距离小于或等于竞争对手的距离，因此正好在平分线上的点属于好区域。 这就是为什么解决方案中的所有包络比较在选择活动线路时都使用非严格比较的原因。 
 
 ## 方法
 
- 蛮力方法检查每个整数`(x, y)`和`0 <= x <= X`和`0 <= y <= Y`，计算其平方距离`p1`，并将其与到每个其他标记点的平方距离进行比较。 这是正确的，因为好点的定义正是比较的集合。 其最坏情况的成本是`(X + 1)(Y + 1)(K - 1)`，这大约是`8 * 10^15`最大限制下的操作。 
+ 暴力解决方案直接来自定义。 枚举每个整数`(x, y)`在矩形中，计算其平方距离`p1`，然后将该值与到每个其他标记点的平方距离进行比较。 平方距离就足够了，因为平方根是单调的。 
 
-有用的观察来自于扩展一项比较。 让`p1 = (a, b)`另一个标记点​​是`(u, v)`。 我们需要`(x-a)^2 + (y-b)^2 <= (x-u)^2 + (y-v)^2`。 
+这是正确的，因为当没有任何竞争对手严格接近时，分数就被接受。 然而，最坏的情况大约是`4 * 10^10`网格点和`2 * 10^5`竞争对手，大致给出`8 * 10^15`距离比较。 这超出了时间限制的多个数量级。 
 
-取消后`x^2`和`y^2`，这变成了`2(u-a)x + 2(v-b)y <= u^2 + v^2 - a^2 - b^2`。 
+关键的观察结果是，比较两个平方欧几里德距离消除了中的二次项`x`和`y`。 让`p1 = (x1, y1)`并让竞争对手`q = (xi, yi)`。 不平等`(x - x1)^2 + (y - y1)^2 <= (x - xi)^2 + (y - yi)^2`简化为`2(xi - x1)x + 2(yi - y1)y <= xi^2 + yi^2 - x1^2 - y1^2`。 
 
-因此，每个参赛者都会贡献一个半平面，而不是弯曲的条件。 好的实点集是所有这些半平面与矩形的交点。 
+这是一个线性半平面。 
 
-对于固定整数`x`，每个非垂直半平面给出上界或下界`y`。 如果`v > b`，它的形式为`y <= (C - A x) / B`和`B > 0`。 如果`v < b`，就变成`y >= (A x - C) / (-B)`。 
+现在修复一个整数`y`。 每一位参赛者都与`xi > x1`给出一个上限`x`，而每个竞争对手`xi < x1`给出一个下界`x`。 因此，对于每一行`y`，好点形成一个整数区间`[L(y), R(y)]`。 我们只需要计算最严格的下限和上限。 
 
-因此，对于每个`x`，所有竞争者都可以用两个值来概括：最小的上限线和最大的下限线。 这些是线性函数的下包络线和上包络线。 
+每个界限都是一个线性函数`y`，可能具有有理系数。 上边界是多条线中的最小值，下边界是多条线中的最大值。 这种包络线可以用凸包技巧来构造。 我们按斜率对线进行排序，丢弃永远无法成为最佳的线，然后扫描`y`从下到上，同时保持指向当前最佳行的指针。 
 
-李超树让我们维护这样一个信封并在每个整数处查询它`x`在对数时间内。 我们保留一棵树作为最小上限，另一棵树作为最大下界。 系数保留为精确分数，因此不需要浮点几何。 
+相同`y`坐标也可能受到竞争对手的限制`xi = x1`。 这些约束在构建线路包络之前直接处理。 
 
-蛮力之所以有效，是因为每个候选人都可以独立检查，但会失败，因为候选人太多。 观察到每次距离比较都变成线性不等式，我们可以通过两个线包络来总结所有竞争对手，并仅处理`X + 1`可能的列。 
+蛮力之所以有效，是因为它精确地测试了定义，但当矩形包含数十亿个网格点时，它就会失败。 每次距离比较都变成半平面的观察结果让我们可以用两个一维线包络和一次扫描来代替二维枚举`y`。 
 
 | 方法| 时间复杂度| 空间复杂度| 判决 |
- | --- | --- | --- | --- |
+ | ---| ---| ---| ---|
  | 蛮力 |`O(XYK)`|`O(K)`| 太慢了 |
- | 最佳|`O(K log X + X log X)`|`O(K + X)`| 已接受 |
+ | 最佳 |`O(K log K + Y)`|`O(K)`| 已接受 |
 
  ## 算法演练
 
- 1. 阅读`p1 = (a, b)`并考虑所有其他标记点`(u, v)`作为约束。 平方距离就足够了，因为比较非负距离相当于比较它们的平方。 
-2. 扩大对比`(u, v)`进入`A x + B y <= C`，
+ 1. 阅读`p1 = (x1, y1)`并将允许的行间隔初始化为`0 <= y <= Y`。 每个参赛者都拥有相同的`x`坐标为`p1`只能限制这个区间。 竞争对手不同`x`坐标将转换为线。 
+2. 对于竞争对手`q = (xi, yi)`， 定义`dx = xi - x1`,`dy = yi - y1`,`C = xi^2 + yi^2 - x1^2 - y1^2`。 
 
-在哪里`A = 2(u-a)`,`B = 2(v-b)`， 和`C = u^2 + v^2 - a^2 - b^2`。 
+其半平面为`2 dx x + 2 dy y <= C`。 
 
-二次项消失，这是从几何到线性函数的关键转换。 
-3.如果`B > 0`，求解不等式`y`并获得`y <= (C - A x) / B`。 
+该方程采用整数运算，因此浮点误差不会影响边界点。 
+3.如果`dx = 0`，不等式不包含`x`。 什么时候`dy > 0`，就变成`y <= (yi + y1) / 2`。 
 
-将这个有理线性函数存储在最小李超树中，因为最强的上限限制是最小的。 
-4.如果`B < 0`，求解`y`反方向并得到`y >= (A x - C) / (-B)`。 
+什么时候`dy < 0`，就变成`y >= (yi + y1) / 2`。 
 
-将此函数存储在最大李超树中，因为最强的下限限制是最大的。 
-5. 如果`B = 0`，约束仅包含`x`。 什么时候`A > 0`，它限制了`x`从上面与`x <= floor(C / A)`。 什么时候`A < 0`，它限制了`x`从下面与`x >= ceil(C / A)`。 将这些限制与`[0, X]`。 
+将它们转换为整数下限和上限边界，并将它们与当前行间隔相交。 
+4.如果`dx > 0`，求解不等式`x`:`x <= (C - 2dy * y) / (2dx)`。 
 
-没有`A = B = 0`这种情况是因为标记点是两两不同的。 
-6. 在整数域上构建两棵李超树`[0, X]`。 树通过叉乘来比较有理线值，因此每次比较都是准确的。 
-7. 对于每个整数`x`从允许的左端点到允许的右端点，查询最小上线和最大下线。 从矩形自身的限制开始`0 <= y <= Y`， 所以`upper = min(Y, minimum upper constraint)`和`lower = max(0, maximum lower constraint)`。 
-8. 将有理界转换为整数界。 允许的最大整数`y`是`floor(upper)`，而允许的最小整数`y`是`ceil(lower)`。 如果整数下限不超过整数上限，则将它们的差值加一到答案中。 
-9. 输出累计的整数点数。 
+这是一条上限线。 对于固定的`y`，所有这些竞争对手都必须得到满足，因此我们采取这些行中的最小值。 
+5.如果`dx < 0`，除法反转不等式：`x >= (2dy * y - C) / (2(-dx))`。 
 
-不变的是，处理完所有标记点后，每个查询都以固定整数`x`返回每个竞争对手施加的最强上限和下限。 将这些限制与`[0, Y]`精确给出整数`y`满足每个距离比较的值。 由于每个优点都是通过这些比较来表征的，因此每个计算的点都是好的，并且每个优点都被计算在内。 
+这是一条下界线。 我们需要所有这些功能的最大值。 不要实现第二种外壳，而是存储每条较低线的否定。 原始行的最大值成为它们的负数的最小值的负数。 
+6. 将每条有理线表示为`f(y) = (m*y + b) / d`和`d > 0`。 按斜率递减对线进行排序`m/d`。 对于相等的斜率，只有具有最小截距的线对于最小包络线很重要。 
+7. 建造下层信封。 考虑三个连续的行`a`,`b`， 和`c`随着坡度的减小。 让`x_ab`在哪里`a`和`b`相交，并且`x_bc`在哪里`b`和`c`相交。 如果`x_ab >= x_bc`， 线`b`永远不是最小值，因此可以将其删除。 所有比较均通过交叉乘法执行，这避免了浮点运算。 
+8. 从第一个允许的行开始扫描整数行`y`到最后允许的`y`。 由于查询坐标不断增加，因此包络上的活动线只能向前移动。 虽然下一行不比当前行差`y`，使指针前进。 
+9. 评估上包络线`y`并取得其数学底线。 评估负下包络线并取其下限的负值，这给出了原始下限的数学上限。 
+10. 将结果间隔限制为`[0, X]`。 如果`L <= R`，该行贡献`R - L + 1`好的整数点。 对所有允许的行的这些贡献求和。 
+
+### 为什么它有效
+
+ 对于每一位参赛者`pi`，该算法精确插入包含至少与`p1`至于`pi`。 这些半平面的交点正是以下的 Voronoi 单元`p1`，仅限于矩形。 
+
+在固定行上`y`，每个半平面`xi > x1`贡献了一个上限`x`，以及每个半平面`xi < x1`贡献一个下限。 因此，它们的交集就是从最大下界到最小上界的区间。 平等的——`x`竞争对手仅影响存在的行。 
+
+凸包恰好包含对于某些查询坐标来说可以是最小的线。 当最优区间为空时，交序检验会精确地删除中间线。 在增加扫描的过程中`y`，最小值只能向前穿过船体，因此所选线始终是真实的包络值。 下限和上限这些精确的有理值恰好给出第一个和最后一个整数`x`就行了。 因此，每一个被计算的点都是好的，每一个好的点都被计算在内。 
 
 ## Python 解决方案```python
 import sys
 input = sys.stdin.readline
+from functools import cmp_to_key
 
-def floor_div(a, b):
-    return a // b
+def slope_cmp(a, b):
+    # Compare a.m / a.d and b.m / b.d, in decreasing order.
+    left = a[0] * b[2]
+    right = b[0] * a[2]
 
-def ceil_div(a, b):
-    return -((-a) // b)
+    if left > right:
+        return -1
+    if left < right:
+        return 1
 
-class LiChao:
-    def __init__(self, left, right, is_min):
-        self.left = left
-        self.right = right
-        self.is_min = is_min
-        self.tree = [None] * (4 * (right - left + 1))
+    # Equal slopes. Smaller intercept first.
+    left = a[1] * b[2]
+    right = b[1] * a[2]
 
-    @staticmethod
-    def value(line, x):
-        m, b, d = line
-        return m * x + b, d
+    if left < right:
+        return -1
+    if left > right:
+        return 1
+    return 0
 
-    def better(self, a, b, x):
-        if b is None:
-            return True
+def value_leq(a, b, x):
+    # a(x) <= b(x), with both denominators positive.
+    left = (a[0] * x + a[1]) * b[2]
+    right = (b[0] * x + b[1]) * a[2]
+    return left <= right
 
-        an, ad = self.value(a, x)
-        bn, bd = self.value(b, x)
+def redundant(a, b, c):
+    # Slopes are strictly decreasing.
+    # b is redundant iff intersection(a,b) >= intersection(b,c).
 
-        left = an * bd
-        right = bn * ad
+    n1 = b[1] * a[2] - a[1] * b[2]
+    d1 = a[0] * b[2] - b[0] * a[2]
 
-        if self.is_min:
-            return left < right
-        return left > right
+    n2 = c[1] * b[2] - b[1] * c[2]
+    d2 = b[0] * c[2] - c[0] * b[2]
 
-    def insert(self, line):
-        self._insert(1, self.left, self.right, line)
+    return n1 * d2 >= n2 * d1
 
-    def _insert(self, node, l, r, line):
-        cur = self.tree[node]
+def build_hull(lines):
+    if not lines:
+        return []
 
-        if cur is None:
-            self.tree[node] = line
-            return
+    lines.sort(key=cmp_to_key(slope_cmp))
 
-        mid = (l + r) // 2
+    hull = []
 
-        if self.better(line, cur, mid):
-            self.tree[node], line = line, cur
-            cur = self.tree[node]
+    for line in lines:
+        if hull:
+            last = hull[-1]
 
-        if l == r:
-            return
+            # Same slope. Keep the smaller intercept.
+            if line[0] * last[2] == last[0] * line[2]:
+                if line[1] * last[2] < last[1] * line[2]:
+                    hull[-1] = line
+                continue
 
-        if self.better(line, cur, l) != self.better(line, cur, mid):
-            self._insert(node * 2, l, mid, line)
-        else:
-            self._insert(node * 2 + 1, mid + 1, r, line)
+        while len(hull) >= 2 and redundant(hull[-2], hull[-1], line):
+            hull.pop()
 
-    def query(self, x):
-        return self._query(1, self.left, self.right, x)
+        hull.append(line)
 
-    def _query(self, node, l, r, x):
-        cur = self.tree[node]
-
-        if l == r:
-            return cur
-
-        mid = (l + r) // 2
-
-        if x <= mid:
-            other = self._query(node * 2, l, mid, x)
-        else:
-            other = self._query(node * 2 + 1, mid + 1, r, x)
-
-        if cur is None:
-            return other
-        if other is None:
-            return cur
-
-        if self.better(other, cur, x):
-            return other
-        return cur
+    return hull
 
 def solve():
     X, Y, K = map(int, input().split())
+
     points = [tuple(map(int, input().split())) for _ in range(K)]
+    x1, y1 = points[0]
 
-    a, b = points[0]
+    ymin = 0
+    ymax = Y
 
-    lower_x = 0
-    upper_x = X
+    upper_lines = []
+    lower_lines = []
 
-    upper_tree = LiChao(0, X, True)
-    lower_tree = LiChao(0, X, False)
+    base_sq = x1 * x1 + y1 * y1
 
-    base = a * a + b * b
+    for xi, yi in points[1:]:
+        dx = xi - x1
+        dy = yi - y1
+        C = xi * xi + yi * yi - base_sq
 
-    for u, v in points[1:]:
-        A = 2 * (u - a)
-        B = 2 * (v - b)
-        C = u * u + v * v - base
+        if dx == 0:
+            s = xi + x1
 
-        if B > 0:
-            # y <= (C - A*x) / B
-            upper_tree.insert((-A, C, B))
+            if dy > 0:
+                # y <= (yi + y1) / 2
+                ymax = min(ymax, s // 2)
+            else:
+                # y >= (yi + y1) / 2
+                ymin = max(ymin, (s + 1) // 2)
 
-        elif B < 0:
-            # y >= (A*x - C) / (-B)
-            lower_tree.insert((A, -C, -B))
+        elif dx > 0:
+            # x <= (C - 2*dy*y) / (2*dx)
+            upper_lines.append((-2 * dy, C, 2 * dx))
 
         else:
-            # A*x <= C
-            if A > 0:
-                upper_x = min(upper_x, floor_div(C, A))
-            else:
-                lower_x = max(lower_x, ceil_div(C, A))
+            # x >= (2*dy*y - C) / (2*(-dx))
+            #
+            # Store the negation:
+            # -x_bound = (-2*dy*y + C) / (2*(-dx))
+            lower_lines.append((2 * dy, -C, -2 * dx))
 
-    if lower_x > upper_x:
+    if ymin > ymax:
         print(0)
         return
 
+    upper_hull = build_hull(upper_lines)
+    lower_hull = build_hull(lower_lines)
+
+    upper_ptr = 0
+    lower_ptr = 0
+
     answer = 0
 
-    for x in range(lower_x, upper_x + 1):
-        low = 0
-        high = Y
+    for y in range(ymin, ymax + 1):
+        if upper_hull:
+            while (
+                upper_ptr + 1 < len(upper_hull)
+                and value_leq(
+                    upper_hull[upper_ptr + 1],
+                    upper_hull[upper_ptr],
+                    y
+                )
+            ):
+                upper_ptr += 1
 
-        line = lower_tree.query(x)
-        if line is not None:
-            m, c, d = line
-            low = max(low, ceil_div(m * x + c, d))
+            m, b, d = upper_hull[upper_ptr]
+            upper_num = m * y + b
+            right = upper_num // d
+        else:
+            right = X
 
-        line = upper_tree.query(x)
-        if line is not None:
-            m, c, d = line
-            high = min(high, floor_div(m * x + c, d))
+        if lower_hull:
+            while (
+                lower_ptr + 1 < len(lower_hull)
+                and value_leq(
+                    lower_hull[lower_ptr + 1],
+                    lower_hull[lower_ptr],
+                    y
+                )
+            ):
+                lower_ptr += 1
 
-        if low <= high:
-            answer += high - low + 1
+            m, b, d = lower_hull[lower_ptr]
+            lower_neg_num = m * y + b
+
+            # Original lower bound is -lower_neg_line.
+            # ceil(-z) = -floor(z).
+            left = -(lower_neg_num // d)
+        else:
+            left = 0
+
+        if left < 0:
+            left = 0
+        if right > X:
+            right = X
+
+        if left <= right:
+            answer += right - left + 1
 
     print(answer)
 
 if __name__ == "__main__":
     solve()
-```输入被读入标记点列表一次，因为每个竞争对手都必须转换为一个线性约束。 第一点被分隔为`(a, b)`，因为所有约束都直接与其进行比较。 
+```输入被读取`sys.stdin.readline`，第一个标记点​​用作`p1`完全按照输入格式指定。 数量`base_sq`商店`x1^2 + y1^2`，因此无需重新计算相同的值即可形成每个竞争对手的常数。 
 
-价值观`A`,`B`， 和`C`与因子一起存储`2`包括。 这避免了在转换期间引入半整数常量。 对于上限约束，存储的线表示`(C - A*x) / B`，所以它的分子有斜率`-A`。 对于较低的约束，通过将不等式乘以分母为正`-1`, 给予`(A*x - C) / (-B)`。 
+三个分支`dx`直接对应于算法中的三种几何情况。 为了`dx = 0`，不会创建任何线，因为限制是纯垂直的。 为了`dx > 0`，上界线的分母为正。 为了`dx < 0`, 乘以`-1`在该行被求反之前使分母为正值。 
 
-李超树从不将这些值转换为浮点数。 如果有两个分数`n1 / d1`和`n2 / d2`有正分母，比较它们相当于比较`n1*d2`和`n2*d1`。 Python 整数也具有任意精度，因此叉积不会溢出。 
+船体商店`(m, b, d)`而不是浮点斜率和截距。 每次比较都会将两个分数相乘。 坐标可以大到`2 * 10^5`，平方坐标可以大致达到`4 * 10^10`，但Python整数具有任意精度，因此不存在溢出问题。 
 
-矩形贡献初始边界`low = 0`和`high = Y`。 缺少下信封意味着没有竞争对手限制`y`从下面看，对于上封套也是如此。 这就是使`K = 1`案例工作无需特殊的几何案例。 
+这`redundant`测试使用连续线的精确交点坐标。 这些交集表达式中的分母为正，因为船体是按严格递减斜率排序的。 这使得即使交点坐标为负时叉乘也有效。 
 
-决赛`+ 1`在`high - low + 1`是必要的，因为两个端点都是允许的。 该问题使用非严格距离比较，因此必须计算正好位于平分线上的点。 
+查询指针仅向前移动。 由于行是按递增方式处理的`y`，最优线也单调地穿过斜率顺序一致的船体。 这将构建后的所有信封查询减少到线性时间。 
+
+场内操作是另一个微妙点。 蟒蛇的`//`是数学底除法，包括负分子，这正是有理边界所要求的。 对于取反的下包络线，如果其值为`z = -g`，所需的整数下界是`ceil(g) = -floor(z)`，它解释了代码中使用的表达式。 
 
 ## 工作示例
 
- 对于样品 1，`p1 = (2, 2)`。 四位参赛者产生以下相关界限：`(1, 1)`给出`y >= 3 - x`。`(1, 3)`给出`y <= x + 1`。`(3, 3)`给出`y <= 5 - x`。`(3, 1)`给出`y >= x - 1`。 
+ 对于样品 1，`p1 = (2,2)`。 其他四个点产生以下相关界限：`(1,1)`给出`x >= 3 - y`。`(1,3)`给出`x >= y - 1`。`(3,3)`给出`x <= 5 - y`。`(3,1)`给出`x <= y + 1`。 
 
-连同`0 <= y <= 4`，查询结果为：
+因此，信封是`L(y) = max(3-y, y-1)`和`R(y) = min(5-y, y+1)`。 
 
- | x| 下限| 上限 | 良好的 y 值 | 添加 |
- | --- | --- | --- | --- | --- |
+行扫描为：
+
+ |`y`|`L(y)`|`R(y)`| 好的`x`价值观 | 贡献 |
+ | ---| ---| ---| ---| ---|
  | 0 | 3 | 1 | 无 | 0 |
  | 1 | 2 | 2 | 2 | 1 |
  | 2 | 1 | 3 | 1、2、3 | 3 |
  | 3 | 2 | 2 | 2 | 1 |
  | 4 | 3 | 1 | 无 | 0 |
 
- 总计为`1 + 3 + 1 = 5`。 该迹线说明了为什么必须组合多个半平面：一名参赛者控制左侧的下边界，另一名参赛者控制右侧的下边界，上边界也是如此。 
+ 总计为`1 + 3 + 1 = 5`。 中间一行包含`p1`本身，并且紧邻上方和下方的行仅包含相关平分线上的点。 这说明了为什么必须接受平等。 
 
-对于样品 2，`p1 = (0, 0)`所有其他点都是`(1,0)`,`(2,0)`, ...,`(5,0)`。 每个参赛者都给出了一个上限`x`，与最接近的竞争对手`(1,0)`生产最紧的一个：`2x <= 1`， 因此`x <= 1/2`。 
+对于样品 2，`p1 = (0,0)`每个竞争对手都是`(i,0)`为了`1 <= i <= 5`。 每位参赛者给出`2ix <= i^2`，
 
-所有整数列，除了`x = 0`被拒绝。 
+或者`x <= i/2`。 
 
-| x| 下限| 上限 | 良好的 y 值 | 添加 |
- | --- | --- | --- | --- | --- |
- | 0 | 0 | 0 | 0 | 1 |
- | 1 | 0 | 0 | 无 | 0 |
- | 2 | 0 | 0 | 无 | 0 |
- | 3 | 0 | 0 | 无 | 0 |
- | 4 | 0 | 0 | 无 | 0 |
- | 5 | 0 | 0 | 无 | 0 |
- | 6 | 0 | 0 | 无 | 0 |
+最小的上界来自`(1,0)`, 给予`x <= 1/2`。 自从`x`是不可或缺的，每一个优点都有`x = 0`。 没有下限，也没有行限制。 
 
- 该表显示了处理约束后的垂直限制。 对于唯一允许的列`x = 0`，矩形仍然允许所有`7`的整数值`y`，所以答案是`7`。 
+|`y`| 下限| 上限 | 贡献 |
+ | ---| ---| ---| ---|
+ | 0 | 0 | 0 | 1 |
+ | 1 | 0 | 0 | 1 |
+ | 2 | 0 | 0 | 1 |
+ | 3 | 0 | 0 | 1 |
+ | 4 | 0 | 0 | 1 |
+ | 5 | 0 | 0 | 1 |
+ | 6 | 0 | 0 | 1 |
+
+ 答案是`7`。 这个例子也说明了为什么许多竞争对手可以从信封中消失。 一次`(1,0)`给出最紧界限，所有后来的平行平分线都是无关的。 
 
 ## 复杂度分析
 
  | 测量 | 复杂性 | 说明|
- | --- | --- | --- |
- | 时间 |`O(K log X + X log X)`| 将每个参赛者插入一棵李超树中，然后将每个允许的整数`x`被查询 |
- | 空间|`O(K + X)`| 树木商店`O(X)`节点并且有`O(K)`存储行 |
+ | ---| ---| ---|
+ | 时间 |`O(K log K + Y)`| 将两个线集排序并缩减为外壳，然后将所有相关行扫描一次。 |
+ | 空间|`O(K)`| 在删除冗余行之前，每个参赛者最多存储一行。 |
 
- 和`K <= 2 * 10^5`和`X <= 2 * 10^5`，该算法仅对每个约束和每列执行对数数量的操作。 最大的中间算术值由Python的任意精度整数处理，因此不存在固定宽度溢出问题。 内存使用量与输入大小和可能的列数呈线性关系。 
+ 和`K, Y <= 2 * 10^5`，排序主导渐近成本。 该算法从不枚举`O(XY)`网格点，这是与暴力破解的关键区别。 Python 的任意精度整数还消除了在固定宽度整数语言中需要 64 位算术的溢出问题。 
 
 ## 测试用例
 
- 以下线束假设提交的解决方案保存为`solution.py`。 它暂时替换模块的输入和输出流，因此每个断言执行实际的`solve()`功能。```python
+ 以下测试假设提交的解决方案另存为`solution.py`。 助手暂时取代了它`input`函数并捕获其输出，因此每个断言都执行相同的操作`solve()`由提交使用。```python
 import sys
 import io
 import solution
@@ -303,8 +348,8 @@ def run(inp: str) -> str:
     old_input = solution.input
 
     sys.stdin = io.StringIO(inp)
-    sys.stdout = io.StringIO()
     solution.input = sys.stdin.readline
+    sys.stdout = io.StringIO()
 
     try:
         solution.solve()
@@ -314,110 +359,85 @@ def run(inp: str) -> str:
         sys.stdin = old_stdin
         sys.stdout = old_stdout
 
-# Provided samples
-assert run(
-    """4 4 5
+# Provided sample 1
+assert run("""\
+4 4 5
 2 2
 1 1
 1 3
 3 3
 3 1
-"""
-) == "5", "sample 1"
+""") == "5", "sample 1"
 
-assert run(
-    """6 6 6
+# Provided sample 2
+assert run("""\
+6 6 6
 0 0
 1 0
 2 0
 3 0
 4 0
 5 0
-"""
-) == "7", "sample 2"
+""") == "7", "sample 2"
 
-# Minimum-size instance, only p1 exists.
-assert run(
-    """1 1 1
+# Minimum-size rectangle, only p1.
+assert run("""\
+1 1 1
 0 0
-"""
-) == "4", "single marked point"
+""") == "4", "minimum case"
 
-# Boundary and ceiling handling.
-assert run(
-    """2 1 2
-2 0
-1 0
-"""
-) == "2", "half-integer lower boundary"
-
-# All marked points share the same y-coordinate.
-# p1=(2,1), competitors are (0,1) and (4,1).
-# Good x are 1,2,3, for both y=0..3.
-assert run(
-    """4 3 3
-2 1
-0 1
-4 1
-"""
-) == "12", "horizontal Voronoi strip"
-
-# Horizontal bounds around p1.
-# p1=(1,1), competitors immediately above and below.
-# Only y=1 survives, for all four x coordinates.
-assert run(
-    """3 2 3
-1 1
-1 0
+# All competitors have the same x coordinate as p1.
+assert run("""\
+2 4 3
 1 2
-"""
-) == "4", "upper and lower horizontal restrictions"
+1 0
+1 4
+""") == "9", "horizontal bisectors"
 
-# Maximum-size construction.
-# p1=(0,0), followed by 199999 points on y=0.
-# Only x=0 is good, while every y from 0 through 200000 is allowed.
-points = ["200000 200000 200000"]
-points.append("0 0")
-for x in range(1, 200000):
-    points.append(f"{x} 0")
+# Half-integer bisector: x >= 1/2 becomes x >= 1.
+assert run("""\
+2 2 2
+1 1
+0 1
+""") == "6", "half-integer boundary"
 
-max_case = "\n".join(points) + "\n"
-assert run(max_case) == "200001", "maximum-size input"
+# Maximum K, with the first competitor already giving the tightest
+# possible x-bound. There are 200000 distinct marked points.
+points = ["0 0"]
+points.extend(f"{i} 0" for i in range(1, 200000))
+
+max_case = "200000 200000 200000\n" + "\n".join(points) + "\n"
+
+assert run(max_case) == "200001", "maximum-size case"
 ```| 测试输入| 预期产出 | 它验证了什么 |
- | --- | --- | --- |
- |`1 1 1 / 0 0`|`4`| 最小尺寸和`K = 1`案例 |
- |`2 1 2 / 2 0 / 1 0`|`2`| 半整数下界的精确处理 |
- |`4 3 3 / 2 1 / 0 1 / 4 1`|`12`| 具有相同的多个约束`y`坐标|
- |`3 2 3 / 1 1 / 1 0 / 1 2`|`4`| 同时下限和上限限制`y`|
- |`200000 200000 200000`有积分`(0,0), (1,0), ..., (199999,0)`|`200001`| 的最大值`X`,`Y`， 和`K`，加上一个紧密的垂直信封 |
+ | ---| ---| ---|
+ |`1 1 1 / 0 0`|`4`| 最小尺寸，`K = 1`，以及网格点和单元格的区别|
+ |`2 4 3 / (1,2), (1,0), (1,4)`|`9`| 具有相同特征的竞争对手`x`坐标和纯行限制|
+ |`2 2 2 / (1,1), (0,1)`|`6`| 半整数平分线处的精确地面处理 |
+ |`200000 200000 200000`有积分`(0,0), (1,0), ..., (199999,0)`|`200001`| 大坐标，最大`K`，以及围护结构的性能|
 
  ## 边缘情况
 
- 单点情况```
+ 当`K = 1`，线数组为空。 外壳查询被跳过，因此代码使用`left = 0`和`right = X`对于每一行。 对于输入```
 1 1 1
 0 0
-```根本不会产生任何竞争对手的产品线。 两棵李超树都是空的，所以每列都以`low = 0`和`high = 1`。 两列中的每一列贡献两点，给出`4`。 该算法不需要特殊处理这种情况，因为空信封自然意味着不存在额外的限制。 
+```行间隔是`[0,1]`对于两者`y = 0`和`y = 1`，每行贡献两点并产生`4`。 
+
+当竞争对手分享时`x`和`p1`，代码输入`dx == 0`分支。 为了```
+2 4 3
+1 2
+1 0
+1 4
+```重点`(1,0)`有`dy = -2`，所以条件变为`y >= 1`。 重点`(1,4)`有`dy = 2`，所以条件变为`y <= 3`。 所得行间隔为`[1,3]`，每行包含所有三种可能的`x`坐标。 答案是`9`。 
 
 对于半整数边界```
-2 1 2
-2 0
-1 0
-```比较是`(x-2)^2 + y^2 <= (x-1)^2 + y^2`,
-
- 这简化为`x >= 1.5`。 下面的李朝树存储了精确的分数`3/2`。 在`x = 1`，整数下界变为`ceil(3/2) = 2`，超过矩形的`x`值，所以没有`y`被计算在内。 在`x = 2`，下界仍然是`2`，以及两者`y = 0`和`y = 1`是有效的。 答案是`2`。 
-
-对于水平条带```
-4 3 3
-2 1
-0 1
-4 1
-```竞争对手`(0,1)`给出`x >= 1`， 尽管`(4,1)`给出`x <= 3`。 没有任何限制`y`，所以列`1`,`2`， 和`3`每个贡献四个整数行`0`,`1`,`2`， 和`3`。 结果是`12`。 这练习了两个包络实际上是水平约束的情况，并验证了是否包含矩形边界。 
-
-为了```
-3 2 3
+2 2 2
 1 1
-1 0
-1 2
-```重点`(1,0)`给出`y >= 1/2`， 尽管`(1,2)`给出`y <= 3/2`。 在整数坐标上，仅`y = 1`幸存下来。 每一个`x`从`0`通过`3`是允许的，因此该算法为四列中的每一列添加一个点并返回`4`。 这会检查两个`ceil`和`floor`在理性界限上。 
+0 1
+```竞争对手有`dx = -1`,`dy = 0`，下界函数是`1/2`。 下包络线的计算结果恰好是`1/2`，Python 的楼层除法给出`0`对于变换后的值`-1/2`只有正确处理符号变换后。 该代码计算原始整数下界为`1`，给出有效行`x = 1,2`对于这三个中的每一个`y`价值观和答案`6`。 
 
-对于最大尺寸的情况，第一点是`(0,0)`所有其他标记点都是`(x,0)`为了`1 <= x <= 199999`。 最接近的竞争对手`(1,0)`已经迫使`x <= 1/2`，因此仅在整数列中`x = 0`遗迹。 该矩形包含`200001`的可能值`y`， 从`0`通过`200000`，并且所有这些都同样最接近`p1`因为每个竞争对手都有相同的`y`协调。 答案是`200001`，确认该实现处理最大的输入而不扫描所有`K`每个网格点的竞争对手。
+正好位于平分线上的点必须保持良好状态，因为允许平分。 在样本 1 中，`(2,2)`是`p1`本身，同时`(2,1)`和`(2,3)`位于相关平分线上。 包络比较使用`<=`，因此连接当前最佳线的线可以变为活动状态，而不排除连接的坐标。 
+
+矩形边界也是搜索空间的一部分。 如果计算出的下限为负，则将其限制为`0`，如果上限超过`X`，它被钳位到`X`。 因此，超出矩形的 Voronoi 单元会被正确剪裁，而不是在允许的网格之外进行计数。 
+
+最后，有效输入的答案永远不可能为零，因为`p1`它本身是矩形内的一个整数点，它到自身的距离为零。 该实现可能会暂时获取一行上的空区间，但是该行`y = y1`总是至少包含`x = x1`，所以总答案至少是一。

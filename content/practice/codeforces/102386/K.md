@@ -1,7 +1,7 @@
 ---
 title: "CF 102386K-\u041c\u0430\u043b\u044b\u0448\u0438\u041a\u0430\u0440\u043b\u0441\u043e\u043d"
-description: "我们有一个严格的凸多边形，其顶点是整数格点并且逆时针列出。 我们需要一条直线将多边形分成面积完全相同的两个区域。"
-date: "2026-08-14T13:42:47+07:00"
+description: "我们有一个严格的凸多边形，其顶点是逆时针方向给出的，并且具有整数坐标。 我们需要画一条直线将多边形分成面积完全相同的两个区域。"
+date: "2026-08-15T18:57:38+07:00"
 tags: ["codeforces", "competitive-programming"]
 categories: ["algorithms"]
 codeforces_contest: 102386
@@ -9,7 +9,7 @@ codeforces_index: "K"
 codeforces_contest_name: "\u041a\u0432\u0430\u043b\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0439 \u0442\u0443\u0440 \u0423\u0440\u0430\u043b\u044c\u0441\u043a\u043e\u0433\u043e \u0447\u0435\u0442\u0432\u0435\u0440\u0442\u044c\u0444\u0438\u043d\u0430\u043b\u0430 \u0427\u0435\u043c\u043f\u0438\u043e\u043d\u0430\u0442\u0430 \u043c\u0438\u0440\u0430 \u043f\u043e \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044e 2019"
 rating: 0
 weight: 102386
-solve_time_s: 246
+solve_time_s: 549
 verified: false
 draft: false
 ---
@@ -18,121 +18,134 @@ draft: false
 
  **评级：** -
  **标签：** -
- **求解时间：** 4m 6s
+ **求解时间：** 9m 9s
  **已验证：** 否
 
  ## 解决方案
  ## 问题理解
 
- 我们有一个严格的凸多边形，其顶点是整数格点并且逆时针列出。 我们需要一条直线将多边形分成面积完全相同的两个区域。 该线本身必须包含两个不同的整数格点，因此等效地我们需要一条具有有理斜率和有理截距的面积平分线。 
+ 我们有一个严格的凸多边形，其顶点是逆时针方向给出的，并且具有整数坐标。 我们需要画一条直线将多边形分成面积完全相同的两个区域。 该线本身必须包含两个不同的整数坐标点，并且它们的坐标必须在 (-10^{18}) 到 (10^{18}) 的范围内。 
 
-关键的几何自由度是我们可以选择任何线，不一定是穿过多边形顶点的线。 然而，选择一个特定的顶点会给我们一个更强大的结构。 修复第一个顶点 (V_0)。 当点 (P) 沿多边形边界从 (V_1) 向 (V_{n-1}) 移动时，线 (V_0P) 会扫过边界上一个端点为 (V_0) 的所有可能的切口。 对于每个边界位置 (P)，(V_0P) 一侧的面积从零连续变化到整个多边形面积。 由于多边形是凸多边形，因此恰好有一个这样的 (P) 就可以得到一半的面积。 
+有用的几何特性是多边形可以从其任何一个顶点进行三角剖分。 选择第一个顶点 (V_0)，并将其连接到所有其他顶点。 这会产生 (N-2) 个三角形，其面积加倍后为整数，因为每个坐标都是整数。 然后，整个问题就变成了找到总面积加倍的一半落在这个三角形序列中的位置。 原始问题使用 (N\le 1000)、以 (10^5) 为边界的坐标以及一秒的限制。 这对于线性或二次算法来说足够小，但是一旦识别出扇形三角剖分，就没有理由做任何二次算法。 精确的整数运算也优于浮点数，因为所需的相等性是精确的。 
 
-输入最多有 (1000) 个顶点，每个坐标最多有 (10^5) 个绝对值。 在此极限下，直接 (O(n^2)) 解决方案在数值上已经很小，大约有一百万个基本几何运算，但该结构允许 (O(n)) 构造。 坐标界限还使得精确的整数算术变得实用。 两个坐标差的叉积最多约为 (8\cdot10^{10})，并且最多 (1000) 个三角形的总和低于 (10^{14})。 Python 整数在这里不存在溢出问题，而即使是带符号的 64 位算术也足以进行面积计算。 
+对所有整数坐标对 (A,B) 的直接穷举搜索是有限的，因为坐标是有界的，但完全无用。 大约有 ((4\cdot10^{36})^2/2\approx8\cdot10^{72}) 个无序晶格点对，并且对照所有多边形边检查一条线将添加另一个因子 (N)。 对于 (N=1000)，其数量级为 (10^{75}) 基本几何运算。 看起来更合理的强力方法（例如尝试穿过多边形顶点对的线）也是不够的，因为有效的切割线不需要穿过两个多边形顶点。 
 
-有几种边缘情况可能会悄悄破坏浮点实现。 首先，所需的切割可以精确地穿过另一个多边形顶点。 例如，```
-4
+有几种边界情况，粗心的实现可能会处理不当。 对于三角形```
+3
 0 0
 4 0
-4 2
 0 2
-```有面积(8)，从((0,0))到((4,2))的对角线将其分为(4)的两个区域。 涉及浮点参数的比较可能会意外地将端点放入下一个边沿。 精确的整数比较可以避免这种情况。 
+```答案是从 ((0,0)) 到对边中点的中位数。 中点本身不需要整数坐标，因此简单地寻找边缘上的整数点可能会失败。 我们的构造将有理点与其分母相乘，并在同一直线上获得一个整数点。 
 
-另一种情况是半面积点严格位于边内。 该样本对于直通 (y=4) 具有完全相同的行为。 该线不通过多边形顶点，但与右垂直边的交点是整数点。 更一般地说，交集仅保证是有理数，而不是整数。 我们必须为整条线构造一个整数方向，而不是要求交点本身是一个整数点。 
+对于广场```
+4
+0 0
+2 0
+2 2
+0 2
+```第一个扇形三角形已经具有多边形两倍面积的一半。 仅处理一半严格位于三角形内的情况的粗心实现可能会移动到下一个三角形并访问无效索引。 必须立即处理相等情况，从 ((0,0)) 到 ((2,2)) 的对角线是有效答案。 
 
-最后，加倍的总面积可能是奇数。 在示例中，加倍面积为 (15)，因此一半为 (15/2)。 仅基于整数面积的解决方案会错误地得出精确切割是不可能的结论。 切割点可以简单地具有有理坐标，并且所得到的线在缩放之后仍然具有整数方向。 
+提供的示例是另一个有用的案例：```
+4
+0 3
+3 0
+3 6
+0 7
+```半面积点严格位于第一个扇形三角形内部。 浮点实现可能会近似切割点，但检查器需要精确相等。 相反，我们使用整数乘法在完全相同的行上构造一个整数点。 
+
+在规定的约束条件下，解总是存在的，所以`-1`输出从来都不是必需的。 下面的构造明确为每个有效输入生成一个。 
 
 ## 方法
 
- 自然的强力构造首先选择多边形顶点 (V_i) 作为切割线的固定端点。 然后，我们可以绕着剩余的边界走动，确定半区域交点位于哪条边上，并求解沿该边的位置。 如果对每个 (V_i) 独立重复整个搜索，则需要 (O(n^2)) 时间。 对于 (n=1000)，这大约是 (10^6) 次边缘检查，因此它实际上并未被给定的约束排除，但它多次重复完全相同的几何工作。 
+ 最直接的暴力解决方案是搜索整数点并测试候选线。 仅从坐标界限来看这已经是不可能的，因为晶格包含大约 (4\cdot10^{36}) 个点。 即使将搜索限制为通过多边形顶点对的线，也会留下 (O(N^2)) 个候选点，并且根据多边形检查每个候选点需要 (O(N)) 时间。 最坏的情况约为 (N^3/2)，大约为 (5\cdot10^8) (N=1000) 的边缘操作。 更重要的是，受限搜索并不完整，因为所需的线可以在严格位于边缘内部的两个点处与多边形边界相交。 
 
-有用的观察是我们不需要尝试每个顶点。 选择（V_0）一次。 多边形可以分成三角形
+关键的观察是我们根本不需要搜索方向。 固定第一个多边形顶点 (V_0)，并将多边形三角化为
 
  [
  (V_0,V_1,V_2),\quad
- (V_0,V_2,V_3),\quad\ldots,\quad
- (V_0,V_{n-2},V_{n-1})。 
+ (V_0,V_2,V_3),\quad
+ \点，\四边形
+ (V_0,V_{N-2},V_{N-1})。 
 ]
 
- 由于多边形是严格凸且逆时针的，因此所有这些三角形的面积均为正，它们的面积加起来等于多边形的面积。 
+ 每个三角形的面积加倍后都是一个整数。 当我们遍历这些三角形时，累积面积从零开始，到整个多边形的两倍面积结束。 因此，存在第一个三角形，其包含使得累加面积达到或超过总面积的一半。 
 
-假设所需的半面积点位于边缘 (V_iV_{i+1}) 上。 由 (V_0)、边界链 (V_0,V_1,\ldots,V_i,P) 和线段 (PV_0) 界定的区域由所有前面的扇形三角形加上三角形 (V_0V_iP) 组成。 沿着边 (V_iV_{i+1})，后一个三角形的面积在 (P) 的位置呈线性。 因此，一旦我们知道包含目标的边缘，(P) 的确切位置就是该边缘的有理分数。 
+如果累积面积恰好是某个完整三角形之后的一半，则从 (V_0) 到该三角形最后一个顶点的对角线已经是所需的切割线。 
 
-最后一步是使格子要求变得简单的部分。 写
+否则，总面积的一半严格位于一个三角形 (V_0BC) 内。 在该三角形内，通过 (V_0) 和 (BC) 上的点 (P) 的每条线都会截断一个三角形 (V_0BP)。 它的面积随着（P）沿着（BC）移动而线性变化，因此我们可以在（BC）上选择所需的精确比率。 
+
+剩下的困难是（P）可能是有理数而不是积分。 这就是异常大的 (10^{18}) 输出界限变得有用的地方。 如果
 
  [
- P=V_i+\frac pq(V_{i+1}-V_i)。 
+ P=\frac{(2T-d)B+dC}{2T},
+ ]
+
+ 我们可以简单地使用
+
+ [
+ Q=(2T-d)B+dC。 
 ]
 
- 然后
-
- (q-p)(V_i-V_0)+p(V_{i+1}-V_0)。 
-]
-
- 右侧的向量具有整数坐标。 它是所需直线的方向向量，因此(V_0)和(V_0+D)是切割线上的两个整数点。 根本不需要使用浮点坐标来构造 (P)。 
-
-这也证明了在问题的保证下总是存在有效的答案。 对于有效输入，永远不会达到 (-1) 输出情况。 
+ 点 (Q) 具有整数坐标，并且它与 (P) 位于来自 (V_0) 的同一射线上。 因此线 (V_0Q) 正是所需的切割线。 任何地方都没有除法，也没有浮点运算。 
 
 | 方法| 时间复杂度| 空间复杂度| 判决 |
- | --- | --- | --- | --- |
- | 尝试每个顶点并扫描边界 | (O(n^2)) | (O(n)) | (O(n)) | 已接受 (n\le1000)，但没有必要 |
- | 固定一个顶点并扫描一次扇形 | (O(n)) | (O(n)) | (O(n)) | (O(n)) | 已接受 |
+ | ---| ---| ---| ---|
+ | 蛮力 | (O(N^3)) 将候选限制为顶点对后 | (O(N)) | 太慢而且不完整|
+ | 最佳 | (O(N)) | (O(N)) | 已接受 |
 
  ## 算法演练
 
- 1. 选择(V_0)作为切割线的固定顶点。 由于多边形是凸多边形，因此从 (V_0) 到相对边界上的点的每条线都会切断一个明确定义的区域，该区域的面积从零连续增长到完整的多边形面积。 
-2. 使用 (V_0) 中的扇形计算多边形的双倍面积 (S)。 对于每个 (i=1,\ldots,n-2)，计算
+ 1. 选择第一个多边形顶点（V_0）作为扇形三角剖分的公共顶点。 通过减去 (V_0) 来平移所有其他顶点，因此 (V_0) 成为原点。 平移不会改变通过 (V_0) 的区域或线。 
+2. 对于每个连续对 (V_i,V_{i+1})，其中 (1\le i<N-1)，计算
 
  [
- T_i=\算子名{cross}(V_i-V_0,V_{i+1}-V_0)。 
+ T_i=\left|\operatorname{cross}(V_i,V_{i+1})\right|。 
 ]
 
- 所有的总和 (T_i) 恰好是多边形面积 (S) 的两倍。 
+ 这是三角形面积的两倍 (V_0V_iV_{i+1})。 因为所有坐标都是整数，所以每个(T_i)都是整数。 
 
-1. 穿过扇形三角形，同时保持`prefix`，当前边 (V_iV_{i+1}) 之前所有完整三角形的面积加倍。 半区目标是(S/2)。 为了避免分数，请测试
+1. 对所有(T_i)求和以获得(S)，即整个多边形的两倍面积。 我们特意使用双倍面积，以便目标恰好为 (S/2)，而不引入分数。 
+2. 穿过三角形，同时保持其前缀面积加倍。 找到新前缀满足 (2\cdot\text{prefix}\ge S) 的第一个三角形 (V_0BC)。 凸性保证所有扇形三角形都位于多边形内部并且面积为正，因此这样的三角形总是存在。 
+3. 如果(2\cdot\text{prefix}=S)，输出(V_0)和当前三角形的最后一个顶点。 该对角线之前的扇形三角形恰好具有总面积的一半。 
+4. 否则，让`before`是 (V_0BC) 之前所有扇形三角形面积的两倍，令 (T) 是 (V_0BC) 面积的两倍。 定义
 
  [
- 2\cdot前缀\le S\le2(前缀+T_i)。 
+ d=S-2\cdot\text{之前}。 
 ]
 
- 满足此条件的第一条边包含所需的边界点 (P)。 凸面和正三角形区域保证只需要一条边，除了共享顶点处无害的相等性之外。 
-
-1. 让
+ 当前三角形的所需部分必须具有双倍面积 (d/2)。 由于当前三角形是第一个穿过半区边界的三角形，
 
  [
- r=S-2\cdot 前缀。 
+ 0<d<2T。 
 ]
 
- 这是三角形 (V_0V_iV_{i+1}) 内仍需要的两倍面积的两倍。 如果 (P) 除以 (V_iV_{i+1}) 的比率 (p)，则
+ 1. 设 (B=V_i) 和 (C=V_{i+1})。 (BC) 上的点可以写为
 
  [
- \frac pq=\frac{r}{2T_i}。 
+ P=\frac{(2T-d)B+dC}{2T}。 
 ]
 
- 将这个分数除以其最大公约数。 我们始终使用整数，因此即使是奇数 (S) 也不会导致特殊情况。 
+ 三角形 (V_0BP) 的面积增加了一倍
 
-1. 定义
+ # \frac{d}{2T}\operatorname{cross}(B,C)
+
+ \压裂d2。 
+]
+
+ 因此，该三角形之前的面积加上 (V_0BP) 的面积正好是 (S/2)。 
+
+1. 我们不输出(P)，因为它可能是小数。 相反计算
 
  [
- a=V_i-V_0,\qquad b=V_{i+1}-V_0。 
+ Q=(2T-d)B+dC。 
 ]
 
- 从 (V_0) 到 (P) 的向量乘以 (q) 为
+ (Q)的所有坐标都是整数。 由于(Q=2T\cdot P)，点(V_0,P,Q)共线，因此通过(V_0)和(Q)的直线就是所需的切割线。 
 
- [
- D=(q-p)a+pb。 
-]
-
- (a)和(b)都是整数向量，因此(D)是整数向量。 由于 (P) 位于多边形边界上且切口两侧面积均为正，因此 (D) 不能为零。 
-
-1. 输出（V_0）和（V_0+D）。 它们是同一面积平分线上的不同整数点。 
-
-构造背后的不变性是`prefix`始终等于已被线 (V_0P) 扫除的部分面积的两倍。 每个下一个扇形三角形都会增加一个正数，因此最终目标 (S/2) 恰好位于一个三角形内。 在该三角形内，面积与 (P) 的位置线性相关，这给出了用于构造整数方向向量的精确有理参数。 
+在编号的步骤之后，不变的是累积的扇形三角形准确地表示候选对角线一侧的区域。 在选定的三角形之前，该区域严格低于一半，而在添加选定的三角形之后，它至少为一半。 如果相等发生在三角形边界处，则相应的对角线可以解决问题。 否则，所需的量严格介于零和所选三角形的整个区域之间，因此上述唯一点 (P) 严格位于其边缘内部。 缩放后的整数点 (Q) 位于完全相同的直线上，证明输出线具有整数点并且正好平分多边形。 
 
 ## Python 解决方案```python
 import sys
-from math import gcd
-
 input = sys.stdin.readline
 
 def cross(ax, ay, bx, by):
@@ -142,240 +155,231 @@ def solve():
     n = int(input())
     p = [tuple(map(int, input().split())) for _ in range(n)]
 
-    x0, y0 = p[0]
+    ox, oy = p[0]
 
-    triangles = []
+    # Translate the polygon so p[0] becomes (0, 0).
+    q = [(x - ox, y - oy) for x, y in p]
+    q[0] = (0, 0)
+
+    # Doubled areas of the fan triangles.
+    areas = []
     total = 0
 
     for i in range(1, n - 1):
-        xi, yi = p[i]
-        xj, yj = p[i + 1]
-
-        ax = xi - x0
-        ay = yi - y0
-        bx = xj - x0
-        by = yj - y0
-
-        t = cross(ax, ay, bx, by)
-        triangles.append(t)
+        ax, ay = q[i]
+        bx, by = q[i + 1]
+        t = abs(cross(ax, ay, bx, by))
+        areas.append(t)
         total += t
 
     prefix = 0
 
-    for i in range(1, n - 1):
-        t = triangles[i - 1]
+    for i, t in enumerate(areas, start=1):
+        prefix += t
 
-        if 2 * prefix <= total <= 2 * (prefix + t):
-            r = total - 2 * prefix
-            den = 2 * t
-
-            g = gcd(r, den)
-            num = r // g
-            den //= g
-
-            xi, yi = p[i]
-            xj, yj = p[i + 1]
-
-            ax = xi - x0
-            ay = yi - y0
-            bx = xj - x0
-            by = yj - y0
-
-            dx = (den - num) * ax + num * bx
-            dy = (den - num) * ay + num * by
-
-            print(x0, y0)
-            print(x0 + dx, y0 + dy)
+        # The current fan triangle ends at q[i + 1].
+        if prefix * 2 == total:
+            x, y = q[i + 1]
+            print(ox, oy)
+            print(ox + x, oy + y)
             return
 
-        prefix += t
+        if prefix * 2 > total:
+            before = prefix - t
+            d = total - 2 * before
+
+            # Current triangle is q[0], q[i], q[i + 1].
+            bx, by = q[i]
+            cx, cy = q[i + 1]
+
+            # Q = (2T-d) * B + d * C.
+            #
+            # Q is a scaled version of the exact rational
+            # point on BC, so OQ is the same cutting line.
+            qx = (2 * t - d) * bx + d * cx
+            qy = (2 * t - d) * by + d * cy
+
+            print(ox, oy)
+            print(ox + qx, oy + qy)
+            return
 
 if __name__ == "__main__":
     solve()
-```第一个循环计算所有扇形三角形面积。 使用相对于 (V_0) 的向量可以避免编写完整的鞋带公式，并使后续的方向构造使用完全相同的量。 
+```实现的第一部分将多边形平移第一个顶点。 这使得面积公式特别简单，因为每个扇形三角形都将原点作为一个顶点。 
 
-第二个循环搜索目标三角形。 比较故意写成`2 * prefix <= total <= 2 * (prefix + t)`。 这可以处理偶数和奇数总加倍区域，并且不会将任何内容转换为`float`。 
+这`cross`函数是唯一需要的几何基元。 对于两个向量 (u) 和 (v)，其绝对值是原点和这两个向量形成的三角形面积的两倍。 Python 整数具有任意精度，因此即使构造的输出可能比输入坐标大得多，中间产品也是安全的。 
 
-一旦找到目标边缘，`r / den`是描述半面积点沿该边的位置的分数 (p/q)。`gcd`不需要正确性，但减少分数可以使结果方向向量更小。 
+第一个循环计算扇形三角形面积及其总面积。 第二个循环搜索超过总数一半的第一个前缀。 等式分支是单独的，因为在这种情况下所需的线已经是多边形对角线。 
 
-表达式```
-dx = (den - num) * ax + num * bx
-```是整数形式
+在严格交叉的分支中，`before`是已经占的两倍面积。 数量`d = total - 2 * before`是当前三角形所需剩余面积的两倍。 系数`2 * t - d`和`d`均为正数，因此构造点在缩放前位于当前两个多边形顶点之间的线段上。 
 
- [
- q(P-V_0)=(q-p)(V_i-V_0)+p(V_{i+1}-V_0)。 
-]
-
- 输出点可以比原始多边形远得多，这是允许的。 它的大小仍然安全地低于 (10^{18})。 原始多边形中的每个坐标差最多为 (2\cdot10^5)，每个扇形三角形的面积最多为两倍 (8\cdot10^{10})，缩放后得到的方向坐标仍远低于 (10^{18})。 
-
-实现永远不会打印`-1`，因为该构造证明对于满足输入保证的每个多边形都存在有效的格子线。 
+代码永远不会除以`2 * t`。 这是核心的实现技巧。 有理点乘以其分母，产生整数点`Q`在同一条线上。 输入坐标以 (10^5) 为界，每个平移坐标的大小最多为 (2\cdot10^5)，而单个三角形的大小为 (2T\le8\cdot10^{10})。 因此构造的坐标完全低于 (10^{18})。 
 
 ## 工作示例
 
- 对于提供的示例，多边形是```
-(0,3), (3,0), (3,6), (0,7)
-```(V_0=(0,3)) 的扇形有两个三角形。 
-
-| 边缘|`prefix`|`t`|`total`| 目标条件|`r / (2t)`|
- | --- | --- | --- | --- | --- | --- |
- | (V_1V_2) | 0 | 18 | 18 30| (0\le30\le36) | (30/36=5/6) |
-
- 目标位于 (V_1V_2)。 因此(p=5)，(q=6)。 相对于(V_0)，
-
- [
- V_1-V_0=(3,-3),
- \qquad
- V_2-V_0=(3,3)。 
-]
-
- 整数方向为
-
- [
- (6-5)(3,-3)+5(3,3)=(18,12)。 
-]
-
- 程序可以因此输出```
+ 对于提供的样品，```
+4
 0 3
-18 15
-```该线有斜率 (12/18=2/3)。 样本行 (y=4) 是另一个有效答案，因此预计会出现不同的正确输出。 
+3 0
+3 6
+0 7
+```第一个顶点的平移给出 ((0,0),(3,-3),(3,3),(0,4))。 风扇由两个三角形组成。 
 
-作为第二个例子，考虑一个直角三角形。```
+| 三角形| 相对于 (V_0) | 的顶点 面积翻倍| 前缀|
+ | ---| ---| ---| ---|
+ | 1 | ((0,0),(3,-3),(3,3)) | 18 | 18 18 | 18
+ | 2 | ((0,0),(3,3),(0,4)) | 12 | 12 30|
+
+ 总面积翻倍为 (30)，因此目标为 (15)。 第一个三角形已经穿过目标。 这里`before = 0`、(T=18)和(d=30)。 缩放后的点是
+
+ [
+ Q=(36-30)(3,-3)+30(3,3)=(108,72)。 
+]
+
+ 程序翻译回来后输出```
+0 3
+108 75
+```切割线在 ((0,3)) 和 ((3,5)) 处与多边形相交，生成的三角形面积为 (15/2)，正好是多边形面积的一半。 示例的输出不同，但允许有多个有效答案。 
+
+对于第二个例子，考虑平方```
+4
+0 0
+2 0
+2 2
+0 2
+```| 三角形| 相对于 (V_0) | 的顶点 面积翻倍| 前缀|
+ | ---| ---| ---| ---|
+ | 1 | ((0,0),(2,0),(2,2)) | 4 | 4 |
+ | 2 | ((0,0),(2,2),(0,2)) | 4 | 8 |
+
+ 总面积加倍后为 (8)，因此一半为 (4)。 第一个前缀已经恰好是 (4)，这会激活相等分支。 算法输出```
+0 0
+2 2
+```对角线将正方形分成两个三角形，每个三角形的面积为 (2)。 
+
+第三个小例子是三角形```
 3
 0 0
 4 0
-0 4
-```只有一个扇形三角形。 
-
-| 边缘|`prefix`|`t`|`total`|`r`| 约简分数 |
- | --- | --- | --- | --- | --- | --- |
- | (V_1V_2) | 0 | 16 | 16 16 | 16 16 | 16 (1/2) |
-
- 半区点是(V_1V_2)的中点，因此切割线从((0,0))到((2,2))。 方向公式给出
+0 2
+```扇形三角形只有一个，因此其面积加倍为 (8)。 目标是 (4)，它对应于相对边缘的中点。 该建筑给出了
 
  [
- (2-1)(4,0)+1(0,4)=(4,4)。 
-]
+ Q=8(4,0)+8(0,2)=(32,16)，
+ ]
 
- 因此程序输出```
-0 0
-4 4
-```直线 (y=x) 将三角形分成两个全等的三角形。 
+ 因此输出线是通过 ((0,0)) 和 ((32,16)) 的线，相当于 (y=x/2)。 它穿过对边的中点 ((2,1))，并且恰好是三角形的中线。 
 
 ## 复杂度分析
 
  | 测量 | 复杂性 | 说明|
- | --- | --- | --- |
- | 时间 | (O(n)) | (O(n)) | 一次通过计算扇形区域，一次通过定位目标边缘 |
- | 空间| (O(n)) | (O(n)) | 顶点和扇形三角形面积被存储 |
+ | ---| ---| ---|
+ | 时间 | (O(N)) | 每个多边形顶点都会被处理固定次数。 |
+ | 空间| (O(N)) | 多边形和扇形三角形区域是显式存储的。 |
 
- 线性解很容易拟合 (n\le1000)。 主要运算是整数加法、乘法、比较和一次 gcd 计算。 所有几何决策都是精确的，因此解决方案不依赖于数值精度。 
+ 对于 (N\le1000)，线性时间远低于可用限制。 最大的整数值由叉积和缩放一个多边形边上的点产生，但 Python 的任意精度整数可以准确处理它们。 最终构造的坐标远低于 (10^{18})，因此也满足输出限制。 
 
 ## 测试用例
 
- 下面的测试工具以精确的方式检查生产线的几何形状`Fraction`算术。 这很有用，因为答案不是唯一的，因此将输出与一对特定的点进行比较会错误地拒绝许多正确的解决方案。```python
+ 以下测试工具使用精确的整数几何来验证返回的行。 由于几何问题通常允许许多不同的输出，因此测试检查输出的数学属性，而不需要一对特定的点。```python
+# helper: run solution on input string, return output string
 import sys
 import io
 from fractions import Fraction
-from math import gcd, atan2
+import math
 
-def solve_text(inp: str) -> str:
-    data = inp.strip().split()
-    it = iter(data)
+def cross(ax, ay, bx, by):
+    return ax * by - ay * bx
 
+def solve_data(data):
+    it = iter(data.strip().split())
     n = int(next(it))
     p = [(int(next(it)), int(next(it))) for _ in range(n)]
 
-    x0, y0 = p[0]
+    ox, oy = p[0]
+    q = [(x - ox, y - oy) for x, y in p]
 
-    triangles = []
+    areas = []
     total = 0
 
     for i in range(1, n - 1):
-        xi, yi = p[i]
-        xj, yj = p[i + 1]
-
-        ax = xi - x0
-        ay = yi - y0
-        bx = xj - x0
-        by = yj - y0
-
-        t = ax * by - ay * bx
-        triangles.append(t)
+        ax, ay = q[i]
+        bx, by = q[i + 1]
+        t = abs(cross(ax, ay, bx, by))
+        areas.append(t)
         total += t
 
     prefix = 0
 
-    for i in range(1, n - 1):
-        t = triangles[i - 1]
-
-        if 2 * prefix <= total <= 2 * (prefix + t):
-            r = total - 2 * prefix
-            den = 2 * t
-
-            g = gcd(r, den)
-            num = r // g
-            den //= g
-
-            xi, yi = p[i]
-            xj, yj = p[i + 1]
-
-            ax = xi - x0
-            ay = yi - y0
-            bx = xj - x0
-            by = yj - y0
-
-            dx = (den - num) * ax + num * bx
-            dy = (den - num) * ay + num * by
-
-            return f"{x0} {y0}\n{x0 + dx} {y0 + dy}\n"
-
+    for i, t in enumerate(areas, start=1):
         prefix += t
+
+        if prefix * 2 == total:
+            x, y = q[i + 1]
+            return f"{ox} {oy}\n{ox + x} {oy + y}\n"
+
+        if prefix * 2 > total:
+            before = prefix - t
+            d = total - 2 * before
+
+            bx, by = q[i]
+            cx, cy = q[i + 1]
+
+            qx = (2 * t - d) * bx + d * cx
+            qy = (2 * t - d) * by + d * cy
+
+            return f"{ox} {oy}\n{ox + qx} {oy + qy}\n"
 
     return "-1\n"
 
-def polygon_area2(poly):
+def run(inp: str) -> str:
+    return solve_data(inp)
+
+def polygon_double_area(p):
     s = 0
-    n = len(poly)
+    n = len(p)
     for i in range(n):
-        x1, y1 = poly[i]
-        x2, y2 = poly[(i + 1) % n]
+        x1, y1 = p[i]
+        x2, y2 = p[(i + 1) % n]
         s += x1 * y2 - y1 * x2
-    return s
+    return abs(s)
 
-def clip_halfplane(poly, A, B, keep_positive):
-    ax, ay = A
-    bx, by = B
-    dx = bx - ax
-    dy = by - ay
+def line_value(a, b, p):
+    ax, ay = a
+    bx, by = b
+    x, y = p
+    return (bx - ax) * (y - ay) - (by - ay) * (x - ax)
 
-    def side(P):
-        px, py = P
-        return dx * (py - ay) - dy * (px - ax)
+def clip_halfplane(poly, a, b, keep_positive):
+    if not poly:
+        return []
 
     result = []
 
+    def inside(v):
+        return v >= 0 if keep_positive else v <= 0
+
     for i in range(len(poly)):
-        P = poly[i]
-        Q = poly[(i + 1) % len(poly)]
+        p = poly[i]
+        q = poly[(i + 1) % len(poly)]
+        fp = line_value(a, b, p)
+        fq = line_value(a, b, q)
+        inp = inside(fp)
+        inq = inside(fq)
 
-        fP = side(P)
-        fQ = side(Q)
+        if inp:
+            result.append(p)
 
-        inP = fP >= 0 if keep_positive else fP <= 0
-        inQ = fQ >= 0 if keep_positive else fQ <= 0
-
-        if inP:
-            result.append(P)
-
-        if inP != inQ:
-            t = Fraction(fP, fP - fQ)
-            x = P[0] + t * (Q[0] - P[0])
-            y = P[1] + t * (Q[1] - P[1])
+        if inp != inq:
+            den = fq - fp
+            t = Fraction(-fp, den)
+            x = p[0] + t * (q[0] - p[0])
+            y = p[1] + t * (q[1] - p[1])
             result.append((x, y))
 
     return result
 
-def area2_fraction(poly):
+def double_area_fraction(poly):
     if len(poly) < 3:
         return Fraction(0)
 
@@ -386,76 +390,39 @@ def area2_fraction(poly):
         s += x1 * y2 - y1 * x2
     return abs(s)
 
-def valid_answer(inp: str, out: str) -> bool:
-    data = inp.strip().split()
-    n = int(data[0])
-    poly = []
-    pos = 1
-
-    for _ in range(n):
-        poly.append((int(data[pos]), int(data[pos + 1])))
-        pos += 2
-
-    ans = out.strip().split()
-    if len(ans) != 4:
+def valid_cut(inp, out):
+    tokens = out.strip().split()
+    if len(tokens) == 1 and tokens[0] == "-1":
         return False
 
-    A = (int(ans[0]), int(ans[1]))
-    B = (int(ans[2]), int(ans[3]))
-
-    if A == B:
+    if len(tokens) != 4:
         return False
 
-    if any(abs(v) > 10**18 for v in A + B):
+    a = (int(tokens[0]), int(tokens[1]))
+    b = (int(tokens[2]), int(tokens[3]))
+
+    if a == b:
         return False
 
-    total = Fraction(abs(polygon_area2(poly)))
+    it = iter(inp.strip().split())
+    n = int(next(it))
+    poly = [(int(next(it)), int(next(it))) for _ in range(n)]
 
-    positive = clip_halfplane(poly, A, B, True)
-    negative = clip_halfplane(poly, A, B, False)
+    total = Fraction(polygon_double_area(poly))
 
-    ap = area2_fraction(positive)
-    an = area2_fraction(negative)
+    left = clip_halfplane(poly, a, b, True)
+    right = clip_halfplane(poly, a, b, False)
 
-    return ap * 2 == total or an * 2 == total
+    return (
+        double_area_fraction(left) * 2 == total
+        and double_area_fraction(right) * 2 == total
+        and abs(a[0]) <= 10**18
+        and abs(a[1]) <= 10**18
+        and abs(b[0]) <= 10**18
+        and abs(b[1]) <= 10**18
+    )
 
-def make_max_polygon():
-    vectors = []
-
-    for x in range(1, 51):
-        for y in range(0, 51):
-            if x == 0 and y == 0:
-                continue
-            if gcd(x, y) == 1:
-                vectors.append((x, y))
-
-    vectors.sort(key=lambda v: atan2(v[1], v[0]))
-    vectors = vectors[:500]
-
-    edges = vectors[:]
-
-    for x, y in vectors:
-        edges.append((-x, -y))
-
-    poly = []
-    x = 0
-    y = 0
-
-    for dx, dy in edges:
-        poly.append((x, y))
-        x += dx
-        y += dy
-
-    min_x = min(x for x, y in poly)
-    max_x = max(x for x, y in poly)
-    min_y = min(y for x, y in poly)
-    max_y = max(y for x, y in poly)
-
-    shift_x = -(min_x + max_x) // 2
-    shift_y = -(min_y + max_y) // 2
-
-    return [(x + shift_x, y + shift_y) for x, y in poly]
-
+# Provided sample.
 sample1 = """\
 4
 0 3
@@ -463,93 +430,105 @@ sample1 = """\
 3 6
 0 7
 """
+assert valid_cut(sample1, run(sample1)), "sample 1"
 
-assert valid_answer(sample1, solve_text(sample1)), "sample 1"
-
+# Minimum-size polygon.
 triangle = """\
 3
 0 0
 4 0
-0 4
-"""
-
-assert valid_answer(triangle, solve_text(triangle)), "minimum-size triangle"
-
-half_vertex = """\
-4
-0 0
-4 0
-4 2
 0 2
 """
+assert run(triangle) == "0 0\n32 16\n", "minimum-size triangle"
 
-assert valid_answer(half_vertex, solve_text(half_vertex)), "half-area at a vertex"
-
-boundary_coordinates = """\
-3
--100000 -100000
-100000 -100000
-0 100000
+# Equal fan areas, exercising the exact-half branch.
+square = """\
+4
+0 0
+2 0
+2 2
+0 2
 """
+assert run(square) == "0 0\n2 2\n", "exact prefix half"
 
-assert valid_answer(
-    boundary_coordinates,
-    solve_text(boundary_coordinates)
-), "boundary coordinates"
+# Coordinates at the input boundary.
+boundary_triangle = """\
+3
+100000 100000
+-100000 100000
+-100000 -100000
+"""
+assert valid_cut(boundary_triangle, run(boundary_triangle)), "coordinate boundary"
 
-max_poly = make_max_polygon()
-assert len(max_poly) == 1000
-assert max(abs(x) <= 10**5 and abs(y) <= 10**5 for x, y in max_poly)
+# A nontrivial polygon where half the area lies strictly inside a fan triangle.
+pentagon = """\
+5
+0 0
+4 0
+5 2
+3 5
+0 4
+"""
+assert run(pentagon) == "0 0\n144 145\n", "interior fan triangle"
 
-max_input = str(len(max_poly)) + "\n"
-max_input += "\n".join(f"{x} {y}" for x, y in max_poly) + "\n"
+# Maximum-size stress test.
+# Points are sampled from a large circle and slightly perturbed radially.
+# The radius is large enough that rounding preserves strict convexity.
+n = 1000
+pts = []
+for i in range(n):
+    angle = 2.0 * math.pi * i / n
+    r = 90000 + (i % 7)
+    x = int(round(r * math.cos(angle)))
+    y = int(round(r * math.sin(angle)))
+    pts.append((x, y))
 
-assert valid_answer(max_input, solve_text(max_input)), "maximum-size polygon"
+# Rotate the generated order if necessary so it is counterclockwise.
+area = polygon_double_area(pts)
+if area < 0:
+    pts.reverse()
 
-# A polygon with all coordinates equal cannot satisfy the input guarantees:
-# three distinct vertices would be impossible. Such a test is intentionally
-# excluded because it is not a valid instance of the problem.
+max_case = str(n) + "\n" + "\n".join(f"{x} {y}" for x, y in pts) + "\n"
+assert valid_cut(max_case, run(max_case)), "maximum-size stress test"
 ```| 测试输入| 预期产出 | 它验证了什么 |
- | --- | --- | --- |
- | 提供样品| 任何精确的半区域线，例如程序的输出 | 严格在边内的有理相交 |
- | (3)-顶点直角三角形 | 穿过两个整数点的线平分三角形 | 最小有效多边形 |
- | (4\times2) 矩形 | 通过相反顶点的对角线| 半区域目标恰好位于扇形三角形边界 |
- | 使用 (\pm10^5) 坐标的三角形 | (10^{18}) 输出范围内的任何有效整数行 | 边界坐标算术 |
- | 生成 (1000) 顶点多边形 | 任何有效的整数行 | 最大（n）和线性扫描|
- | 所有坐标都相等 | 不存在有效输入 | 确认为什么这不能成为合法的测试用例 |
+ | ---| ---| ---|
+ | 样品1 | 任意精确面积平分整数线 | 第一个扇形三角形内部的重要切割 |
+ |`3 / 0 0 / 4 0 / 0 2`|`0 0`和`32 16`| 最小多边形和有理中点缩放|
+ |`4 / 0 0 / 2 0 / 2 2 / 0 2`|`0 0`和`2 2`| 精确前缀等于一半 |
+ | 坐标为 (\pm100000) | 的边界三角形 任何有效的整数行 | 大输入坐标和大构造整数 |
+ | 五顶点多边形 |`0 0`和`144 145`| 严格的内部扇形三角形结构 |
+ | 生成 1000 顶点多边形 | 任何有效的整数行 | 最大值 (N)、整数运算和线性时间遍历 |
 
  ## 边缘情况
 
- 当半面积点恰好是多边形顶点时，目标可以由两个连续的扇形三角形共享。 为了```
-4
+ 对于最小三角形```
+3
 0 0
 4 0
-4 2
 0 2
-```第一个扇形三角形的面积 (8) 加倍，而整个多边形的面积 (16) 加倍。 恰好在 (V_2=(4,2)) 处达到目标。 整数比较接受相等的第一条边，给出方向 (V_2-V_0=(4,2))。 不涉及 epsilon。 
+```该算法恰好有一个面积加倍的扇形三角形 (8)。 前缀立即等于总数，但半面积条件是在该三角形内部达到的，而不是在整个三角形之后达到的。 这里`before = 0`、(T=8)和(d=8)。 构造的整数点为(Q=8(4,0)+8(0,2)=(32,16))。 从 ((0,0)) 到 ((32,16)) 的线是中位数，因此两个部分的面积均为 (4)。 
 
-当半面积点严格位于边内时，该参数是有理数。 在示例中，第一个扇形三角形的面积增加了一倍 (18)，而总数为 (30)。 所需的分数是
+对于精确前缀的情况```
+4
+0 0
+2 0
+2 2
+0 2
+```第一个扇形三角形的面积翻倍 (4)，总面积翻倍为 (8)。 平等测试在严格交叉分支之前触发。 输出对角线 ((0,0)) 到 ((2,2)) 将正方形分成两个相等的三角形。 这种情况捕获了选择当前三角形时的相差一错误以及假设半区域点始终位于边缘内部的实现。 
 
- [
- \frac{30}{36}=\frac56。 
-]
+对于提供的样品```
+4
+0 3
+3 0
+3 6
+0 7
+```第一个三角形的面积 (18) 加倍，而整个多边形的面积 (30) 加倍。 由于 (18>15)，目标位于该三角形内。 精确的缩放点是相对于第一个顶点的坐标 ((108,72))，给出输出点 ((108,75))。 通过 ((0,3)) 和 ((108,75)) 的线再次与多边形相交于 ((3,5))，所得三角形的面积为 (7.5)，正好是多边形面积 (15) 的一半。 
 
- 因此该点是有理的，但缩放方向
+对于边界坐标情况```
+3
+100000 100000
+-100000 100000
+-100000 -100000
+```输入使用最大允许的坐标幅度。 经过第一个顶点平移后，其他点为 ((-200000,0)) 和 ((-200000,-200000))。 该构造将对边中点缩放三角形的两倍面积，并生成一个大小约为 (10^{13}) 的点，但仍远低于 (10^{18})。 不需要浮点运算，因此边界处没有精度损失。 
 
- [
- (6-5)(3,-3)+5(3,3)=(18,12)
- ]
-
- 是不可或缺的。 因此，输出线包含两个整数点，即使其边界交点不需要是整数点。 
-
-当加倍总面积为奇数时，算法仍然有效。 如果 (S=15)，则目标为 (7.5)（以双倍面积单位表示）。 比较将所有内容乘以 2，因此它会搜索
-
- [
- 2\cdot 前缀\le15\le2(前缀+T_i)。 
-]
-
- 结果分子是奇数，但是`gcd`通常约简有理分数。 不需要关于多边形区域的奇偶性假设。 
-
-当坐标接近输入限制时，所有计算都保持准确。 多边形坐标的差异最多为 (2\cdot10^5)，单个扇形三角形的面积最多为两倍 (8\cdot10^{10})。 即使在缩放有理方向之后，输出坐标仍保持在 (10^{18}) 以下。 Python 的任意精度整数使算术变得简单。 
-
-所有顶点相等或三个共线顶点的简并输入将使构造所使用的几何假设无效。 此类输入被问题明确排除，因此算法不需要对它们进行防御性处理。
+最微妙的边缘情况是有理切割点本身不是整数点。 该算法从不尝试舍入该点。 相反，它将点表示为两个整数顶点的有理仿射组合，并将整个组合乘以其分母。 从固定整数顶点 (V_0) 缩放矢量会更改其长度，但不会更改其方向，因此生成的整数点确定完全相同的切割线。 这就是为什么该构造适用于每个有效的整数坐标凸多边形，而不是仅适用于半面积切割恰好穿过现有格点的多边形。

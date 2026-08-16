@@ -1,7 +1,7 @@
 ---
 title: "CF 102437E - \u041f\u043e\u0445\u043e\u0436\u0438\u0435\u0437\u0430\u043a\u0430\u0437\u044b"
-description: "我们有两个订单，每个订单由一个长度为 (n) 的字符串表示。 第 (i) 个字符描述堆栈中第 (i) 个盒子的商品编号。 我们需要确定当前订单（s）是否可以转换为先前订单（t）。"
-date: "2026-08-12T07:59:52+07:00"
+description: "我们有两个长度为 (n) 的字符串。 字符串 (s) 描述当前的盒子堆栈，而 (t) 描述前一个堆栈。 我们可以将 (s) 循环向左旋转一些 (k)，然后对每个字符应用相同的凯撒移位。"
+date: "2026-08-15T09:19:31+07:00"
 tags: ["codeforces", "competitive-programming"]
 categories: ["algorithms"]
 codeforces_contest: 102437
@@ -9,7 +9,7 @@ codeforces_index: "E"
 codeforces_contest_name: "\u0418\u043d\u0442\u0435\u0440\u043d\u0435\u0442-\u043e\u043b\u0438\u043c\u043f\u0438\u0430\u0434\u044b, \u0421\u0435\u0437\u043e\u043d 2019-2020, \u0427\u0435\u0442\u0432\u0451\u0440\u0442\u0430\u044f \u043a\u043e\u043c\u0430\u043d\u0434\u043d\u0430\u044f \u043e\u043b\u0438\u043c\u043f\u0438\u0430\u0434\u0430, \u0443\u0441\u043b\u043e\u0436\u043d\u0435\u043d\u043d\u0430\u044f \u043d\u043e\u043c\u0438\u043d\u0430\u0446\u0438\u044f"
 rating: 0
 weight: 102437
-solve_time_s: 836
+solve_time_s: 486
 verified: false
 draft: false
 ---
@@ -18,135 +18,131 @@ draft: false
 
  **评级：** -
  **标签：** -
- **求解时间：** 13m 56s
+ **求解时间：** 8m 6s
  **已验证：** 否
 
  ## 解决方案
  ## 问题理解
 
- 我们有两个订单，每个订单由一个长度为 (n) 的字符串表示。 第 (i) 个字符描述堆栈中第 (i) 个盒子的商品编号。 我们需要确定当前订单（s）是否可以转换为先前订单（t）。 
+ 我们有两个长度为 (n) 的字符串。 字符串 (s) 描述当前的盒子堆栈，而 (t) 描述前一个堆栈。 我们可以将 (s) 循环向左旋转一些 (k)，然后对每个字符应用相同的凯撒移位。 任务是找到任何将 (s) 转换为 (t) 的对 ((k,d))，或者报告不存在这样的对。 
 
-允许的转换有两个独立的部分。 首先，每个字母都按相同的凯撒移位 (d) 进行移位，循环模 26。其次，堆栈可以旋转，这意味着 (s) 的前缀从顶部移动到底部。 如果旋转量为(k)，则得到的顺序为
+对于旋转 (k)，位置 (i) 处的结果字符为 (s[(i+k)\bmod n])。 如果凯撒移位将每个字母向后移动 (d)，则所需的等式为
 
  [
- s[k:] + s[]。 
+ t_i \equiv s_{(i+k)\bmod n}-d \pmod{26}。 
 ]
 
- 两次操作后，结果字符串必须等于 (t)。 我们必须输出任何有效的对 ((k,d))，或者报告`Impossible`。 
+ 长度可以达到（200,000），官方限制为2秒、512MB。 (O(n^2)) 算法在最坏的情况下可以执行大约 (4\cdot10^{10}) 次字符比较，这远远超出了时间限制。 我们需要一个 (O(n)) 或 (O(n\log n)) 的解决方案，并且线性字符串匹配算法就足够了。 
 
-长度可以大到(200,000)。 检查每次旋转并比较所有 (n) 个字符的算法在最坏的情况下将执行最多 (n^2 = 40,000,000,000) 个字符比较，这远远超出了实际情况。 我们需要一个解决方案，其工作基本上与字符串长度呈线性关系。 
-
-有几种边缘情况可能会破坏简单的实现。 第一个是（n=1）。 没有什么有意义的轮换可供寻找，但凯撒轮换可能仍然是必要的。 例如，```
+有几种边缘情况可能会使直接实现产生误导。 对于 (n=1)，唯一可能的旋转是 (k=0)，但任何两个字母都可以通过凯撒移位相互转换。 例如，```
 1
 z
 a
-```可以用 (k=0) 求解，因为移位`z`落后 25 给出`a`。 在这种情况下，假设有相邻字符需要检查的实现将失败。 
+```有一个有效的答案，例如`Success`其次是`0 25`。 否则，比较相邻字符的方法将显得根本没有信息，因为单字符字符串没有普通的相邻对。 
 
-另一个边缘情况是字母表中的环绕。 例如，```
-1
-a
-z
-```也是可以解决的。 所需的平移可以表示为(d=1)，因为平移`z`向后 1 给出`y`，在移动时`a`向后 1 给出`z`。 该算术必须以模 26 执行，而不是使用普通的整数差。 
-
-A third issue is rotation across the end of the string. 考虑```
+第二种边缘情况是穿过字符串末端的旋转。 例如，```
 5
 abcde
-bcdea
-```旋转`bcdea`由 (4) 位置产生`abcde`，因此正确答案存在 (k=4) 和 (d=0)。 仅检查普通子串的搜索`s`忘记循环边界就会错过这个解决方案。 
+cdeab
+```有答案`Success`和`3 0`。 正确的旋转是将前三个字符移动到底部。 仅检查 (s) 的普通子字符串而不是循环处理字符串的实现将错过这个答案。 
 
-最后，重复的字符可以使多次旋转有效。 例如，```
+重复的字符创造了另一个微妙的情况。 为了```
 4
 aaaa
-aaaa
-```将每个旋转视为有效旋转，并且 (d=0) 适用于所有旋转。 该算法必须接受第一个有效的候选者，而不是依赖唯一性。 
+zzzz
+```每次轮换都是有效的，一次凯撒轮换就足够了。 解决方案不得假设匹配的旋转是唯一的。 
+
+最后，字符串可以具有相同的字符频率，但仍然无法转换。 例如，```
+3
+abc
+aba
+```是不可能的。 两个字符串都包含三个小写字母，但没有循环旋转`aba`可以成为`abc`统一换班后。 仅比较字符数会错误地接受这一点。 
 
 ## 方法
 
- 直接的解决方案是尝试每一种可能的旋转（k）。 对于每次旋转，我们会将旋转的 (s) 的每个字符与 (t) 的相应字符进行比较。 第一对位置确定凯撒移位，然后每个剩余位置必须具有完全相同的模 26 移位。此方法是正确的，因为它显式检查每个可能的变换。 
-
-问题在于重复工作量。 有 (n) 次旋转，检查一次旋转需要 (O(n)) 时间。 在 (n=200,000) 时，最坏的情况达到 (200,000^2=40,000,000,000) 次字符检查。 蛮力在概念上很简单，但它的二次行为排除了它。 
-
-有用的观察结果是凯撒移位不会改变相邻字母之间的差异。 如果`x`更改为`x-d`和`y`更改为`y-d`，那么他们的差异仍然存在
+ 直接的方法是尝试每次旋转（k）。 对于每次旋转，构建或概念性检查
 
  [
- (y-d)-(x-d)=y-x \pmod {26}。 
+ s[k],s[k+1],\ldots,s[n-1],s[0],\ldots,s[k-1]。 
 ]
 
- 因此，我们可以比较连续字母之间差异的循环序列，而不是比较原始字母。 
+ 第一个字符决定了唯一可能的凯撒移位。 一旦知道了该移位，我们就将每个剩余的字符与 (t) 的相应字符进行比较。 这是正确的，因为对于固定旋转，最多有一个凯撒移位可以使第一个字符相等。 
 
-对于字符串 (x)，定义
+问题在于比较的次数。 在最坏的情况下，每次旋转有 (n) 次旋转和 (n) 次字符检查，从而给出 (O(n^2)) 时间。 对于 (n=200,000)，这大约是 (40) 十亿次比较。 
 
- (x[(i+1)\bmod n]-x[i])\bmod 26。 
-]
-
- 该序列恰好有 (n) 个元素，因为它还包含从最后一个字符到第一个字符的差异。 
-
-假设将 (s) 旋转 (k) 个位置给出了凯撒移位之前的正确排列。 它的循环差序列就是从位置(k)开始的(s)的循环差序列。 凯撒转变根本不会改变任何差异。 因此，当(t)的循环差序列作为(s)的循环差序列的循环旋转出现时，恰好存在有效旋转。 
-
-在另一个循环序列中查找一个循环序列是一个标准的字符串匹配问题。 我们可以将(s)的差分序列与其自身连接起来，并使用Knuth-Morris-Pratt算法在(O(n))时间内找到(t)的差分序列。 一旦找到匹配的起始位置 (k)，凯撒移位就由第一个字符确定：
+有用的观察结果是，凯撒移位将每个字符更改相同的量，因此它不会更改连续字符之间的差异。 对每个循环相邻差值进行编码
 
  [
- d=(s[k]-t[0])\bmod 26。 
-]
+ D_i=(x_{i+1}-x_i)\bmod 26,
+ ]
 
- 差异表示解决了旋转问题，而 KMP 使搜索呈线性。 
+ 其中 (x_n=x_0)。 例如，差异`abc`是
+
+ [
+ [1,1,24],
+ ]
+
+ 因为`c`到`a`是 (0-2\equiv24\pmod{26})。 
+
+假设 (s) 的旋转版本在凯撒移位后变为 (t)。 旋转后的 (s) 中的每个相邻差值必须等于 (t) 中相应的相邻差值。 (s) 的旋转只是将其差异数组旋转相同的量。 因此，原来的问题变成了一个标准的循环字符串匹配问题：在 (s) 的差异数组的两个连续副本中找到 (t) 的差异数组。 
+
+这一观察结果在另一个方向上也适用。 如果差异数组在某种旋转下匹配，则两个字符串中的每个连续对的差异量相同。 从一个字符开始，该常量偏移量会传播到整个字符串，因此存在单个凯撒移位。 
+
+我们可以使用 Knuth-Morris-Pratt 算法找到所需的旋转。 KMP 在线性时间内找到 (D_s+D_s) 中的模式 (D_t)，无需单独检查每个旋转。 
 
 | 方法| 时间复杂度| 空间复杂度| 判决 |
- | --- | --- | --- | --- |
- | 蛮力 | (O(n^2)) | (O(n)) | (O(n)) | 太慢了|
- | 最佳 | (O(n)) | (O(n)) | (O(n)) | (O(n)) | 已接受 |
+ | ---| ---| ---| ---|
+ | 蛮力 | (O(n^2)) | (O(n)) | (O(n)) | 太慢了 |
+ | 差异数组 + KMP | (O(n)) | (O(n)) | (O(n)) | (O(n)) | 已接受 |
 
  ## 算法演练
 
- 1. 将 (s) 和 (t) 的每个字符转换为 0 到 25 之间的数值。这使我们可以使用普通模运算来执行所有凯撒移位运算。 
-2. 构建循环差分数组`ds`对于（s）。 对于每个位置 (i)，存储从 (s[i]) 到 (s[(i+1)\bmod n]) 的差值，模 26。`dt`对于(t)，以完全相同的方式。 
-3. 构建KMP前缀函数`dt`。 前缀函数告诉我们在不匹配后有多少模式仍然可用，因此搜索永远不必从头开始。 
-4. 搜索`dt`里面`ds + ds`。 循环数组的旋转对应于其双倍版本的连续段。 我们只接受从小于 (n) 的索引开始的匹配，因为这些正是 (n) 可能的轮换。 
-5. 如果没有这样的匹配，则打印`Impossible`。 匹配循环差异对于有效的变换是必要的，因此凯撒移位无法修复丢失的旋转。 
-6. 如果比赛从 (k) 开始，计算
+ 1. 将(s)和(t)的每个字符转换为(0)到(25)的整数。 构建他们的循环差分数组。 对于字符串 (x)，位置 (i) 存储 ((x[(i+1)\bmod n]-x[i])\bmod26)。 循环最后到第一个差异是必要的，因为旋转也保留了最后一个位置和第一个位置之间的边缘。 
+2. 令(A) 为(s) 的差分数组，(B) 为(t) 的差分数组。 (s) 向左旋转 (k) 会将 (A) 向左旋转恰好 (k) 个位置。 因此，我们需要找到 (B) 作为从 (A+A) 中某个位置 (k) 开始的长度为 (n) 的线段。 
+3. 为(B) 构建KMP 前缀函数。 前缀函数告诉我们在不匹配后有多少模式仍然可用，从而允许搜索跳过比较而不是从头开始。 
+4. 在 (A) 的两个副本上运行 KMP。 每当 (B) 完全出现在位置 (k<n) 时，我们就找到了保留所有循环差异的旋转。 我们可以在第一次发生此类情况时停止。 
+5. 一旦 (k) 已知，将旋转后的 (s) 的第一个字符 (s[k]) 与 (t[0]) 进行比较。 由于凯撒变换将字符向后移动 (d)，
 
  [
- d=(s[k]-t[0])\bmod 26。 
+ t_0\equiv s_k-d\pmod{26},
+ ]
+
+ 所以
+
+ [
+ d\equiv s_k-t_0\pmod{26}。 
 ]
 
- 旋转的字符串开始于`s[k]`。 将该字符向后移动 (d) 必须产生`t[0]`，所以这个方程准确地给出了所需的凯撒位移。 
+ 从 (0) 到 (25) 选择代表始终满足所需的范围 (-26<d<26)。 
 
-1. 打印`Success`，然后是 (k) 和 (d)。 模 26 产生的值介于 0 和 25 之间，满足所需范围 (-26<d<26)。 
+1. 如果 KMP 发现从前 (n) 个位置开始没有出现任何情况，则没有旋转具有所需的循环差异，因此不存在有效的变换。 
 
 ### 为什么它有效
 
- 中心不变量是，当且仅当两个字符串相应的循环差相等时，两个字符串仅通过均匀凯撒移位不同。 当两个相邻字符相减时，凯撒移位会取消，因此它不会影响差异数组。 
+ 不变量是均匀凯撒移位使每个循环相邻差值保持不变。 因此，有效的变换意味着 (t) 的差异数组是 (s) 的差异数组的旋转，因此 KMP 必须找到它。 
 
-旋转 (k) 只是改变循环差数组的起始点。 搜寻中`dt`里面`ds + ds`因此准确地找到其相对字符结构与 (t) 相匹配的旋转。 一旦找到这样的旋转，每个相邻的差异都一致，因此旋转的 (s) 和 (t) 之间的差异在整个周期中是恒定的。 该常数正是从第一个字符计算出的凯撒位移。 因此，每个报告的对 ((k,d)) 都会生成 (t)，并且如果存在有效对，则其旋转必须出现在 KMP 搜索中。 
+相反，假设 KMP 找到两个差异数组相同的旋转 (k)。 然后，对于每个连续的对，旋转后的 (s) 和 (t) 之间的差是相同的模 (26)。 因此，所有对应的字符相差一个常数值。 该常数正是根据第一个字符计算的凯撒移位 (d)，因此应用旋转 (k) 并且该移位将 (s) 转换为 (t)。 
+
+情况（n=1）也可得出相同的推理。 两个差异数组都包含单个值 (0)，因此 KMP 找到唯一可能的旋转，并且第一个字符计算提供所需的凯撒移位。 
 
 ## Python 解决方案```python
 import sys
 input = sys.stdin.readline
 
-def build_diff(s):
+def differences(s):
     n = len(s)
-    if n == 1:
-        return []
-    return [
-        (ord(s[(i + 1) % n]) - ord(s[i])) % 26
-        for i in range(n)
-    ]
+    a = [ord(c) - 97 for c in s]
+    return [(a[(i + 1) % n] - a[i]) % 26 for i in range(n)], a
 
-def prefix_function(pattern):
-    m = len(pattern)
-    pi = [0] * m
-
-    for i in range(1, m):
+def prefix_function(p):
+    pi = [0] * len(p)
+    for i in range(1, len(p)):
         j = pi[i - 1]
-
-        while j > 0 and pattern[i] != pattern[j]:
+        while j > 0 and p[i] != p[j]:
             j = pi[j - 1]
-
-        if pattern[i] == pattern[j]:
+        if p[i] == p[j]:
             j += 1
-
         pi[i] = j
-
     return pi
 
 def solve():
@@ -154,21 +150,19 @@ def solve():
     t = input().strip()
     s = input().strip()
 
-    if n == 1:
-        d = (ord(s[0]) - ord(t[0])) % 26
-        print("Success")
-        print(0, d)
-        return
-
-    ds = build_diff(s)
-    dt = build_diff(t)
+    dt, tv = differences(t)
+    ds, sv = differences(s)
 
     pi = prefix_function(dt)
 
     j = 0
-    doubled = ds + ds
+    rotation = -1
 
-    for i, value in enumerate(doubled):
+    # We only need starts from 0 through n - 1.
+    # Two copies of ds contain every cyclic rotation.
+    for i in range(2 * n):
+        value = ds[i % n]
+
         while j > 0 and value != dt[j]:
             j = pi[j - 1]
 
@@ -177,30 +171,30 @@ def solve():
 
         if j == n:
             start = i - n + 1
-
             if start < n:
-                d = (ord(s[start]) - ord(t[0])) % 26
-                print("Success")
-                print(start, d)
-                return
-
+                rotation = start
+                break
             j = pi[j - 1]
 
-    print("Impossible")
+    if rotation == -1:
+        print("Impossible")
+        return
+
+    # t[0] = s[rotation] - d (mod 26)
+    d = (sv[rotation] - tv[0]) % 26
+
+    print("Success")
+    print(rotation, d)
 
 if __name__ == "__main__":
     solve()
-```这`build_diff`函数将字符串转换为其循环差序列。 表达式`(i + 1) % n`处理最终到第一条边，这是必要的，因为旋转是循环的而不是普通的子串操作。 
+```这`differences`函数将字符转换为 (0) 到 (25) 之间的值并计算所有循环差。 表达式`(i + 1) % n`将最终边缘处理回第一个字符，包括 (n=1) 情况。 
 
-(n=1) 情况单独处理，因为它的差异序列将为空。 只有一种可能的旋转（k=0），凯撒移位可以直接从两个角色获得。 
+前缀函数是标准的KMP预处理。 它的指数始终在形态内，并且`while`循环反复回退到先前计算的前缀长度。 由于每次后备动作`j`到较小的值时，总功保持线性。 
 
-前缀函数仅计算`dt`。 在 KMP 搜索过程中，`ds + ds`表示每次循环旋转`ds`作为正常的连续段。 前 (n) 个可能的起始位置完全对应于 (k=0,\ldots,n-1)。 
+搜索会迭代`2 * n`职位和访问权限`ds[i % n]`，它表示循环差数组的两个副本，而不分配另一个列表。 一场比赛开始于`start`完全对应于向左旋转`start`。 这`start < n`条件拒绝在前 (n) 个位置之后开始的重复出现。 
 
-当KMP达到`j == n`，整个目标差异序列已匹配。 表达式`i - n + 1`给出该场比赛的开始时间。 我们拒绝从 (n) 或之后开始，因为这些是通过加倍数组创建的重复匹配。 
-
-最后，`d = (ord(s[start]) - ord(t[0])) % 26`直接遵循凯撒行动的方向。 如果旋转后的字符是`c`，将其向后移动 (d) 给出`c-d`，所以我们需要`c-d = t[0] (mod 26)`。 重新排列给出代码中使用的表达式。 
-
-Python 整数具有任意精度，因此不存在溢出问题。 所有索引都保持在 (2n) 之内，并且每个字符转换都是恒定时间。 
+仅在找到有效旋转后才计算凯撒位移。 我们使用`(sv[rotation] - tv[0]) % 26`，因为变换是向后移位。 结果值位于 (0,\ldots,25) 内，该值在允许的输出范围内。 Python 整数不会溢出，因此不需要特殊的算术处理。 
 
 ## 工作示例
 
@@ -210,29 +204,22 @@ Python 整数具有任意精度，因此不存在溢出问题。 所有索引都
 3
 abc
 fde
-```循环差异如下。 
+```为了`t = abc`，循环差为`1, 1, 24`。 为了`s = fde`，他们是`24, 1, 1`。 
 
-| 字符串| 差分序列|
- | --- | --- |
- |`t = abc`|`[1, 1, 24]`|
- |`s = fde`|`[24, 1, 1]`|
+| 模式索引 |`dt`| 搜索值来自`ds + ds`| KMP状态|
+ | ---| ---| ---| ---|
+ | 0 | 1 | 24 | 0 |
+ | 1 | 1 | 1 | 1 |
+ | 2 | 24 | 1 | 2 |
+ | 3 | 1 | 24 | 3 |
 
- 将差分序列加倍`s`给出`[24, 1, 1, 24, 1, 1]`。 目标序列`[1, 1, 24]`首先发生在位置 (1)。 
+ 完整的模式从搜索位置 (1) 开始，因此所需的旋转为 (k=1)。 旋转后`fde`左移一位，我们得到`def`。 第一个字符更改为`d`到`a`，这需要向后移动 (3)。 
 
-| KMP状态| 价值| 图案位置| 结果 |
- | --- | --- | --- | --- |
- | 开始 | 24 | 0 | 不匹配|
- | 在索引 1 | 之后 1 | 1 | 比赛|
- | 索引 2 之后 | 1 | 2 | 比赛|
- | 索引 3 | 之后 24 | 3 | 完整比赛 |
+|`k`| 旋转`s`|`t[0]`|`s[k] - t[0]`| 结果 |
+ | ---| ---| ---| ---| ---|
+ | 1 |`def`|`a`| (3-0=3) |`Success 1 3`|
 
- 因此(k=1)。 旋转`fde`通过一个位置给出`def`。 它的第一个字符是`d`，而目标开始于`a`，所以
-
- [
- d=(d-a)\bmod26=3。 
-]
-
- 变速`def`向后 3 给出`abc`，所以算法打印`Success`,`1 3`。 
+ 该示例演示了匹配差异可识别旋转，而无需比较每个可能旋转的所有字符。 
 
 ### 示例 2
 
@@ -240,73 +227,73 @@ fde
 3
 abc
 aba
-```循环差为
+```的循环差异为`abc`是`1, 1, 24`。 的循环差异为`aba`是`25, 25, 0`。 
 
- | 字符串| 差分序列|
- | --- | --- |
- |`t = abc`|`[1, 1, 24]`|
- |`s = aba`|`[25, 25, 0]`|
+| 模式索引 |`dt`| 搜索值来自`ds + ds`| KMP状态|
+ | ---| ---| ---| ---|
+ | 0 | 1 | 25 | 25 0 |
+ | 1 | 1 | 25 | 25 0 |
+ | 2 | 24 | 0 | 0 |
+ | 3 | 1 | 25 | 25 0 |
+ | 4 | 1 | 25 | 25 0 |
+ | 5 | 24 | 0 | 0 |
 
- 的双倍序列`s`是`[25, 25, 0, 25, 25, 0]`，其中不包含出现`[1, 1, 24]`。 
+ 没有出现完整的模式，因此没有有效的旋转。 由于凯撒移位无法更改相邻差异，因此 (d) 没有可能的值可以修复此不匹配。 
 
-| 搜索位置 | 当前差异| 目标进度|
- | --- | --- | --- |
- | 0 | 25 | 25 0 |
- | 1 | 25 | 25 0 |
- | 2 | 0 | 0 |
- | 3 | 25 | 25 0 |
- | 4 | 25 | 25 0 |
- | 5 | 0 | 0 |
-
- 没有旋转具有与以下相同的相对特征变化`t`，因此不存在可以使字符串相等的凯撒移位。 答案是`Impossible`。 
-
-## 复杂度分析
+因此输出是```
+Impossible
+```## 复杂度分析
 
  | 测量 | 复杂性 | 说明|
- | --- | --- | --- |
- | 时间 | (O(n)) | (O(n)) | 构建两个差异数组、构建 KMP 的前缀函数以及搜索双倍数组都需要线性时间。 |
- | 空间| (O(n)) | (O(n)) | 差分数组、加倍序列和前缀函数都需要线性内存。 |
+ | ---| ---| ---|
+ | 时间 | (O(n)) | (O(n)) | 差异构建、KMP 预处理和搜索都需要线性时间 |
+ | 空间| (O(n)) | (O(n)) | 两个差异数组和 KMP 前缀数组包含 (O(n)) 个整数 |
 
- 对于 (n\le200,000)，算法仅对输入执行恒定数量的线性传递。 它的内存使用也是线性的，因此它适合规定的约束。 
+ 对于 (n\le200,000)，算法仅对输入执行恒定数量的线性传递，这适合官方的 2 秒限制。 内存消耗也明显低于官方 512 MB 限制。 
 
 ## 测试用例
 
- 成功输出不是唯一的，因此强大的测试工具应该验证返回的转换，而不是逐字比较完整的输出字符串。 下面的测试代码可以做到这一点，同时仍然检查确切的`Impossible`样品。```python
+ 下面的测试工具不会将成功的答案与一对固定的 ((k,d)) 进行比较，因为该问题明确允许任何有效的转换。 相反，它检查报告的对是否在范围内，并实际上将 (s) 转换为 (t)。 不可能的情况被精确地比较。```python
 import sys
 import io
 
-def solve_data(inp: str) -> str:
-    data = inp.strip().split()
-    n = int(data[0])
-    t = data[1]
-    s = data[2]
+def solve_case(inp: str) -> str:
+    old_stdin = sys.stdin
+    sys.stdin = io.StringIO(inp)
 
-    def build_diff(x):
-        if n == 1:
-            return []
+    n = int(sys.stdin.readline())
+    t = sys.stdin.readline().strip()
+    s = sys.stdin.readline().strip()
+
+    def differences(x):
+        values = [ord(c) - 97 for c in x]
         return [
-            (ord(x[(i + 1) % n]) - ord(x[i])) % 26
+            (values[(i + 1) % n] - values[i]) % 26
             for i in range(n)
-        ]
+        ], values
 
-    if n == 1:
-        d = (ord(s[0]) - ord(t[0])) % 26
-        return f"Success\n0 {d}\n"
+    def prefix_function(p):
+        pi = [0] * len(p)
+        for i in range(1, len(p)):
+            j = pi[i - 1]
+            while j > 0 and p[i] != p[j]:
+                j = pi[j - 1]
+            if p[i] == p[j]:
+                j += 1
+            pi[i] = j
+        return pi
 
-    ds = build_diff(s)
-    dt = build_diff(t)
+    dt, tv = differences(t)
+    ds, sv = differences(s)
 
-    pi = [0] * n
-    for i in range(1, n):
-        j = pi[i - 1]
-        while j > 0 and dt[i] != dt[j]:
-            j = pi[j - 1]
-        if dt[i] == dt[j]:
-            j += 1
-        pi[i] = j
+    pi = prefix_function(dt)
 
     j = 0
-    for i, value in enumerate(ds + ds):
+    rotation = -1
+
+    for i in range(2 * n):
+        value = ds[i % n]
+
         while j > 0 and value != dt[j]:
             j = pi[j - 1]
 
@@ -314,168 +301,136 @@ def solve_data(inp: str) -> str:
             j += 1
 
         if j == n:
-            k = i - n + 1
-            if k < n:
-                d = (ord(s[k]) - ord(t[0])) % 26
-                return f"Success\n{k} {d}\n"
+            start = i - n + 1
+            if start < n:
+                rotation = start
+                break
             j = pi[j - 1]
 
-    return "Impossible\n"
+    if rotation == -1:
+        result = "Impossible\n"
+    else:
+        d = (sv[rotation] - tv[0]) % 26
+        result = f"Success\n{rotation} {d}\n"
 
-def run(inp: str) -> str:
-    return solve_data(inp)
+    sys.stdin = old_stdin
+    return result
 
-def valid_output(inp: str, out: str) -> bool:
-    data = inp.strip().split()
-    n = int(data[0])
-    t = data[1]
-    s = data[2]
+def is_valid(inp: str, out: str) -> bool:
+    lines = inp.strip().splitlines()
+    n = int(lines[0])
+    t = lines[1]
+    s = lines[2]
 
-    lines = out.strip().split()
+    out_lines = out.strip().splitlines()
 
-    if lines[0] == "Impossible":
-        return len(lines) == 1
-
-    if lines[0] != "Success" or len(lines) != 3:
+    if out_lines[0] == "Impossible":
         return False
 
-    k = int(lines[1])
-    d = int(lines[2])
+    assert out_lines[0] == "Success"
+    k, d = map(int, out_lines[1].split())
 
-    if not (0 <= k < n and -26 < d < 26):
-        return False
+    assert 0 <= k < n
+    assert -26 < d < 26
 
-    rotated = s[k:] + s[:k]
+    for i in range(n):
+        source = ord(s[(i + k) % n]) - 97
+        target = (source - d) % 26
+        if target != ord(t[i]) - 97:
+            return False
 
-    transformed = "".join(
-        chr((ord(c) - ord('a') - d) % 26 + ord('a'))
-        for c in rotated
-    )
-
-    return transformed == t
+    return True
 
 # Provided samples.
-assert run("""3
+sample1 = """3
 abc
 fde
-""") == "Success\n1 3\n"
+"""
+assert is_valid(sample1, solve_case(sample1)), "sample 1"
 
-assert run("""3
+sample2 = """3
 abc
 aba
-""") == "Impossible\n"
+"""
+assert solve_case(sample2).strip() == "Impossible", "sample 2"
 
-assert valid_output(
-    """1
+sample3 = """1
 z
 a
-""",
-    run("""1
+"""
+assert is_valid(sample3, solve_case(sample3)), "sample 3"
+
+# Minimum size, where the difference arrays contain only zero.
+case1 = """1
+a
 z
-a
-""")
-)
+"""
+assert is_valid(case1, solve_case(case1)), "minimum size"
 
-# Minimum-size, no transformation needed.
-assert valid_output(
-    """1
-a
-a
-""",
-    run("""1
-a
-a
-""")
-)
-
-# All characters equal, with a non-zero Caesar shift.
-assert valid_output(
-    """4
-zzzz
-aaaa
-""",
-    run("""4
-zzzz
-aaaa
-""")
-)
-
-# Rotation by n - 1, exercising the cyclic boundary.
-assert valid_output(
-    """5
+# Rotation crosses the end of the string.
+case2 = """5
 abcde
-bcdea
-""",
-    run("""5
-abcde
-bcdea
-""")
-)
+cdeab
+"""
+assert is_valid(case2, solve_case(case2)), "wrap-around rotation"
 
-# Maximum-size input, all characters equal.
+# All characters are equal, and n is at the maximum allowed size.
 n = 200000
-max_case = f"{n}\n" + "a" * n + "\n" + "a" * n + "\n"
-assert valid_output(max_case, run(max_case))
+case3 = f"{n}\n" + "a" * n + "\n" + "z" * n + "\n"
+assert is_valid(case3, solve_case(case3)), "maximum size and all equal"
+
+# Almost matching strings, designed to reject a wrong rotation.
+case4 = """4
+abca
+caab
+"""
+assert solve_case(case4).strip() == "Impossible", "invalid rotation"
+
+print("All tests passed.")
 ```| 测试输入| 预期产出 | 它验证了什么 |
- | --- | --- | --- |
- |`1 / a / a`|`Success`, (k=0,d=0) | 最小尺寸和空差序列 |
- |`4 / zzzz / aaaa`|`Success`，任意旋转且 (d=1) | 全相等字符串和模块化凯撒算术 |
- |`5 / abcde / bcdea`|`Success`, (k=4,d=0) | 绕末端旋转 |
- | (n=200000)，全部`a`|`Success`, (k=0,d=0) | 最大输入尺寸和线性性能|
+ | ---| ---| ---|
+ |`1 / a / z`| 任何有效的`Success`| 最小尺寸以及一个字符始终可以移动的事实 |
+ |`5 / abcde / cdeab`| 任何有效的`Success`，其中 (k=3,d=0) 是一个答案 | 环绕旋转和正确的旋转方向 |
+ | (n=200000)，两个字符串均为常数 | 任何有效的`Success`| 最大输入大小、重复字符和线性性能 |
+ |`4 / abca / caab`|`Impossible`| 拒绝局部差异不匹配的轮换 |
 
  ## 边缘情况
 
- 对于（n=1），差异数组不包含元素，因此KMP没有意义。 考虑```
+ 对于 (n=1)，考虑```
 1
 z
 a
-```只有一种可能的旋转，(k=0)。 所需的班次是
+```两个字符串的差异数组是`[0]`，因为唯一的位置也是它自己的循环后继。 KMP 立即在轮换时找到匹配项 (k=0)。 转变是
 
  [
- (z-a)\bmod26=25。 
-]
+ d=(25-0)\bmod26=25,
+ ]
 
- 算法返回`Success`,`0 25`。 这相当于样本的`0 -25`因为凯撒移位是循环模 26，并且两个值代表相同的变换。 
+ 所以程序可能会打印```
+Success
+0 25
+```样本的`0 -25`是问题允许的班次约定所接受的另一种表示形式。 基本条件是所报告的字符对产生目标字符。 
 
-对于字母环绕，请考虑```
-1
-a
-z
-```该算法计算
-
- [
- (a-z)\bmod26=1。 
-]
-
- 变速`a`向后 1 产生`z`， 所以`Success 0 1`是有效的。 模运算可防止负原始差值被视为无效移位。 
-
-对于穿过字符串末端的旋转，请考虑```
+对于穿过末端的旋转，请考虑```
 5
 abcde
-bcdea
-```的循环差分序列`s`被搜索到`ds + ds`。 目标从位置 (4) 开始，对应于旋转
-
- # \texttt{a}+\texttt{bcde}
-
- \texttt{abcde}。 
-]
-
- KMP 发现 (k=4)，并且第一个字符已经一致，因此 (d=0)。 
+cdeab
+```差值数组为`abcde`是`[1,1,1,1,22]`，而差异数组`cdeab`是`[1,1,22,1,1]`。 第二个数组从第一个数组循环序列的位置 (3) 开始，因此 KMP 找到 (k=3)。 旋转后的源是`cdeab`，已经等于目标，给出 (d=0)。 
 
 对于重复的字符，请考虑```
 4
 aaaa
-aaaa
-```每个循环差为零，因此每次旋转都匹配。 KMP 接受第一个字符 (k=0)，第一个字符给出 (d=0)。 无需区分多个有效答案，因为问题接受其中任何一个。 
-
-最微妙的正确性情况是差异序列匹配但字符串最初不具有相同的第一个字符。 例如，```
-3
-abc
-def
-```两个串的循环差序列为`[1, 1, 24]`，因此 (k=0) 是有效的结构匹配。 第一个字符的差异给出
+zzzz
+```两个循环差分数组都是`[0,0,0,0]`。 KMP 找到旋转 (0)，第一个字符给出
 
  [
- d=(d-a)\bmod26=3。 
+ d=(25-0)\bmod26=25。 
 ]
 
- 变速`def`落后 3 产生`abc`。 这说明了为什么仅匹配差异并不是最后一步，但它减少了确定一个全局凯撒移位的剩余工作。
+ 的每一个角色`zzzz`向后移动 (25) 变为`aaaa`。 所有轮换都有效这一事实不会引起问题，因为该语句允许任何有效答案。 
+
+对于不可能的一对，考虑```
+3
+abc
+aba
+```目标差异是`[1,1,24]`，而源差异是`[25,25,0]`。 没有循环旋转可以将一个序列转换为另一个序列，因此 KMP 永远不会达到完整的模式匹配。 算法打印`Impossible`而不试图猜测凯撒转变。 这正是为什么仅检查字符数是不够的。

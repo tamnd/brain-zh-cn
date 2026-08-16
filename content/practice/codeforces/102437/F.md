@@ -1,7 +1,7 @@
 ---
 title: "CF 102437F-\u0411\u044b\u0441\u0442\u0440\u044b\u0439\u043f\u0435\u0440\u0435\u0432\u043e\u0434"
-description: "这是一个交互问题。 存在隐藏的非负余额 (n)，其中 (n le 10^{18})，并且程序不会接收 (n) 作为普通输入。 相反，它可以通过发出提款 x 来询问终端是否至少剩余 (x) 美元。"
-date: "2026-08-14T15:41:08+07:00"
+description: "这是一个交互问题。 没有包含帐户余额的普通输入。 交互者秘密选择一个初始余额（n），其中（0 le n le 10^{18}），我们的程序必须发现足够的信息来转移整个余额。"
+date: "2026-08-16T09:33:40+07:00"
 tags: ["codeforces", "competitive-programming"]
 categories: ["algorithms"]
 codeforces_contest: 102437
@@ -24,268 +24,307 @@ draft: false
  ## 解决方案
  ## 问题理解
 
- 这是一个交互问题。 存在隐藏的非负余额 (n)，其中 (n \le 10^{18})，并且程序不会接收 (n) 作为普通输入。 相反，它可以通过发出以下命令询问终端是否至少剩余 (x) 美元`withdraw x`。 一个`accepted`答案意味着 (x) 美元从当前余额中删除，而`rejected`表示余额小于(x)并且保持不变。 一旦程序认为余额为零，它就会打印`finish`。 
+ 这是一个交互问题。 没有包含帐户余额的普通输入。 交互者秘密地选择一个初始余额（n），其中（0 \le n \le 10^{18}），我们的程序必须发现足够的信息来转移整个余额。 唯一的查询是`withdraw x`。 如果当前余额至少为 (x)，则交互者回答`accepted`并删除 (x)。 否则它会回答`rejected`并保持余额不变。 我们可以通过打印来完成`finish`，但只有当隐藏余额实际上为零时才被接受。 官方声明确认了这个交互协议和(q+10)个查询的限制，其中(q)是满足(n\le2^q)的最小整数。 
 
-查询限制取决于未知数 (n)。 令 (q) 为满足 (n \le 2^q) 的最小整数。 终端最多允许 (q+10) 次取款尝试。 这使得查询数量成为真正的复杂性衡量标准。 由于 (10^{18}<2^{60})，使用 2 的所有 60 次幂的固定策略是正确的，但即使 (n) 很小，它也可以进行 60 次查询。 例如，当（n=0）时，限制只有10个查询，因此无条件60个查询扫描是无效的。 
+挑战不仅在于找到 (n)，而且还在于以极少的破坏性比较来找到它。 由于 (n) 可以大到 (10^{18})，因此每美元执行一次取款的策略可能需要 (10^{18}) 次查询。 即使是整个区间 ([0,10^{18}]) 上的普通二分搜索也将使用大约 60 个查询，当 (n) 很小时，这已经太多了。 例如，如果(n=1)，则(q=0)，因此最多允许尝试10次。 
 
-简单的解决方案还对接受的查询和知道余额为零之间的区别很敏感。 若(n=5)，则查询`withdraw 4`回报`accepted`，但余额为 1。 打印`finish`立刻就错了。 成功提款仅告诉我们所请求的金额可用。 
-
-零余额是另一个边界情况。 如果（n=0），`withdraw 1`必须返回`rejected`，之后`finish`是正确的。 如果 (n=1)，则返回相同的查询`accepted`， 和`finish`只有在撤回之后才变得正确。 
-
-2 的精确幂对于检查差一错误也很有用。 对于 (n=2^k)，查询`withdraw 2^k`succeeds and leaves exactly zero. 该算法必须仍然能够安全地继续，因为它通常不能假设接受的查询耗尽了帐户。 最大可能值 (10^{18}) 低于 (2^{60}) 但高于 (2^{59})，因此指数 59 是可以请求的最大的 2 的幂。 该值 (2^{60}) 将超出允许的提款金额，因此没有必要。 
-
-还有一个微妙之处。 在优化阶段，平衡在每次接受查询后都会发生变化，因此答案不会形成关于原始 (n) 的普通单调谓词。 例如，对于 (n=100)，可以接受对 8 的查询并将余额减少到 92，之后即使原始余额为 100，也可以拒绝对 64 的查询。因此，二分搜索需要与普通二分搜索不同的正确性参数。 
+有两种边缘情况值得特别注意。 如果（n=0），正确的相互作用可以是`withdraw 1`，接收`rejected`， 其次是`finish`。 盲目地开始测试 2 的大幂的策略会浪费许多查询并超出 (q=0) 的限制。 如果 (n=1)，则第一个`withdraw 1`被接受，但这本身并不能证明该帐户是空的。 一秒钟`withdraw 1`有必要区分 (n=1) 和 (n\ge2)。 例如，示例交互```
+withdraw 42
+withdraw 1
+withdraw 1
+finish
+```有回复```
+rejected
+accepted
+rejected
+```证明隐藏余额恰好为 1。第一次拒绝给出 (n<42)，第一次接受的提款给出 (n\ge1)，第二次拒绝证明在取出 1 美元后什么都没有剩下。 官方样本正是包含这种交互。 
 
 ## 方法
 
- 蛮力方法是尝试从 (2^{59}) 到 (2^0) 的每一个 2 的幂。 每当提款被接受时，该位就会从当前余额中删除。 这是可行的，因为每个非负整数都有唯一的二进制表示形式。 最后，所有可能的尝试都已尝试过，所以什么也没有留下。 
+ 最直接的方法就是反复尝试`withdraw 1`。 每次成功的查询都会删除一美元，因此显然是正确的，最终帐户会变空。 问题在于操作次数。 对于 (n=10^{18})，这需要恰好 (10^{18}) 次尝试，而交互器仅允许 (q+10)，其中 (q=60)。 这种方法不太可行。 
 
-The problem is the number of attempts. 从 (2^0) 到 (2^{59}) 正好有 60 个 2 的幂，因此最坏的情况是 60 个查询。 然而，对于(n=0)，(q=0)，终端仅允许10次尝试。 暴力算法已经可能在最小可能的平衡上失败。 
+一个更有前途的想法是使用二的幂。 如果我们以某种方式知道平衡位于 (2^k) 和 (2^{k+1}-1) 之间，那么提取 (2^{k-1},2^{k-2},\ldots,1) 最多可在 (k) 个查询中提取其剩余的二进制表示。 缺少的部分是如何发现（k）而不花费（k）更多查询来测试二的幂。 
 
-关键的观察是我们实际上不需要准确地识别最高设置位。 我们只需要找到一个足够小的指数（l），使得经过短暂的搜索后，剩余余额小于（2^{l+1}）。 那么通常的降序二元分解可以从 (l) 开始，而不是从 59 开始。 
+关键的观察是，成功的提款可以被视为与原始余额的比较。 假设我们已经提取了 (s) 美元，因此经常账户包含 (n-s) 美元。 要询问原始余额是否至少达到某个目标 (T)，我们可以请求`withdraw T-s`。 如果接受，则(n-s\ge T-s)，相当于(n\ge T)。 查询成功后，提取的总金额正好变为（T）。 如果被拒绝，总提款金额仍为(s)，我们得知(n<T)。 
 
-我们可以通过对 60 个可能的指数进行二分查找来获得这样的 (l)。 For a midpoint (m), we try to withdraw (2^m). 如果成功，我们设置 (l=m)。 如果失败，我们设置(r=m)。 在此过程中余额可能会发生变化，因此（l）不一定是原始余额或当前余额的最高位。 重要的是，当搜索以 (r=l+1) 结束时，最终被拒绝的查询给出了当前余额的界限。 如果建立了最后一个有用的接受查询（l），则每个大于（l）的后续指数都被拒绝，特别是边界指数（l+1）对于当前余额来说太大。 因此当前余额低于(2^{l+1})。 
+这让我们可以对不超过 (n) 的两个最大幂的指数执行二分搜索，而每次成功的比较只是将已提取的金额移动到测试的幂。 由于只有 60 个可能的指数，因此只需要大约 6 次查询即可找到该指数。 之后，剩余余额小于已知的最大2的幂，因此可以直接提取其二进制表示。 
 
-搜索最多有 6 个查询，因为只有 60 个候选指数 和 (60<2^6)。 之后最多需要 (l+1) 次查询，并且 (l) 永远不会超过原始余额的对数刻度。 因此总数最多为 (q+7)，远低于允许的 (q+10)。 这是预期的优化。 
+暴力方法每美元花费一次查询，而最佳方法花费恒定数量的查询来定位大小，然后每个二进制数字花费一次查询。 这种区别至关重要，因为查询限制本身在 (n) 中是对数的。 
 
 | 方法| 时间复杂度| 空间复杂度| 判决 |
- | --- | --- | --- | --- |
- | 蛮力 | (O(60)) 查询 | (O(1)) | (O(1)) | 小 (n) | 的查询过多
- | 最佳| (O(q)) 次查询，最多 (q+7) | (O(1)) | (O(1)) | 已接受 |
+ | ---| ---| ---| ---|
+ | 蛮力 | (O(n)) 查询 | (O(1)) | (O(1)) | 太慢了 |
+ | 最佳 | (O(\log n)) 查询 | (O(1)) | (O(1)) | 已接受 |
 
  ## 算法演练
 
- 1. 从指数区间 ([l,r)=[0,60)) 开始。 我们使用 60 是因为每个允许的余额都低于 (2^{60})，因此每个相关幂都是 (2^0,\ldots,2^{59})。 
-2. 当(r-l>1)时，选择(m=(l+r)//2)并发出`withdraw ⟦PROTECT_2⟧`。 如果终端应答`accepted`，设置(l=m)。 提款实际上减少了余额，但 (l) 仍然记录了当时可以承受的有用指数。 如果答案是`rejected`，设置(r=m)，因为当前余额肯定低于(2^m)。 
-3. 二分查找后，将 (l) 中的指数向下处理至零。 对于每个 (i)，发出`withdraw ⟦PROTECT_3⟧`。 接受的响应将从剩余余额中删除该二进制位。 拒绝的响应仅仅意味着该位不存在。 
-4. 尝试完从 (l) 到零的所有指数后，打印`finish`。 二分查找保证剩余余额低于(2^{l+1})，因此现在已经考虑了每个可能的剩余位。 
+ 1. 索要一美元。 如果交互者拒绝它，则隐藏余额为零，因此打印`finish`。 这处理单个查询中的 (n=0) 情况。 
+2. 如果第一美元被接受，请再索取一美元。 如果被拒绝，原来的余额正好是1，所以打印`finish`。 在两次接受的一美元提款之后，我们知道 (n\ge2) 和恰好两美元已经被删除。 
+3. 维护`paid`，已提取的总金额。 最初`paid = 2`。 现在我们找到满足 (2^f\le n) 的最大指数 (f)。 由于 (n\le10^{18}<2^{60})，搜索 1 到 59 的指数就足够了。 
+4. 对指数进行二分查找。 对于候选指数 (m)，令`target = 2^m`。 如果`target <= paid`，那么 (n\gepaid\getarget) 是已知的，因此不需要查询。 否则要求`withdraw target - paid`。 已接受的响应证明（n\ge 目标），并且我们更新`paid`到`target`。 被拒绝的响应证明 (n<target)，因此候选指数太大。 
+5. 指数搜索后，`paid = 2^f`和 (2^f\le n<2^{f+1})。 因此，剩余余额小于 (2^f)。 按降序测试幂 (2^{f-1},2^{f-2},\ldots,1)。 每当接受查询时，该二进制数字就会出现并从帐户中删除。 拒绝意味着该数字不存在。 
+6. 一旦测试了所有这些幂，(2^f) 以下的每个可能的二进制数字都已被删除。 账户是空的，所以打印`finish`。 
 
-中心不变量是余额永远不会增加，并且每个接受的查询都会准确删除所请求的金额。 在二分搜索结束时，要么在成功提取 (2^{59}) 后搜索达到 (l=59)，在这种情况下，剩余余额低于 (2^{59})，要么搜索具有由 (2^r) 的拒绝查询创建的边界 (r=l+1)。 在后一种情况下，当前余额低于(2^{l+1})。 因此，从 (l) 到零的最终降序扫描足以消除所有剩余的美元。 
+### 为什么它有效
 
-查询边界遵循相同的构造。 二分查找最多使用六次尝试。 最终扫描最多使用 (l+1) 次尝试。 由于接受的提款只会减少余额，因此 (l) 不能超过原始余额的对数范围。 因此总数最多为 (q+7)，而未使用所需的 (q+10) 津贴的 3 次尝试。 
+ 中心不变量是`paid`始终是从原始帐户中删除的总金额。 因此当前余额为 (n-\text{paid})。 每当我们想要测试是否 (n\ge T) 和 (T>\text{paid}) 时，查询`withdraw T-paid`在 (n-\text{paid}\ge T-\text{paid}) 时被接受，即 (n\ge T)。 成功的查询也会改变`paid`到(T)，保持不变量。 
+
+指数搜索因此找到不超过(n)的二的最大幂。 一旦撤回该权力，剩余金额将严格小于该权力。 按降序测试所有较小的幂正是二进制表示的贪婪构造，因此最终剩余的每一美元都会被转移。 在测试完 1 的最终幂后，任何查询都不能留下非零余额。 
+
+尝试次数也在特殊的交互范围内。 最多有两个初始查询、最多六个指数搜索查询和最多 59 个二进制数字查询。 因此最多有 67 次尝试。 对于最大可能的余额 (q=60)，因此限制为 70。对于较小的余额，指数搜索仍然只花费恒定数量的查询，而最终的二进制提取最多花费 (q) 个查询，留下所需的 10 个查询的余量。 
 
 ## Python 解决方案```python
 import sys
 input = sys.stdin.readline
 
-def solve():
-    def ask(x):
-        print(f"withdraw {x}", flush=True)
-        response = input().strip()
-        if response == "fail":
-            sys.exit(0)
-        return response
+def ask(x):
+    print(f"withdraw {x}", flush=True)
+    response = input().strip()
 
-    l, r = 0, 60
+    if response == "fail":
+        sys.exit(0)
 
-    while r - l > 1:
-        m = (l + r) // 2
-        response = ask(1 << m)
+    return response == "accepted"
 
-        if response == "accepted":
-            l = m
-        else:
-            r = m
-
-    for i in range(l, -1, -1):
-        ask(1 << i)
-
+def finish():
     print("finish", flush=True)
 
-if __name__ == "__main__":
-    solve()
-```这`ask`函数是与交互者进行通信的唯一场所。 它打印提款命令，根据协议的要求立即刷新，并读取响应。 这`fail`响应会导致立即终止，因为明确禁止在终端锁定后继续。 
+# First distinguish n = 0 and n = 1.
+if not ask(1):
+    finish()
+    sys.exit(0)
 
-二分搜索使用指数而不是货币值本身。 该区间包含从 0 到 59 的整数，因此每个请求的金额最多为 (2^{59}<10^{18})。 Python 整数不会溢出，但 C++ 中的相同实现也可以轻松地适合每个实际查询的有符号 64 位整数。 
+if not ask(1):
+    finish()
+    sys.exit(0)
 
-最终循环故意开始于`l`， 不是`l + 1`或 59. 某些权力可能在二分查找过程中已被撤回，因此再次查询时可能会被拒绝。 那是无害的。 由于余额只会减少，之前成功的提款永远不会再次成功。 
+# Two dollars have already been withdrawn.
+paid = 2
 
-该程序不会尝试从`accepted`回复。 在接受后，无法区分恰好包含 (x) 的帐户和包含多于 (x) 的帐户。`withdraw x`。 继续执行预定策略可以避免这种歧义。 
+# Find the largest f such that 2^f <= n.
+lo = 1
+hi = 59
+
+while lo < hi:
+    mid = (lo + hi + 1) // 2
+    target = 1 << mid
+
+    if target <= paid:
+        lo = mid
+    else:
+        if ask(target - paid):
+            paid = target
+            lo = mid
+        else:
+            hi = mid - 1
+
+f = lo
+
+# Extract the remaining balance bit by bit.
+power = 1 << (f - 1)
+
+while power >= 1:
+    if ask(power):
+        pass
+    power >>= 1
+
+finish()
+```这`ask`函数是与交互器进行通信的唯一场所。 它打印命令，立即刷新，并读取回复。 一个`fail`响应必须立即终止程序，因为继续下去会违反协议。 
+
+前两个调用`ask(1)`很特别。 第一个区分零和正余额。 第二个将一个与至少两个区分开来。 两次调用成功后，`paid`正好是 2，这给了我们一个已经从原始余额中扣除的已知金额。 
+
+在指数搜索期间，表达式`target - paid`始终为正，因为仅在以下情况下才执行查询`target > paid`。 它最多也是 (2^{59})，低于允许的最大查询量 (10^{18})。 Python 整数具有任意精度，因此不存在溢出问题。 
+
+最终循环不需要为当前帐户余额维护单独的变量。 每次成功的断电都会删除该二进制数字。 由于功率是从最大到最小进行测试的，因此在每个点上测试的功率都不大于剩余的可能平衡范围。 
+
+该程序没有要解析的普通输入，因为这是一项交互式任务。 所需的`input = sys.stdin.readline`按照 Python 实现约定的要求，声明仍用于读取交互器响应。 
 
 ## 工作示例
 
- 交互式样本是转录本而不是普通的输入文件。 样本 1 与初始余额 1 一致：`withdraw 42`被拒绝，`withdraw 1`被接受，第二个`withdraw 1`被拒绝，因为余额已经为零。 样本 2 与初始余额 0 一致。 
+ ### 示例 1
 
-对于样本 1，最佳算法不必重现样本转录本。 下面显示了 (n=1) 的六个查询。 
+ 样本交互对应于恰好为 1 的初始余额。其记录为：```
+withdraw 42
+rejected
+withdraw 1
+accepted
+withdraw 1
+rejected
+finish
+```我们的实现通过略有不同的记录得出了相同的结论，因为它是从检查一美元开始的。 
 
-| 步骤| 指数| 提款 | 回应 | 剩余余额 |
- | --- | --- | --- | --- | --- |
- | 1 | 30| (2^{30}) | 被拒绝 | 1 |
- | 2 | 15 | 15 (2^{15}) | 被拒绝 | 1 |
- | 3 | 7 | (2^7) | (2^7) | 被拒绝 | 1 |
- | 4 | 3 | (2^3) | (2^3) | 被拒绝 | 1 |
- | 5 | 1 | (2^1) | (2^1) | 被拒绝 | 1 |
- | 6 | 0 | (2^0) | (2^0) | 已接受 | 0 |
+| 步骤| 查询 | (n=1) | 的响应`paid`步骤后| 意义|
+ | ---| ---| ---| ---| ---|
+ | 1 |`withdraw 1`|`accepted`| 1 | (n\ge1) | (n\ge1) |
+ | 2 |`withdraw 1`|`rejected`| 1 | (n<2)，因此 (n=1) |
+ | 3 |`finish`|`OK`| 1 | 账户为空 |
 
- 二分查找以 (l=0) 结束，最终扫描删除单个美元。 然后算法打印`finish`。 样本的较短转录本只是同一隐藏平衡的另一个有效交互。 
+ 该跟踪说明了为什么第二个一美元查询是必要的。 单次接受的提款无法区分 (n=1) 和 (n=2) 或任何更大的正余额。 
 
-对于样本 2，初始余额为零。 
+### 示例 2
 
-| 步骤| 指数| 提款 | 回应 | 剩余余额 |
- | --- | --- | --- | --- | --- |
- | 1 | 30| (2^{30}) | 被拒绝 | 0 |
- | 2 | 15 | 15 (2^{15}) | 被拒绝 | 0 |
- | 3 | 7 | (2^7) | (2^7) | 被拒绝 | 0 |
- | 4 | 3 | (2^3) | (2^3) | 被拒绝 | 0 |
- | 5 | 1 | (2^1) | (2^1) | 被拒绝 | 0 |
- | 6 | 0 | (2^0) | (2^0) | 被拒绝 | 0 |
+ 第二个样本对应于初始余额为零：```
+withdraw 1
+rejected
+finish
+```| 步骤| 查询 | (n=0) | 的响应`paid`步骤后| 意义|
+ | ---| ---| ---| ---| ---|
+ | 1 |`withdraw 1`|`rejected`| 0 | (n<1)，因此 (n=0) |
+ | 2 |`finish`|`OK`| 0 | 账户为空 |
 
- 搜索再次以 (l=0) 结束。 最终查询确认无法提取任何美元，并且`finish`是正确的。 仅使用了六次尝试，低于 (q+10=10) 限制。 
+ 这是关键的小值案例。 始终执行长的二次方搜索的策略将超出此处的 (q+10=10) 查询限制，而所提出的算法在一次撤回尝试后停止。 
+
+### 一个更大的例子
+
+ 考虑 (n=13)。 前两次1美元提款留下11美元并设定`paid=2`。 在指数搜索过程中，算法最终证明 (2^3=8\le13) 但是 (2^4=16>13)。 与 8 的成功比较提取了剩余的 6 美元`paid=8`。 该帐户现在有 5 美元。 
+
+最终二进制提取测试4、2、1。4查询成功，剩下1块钱； 2 的查询被拒绝； 查询1成功。 总提款金额为（8+4+1=13），所以`finish`是安全的。 
 
 ## 复杂度分析
 
  | 测量 | 复杂性 | 说明|
- | --- | --- | --- |
- | 时间 | (O(q)) 交互式查询 | 最多 6 个二分搜索查询加上最多 (q+1) 个最终查询 |
- | 空间| (O(1)) | (O(1)) | 仅存储恒定数量的整型变量 |
+ | ---| ---| ---|
+ | 时间 | (O(\log n)) 交互式查询 | 恒定大小的指数搜索后跟每个二进制数字一个查询 |
+ | 空间| (O(1)) | (O(1)) | 仅存储几个整数变量和当前交互器响应 |
 
- 由于 (n\le10^{18}<2^{60})，我们总是有 (q\le60)。 因此，该算法最多使用 67 次提款尝试，而协议允许 (q+10)，即至少 10，并且对于最大可能的对数范围达到 70。 该实现使用常量内存。 
+ 余额以 (10^{18}) 为界，因此最多有 60 个相关的二进制位置。 最坏情况下的提款尝试次数最多为 67 次，低于 (n) 接近 (10^{18}) 时允许的 70 次尝试。 对于较小的 (n)，最终二进制查询的数量随着 (q) 的增加而减少，而指数搜索仍以 6 个查询为界，因此在整个范围内满足 (q+10) 限制。 
 
 ## 测试用例
 
- 因为这是交互式的，所以普通的 Codeforces 输入无法通过传统的离线方式重现`run(input_string)`帮手。 本地测试逻辑的有用方法是用保持隐藏平衡的模拟器替换交互器。 相同`strategy`然后，实际解决方案和测试工具都会使用该函数。```python
+ 由于原始任务是交互式的，因此它的样本不是普通的 stdin/stdout 测试用例。 一个有用的离线测试工具必须模拟隐藏余额并验证每次生成的提款是否合法，最终余额为零，并且尝试次数不超过（q+10）。 以下测试反映了提交的算法。```python
 import sys
+import io
 
-def strategy(ask, finish):
-    l, r = 0, 60
-
-    while r - l > 1:
-        m = (l + r) // 2
-        response = ask(1 << m)
-
-        if response == "accepted":
-            l = m
-        elif response == "rejected":
-            r = m
-        else:
-            raise RuntimeError("unexpected interactor response")
-
-    for i in range(l, -1, -1):
-        ask(1 << i)
-
-    finish()
-
-def run_hidden(n):
+def offline_commands(n):
     balance = n
     commands = []
 
     def ask(x):
         nonlocal balance
-        assert 1 <= x <= 10**18
 
-        commands.append(f"withdraw {x}")
+        assert 1 <= x <= 10**18
+        commands.append(("withdraw", x))
 
         if balance >= x:
             balance -= x
-            return "accepted"
-        return "rejected"
+            return True
+        return False
 
-    def finish():
-        commands.append("finish")
-        assert balance == 0
+    if not ask(1):
+        commands.append(("finish",))
+        return commands, balance
 
-    strategy(ask, finish)
+    if not ask(1):
+        commands.append(("finish",))
+        return commands, balance
+
+    paid = 2
+
+    lo = 1
+    hi = 59
+
+    while lo < hi:
+        mid = (lo + hi + 1) // 2
+        target = 1 << mid
+
+        if target <= paid:
+            lo = mid
+        else:
+            if ask(target - paid):
+                paid = target
+                lo = mid
+            else:
+                hi = mid - 1
+
+    f = lo
+    power = 1 << (f - 1)
+
+    while power >= 1:
+        ask(power)
+        power >>= 1
+
+    commands.append(("finish",))
     return commands, balance
 
-def check_sample_transcript(n, commands, replies):
-    balance = n
+def run(n):
+    commands, balance = offline_commands(n)
 
-    assert len(commands) == len(replies)
+    q = 0 if n == 0 else (n - 1).bit_length()
+    attempts = sum(1 for command in commands if command[0] == "withdraw")
 
-    for command, reply in zip(commands, replies):
-        parts = command.split()
+    assert balance == 0
+    assert commands[-1] == ("finish",)
+    assert attempts <= q + 10
 
-        if parts[0] == "withdraw":
-            x = int(parts[1])
-            expected = "accepted" if balance >= x else "rejected"
+    return commands
 
-            assert reply == expected
+def check_sample_1():
+    balance = 1
+    transcript = [
+        ("withdraw", 42, False),
+        ("withdraw", 1, True),
+        ("withdraw", 1, False),
+    ]
 
-            if expected == "accepted":
-                balance -= x
+    for _, x, accepted in transcript:
+        actual = balance >= x
+        assert actual == accepted
 
-        elif command == "finish":
-            assert balance == 0
-        else:
-            raise AssertionError("invalid command")
+        if actual:
+            balance -= x
 
     assert balance == 0
 
-# Provided Sample 1.
-sample1_commands = [
-    "withdraw 42",
-    "withdraw 1",
-    "withdraw 1",
-]
-sample1_replies = [
-    "rejected",
-    "accepted",
-    "rejected",
-]
-check_sample_transcript(1, sample1_commands, sample1_replies)
+def check_sample_2():
+    balance = 0
+    transcript = [
+        ("withdraw", 1, False),
+    ]
 
-# Provided Sample 2.
-sample2_commands = [
-    "withdraw 1",
-]
-sample2_replies = [
-    "rejected",
-]
-check_sample_transcript(0, sample2_commands, sample2_replies)
+    for _, x, accepted in transcript:
+        actual = balance >= x
+        assert actual == accepted
 
-# Minimum balance.
-commands, balance = run_hidden(0)
-assert balance == 0
-assert commands[-1] == "finish"
-assert len(commands) <= 10
+        if actual:
+            balance -= x
 
-# Small boundary values.
-commands, balance = run_hidden(1)
-assert balance == 0
-assert commands[-1] == "finish"
+    assert balance == 0
 
-commands, balance = run_hidden(2)
-assert balance == 0
-assert commands[-1] == "finish"
+check_sample_1()
+check_sample_2()
 
-commands, balance = run_hidden(3)
-assert balance == 0
-assert commands[-1] == "finish"
+# Minimum-size cases.
+assert run(0)[-1] == ("finish",), "zero balance"
+assert run(1)[-1] == ("finish",), "one dollar"
 
-# Exact power of two near the upper range.
-commands, balance = run_hidden(1 << 59)
-assert balance == 0
-assert commands[-1] == "finish"
-assert len(commands) <= 59 + 10
+# Boundary between q = 1 and q = 2.
+assert run(2)[-1] == ("finish",), "exact power of two"
+assert run(3)[-1] == ("finish",), "just above a power of two"
 
-# Maximum allowed balance.
-commands, balance = run_hidden(10**18)
-assert balance == 0
-assert commands[-1] == "finish"
-assert len(commands) <= 60 + 10
+# Large power of two, where the exponent reaches 59.
+assert run(1 << 59)[-1] == ("finish",), "2^59"
 
-# Repeated equal hidden balances catch accidental state leakage.
-results = [run_hidden(42) for _ in range(3)]
-assert all(balance == 0 for _, balance in results)
-assert results[0][0] == results[1][0] == results[2][0]
+# Maximum allowed initial balance.
+assert run(10**18)[-1] == ("finish",), "maximum balance"
 ```| 测试输入| 预期产出 | 它验证了什么 |
- | --- | --- | --- |
- | 样本 1 转录本，隐藏 (n=1) |`finish`, 余额 0 | 成功提现后出现多余的拒绝查询 |
- | 样本 2 转录本，隐藏 (n=0) |`finish`, 余额 0 | 最低余额和立即归零状态|
- | (n=0) | (n=0) |`finish`, 余额 0 | 尽可能最小的 (q) 和严格的查询预算 |
- | (n=1,2,3) |`finish`, 余额 0 | 最低的非零余额和位边界行为 |
- | (n=2^{59}) | (n=2^{59})`finish`, 余额 0 | 两个的最高相关幂 |
- | (n=10^{18}) | (n=10^{18})`finish`, 余额 0 | 最大允许余额和 (q=60) |
- | (n=42) 重复 3 次 |`finish`，每次余额0 | 状态隔离和确定性交互|
+ | ---| ---| ---|
+ | (n=0) | (n=0) |`finish`提款被拒绝后 | 最低余额和（q=0）查询限制 |
+ | (n=1) | (n=1) |`finish`区分后第二次提款| 最小正余额和差一边界 |
+ | (n=2) | (n=2) |`finish`完全撤回两个确切的权力| 精确的二次方处理 |
+ | (n=3) | (n=3) |`finish`提取二进制表示后 (11_2) | 紧邻 2 的幂以上的值 |
+ | (n=2^{59}) | (n=2^{59})`finish`| 最高相关二进制指数 |
+ | (n=10^{18}) | (n=10^{18})`finish`| 最大允许余额及查询金额边界 |
 
  ## 边缘情况
 
- 零余额自然由搜索处理。 为了`withdraw 1`当 (n=0) 时，答案是`rejected`，并且以后的每次提款也都会被拒绝。 二分查找最终到达(l=0)，最后扫描再执行一次`withdraw 1`， 和`finish`是有效的。 完整的交互仅使用六次尝试，而协议允许十次。 
+ 对于 (n=0)，确切的输入状态是隐藏余额为零，因此第一个命令是`withdraw 1`。 交互器拒绝它，因为 (0<1)，程序立即打印`finish`。 仅进行了一次尝试，而 (q=0) 允许进行十次。 
 
-对于 (n=1)，二分查找拒绝所有大于 1 的测试幂。 最终扫描从指数零开始，所以`withdraw 1`成功并留下零。 然后算法结束。 关键的边界是指数零包含在最终循环中。 从一开始就会错过唯一的一美元。 
+对于 (n=1)，交互作用开始于`withdraw 1`，被接受并留零。 程序此时不能简单地完成，因为每个 (n\ge1) 也会发生相同的响应。 它发送`withdraw 1`再次，收到`rejected`，现在知道原来的余额还不到二。 结合第一个接受的提款，这证明了（n=1）。 程序在两次尝试后完成，远低于 (q+10=10)。 
 
-对于精确幂（例如 (n=2^5=32)），二分搜索查询可以成功提取 32 并保留 0。 后来的询问全部被拒绝。 最终扫描仍然安全，因为拒绝的提款没有任何作用。 这说明了为什么解决方案不能假设`accepted`响应意味着余额现在为零。 
+对于 (n=2)，两个初始的一美元查询都被接受，所以`paid=2`并且真实账户是空的。 指数搜索知道指数 1 已经有效，因为`paid`本身等于 (2^1)。 它不发出零值查询。 剩余的功率测试资金空了，全部被拒绝，之后`finish`是正确的。 这避免了实现意外尝试的常见边界错误`withdraw 0`。 
 
-对于最大余额 (n=10^{18})，我们有 (2^{59}<10^{18}<2^{60})，因此 (q=60)。 每个查询都使用 60 以下的指数，二分查找最多需要六次尝试。 即使 (l=59)，最终扫描也只需要再尝试 60 次，根据确切的搜索路径，最多给出 66 或 67 次尝试，低于允许的 70 次。 
+对于 (n=3)，前两次取款再次建立`paid=2`。 指数搜索找到 (f=1)，因为 (2\le3<4)。 剩余余额为1，所以最终`withdraw 1`成功并将其删除。 二进制提取将原始值表示为 (2+1)，完全符合要求。 
 
-最微妙的情况是当接受的查询在二分搜索期间改变平衡时。 假设（n=100）。 对 8 的查询可以成功，将余额减少到 92。稍后对 32 的查询也可以成功，将其减少到 60，而对 64 的查询则被拒绝。 这些响应不能被解释为与原始 100 的比较。仍然有效的是算法所需的较弱的语句：最终拒绝的边界证明当前余额小于上面的下一个幂 (l)。 然后，最终的降序扫描会删除剩余的二进制表示，而不依赖于原始余额不变。
+对于 (n=2^{59})，指数搜索达到允许的最大幂 (2^{59})。 成功比较后，`paid`等于全部余额。 最终测试使用从 (2^{58}) 到 1 的幂，所有这些都被拒绝。 本例在不查询 (2^{60}) 的情况下执行上指数边界，这将超出允许的提款金额 (10^{18})。 
+
+对于(n=10^{18})，最大可能的初始余额为(q=60)。 该算法首先提取两美元，使用最多 6 个附加查询来定位最高相关功率，然后使用最多 59 个二进制数字查询。 即使在最差的交互中，最多也有 67 次提款尝试，低于允许的值 (q+10=70)。 每次单独提款的实施也保持在允许的最大值 (10^{18}) 之内。
