@@ -1,7 +1,7 @@
 ---
 title: "CF 102215M - Shlakoblock 已上线！"
-description: "有 (n) 场比赛。 在我们投票之前，游戏 (i) 已经获得了 (vi) 票，观看该游戏给我们带来乐趣 (pi)。 我们最多可以为每个游戏添加一票，因此我们的选择只是游戏索引的子集。 我们投票后，从所有选票中统一随机选出一票。"
-date: "2026-08-17T23:56:41+07:00"
+description: "我们有 (n) 场比赛。 游戏 (i) 目前有 (vi) 票，观看它会带来乐趣 (pi)。 我们可以为任何游戏添加一票，但每场游戏最多一次。 经过我们的选择后，统一随机选出一票，因此票数越多的游戏就越有可能被直播。"
+date: "2026-08-18T12:20:18+07:00"
 tags: ["codeforces", "competitive-programming"]
 categories: ["algorithms"]
 codeforces_contest: 102215
@@ -9,7 +9,7 @@ codeforces_index: "M"
 codeforces_contest_name: "2019, XII Samara Regional Intercollegiate Programming Contest"
 rating: 0
 weight: 102215
-solve_time_s: 172
+solve_time_s: 641
 verified: false
 draft: false
 ---
@@ -18,111 +18,129 @@ draft: false
 
  **评级：** -
  **标签：** -
- **求解时间：** 2m 52s
+ **求解时间：** 10m 41s
  **已验证：** 否
 
  ## 解决方案
  ## 问题理解
 
- 有 (n) 场比赛。 在我们投票之前，游戏 (i) 已经有 (v_i) 票，观看该游戏给我们带来乐趣 (p_i)。 我们最多可以为每个游戏添加一票，因此我们的选择只是游戏索引的子集。 
+ 我们有 (n) 场比赛。 游戏 (i) 目前有 (v_i) 票，观看它会带来乐趣 (p_i)。 我们可以为任何游戏添加一票，但每场游戏最多一次。 经过我们的选择后，统一随机选出一票，因此票数越多的游戏就越有可能被直播。 
 
-我们投票后，从所有选票中统一随机选出一票。 如果游戏(i)以(v_i+1)票结束，当我们投票给它时，它对预期快乐的贡献是(p_i(v_i+1))。 如果我们不投票，它的贡献是 (p_i v_i)。 
-
-让
+令 (S) 为我们投票支持的游戏集。 如果当前总票数为
 
  [
- V=\sum_i v_i
+ V=\sum_{i=1}^n v_i,
  ]
 
- 是现有投票数，并且
+ 那么投票后有(V+|S|)票。 所有选票所代表的总快乐为
 
  [
- P=\sum_i p_i v_i
+ A+\sum_{i\in S}p_i,
  ]
 
- 是这些选票加权的总快乐。 如果我们选择包含(k)个游戏的子集(S)，则最终的投票数为(V+k)，而总加权快乐变为
+ 哪里
 
  [
- P+\sum_{i\in S}p_i。 
+ A=\sum_{i=1}^n v_i p_i。 
 ]
 
  因此预期的快乐是
 
  [
- \frac{P+\sum_{i\in S}p_i}{V+|S|}。 
+ \frac{A+\sum_{i\in S}p_i}{V+|S|}。 
 ]
 
- 任务是选择（S）最大化该分数，然后以不可约形式输出该分数和选定的博弈指数。 
+ 任务是选择（S），以不可约形式打印最大可能的分数，并打印一组实现它的游戏。 
 
-约束给出 (n\le 1000)，因此 (O(n^2)) 解决方案很容易合理，而 (O(n\log n)) 解决方案则轻松地在两秒限制内。 另一方面，枚举所有子集已经给出了 (2^{1000}) 种可能性，这是完全不可行的。 事实上，可能有多达 500 个测试用例，这使得指数方法更加不可行。 
+约束足够小，足以进行排序，但不足以枚举子集。 一次测试中可以有 (n=1000) 个游戏，最多可以有 500 个测试用例。 在最坏的聚合情况下， (O(n^2)) 解决方案已经不必要地昂贵，而 (O(n\log n)) 很容易足够快。 (p_i,v_i) 值最多为 1000，但总和最多涉及 1000 项，因此普通 Python 整数就足够了。 
 
-在许多情况下，粗心的实施可能会失败。 首先，必须允许不选择任何游戏。 例如，```
+在许多情况下，粗心的实施可能会失败。 如果我们不选择任何游戏，答案仍然是最优的。 例如，```
 1
 1
 0 5
-```已经有了预期的乐趣（0），为游戏投票并不能改善它。 最佳答案是```
+```给出预期的快乐（0/5=0），所以正确的输出是```
 0/1
 0
-```始终选择至少一个游戏的实现仍然会在这里获得相同的数值，但它可能会违反其自己对所选集合的假设或产生不必要的投票。 
+```总是添加至少一款游戏的实现会产生更糟糕的结果。 
 
-一个更重要的边缘情况是没有现有投票的游戏。 考虑```
+第二个问题是当前投票为零的游戏仍然有资格获得我们的投票。 为了```
 1
 2
+10 1
 100 0
-0 1
-```如果没有我们的投票，预期的快乐是（0）。 为游戏1投票给出了两票总票数和预期的乐趣（100/2=50），所以必须选择游戏1。 对于游戏 1，现有值 (p_i v_i) 为零，但我们的额外投票贡献 (p_i)。 忘记额外的贡献是错误公式的常见原因。 
+```初始期望为(10)。 对游戏 2 进行投票给出 (110/2=55)，这是最优的。 忽略 (v_i=0) 的游戏会错过答案。 
 
-快乐中的联系是另一个边界情况。 为了```
+第三个问题是，每当我们投票给另一场比赛时，分母就会发生变化。 为了```
 1
-3
-5 10
-5 20
-5 30
-```所有可能的预期快乐都是（5），包括不选择游戏。 任何子集都是有效的，因此算法不能依赖于唯一的最优子集。 确定性平局打破规则对于测试很有用，但不是问题所必需的。 
+2
+100 1
+0 100
+```对第一个游戏的投票给出 (200/101)，而对第二个游戏的投票给出 (100/101)。 不能通过简单地选择每场具有积极乐趣的游戏来做出选择。 增加投票的贡献必须与分母中额外的（1）一起考虑。 
 
-最后，答案是一个分数，不一定是整数。 在第二个示例中，最佳值是 (5110/1114)，它减少到 (2555/557)。 即使其数值是正确的，打印未约分分数也会违反输出要求。 
+最后，几个不同的子集可以达到相同的最优值。 和```
+1
+2
+5 1
+5 1
+```在对任一游戏进行投票后，最佳答案是（10/2=5），并且两种选择都有效。 该算法只需要保留一个最优子集。 
 
 ## 方法
 
- 直接的方法是枚举 (n) 个游戏的每个子集。 对于每个子集，我们可以计算其大小，将其所选游戏的乐趣添加到 (P)，除以 (V+|S|)，并保留最佳分数。 这是正确的，因为每个合法投票策略都是一个子集，因此枚举会考虑每种可能的策略。 
+ 最直接的方法是尝试游戏的每个子集。 对于一个子集（S），我们可以计算它的分子和分母，并保留最佳期望值。 这是正确的，因为每一种合法投票策略都由一个子集代表。 然而，有 (2^n) 个子集，并且评估每个子集需要 (O(n)) 工作，在最坏的情况下给出 (O(n2^n)) 次操作。 对于（n=1000），即使（2^{1000}）也远远超出了任何可以在时间限制内运行的范围。 
 
-然而，有 (2^n) 个子集。 如果我们通过扫描每个子集的所有 (n) 场比赛来计算分子，则最坏情况的工作是 (O(n2^n))。 即使使用更仔细的子集动态程序在 (O(1)) 额外时间内评估每个子集，仍然存在 (2^n) 个状态。 在 (n=1000) 时，这远远超出了任何实现的处理能力。 
-
-有用的观察是，分母仅取决于我们选择的游戏数量，而不取决于我们选择的游戏。 假设我们提前决定为 (k) 场比赛投票。 那么分母固定为(V+k)，(P)也固定。 我们唯一可以优化的部分是
+当我们不再关心所选游戏的身份并首先确定它们的数量时，有用的结构就会出现。 假设我们决定为 (k) 场比赛投票。 然后分母固定为 (V+k)，并且原始贡献 (A) 也固定。 我们唯一可以优化的部分是
 
  [
  \sum_{i\in S}p_i。 
 ]
 
- 对于恰好 (k) 个选定的游戏，通过取 (p_i) 的 (k) 个最大值来最大化该总和。 一旦 (k) 确定，现有的投票数 (v_i) 不再影响应该选择哪些游戏。 它们影响固定基线 (P) 和 (V)，但具有相同 (k) 的每个候选者都具有相同的分母和相同的基线。 
+ 对于恰好 (k) 个游戏，通过取 (k) 个最大快乐值来最大化该总和。 
 
-这将整个问题简化为按 (p_i) 对游戏进行排序，然后考虑该排序顺序的每个前缀。 对于前缀长度 (k)，我们知道大小 (k) 的所有子集中可能最好的分子。 我们简单地使用精确整数算术来比较那些 (n+1) 个候选者。 
+该观察将指数搜索转变为简单的排序前缀搜索。 按递减 (p_i) 对游戏进行排序。 排序后，大小 (k) 的最佳子集正是前 (k) 个游戏。 我们可以逐步建立他们的快乐总和，并评估从 0 到 (n) 的所有 (k)。 
 
-强力方法之所以有效，是因为每个子集代表一种可能的投票策略，但会失败，因为子集的数量呈指数级增长。 观察到具有相同数量的添加选票的所有策略共享相同的分母，这让我们可以用一个最佳代表（即（k）个最大的快乐）来替换所有大小（k）的子集。 
+蛮力方法之所以有效，是因为它考虑了每个可能的子集。 它失败了，因为子集的数量呈指数级增长。 观察到固定子集大小的最佳选择由具有最大 (p_i) 的游戏组成，这让我们可以用一个代表替换相同大小的所有子集，从而在排序后将问题减少到 (n+1) 个候选策略。 
+
+为了精确比较分数，我们不应该使用浮点数。 对于两名候选人
+
+ [
+ \frac{x_1}{y_1}
+ \quad\text{和}\quad
+ \frac{x_2}{y_2},
+ ]
+
+ 我们将 (x_1y_2) 与 (x_2y_1) 进行比较。 Python 整数可以准确地处理这些乘积。 
 
 | 方法| 时间复杂度| 空间复杂度| 判决 |
  | ---| ---| ---| ---|
  | 蛮力 | (O(n2^n)) | (O(n)) | (O(n)) | 太慢了 |
- | 最佳 | (O(n\log n)) | (O(n)) | (O(n)) | 已接受 |
+ | 最佳| (O(n\log n)) | (O(n)) | (O(n)) | 已接受 |
 
  ## 算法演练
 
- 1. 计算 (V=\sum v_i) 和 (P=\sum p_i v_i)。 这些是现有投票的总数以及这些投票贡献的总快乐。 由于每个策略都从同一个现有民意调查开始，因此这些数量构成了每个候选人的共同基线。 
-2. 按 (p_i) 的降序对所有游戏进行排序。 保留他们的原始指数以及他们的快乐值。 该顺序让我们可以通过前缀表示每个可能大小的最佳子集。 
-3. 从 (k=0) 开始。 它的候选值是（P/V），因为我们不添加任何选票。 必须考虑这种情况，因为添加投票会降低预期的快乐。 
-4. 按照从最大乐趣到最小乐趣的顺序遍历排序的游戏。 当添加下一个游戏时，将额外的乐趣增加其（p_i），并将票数增加一。 对于长度为 (k) 的前缀，候选分数为
+ 1. 计算当前总票数（V=\sum v_i）和当前总快乐贡献（A=\sum v_i p_i）。 这些值描述了在添加我们的任何选票之前预期的乐趣。 
+2. 按递减 (p_i) 对所有游戏进行排序，保留其原始索引。 如果我们最终决定添加恰好 (k) 票，则此排序中的前 (k) 场游戏会带来最大可能的附加乐趣。 
+3. 从 (k=0) 开始。 候选人的期望是（A/V）。 该问题保证至少有一个 (v_i) 为正，因此 (V>0)。 
+4. 遍历已排序的游戏。 当处理下一个游戏时，将其（p_i）添加到运行前缀和中。 添加(k)场比赛后，候选分子为(A+\text{prefix})，而分母为(V+k)。 
+5. 使用交叉乘法将每个候选者与迄今为止看到的最佳候选者进行比较。 如果
 
  [
- \frac{P+\text{前缀快乐}}{V+k}。 
-]
+ (A+\text{前缀})(V+k_{\text{最佳}})
 
- 该前缀在恰好包含 (k) 个游戏的所有子集中是最佳的，因为它包含 (k) 个最大的快乐值。
+ >
 
-1. 通过交叉乘法将当前候选与迄今为止找到的最佳分数进行比较。 对于分数 (a/b) 和 (c/d)，比较 (ad) 和 (cb)。 这避免了浮点精度错误并给出了精确的排序。 
-2. 只要新的候选者严格更好，就存储前缀长度和索引。 当值相等时保持第一个最优值是有效的，因为该问题接受任何最优子集。 
-3. 找到最佳前缀后，将其分子和分母减去它们的最大公约数。 输出减少的分数、所选游戏的数量及其原始指数。 
+ (A+\text{前缀}_{\text{最佳}})(V+k),
+ ]
 
-为什么它有效：对于我们可以添加的每个可能的票数 (k)，分母 (V+k) 是固定的。 现有的贡献（P）也是固定的。 因此，在大小 (k) 的所有子集中，最大化预期快乐与最大化它们 (p_i) 值的总和完全相同。 (k) 最大 (p_i) 值达到该最大值，因此排序后的前缀为每个可能的 (k) 提供了最佳策略。 由于该算法检查从 (0) 到 (n) 的每个 (k)，因此它会检查每个可能的大小类别中的最佳策略，从而找到全局最优策略。 
+ 替换当前的最佳答案。 
+
+1. 存储相应的(k)。 由于游戏已经按照快乐程度递减排序，因此前 (k) 个索引形成了该 (k) 的最佳投票集。 
+2. 扫描后，通过将分子和分母除以最大公约数来减少最佳分数。 打印减少的分数、选定的计数以及相应的原始索引。 
+
+### 为什么它有效
+
+ 对于每一个可能的附加票数 (k)，分母恰好是 (V+k)。 在 (k) 个游戏的所有子集中，原始贡献 (A) 是相同的，因此最大化预期乐趣相当于最大化它们 (p_i) 值的总和。 (k) 最大 (p_i) 值给出最大可能的总和，因此排序后的前缀对于该特定 (k) 是最佳的。
+
+该算法检查从 0 到 (n) 的每个可能的 (k)，并且对于每个 (k)，它检查该大小的最佳子集。 因此，全局最优必须位于扫描考虑的候选者之中。 交叉乘法精确地比较这些候选者，因此所选候选者是真正的最大值而不是浮点近似值。 
 
 ## Python 解决方案```python
 import sys
@@ -139,91 +157,26 @@ def solve():
 
         games = []
         total_votes = 0
-        base_pleasure = 0
+        total_pleasure = 0
 
-        for i in range(n):
+        for idx in range(1, n + 1):
             p, v = map(int, input().split())
-            games.append((p, i + 1))
+            games.append((p, idx))
             total_votes += v
-            base_pleasure += p * v
+            total_pleasure += p * v
 
         games.sort(key=lambda x: (-x[0], x[1]))
 
-        best_num = base_pleasure
+        best_num = total_pleasure
         best_den = total_votes
         best_k = 0
-        best_indices = []
 
         prefix = 0
 
         for k, (p, idx) in enumerate(games, 1):
             prefix += p
 
-            cur_num = base_pleasure + prefix
-            cur_den = total_votes + k
-
-            if cur_num * best_den > best_num * cur_den:
-                best_num = cur_num
-                best_den = cur_den
-                best_k = k
-                best_indices = [games[j][1] for j in range(k)]
-
-        g = gcd(best_num, best_den)
-        best_num //= g
-        best_den //= g
-
-        out.append(f"{best_num}/{best_den}")
-        out.append(str(best_k))
-        out.append(" ".join(map(str, best_indices)))
-
-    sys.stdout.write("\n".join(out))
-
-if __name__ == "__main__":
-    solve()
-```输入循环将每个游戏及其原始的基于一的索引存储为它的乐趣。 同时它计算两个公共基线量，`total_votes`和`base_pleasure`，因此不需要为每个候选人重新计算。 
-
-这种类型使用递减的快乐。 按原始索引进行二次排序在数学上不是必需的，但当多个游戏具有相同的乐趣时，它使程序具有确定性。 由于平等的快乐对于目标是可以互换的，因此它们之间的任何顺序都是有效的。 
-
-初始候选者是空前缀。 它的分母是`total_votes`，输入条件保证其为正，因此不存在被零除的情况。 
-
-在扫描过程中，`prefix`包含第一个快乐的总和`k`游戏。 当前分子是`base_pleasure + prefix`，而分母是`total_votes + k`。 比较使用乘法而不是`/`，所以所有的决定都是准确的。 Python 整数也会自动增长，因此叉积不会溢出。 
-
-所选索引的列表是从第一个重建的`k`每当找到严格更好的候选者时，就会对游戏进行排序。 对于字面实现而言，这是 (O(n)) 的改进，这可能会使最坏情况下的扫描 (O(n^2)) 。 对于 (n\le1000) 来说，这仍然很容易接受。 如果需要，该实现可以只存储`best_k`在扫描期间并在最后重建一次前缀，给出严格的 (O(n\log n)) 实现。 
-
-这是稍微干净一点的版本，它避免了重复的列表构造：```python
-import sys
-from math import gcd
-
-input = sys.stdin.readline
-
-def solve():
-    t = int(input())
-    out = []
-
-    for _ in range(t):
-        n = int(input())
-
-        games = []
-        total_votes = 0
-        base_pleasure = 0
-
-        for i in range(1, n + 1):
-            p, v = map(int, input().split())
-            games.append((p, i))
-            total_votes += v
-            base_pleasure += p * v
-
-        games.sort(key=lambda x: (-x[0], x[1]))
-
-        best_num = base_pleasure
-        best_den = total_votes
-        best_k = 0
-
-        prefix = 0
-
-        for k, (p, _) in enumerate(games, 1):
-            prefix += p
-            cur_num = base_pleasure + prefix
+            cur_num = total_pleasure + prefix
             cur_den = total_votes + k
 
             if cur_num * best_den > best_num * cur_den:
@@ -235,181 +188,234 @@ def solve():
         best_num //= g
         best_den //= g
 
-        answer_indices = [idx for _, idx in games[:best_k]]
-
         out.append(f"{best_num}/{best_den}")
         out.append(str(best_k))
-        out.append(" ".join(map(str, answer_indices)))
+
+        if best_k == 0:
+            out.append("")
+        else:
+            chosen = [str(games[i][1]) for i in range(best_k)]
+            out.append(" ".join(chosen))
 
     sys.stdout.write("\n".join(out))
 
 if __name__ == "__main__":
     solve()
-```第二个版本是要提交的版本。 它唯一有意义的区别是它会记住最佳前缀长度，而不是在每次改进期间复制选定的索引。 最终的切片操作仅构造一次所需的答案。 
+```输入循环将每个游戏存储为`(p, index)`因为只有它的乐趣会影响排序，而输出需要它的原始索引。 同时，累计当前的投票数和当前的快乐贡献度。 
+
+排序步骤使用递减的快乐。 按原始索引进行二次排序在数学上不是必需的，但当多个游戏具有相同的乐趣时，它使程序具有确定性。 
+
+扫描从 (k=0) 开始，这很重要，因为投票任何游戏都是合法的。 变量`prefix`是前 (k) 个排序游戏的乐趣之和，因此候选分子和分母始终恰好是 (A+\text{prefix}) 和 (V+k)。 
+
+比较使用乘法而不是除法。 对于正分母，
+
+ [
+ \frac{x}{y}>\frac{a}{b}
+ ]
+
+ 等价于(xb>ay)。 这避免了浮点精度错误，也避免了重复构造浮点值。 
+
+所选索引是从第一个索引重建的`best_k`已排序数组的元素。 不存在相差一的问题，因为`enumerate(games, 1)`使`k`等于前缀中包含的游戏数量。 
+
+分母始终为正，因为原始输入至少包含一票赞成票。 Python 的任意精度整数也使得溢出不可能发生，即使实际边界对于标准 64 位算术来说已经足够小了。 
+
+什么时候`best_k`为零，则所需的第三输出行为空。 该代码显式附加一个空字符串，以便每个测试用例仍然恰好占用三个输出行。 
 
 ## 工作示例
 
- 对于第一个测试用例，现有的加权快乐是
+ 第一个示例包含五款游戏。 他们的初始总数是 (V=21)，他们当前的快乐贡献是
 
  [
- 10\cdot5+4\cdot7+6\cdot3+8\cdot2+2\cdot4=120,
+ A=5\cdot10+7\cdot4+3\cdot6+2\cdot8+4\cdot2=120。 
+]
+
+ 按兴趣排序后，顺序为游戏1、4、3、2、5。 
+
+| (k) | 增添乐趣 | 分子| 分母| 期望|
+ | ---| ---| ---| ---| ---|
+ | 0 | 0 | 120 | 120 21 | 21 (120/21) |
+ | 1 | 10 | 10 130 | 130 22 | 22 (130/22) |
+ | 2 | 18 | 18 138 | 138 23 | 23 (138/23=6) |
+ | 3 | 24 | 144 | 144 24 | (144/24=6) |
+ | 4 | 28 | 28 148 | 148 25 | 25 (148/25) |
+ | 5 | 30| 150 | 150 26 | 26 (150/26) |
+
+ 最大值为 6。(k=2) 和 (k=3) 之间存在平局。 该实现保留第一个最大值，因为它仅在新候选值严格更大时才替换最佳答案。 因此它选择游戏 1 和 4 并打印`6/1`。 
+
+第二个样本有 (V=1111) 和
+
+ [
+ A=1000\cdot1+100\cdot10+10\cdot100+1\cdot1000=4000。 
+]
+
+ 排序顺序为游戏 4、3、2、1。 
+
+| (k) | 增添乐趣 | 分子| 分母| 期望|
+ | ---| ---| ---| ---| ---|
+ | 0 | 0 | 4000 | 1111 | 1111 (4000/1111) |
+ | 1 | 1000 | 1000 5000 | 1112 | 1112 (5000/1112) |
+ | 2 | 1100 | 1100 5100 | 5100 1113 | 1113 (5100/1113) |
+ | 3 | 1110 | 1110 5110 | 5110 1114 | 1114 (5110/1114) |
+ | 4 | 1111 | 1111 5111| 1115 | 1115 (5111/1115) |
+
+ 最佳候选者使用游戏 4、3 和 2。其分数为
+
+ [
+ \frac{5110}{1114}=\frac{2555}{557},
  ]
 
- 现有投票数为 (21)。 按乐趣排序给出游戏 (1,4,3,2,5)。 
-
-| (k) | 选定的前缀 | 增添乐趣| 分子| 分母| 期待的快乐|
- | ---| ---| ---| ---| ---| ---|
- | 0 | 无 | 0 | 120 | 120 21 | 21 (120/21) |
- | 1 | 1 | 10 | 10 130 | 130 22 | 22 (130/22) |
- | 2 | 1, 4 | 18 | 18 138 | 138 23 | 23 (138/23=6) |
- | 3 | 1, 4, 3 | 24 | 144 | 144 24 | (6) |
- | 4 | 1, 4, 3, 2 | 28 | 28 148 | 148 25 | 25 (148/25) |
- | 5 | 1, 4, 3, 2, 5 | 1, 4, 3, 2, 5 | 30| 150 | 150 26 | 26 (150/26) |
-
- 最佳值是 (6)，通过游戏 1 和 4 通过 (k=2) 实现。选择游戏 3 也可以将预期乐趣保持在 (6)，因此允许算法保留第一个严格更好的候选者，即游戏 1 和 4。 
-
-对于第二个测试用例，每个现有游戏对加权快乐的贡献为 (1000)，因此基线为 (4000/1111)。 游戏按(4,3,2,1)排序后已按喜好排序。 
-
-| (k) | 选定的前缀 | 增添乐趣 | 分子| 分母| 比较|
- | ---| ---| ---| ---| ---| ---|
- | 0 | 无 | 0 | 4000 | 1111 | 1111 基线 |
- | 1 | 4 | 1000 | 1000 5000 | 1112 | 1112 改善 |
- | 2 | 4, 3 | 1100 | 1100 5100 | 5100 1113 | 1113 改善 |
- | 3 | 4, 3, 2 | 1110 | 1110 5110 | 5110 1114 | 1114 改善 |
- | 4 | 4, 3, 2, 1 | 1111 | 1111 5111| 1115 | 1115 减少 |
-
- 最佳值是 (5110/1114)，它具有最大公约数 (2)，给出所需的输出分数 (2555/557)。 选取的游戏为4、3、2，正是愉悦值最大的三款游戏。 
+ 将两个数字除以 2 后，这已经是所请求的简化表示。 
 
 ## 复杂度分析
 
- | 测量 | 复杂性 | 说明|
+ | 测量| 复杂性 | 说明|
  | ---| ---| ---|
- | 时间 | (O(n\log n)) | 排序在游戏中的线性扫描中占主导地位。 |
- | 空间| (O(n)) | (O(n)) | 游戏数组和输出索引需要线性内存。 |
+ | 时间 | (O(n\log n)) | 排序主导线性扫描和输入处理 |
+ | 空间| (O(n)) | (O(n)) | 游戏数组存储每场游戏的一条记录 |
 
- 对于 (n\le1000)，每个测试用例最多排序 1000 对很小，并且线性扫描每个用例仅执行几千次整数运算。 即使有多达 500 个测试用例，总输入大小也是相关的限制因素，并且算法可以轻松地保持在 2 秒和 256 MB 的限制范围内。 
+ 对于 (n\le1000)，排序 (O(n\log n)) 完全在 2 秒限制内。 即使跨越 500 个测试用例，该算法在每个游戏中也只执行除排序之外的少量工作，并且其内存使用量与一个测试用例的大小呈线性关系。 
 
 ## 测试用例
 
- 由于该问题允许多个最优子集，因此强大的测试工具应该验证生成答案的数学有效性，而不是需要一个特定的有效子集。 以下测试代码调用相同的解决方案逻辑，并检查报告的分数是否是最佳的，所选的索引是否独特且有效，以及报告的分数是否与所选的集合匹配。```python
+ 下面的测试工具使用与提交的解决方案相同的确定性打破平局。 对于一般验证，它还会检查答案的结构有效性及其最佳值，因为 Codeforces 允许任何最佳子集。```python
 import sys
 import io
 from math import gcd
 
-def solve_data(inp: str) -> str:
-    data = io.StringIO(inp)
-    t = int(data.readline())
-    out = []
+def solution(inp: str) -> str:
+    old_stdin = sys.stdin
+    old_stdout = sys.stdout
 
-    for _ in range(t):
-        n = int(data.readline())
+    sys.stdin = io.StringIO(inp)
+    sys.stdout = io.StringIO()
 
-        games = []
-        total_votes = 0
-        base_pleasure = 0
+    try:
+        input = sys.stdin.readline
 
-        for i in range(1, n + 1):
-            p, v = map(int, data.readline().split())
-            games.append((p, i))
-            total_votes += v
-            base_pleasure += p * v
+        t = int(input())
+        out = []
 
-        games.sort(key=lambda x: (-x[0], x[1]))
+        for _ in range(t):
+            n = int(input())
 
-        best_num = base_pleasure
-        best_den = total_votes
-        best_k = 0
-        prefix = 0
+            games = []
+            total_votes = 0
+            total_pleasure = 0
 
-        for k, (p, _) in enumerate(games, 1):
-            prefix += p
-            cur_num = base_pleasure + prefix
-            cur_den = total_votes + k
+            for idx in range(1, n + 1):
+                p, v = map(int, input().split())
+                games.append((p, idx))
+                total_votes += v
+                total_pleasure += p * v
 
-            if cur_num * best_den > best_num * cur_den:
-                best_num = cur_num
-                best_den = cur_den
-                best_k = k
+            games.sort(key=lambda x: (-x[0], x[1]))
 
-        g = gcd(best_num, best_den)
-        best_num //= g
-        best_den //= g
+            best_num = total_pleasure
+            best_den = total_votes
+            best_k = 0
+            prefix = 0
 
-        indices = [idx for _, idx in games[:best_k]]
+            for k, (p, idx) in enumerate(games, 1):
+                prefix += p
+                cur_num = total_pleasure + prefix
+                cur_den = total_votes + k
 
-        out.append(f"{best_num}/{best_den}")
-        out.append(str(best_k))
-        out.append(" ".join(map(str, indices)))
+                if cur_num * best_den > best_num * cur_den:
+                    best_num = cur_num
+                    best_den = cur_den
+                    best_k = k
 
-    return "\n".join(out)
+            g = gcd(best_num, best_den)
+            best_num //= g
+            best_den //= g
 
-def run(inp: str) -> str:
-    return solve_data(inp)
+            out.append(f"{best_num}/{best_den}")
+            out.append(str(best_k))
 
-def check(inp: str, out: str):
-    in_lines = inp.strip().splitlines()
+            if best_k == 0:
+                out.append("")
+            else:
+                out.append(" ".join(str(games[i][1]) for i in range(best_k)))
+
+        return "\n".join(out)
+    finally:
+        sys.stdin = old_stdin
+        sys.stdout = old_stdout
+
+def check(inp: str, output: str):
+    data = list(map(int, inp.split()))
     pos = 0
-    t = int(in_lines[pos])
+    t = data[pos]
     pos += 1
 
-    out_lines = out.splitlines()
-    out_pos = 0
+    lines = output.splitlines()
+    line_pos = 0
 
     for _ in range(t):
-        n = int(in_lines[pos])
+        n = data[pos]
         pos += 1
 
         games = []
         total_votes = 0
-        base = 0
+        total_pleasure = 0
 
-        for i in range(1, n + 1):
-            p, v = map(int, in_lines[pos].split())
-            pos += 1
+        for idx in range(1, n + 1):
+            p = data[pos]
+            v = data[pos + 1]
+            pos += 2
             games.append((p, v))
             total_votes += v
-            base += p * v
+            total_pleasure += p * v
 
-        num, den = map(int, out_lines[out_pos].split("/"))
-        out_pos += 1
+        fraction = lines[line_pos]
+        line_pos += 1
 
-        k = int(out_lines[out_pos])
-        out_pos += 1
+        num, den = map(int, fraction.split("/"))
+        assert gcd(num, den) == 1
+        assert den > 0
 
-        indices = []
+        k = int(lines[line_pos])
+        line_pos += 1
+
+        chosen = []
         if k > 0:
-            indices = list(map(int, out_lines[out_pos].split()))
-        out_pos += 1
+            chosen = list(map(int, lines[line_pos].split()))
+        line_pos += 1
 
-        assert len(indices) == k
-        assert len(set(indices)) == k
-        assert all(1 <= x <= n for x in indices)
+        assert 0 <= k <= n
+        assert len(chosen) == k
+        assert len(set(chosen)) == k
+        assert all(1 <= x <= n for x in chosen)
 
-        actual_num = base + sum(games[i - 1][0] for i in indices)
+        chosen_set = set(chosen)
+        actual_num = total_pleasure
+        for i, (p, v) in enumerate(games, 1):
+            if i in chosen_set:
+                actual_num += p
+
         actual_den = total_votes + k
 
         assert num * actual_den == actual_num * den
-        assert gcd(num, den) == 1
 
-        best_num = base
+        best_num = total_pleasure
         best_den = total_votes
 
-        for mask_k in range(n + 1):
-            if mask_k == 0:
-                cur_num = base
-            else:
-                values = sorted((p for p, _ in games), reverse=True)
-                cur_num = base + sum(values[:mask_k])
+        ordered = sorted((p, i) for i, (p, v) in enumerate(games, 1))
+        ordered.reverse()
 
-            cur_den = total_votes + mask_k
+        prefix = 0
+        for kk in range(1, n + 1):
+            prefix += ordered[kk - 1][0]
+            candidate_num = total_pleasure + prefix
+            candidate_den = total_votes + kk
+            assert candidate_num * best_den <= best_num * candidate_den or (
+                candidate_num * best_den == best_num * candidate_den
+            )
 
-            if cur_num * best_den > best_num * cur_den:
-                best_num = cur_num
-                best_den = cur_den
+            if candidate_num * best_den > best_num * candidate_den:
+                best_num = candidate_num
+                best_den = candidate_den
 
-        assert num * best_den == best_num * den
-
-# Provided sample.
 sample = """2
 5
 10 5
@@ -424,98 +430,79 @@ sample = """2
 1000 1
 """
 
-check(sample, run(sample))
+check(sample, solution(sample))
 
-# Minimum-size input.
-case_min = """1
+minimum = """1
 1
-0 1
+0 7
 """
-assert run(case_min) == "0/1\n0\n"
+check(minimum, solution(minimum))
 
-# All pleasures equal. The deterministic implementation keeps k = 0.
-case_equal = """1
-3
-5 10
-5 20
-5 30
+all_equal = """1
+4
+5 1
+5 2
+5 3
+5 4
 """
-assert run(case_equal) == "5/1\n0\n"
+check(all_equal, solution(all_equal))
 
-# A zero-vote high-value game must be considered.
-case_zero_votes = """1
+zero_votes = """1
 2
-100 0
-0 1
-"""
-assert run(case_zero_votes) == "50/1\n1\n1"
-
-# Boundary case where adding a lower-pleasure game makes the result worse.
-case_off_by_one = """1
-3
 10 1
-9 1
-0 100
+100 0
 """
-assert run(case_off_by_one) == "19/102\n2\n1 2"
+check(zero_votes, solution(zero_votes))
 
-# Maximum-size input. All games have equal pleasure, so k = 0 is optimal.
-max_case_lines = ["1", "1000"]
-max_case_lines.extend(["1000 1000"] * 1000)
-case_max = "\n".join(max_case_lines) + "\n"
+boundary = """1
+3
+0 1000
+1000 0
+999 1
+"""
+check(boundary, solution(boundary))
 
-max_out = run(case_max)
-max_lines = max_out.splitlines()
-assert max_lines[1] == "0"
-assert max_lines[2] == ""
-assert max_lines[0] == "1000/1"
-```样本检查器故意不将输出文本与一个固定答案进行比较，因为该问题明确允许任何最佳子集。 小型确定性测试确实使用精确的输出，因为提交的实现具有确定性的平局打破顺序。 
+large = "1\n1000\n" + "\n".join(
+    f"{i % 1001} {1 if i == 1 else 0}" for i in range(1000)
+) + "\n"
+check(large, solution(large))
 
-| 测试输入| 预期产出 | 它验证了什么 |
+print("All tests passed.")
+```| 测试输入| 预期产出 | 它验证了什么 |
  | ---| ---| ---|
- |`1 / 1 / 0 1`|`0/1`,`0`, 空索引行 | 最小尺寸和不选择任何内容的可能性 |
- |`3 / (5,10), (5,20), (5,30)`|`5/1`,`0`, 空索引行 | 所有平等的快乐和联系|
- |`2 / (100,0), (0,1)`|`50/1`,`1`， 游戏`1`| 现有票数为零的游戏仍然可以是最佳选择 |
- |`3 / (10,1), (9,1), (0,100)`|`19/102`,`2`, 游戏`1 2`| 正确的前缀边界并认识到添加另一个游戏可能会造成伤害 |
- | 1000份`(1000,1000)`|`1000/1`,`0`, 空索引行 | 最大值 (n)、大总数和等值关系 |
+ | 一场比赛与`p=0`|`0/1`,`k=0`| 合法的空子集和零分子 |
+ | 四款游戏同样欢乐 | 任何最佳前缀 | 同等价值和领带处理 |
+ | 快感高的零投票游戏 | 快感游戏精选| (v_i=0) 的游戏必须保持资格 |
+ |`p=0`,`v=1000`夹杂着巨大的快乐| 最佳前缀的精确分数 | 边界值和分母变化 |
+ | 1000 场比赛生成案例 | 任何有效的最优| 最大 (n) 和线性记忆行为 |
 
  ## 边缘情况
 
- 当(n=1)时，只有两种可能的策略。 对于输入```
+ 当投票没有最佳游戏时，扫描会处理它，因为初始最佳候选者是 (k=0)。 对于输入```
 1
 1
-0 1
-```基线是 (0/1)。 选择唯一的游戏会增加另一次投票，乐趣为零，因此值保持为零。 扫描从 (k=0) 开始，发现 (k=1) 候选者并不严格更好，并保留空集。 输出是```
-0/1
-0
-```现有投票数为零的游戏会被自然处理，因为它对`base_pleasure`为零，而选择它则为分子增添了全部乐趣。 为了```
-1
-2
-100 0
-0 1
-```基线是 (0/1)。 排序后，游戏 1 排在第一位。 选择它会产生 (100/2=50)，而选择两者都会产生 (100/3)。 因此，最好的前缀是第一个，产生```
-50/1
-1
-1
-```当几个游戏有相同的乐趣时，它们的顺序不会影响目标。 为了```
-1
-3
-5 10
-5 20
-5 30
-```基线期望已经是（5），每增加一票也有快乐（5）。 每个前缀都有期望 (5)。 由于实现仅更新严格的改进，因此它保持 (k=0)，给出```
-5/1
-0
-```这也是为什么比较分数与严格`>`而不是`>=`很有用。 任一选择都可以在此处产生有效答案，但严格比较会给出稳定的最小前缀答案。 
+0 5
+```我们有 (A=0) 和 (V=5)。 唯一的选择是添加零愉悦投票并仍然给出期望 (0)，因此算法保持 (k=0) 并将 (0/5) 减少到`0/1`。 第三行是空的。 
 
-最后一个微妙的情况是，添加更多游戏最终会变得有害。 为了```
+当游戏没有当前投票时，它仍然出现在排序数组中。 为了```
 1
-3
-10 1
-9 1
-0 100
-```基线是（19/102）。 排序后，乐趣为(10,9,0)。 选择一场比赛给（29/103），选择两个给（38/104=19/52），并选择所有三个给（38/105）。 第三次投票对分子没有任何贡献，同时增加了分母，因此最优的是长度为 2 的前缀：```
-19/52
 2
-1 2
-```该算法会检查每个前缀，而不是假设玩更多快乐的游戏一定会有帮助。 对唯一相关参数（即所选游戏的数量）进行彻底扫描可以保持最优性，同时避免任意子集的指数数量。
+10 1
+100 0
+```我们有 (A=10) 和 (V=1)。 最初的候选者是（10/1）。 添加游戏 2 后，候选者变为 (110/2=55)，因此算法选择游戏 2。其现有投票数为零并不妨碍我们的新投票使其成为最有可能的流媒体游戏。 
+
+分母的变化通过使用直接处理`total_votes + k`。 考虑```
+1
+2
+100 1
+0 100
+```这里（A=100）和（V=101）。 如果没有额外投票，期望值为 (100/101)。 添加第一个游戏会产生 (200/102=100/51)，效果更好。 相反，添加零愉悦游戏会得到 (100/102=50/51)，这更糟糕。 前缀扫描准确地评估两种可能性。 
+
+平等的最佳候选人由严格的处理`>`比较。 为了```
+1
+2
+5 1
+5 1
+```(k=0) 期望为 (10/2=5)，添加任一游戏也可得到 (15/3=5)。 由于该值没有提高，因此实现保持不变（k=0）。 这是有效的，因为该问题需要任何最大化策略。 
+
+即使当最优值碰巧具有简单值时，缩减步骤也是必要的。 在第二个样本中，所选候选者为 (5110/1114)，最大公约数为 2。将两部分相除得出`2555/557`，满足所需的不可约分数格式。
