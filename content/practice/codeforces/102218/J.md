@@ -1,7 +1,7 @@
 ---
 title: "CF 102218J - 只是一个简单的任务"
-description: "我们需要确定从 (0) 到 (n-1) 的每一天 (k)，有多少个有序对 ((i,j)) 满足 [ icdot j equalv k pmod n。"
-date: "2026-08-17T23:24:10+07:00"
+description: "我们需要确定，对于从 0 到 n - 1 的每一天 k，有多少个有序对 (i, j) 满足 i⋅jeqik(modn)。 每个这样的对都为第 k 天贡献一个单位，因此所需的输出只是产生每个余数模 n 的对的数量。"
+date: "2026-08-20T03:33:49+07:00"
 tags: ["codeforces", "competitive-programming"]
 categories: ["algorithms"]
 codeforces_contest: 102218
@@ -9,7 +9,7 @@ codeforces_index: "J"
 codeforces_contest_name: "2019, XI Annual Programming Contest by ESCOM-IPN"
 rating: 0
 weight: 102218
-solve_time_s: 179
+solve_time_s: 440
 verified: false
 draft: false
 ---
@@ -18,389 +18,255 @@ draft: false
 
  **评级：** -
  **标签：** -
- **求解时间：** 2m 59s
+ **求解时间：** 7m 20s
  **已验证：** 否
 
  ## 解决方案
  ## 问题理解
 
- 我们需要确定，从 (0) 到 (n-1) 的每一天 (k)，有多少个有序对 ((i,j)) 满足
+ 我们需要确定，每天`k`从`0`到`n - 1`, 有多少个有序对`(i, j)`满足
 
- [
- i\cdot j \equiv k \pmod n。 
-]
+ i·j·k(modn)。 
 
- 每个这样的对为天 (k) 贡献一个容量单位，因此所需的数组正是所有 (n^2) 个有序对上的乘积 (i j \bmod n) 的频率分布。 官方声明确认，天数的索引范围为 (0) 到 (n-1)，该范围内的每个有序对都有一个贡献。 
+每对这样的一天恰好贡献一个单位`k`，因此所需的输出只是产生每个余数模的对的数量`n`。 
 
-直接模拟考虑所有 (n^2) 对。 当 (n) 与 (2.2\times10^6) 一样大时，这意味着最多 (4.84\times10^{12}) 次模乘，这远远超出了两秒实现所能执行的范围。 即使是 (O(n\sqrt n)) 方法在这种规模下也太大了。 该解决方案需要利用模 (n) 乘法的算术结构，而不是枚举对。 
+直接解释给出`n × n`乘法表模数`n`。 该观察对于理解问题很有用，但约束`n <= 2.2 × 10^6`使得构建该表变得不可能。 最多有
 
-零余数需要特别注意，因为 (i=0) 对每个 (j) 都有贡献，并且只要 (ij) 可被 (n) 整除，每个非零 (i) 也会有贡献。 对于 (n=1)，只有 ((0,0)) 对，所以答案很简单`1`。 假设正模量具有多个留数的解决方案很容易对这种情况进行错误处理。 
+ (2.2×10 6 ) 2 =4.84×10 12
 
-第二个常见错误是将合数模乘法视为每个非零乘数都是可逆的。 例如，对于 (n=4)，正确的输出是```
-8
-2
-4
-2
-```值 (2) 出现四次，因为 (0\cdot2)、(2\cdot1)、(2\cdot3) 和 (2\cdot2) 不是直接对残基进行正确推理。 更系统地说，解的数量取决于 (\gcd(i,n))。 仅基于模逆的粗心方法会错过由非互质乘数引起的额外解。 
+ 配对，而原问题的时间限制仅为 2.5 秒。 我们需要一个工作接近线性的解决方案`n`。 
 
-对于素数模数（例如 (n=5)），每个非零乘数都是可逆的。 答案是```
-9
-4
-4
-4
-4
-```所有非零余数具有相同的频率，而零具有更大的频率。 即使在这种小情况下，假设所有残基必须具有相同计数的实现也会失败。 
+最微妙的情况来自以下事实：`0`也是一个留数，并且对合数求模的乘法与对质数求模的乘法的行为不同。 为了`n = 1`，只有一对`(0,0)`，所以答案是`1`。 一个粗心的实现，只循环正残基，不会产生任何结果。 
+
+为了`n = 2`，这些对是`(0,0)`,`(0,1)`,`(1,0)`,`(1,1)`。 三产生残渣`0`并产生残留物`1`, 给予```
+31
+```意外假设每个非零残基具有相同数量的表示的公式在这里将失败。 
+
+为了`n = 6`，答案开始于`15`在残留物`0`， 不是`6`。 零处的值计算所有乘积可被整除的对`6`，并且复合模量创建许多这样的对。 这正是将问题视为对素数取模的算术处理会给出错误结果的情况。 
 
 ## 方法
 
- 暴力解决方案完全遵循定义。 创建一个包含 (n) 个计数器的数组，迭代每个 (i) 和每个 (j)，计算 ((i j)\bmod n)，并递增相应的计数器。 每对都被处理一次，因此结果是正确的。 问题是对的数量。 最多 (n=2{,}200{,}000) 时，有 (2{,}200{,}000^2=4{,}840{,}000{,}000{,}000) 对，这使得该方法无法使用。 
+ 暴力解法直接遵循定义。 创建一个数组`n`计数器，迭代每个`i`和每一个`j`， 计算`(i * j) % n`，并增加相应的计数器。 这是正确的，因为每个有序对都只被考虑一次，并且恰好对问题指定的留数有贡献。 
 
-关键是不要再询问哪些单独的对产生残差，而是询问有多少 (j) 个值对一个特定 (i) 产生固定残差。 考虑一致性
+问题在于操作次数。 最大的情况下有`n² = 4.84 × 10^12`对。 即使每对非常小的常数也会远远超出时间限制。 
 
- [
- ij\equiv k\pmod n。 
-]
+有用的观察是停止修复两者`i`和`j`。 使固定`i`并询问何时
+ in=a(mod)
+ 有解决方案。 
+让
+ g=gcd(i,n)。 
+线性同余的标准性质表明`ij ≡ k (mod n)`恰好在什么时候有解决方案`g`划分`k`。 当这个条件成立时，正好有`g`的不同值`j`模数`n`满足一致性。 
 
- 设 (g=\gcd(i,n))。 线性同余的标准属性表明，该方程在 (g\mid k) 时精确有解，并且当它可解时，它精确地具有 (g) 模 (n) 的解。 
+所以一个`i`贡献`gcd(i,n)`与残基配对`k`恰好当`gcd(i,n)`划分`k`。 
 
-这立即告诉我们一个乘数 (i) 的贡献是什么。 如果 (g=\gcd(i,n))，则 (i) 对可被 (g) 整除的每个答案位置 (k) 贡献 (g)，并对所有其他位置贡献零。 
+现在将所有分组`i`具有相同的gcd`n`。 如果
 
-下一个问题是 (i) 有多少个值与 (n) 具有特定的 gcd。 假设 (g\mid n)。 写作
+ gcd(i,n)=d,
 
- [
- i=gx,\qquad n=gm
- ]
+ 写`i = d x`。 然后
 
- 给出
+ gcd(x,n/d)=1。 
 
- [
- \gcd(i,n)=g
- ]
+正好有
 
- 恰好当 (\gcd(x,m)=1) 时。 由于 (x) 的范围超过 (0,\ldots,m-1)，因此存在 (\varphi(m)) 个这样的值。 这里包含 (i=0) 的情况是因为 (\gcd(0,n)=n)，对应于 (m=1) 和 (\varphi(1)=1)。 
+ φ(n/d)
 
-因此，对于 (n) 的每个除数 (g)，恰好
+ 这样的价值观`i`， 在哪里`φ`是欧拉函数。 各自贡献`d`解决方案`j`，所以所有`i`gcd 等于`d`贡献
 
- [
- \varphi\left(\frac ng\right)
- ]
+ dφ(n/d)
 
- (i) 的值具有 gcd (g)。 这些 (i) 中的每一个都对可被 (g) 整除的每个 (k) 做出贡献。 因此，与除数 (g) 相关的总贡献为
+ 到每一个残留物`k`可除以`d`。 
 
- [
- g\varphi\left(\frac ng\right)
- ]
+因此，
 
- 到 (g) 的每个倍数。 
+ c k ​ = d∣n d∣k ​ Σ ​ dφ(n/d)= d∣gcd(k,n) Σ​ dφ(n/d)。 
 
-所以最终的公式是
+这个公式彻底改变了问题。 我们只需要考虑除数`n`。 对于每个除数`d`, 计算
 
- [
- \盒装{
- c_k=
- \sum_{\substack{g\mid n\g\mid k}}
- g\varphi\left(\frac ng\right)
- }
- ]
+ w d ​ =dφ(n/d)
 
- 或同等地，
+ 并添加`w_d`到每一个倍数`d`残留物之中`1,2,\ldots,n-1`。 残留物`0`可以被每个除数整除，因此它接收每个`w_d`分别地。 
 
- [
- c_k=
- \sum_{g\mid\gcd(k,n)}
- g\varphi\left(\frac ng\right)。 
-]
+总更新次数为
 
- 现在我们只需要枚举(n)的约数即可。 对于每个除数 (g)，将其权重 (g\varphi(n/g)) 添加到位置 (0,g,2g,\ldots)。 数组更新的总数为
+ d∣n Σ ​ d n ​ =n d∣n Σ ​ d 1 ​ ,
 
- [
- \sum_{g\mid n}\frac nd=\sum_{g\mid n}\frac ng=\sigma(n),
- ]
-
- 符合无害端点约定。 这比 (n^2) 小得多。 对于最大输入 (2{,}200{,}000=2^6\cdot5^5\cdot11)，因此它只有 84 个除数，其除数之和仅为 (5{,}952{,}744)。 
-
-我们可以先对 (n) 进行因式分解，生成它的所有除数，然后直接根据素因式分解计算 (\varphi(n/g))。 不需要达到 (n) 的筛子，这使得实现既简单又节省内存。 
+ 这是`O(n log log n)`对于给定的界限，非常接近线性。 我们还避免构建一个完整的totient筛子`n`，因为只有`φ(n/d)`对于除数`n`是需要的。 
 
 | 方法| 时间复杂度| 空间复杂度| 判决 |
- | ---| ---| ---| ---|
- | 蛮力 | (O(n^2)) | (O(n)) | (O(n)) | 太慢了 |
- | 最佳 | (O(\sqrt n+\sigma(n))) | (O(n+\tau(n))) | 已接受 |
+ | --- | --- | --- | --- |
+ | 蛮力 |`O(n²)`|`O(n)`| 太慢了|
+ | 最佳|`O(n log log n)`|`O(n)`| 已接受 |
 
  ## 算法演练
 
- 1. 将 (n) 分解为素数幂 (n=\prod p^a)。 试除法就足够了，因为 (n\le2.2\times10^6)，所以只需要检查 (O(\sqrt n)) 个候选除数。 
-2. 生成 (n) 的每个除数 (g)。 在这一代期间，还计算 (\varphi(n/g))。 如果 (p^b) 是 (n/g) 中素数的剩余幂，则当 (b=0) 时，它对 totient 的贡献为 (1)，否则为 (p^{b-1}(p-1))。 
-3. 对于每个除数 (g)，计算其权重
+ 1.因素`n`进入其主要权力。 我们需要因式分解，因为它让我们可以枚举`n`并计算欧拉 totient 为`n / d`无需建立尺寸-`n`全部阵列。 
+2. 生成 的所有约数`n`从它的质因数分解。 只有`τ(n)`其中，与`n`为了`n <= 2.2 × 10^6`。 
+3. 对于每个除数`d`, 计算
 
- [
- w=g\varphi(n/g)。 
-]
+ w=dφ(n/d)。 
 
- 满足 (\gcd(i,n)=g) 的 (i) 的值在数量上恰好为 (\varphi(n/g))，并且每个这样的 (i) 为每个可被 (g) 整除的留数提供 (g) 个解。
+这是所有人的贡献总和`i`满意的`gcd(i,n) = d`到每一个可以整除的残基`d`。 
 
-1. 将 (w) 添加到每个可被 (g) 整除的数组位置。 受影响的位置是 (0,g,2g,\ldots,n-g)。 故意包含位置零，因为零可以被每个正除数整除。 
-2. 处理完每个除数后，输出结果数组。 每个有序对都根据其第一个坐标的 gcd 进行计算，因此位置 (k) 处的累加值正是其乘积与 (k) 模 (n) 一致的对的数量。 
+1.添加`w`对于每个正倍数`d`以下`n`。 循环访问`d, 2d, 3d, ...`，并且这些留数中的每一个都可以被整除`d`，完全符合公式中的条件。 
+2. 添加`w`到`answer[0]`以及。 零可以被每个正整数整除，但通常的倍数循环从`d`不访问零。 
+3. 输出结果数组。 这些值可以大到`n²`，所以Python整数自然提供了足够的精度。 
 
 ### 为什么它有效
 
- 修复留数 (k)。 根据 (g=\gcd(i,n)) 划分所有可能的第一坐标 (i)。 对于这样的 (i)，当 (g\mid k) 时，同余 (ij\equiv k\pmod n) 对于 (j) 有 (g) 个解，否则没有解。 与 gcd (g) 正好有 (\varphi(n/g)) 个第一个坐标。 因此，当 (g\mid k) 时，该组中的所有第一个坐标恰好对 (c_k) 贡献 (g\varphi(n/g))。 该算法将该数量精确地添加到 (g) 的每个倍数中，因此每个有效对贡献一次，每个无效对贡献零。 对所有除数求和即可得出每天的准确容量。 
+ 对于固定的`i`, 一致性
+ in=k(mod n)
+ 有`gcd(i,n)`解决方案`j`什么时候`gcd(i,n)`划分`k`，否则没有解决方案。 对以下值进行分组`i`经过`d = gcd(i,n)`， 有`φ(n/d)`团队中的价值观，每个人都做出贡献`d`解决方案。 因此该小组做出了贡献`d φ(n/d)`精确到可以整除的留数`d`。 该算法对每个除数精确执行这些加法`d`，包括特殊残留物`0`，因此每对都只计算一次。 
 
 ## Python 解决方案```python
-import sys
-input = sys.stdin.readline
+Pythonimport sysinput = sys.stdin.readline
 
-def factorize(n):
-    factors = []
-
-    if n % 2 == 0:
-        e = 0
-        while n % 2 == 0:
-            n //= 2
-            e += 1
-        factors.append((2, e))
-
-    p = 3
-    while p * p <= n:
-        if n % p == 0:
-            e = 0
-            while n % p == 0:
-                n //= p
-                e += 1
-            factors.append((p, e))
-        p += 2
-
-    if n > 1:
-        factors.append((n, 1))
-
+def factorize(n):    factors = []    x = n    p = 2
+    while p * p <= x:        if x % p == 0:            e = 0            while x % p == 0:                x //= p                e += 1            factors.append((p, e))        p += 1 if p == 2 else 2
+    if x > 1:        factors.append((x, 1))
     return factors
 
-def generate_terms(factors):
-    terms = []
+def get_divisors(factors):    divisors = [1]
+    for p, e in factors:        old = divisors[:]        power = 1
+        for _ in range(e):            power *= p            for d in old:                divisors.append(d * power)
+    return divisors
 
-    def dfs(pos, divisor, phi_quotient):
-        if pos == len(factors):
-            terms.append((divisor, phi_quotient))
-            return
+def phi_from_factorization(x, factors):    result = x
+    for p, _ in factors:        if x % p == 0:            result -= result // p
+    return result
 
-        p, a = factors[pos]
-
-        p_powers = [1]
-        for _ in range(a):
-            p_powers.append(p_powers[-1] * p)
-
-        for e in range(a + 1):
-            remaining = a - e
-
-            if remaining == 0:
-                phi_part = 1
-            else:
-                phi_part = (p - 1) * p_powers[remaining - 1]
-
-            dfs(
-                pos + 1,
-                divisor * p_powers[e],
-                phi_quotient * phi_part
-            )
-
-    dfs(0, 1, 1)
-    return terms
-
-def solve():
-    n = int(input())
-
-    factors = factorize(n)
-    terms = generate_terms(factors)
-
+def compute(n):    factors = factorize(n)    divisors = get_divisors(factors)
     ans = [0] * n
+    for d in divisors:        w = d * phi_from_factorization(n // d, factors)
+        ans[0] += w
+        for k in range(d, n, d):            ans[k] += w
+    return ans
 
-    for divisor, phi_quotient in terms:
-        weight = divisor * phi_quotient
+def solve():    n = int(input())    ans = compute(n)
+    out = sys.stdout.buffer
+    # Avoid constructing one enormous output string at once.    chunk = []    for x in ans:        chunk.append(str(x))        if len(chunk) == 100000:            out.write(("\n".join(chunk) + "\n").encode())            chunk.clear()
+    if chunk:        out.write(("\n".join(chunk) + "\n").encode())
 
-        for k in range(0, n, divisor):
-            ans[k] += weight
+if __name__ == "__main__":    solve()
+```因式分解开始于`2`然后只测试奇怪的候选人。 自从`n`至多是`2.2 × 10^6`, 试分割至`sqrt(n)`价格便宜。 
 
-    sys.stdout.write('\n'.join(map(str, ans)))
+除数生成器开始于`{1}`。 对于每个素数幂`p^e`，每个现有除数都与`p`,`p²`, ...,`p^e`，精确地产生每个除数`n`一次。 
 
-if __name__ == "__main__":
-    solve()
-```这`factorize`函数提取 (n) 的素数幂。 由于最大可能输入的平方根仅为 1484 左右，因此与主要输出工作相比，试除法很小。 
+对于特定的除数`d`,`n // d`是出现在物体内部的模量。 由于素因数为`n // d`必须是主要因素之一`n`,`phi_from_factorization`可以使用计算 totient
 
-递归`generate_terms`函数使用素因数分解来枚举除数。 如果 (n) 包含 (p^a)，则为除数 (g) 内的 (p) 选择指数 (e)，将指数 (a-e) 留在 (n/g) 内。 该代码立即计算相应的 totient 因子，因此每个生成的对都是精确的`(g, phi(n/g))`。 
+ φ(x)=x p∣x ∏​ (1− p 1 ​ )。 
 
-主循环直接实现除数贡献。 对于除数`divisor`，值`weight`是 (g\varphi(n/g))。 范围从零开始，而不是从`divisor`，因为余数零可以被每个除数整除，并且接收来自每个 gcd 类的贡献。 
+内循环开始于`d`，不为零，因为零是通过以下方式显式处理的`ans[0] += w`。 从零开始也是有效的，但它需要稍微不同的循环结构。 
 
-Python 整数具有任意精度，因此不存在溢出问题。 在固定宽度语言中，64 位整数是合适的类型，因为单个容量可能比 (2^{31}-1) 大得多。 
+答案数组包含普通的 Python 整数。 不需要溢出处理，这很重要，因为对的总数是`n²`，可以是大约`4.84 × 10^12`。 
 
-答案数组使用 Python 的列表表示形式。 在 (22) 万个位置处，这仍然在 256 MB 内存限制内，同时重复整数加法也比盒装高级映射结构快得多。 
+输出以 100,000 行的块形式写入。 这使临时输出字符串保持有界，而不是构造一个同时包含每个答案的潜在大字符串。 
 
 ## 工作示例
 
- 对于 (n=6)，素因数分解为 (2\cdot3)。 除数项很容易推导：
+ ### 示例 1：`n = 6`的约数为`6`是`1, 2, 3, 6`。 他们的贡献是：
 
- [
- \开始{数组}{c|c|c}
- g & \varphi(6/g) & g\varphi(6/g)\
- \h行
- 1 & \varphi(6)=2 & 2\
- 2 & \varphi(3)=2 & 4\
- 3 & \varphi(2)=1 & 3\
- 6 & \varphi(1)=1 & 6
- \结束{数组}
- ]
+ 1φ(6)=2,
+ 2φ(3)=4,
+ 3φ(2)=3,
+ 6φ(1)=6。 
 
- 数组更新的轨迹是：
+该算法将每个贡献添加到零以及其除数的所有正倍数。 
 
- | 除数 (g) | 重量 | 职位更新 | 更新后的数组 |
- | ---| ---| ---| ---|
- | 1 | 2 | 0、1、2、3、4、5 | 2, 2, 2, 2, 2, 2 | 2, 2, 2, 2, 2, 2 |
- | 2 | 4 | 0, 2, 4 | 6, 2, 6, 2, 6, 2 | 6, 2, 6, 2, 6, 2 |
- | 3 | 3 | 0, 3 | 9, 2, 6, 5, 6, 2 |
- | 6 | 6 | 0 | 15, 2, 6, 5, 6, 2 |
+| 除数`d`|`φ(6/d)`| 贡献`dφ(6/d)`| 阳性残留物更新 |
+ | --- | --- | --- | --- |
+ | 1 | 2 | 2 | 1、2、3、4、5 |
+ | 2 | 2 | 4 | 2, 4 |
+ | 3 | 1 | 3 | 3 |
+ | 6 | 1 | 6 | 无 |
 
- 最终的数组正是示例输出。 该迹线显示了为什么零接收来自每个除数的贡献，而每个非零残差仅接收其自身除数的权重。 
+ 剩余零接收`2 + 4 + 3 + 6 = 15`。 
 
-对于素数 (n=5)，唯一的约数是 (1) 和 (5)。 
+结果数组是```
+1526562
+```例如，残渣`4`可以整除`1`和`2`，所以它收到`2 + 4 = 6`。 它不能被整除`3`或者`6`。 
 
-| 除数 (g) | 重量 | 职位更新 | 更新后的数组 |
- | ---| ---| ---| ---|
- | 1 | (\varphi(5)=4) | 0, 1, 2, 3, 4 | 0, 1, 2, 3, 4 | 4, 4, 4, 4, 4 | 4, 4, 4, 4, 4 |
- | 5 | (5\varphi(1)=5) | (5\varphi(1)=5) | 0 | 9, 4, 4, 4, 4 | 9, 4, 4, 4, 4 |
+### 示例 2：`n = 5`自从`5`是质数，它的唯一约数是`1`和`5`。 
 
- 这演示了素数模的特殊情况。 每个非零余数都收到相同的四个贡献，因为每个非零乘数都是可逆的模素数。 零从乘数处获得五个额外贡献 (i=0)。 
+| 除数`d`|`φ(5/d)`| 贡献`dφ(5/d)`| 阳性残留物更新 |
+ | --- | --- | --- | --- |
+ | 1 | 4 | 4 | 1、2、3、4 |
+ | 5 | 1 | 5 | 无 |
+
+ 残差零同时收到两种贡献，给出`9`。 每个非零余数只能被整除`1`，所以每个非零答案是`4`。 
+
+输出是```
+94444
+```这说明了为什么素模具有特别简单的形状，而复合模需要完整的除数和。 
 
 ## 复杂度分析
 
  | 测量 | 复杂性 | 说明|
- | ---| ---| ---|
- | 时间 | (O(\sqrt n+\sigma(n))) | 因式分解成本 (O(\sqrt n))，除数更新循环执行 (\sum_{g\mid n}n/g=\sigma(n)) 次迭代 |
- | 空间| (O(n+\tau(n))) | 答案数组有 (n) 个条目，除数列表有 (\tau(n)) 个条目 |
+ | --- | --- | --- |
+ | 时间 |`O(n log log n)`| 对于每个除数`d`的`n`，我们更新大约`n/d`职位。 |
+ | 空间|`O(n)`| 答案数组包含`n`整数值。 |
 
- 与暴力破解的关键区别在于，算术更新的次数与 (n) 的除数结构相关，而不是与 (n^2) 相关。 在最大输入时，(n) 只有 84 个除数和 (\sigma(n)=5{,}952{,}744)，因此与直接枚举所需的 (4.84\times10^{12}) 操作相比，更新阶段仍然很小。 内存消耗主要由 (n) 元素答案数组主导，大小正好在 256 MB 以内。 
+ 除数和满足
+
+ d∣n Σ ​ d n ​ =n n σ(n) ​ =O(nloglogn),
+
+ 因此数组更新的数量保持接近线性。 与最大输入的更新相比，因式分解和除数生成所花费的时间可以忽略不计。 这`O(n)`答案数组完全在该约束的 256 MB 内存限制之内。 
 
 ## 测试用例```python
-import sys
-import io
+Pythonimport sysimport io
+# The functions below are the same computational functions used by the solution.
+def factorize(n):    factors = []    x = n    p = 2
+    while p * p <= x:        if x % p == 0:            e = 0            while x % p == 0:                x //= p                e += 1            factors.append((p, e))        p += 1 if p == 2 else 2
+    if x > 1:        factors.append((x, 1))
+    return factors
 
-def solution(data: str) -> str:
-    n = int(data.strip())
+def get_divisors(factors):    divisors = [1]
+    for p, e in factors:        old = divisors[:]        power = 1
+        for _ in range(e):            power *= p            for d in old:                divisors.append(d * power)
+    return divisors
 
-    def factorize(x):
-        factors = []
+def phi_from_factorization(x, factors):    result = x
+    for p, _ in factors:        if x % p == 0:            result -= result // p
+    return result
 
-        if x % 2 == 0:
-            e = 0
-            while x % 2 == 0:
-                x //= 2
-                e += 1
-            factors.append((2, e))
+def compute(n):    factors = factorize(n)    divisors = get_divisors(factors)    ans = [0] * n
+    for d in divisors:        w = d * phi_from_factorization(n // d, factors)
+        ans[0] += w
+        for k in range(d, n, d):            ans[k] += w
+    return ans
 
-        p = 3
-        while p * p <= x:
-            if x % p == 0:
-                e = 0
-                while x % p == 0:
-                    x //= p
-                    e += 1
-                factors.append((p, e))
-            p += 2
+def run(inp: str) -> str:    n = int(inp.strip())    ans = compute(n)    return "\n".join(map(str, ans)) + "\n"
 
-        if x > 1:
-            factors.append((x, 1))
+# Provided sampleassert run("6") == "15\n2\n6\n5\n6\n2\n", "sample 1"
+# Minimum sizeassert run("1") == "1\n", "n = 1"
+# Small composite numberassert run("4") == "8\n4\n4\n4\n", "n = 4"
+# Prime modulus, all nonzero residues have equal valuesassert run("5") == "9\n4\n4\n4\n4\n", "n = 5"
+# Another composite case, useful for catching divisor/multiple errorsassert run("8") == "20\n4\n8\n4\n12\n4\n8\n4\n", "n = 8"
 
-        return factors
+# Maximum-size structural test.# We do not materialize a second expected 2.2-million-line string.n = 2_200_000ans = compute(n)
+assert len(ans) == n, "maximum n output length"assert sum(ans) == n * n, "every ordered pair must be counted exactly once"assert ans[0] == sum(    d * phi_from_factorization(n // d, factorize(n))    for d in get_divisors(factorize(n))), "zero residue"
+```最大尺寸测试有意检查结构属性，而不是嵌入数百万条预期输出行。 身份`sum(ans) = n²`特别有用，因为每一个`n²`有序对必须恰好贡献一个残基。 
 
-    factors = factorize(n)
-    terms = []
-
-    def dfs(pos, divisor, phi_quotient):
-        if pos == len(factors):
-            terms.append((divisor, phi_quotient))
-            return
-
-        p, a = factors[pos]
-
-        powers = [1]
-        for _ in range(a):
-            powers.append(powers[-1] * p)
-
-        for e in range(a + 1):
-            remaining = a - e
-
-            if remaining == 0:
-                phi_part = 1
-            else:
-                phi_part = (p - 1) * powers[remaining - 1]
-
-            dfs(
-                pos + 1,
-                divisor * powers[e],
-                phi_quotient * phi_part
-            )
-
-    dfs(0, 1, 1)
-
-    ans = [0] * n
-
-    for divisor, phi_quotient in terms:
-        weight = divisor * phi_quotient
-        for k in range(0, n, divisor):
-            ans[k] += weight
-
-    return '\n'.join(map(str, ans))
-
-# Provided sample
-assert solution("6") == "15\n2\n6\n5\n6\n2", "sample 1"
-
-# Minimum input
-assert solution("1") == "1", "n = 1"
-
-# Prime n, all nonzero residues have equal capacities
-assert solution("5") == "9\n4\n4\n4\n4", "prime modulus"
-
-# Composite n with repeated prime factors
-assert solution("4") == "8\n2\n4\n2", "composite modulus"
-
-# Maximum-size input.
-# Checking the complete 2.2-million-line string directly would waste memory,
-# so verify its size and boundary values.
-maximum = solution("2200000")
-maximum_lines = maximum.splitlines()
-
-assert len(maximum_lines) == 2200000, "maximum n output length"
-assert maximum_lines[0] == "84000000", "maximum n c[0]"
-assert maximum_lines[-1] == "800000", "maximum n c[n-1]"
-```| 测试输入| 预期产出 | 它验证了什么 |
- | ---| ---| ---|
- |`1`|`1`| 最小尺寸和零残留的特殊作用|
- |`5`|`9, 4, 4, 4, 4`| 质数模和相等的非零容量 |
- |`4`|`8, 2, 4, 2`| 复合模数和不可逆乘数 |
- |`2200000`| 2,200,000 行，第一`84000000`， 最后的`800000`| 最大输入大小、输出边界和性能 |
+| 测试输入| 预期产出 | 它验证了什么 |
+ | --- | --- | --- |
+ |`1`|`1`| 零残留的最小尺寸和处理|
+ |`4`|`8, 4, 4, 4`| 复合模数和重复除数贡献 |
+ |`5`|`9, 4, 4, 4, 4`| 素数模和相等的非零留数 |
+ |`8`|`20, 4, 8, 4, 12, 4, 8, 4`| 几个素数幂因数和多个边界 |
+ |`2_200_000`| 结构检查| 最大输入大小、总对数和性能 |
 
  ## 边缘情况
 
- 对于 (n=1)，唯一可能的对是 ((0,0))。 因式分解没有质因数，因此除数生成器仅生成 (g=1)，其中 (\varphi(1)=1)。 更新循环将 (1) 添加到位置 0，精确产生```
-1
-```一种从以下位置开始除数枚举的解决方案`2`会默默怀念唯一的贡献。 
+ 对于`n = 1`，唯一的一对是`(0,0)`。 除数集仅包含`1`，其贡献为
 
-对于 (n=4)，除数贡献揭示了为什么复合模需要 gcd 参数。 这些项是 (g=1) 具有权重 (\varphi(4)=2)、(g=2) 具有权重 (2\varphi(2)=2) 和 (g=4) 具有权重 (4\varphi(1)=4)。 第一项更新每个位置，第二项更新位置零和位置二，第三项仅更新零。 结果是```
-8
-2
-4
-2
-```零位置接收(2+2+4=8)，而二位置接收(2+2=4)。 这捕获了假设每个​​非零乘数恰好有一个模逆的实现。 
+ 1·φ(1)=1。 
 
-对于 (n=5)，唯一的约数是 (1) 和 (5)。 除数 (1) 对每个位置贡献 (\varphi(5)=4)，而除数 (5) 仅对零贡献 (5)。 结果是```
-9
-4
-4
-4
-4
-```这会出现相反的错误，即解决方案将零视为普通余数，并忘记乘数 (i=0) 对每个可能的 (j) 都贡献为零。 
+正多重循环不执行更新，而`ans[0]`收到`1`。 输出正是`1`。 
 
-对于最大值 (n=2{,}200{,}000)，素因数分解为 (2^6\cdot5^5\cdot11)，给出 84 个除数。 更新循环仅执行 (5{,}952{,}744) 次添加，而输出仍然包含所有 (220 万) 容量。 第一个值是 (84{,}000{,}000)，从
+为了`n = 2`，除数是`1`和`2`。 他们的贡献是`1·φ(2)=1`和`2·φ(1)=2`。 零接收`3`，而残渣`1`仅收到除数的贡献`1`, 给予`1`。 输出是`3,1`，正确计算出乘积为偶数的三对。 
 
- [
- \sum_{g\mid n}g\varphi(n/g),
- ]
+为了`n = 5`, 除数`1`贡献`φ(5)=4`对每个留数，而除数`5`贡献`5`只到零。 因此答案是`9,4,4,4,4`。 这会导致一个简单的错误，即忘记了残数零的特殊行为。 
 
- 对应于残差 (n-1) 的最终值为 (800{,}000=\varphi(n))，因为 (\gcd(n-1,n)=1)。 这种情况在位置 0 和 (n-1) 处执行了预期的渐近行为和数组边界。
+为了`n = 6`, 除数`3`贡献`3`至残留物`0`和`3`，而除数`2`贡献`4`到`0`,`2`， 和`4`。 残留物`4`因此收到`2 + 4 = 6`，而残渣`5`仅接收`2`。 这证实了该算法测试被除数的整除性，而不仅仅是测试余数是否与其共享素因数。 
+
+为最大值`n = 2,200,000`，该算法从不构造`n × n`乘法表。 它只处理除数`n`及其倍数，因此工作量在以下方面保持接近线性`n`。 输出值最多仍然是有序对的总数，`n²`，Python 整数处理该范围而不会溢出。
