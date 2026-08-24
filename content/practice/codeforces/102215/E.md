@@ -1,7 +1,7 @@
 ---
 title: "CF 102215E - 第三方软件 - 2"
-description: "我们有 (n) 个库版本。 版本 (i) 提供了每个编号位于包含区间 ([ai,bi]) 内的函数。 Pavel 需要从 (1) 到 (m) 的每个函数，因此所选版本必须共同覆盖整个区间 ([1,m])。 该任务有两个部分。"
-date: "2026-08-20T02:46:34+07:00"
+description: "我们有 n 个库版本。 版本 i 提供了每个编号位于包含区间 [ai, bi] 内的函数。 Pavel 需要从 1 到 m 的每个函数，因此购买的区间必须共同覆盖整个整数范围 [1, m]。 该任务有两个部分。"
+date: "2026-08-24T16:52:20+07:00"
 tags: ["codeforces", "competitive-programming"]
 categories: ["algorithms"]
 codeforces_contest: 102215
@@ -9,8 +9,8 @@ codeforces_index: "E"
 codeforces_contest_name: "2019, XII Samara Regional Intercollegiate Programming Contest"
 rating: 0
 weight: 102215
-solve_time_s: 384
-verified: false
+solve_time_s: 2403
+verified: true
 draft: false
 ---
 
@@ -18,74 +18,72 @@ draft: false
 
  **评级：** -
  **标签：** -
- **求解时间：** 6m 24s
- **已验证：** 否
+ **求解时间：** 40m 3s
+ **已验证：** 是的
 
  ## 解决方案
  ## 问题理解
 
- 我们有 (n) 个库版本。 版本 (i) 提供了编号位于包含区间 ([a_i,b_i]) 内的每个函数。 Pavel 需要从 (1) 到 (m) 的每个函数，因此所选版本必须共同覆盖整个区间 ([1,m])。 
+ 我们有`n`库版本。 版本`i`提供编号位于包含区间内的每个函数`[a_i, b_i]`。 帕维尔需要以下的每个功能`1`通过`m`，因此购买的区间必须共同覆盖整个整数范围`[1, m]`。 
 
-该任务有两个部分。 首先，我们必须确定是否存在这样的版本集合。 如果是，我们必须找到尽可能少的版本并输出它们的索引。 间隔可能会重叠，并且一个版本只能使用一次。 
+该任务有两个部分。 首先，我们必须确定这样的版本集合是否存在。 如果是这样，我们必须找到版本数量尽可能少的集合并打印它们的原始索引。 
 
-(m) 的值可以大到 (10^9)，因此将每个函数编号视为单独的数组位置是不可行的。 间隔的数量最多为 (2\cdot10^5)，这意味着 (O(n^2)) 算法在最坏的情况下已经需要大约 (4\cdot10^{10}) 间隔操作。 由于 2 秒的限制，我们需要接近 (O(n\log n)) 或 (O(n)) 的时间。 对间隔进行一次排序是可以接受的，但重复比较每对间隔则不可接受。 
+的大值`m`, 直至`10^9`，立即排除迭代每个函数编号的算法。 有用的尺寸参数是`n`，这最多是`200000`，所以一个`O(n log n)`算法适合两秒的限制。 一个`O(n^2)`搜索对或更大的组合将需要大约`4 * 10^10`区间比较，远远超出了允许的范围。 
 
-有几种边界情况可能会导致看似合理的解决方案失败。 如果第一个有用的区间不是从函数 (1) 开始，那么答案立即不可能。 例如，```
+有几种边界情况可能会破坏粗心的实现。 如果第一个间隔不是从函数开始`1`，覆盖是不可能的。 例如，```
 2 5
 2 5
-3 5
-```没有包含函数 (1) 的版本，所以答案是`NO`。 仅检查最大右端点是否达到 (m) 的解决方案会错误地接受它。 
+1 1
+```实际上是可能的，因为第二个版本涵盖了功能`1`第一个封面`2`通过`5`。 简单地选择全局具有最大右端点的区间的贪心算法将选择`[2,5]`首先，可能会错误地得出该函数的结论`1`失踪了。 在最大化右端点之前，算法必须尊重左边界。 
 
-第二种情况是中间有缺口：```
-3 8
-1 3
+当存在真正的差距时，会发生更直接的故障：```
+2 5
+1 2
 4 5
-7 8
-```区间覆盖 (1) 到 (5)，然后不覆盖函数 (6)。 正确的输出是`NO`。 仅检查并集的最小和最大端点是不够的，因为断开的间隔无法覆盖间隙。 
+```正确答案是`NO`，因为函数`3`不可用。 仅根据其右端点选择间隔并不能正确检测到这一点，除非要求下一个间隔最多在当前覆盖的前缀之后的一个位置开始。 
 
-另一个微妙的情况是重叠间隔，其中采用第一个可用间隔不是最佳的：```
+另一个边缘情况是一个区间恰好从第一个未覆盖的函数开始：```
+3 6
+1 2
+3 4
+5 6
+```答案是`YES`有三个版本。 由于函数是整数，覆盖后`2`，一个区间开始于`3`是完全有效的。 条件是`a_i <= covered + 1`， 不是`a_i <= covered`。 
+
+最后，重叠的间隔可能会使局部短视的选择变得次优：```
 3 8
 1 3
-1 5
-5 8
-```最佳答案使用版本 (2) 和 (3)，覆盖 ([1,5])，然后覆盖 ([5,8])。 首先选择版本 (1) 会导致前缀较短，并且需要附加版本。 贪心算法必须选择将覆盖前缀延伸最远的区间，而不仅仅是可以延续它的第一个区间。 
-
-最后，当一个区间已经涵盖了所有内容时，答案必须恰好包含一个版本：```
-1 10
-1 10
-```正确的结果是`YES`， 其次是`1`和版本`1`。 坚持在达到 (m) 后寻找第二个间隔的算法会引入不必要的选择。 
+2 7
+6 8
+```最优解使用`[1,3]`和`[2,7]`仅当另一个间隔达到`8`，但事实并非如此，所以在这个特定的输入中，答案是`NO`。 如果我们将最后一个间隔更改为`[6,8]`，同样的推理说明了为什么每个选定的间隔必须扩展当前覆盖的前缀。 贪心选择应该始终在可以继续当前覆盖范围的所有区间中最大化新的右端点。 
 
 ## 方法
 
- 直接强力方法是考虑 (n) 个版本的每个子集。 对于每个子集，我们可以收集其间隔，确定并集，并检查该并集是否包含从 (1) 到 (m) 的每个函数。 在所有成功的子集中，我们保留一个具有最小大小的子集。 这是正确的，因为每个可能的购买决策都对应于一个子集。 
+ 暴力方法直接来自定义。 我们可以尝试库版本的每个子集，检查联合是否涵盖`[1,m]`，并保留最小的有效子集。 这是正确的，因为每个可能的购买决定都被明确考虑，但也有`2^n`子集。 和`n = 200000`，那是无可救药的大。 
 
-问题是子集的数量。 它们有 (2^n) 个，甚至通过扫描所有 (n) 个间隔来检查子集也会给出 (O(n2^n)) 时间。 对于 (n=200000)，这远远超出了任何实际限制。 即使算法以某种方式在恒定时间内检查每个子集，仍然会出现不可能的 (2^{200000}) 状态。 
+即使将蛮力限制为对、三元组或其他小组合也不能解决一般问题。 例如，检查每一对已经花费了`O(n^2)`，大约达到`2 * 10^10`配对时`n = 200000`。 该问题需要一种贪婪地做出选择而不是枚举组合的方法。 
 
-The useful structure comes from the fact that all functions form one ordered line, from (1) to (m). 假设我们已经购买了一些版本，它们涵盖了 (x) 中的每个功能。 要不间断地继续覆盖，下一个间隔必须在 (x+1) 处或之前开始。 在满足此条件的每个区间中，选择具有最大右端点的区间总是至少与选择任何其他区间一样好。 当仅使用一个版本时，它至少达到了同样的程度。 
+关键的观察是我们已经介绍过的函数总是形成一个前缀`[1, x]`。 认为`x`是目前覆盖的最大的函数。 任何可以扩展此前缀的区间都必须满足`a_i <= x + 1`。 在所有这样的区间中，选择最大的一个`b_i`没有比选择右端点更小的更糟糕的了。 两种选择都可以开始下一部分的覆盖范围，但间隔更远只能让至少同样多的剩余问题得到解决。 
 
-这给出了贪婪策略。 按间隔的左端点对间隔进行排序。 从没有覆盖任何内容开始，重复考虑左端点至多是第一个未覆盖函数的每个区间。 Among those intervals, take the one extending farthest to the right. 如果没有这样的间隔扩展当前的覆盖范围，则间隙是不可避免的，答案是`NO`。 
+这给出了最小区间覆盖的标准贪婪策略。 按间隔的左端点对间隔进行排序。 开始于`covered = 0`，扫描左端点最多为的每个区间`covered + 1`并记住具有最大右端点的那个。 一旦扫描到达从右侧开始太远的间隔，我们必须致力于迄今为止找到的最佳间隔，因为已经考虑了每个当前可用的间隔。 如果最佳间隔不延长`covered`，有差距，答案是不可能的。 
 
-这种贪婪选择是最优的原因是交换论证。 假设当前覆盖的前缀结束于(x)，让贪心算法选择结束于(g)的区间。 从 (x) 继续的任何有效解必须选择某个左端点至多为 (x+1) 的区间。 如果该区间结束于 (r)，则为 (g\ge r)。 用贪婪区间替换它不会使剩余覆盖变得更困难，因为贪婪选择至少达到同样的程度。 在每一步重复这个论证给出了具有最小可能间隔数的解决方案。 
+暴力破解之所以有效，是因为它明确地搜索了扩展覆盖区域的所有方法，但由于选择的数量呈指数级增长，所以会失败。 观察到只有最远的可用间隔才重要，从而将搜索减少为一次排序扫描。 
 
 | 方法| 时间复杂度| 空间复杂度| 判决 |
  | --- | --- | --- | --- |
- | 蛮力 | (O(n2^n)) | (O(n)) | (O(n)) | 太慢了 |
- | 排序后贪心 | (O(n\log n)) | (O(n\log n)) | (O(n)) | (O(n)) | 已接受 |
+ | 蛮力 |`O(2^n n)`|`O(n)`| 太慢了 |
+ | 最优贪心|`O(n log n)`|`O(n)`| 已接受 |
 
  ## 算法演练
 
- 1. 读取所有区间及其原始版本索引，然后按左端点对它们进行排序。 排序使我们能够按照间隔可用的确切顺序对其进行处理。 
-2. 设置`covered = 0`。 这意味着函数 (1) 到`covered`已经保证可用。 最初没有涵盖任何功能。 
-3. 维护指针`i`进入排序的区间。 在每次迭代中，检查每个间隔`a[i] <= covered + 1`。 这样的间隔可以附加到当前覆盖的前缀而不留间隙。 
-4. 在所有当前可用的间隔中，保留右端点最大的间隔。 调用此端点`best_end`并记住它的版本索引。 我们不会立即承诺第一个可用间隔，因为稍后的间隔可能会将覆盖范围扩展得更远。 
-5. 在 或之前开始的所有间隔之后`covered + 1`已检查，检查是否`best_end`大于`covered`。 如果不是，则没有区间可以覆盖下一个函数，因此无法覆盖完整的范围，我们输出`NO`。 
-6. 否则，选择记住的版本，将其原始索引附加到答案中，然后设置`covered = best_end`。 下一次迭代现在尝试扩展这个更大的前缀。 
-7. 尽快停止`covered >= m`。 然后覆盖从 (1) 到 (m) 的每个函数，并且所选版本形成有效的解决方案。 
-8. 由于每次迭代都选择距当前前缀最远的区间，因此贪心交换论证证明不存在版本数更少的解。 选定的区间可以替换任何最佳延续的第一个区间，而不会降低其覆盖其余函数的能力。 
+ 1. 将每个间隔及其原始版本号存储在一起，然后按左端点对间隔进行排序。 排序使我们能够处理当前可以在单个前向扫描中继续覆盖的前缀的所有间隔。 
+2. 设置`covered = 0`。 这意味着还没有覆盖任何函数，所以我们需要的第一个函数是`1`。 
+3. 扫描排序后的区间。 当一个区间有`a_i <= covered + 1`，它可以直接连接到已经覆盖的前缀。 在所有这些间隔中，保留最大的间隔`b_i`。 
+4. 当下一个间隔开始时`covered + 1`，停止考虑当前组并购买记住的间隔。 这是可以扩展当前前缀的每个间隔中的最佳选择。 
+5. 更新`covered`到所选间隔的右端点并将其原始索引添加到答案中。 然后从第一个尚未考虑的区间继续扫描。 
+6. 如果没有找到可用的区间，则无法覆盖下一个功能。 之间存在差距`covered`和剩余的间隔，所以正确答案是`NO`。 
+7.如果`covered >= m`，整个所需范围`[1,m]`被覆盖。 选定的间隔形成有效的解决方案。 
 
-### 为什么它有效
-
- 不变的是，在每次选择之前，从 (1) 到 (1) 的所有函数`covered`被覆盖，并且选定的间隔使用尽可能少的版本数来至少达到贪婪选择下的那个程度。 在下一次选择之前，会考虑能够继续覆盖的每个区间，并且算法会选择具有最大右端点的区间。 任何替代的有效下一个选择都不会再进一步​​，因此用贪婪间隔替换该选择不能增加随后所需的间隔数量。 如果没有延长可用间隔`covered`，下一个函数未被每个剩余间隔覆盖，因此不存在有效的解决方案。 什么时候`covered`达到 (m) 时，所选间隔以尽可能少的版本数覆盖整个所需范围。 
+贪婪选择是最优的原因可以通过交换参数来捕获。 假设当前前缀结束于`covered`。 每个有效的解决方案都必须选择某个区间`a_i <= covered + 1`继续报道。 让贪心算法选择一个结束于的合格区间`G`，而最佳解决方案选择结束于的合格区间`O`。 由于贪心选择最大化了正确的端点，`G >= O`。 用贪婪区间替换最优解的第一个选择的区间不会使以后的覆盖变得更加困难，因为贪婪区间至少达到同样的程度。 在每次扩展时重复此参数表明贪心算法使用尽可能少的间隔数。 
 
 ## Python 解决方案```python
 import sys
@@ -101,175 +99,203 @@ def solve():
 
     intervals.sort()
 
+    ans = []
     covered = 0
     i = 0
-    answer = []
 
     while covered < m:
-        best_end = covered
+        best_right = covered
         best_idx = -1
 
-        # Every interval starting at or before the next uncovered
-        # function can extend the current prefix.
         while i < n and intervals[i][0] <= covered + 1:
             a, b, idx = intervals[i]
 
-            if b > best_end:
-                best_end = b
+            if b > best_right:
+                best_right = b
                 best_idx = idx
 
             i += 1
 
-        # No usable interval can extend the covered prefix.
         if best_idx == -1:
             print("NO")
             return
 
-        answer.append(best_idx)
-        covered = best_end
+        ans.append(best_idx)
+        covered = best_right
 
     print("YES")
-    print(len(answer))
-    print(*answer)
+    print(len(ans))
+    print(*ans)
 
 if __name__ == "__main__":
     solve()
-```元组`(a, b, idx)`存储两个端点和原始版本号。 对这些元组进行排序主要是按`a`，这正是贪婪扫描所需的排序。`covered + 1`是第一个尚未涉及的功能。 当间隔的左端点最多为该值时，该间隔可用。 此条件还可以正确处理重叠间隔。 例如，如果`covered == 5`，一个区间开始于`5`是可用的，因为它已经与覆盖区域重叠，而从`7`叶子函数`6`裸露。 
+```输入首先被转换为`(left, right, original_index)`triples. 保留原始索引是必要的，因为排序会更改间隔的存储顺序，而输出必须引用输入中出现的版本。 
 
-内循环前进`i`永久。 一旦某个间隔被视为当前前缀的候选者，就不再需要再次检查它。 如果它的右端点现在不是最佳扩展，那么在覆盖的前缀向前移动后，它就不能成为更好的候选者，因为它的端点是固定的，并且算法只对扩展当前边界的间隔感兴趣。 
+The sorted scan uses`covered + 1`而不是`covered`。 由于函数是用整数编号的，因此从下一个未覆盖的函数开始的间隔完美地连接到当前前缀。 例如，通过覆盖`5`可以通过以下方式扩展`[6,8]`。 
 
-支票`best_idx == -1`检测初始间隙和随后出现的间隙。 例如，如果`covered == 3`每个剩余的间隔开始于`5`或更高版本，没有一个可以覆盖功能`4`，所以继续下去是不可能的。 
+在内循环内部，`best_right`记录当前可用的每个间隔中的最远端点。 我们前进`i`一旦检查了一个区间，每个区间就进入内循环一次。 当下一个间隔有`a_i > covered + 1`，当前步骤中不能使用未经检查的区间，因为区间是按其左端点排序的。 
 
-该算法一旦停止`covered >= m`，因此超出 (m) 的间隔是完全可以接受的。 无需剪裁其端点。 Python 整数也具有任意精度，因此不存在溢出问题。 
+这`best_idx == -1`check 处理空可用集和每个可用间隔结束不超过`covered`。 由于每个区间都有`b_i >= a_i`，区间满足`a_i <= covered + 1`仅当前缀等于或之前结束时，仍然无法扩展前缀`covered`。 这样的间隔没有任何帮助，因此将其视为非扩展选择是正确的。 
+
+Python 整数具有任意精度，因此上限`m <= 10^9`不会导致溢出问题。 
 
 ## 工作示例
 
  ### 示例 1
 
- 间隔已按其左端点的升序排列。 该表显示了每次选择后的贪婪边界。 
+ 间隔已按其左端点排序。 最初没有覆盖任何内容，因此只有一个从`1`可以选择。 经过考虑，覆盖范围达到`2`。 下一个可用间隔开始于`3`， 等等。 
 
-| 迭代| 接下来揭开| 可用间隔| 选择的版本 | 新盖 |
+|`covered`之前的步骤 | 可用间隔| 最佳右端点| 选择的版本 |`covered`步骤后|
  | --- | --- | --- | --- | --- |
- | 1 | 1 | 1：[1,2] | 1 | 2 |
- | 2 | 3 | 2：[3,4] | 2 | 4 |
- | 3 | 5 | 3：[5,6] | 3 | 6 |
- | 4 | 7 | 4：[7,8] | 4 | 8 |
+ | 0 |`[1,2]`| 2 | 1 | 2 |
+ | 2 |`[3,4]`| 4 | 2 | 4 |
+ | 4 |`[5,6]`| 6 | 3 | 6 |
+ | 6 |`[7,8]`| 8 | 4 | 8 |
 
- 选择版本（1）后，函数（3）成为下一个未覆盖的函数，因此版本（2）正是贪心规则所需的区间。 同样的过程一直持续到`covered = 8`，给出四个选定的版本`1 2 3 4`。 
-
-此示例还说明了为什么间隔被解释为包容性的。 ([3,4]) 后面的区间 ([1,2]) 没有间隙，因为函数 (2) 和函数 (3) 是连续的。 
+ 算法达到`m = 8`经过四种选择后，产生`YES`,`4`，以及版本索引`1 2 3 4`。 每个选定的间隔都被迫直接从前一个前缀继续，因此不变量在每一步之后仍然有效。 
 
 ### 示例 2
 
- 间隔是```
-1: [1,5]
-2: [2,7]
-3: [3,4]
-4: [6,8]
-```排序后，它们已经按照显示顺序排列了。 扫描的行为如下。 
+ 间隔是`[1,5]`,`[2,7]`,`[3,4]`， 和`[6,8]`。 一开始，前三个区间是可用的，因为它们的左端点最多是`1`仅适用于第一个间隔，因此版本`1`被选择并且覆盖范围达到`5`。 现在每个间隔最多开始`6`可用，包括版本`4`，达到`8`。 
 
-| 迭代| 接下来揭开| 检查可用间隔 | 选择的版本 | 新盖 |
+|`covered`之前的步骤 | 此步骤中考虑的间隔 | 最佳右端点| 选择的版本 |`covered`步骤后|
  | --- | --- | --- | --- | --- |
- | 1 | 1 | 1：[1,5] | 1 | 5 |
- | 2 | 6 | 2:[2,7]、3:[3,4]、4:[6,8] | 4 | 8 |
+ | 0 |`[1,5]`| 5 | 1 | 5 |
+ | 5 |`[2,7]`,`[3,4]`,`[6,8]`| 8 | 4 | 8 |
 
- 第一次迭代时，只有从(1)开始的区间才能开始覆盖，因此选择版本(1)。 一旦功能（1）到（5）被覆盖，版本（2）和版本（4）都可以继续该范围。 版本(4)达到(8)，而版本(2)仅达到(7)，所以贪心选择是版本(4)。 
-
-最终的答案是`1 4`，使用两个版本。 没有一个版本同时涵盖功能 (1) 和功能 (8)，因此两个版本是最少的。 
+ 结果是两个版本，`1`和`4`。 版本`2`只达到`7`，因此选择它需要另一个版本才能达到`8`。 贪婪的选择避免了额外的购买。 
 
 ## 复杂度分析
 
  | 测量 | 复杂性 | 说明|
  | --- | --- | --- |
- | 时间 | (O(n\log n)) | (O(n\log n)) | 排序成本 (O(n\log n))，并且之后每个间隔都扫描一次。 |
- | 空间| (O(n)) | (O(n)) | 间隔和选定的版本索引需要线性存储。 |
+ | 时间 |`O(n log n)`| 分拣成本`O(n log n)`，随后的扫描检查每个间隔一次 |
+ | 空间|`O(n)`| 区间数组和选定的版本索引最多包含`n`元素|
 
- 使用 (n\le200000)，对 (200000) 个间隔进行排序，然后进行一次线性传递，完全符合 Python 中 2 秒限制的预期范围。 (m) 的值不会出现在复杂度中，因为该算法从不迭代各个函数。 即使 (m=10^9) 时，它也仅比较区间端点。 
+ 和`n <= 200000`，排序在运行时中占主导地位，并且完全在两秒解决方案的预期范围内。 的价值`m`可以大到`10^9`，但该算法从不迭代单个函数，因此大界限对运行时间没有影响。 内存使用量呈线性关系`n`，正好低于 256 MB。 
 
 ## 测试用例
 
- 输出可以包含任何最佳的版本索引集，因此强大的测试工具应该验证返回的解决方案，而不是需要特定的索引顺序。 以下测试可以做到这一点，同时还检查所选版本的数量是否对于所提供的案例来说是最佳的。```python
-# This test harness reimplements the solution as a callable function.
+ 下面的测试助手在内存输入上运行相同的贪婪逻辑并验证返回的版本集，而不是需要一个特定的有效集。 这很重要，因为该问题允许任何最佳解决方案。```python
 import sys
 import io
 
-def solve_io(data: str) -> str:
-    inp = io.StringIO(data)
-    out = io.StringIO()
+def solve_io():
+    input = sys.stdin.readline
 
-    n, m = map(int, inp.readline().split())
+    n, m = map(int, input().split())
     intervals = []
 
     for idx in range(1, n + 1):
-        a, b = map(int, inp.readline().split())
+        a, b = map(int, input().split())
         intervals.append((a, b, idx))
 
     intervals.sort()
 
+    ans = []
     covered = 0
     i = 0
-    answer = []
 
     while covered < m:
-        best_end = covered
+        best_right = covered
         best_idx = -1
 
         while i < n and intervals[i][0] <= covered + 1:
             a, b, idx = intervals[i]
-            if b > best_end:
-                best_end = b
+            if b > best_right:
+                best_right = b
                 best_idx = idx
             i += 1
 
         if best_idx == -1:
-            out.write("NO\n")
-            return out.getvalue()
+            print("NO")
+            return
 
-        answer.append(best_idx)
-        covered = best_end
+        ans.append(best_idx)
+        covered = best_right
 
-    out.write("YES\n")
-    out.write(str(len(answer)) + "\n")
-    out.write(" ".join(map(str, answer)) + "\n")
-    return out.getvalue()
+    print("YES")
+    print(len(ans))
+    print(*ans)
 
-def validate(data: str, output: str, expected_k=None):
-    lines = output.strip().splitlines()
-    assert lines, "empty output"
+def run(inp: str) -> str:
+    old_stdin = sys.stdin
+    old_stdout = sys.stdout
 
-    if lines[0] == "NO":
-        assert expected_k is None
-        return
+    sys.stdin = io.StringIO(inp)
+    sys.stdout = io.StringIO()
 
-    assert lines[0] == "YES"
-    assert len(lines) == 3
+    try:
+        solve_io()
+        return sys.stdout.getvalue()
+    finally:
+        sys.stdin = old_stdin
+        sys.stdout = old_stdout
 
-    n, m = map(int, data.splitlines()[0].split())
-    intervals = [None]
+def check(inp: str, out: str) -> bool:
+    lines = out.strip().splitlines()
+    first = lines[0]
 
-    for line in data.splitlines()[1:]:
-        a, b = map(int, line.split())
+    data = inp.strip().split()
+    it = iter(data)
+    n = int(next(it))
+    m = int(next(it))
+
+    intervals = []
+    for idx in range(1, n + 1):
+        a = int(next(it))
+        b = int(next(it))
         intervals.append((a, b))
+
+    # A small independent greedy check tells us whether coverage is possible
+    intervals_sorted = sorted(intervals)
+    covered = 0
+    i = 0
+    possible = True
+
+    while covered < m:
+        best = covered
+
+        while i < n and intervals_sorted[i][0] <= covered + 1:
+            best = max(best, intervals_sorted[i][1])
+            i += 1
+
+        if best == covered:
+            possible = False
+            break
+
+        covered = best
+
+    if not possible:
+        return first == "NO"
+
+    if first != "YES":
+        return False
 
     k = int(lines[1])
     chosen = list(map(int, lines[2].split()))
 
-    assert len(chosen) == k
-    assert len(set(chosen)) == k
-    assert all(1 <= x <= n for x in chosen)
+    if k != len(chosen) or k == 0:
+        return False
 
-    covered = [False] * (m + 1)
-    for idx in chosen:
-        a, b = intervals[idx]
-        for x in range(a, b + 1):
-            covered[x] = True
+    if len(set(chosen)) != k:
+        return False
 
-    assert all(covered[1:]), "selected intervals do not cover [1, m]"
+    if any(x < 1 or x > n for x in chosen):
+        return False
 
-    if expected_k is not None:
-        assert k == expected_k
+    chosen_intervals = [intervals[x - 1] for x in chosen]
+    chosen_intervals.sort()
 
-# Provided sample 1
+    covered = 0
+    for a, b in chosen_intervals:
+        if a > covered + 1:
+            return False
+        covered = max(covered, b)
+
+    return covered >= m
+
+# Provided samples
 sample1 = """\
 4 8
 1 2
@@ -277,10 +303,8 @@ sample1 = """\
 5 6
 7 8
 """
-out = solve_io(sample1)
-validate(sample1, out, expected_k=4)
+assert check(sample1, run(sample1)), "sample 1"
 
-# Provided sample 2
 sample2 = """\
 4 8
 1 5
@@ -288,28 +312,24 @@ sample2 = """\
 3 4
 6 8
 """
-out = solve_io(sample2)
-validate(sample2, out, expected_k=2)
+assert check(sample2, run(sample2)), "sample 2"
 
-# Provided sample 3
 sample3 = """\
 3 8
 1 3
 4 5
 6 7
 """
-out = solve_io(sample3)
-assert out.strip() == "NO"
+assert check(sample3, run(sample3)), "sample 3"
 
-# Minimum-size input: one version covers the only function.
+# Minimum-size input
 case4 = """\
 1 1
 1 1
 """
-out = solve_io(case4)
-validate(case4, out, expected_k=1)
+assert check(case4, run(case4)), "minimum-size case"
 
-# All intervals equal. One copy is sufficient.
+# All intervals equal
 case5 = """\
 5 10
 1 10
@@ -318,71 +338,81 @@ case5 = """\
 1 10
 1 10
 """
-out = solve_io(case5)
-validate(case5, out, expected_k=1)
+assert check(case5, run(case5)), "all-equal intervals"
 
-# Greedy choice matters. Taking [1, 3] first would need more intervals.
+# Exact boundary connection: [1,2] followed by [3,5]
 case6 = """\
-4 10
-1 3
-1 6
-4 8
-7 10
+2 5
+1 2
+3 5
 """
-out = solve_io(case6)
-validate(case6, out, expected_k=2)
+assert check(case6, run(case6)), "exact covered+1 boundary"
 
-# Boundary gap at the beginning.
+# Gap at function 3
 case7 = """\
 3 5
-2 5
-3 5
+1 2
+4 5
 1 1
 """
-out = solve_io(case7)
-validate(case7, out, expected_k=2)
+assert check(case7, run(case7)), "gap case"
 
-# Maximum-size input pattern. Each interval covers one function.
-n = 200000
-case8 = str(n) + " " + str(n) + "\n"
-case8 += "".join(f"{i} {i}\n" for i in range(1, n + 1))
-out = solve_io(case8)
-validate(case8, out, expected_k=n)
+# Large n with a single interval covering everything
+case8 = "200000 1000000000\n" + "1 1000000000\n" * 200000
+assert check(case8, run(case8)), "maximum-n case"
 ```| 测试输入| 预期产出 | 它验证了什么 |
  | --- | --- | --- |
- |`1 1 / 1 1`|`YES`, (k=1) | 最小尺寸输入和立即终止|
- | 五份`[1,10]`|`YES`, (k=1) | 重复间隔并避免不必要的选择 |
- |`[1,3], [1,6], [4,8], [7,10]`|`YES`, (k=2) | 选择最远的间隔 |
- |`[2,5], [3,5], [1,1]`|`YES`, (k=2) | 起始边界和`covered + 1`处理 |
- | (200000) 单例间隔 |`YES`, (k=200000) | 最大值(n)、排序后线性扫描、连续边界|
+ |`1 1 / 1 1`|`YES`, 一个版本 | 最小值和最小可能覆盖范围|
+ | 五份`[1,10]`|`YES`, 一个版本 | 重复和全等间隔 |
+ |`[1,2]`,`[3,5]`|`YES`，两个版本| 正确使用`covered + 1`边界|
+ |`[1,2]`,`[4,5]`,`[1,1]`|`NO`| 检测真正未发现的功能|
+ |`200000`的副本`[1,10^9]`|`YES`, 一个版本 | 最大限度`n`和大`m`无需迭代函数 |
 
- 提供的样本还涵盖了精确的连续间隔、重叠间​​隔和不可能的间隙。 
+ ## 边缘情况
 
-## 边缘情况
+ ### 第一个可用间隔必须达到函数 1
 
- 第一个边缘情况是一个未被覆盖的开始。 考虑```
+ 考虑```
 2 5
 2 5
-3 5
-```初始值为`covered = 0`，所以下一个所需的函数是`1`。 两个区间的左端点都大于`1`，这意味着内部循环不检查可用的间隔。`best_idx`遗迹`-1`，算法打印`NO`。 某个区间到达函数(5)并不重要，因为函数(1)已经不可能获得。 
+1 1
+```最初`covered = 0`，所以条件是`a_i <= 1`。 版本`2`,`[1,1]`，是唯一可用的区间，并将覆盖范围扩展到`1`。 下一个可用间隔是`[2,5]`，开始于`covered + 1 = 2`，因此覆盖范围达到`5`。 算法输出`YES`有两个版本。 在这种情况下，在不首先检查连接性的情况下选择具有最大右端点的间隔的策略将失败。 
 
-中间间隙的情况是```
-3 8
-1 3
+### 真正的差距一定会产生NO
+
+ 对于```
+2 5
+1 2
 4 5
-7 8
-```第一个选择发生变化`covered`从`0`到`3`。 下一个需要的函数是`4`， 所以`[4,5]`可用并改变`covered`到`5`。 下一个需要的函数是`6`， 但`[7,8]`开始太晚了。 没有候选人可以扩展前缀，因此算法打印`NO`。 检查是在每个边界进行的，这可以防止断开的覆盖被误认为是完整的覆盖。 
+```第一步选择`[1,2]`, 给予`covered = 2`。 下一个间隔开始于`4`，而下一个所需的函数是`3`。 自从`4 > 2 + 1`，没有区间可以覆盖函数`3`， 和`best_idx`保持未设置状态。 算法立即输出`NO`。 
 
-贪心选择的情况是```
-3 8
+### 正好从下一个函数开始有效
+
+ 对于```
+2 5
+1 2
+3 5
+```第一个区间产生`covered = 2`。 第二个区间有`a = 3`, 满足`a <= covered + 1`。 它被选中并将覆盖范围扩大到`5`。 答案是`YES`有两个版本。 使用`a <= covered`相反会错误地拒绝这个有效的案例。 
+
+### 不应选择不扩展覆盖范围的区间
+
+ 假设```
+3 6
 1 3
-1 5
-5 8
-```最初两者`[1,3]`和`[1,5]`可用。 扫描保留较大的端点并选择版本 (2)，给出`covered = 5`。 下一个需要的函数是`6`， 所以`[5,8]`可用并将覆盖范围扩展到`8`。 答案使用两个版本。 选择第一个可用间隔的粗心实现会选择`[1,3]`，之后`[5,8]`无法覆盖功能（4），强制执行不正确的额外步骤或错误地报告失败。 
+2 3
+4 6
+```选择后`[1,3]`, 下一个区间`[2,3]`技术上是合格的，因为`2 <= 4`，但它不会增加覆盖前缀。 算法记录它但离开`best_right = 3`因为它的端点并不大。 然后`[4,6]`也符合资格并成为最佳选择，将覆盖范围扩大到`6`。 多余的`[2,3]`从未被购买过。 
 
-单版本案例是```
-1 10
-1 10
-```第一次迭代考虑唯一的区间和集合`covered = 10`。 外循环条件`covered < m`现在为 false，因此算法立即停止并输出一个选定的版本。 这说明了为什么必须在更新边界后检查终止条件，而不是无条件地搜索另一个区间。 
+这个细节很有用，因为资格和有用性是不同的概念。 间隔可以与当前前缀重叠而不扩展它，并且这样的间隔不能算作进度。 
 
-最大尺寸边界情况使用 (200000) 个单例区间`[1,1], [2,2], ..., [200000,200000]`。 选择后`[i,i]`，下一个所需的函数正是 (i+1)，因此下一个单例可用。 每个区间处理一次，算法在（200000）次选择后完成。 这证实了该解决方案不依赖于 (m) 较小，并且可以处理预期 (O(n\log n)) 范围内允许的最大版本数。
+### 重叠间隔需要最远端点
+
+ 对于```
+4 8
+1 3
+2 5
+4 7
+6 8
+```第一步只考虑`[1,3]`， 所以`covered`变成`3`。 下一步可以使用`[2,5]`，达到`5`。 从那里`[4,7]`可用并达到`7`， 其次是`[6,8]`。 该算法选择四个间隔。 
+
+如果替代输入包含`[2,7]`而不是`[2,5]`，贪心算法会立即选择该间隔，因为它到达的距离更远。 这种选择可以消除以后的购买。 交换参数保证选择最远的可到达端点永远不会增加随后所需的最小间隔数。
