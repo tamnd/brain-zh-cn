@@ -1,0 +1,26 @@
+---
+title: "CF 105934A - 神秘阵列"
+description: "Codeforces 105934A：神秘阵列"
+date: "2026-06-25T14:02:03+07:00"
+tags: ["codeforces", "competitive-programming"]
+categories: ["algorithms"]
+codeforces_contest: 105934
+codeforces_index: "A"
+codeforces_contest_name: "MEPhI Spring Cup 2025"
+rating: 0
+weight: 105934
+solve_time_s: 319
+verified: false
+draft: false
+---
+
+[CF 105934A - 神秘阵列](https://codeforces.com/problemset/problem/105934/A)
+
+ **评级：** -
+ **标签：** -
+ **求解时间：** 5m 19s
+ **已验证：** 否
+
+ ## 解决方案```
+
+```
