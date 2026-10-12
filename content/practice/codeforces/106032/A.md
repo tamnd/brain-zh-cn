@@ -1,6 +1,6 @@
 ---
 title: "CF 106032A - 完全可分的子阵列"
-description: "您的提示中缺少问题陈述，因此我没有“完全可分子数组”所要求的实际定义。 Without that, any editorial would be guesswork, and in competitive programming terms that would immediately break correctness."
+description: "您的提示中缺少问题陈述，因此我没有“完全可分子数组”所要求的实际定义。 如果没有这一点，任何社论都将是猜测，用竞争性编程术语来说，这将立即破坏正确性。"
 date: "2026-06-25T13:04:55+07:00"
 tags: ["codeforces", "competitive-programming"]
 categories: ["algorithms"]
