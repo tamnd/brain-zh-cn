@@ -417,7 +417,7 @@ assert solve("1\n3 3 10\n") == "-1"
 考虑：```
 1
 2 3 8
-```A careless implementation might find an algebraic solution whose top-left corner lies outside the grid. 重建步骤```
+```粗心的实现可能会找到左上角位于网格之外的代数解。 重建步骤```
 r = x // N
 c = x % N
 ```其次是```
