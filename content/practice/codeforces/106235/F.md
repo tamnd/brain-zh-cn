@@ -14,7 +14,7 @@ verified: false
 draft: false
 ---
 
-[CF 106235F - 几乎二部图](https://codeforces.com/problemset/problem/106235/F)
+[CF 106235F - 几乎二分图](https://codeforces.com/problemset/problem/106235/F)
 
  **评级：** -
  **标签：** -
