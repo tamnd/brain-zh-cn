@@ -1,6 +1,6 @@
 ---
 title: "CF 106384G - LaVI-Bavellabion"
-description: "我还无法为此撰写正确的社论，因为缺少实际的问题内容。 What you’ve provided only includes the title (“LaVI-Bavellabion”) and empty input/output sections, so there’s no way to reconstruct the task, constraints, or required algorithm without…"
+description: "我还无法为此撰写正确的社论，因为缺少实际的问题内容。 您提供的内容仅包括标题（“LaVI-Bavellabion”）和空的输入/输出部分，因此无法在没有...的情况下重建任务、约束或所需的算法。"
 date: "2026-06-20T03:26:49+07:00"
 tags: ["codeforces", "competitive-programming"]
 categories: ["algorithms"]
