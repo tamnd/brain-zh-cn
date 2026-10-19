@@ -162,19 +162,17 @@ assert run("1\n5\n10\n") == "0", "single room edge"
 assert run("2\n10 10\n5 0\n") == "5", "single transition dominates"
 assert run("4\n1 2 3 4\n10 10 10 10\n") == "0", "large gains dominate"
 assert run("4\n100 50 50 50\n1 1 1 1\n") == "98", "early deficit dominates"
-```
+```| 测试输入| 预期产出 | 它验证了什么 |
+ | ---| ---| ---|
+ | 单人间 | 0 | 不存在任何过渡 |
+ | 10,10 阈值小幅增益 | 5 | 单一主导约束|
+ | 统一大收益| 0 | 无赤字案例|
+ | 初始阈值大幅下降| 98 | 98 早期最坏情况前缀约束
 
-| Test input | Expected output | What it validates |
-| --- | --- | --- |
-| single room | 0 | no transitions exist |
-| 10,10 thresholds with small gains | 5 | single dominant constraint |
-| uniform large gains | 0 | no deficit case |
-| large initial threshold drop | 98 | early worst-case prefix constraint |
+ ## 边缘情况
 
-## Edge Cases
+ 一种极端情况是只有一个房间。 在这种情况下，没有转换，因此任何初始值都有效，并且答案必须为零。 该算法自然地处理这个问题，因为循环从不评估约束并且 ans 保持为零。 
 
-One edge case is when there is only a single room. In that case there are no transitions, so any initial value works and the answer must be zero. The algorithm handles this naturally because the loop never evaluates a constraint and ans stays zero.
+当所有前缀总和很快超过所有未来要求时，就会出现另一种边缘情况。 例如，如果 b 很大并且为正值，则每个计算的要求都会变为负值，并且它们的最大值仍然为负值。 最后的钳位步骤确保答案为零。 
 
-Another edge case occurs when all prefix sums quickly exceed all future requirements. For example, if b is large and positive, every computed requirement becomes negative, and the maximum over them is still negative. The final clamping step ensures the answer becomes zero.
-
-A final edge case is when the worst constraint occurs at the very first transition. In such a case, prefix_sum is still small, and the required k is dominated by a0 and a1. The algorithm captures this immediately at i = 0, updating ans before any later prefix accumulation can mask the deficit.
+最后的边缘情况是最坏的约束发生在第一次转换时。 在这种情况下，prefix_sum仍然很小，所需的k以a0和a1为主。 该算法在 i = 0 时立即捕获这一点，并在任何后续前缀累积可以掩盖缺陷之前更新 ans。

@@ -14,17 +14,17 @@ verified: true
 draft: false
 ---
 
-[CF 106430B - Bessie And Rounding](https://codeforces.com/problemset/problem/106430/B)
+[CF 106430B - 贝西和舍入](https://codeforces.com/problemset/problem/106430/B)
 
-**Rating:** -  
-**Tags:** -  
-**Solve time:** 43s  
-**Verified:** yes  
+ **评级：** -
+ **标签：** -
+ **求解时间：** 43s
+ **已验证：** 是的
 
-## Solution
-## Problem Understanding
+ ## 解决方案
+ ## 问题理解
 
-We have a number `X`并想把它变成另一个数字`Y`. One operation chooses a positive integer `M` and rounds `X` to the closest multiple of `M`。 如果两个倍数同样接近，则选择较大的倍数。 任务是找到变换所需的最少操作数`X`进入`Y`。 
+ 我们有一个号码`X`并想把它变成另一个数字`Y`。 一次操作选择一个正整数`M`和回合`X`最接近的倍数`M`。 如果两个倍数同样接近，则选择较大的倍数。 任务是找到变换所需的最少操作数`X`进入`Y`。 
 
 关键的困难在于舍入操作不允许我们移动任意数量。 的选择`M`控制可能的下一个值，因此解决方案取决于了解一项操作的最大可能进度。 
 
@@ -69,19 +69,19 @@ X - M < 2M - X
 M > 2X / 3
 ```最小有效值`M`产生最大的下降，所以最好的移动是：```
 M = floor(2X / 3) + 1
-```重复此操作会将值缩小大约一个因子`2/3`。 一旦当前值变得小于两倍`Y`，最后一个操作`M = Y`达到目标。 
+```重复此操作会将值缩小大约一个因子`2/3`. Once the current value becomes less than twice `Y`，最后一个操作`M = Y` reaches the target.
 
-蛮力之所以有效，是因为它探索了所有可能的舍入选择，但由于搜索空间巨大而失败。 观察到每个最佳移动都可以被最大有用的增加或减少所取代，从而将问题简化为一个简短的贪婪过程。 
+The brute force works because it explores every possible rounding choice, but fails because the search space is huge. The observation that every optimal move can be replaced by a maximum useful increase or decrease reduces the problem to a short greedy process.
 
-| 方法| 时间复杂度| 空间复杂度| 判决 |
- | ---| ---| ---| ---|
- | 蛮力 | O(状态数 × 可能的 M 值) | O(状态数) | 太慢了|
- | 最佳| O(log(最大(X, Y))) | O(1) | O(1) | 已接受 |
+| Approach | Time Complexity | Space Complexity | Verdict |
+| --- | --- | --- | --- |
+| Brute Force | O(number of states × possible M values) | O(number of states) | Too slow |
+| Optimal | O(log(max(X, Y))) | O(1) | Accepted |
 
- ## 算法演练
+## Algorithm Walkthrough
 
- 1.如果`X`已经等于`Y`， 返回`0`因为不需要任何操作。 
-2.如果`X < Y`, 反复加倍`X`而加倍则未达到目标。 每次加倍都是通过选择来实现的`M = 2X`，所以这始终是一个有效的操作。 
+1. If `X` is already equal to `Y`, return `0` because no operation is needed.
+2. If `X < Y`, repeatedly double `X`而加倍则未达到目标。 每次加倍都是通过选择来实现的`M = 2X`，所以这始终是一个有效的操作。 
 3. 倍增阶段后，执行最后一个操作`M = Y`。 由于当前值现在大于`Y / 2`，四舍五入到最接近的倍数`Y`准确地产生`Y`。 
 4. 如果`X > Y`,首先检查当前值是否已经小于`2Y`。 如果是，则执行一项操作`M = Y`得出答案。 
 5.否则，重复更换`X`和`floor(2X / 3) + 1`。 这是尽可能快的下降，但仍然保持结果为正。 
@@ -248,8 +248,8 @@ assert solution("""3
 
  对于`X = Y`，算法立即返回零，因为状态已经正确。 这可以避免进入贪婪分支并防止计算不必要的操作。 
 
-为了`X = 3`和`Y = 1`，算法检测到`X`太小而无法执行有用的减少。 可能的舍入选择无法创建`1`，所以返回`-1`是正确的。 
+为了`X = 3`和`Y = 1`，算法检测到`X`太小而无法执行有用的减少。 可能的舍入选择无法创建`1`，所以返回`-1` is correct.
 
-为了`X = 10`和`Y = 6`，该算法发现`10 < 2 * 6`，因此它跳过了缩减阶段。 选择`M = 6`回合`10`到`6`，这确认了最后一步的条件。 
+For `X = 10`和`Y = 6`，该算法发现`10 < 2 * 6`，因此它跳过了缩减阶段。 选择`M = 6`回合`10`到`6`，这确认了最后一步的条件。 
 
 对于非常大的值，例如`X = 10^12`和`Y = 1`，该算法从不迭代单个数字。 它仅执行几何约简，保持运算计数对数。
