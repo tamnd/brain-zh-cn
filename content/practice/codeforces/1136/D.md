@@ -111,14 +111,14 @@ Permissions:
 至少有一个被阻挡的瞳孔永远无法落后$v$， 制作$v$不可避免的障碍。 
 8. 处理完所有学生后，让`ans = len(blocked) - 1`。 
 
-These are the non-Nastya pupils who must remain ahead of her.
- 9. 输出`(n - 1) - ans`。 
+这些是非纳斯佳的学生，必须保持在她的前面。 
+9. 输出`(n - 1) - ans`。 
 
 ### 为什么它有效
 
- 不变的是，处理完队列的一个后缀后，`blocked`contains exactly the pupils from that suffix who can never be moved behind Nastya.
+ 不变的是，处理完队列的一个后缀后，`blocked`恰好包含来自该后缀的学生，他们永远不能移到 Nastya 后面。 
 
- 检查新学生时$v$，每个当前被阻挡的学生最终都必须穿过$v$如果娜斯佳要通过$v$。 此类穿越需要许可$(v,u)$。 即使缺少一项所需的许可，至少一名被阻止的学生仍永久领先$v$，阻止 Nastya 到达$v$。 因此$v$也必须被阻止。 
+检查新学生时$v$，每个当前被阻挡的学生最终都必须穿过$v$如果娜斯佳要通过$v$。 此类穿越需要许可$(v,u)$。 即使缺少一项所需的许可，至少一名被阻止的学生仍永久领先$v$，阻止 Nastya 到达$v$。 因此$v$也必须被阻止。 
 
 如果每个被阻止的学生都有权限，那么所有学生都可以被移到后面$v$， 所以$v$不会成为永久的障碍。 
 
