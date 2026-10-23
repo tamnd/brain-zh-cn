@@ -63,7 +63,7 @@ draft: false
 
 ### 为什么它有效
 
- 每一步，`min_suffix`stores the minimum value of the suffix strictly to the right of the current index. This invariant holds because we update it only after processing each element. 因此，条件`a[i] > min_suffix`当存在某些时正是正确的`j > i`这样`a[j] < a[i]`。 没有关于身份的信息`j`所需要的只是它的存在，它被后缀最小值完全捕获。 
+ 每一步，`min_suffix`将后缀的最小值严格存储在当前索引的右侧。 这个不变量成立，因为我们仅在处理每个元素后更新它。 因此，条件`a[i] > min_suffix`当存在某些时正是正确的`j > i`这样`a[j] < a[i]`。 没有关于身份的信息`j`所需要的只是它的存在，它被后缀最小值完全捕获。 
 
 ## Python 解决方案```python
 import sys

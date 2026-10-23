@@ -197,28 +197,28 @@ solve()
 1 2 1
 1 2
 2 3
-```Here node 2 must send color 1 outward, and nodes 1 and 3 must receive it.
+```这里节点2必须向外发送颜色1，节点1和3必须接收它。 
 
- | 步骤| 节点| 效果|
+| 步骤| 节点| 效果|
  | ---| ---| ---|
  | 1 | 1 | 开始 |
  | 2 | 2 | 从不匹配中心移动令牌 |
  | 3 | 3 | 完成转让 |
 
- The DFS traversal naturally goes 1 → 2 → 3 → 2 → 1, enabling swaps on both edges so the color 1 can be routed correctly.
+ DFS 遍历自然会进行 1 → 2 → 3 → 2 → 1，从而可以在两个边缘上进行交换，以便可以正确路由颜色 1。 
 
- This confirms that backtracking is essential for moving tokens across branching structures.
+这证实了回溯对于跨分支结构移动令牌至关重要。 
 
- ## 复杂度分析
+## 复杂度分析
 
  | 测量 | 复杂性 | 说明|
  | ---| ---| ---|
- | 时间 | 每次测试 O(n) | Each node and edge is visited a constant number of times in DFS traversal |
- | 空间| O(n) | adjacency list, recursion stack, and output path |
+ | 时间 | 每次测试 O(n) | DFS 遍历中每个节点和边都会被访问恒定次数 |
+ | 空间| O(n) | 邻接表、递归栈和输出路径 |
 
- The algorithm fits easily within limits because the total number of nodes across tests is at most 200,000, so a linear traversal is sufficient.
+ 该算法很容易满足限制，因为测试中的节点总数最多为 200,000，因此线性遍历就足够了。 
 
- ## 测试用例```python
+## 测试用例```python
 import sys, io
 
 def run(inp: str) -> str:
@@ -278,14 +278,14 @@ assert run("""1
 ```| 测试输入| 预期产出 | 它验证了什么 |
  | ---| ---| ---|
  | 单节点不匹配不可能 | 没有 | 全球可行性检查|
- | Already equal colors | Yes, 0 | 简单的基本情况|
- | Line tree swap case | 是的 | propagation along path |
- | Star-shaped tree | 是的 | 分支重新分配|
+ | 颜色已经相同 | 是的，0 | 简单的基本情况|
+ | 线树交换案例 | 是的 | 沿路径传播|
+ | 星形树| 是的 | 分支重新分配|
 
  ## 边缘情况
 
- 一个关键的边缘情况是颜色计数全局匹配但严重集中在不同的子树中。 在这种情况下，幼稚的贪婪移动会失败，因为在本地移动令牌而不重新访问边缘不能跨越分支约束。 The DFS Euler construction handles this because every subtree boundary is crossed twice, ensuring enough capacity for flow in both directions.
+ 一个关键的边缘情况是颜色计数全局匹配但严重集中在不同的子树中。 在这种情况下，幼稚的贪婪移动会失败，因为在本地移动令牌而不重新访问边缘不能跨越分支约束。 DFS 欧拉结构可以处理这个问题，因为每个子树边界都会穿过两次，从而确保两个方向都有足够的容量。 
 
- 另一种情况是当树是路径时。 这里，解决方案简化为简单的线性遍历，而欧拉之旅则退化为来回行走。 这仍然是正确的，因为每个不匹配都必须沿着唯一的线传播，并且构造自然会产生这种情况。 
+另一种情况是当树是路径时。 这里，解决方案简化为简单的线性遍历，而欧拉之旅则退化为来回行走。 这仍然是正确的，因为每个不匹配都必须沿着唯一的线传播，并且构造自然会产生这种情况。 
 
 最后一种情况是所有节点都已经匹配。 该算法立即正确返回零长度游走，避免不必要的遍历并确保简并状态下的正确性。

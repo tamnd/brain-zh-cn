@@ -106,7 +106,7 @@ w = "kotlin"
 ## 算法演练
 
  1. 让`w = "kotlin"`。 
-2. For every fragment, determine the unique position`start`在片段可以开始的循环中。 
+2. 对于每个片段，确定唯一的位置`start`在片段可以开始的循环中。 
 
 由于所有六个字母`"kotlin"`是不同的，第一个字符立即确定起始位置。 然后我们根据循环模式验证片段的其余部分。 
 3.让`L`是片段长度。 
