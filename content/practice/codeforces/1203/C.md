@@ -50,12 +50,12 @@ draft: false
  1. 从输入读取数组并将元素存储在列表中。 这是计算所有元素的 GCD 所必需的。 
 2. 初始化变量`g`与第一个元素。 这将存储正在运行的 GCD。 
 3. 迭代数组的剩余元素。 对于每个元素`a[i]`， 更新`g`作为 GCD`g`和`a[i]`使用欧几里得算法。 此步骤确保在循环结束时，`g`是整个数组的 GCD。 
-4. 初始化计数器`count`为零。 这将跟踪除数的数量`g`。 
-5. 迭代所有整数`d`从`1`的整数平方根`g`。 对于每个`d`，检查是否`g % d == 0`。 如果为真，则增加`count`减 1 因为`d`是一个除数。 
-6. 对于每个除数`d`那不等于`g // d`, 增量`count`除以 1 来计算配对除数。 此步骤确保我们不会重复计算完全平方数。 
-7. 打印值`count`，它是除以数组所有元素的正整数的数量。 
+4. 初始化计数器`count`为零。 这将跟踪除数的数量`g`.
+5. Iterate over all integers `d`从`1`的整数平方根`g`. For each `d`, check if `g % d == 0`. If true, increment `count` by 1 because `d` is a divisor.
+6. For each divisor `d` that is not equal to `g // d`, 增量`count`除以 1 来计算配对除数。 此步骤确保我们不会重复计算完全平方数。 
+7. 打印值`count`, which is the number of positive integers that divide all elements of the array.
 
-为什么它有效：这里的不变性是 GCD 的任何除数都能除以数组中的所有数字。 相反，任何能整除所有元素的数都会整除 GCD。 通过迭代直到平方根`g`并计算每个除数对，我们确保每个公约数都被精确地计算一次。 
+Why it works: The invariant here is that any divisor of the GCD divides all numbers in the array. Conversely, any number that divides all elements divides the GCD. By iterating up to the square root of `g`并计算每个除数对，我们确保每个公约数都被精确地计算一次。 
 
 ## Python 解决方案```python
 import sys
