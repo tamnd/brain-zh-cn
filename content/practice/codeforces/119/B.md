@@ -396,9 +396,9 @@ print("All tests passed")
 (1 + 2) / 2 = 1.5
 ```最大限度：```
 (6 + 7) / 2 = 6.5
-```This matches the actual feasible partitions.
+```这与实际可行的分区相匹配。 
 
- ### All cards already known
+### 所有牌都已知
 
  输入：```
 6 3
@@ -409,7 +409,7 @@ print("All tests passed")
 5 6
 ```所有三张不同的卡都已修复。 
 
-Their averages are:```
+他们的平均值是：```
 1.5, 3.5, 5.5
 ```没有剩下未知的牌，因此算法跳过贪婪构建步骤。 
 

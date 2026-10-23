@@ -14,11 +14,11 @@ verified: false
 draft: false
 ---
 
-[CF 119C - Education Reform](https://codeforces.com/problemset/problem/119/C)
+[CF 119C - 教育改革](https://codeforces.com/problemset/problem/119/C)
 
- **Rating:** 2000
- **Tags:** dp
- **Solve time:** 2m 59s
+ **评级：** 2000
+ **标签：** dp
+ **求解时间：** 2m 59s
  **已验证：** 否
 
  ## 解决方案
@@ -26,17 +26,17 @@ draft: false
 
  我们有多达 50 个科目。 每个主题都有三个属性。 
 
-间隔$[a_i, b_i]$describes how many homework exercises this subject may assign. 我们可以自由选择该区间内的任何值。 
+间隔$[a_i, b_i]$描述该科目可能布置多少作业练习。 我们可以自由选择该区间内的任何值。 
 
-价值$c_i$是主题的复杂性。 The timetable must use subjects in strictly increasing order of complexity, so if we choose subjects$p_1, p_2, \dots, p_n$， 然后：$$c_{p_1} < c_{p_2} < \dots < c_{p_n}$$家庭作业计数还必须遵循特殊的转换规则。 If the current day has$x$练习，那么第二天必须包含：$$x + k$$或者$$x \cdot k$$在所有有效时间表中$n$科目，我们想要练习总数最多的科目。 
+价值$c_i$是主题的复杂性。 时间表必须严格按照复杂性递增的顺序使用科目，因此如果我们选择科目$p_1, p_2, \dots, p_n$， 然后：$$c_{p_1} < c_{p_2} < \dots < c_{p_n}$$家庭作业计数还必须遵循特殊的转换规则。 如果当天有$x$练习，那么第二天必须包含：$$x + k$$或者$$x \cdot k$$在所有有效时间表中$n$科目，我们想要练习总数最多的科目。 
 
-约束中最重要的是间隔的大小。 值本身可以大到$10^{16}$，所以暴力破解家庭作业是不可能的。 But the interval width satisfies:$$b_i - a_i \le 100$$这改变了一切。 尽管数值很大，但每个科目最多只允许 101 个不同的作业计数。 这意味着真实的状态空间很小。 
+约束中最重要的是间隔的大小。 值本身可以大到$10^{16}$，所以暴力破解家庭作业是不可能的。 但区间宽度满足：$$b_i - a_i \le 100$$这改变了一切。 尽管数值很大，但每个科目最多只允许 101 个不同的作业计数。 这意味着真实的状态空间很小。 
 
 第二个重要的限制是$m \le 50$。 一个复杂的解决方案$50^3 \cdot 100^2$是完全安全的。 
 
-The hardest part of the problem is recognizing that we should not think about arbitrary integers. We only care about values that actually appear inside some subject interval.
+问题最难的部分是认识到我们不应该考虑任意整数。 我们只关心实际出现在某个主题区间内的值。 
 
- 一些边缘情况很容易被错误处理。 
+一些边缘情况很容易被错误处理。 
 
 认为$k = 1$。 那么两个允许的转换变为：$$x_i = x_{i-1} + 1$$或者$$x_i = x_{i-1}$$粗心的实现可能会假设乘法总是增加值并意外地创建循环或无效转换。 
 
