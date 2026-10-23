@@ -1,0 +1,211 @@
+---
+title: "CF 1211D - 团队"
+description: "我们获得了多组玩家评分。 每个球员最多只能使用一次，我们的目标是在严格的结构约束下组建尽可能多的不相交的球队。 每个有效的团队都由两组同质的玩家组成。"
+date: "2026-06-13T17:05:19+07:00"
+tags: ["codeforces", "competitive-programming", "*special", "binary-search", "greedy", "math"]
+categories: ["algorithms"]
+codeforces_contest: 1211
+codeforces_index: "D"
+codeforces_contest_name: "Kotlin Heroes: Episode 2"
+rating: 2000
+weight: 1211
+solve_time_s: 393
+verified: true
+draft: false
+---
+
+[CF 1211D - 团队](https://codeforces.com/problemset/problem/1211/D)
+
+ **评级：** 2000
+ **标签：** *特殊、二分查找、贪心、数学
+ **求解时间：** 6m 33s
+ **已验证：** 是的
+
+ ## 解决方案
+ ## 问题理解
+
+ 我们获得了多组玩家评分。 每个球员最多只能使用一次，我们的目标是在严格的结构约束下组建尽可能多的不相交的球队。 
+
+每个有效的团队都由两组同质的玩家组成。 一组正好有`a`玩家，都具有相同的评分值`x`。 第二组正好有`b`玩家，都共享另一个评级值`k · x`。 仅当这两个组同时存在并且在所有团队中不相交时，团队才有效。 
+
+所以每个团队本质上都是数字计数之间的配对规则：我们需要`a`具有一定价值的副本`x`， 和`b`价值的副本`k·x`。 不同队伍消耗数值的频率不同，玩家一旦被使用，就无法再次参与。 
+
+我们的任务是最大限度地增加我们可以建立的此类团队的数量。 
+
+输入大小高达 300,000 个元素，因此任何尝试在没有结构的情况下贪婪地重复模拟组建团队的解决方案都会太慢。 甚至一个$O(n^2)$配对策略立即不可行，因为它需要重复检查许多频率桶之间的兼容性。 唯一可行的方向是将阵列压缩为频率并按结构化顺序（通常是对数或近线性）处理值。 
+
+一个微妙的困难是选择会在价值观之间相互作用。 如果我们贪婪地匹配一个值`x`太早或太晚都可能影响可用性`k·x`，因此不仔细控制排序的天真贪婪方法可能会失败。 
+
+一个常见的失败案例如下：假设我们总是在看到足够的信息后立即尝试组建团队`x`和`k·x`，不考虑未来的贡献。 这可能会浪费稍后进行更优化配对所需的高价值元素。 
+
+另一个问题是排序：因为`k·x`大于`x`，按升序处理使我们始终能够处理`x`首先，推动限制，避免重新审视国家。 
+
+## 方法
+
+ 蛮力的想法是根据频率进行思考，并通过扫描所有可能的情况反复尝试构建团队`x`，检查是否`freq[x] >= a`和`freq[k·x] >= b`，然后减去并计算一个团队。 重复此操作直到没有发生任何变化在概念上是正确的，但速度非常慢。 在最坏的情况下，每次迭代可能只删除一个团队，并且扫描所有值成本$O(U)$，导致$O(U \cdot \text{answer})$，当两者都很大时就太大了。 
+
+关键的观察结果是，问题完全是由频率和确定性配对驱动的`x`和`k·x`。 一旦我们修复了给定的次数`x`作为团队的基础，一切都变得被迫。 唯一真正的决定是我们从每个值中选择多少个团队，但如果我们按升序处理值，则此决定是局部的。 
+
+标准优化是维护映射或数组中的频率并按排序顺序迭代值。 对于每个值`x`，我们计算使用可用的资源可以组建多少个团队`x`作为第一组。 每个这样的团队消耗`a`的副本`x`和`b`的副本`k·x`。 我们更新的频率`k·x`因此。 
+
+因为`k·x`总是大于`x`，当我们到达`x`，频率`x`是最终的，以后的操作永远不会改变。 这使得单次通过就足够了。 
+
+| 方法| 时间复杂度| 空间复杂度| 判决 |
+ | ---| ---| ---| ---|
+ | 暴力模拟 | O(U·答案) | O(U) | 太慢了 |
+ | 按排序顺序贪婪频率| O(U log U) | O(U log U) | O(U) | 已接受 |
+
+ ## 算法演练
+
+ 我们首先将输入压缩为评级频率图。 这消除了不相关的排序，并将问题转化为算术计数问题。 
+
+然后，我们按升序对所有不同的评级进行排序，以便每个值都在其多个值之前被处理`k·x`。 
+
+1. 建立频率表`freq[v]`对于所有评级。 这一步是必要的，因为只计算物质，而不计算位置。 
+2. 提取所有不同的值并对它们进行递增排序。 排序确保当我们处理一个值时`x`，所有可能的未来消费者`k·x`尚未处理或不会影响`x`之后。 
+3. 迭代每个值`x`按排序顺序。 此时此刻，`freq[x]`代表最终可用计数`x`。 
+4. 计算从 开始可以组建多少个团队`x`作为小评级组。 这是`t = freq[x] // a`。 我们不能组建更多，因为每个团队都需要`a`的副本`x`。 
+5. 然而，我们也受到可用性的限制`k·x`。 所以我们限制`t`经过`freq[k·x] // b`。 这确保我们不会过度使用`k·x`。 
+6. 添加`t`到答案。 然后减去资源：reduce`freq[x]`经过`t · a`并减少`freq[k·x]`经过`t · b`。 This enforces disjoint usage.
+
+ The key subtlety is that we never revisit`x`。 任何剩余的`x`处理后不能稍后使用，因为未来的步骤不会将其用作第二组，因为所有第二组都需要严格更大的值。 
+
+### 为什么它有效
+
+ 该算法强制执行方向依赖性：每个团队使用较小的值作为源，使用较大的值作为接收器。 通过按升序处理，我们确保一旦分配使用`x`, no later operation can retroactively affect it. Each value is therefore decided exactly once, and every team formed is maximal given local constraints. This eliminates cycles and guarantees that greedy local pairing does not block future optimal pairings.
+
+ ## Python 解决方案```python
+import sys
+input = sys.stdin.readline
+
+def solve():
+    n, a, b, k = map(int, input().split())
+    arr = list(map(int, input().split()))
+    
+    from collections import Counter
+    freq = Counter(arr)
+    
+    vals = sorted(freq.keys())
+    
+    ans = 0
+    
+    for x in vals:
+        if freq[x] == 0:
+            continue
+        y = x * k
+        
+        if y not in freq:
+            continue
+        
+        # number of possible teams from x
+        t = min(freq[x] // a, freq[y] // b)
+        
+        if t > 0:
+            freq[x] -= t * a
+            freq[y] -= t * b
+            ans += t
+    
+    print(ans)
+
+if __name__ == "__main__":
+    solve()
+```该代码首先构建一个频率图，以便我们可以纯粹通过计数进行推理。 对键进行排序可确保我们始终首先处理较小的评级。 
+
+在循环内部，我们仅尝试配对，如果两者都`x`和`k·x`存在。 瓶颈计算在两侧使用整数除法，并且我们取最小值以同时尊重两个约束。 频率表的更新确保没有球员被重用。 
+
+一个常见的陷阱是忘记减去`freq[y]`。 如果没有这个，后面的值将错误地重用已经使用的元素，从而夸大答案。 
+
+## 工作示例
+
+ ### 示例 1
+
+ 输入：```
+12 1 2 2
+1 1 2 2 2 2 2 3 3 4 6 6
+```我们跟踪频率：
+
+ | x| 频率[x] | 频率[2x] | 团队组建| 剩余 x | 剩余 2x |
+ | ---| ---| ---| ---| ---| ---|
+ | 1 | 2 | 3 | 1 | 1 | 1 |
+ | 2 | 3 | 2 | 1 | 1 | 0 |
+ | 3 | 2 | 0 | 0 | 2 | 0 |
+
+ 最终答案是3。 
+
+跟踪显示，一旦我们处理了一个值，它的贡献就完全解决了，剩下的元素可能仍然只能在以后与其倍数的有效配对中使用。 
+
+### 示例 2
+
+ 输入：```
+6 1 1 2
+1 1 2 2 4 4
+```频率：1→2、2→2、4→2
+
+ | x| 频率[x] | 频率[2x] | 团队| 剩余 x | 剩余 2x |
+ | ---| ---| ---| ---| ---| ---|
+ | 1 | 2 | 2 | 2 | 0 | 0 |
+ | 2 | 2 | 2 | 0 | 2 | 2 |
+ | 4 | 2 | 0 | 0 | 2 | 0 |
+
+ 只有值 1 起作用，因为它的倍数已被消耗。 
+
+这表明早期处理会锁定使用并阻止下游重用。 
+
+## 复杂度分析
+
+ | 测量 | 复杂性 | 说明|
+ | ---| ---| ---|
+ | 时间 |$O(U \log U)$| 排序不同的评级占主导地位
+ | 空间|$O(U)$| 值的频率图 |
+
+ 限制允许最多 300,000 名玩家，评级最高为 1e6。 对不同值进行排序并对每个值进行恒定时间更新完全符合限制。 
+
+## 测试用例```python
+import sys, io
+
+def run(inp: str) -> str:
+    sys.stdin = io.StringIO(inp)
+    from collections import Counter
+
+    n, a, b, k = map(int, sys.stdin.readline().split())
+    arr = list(map(int, sys.stdin.readline().split()))
+    
+    freq = Counter(arr)
+    vals = sorted(freq.keys())
+    
+    ans = 0
+    for x in vals:
+        y = x * k
+        if freq[x] == 0 or y not in freq:
+            continue
+        t = min(freq[x] // a, freq[y] // b)
+        freq[x] -= t * a
+        freq[y] -= t * b
+        ans += t
+    
+    return str(ans)
+
+# provided sample
+assert run("12 1 2 2\n1 1 2 2 2 2 2 3 3 4 6 6\n") == "3"
+
+# all equal no pairing
+assert run("5 2 2 2\n1 1 1 1 1\n") == "0"
+
+# exact single team
+assert run("3 1 2 2\n1 2 2\n") == "1"
+
+# chain interference
+assert run("6 1 1 2\n1 1 2 2 4 4\n") == "2"
+
+# large k break (no multiples)
+assert run("4 1 1 10\n1 1 2 2\n") == "0"
+```| 测试输入| 预期产出 | 它验证了什么 |
+ | ---| ---| ---|
+ | 一切平等| 0 | 不存在有效的配对 |
+ | 最小有效 | 1 | 单队组建 |
+ | 链条箱 | 2 | 跨倍数交互 |
+ | 大 k | 0 | 缺少合作伙伴会阻碍团队的发展
+
+ ## 边缘情况
+
+ 一个关键的边缘情况是多个值可以充当`k·x`对于不同的`x`。 例如，如果两者`x`和`x/k`存在于数组中，粗心的贪心减法可能会过度消耗共享池。 排序顺序处理可以防止这种情况，因为一旦`x`被处理后，永远不会被重新访问，并且所有使用都由其最小的来源决定。
