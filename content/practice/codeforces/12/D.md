@@ -47,7 +47,7 @@ draft: false
 1 2
 5 5
 1 2
-```The second lady has larger beauty and richness, but intellect is equal, so domination does not happen. 如果我们只检查`>=`如果在一维上出现错误，答案就会变得错误。 
+```二夫人的美貌和财富更大，但智力是平等的，所以不会发生统治。 如果我们只检查`>=`如果在一维上出现错误，答案就会变得错误。 
 
 当多名女士拥有相同的美丽和智慧时，就会出现第三个陷阱：```
 3
