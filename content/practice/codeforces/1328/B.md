@@ -33,7 +33,7 @@ share_url: https://chatgpt.com/share/6a2dfc6a-d998-83ec-acae-ab74293c87ce
 
  我们正在查看所有长度的二进制字符串`n`恰好包含该字母的两次出现`b`，而其他所有位置都充满了`a`。 由于字母表的顺序是`a < b`, 以更多前导开头的字符串`a`s 按字典顺序排在前面，并放置`b`较早推入字符串。 
 
-The task is to imagine all such strings sorted like words in a dictionary and return the one at position`k`。 
+任务是想象所有这些字符串都像字典中的单词一样排序，并返回位于位置的字符串`k`。 
 
 输入给出多个查询。 每个查询提供一个长度`n`和一个等级`k`，并且我们必须直接构造第 k 个字符串，而不生成所有候选字符串。 
 
