@@ -69,7 +69,7 @@ share_url: https://chatgpt.com/share/6a2e337e-c354-83ec-b9bf-1c6c92a28cf3
 
 为什么它有效
 
- 正确性取决于以下事实：对于固定的$(x, y)$，不等式$x + y > z$定义数轴上的单个截止点$z$。 因为有效的$z$-domain是一个连续的区间，有效的集合$z$值始终是另一个区间或空。 This prevents any fragmentation that would require more complex counting. Summing these independent interval sizes over all$(x, y)$对精确划分解空间，无需重复计算。 
+ 正确性取决于以下事实：对于固定的$(x, y)$，不等式$x + y > z$定义数轴上的单个截止点$z$。 因为有效的$z$-domain是一个连续的区间，有效的集合$z$值始终是另一个区间或空。 这可以防止任何需要更复杂计数的碎片。 将所有这些独立的间隔大小相加$(x, y)$对精确划分解空间，无需重复计算。 
 
 ## Python 解决方案```python
 import sys
@@ -122,9 +122,9 @@ print(ans)
  | 测量| 复杂性 | 说明|
  | ---| ---| ---|
  | 时间 |$O((B-A+1)(C-B+1))$| 双循环$x$和$y$，每对持续工作 |
- | 空间|$O(1)$| 仅使用累加器变量 |
+ | 空间|$O(1)$ | only accumulator variables used |
 
- 范围的边界为$5 \cdot 10^5$，但该算法避免了任何依赖$D-A$每次迭代。 恒定时间减少为$z$确保1秒限制下的可行性。 
+The ranges are bounded by $5 \cdot 10^5$，但该算法避免了任何依赖$D-A$每次迭代。 恒定时间减少为$z$确保1秒限制下的可行性。 
 
 ## 测试用例```python
 # helper: run solution on input string, return output string
