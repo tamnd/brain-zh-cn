@@ -104,13 +104,13 @@ solve()
 
 **示例2**：`n=10, k=3, s="1001110101"`沿序列的最小翻转计算`(0,3,6,9)`,`(1,4,7)`,`(2,5,8)`产生 4 次翻转。 
 
-These traces show the algorithm correctly maintains running minimums along each`k`-全局翻转的序列和解释。 
+这些痕迹表明算法正确地维持了每个点的运行最小值`k`-全局翻转的序列和解释。 
 
 ## 复杂度分析
 
  | 测量| 复杂性 | 说明|
  | ---| ---| ---|
- | 时间 | O(n) | Each lamp is processed once in the main loop, cumulative arrays computed in linear time. |
+ | 时间 | O(n) | 每个灯在主循环中处理一次，在线性时间内计算累积数组。 |
  | 空间| O(n) | 数组`dp`和`ones`存储每个位置的信息。 |
 
  该算法与所有测试用例中的灯总数呈线性关系，完全符合 1 秒限制和 256 MB 内存。 
