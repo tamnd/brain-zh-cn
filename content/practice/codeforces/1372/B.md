@@ -38,8 +38,8 @@ draft: false
 
  1. **严重错误：** 该解决方案涉及不同的练习（Lagarias-Miller-Odlyzko 素数计数练习），而不是练习 4.6.1.1。 
 2. **严重错误：** 给定的多项式$$u(x)=x^6+x^5-x^4+2x^3+3x^2-x+2$$和$$v(x)=2x^2+2x^2-x+3$$从未被使用过。 
-3. **Critical error:** No pseudo-division is carried out.
- 4. **Critical error:** Neither the pseudo-quotient$q(x)$也不是伪余数$r(x)$被计算出来。 
+3. **严重错误：** 没有进行伪除法。 
+4. **严重错误：** 伪商都不是$q(x)$也不是伪余数$r(x)$被计算出来。 
 5. **严重错误：** 定义的伪除法关系从未被陈述或验证。 
 
 ## 总结
