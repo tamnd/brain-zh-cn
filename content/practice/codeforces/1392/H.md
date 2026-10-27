@@ -1,6 +1,6 @@
 ---
 title: "CF 1392H - ZS 洗牌"
-description: "算法B是二元gcd算法。 减法和移位循环由一次减法组成，然后从所得差值中删除 $2$ 的所有幂。"
+description: "算法B是二元gcd算法。 减法和移位循环由一次减法组成，然后从所得差值中除去 $2$ 的所有幂。"
 date: "2026-06-11T10:13:26+07:00"
 tags: ["codeforces", "competitive-programming", "combinatorics", "dp", "math", "probabilities"]
 categories: ["algorithms"]
@@ -24,7 +24,7 @@ draft: false
  ## 解决方案
  ## 解决方案
 
- 算法B是二元gcd算法。 减法和移位循环由一次减法组成，然后删除所有幂$2$从由此产生的差异。 练习 35 要求对应图中的最长路径； 练习 36 要求一个结构达到$m+1$减法步骤。 
+ 算法B是二元gcd算法。 减法和移位循环包括一次减法，然后去除所有幂$2$从由此产生的差异。 练习35要求相应图中的最长路径； 练习 36 要求一个结构达到$m+1$减法步骤。 
 
 拿$$u=2^m,\qquad v=2^n,$$和$m\ge n\ge1$。 
 
