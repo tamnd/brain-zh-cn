@@ -149,9 +149,9 @@ if __name__ == "__main__":
 aba?abacaba
 ```| 步骤| 行动| 字符串状态 | 有效安置 |
  | ---| ---| ---| ---|
- | 1 | Try i = 3 | aba?abacaba | 是的 |
- | 2 | Place pattern at 3 | abaabacaba | 是的 |
- | 3 | 充满 '？' | abaa... | 是的 |
+ | 1 | 尝试 i = 3 | 阿巴？阿巴卡巴| 是的 |
+ | 2 | 将图案放置在 3 | 阿巴巴卡巴 | 是的 |
+ | 3 | 充满 '？' | 粑粑... | 是的 |
  | 4 | 计数出现次数 | 1 | 接受|
 
  这显示了如何通过解析单个通配符来完成部分匹配。 
@@ -219,10 +219,10 @@ assert run("1\n11\nabacaba????\n") != "", "suffix flexibility"
 assert run("1\n11\nabacacacaba\n") == "No", "no valid placement"
 ```| 测试输入| 预期产出 | 它验证了什么 |
  | ---| ---| ---|
- | 全部 '？' 字符串| Yes with pattern | 施工能力齐全 |
- | exact pattern present | Yes unchanged | identity case |
- | impossible string | 没有 | rejection correctness |
- | overlapping noisy case | Yes/No depending | validation robustness |
+ | 全部 '？' 字符串| 是的，有图案| 施工能力齐全 |
+ | 精确图案呈现 | 是的，不变 | 身份案例|
+ | 不可能的字符串| 没有 | 拒绝正确性 |
+ | 重叠的嘈杂情况| 是/否取决于 | 验证稳健性|
 
  ## 边缘情况
 
