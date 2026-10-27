@@ -34,7 +34,7 @@ draft: false
 
  暴力方法将迭代所有可能的雪球三元组，检查半径是否不同，并收集有效的雪人，直到没有三元组剩余。 虽然原则上是正确的，但这需要 O(n3) 次操作，对于 n = 10⁵ 来说，大约为 1015。 这是完全不切实际的。 
 
-The key observation is that we only care about distinct radii and the number of snowballs available for each radius. 如果我们对每个半径存在多少个雪球进行计数，那么问题就简化为重复选择三个最大的剩余不同半径。 通过始终选择最大的可用半径，我们可以最大限度地增加雪人的数量，因为较小半径的雪球不会阻止未来雪人的创建——一旦较高半径的雪人耗尽，它们可以稍后配对。 
+关键的观察是，我们只关心不同的半径和每个半径可用的雪球数量。 如果我们对每个半径存在多少个雪球进行计数，那么问题就简化为重复选择三个最大的剩余不同半径。 通过始终选择最大的可用半径，我们可以最大限度地增加雪人的数量，因为较小半径的雪球不会阻止未来雪人的创建——一旦较高半径的雪人耗尽，它们可以稍后配对。 
 
 这表明了一种有效支持“弹出最大可用半径”并减少其计数的数据结构。 最大堆在这里是理想的选择。 每次迭代，我们提取三个最大的半径，将它们记录为雪人，减少它们的计数，如果它们仍然可用，则将它们推回原处。 我们继续下去，直到剩余的不同半径少于三个。 
 
@@ -119,18 +119,18 @@ for s in snowmen:
  | 4,3,2 | 各 1 个 | 4 3 2 |
  | 4,3,1 | 各 1 个 | 4 3 1 | 4 3 1
 
- Heap now has only 2 distinct radii left, so the algorithm stops. 两个雪人就形成了。 This shows that the algorithm correctly handles multiple duplicates and maximizes the number of snowmen.
+ 堆现在只剩下 2 个不同的半径，因此算法停止。 两个雪人就形成了。 这表明该算法正确地处理了多个重复项并最大化了雪人的数量。 
 
- ## 复杂度分析
+## 复杂度分析
 
  | 测量| 复杂性 | 说明|
  | ---| ---| ---|
- | 时间 | O(n log n) | O(n log n) | 计数频率为 O(n)。 Each snowball can be pushed and popped at most once per snowman, leading to O(n log n) operations with the heap. |
- | 空间| O(n) | The heap stores at most one entry per distinct radius, and the frequency counter stores one entry per distinct radius. |
+ | 时间 | O(n log n) | O(n log n) | 计数频率为 O(n)。 每个雪人最多可以推送和弹出每个雪球一次，从而导致堆操作的复杂度为 O(n log n)。 |
+ | 空间| O(n) | 堆每个不同半径最多存储一个条目，并且频率计数器每个不同半径存储一个条目。 |
 
- With n ≤ 10⁵, this algorithm runs efficiently within the 2-second limit.
+ 当 n ≤ 10⁵ 时，该算法在 2 秒限制内高效运行。 
 
- ## 测试用例```python
+## 测试用例```python
 import sys, io
 
 def run(inp: str) -> str:
