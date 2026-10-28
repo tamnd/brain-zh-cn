@@ -38,7 +38,7 @@ draft: false
 - 为了`k = 0..n`，答案是`max(prefix[k], max(a))`因为最长的快递时间总是在其中`a[i]`。 
 - 但是**我们也必须考虑到，如果我们亲自挑选一些菜品，那么剩下的送来的菜品可能仍然有很大的份量。`a[i]`**。 所以，我们需要`max(max(a[i] for dishes delivered), prefix[k])`。 
 
-一个更简单且正确的观察是：**最短总时间是`min(max(prefix[k], max(a)))`全面的`k`**。 但我们必须排序`a`和`b`适当地：
+一个更简单和正确的观察是：**最短总时间是`min(max(prefix[k], max(a)))`全面的`k`**。 但我们必须排序`a`和`b`适当地：
 
 -`a_sorted`下降
  -`b_sorted`下降
