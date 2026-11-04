@@ -159,11 +159,11 @@ assert run("1\n3\n1 2 2\n") == "YES\n1 2 3", "one odd, two evens"
 ```| 测试输入| 预期产出 | 它验证了什么 |
  | --- | --- | --- |
  | 2 4 6 | 否 | 所有偶数都失败 |
- | 1 3 5 | 1 3 5 是 1 2 3 | all odd numbers succeed |
- | 1 2 4 6 | 1 2 4 6 是 1 2 3 | mixed, one odd, enough evens |
- | 2 2 2 1 3 | 2 2 2 1 3 是 4 1 2 | mixed, two odd, enough evens |
- | 1 2 2 | 1 2 2 是 1 2 3 | minimal size with one odd, two evens |
+ | 1 3 5 | 1 3 5 是 1 2 3 | 所有奇数都成功 |
+ | 1 2 4 6 | 1 2 4 6 是 1 2 3 | 混合、一个奇数、足够的偶数|
+ | 2 2 2 1 3 | 2 2 2 1 3 是 4 1 2 | 混合，两个奇数，足够的偶数|
+ | 1 2 2 | 1 2 2 是 1 2 3 | 最小尺寸，一个奇数，两个偶数 |
 
  ## 边缘情况
 
- Arrays with only even numbers such as
+ 仅包含偶数的数组，例如
