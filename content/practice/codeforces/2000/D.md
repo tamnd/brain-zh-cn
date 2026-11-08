@@ -44,21 +44,27 @@ draft: false
 LLL
 ```没有`R`根本不。 不存在有效的操作，所以答案是`0`。 
 
-一个粗心的实现，假设每个`L`可以匹配到这里就会失败。 
+一个粗心的实现，假设每个`L` can be matched would fail here.
 
-考虑：```
+Consider:
+
+```
 4
 5 5 5 5
 LRLR
-```最优选择是整个区间`[1,4]`, 给予`20`。 
+```最优选择是整个区间`[1,4]`, 给予`20`.
 
-选择`[1,2]`首先只给出`10`，之后`[3,4]`给出另一个`10`。 总计仍为`20`，表明不同的分解可以产生相同的结果。 
+Choosing `[1,2]` first gives only `10`, after which `[3,4]` gives another `10`. The total is still `20`, showing that different decompositions can produce the same result.
 
-现在考虑：```
+Now consider:
+
+```
 4
 1 100 100 1
 LRRL
-```使用最后一个的唯一有效对`L`是不可能的，因为没有`R`在它的右边。 最好的选择是`[1,3]`， 值得`201`。 
+```
+
+The only valid pair using the last `L`是不可能的，因为没有`R`在它的右边。 最好的选择是`[1,3]`， 值得`201`。 
 
 尝试在本地匹配字符而不考虑位置顺序的解决方案可能会错误地计算无效对。 
 
