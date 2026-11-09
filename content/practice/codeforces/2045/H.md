@@ -151,11 +151,11 @@ def solve():
 
 if __name__ == "__main__":
     solve()
-```代码从左到右贪婪地构造答案。 At each position, it enumerates all possible next substrings and filters them using two constraints: lexicographic ordering against the previous word, and uniqueness using a set. Among valid candidates, it chooses the one that maximizes a continuation heuristic dp2[j], which estimates how many splits remain possible after choosing a given endpoint.
+```代码从左到右贪婪地构造答案。 在每个位置，它都会枚举所有可能的下一个子字符串，并使用两个约束来过滤它们：针对前一个单词的字典顺序，以及使用集合的唯一性。 在有效的候选者中，它选择一个最大化连续启发式 dp2[j] 的候选者，它估计在选择给定端点后仍然可能有多少个分割。 
 
- dp2 数组是独立计算的，作为每个后缀仍可以形成多少段的粗略上限。 这用于将贪婪选择偏向于保留灵活性的削减。 
+dp2 数组是独立计算的，作为每个后缀仍可以形成多少段的粗略上限。 这用于将贪婪选择偏向于保留灵活性的削减。 
 
-一个微妙的实现问题是子字符串比较。 Direct comparison in Python is O(length), but the total number of comparisons is small enough under pruning because each position only tries extensions once in practice. 更强大的实现将使用后缀数组或滚动哈希，但社论保持结构最小化。 
+一个微妙的实现问题是子字符串比较。 Python中直接比较的时间复杂度为O(length)，但在剪枝的情况下，比较的总数足够小，因为实践中每个位置只尝试一次扩展。 更强大的实现将使用后缀数组或滚动哈希，但社论保持结构最小化。 
 
 ## 工作示例
 
