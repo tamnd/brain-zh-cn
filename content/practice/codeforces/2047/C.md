@@ -47,7 +47,7 @@ draft: false
 
 | 方法| 时间复杂度| 空间复杂度| 判决 |
  | --- | --- | --- | --- |
- | 蛮力 | O(n!·n) | O(n!·n) | O(n) | 太慢了 |
+ | 蛮力 | O(n!·n) | O(n!·n) | O(n) | 太慢了|
  | 最佳 | O(n) | O(n) | 已接受 |
 
  ## 算法演练
@@ -57,7 +57,7 @@ draft: false
 3. 预先计算第一行的前缀和`prefix_top[i] = a[0][0] + ... + a[0][i]`。 
 4. 预先计算第二行的后缀和`suffix_bottom[i] = a[1][i] + ... + a[1][n-1]`。 
 5. 初始化`max_cost`到负无穷大。 
-6. 迭代所有可能的分割点`i`从`0`到`n-1`:
+6. 迭代所有可能的分割点`i`从`0`到`n-1`：
 
  - 计算`current_cost = prefix_top[i] + suffix_bottom[i]`。 
 - 更新`max_cost`如果`current_cost`更大。 

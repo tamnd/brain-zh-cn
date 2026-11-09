@@ -141,7 +141,7 @@ assert run("1\n5\naaaaa\n") == "aaaaa", "all characters equal"
 assert run("1\n3\ncab\n") == "aab", "first replacement correct"
 ```| 测试输入| 预期产出 | 它验证了什么 |
  | --- | --- | --- |
- |`1\na`|`a`| 单字符，无需操作|
+ |`1\na`|`a`| 单字符，无需操作 |
  |`2\nba`|`aa`| 交换第一个非最小字符 |
  |`10\nabcdefghij`|`aabcdefghij`| 最大长度字符串，第一个非最小替换 |
  |`5\naaaaa`|`aaaaa`| 所有字符均等，无效果 |

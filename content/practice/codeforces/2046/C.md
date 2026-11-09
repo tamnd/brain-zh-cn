@@ -1,6 +1,6 @@
 ---
-title: "CF 2046C - Adventurers"
-description: "Each city is a point on the plane. 我们选择一个分割点 $(x0,y0)$，它将平面分成四个区域： $$begin{aligned} &x ge x0, y ge y0 &x < x0, y ge y0 &x ge x0, y < y0 &x < x0, y < y0 end{aligned}$$ 每个城市都属于这些区域之一，根据…"
+title: "CF 2046C - 冒险家"
+description: "每个城市都是平面上的一个点。 我们选择一个分割点 $(x0,y0)$，它将平面分成四个区域： $$begin{aligned} &x ge x0, y ge y0 &x < x0, y ge y0 &x ge x0, y < y0 &x < x0, y < y0 end{aligned}$$ 每个城市都属于这些区域之一，根据…"
 date: "2026-06-08T09:08:00+07:00"
 tags: ["codeforces", "competitive-programming", "binary-search", "data-structures", "greedy", "sortings", "ternary-search", "two-pointers"]
 categories: ["algorithms"]
@@ -14,23 +14,23 @@ verified: false
 draft: false
 ---
 
-[CF 2046C - Adventurers](https://codeforces.com/problemset/problem/2046/C)
+[CF 2046C - 冒险家](https://codeforces.com/problemset/problem/2046/C)
 
  **评分：** 2100
- **Tags:** binary search, data structures, greedy, sortings, ternary search, two pointers
+ **标签：** 二分查找、数据结构、贪心、排序、三元查找、两个指针
  **求解时间：** 3m 19s
  **已验证：** 否
 
  ## 解决方案
  ## 问题理解
 
- Each city is a point on the plane. We choose a dividing point$(x_0,y_0)$，它将平面分为四个区域：$$\begin{aligned} &x \ge x_0,\ y \ge y_0 \\ &x < x_0,\ y \ge y_0 \\ &x \ge x_0,\ y < y_0 \\ &x < x_0,\ y < y_0 \end{aligned}$$根据上述不平等，每个城市都属于这些区域之一。 
+ 每个城市都是平面上的一个点。 我们选择一个分割点$(x_0,y_0)$，它将平面分为四个区域：$$\begin{aligned} &x \ge x_0,\ y \ge y_0 \\ &x < x_0,\ y \ge y_0 \\ &x \ge x_0,\ y < y_0 \\ &x < x_0,\ y < y_0 \end{aligned}$$根据上述不平等，每个城市都属于这些区域之一。 
 
-对于选定的划分点，令四个区域计数为$c_1,c_2,c_3,c_4$。 We want to maximize$$\min(c_1,c_2,c_3,c_4).$$我们必须输出可达到的最大值和实现该值的一个分界点。 
+对于选定的划分点，令四个区域计数为$c_1,c_2,c_3,c_4$。 我们想要最大化$$\min(c_1,c_2,c_3,c_4).$$我们必须输出可达到的最大值和实现该值的一个分界点。 
 
-所有测试用例的总点数最多为$10^5$。 任何检查每对候选者的解决方案$x_0$和$y_0$值需要$O(n^2)$or worse work per test case, which is far too slow. 我们周围需要一些东西$O(n \log^2 n)$。 
+所有测试用例的总点数最多为$10^5$。 任何检查每对候选者的解决方案$x_0$和$y_0$值需要$O(n^2)$或者每个测试用例的工作量更糟，这太慢了。 我们周围需要一些东西$O(n \log^2 n)$。 
 
-一个微妙的一点是不平等是不对称的。 Cities with$x=x_0$属于右半部分，并且城市$y=y_0$属于上半部分。 如果解决方案意外地将两侧的分割视为严格，则会产生不正确的象限计数。 
+一个微妙的一点是不平等是不对称的。 城市有$x=x_0$属于右半部分，并且城市$y=y_0$属于上半部分。 如果解决方案意外地将两侧的分割视为严格，则会产生不正确的象限计数。 
 
 当许多城市共享相同的信息时，就会出现另一个棘手的情况$x$-协调。 在消除可能的垂直分裂的同时，所有城市都具有相同的$x$必须一起行动。 这样一个群体内部的分裂会改变不平等的含义，并可能产生无效的状态。 
 
@@ -52,7 +52,7 @@ draft: false
 
 | 方法| 时间复杂度| 空间复杂度| 判决 |
  | --- | --- | --- | --- |
- | 蛮力 |$O(n^3)$|$O(1)$| 太慢了 |
+ | 蛮力 |$O(n^3)$|$O(1)$| 太慢了|
  | 二分查找+扫描+Fenwick |$O(n \log^2 n)$|$O(n)$| 已接受 |
 
  ## 算法演练
@@ -69,7 +69,7 @@ draft: false
 4. 处理带有坐标的组之前$x$，分割对应于$x_0=x$。 每个点都较小$x$已经在$L$，以及每个点$x\ge x_0$仍留在$R$。 
 5.让$tot_L$和$tot_R$是两侧的当前尺寸。 
 6. 如果任何一方的数量少于$2k$分，那一方至少永远无法贡献$k$点位于水平线上方和下方。 跳过此扫描位置。 
-7. 对于$L$，求压缩区间$y$-位置，其中$$k \le P_L \le tot_L-k.$$由于前缀计数是单调的，因此可以使用 Fenwick 订单统计查询来获取此间隔。 
+7. 对于$L$，求压缩区间$y$-位置，其中$$k \le P_L \le tot_L-k.$$由于前缀计数是单调的，因此可以通过 Fenwick 订单统计查询来获取此间隔。 
 
 1. 计算对应的区间$R$。 
 2. 如果两个区间相交，则有效$y_0$存在并且此检查的答案是“可能”。 
