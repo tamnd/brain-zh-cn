@@ -14,10 +14,10 @@ verified: false
 draft: false
 ---
 
-[CF 2087G - Berland 电子竞技](https://codeforces.com/problemset/problem/2087/G)
+[CF 2087G - Esports in Berland](https://codeforces.com/problemset/problem/2087/G)
 
  **评级：** -
- **标签：** *特殊、贪婪
+ **Tags:** *special, greedy
  **求解时间：** 1m 27s
  **已验证：** 否
 
@@ -26,38 +26,38 @@ draft: false
 
  我们每天都会进行一系列的比赛。 Monocarp 每天要么参加比赛，要么花一天时间进行训练。 培训会增加从零开始的单个整数技能值，而参与会产生的金钱取决于当天和当前技能。 
 
-如果 Monocarp 在第 i 天参加，他将获得固定的基础值 a[i] 加上他当前的技能。 如果他训练，他什么也赚不到，但技能会提高一分。 每天只贡献一项行动，而行动的顺序决定了未来的技能和未来的收入。 
+If Monocarp participates on day i, he earns a fixed base value a[i] plus his current skill. If he trains, he earns nothing but increases skill by one. Each day contributes exactly one action, and the order of actions determines both future skill and future earnings.
 
-任务是选择一个子集的训练日，以便从所有参与日中赚取的总收入最大化。 在所有最佳选择中，我们还需要计算有多少不同的训练子集达到了最大值。 
+ 任务是选择一个子集的训练日，以便从所有参与日中赚取的总收入最大化。 Among all optimal choices, we also need to count how many distinct training subsets achieve that maximum.
 
-约束允许每次测试最多 2⋅10^5 天，因此任何解决方案都必须接近线性或 O(n log n)。 任何尝试训练日的所有子集或通过回溯贪婪地模拟决策的操作都会立即失败，因为决策空间以 n 为指数。 
+ 约束允许每次测试最多 2⋅10^5 天，因此任何解决方案都必须接近线性或 O(n log n)。 任何尝试训练日的所有子集或通过回溯贪婪地模拟决策的操作都会立即失败，因为决策空间以 n 为指数。 
 
 尝试每天独立决定是否参加培训或参加的天真的方法会失败，因为培训会改变未来所有日子的技能，因此每个决定都会产生全球影响。 例如，跳过早期的高价值日可能会增加所有后来的贡献，足以主导损失。 
 
-当所有 a[i] 都为零时，会出现微妙的边缘情况。 那么整个价值就只能来自于技能的积累，所以很多不同的训练计划都会给出相同的最终结果，而正确地计算它们就成为主要的困难。 
+A subtle edge case appears when all a[i] are zero. 那么整个价值就只能来自于技能的积累，所以很多不同的训练计划都会给出相同的最终结果，而正确地计算它们就成为主要的困难。 
 
 ## 方法
 
- 直接暴力枚举所有 2^n 个训练日子集，计算由此产生的技能进化，并评估总收入。 这是正确的，因为它明确地对每个有效的计划进行建模，但每个评估成本为 O(n)，导致 O(n·2^n)，这对于 n 高达 2⋅10^5 来说是不可能的。 
+ A direct brute force enumerates all 2^n subsets of training days, computes resulting skill evolution, and evaluates total income. 这是正确的，因为它明确地对每个有效的计划进行建模，但每个评估成本为 O(n)，导致 O(n·2^n)，这对于 n 高达 2⋅10^5 来说是不可能的。 
 
 关键的观察结果是，训练的贡献在时间上是线性的：每个训练日都会增加所有后续参与日的技能，因此每个跳过的天都会增加所有未来选择的边际价值。 这就创建了一种结构，其中训练的好处仅取决于该点之后剩余的比赛数量，而不取决于确切的模式。 
 
-这让我们将问题重新解释为选择训练天数 k，然后将它们放置在最佳位置。 一旦 k 确定，最优策略就变得确定了：训练应该在尽可能早的日子进行，因为延迟训练只会减少未来从技能提高中受益的比赛数量。 
+This lets us reinterpret the problem as choosing a number of training days k and then placing them in optimal positions. 一旦 k 确定，最优策略就变得确定了：训练应该在尽可能早的日子进行，因为延迟训练只会减少未来从技能提高中受益的比赛数量。 
 
-因此，问题简化为选择 k 并计算：
+Thus the problem reduces to selecting k and computing:
 
- 所有天数的 a[i] 之和减去延迟参与的成本，加上 k 乘以所选的未来头寸数量。 
+the sum of a[i] over all days minus the cost of delaying participation, plus k times the number of chosen future positions.
 
-这种结构导致贪婪排序加上组合计数来安排训练天数而不影响最优性。 
+ 这种结构导致贪婪排序加上组合计数来安排训练天数而不影响最优性。 
 
 | 方法| 时间复杂度| 空间复杂度| 判决 |
- | ---| ---| ---| ---|
- | 蛮力 | O(n·2^n) | O(n·2^n) | O(n) | 太慢了 |
+ | --- | --- | --- | --- |
+ | 蛮力 | O(n·2^n) | O(n·2^n) | O(n) | 太慢了|
  | 最佳 | O(n) | O(n) | 已接受 |
 
  ## 算法演练
 
- 关键是将视角从“哪几天进行培训”转变为“每个参与日之前技能提高了多少倍”。
+ The key is to shift perspective from “which days are training” to “how many times the skill increases before each participation day”.
 
 1. 观察如果 Monocarp 总共进行了 k 次训练，那么他在任意参与时刻的技能恰好是当天之前发生的训练次数。 这意味着培训的贡献完全取决于每个选定的参与日之前发生的培训操作的数量。 
 2. 将总收入重写为参与天数的 a[i] 之和加上技能贡献之和。 第二项仅取决于培训和参与日期的相对顺序，而不取决于日期本身的身份。 
@@ -140,7 +140,7 @@ for _ in range(t):
 ## 复杂度分析
 
  | 测量 | 复杂性 | 说明|
- | ---| ---| ---|
+ | --- | --- | --- |
  | 时间 | 每次测试 O(n^2) | DP 考虑每个 i 的所有 k 到 i |
  | 空间| O(n) | 仅两个 DP 阵列 |
 
@@ -201,7 +201,7 @@ def run(inp: str) -> str:
 
 assert run("1\n0\n") == "0 2"
 ```| 测试输入| 预期产出 | 它验证了什么 |
- | ---| ---| ---|
+ | --- | --- | --- |
  | 1 0 | 1 0 0 2 | 单一中立决定|
  | 2\n1\n1 1 | 2 X | 小成长互动 |
  | 3\n0\n0 0 0 | 3\n0\n0 0 0 0 多个 | 全零对称性|
