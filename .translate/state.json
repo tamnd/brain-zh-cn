@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-11-22T07:06:03.772731Z",
+  "last_run": "2026-11-22T07:38:43.306811Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -241702,6 +241702,86 @@
       "source_hash": "sha256:dfbbdc454a903dfef4747efe651f1ad9330a9363b78256a67366df5fe3214ef5",
       "translated_at": "2026-11-22T07:06:03.772709Z",
       "dest_path": "content/practice/kvant/physics/19.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/193.md": {
+      "source_hash": "sha256:4c678e0fc7dbf1381a149c9b9654d773a45296dae1753ffddd4b877ac54fdca8",
+      "translated_at": "2026-11-22T07:32:29.598271Z",
+      "dest_path": "content/practice/kvant/physics/193.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/197.md": {
+      "source_hash": "sha256:cf19b24a486e64a3bb08bb00104a4962941573baf9e85ad99ca94dfd627b3da3",
+      "translated_at": "2026-11-22T07:33:23.084326Z",
+      "dest_path": "content/practice/kvant/physics/197.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/1970/1.md": {
+      "source_hash": "sha256:e2ffba06bb6c7e79eeb51188e0f744cc9c34dc1ce0dc297bbecdfb32976d8845",
+      "translated_at": "2026-11-22T07:34:16.666558Z",
+      "dest_path": "content/practice/kvant/physics/1970/1.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/1970/10.md": {
+      "source_hash": "sha256:c33fe878258c37c2bf63ccff916046595a6d415e81d765ef1ea613ad0a9d8a14",
+      "translated_at": "2026-11-22T07:35:20.436351Z",
+      "dest_path": "content/practice/kvant/physics/1970/10.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/1970/11.md": {
+      "source_hash": "sha256:0b3344a985f47349f69aa80318ef126897750f9f03f7813b92f7267e801c6e50",
+      "translated_at": "2026-11-22T07:35:54.893499Z",
+      "dest_path": "content/practice/kvant/physics/1970/11.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/1970/12.md": {
+      "source_hash": "sha256:f5876fa80106f52e705b4f19aa69dcdcff9fabeeaacae42316eb3d734fbcfbe3",
+      "translated_at": "2026-11-22T07:36:05.400613Z",
+      "dest_path": "content/practice/kvant/physics/1970/12.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/1970/13.md": {
+      "source_hash": "sha256:69436a93910811053914d77371bc08b2fa9f5312a996120c7a46c1b329015c1d",
+      "translated_at": "2026-11-22T07:36:38.593482Z",
+      "dest_path": "content/practice/kvant/physics/1970/13.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/1970/14.md": {
+      "source_hash": "sha256:7b33d836d855b86caf986dbb05c7b311b5fe3abf271e77e17a1f2a0a6cc86b95",
+      "translated_at": "2026-11-22T07:37:20.973292Z",
+      "dest_path": "content/practice/kvant/physics/1970/14.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/1970/15.md": {
+      "source_hash": "sha256:f89e0cd8912bb3255859b1dbc353b43e56b68a0c6172f3f8576b59a9a6461c44",
+      "translated_at": "2026-11-22T07:37:54.516549Z",
+      "dest_path": "content/practice/kvant/physics/1970/15.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/1970/16.md": {
+      "source_hash": "sha256:5064116a5af375a51a425d50ade8fd74185f611bc81f8cbcff66a13091ee891e",
+      "translated_at": "2026-11-22T07:38:43.306782Z",
+      "dest_path": "content/practice/kvant/physics/1970/16.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
