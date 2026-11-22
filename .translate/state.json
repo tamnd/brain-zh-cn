@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-11-22T14:07:21.918885Z",
+  "last_run": "2026-11-22T14:35:00.408346Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -242822,6 +242822,86 @@
       "source_hash": "sha256:77a14ff2916cb70cb99f944b814bf04b1f98fc8452e50644fc726dc5e55a990b",
       "translated_at": "2026-11-22T14:07:21.918855Z",
       "dest_path": "content/practice/kvant/physics/49.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/5.md": {
+      "source_hash": "sha256:a7226908ce6cef7f2857af8cfadbc8ad4945264f5267e5328b786489add60c84",
+      "translated_at": "2026-11-22T14:31:20.954210Z",
+      "dest_path": "content/practice/kvant/physics/5.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/51.md": {
+      "source_hash": "sha256:932ee6a6064a15b99cfe51b8796a707f3d99fe62264c043b60f8de69e491b7f4",
+      "translated_at": "2026-11-22T14:31:41.451327Z",
+      "dest_path": "content/practice/kvant/physics/51.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/54.md": {
+      "source_hash": "sha256:509590721083a4dcc67ba9d7d7acba9c12737c495d4519454dbc4c26c0cbf5a4",
+      "translated_at": "2026-11-22T14:31:57.019801Z",
+      "dest_path": "content/practice/kvant/physics/54.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/553.md": {
+      "source_hash": "sha256:13ebbd7adfd69d60467063b9617c5d51f8828bb02453e01d173e8a9dfe64fbb7",
+      "translated_at": "2026-11-22T14:32:36.363057Z",
+      "dest_path": "content/practice/kvant/physics/553.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/555.md": {
+      "source_hash": "sha256:ca3cd34f17cb6e140c9ca8f678b82ecb861f383300c404ba2d447822ca437dd3",
+      "translated_at": "2026-11-22T14:33:16.080677Z",
+      "dest_path": "content/practice/kvant/physics/555.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/557.md": {
+      "source_hash": "sha256:77e50b154907eea9259a5462a5bc2ab7238c3caf1354578322e5acc16756cbbd",
+      "translated_at": "2026-11-22T14:33:19.471140Z",
+      "dest_path": "content/practice/kvant/physics/557.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/558.md": {
+      "source_hash": "sha256:820e0355862661f225c6c6b671c38fecbc4d55757a275d532ad299828128d899",
+      "translated_at": "2026-11-22T14:33:56.125671Z",
+      "dest_path": "content/practice/kvant/physics/558.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/559.md": {
+      "source_hash": "sha256:99c58860ed01545c75a2fef1649c7e8155ef2ddf53f5878c3c3d59f9e68c557c",
+      "translated_at": "2026-11-22T14:34:16.097220Z",
+      "dest_path": "content/practice/kvant/physics/559.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/566.md": {
+      "source_hash": "sha256:695b8a78a78d192196ecb87a5b9882029e690556be2a0a1d8751a1bd710c164e",
+      "translated_at": "2026-11-22T14:34:57.045969Z",
+      "dest_path": "content/practice/kvant/physics/566.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/kvant/physics/567.md": {
+      "source_hash": "sha256:5a0e64d7044a4ef56538c8df73f232d83c45e9f834b6f1d53b4e948a1bd38617",
+      "translated_at": "2026-11-22T14:35:00.408320Z",
+      "dest_path": "content/practice/kvant/physics/567.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
