@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-11-24T01:09:18.814101Z",
+  "last_run": "2026-11-24T01:39:50.875088Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -248342,6 +248342,86 @@
       "source_hash": "sha256:14bdadb3a9eafaeb4febfb379568947bcb77d843e56f1f7d1224b432825ded72",
       "translated_at": "2026-11-24T01:09:18.814078Z",
       "dest_path": "content/practice/leetcode/06xx/672.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/06xx/673.md": {
+      "source_hash": "sha256:ea0ed74f8c8fcf17dea45ca9ec24d3e04e779f41c19a6fa7c92fcfb6001aa407",
+      "translated_at": "2026-11-24T01:33:17.959889Z",
+      "dest_path": "content/practice/leetcode/06xx/673.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/06xx/674.md": {
+      "source_hash": "sha256:b93d9da09b7f007c9c456a19640af7b8fc9295ea2974e6529f7fcf0fc2571c0f",
+      "translated_at": "2026-11-24T01:34:08.974404Z",
+      "dest_path": "content/practice/leetcode/06xx/674.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/06xx/675.md": {
+      "source_hash": "sha256:9018020433f9028ecc2c67fefa6925dc5f8d0192a6cfe632fc08dc85205b5084",
+      "translated_at": "2026-11-24T01:34:45.260350Z",
+      "dest_path": "content/practice/leetcode/06xx/675.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/06xx/676.md": {
+      "source_hash": "sha256:841063fd8aec6e548e19d4822aece05e9974cbc86ef7e68963169208ba3a1a59",
+      "translated_at": "2026-11-24T01:35:22.012304Z",
+      "dest_path": "content/practice/leetcode/06xx/676.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/06xx/677.md": {
+      "source_hash": "sha256:573175be00c31160c20293bf9f906e7cb52638146c4f4c532b33c36600988cb9",
+      "translated_at": "2026-11-24T01:36:06.972846Z",
+      "dest_path": "content/practice/leetcode/06xx/677.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/06xx/678.md": {
+      "source_hash": "sha256:82c43cc6e444ca330580e56329ba7b195066062b39497f18e3017fba69bf9a2f",
+      "translated_at": "2026-11-24T01:37:13.054699Z",
+      "dest_path": "content/practice/leetcode/06xx/678.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/06xx/679.md": {
+      "source_hash": "sha256:8a952e2c926a9e3d5dc12ffaf926ca5dbbd692bfbc9e7a317b9cd5bd75a6d391",
+      "translated_at": "2026-11-24T01:37:25.718413Z",
+      "dest_path": "content/practice/leetcode/06xx/679.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/06xx/680.md": {
+      "source_hash": "sha256:32c7bec54a5d4ad03a121d7c098949c91497792900fca64b1d73eb1224a74a14",
+      "translated_at": "2026-11-24T01:38:10.159327Z",
+      "dest_path": "content/practice/leetcode/06xx/680.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/06xx/681.md": {
+      "source_hash": "sha256:c3af7030bb2e7cea6314355c1b6bd525a814dc7e7a3b2416ad90f98672bc96f9",
+      "translated_at": "2026-11-24T01:38:49.236282Z",
+      "dest_path": "content/practice/leetcode/06xx/681.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/06xx/682.md": {
+      "source_hash": "sha256:df692185c79f78d8efa1e049313319ffe338dd909d5be911f8ae61016935f5f2",
+      "translated_at": "2026-11-24T01:39:50.875062Z",
+      "dest_path": "content/practice/leetcode/06xx/682.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
