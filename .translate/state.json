@@ -3,7 +3,7 @@
   "lang": "zh_CN",
   "source_repo": "/tmp/brain",
   "target_repo": "/tmp/bs/zh_CN/repo",
-  "last_run": "2026-11-26T21:08:07.643820Z",
+  "last_run": "2026-11-26T21:38:08.508498Z",
   "batch": 0,
   "translator": {
     "provider": "google",
@@ -258262,6 +258262,86 @@
       "source_hash": "sha256:4cbe3acca1b84628b0addde302740ee33b3dc7f975c9753ccf78cb53c51296d1",
       "translated_at": "2026-11-26T21:08:07.643791Z",
       "dest_path": "content/practice/leetcode/19xx/1912.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/19xx/1913.md": {
+      "source_hash": "sha256:8556b3c5a79faa5db5c317e9726f597f167d14e5e8dd149d6c27a03f422f6c5a",
+      "translated_at": "2026-11-26T21:32:06.064506Z",
+      "dest_path": "content/practice/leetcode/19xx/1913.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/19xx/1914.md": {
+      "source_hash": "sha256:d2b54076cf95ec0384f9fc8ea08ece92618a911522a877a88a4540c56b8ccf14",
+      "translated_at": "2026-11-26T21:32:59.034143Z",
+      "dest_path": "content/practice/leetcode/19xx/1914.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/19xx/1915.md": {
+      "source_hash": "sha256:29a90637ab60681cea9263c2ed538b98ef037427fcf1e3134ffc0cc9c4016e59",
+      "translated_at": "2026-11-26T21:33:40.959490Z",
+      "dest_path": "content/practice/leetcode/19xx/1915.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/19xx/1916.md": {
+      "source_hash": "sha256:29a11d6b3dd14bbcc72b5efea350bb190fc217adc73285c5592a7aa542967d92",
+      "translated_at": "2026-11-26T21:34:10.233186Z",
+      "dest_path": "content/practice/leetcode/19xx/1916.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/19xx/1917.md": {
+      "source_hash": "sha256:9e3849192c3bbc356901008dab7f5d62be0bba31c3c97736fdd52e0fb8ae9d4f",
+      "translated_at": "2026-11-26T21:34:30.507871Z",
+      "dest_path": "content/practice/leetcode/19xx/1917.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/19xx/1918.md": {
+      "source_hash": "sha256:7ea1e5493ff8fda24cdccc1527ecfd3f9c619e762156408e47e6deba3be4d550",
+      "translated_at": "2026-11-26T21:35:11.960268Z",
+      "dest_path": "content/practice/leetcode/19xx/1918.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/19xx/1919.md": {
+      "source_hash": "sha256:3aa73d7ce87fa74d76aec111f17d98a734a42ac9914f7b283be93497e6188283",
+      "translated_at": "2026-11-26T21:35:44.908655Z",
+      "dest_path": "content/practice/leetcode/19xx/1919.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/19xx/1920.md": {
+      "source_hash": "sha256:4ac4234c10e876702af241d890ded8a1a69773c60b034feda47f9581dac41d8d",
+      "translated_at": "2026-11-26T21:36:32.465434Z",
+      "dest_path": "content/practice/leetcode/19xx/1920.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/19xx/1921.md": {
+      "source_hash": "sha256:df30229ef1842003a8a4957f0a4cc8413b7b5fe0da82c9021a146df38dc0f0dc",
+      "translated_at": "2026-11-26T21:37:13.021976Z",
+      "dest_path": "content/practice/leetcode/19xx/1921.md",
+      "status": "done",
+      "tokens_used": 0,
+      "provider": "google"
+    },
+    "content/en/practice/leetcode/19xx/1922.md": {
+      "source_hash": "sha256:0e1cba39b61af80172e641b292755deab410078bb73c9de519fdea8d07f79b5e",
+      "translated_at": "2026-11-26T21:38:08.508472Z",
+      "dest_path": "content/practice/leetcode/19xx/1922.md",
       "status": "done",
       "tokens_used": 0,
       "provider": "google"
